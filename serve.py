@@ -3,7 +3,7 @@ import os, sys
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 port = int(os.environ.get("PORT", 3002))
-directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app")
+directory = os.path.dirname(os.path.abspath(__file__))
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
