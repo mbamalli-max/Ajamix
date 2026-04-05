@@ -1,10 +1,12 @@
 # AJAMIX
 
-AJAMIX — Offline mathematics education in Ajami for tsangaya students.
+AJAMIX — Offline full-curriculum education in Ajami for students across Northern Nigeria.
 
 ## Overview
 
-AJAMIX is a vanilla JavaScript, offline-first Progressive Web App for teaching foundational mathematics to tsangaya learners in Northern Nigeria. It is designed to run device-locally, cache the app shell for low-connectivity use, and deliver learning content from a JSON bundle rather than a backend service.
+AJAMIX is a vanilla JavaScript, offline-first Progressive Web App delivering the full Nigerian western education curriculum — Nursery through SS3, across all subjects — in Ajami (Arabic script for Hausa). It is designed to run device-locally, cache the app shell for low-connectivity use, and deliver learning content from a JSON bundle rather than a backend service.
+
+Content is audio-primary, in Hausa, with key terms rendered in Ajami script. The platform serves tsangaya students, adult learners, and anyone who is literate in Ajami but has had limited access to western schooling.
 
 ## Tech stack
 
@@ -42,11 +44,13 @@ node tools/content-pipeline.js --input modules.csv --output app/content.json
 
 Expected CSV columns include:
 
-- `module_number`, `grade_band`
+- `module_number`, `grade_band`, `subject`, `subject_ha`
 - `title_en`, `title_ha`, `title_ajami`
 - `text_explanation_ha`, `audio_filename`
 - `micro_pause_1_ms` through `micro_pause_2_options`
 - `quiz_1_template` through `quiz_5_distractor_3`
+
+Grade bands: `nursery`, `p1`–`p6`, `jss1`–`jss3`, `ss1`–`ss3`
 
 `micro_pause_*_options` should be pipe-delimited, for example `3|5|7`.
 

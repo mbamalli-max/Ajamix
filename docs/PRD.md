@@ -2,9 +2,11 @@
 
 ## 1. Vision
 
-AJAMIX is an offline-first mobile application that delivers mathematics education in Ajami (Arabic script for Hausa) to tsangaya students and adult learners across Northern Nigeria. It bridges the gap between the Islamic schooling system and formal numeracy by presenting mathematics in the script and language these learners already know.
+AJAMIX is an offline-first mobile application that delivers the full Nigerian western education curriculum — Nursery through SS3, across all subjects — in Ajami (Arabic script for Hausa) to students and adult learners across Northern Nigeria. It bridges the gap between the Islamic schooling system and formal western education by presenting every subject in the script and language these learners already know.
 
-The app covers Foundation Stage (pre-Primary 1) through SS3 Mathematics, starting with 60 modules covering Foundation through P3. Content is audio-primary with interactive micro-pause questions, randomized quizzes, and a flame streak engagement system — all functioning fully offline on low-end Android phones.
+The platform covers all National Curriculum subject areas (Mathematics, English, Basic Science, Social Studies, Civic Education, Agricultural Science, and others) from Nursery through Senior Secondary 3, aligned to the NERDC Basic Education Curriculum, NERDC Junior Secondary Curriculum, and WAEC/NECO Senior Secondary Syllabi. Content is audio-primary with interactive micro-pause questions, randomized quizzes, and a flame streak engagement system — all functioning fully offline on low-end Android phones.
+
+Phase 1 delivers the first 60 modules, focused on Foundation through Primary 3 Mathematics, as the proof-of-concept content sprint before expanding to all subjects and grade levels.
 
 ---
 
@@ -129,31 +131,43 @@ Each module contains:
 - **Quiz questions:** 5 per module, each with: template (Hausa), answer formula, variable ranges, distractor formulas
 - **Metadata:** curriculum reference (NERDC/WAEC), status, sort order
 
-### Grade Bands
+### Grade Levels
 
-| Band | Modules | Topics |
-|------|---------|--------|
-| Foundation | 1–15 | Number recognition 1–100, counting, one-to-one correspondence, basic shapes, simple patterns |
-| P1 | 16–30 | Addition/subtraction to 20, place value, measurement, time, money (naira) |
-| P2 | 31–45 | Addition/subtraction to 100, multiplication intro, fractions (half, quarter), basic geometry |
-| P3 | 46–60 | Multiplication tables, division, fractions, measurement units, basic data handling |
+| Level | Band IDs | Subjects Covered |
+|-------|----------|-----------------|
+| Nursery 1–2 | `nursery` | Literacy, Numeracy, Basic Science, Social Studies, Creative Arts |
+| Primary 1–6 | `p1`–`p6` | Mathematics, English, Basic Science, Social Studies, Civic Education, Agricultural Science, Home Economics, Cultural/Creative Arts, Computer Studies, Physical Education |
+| Junior Secondary 1–3 | `jss1`–`jss3` | Mathematics, English, Basic Science & Technology, Social Studies, Civic Education, Business Studies, Agricultural Science, Home Economics, French, Computer Studies, Physical Education, CRS/IRS |
+| Senior Secondary 1–3 | `ss1`–`ss3` | English, Mathematics, Biology, Chemistry, Physics, Further Mathematics, Literature, Government, Economics, Geography, History, Agricultural Science, Commerce, Accounting, CRS/IRS |
+
+### Content Model per Module
+
+Each module contains:
+- **Identifiers:** module number, slug, grade level, subject, subject (Hausa)
+- **Titles:** Hausa, Ajami, English
+- **Text explanation:** Full Hausa text
+- **Audio:** 3–5 minute MP3 file (64kbps mono, ~1.4–2.5MB)
+- **Image card:** Ajami key terms visual (WebP, ~50KB)
+- **Micro-pauses:** 2 per module, each with: timestamp (ms), question (Hausa), correct answer, options
+- **Quiz questions:** 5 per module, each with: template (Hausa), answer formula, variable ranges, distractor formulas
+- **Metadata:** curriculum reference (NERDC/WAEC/NECO), status, sort order
 
 ### Curriculum Alignment
-- **Primary (Foundation–P6):** NERDC Basic Education Curriculum (BEC) Mathematics
+- **Nursery:** Nigerian Early Childhood Care and Education (ECCE) Framework
+- **Primary (P1–P6):** NERDC Basic Education Curriculum (BEC)
 - **Junior Secondary (JSS1–3):** NERDC Junior Secondary Curriculum
-- **Senior Secondary (SS1–3):** WAEC/NECO Mathematics Syllabus
+- **Senior Secondary (SS1–3):** WAEC/NECO Senior Secondary Syllabi
 
-### Ajami Technical Glossary
-- Target: 100–150 terms by end of Phase 1
-- Each term: Ajami script, Hausa transliteration, English equivalent, definition in Hausa, category, related modules
-- Categories: Lissafi (Arithmetic), Geometry, Auna (Measurement), Gabadaya (General)
-- Reviewed and approved by TIMSAN members
-- Standalone asset with value beyond the app
+### Ajami Glossary
+- One glossary per subject area, each 100–300 terms at full scale
+- Each term: Ajami script, Hausa transliteration, English equivalent, definition in Hausa, subject category, related modules
+- Subject categories: Lissafi (Mathematics), Kimiyya (Science), Turanci (English), Tarihi (History), Gwamnati (Civics), Lissafin Kuɗi (Accounting), Noma (Agriculture), Gabaɗaya (General)
+- Reviewed and approved by TIMSAN members; standalone academic asset
 
 ### Adult Learner Variants
-- Same mathematical concepts as child modules
-- Different word problem contexts: market calculations, household budgeting, fabric measurements, transport fare calculations
-- Same quiz templates with adult-appropriate variable ranges (larger numbers, naira amounts)
+- Same subject concepts as student modules
+- Different contexts: market calculations, household budgeting, fabric measurement, transport fares, small business records, land measurement
+- Adult-appropriate variable ranges; same parameterized quiz templates
 - Adds ~15 minutes production time per module
 
 ---
@@ -254,7 +268,8 @@ Each module contains:
 
 | Phase | Scope |
 |-------|-------|
-| Phase 3 | P4–P6 modules (60 more). Backend server for progress sync. Teacher dashboard. |
-| Phase 4 | JSS1–JSS3 modules. Multi-device sync via phone number. Basic analytics. |
-| Phase 5 | SS1–SS3 modules (WAEC/NECO aligned). Offline peer comparison. Certificate generation. |
-| Phase 6 | SEDA integration: full Temporal Micro-Signature analysis, Structural Decay Engine with predictive modeling, evidence hierarchy beyond AUTO_VERIFIED. |
+| Phase 3 | P4–P6 modules. Expand beyond Mathematics to Basic Science, Social Studies. Backend server for progress sync. Teacher dashboard. |
+| Phase 4 | JSS1–JSS3 modules across all core subjects. Multi-device sync via phone number. Basic analytics dashboard. |
+| Phase 5 | SS1–SS3 modules (WAEC/NECO aligned). All elective subjects. Offline peer comparison. Certificate generation. |
+| Phase 6 | Nursery content. Full subject coverage across all levels. SEDA integration: full Temporal Micro-Signature analysis, Structural Decay Engine with predictive modeling, evidence hierarchy beyond AUTO_VERIFIED. |
+| Phase 7 | Multi-language: extend beyond Hausa to other Ajami-literate communities (Fulfulde, Kanuri). |

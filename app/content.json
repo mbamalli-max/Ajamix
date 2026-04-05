@@ -2,15 +2,17 @@
   "version": "foundation-sample-v1",
   "generatedAt": "2026-04-05T00:00:00.000Z",
   "gradeBands": [
-    "Foundation",
-    "P1",
-    "P2",
-    "P3"
+    "nursery",
+    "p1", "p2", "p3", "p4", "p5", "p6",
+    "jss1", "jss2", "jss3",
+    "ss1", "ss2", "ss3"
   ],
   "modules": [
     {
       "id": "foundation-01",
-      "gradeband": "Foundation",
+      "gradeband": "p1",
+      "subject": "Mathematics",
+      "subjectHa": "Lissafi",
       "moduleNumber": 1,
       "titleHa": "Gane Lambobi 1-10",
       "titleAjami": "ݢانى لَمبوبى ١-١٠",
@@ -140,7 +142,9 @@
     },
     {
       "id": "foundation-02",
-      "gradeband": "Foundation",
+      "gradeband": "p1",
+      "subject": "Mathematics",
+      "subjectHa": "Lissafi",
       "moduleNumber": 2,
       "titleHa": "Gane Lambobi 11-20",
       "titleAjami": "ݢانى لَمبوبى ١١-٢٠",
@@ -270,7 +274,9 @@
     },
     {
       "id": "foundation-03",
-      "gradeband": "Foundation",
+      "gradeband": "p1",
+      "subject": "Mathematics",
+      "subjectHa": "Lissafi",
       "moduleNumber": 3,
       "titleHa": "Kidaya 1-20",
       "titleAjami": "كِدايا ١-٢٠",
@@ -404,19 +410,25 @@
       "term": "Lamba",
       "termAjami": "لَمبا",
       "meaningHa": "Alamar adadi ko yawan abu.",
-      "meaningEn": "A symbol that shows quantity."
+      "meaningEn": "A symbol that shows quantity.",
+      "subject": "Mathematics",
+      "subjectHa": "Lissafi"
     },
     {
       "term": "Kidaya",
       "termAjami": "كِدايا",
       "meaningHa": "Kirga abubuwa daya bayan daya.",
-      "meaningEn": "Counting objects in order."
+      "meaningEn": "Counting objects in order.",
+      "subject": "Mathematics",
+      "subjectHa": "Lissafi"
     },
     {
       "term": "Goma",
       "termAjami": "ݢوما",
       "meaningHa": "Adadi na goma, ana amfani da shi wajen gina 11 zuwa 20.",
-      "meaningEn": "The number ten, used to build 11 through 20."
+      "meaningEn": "The number ten, used to build 11 through 20.",
+      "subject": "Mathematics",
+      "subjectHa": "Lissafi"
     }
   ]
 }
