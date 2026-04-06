@@ -1320,3 +1320,131 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* ─── Caregiver Mode ─────────────────────────── */
+
+.caregiver-entry-panel {
+  padding-bottom: 0;
+}
+
+.caregiver-entry-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-accent-muted);
+  border: 1px solid var(--color-accent-border);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: background 0.15s;
+}
+
+.caregiver-entry-card:hover,
+.caregiver-entry-card:focus {
+  background: var(--color-accent-subtle);
+}
+
+.caregiver-entry-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.caregiver-entry-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.caregiver-entry-text strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.caregiver-entry-text span {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.caregiver-arrow {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.caregiver-header-panel h2 {
+  margin-top: 0.5rem;
+}
+
+.caregiver-age-group {
+  margin-bottom: 1.5rem;
+}
+
+.caregiver-age-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.caregiver-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.caregiver-card:hover,
+.caregiver-card:focus {
+  border-color: var(--color-accent-subtle);
+  background: var(--color-accent-muted);
+}
+
+.caregiver-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.caregiver-ajami {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  direction: rtl;
+  text-align: right;
+}
+
+.caregiver-topic {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.caregiver-age-banner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.caregiver-age-chip {
+  display: inline-block;
+  background: var(--color-accent-muted);
+  border: 1px solid var(--color-accent-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* ─── End Caregiver Mode ─────────────────────── */
