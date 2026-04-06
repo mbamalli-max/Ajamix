@@ -2,7 +2,7 @@
   "use strict";
 
   var DB_NAME = "ajamix-db";
-  var DB_VERSION = 1;
+  var DB_VERSION = 2;
   var PASSING_SCORE = 3;
   var LESSON_DEFAULT_DURATION_MS = 180000;
   var QUIZ_AUTO_ADVANCE_DELAY_MS = 900;
@@ -59,6 +59,7 @@
     db: null,
     settings: Object.assign({}, DEFAULT_SETTINGS),
     modules: [],
+    activities: [],
     glossary: [],
     progress: [],
     route: { name: "loading", moduleId: null },
@@ -477,6 +478,8 @@
       "onboarding",
       "grade-select",
       "learning-path",
+      "caregiver",
+      "caregiver-activity",
       "lesson",
       "quiz",
       "download",
@@ -531,6 +534,12 @@
         break;
       case "learning-path":
         screenMarkup = renderLearningPathScreen();
+        break;
+      case "caregiver":
+        screenMarkup = renderCaregiverScreen();
+        break;
+      case "caregiver-activity":
+        screenMarkup = renderCaregiverActivityScreen();
         break;
       case "lesson":
         screenMarkup = renderLessonScreen();
@@ -1320,11 +1329,14 @@
   }
 
   async function syncActiveScreen() {
-    if (state.route.name !== "lesson") {
+    if (state.route.name === "lesson") {
+      await syncLessonScreen();
       return;
     }
 
-    await syncLessonScreen();
+    if (state.route.name === "caregiver-activity") {
+      await syncCaregiverActivityScreen();
+    }
   }
 
   function buildLearningPath() {
@@ -1478,6 +1490,28 @@
     syncLessonUi();
   }
 
+  async function syncCaregiverActivityScreen() {
+    var caregiverActivity = getActivityById(state.route.moduleId);
+    var audio = document.querySelector("[data-lesson-audio]");
+
+    if (!caregiverActivity || !audio) {
+      return;
+    }
+
+    if (!audio.dataset.bound) {
+      audio.dataset.bound = "true";
+      bindCaregiverAudioElement(audio);
+    }
+
+    if (!audio.getAttribute("src") && caregiverActivity.audioFile) {
+      audio.dataset.errorMessage = "";
+      audio.setAttribute("src", caregiverActivity.audioFile);
+      audio.load();
+    }
+
+    syncCaregiverActivityUi(caregiverActivity);
+  }
+
   function bindLessonAudioElement(audio, moduleId) {
     audio.addEventListener("loadedmetadata", function () {
       handleLessonMetadataLoaded(audio, moduleId);
@@ -1502,6 +1536,31 @@
     });
     audio.addEventListener("pause", function () {
       syncLessonUi();
+    });
+  }
+
+  function bindCaregiverAudioElement(audio) {
+    audio.addEventListener("loadedmetadata", function () {
+      audio.dataset.errorMessage = "";
+      syncCaregiverActivityUi();
+    });
+    audio.addEventListener("timeupdate", function () {
+      syncCaregiverActivityUi();
+    });
+    audio.addEventListener("ended", function () {
+      syncCaregiverActivityUi();
+    });
+    audio.addEventListener("play", function () {
+      audio.dataset.errorMessage = "";
+      syncCaregiverActivityUi();
+    });
+    audio.addEventListener("pause", function () {
+      syncCaregiverActivityUi();
+    });
+    audio.addEventListener("error", function () {
+      audio.dataset.errorMessage =
+        "Ba a samu fayil din audio ba tukuna. Da zarar an saka MP3 dinsa, player din zai yi aiki nan.";
+      syncCaregiverActivityUi();
     });
   }
 
@@ -1905,9 +1964,22 @@
 
   function renderLearningPathScreen() {
     var learningPath = buildLearningPath();
+    var caregiverEntryMarkup = [
+      '<section class="screen-panel caregiver-entry-panel">',
+      '<a class="caregiver-entry-card" href="#/caregiver">',
+      '<div class="caregiver-entry-icon">🌱</div>',
+      '<div class="caregiver-entry-text">',
+      "<strong>Caregiver Mode</strong>",
+      "<span>Ayyuka don yara shekara 0–3</span>",
+      "</div>",
+      '<span class="caregiver-arrow">▶</span>',
+      "</a>",
+      "</section>",
+    ].join("");
 
     if (!learningPath.length) {
       return [
+        caregiverEntryMarkup,
         '<section class="screen-panel">',
         "<h2>Babu darussa a wannan matakin yanzu.</h2>",
         "<p>Canza grade band daga Settings ko sabunta content bundle domin ganin karin modules.</p>",
@@ -1968,6 +2040,7 @@
       .join("");
 
     return [
+      caregiverEntryMarkup,
       '<section class="screen-panel path-overview">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Hanyar koyo</p>',
@@ -1991,6 +2064,114 @@
         : '<div class="path-next-callout"><span class="pill">Madalla</span><strong>Ka kammala duk modules na wannan mataki.</strong></div>',
       "</section>",
       '<section class="path-rail" aria-label="Learning path modules">' + moduleCards + "</section>",
+    ].join("");
+  }
+
+  function renderCaregiverScreen() {
+    var activities = state.activities || [];
+
+    if (!activities.length) {
+      return [
+        '<section class="screen-panel">',
+        '<button class="ghost-btn" type="button" data-route="#/learning-path">← Koma baya</button>',
+        "<h2>Babu ayyukan Caregiver Mode a yanzu.</h2>",
+        "</section>",
+      ].join("");
+    }
+
+    var groups = {};
+    var groupOrder = [];
+    activities.forEach(function (activity) {
+      if (!groups[activity.ageRange]) {
+        groups[activity.ageRange] = [];
+        groupOrder.push(activity.ageRange);
+      }
+      groups[activity.ageRange].push(activity);
+    });
+
+    var groupMarkup = groupOrder.map(function (ageRange) {
+      var items = groups[ageRange].map(function (activity) {
+        return [
+          '<a class="caregiver-card" href="#/caregiver-activity/' + escapeAttribute(activity.activityId) + '">',
+          '<div class="caregiver-card-body">',
+          '<p class="ajami caregiver-ajami">' + formatAjamiText(activity.topicAjami) + "</p>",
+          '<p class="caregiver-topic">' + escapeHtml(activity.topicHa) + "</p>",
+          "</div>",
+          '<span class="caregiver-arrow">▶</span>',
+          "</a>",
+        ].join("");
+      });
+
+      return [
+        '<div class="caregiver-age-group">',
+        '<p class="caregiver-age-label">Shekarun yaro: ' + escapeHtml(ageRange) + "</p>",
+        items.join(""),
+        "</div>",
+      ].join("");
+    });
+
+    return [
+      '<section class="screen-panel caregiver-header-panel">',
+      '<button class="ghost-btn" type="button" data-route="#/learning-path">← Koma baya</button>',
+      '<p class="eyebrow">Caregiver Mode</p>',
+      '<h2>Ayyukan yara ƙanana</h2>',
+      '<p class="screen-copy">Waɗannan ayyuka an tsara su don iyaye da masu kula da yara tsakanin shekara 0 zuwa 3. Babu tambayoyi – kawai saurara, duba hoto, ka yi aikin tare da ɗanka.</p>',
+      "</section>",
+      '<section class="screen-panel caregiver-list-panel">',
+      groupMarkup.join(""),
+      "</section>",
+    ].join("");
+  }
+
+  function renderCaregiverActivityScreen() {
+    var activity = getActivityById(state.route.moduleId);
+
+    if (!activity) {
+      return [
+        '<section class="screen-panel">',
+        '<button class="ghost-btn" type="button" data-route="#/caregiver">← Koma Caregiver Mode</button>',
+        "<h2>Ba a samu wannan aiki ba.</h2>",
+        "</section>",
+      ].join("");
+    }
+
+    return [
+      '<section class="screen-panel lesson-shell">',
+      '<div class="lesson-topbar">',
+      '<button class="ghost-btn lesson-back-button" type="button" data-route="#/caregiver" aria-label="Koma baya">←</button>',
+      '<div class="lesson-heading-block">',
+      '<p class="ajami lesson-title-large">' + formatAjamiText(activity.topicAjami) + "</p>",
+      '<p class="lesson-title-small">' + escapeHtml(activity.topicHa) + "</p>",
+      "</div>",
+      "</div>",
+      "</section>",
+      '<section class="screen-panel caregiver-age-banner">',
+      '<span class="caregiver-age-chip">Shekarun yaro: ' + escapeHtml(activity.ageRange) + "</span>",
+      "</section>",
+      '<section class="screen-panel lesson-player-panel">',
+      '<audio class="lesson-audio-element" data-lesson-audio preload="metadata"></audio>',
+      '<div class="lesson-player-controls">',
+      '<button class="lesson-play-toggle" type="button" data-action="toggle-audio">',
+      '<span class="lesson-play-icon" data-play-icon>▶</span>',
+      '<span class="lesson-play-label" data-play-label>Fara sauraro</span>',
+      "</button>",
+      "</div>",
+      '<div class="lesson-audio-progress">',
+      '<div class="lesson-audio-rail"><span class="lesson-audio-fill" data-audio-progress-fill style="width:0%;"></span></div>',
+      "</div>",
+      '<p class="lesson-audio-note" data-audio-notice>Sauraro tare da ɗanka. Babu tambayoyi a wannan aiki.</p>',
+      "</section>",
+      activity.imageCard
+        ? [
+            '<section class="screen-panel lesson-card-panel">',
+            '<p class="eyebrow">Katin Ajami</p>',
+            '<div class="placeholder-media lesson-image-card">',
+            '<strong>' + escapeHtml(activity.topicHa) + "</strong>",
+            '<span class="ajami">' + formatAjamiText(activity.topicAjami) + "</span>",
+            "</div>",
+            "</section>",
+          ].join("")
+        : "",
     ].join("");
   }
 
@@ -2115,8 +2296,15 @@
       audio.play().catch(function () {
         if (state.lessonSession) {
           state.lessonSession.audioError = "Player din yana bukatar ka danna play daga browser ko ka duba fayil din audio.";
+          syncLessonUi();
+          return;
         }
-        syncLessonUi();
+
+        if (state.route.name === "caregiver-activity") {
+          audio.dataset.errorMessage =
+            "Player din yana bukatar ka danna play daga browser ko ka duba fayil din audio.";
+          syncCaregiverActivityUi();
+        }
       });
       return;
     }
@@ -2362,6 +2550,44 @@
     }
   }
 
+  function syncCaregiverActivityUi(activityOverride) {
+    var audio = document.querySelector("[data-lesson-audio]");
+    var caregiverActivity = activityOverride || getActivityById(state.route.moduleId);
+
+    if (!audio || !caregiverActivity || state.route.name !== "caregiver-activity") {
+      return;
+    }
+
+    var progressFill = document.querySelector("[data-audio-progress-fill]");
+    var notice = document.querySelector("[data-audio-notice]");
+    var playIcon = document.querySelector("[data-play-icon]");
+    var playLabel = document.querySelector("[data-play-label]");
+    var progressPct =
+      Number.isFinite(audio.duration) && audio.duration > 0
+        ? Math.max(0, Math.min(100, Math.round((Number(audio.currentTime || 0) / audio.duration) * 100)))
+        : 0;
+
+    if (progressFill) {
+      progressFill.style.width = progressPct + "%";
+    }
+
+    if (notice) {
+      notice.textContent =
+        audio.dataset.errorMessage ||
+        (caregiverActivity.audioFile
+          ? "Sauraro tare da ɗanka. Babu tambayoyi a wannan aiki."
+          : "Ba a samu fayil din audio ba tukuna. Da zarar an saka MP3 dinsa, player din zai yi aiki nan.");
+    }
+
+    if (playIcon) {
+      playIcon.textContent = audio.paused ? "▶" : "❚❚";
+    }
+
+    if (playLabel) {
+      playLabel.textContent = audio.paused ? "Fara sauraro" : "Dakatar";
+    }
+  }
+
   function getSelectedModules() {
     return state.modules
       .filter(function (module) {
@@ -2376,6 +2602,12 @@
     return state.modules.find(function (module) {
       return module.id === moduleId;
     });
+  }
+
+  function getActivityById(activityId) {
+    return (state.activities || []).find(function (activity) {
+      return activity.activityId === activityId;
+    }) || null;
   }
 
   function buildProgressMap() {
@@ -2507,12 +2739,14 @@
   async function loadContentBundle(options) {
     var loadOptions = Object.assign({ forceNetwork: false }, options || {});
     var cachedModules = await getAllRecords("modules");
+    var cachedActivities = await getAllRecords("activities");
     var cachedGlossary = await getAllRecords("glossary");
-    var shouldUseNetwork = loadOptions.forceNetwork || !cachedModules.length;
+    var shouldUseNetwork = loadOptions.forceNetwork || !cachedModules.length || !cachedActivities.length;
     var bundleInfo = null;
 
     if (!shouldUseNetwork) {
       state.modules = cachedModules.sort(sortModules);
+      state.activities = cachedActivities;
       state.glossary = cachedGlossary;
       return;
     }
@@ -2533,6 +2767,7 @@
       }
 
       state.modules = cachedModules.sort(sortModules);
+      state.activities = cachedActivities;
       state.glossary = cachedGlossary;
     }
   }
@@ -2551,6 +2786,7 @@
 
   function applyBundleToState(bundle) {
     state.modules = (bundle.modules || []).slice().sort(sortModules);
+    state.activities = (bundle.activities || []).slice();
     state.glossary = bundle.glossary || [];
     state.settings.contentVersion = bundle.version || DEFAULT_SETTINGS.contentVersion;
   }
@@ -2576,10 +2812,15 @@
 
   async function cacheContentBundle(bundle) {
     await clearStore("modules");
+    await clearStore("activities");
     await clearStore("glossary");
 
     for (var moduleIndex = 0; moduleIndex < (bundle.modules || []).length; moduleIndex += 1) {
       await putRecord("modules", bundle.modules[moduleIndex]);
+    }
+
+    for (var activityIndex = 0; activityIndex < (bundle.activities || []).length; activityIndex += 1) {
+      await putRecord("activities", bundle.activities[activityIndex]);
     }
 
     for (var glossaryIndex = 0; glossaryIndex < (bundle.glossary || []).length; glossaryIndex += 1) {
@@ -3438,6 +3679,9 @@
         }
         if (!db.objectStoreNames.contains("modules")) {
           db.createObjectStore("modules", { keyPath: "id" });
+        }
+        if (!db.objectStoreNames.contains("activities")) {
+          db.createObjectStore("activities", { keyPath: "activityId" });
         }
         if (!db.objectStoreNames.contains("audioCache")) {
           db.createObjectStore("audioCache", { keyPath: "url" });
