@@ -259,7 +259,7 @@
 
     questions.forEach(function (question, index) {
       var answer = formData.get("question-" + index);
-      if (answer === question.correctAnswer) {
+      if (normalizeAnswerValue(answer) === normalizeAnswerValue(question.correctAnswer)) {
         score += 1;
       }
     });
@@ -660,7 +660,9 @@
       .map(function (option) {
         var classes = ["answer-option", "answer-option-button"];
         var isSelected = session.selectedOption === option;
-        var isCorrect = session.feedbackState && option === question.correctAnswer;
+        var isCorrect =
+          session.feedbackState &&
+          normalizeAnswerValue(option) === normalizeAnswerValue(question.correctAnswer);
         var isWrongSelected = session.feedbackState === "incorrect" && isSelected;
 
         if (isSelected) {
@@ -1550,7 +1552,7 @@
       actualPauseMs: session.activePauseActualMs || pause.pauseAtMs,
       responseTimeMs: responseTimeMs,
       selectedAnswer: optionValue,
-      correct: optionValue === pause.correctAnswer,
+      correct: normalizeAnswerValue(optionValue) === normalizeAnswerValue(pause.correctAnswer),
       timestamp: new Date().toISOString(),
     };
     var currentRecord = getProgressRecord(module.id);
@@ -1826,6 +1828,10 @@
 
   function normalizeSearchValue(value) {
     return String(value || "").toLowerCase();
+  }
+
+  function normalizeAnswerValue(value) {
+    return String(value || "").trim().toLowerCase();
   }
 
   function getLessonDurationSec(module, session) {
@@ -3052,7 +3058,7 @@
     }
 
     var selectedOption = String(optionValue);
-    var isCorrect = selectedOption === question.correctAnswer;
+    var isCorrect = normalizeAnswerValue(selectedOption) === normalizeAnswerValue(question.correctAnswer);
 
     session.selectedOption = selectedOption;
     session.feedbackState = isCorrect ? "correct" : "incorrect";
