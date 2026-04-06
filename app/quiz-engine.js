@@ -3,6 +3,11 @@ const MAX_GENERATION_ATTEMPTS = 50;
 
 export function generateQuizInstance(template) {
   const quizTemplate = template || {};
+
+  if (isStaticTemplate(quizTemplate)) {
+    return generateStaticInstance(quizTemplate);
+  }
+
   let lastError = null;
 
   for (let attempt = 0; attempt < MAX_GENERATION_ATTEMPTS; attempt += 1) {
@@ -35,6 +40,29 @@ export function generateQuizInstance(template) {
 
 export function generateQuiz(moduleQuizTemplates) {
   return (moduleQuizTemplates || []).slice(0, 5).map((template) => generateQuizInstance(template));
+}
+
+function isStaticTemplate(template) {
+  const variableRanges = template && template.variableRanges ? template.variableRanges : {};
+
+  return Object.keys(variableRanges).every((key) => {
+    const range = variableRanges[key] || {};
+    return Number(range.min) === 0 && Number(range.max) === 0;
+  });
+}
+
+function generateStaticInstance(template) {
+  const questionText = String(template.templateHa || "");
+  const correctAnswer = String(template.answerFormula).trim();
+  const distractorAnswers = (template.distractorFormulas || []).map((value) => String(value).trim());
+  const options = buildStringOptions(correctAnswer, distractorAnswers);
+
+  return {
+    questionText,
+    correctAnswer,
+    options,
+    variables: {},
+  };
 }
 
 function buildVariables(variableRanges) {
@@ -136,6 +164,31 @@ function buildOptions(correctAnswer, distractorAnswers) {
   }
 
   return options.slice(0, 4);
+}
+
+function buildStringOptions(correctAnswer, distractorAnswers) {
+  const options = [];
+  const seen = new Set();
+
+  function addOption(value) {
+    const trimmedValue = String(value).trim();
+    const normalizedValue = trimmedValue.toLowerCase();
+
+    if (!seen.has(normalizedValue)) {
+      seen.add(normalizedValue);
+      options.push(trimmedValue);
+    }
+  }
+
+  addOption(correctAnswer);
+  (distractorAnswers || []).forEach(addOption);
+
+  if (options.length < 4) {
+    throw new Error(`Static quiz template has fewer than 4 distinct options for answer: ${correctAnswer}`);
+  }
+
+  const selectedOptions = [options[0]].concat(shuffle(options.slice(1)).slice(0, 3));
+  return shuffle(selectedOptions);
 }
 
 function shuffle(values) {
