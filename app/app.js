@@ -17,7 +17,7 @@
     streakState: "out",
   };
   var DEFAULT_AUDIO_DOWNLOAD_STATE = {
-    gradeBand: "Foundation",
+    gradeBand: "nursery1",
     totalFiles: 0,
     completedUrls: [],
     status: "pending",
@@ -25,7 +25,7 @@
   };
   var DEFAULT_SETTINGS = {
     onboarded: false,
-    gradeBand: "Foundation",
+    gradeBand: "nursery1",
     audioMode: "on-demand",
     motionMode: "full",
     contentVersion: "sample-bundle",
@@ -33,7 +33,28 @@
     audioDownloadPromptSeen: false,
     audioDownloadState: Object.assign({}, DEFAULT_AUDIO_DOWNLOAD_STATE),
   };
-  var ALLOWED_GRADE_BANDS = ["Foundation", "P1", "P2", "P3"];
+  var ALLOWED_GRADE_BANDS = [
+    "nursery1", "nursery2",
+    "p1", "p2", "p3", "p4", "p5", "p6",
+    "jss1", "jss2", "jss3",
+    "ss1", "ss2", "ss3"
+  ];
+  var GRADE_BAND_LABELS = {
+    nursery1: "Nursery 1",
+    nursery2: "Nursery 2",
+    p1: "Primary 1",
+    p2: "Primary 2",
+    p3: "Primary 3",
+    p4: "Primary 4",
+    p5: "Primary 5",
+    p6: "Primary 6",
+    jss1: "JSS 1",
+    jss2: "JSS 2",
+    jss3: "JSS 3",
+    ss1: "SS 1",
+    ss2: "SS 2",
+    ss3: "SS 3"
+  };
   var state = {
     db: null,
     settings: Object.assign({}, DEFAULT_SETTINGS),
@@ -54,6 +75,10 @@
     contentUpdateBanner: null,
     listenersBound: false,
   };
+
+  function getGradeBandLabel(band) {
+    return GRADE_BAND_LABELS[band] || band;
+  }
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -555,7 +580,7 @@
       '<ul class="feature-strip">',
       "<li>Ba a bukatar login ko account. Komai yana ajiye a na'ura.</li>",
       "<li>Darussa, tambayoyi, da ma'anoni suna zuwa cikin kunshin JSON guda daya.</li>",
-      "<li>Za ka iya fara da Foundation sannan a kara zuwa P1, P2, ko P3 daga Settings.</li>",
+      "<li>Za ka iya fara da Nursery 1 sannan a kara zuwa Primary 1, JSS, ko SS daga Settings.</li>",
       "</ul>",
       '<div class="helper-row"><span class="pill">Offline-first PWA</span><span class="pill">Ajami + Hausa</span><span class="pill">Device-local progress</span></div>',
       '<div class="btn-row">',
@@ -574,10 +599,20 @@
       "<p class=\"screen-copy\">Za a iya canza wannan daga Settings a kowane lokaci. AJAMIX tana fara nuna darussa na matakin da aka zaba.</p>",
       "</div>",
       '<div class="band-grid">',
-      renderGradeBandButton("Foundation", "Fara da gano lambobi, kidaya, da matakai na farko."),
-      renderGradeBandButton("P1", "Matakin farko na makaranta domin lambobi da tarawa masu sauki."),
-      renderGradeBandButton("P2", "Ci gaba da lissafi da matsaloli masu saukin fahimta."),
-      renderGradeBandButton("P3", "Matakin da ya fi karfi domin shirye-shiryen lissafi na gaba."),
+      renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko."),
+      renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko."),
+      renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko."),
+      renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2."),
+      renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3."),
+      renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4."),
+      renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5."),
+      renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6."),
+      renderGradeBandButton("jss1", "Junior Secondary School Year 1."),
+      renderGradeBandButton("jss2", "Junior Secondary School Year 2."),
+      renderGradeBandButton("jss3", "Junior Secondary School Year 3."),
+      renderGradeBandButton("ss1", "Senior Secondary School Year 1."),
+      renderGradeBandButton("ss2", "Senior Secondary School Year 2."),
+      renderGradeBandButton("ss3", "Senior Secondary School Year 3."),
       "</div>",
       '<button class="ghost-btn" data-route="#/onboarding" type="button">Koma baya</button>',
       "</section>",
@@ -587,7 +622,7 @@
   function renderGradeBandButton(gradeBand, description) {
     return [
       '<button class="band-option" type="button" data-grade-band="' + escapeAttribute(gradeBand) + '">',
-      "<strong>" + escapeHtml(gradeBand) + "</strong>",
+      "<strong>" + escapeHtml(getGradeBandLabel(gradeBand)) + "</strong>",
       '<span class="option-copy">' + escapeHtml(description) + "</span>",
       "</button>",
     ].join("");
@@ -805,7 +840,7 @@
       '<section class="screen-panel progress-overview-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Ci gaba</p>',
-      "<h2>Abin da aka kammala a " + escapeHtml(state.settings.gradeBand) + "</h2>",
+      "<h2>Abin da aka kammala a " + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + "</h2>",
       "<p class=\"screen-copy\">Flame streak yana nuna yawan ranakun da aka ci gaba da koyon lissafi, sannan kowane module yana nuna audio, tsayawar fahimta, da quiz.</p>",
       "</div>",
       '<article class="metric-panel streak-panel">',
@@ -900,7 +935,7 @@
       '<section class="screen-panel download-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Download Audio</p>',
-      "<h2>Adana sautukan " + escapeHtml(state.settings.gradeBand) + " domin offline</h2>",
+      "<h2>Adana sautukan " + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + " domin offline</h2>",
       "<p class=\"screen-copy\">Zaka iya sauke duk audio na wannan mataki yanzu, ko kuma ka bar AJAMIX ta yi streaming a lokacin da ake bukata idan akwai intanet.</p>",
       "</div>",
       '<div class="metrics-grid">',
@@ -950,10 +985,20 @@
       '<article class="settings-panel">',
       "<h3>Grade band</h3>",
       '<div class="band-grid">',
-      renderGradeBandButton("Foundation", "Foundation modules"),
-      renderGradeBandButton("P1", "Primary 1"),
-      renderGradeBandButton("P2", "Primary 2"),
-      renderGradeBandButton("P3", "Primary 3"),
+      renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko."),
+      renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko."),
+      renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko."),
+      renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2."),
+      renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3."),
+      renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4."),
+      renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5."),
+      renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6."),
+      renderGradeBandButton("jss1", "Junior Secondary School Year 1."),
+      renderGradeBandButton("jss2", "Junior Secondary School Year 2."),
+      renderGradeBandButton("jss3", "Junior Secondary School Year 3."),
+      renderGradeBandButton("ss1", "Senior Secondary School Year 1."),
+      renderGradeBandButton("ss2", "Senior Secondary School Year 2."),
+      renderGradeBandButton("ss3", "Senior Secondary School Year 3."),
       "</div>",
       "</article>",
       '<article class="settings-panel">',
@@ -1926,7 +1971,7 @@
       '<section class="screen-panel path-overview">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Hanyar koyo</p>',
-      "<h2>" + escapeHtml(state.settings.gradeBand) + " learning path</h2>",
+      "<h2>" + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + " learning path</h2>",
       "<p class=\"screen-copy\">Modules suna bude daya bayan daya. Ka ci quiz da aƙalla 3/5 domin bude darasi na gaba.</p>",
       "</div>",
       '<div class="path-progress-shell">',
@@ -2359,7 +2404,7 @@
   }
 
   async function completeOnboarding(gradeBand) {
-    var chosenBand = ALLOWED_GRADE_BANDS.indexOf(gradeBand) >= 0 ? gradeBand : "Foundation";
+    var chosenBand = ALLOWED_GRADE_BANDS.indexOf(gradeBand) >= 0 ? gradeBand : "nursery1";
     var isFirstOnboarding = !state.settings.onboarded;
     await saveSettings({
       onboarded: true,
@@ -2402,7 +2447,7 @@
     });
 
     if (ALLOWED_GRADE_BANDS.indexOf(nextSettings.gradeBand) === -1) {
-      nextSettings.gradeBand = "Foundation";
+      nextSettings.gradeBand = "nursery1";
     }
 
     nextSettings.audioDownloadState = normalizeAudioDownloadState(nextSettings.audioDownloadState);
@@ -2640,7 +2685,7 @@
 
   function normalizeAudioDownloadState(value) {
     var next = Object.assign({}, DEFAULT_AUDIO_DOWNLOAD_STATE, value || {});
-    next.gradeBand = ALLOWED_GRADE_BANDS.indexOf(next.gradeBand) >= 0 ? next.gradeBand : state.settings.gradeBand || "Foundation";
+    next.gradeBand = ALLOWED_GRADE_BANDS.indexOf(next.gradeBand) >= 0 ? next.gradeBand : state.settings.gradeBand || "nursery1";
     next.totalFiles = Math.max(0, Number(next.totalFiles || 0));
     next.completedUrls = Array.isArray(next.completedUrls) ? next.completedUrls.slice() : [];
     next.status = ["pending", "downloading", "complete", "partial"].indexOf(next.status) >= 0 ? next.status : "pending";
@@ -3263,7 +3308,7 @@
     var connectionChip = document.getElementById("connection-status");
 
     if (gradeChip) {
-      gradeChip.textContent = state.settings.gradeBand || "Foundation";
+      gradeChip.textContent = getGradeBandLabel(state.settings.gradeBand || "nursery1");
     }
 
     if (connectionChip) {
