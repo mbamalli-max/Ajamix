@@ -26,6 +26,8 @@
   var DEFAULT_SETTINGS = {
     onboarded: false,
     gradeBand: "nursery1",
+    displayName: "Dalibi",
+    learnerType: "child",
     audioMode: "on-demand",
     motionMode: "full",
     contentVersion: "sample-bundle",
@@ -55,6 +57,7 @@
     ss2: "SS 2",
     ss3: "SS 3"
   };
+  var pendingOnboardingData = {};
   var state = {
     db: null,
     settings: Object.assign({}, DEFAULT_SETTINGS),
@@ -588,17 +591,28 @@
       '<section class="screen-panel screen-intro onboarding-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Maraba</p>',
-      "<h2>Manhajar lissafi da aka gina domin karatu cikin Ajami.</h2>",
-      "<p class=\"screen-copy\">AJAMIX tana kawo darussa na lissafi cikin Hausa, Ajami, da lambobi masu saukin ganewa domin daliban tsangaya su iya koyon lissafi a hankali, ko da babu intanet.</p>",
+      '<h2>Manhajar lissafi da aka gina domin karatu cikin Ajami.</h2>',
+      '<p class="screen-copy">AJAMIX tana kawo darussa na lissafi cikin Hausa, Ajami, da lambobi masu saukin ganewa domin daliban tsangaya su iya koyon lissafi a hankali, ko da babu intanet.</p>',
       "</div>",
       '<ul class="feature-strip">',
       "<li>Ba a bukatar login ko account. Komai yana ajiye a na'ura.</li>",
       "<li>Darussa, tambayoyi, da ma'anoni suna zuwa cikin kunshin JSON guda daya.</li>",
       "<li>Za ka iya fara da Nursery 1 sannan a kara zuwa Primary 1, JSS, ko SS daga Settings.</li>",
       "</ul>",
+      '<div class="onboarding-fields">',
+      '<label class="onboarding-label" for="onboarding-name">Sunanka (zaɓi ne)</label>',
+      '<input class="text-input" id="onboarding-name" type="text" placeholder="Misali: Ahmad" maxlength="40" autocomplete="off" />',
+      '<div class="onboarding-type-row">',
+      '<span class="onboarding-label">Nau\'in mai koyo:</span>',
+      '<div class="toggle-group" role="group" aria-label="Nau\'in mai koyo">',
+      '<button class="toggle-option is-active" type="button" data-learner-type="child">Yaro</button>',
+      '<button class="toggle-option" type="button" data-learner-type="adult">Babba</button>',
+      '</div>',
+      '</div>',
+      '</div>',
       '<div class="helper-row"><span class="pill">Offline-first PWA</span><span class="pill">Ajami + Hausa</span><span class="pill">Device-local progress</span></div>',
       '<div class="btn-row">',
-      '<button class="btn" data-route="#/grade-select" type="button">Fara zaben mataki</button>',
+      '<button class="btn" id="onboarding-continue" type="button">Fara zaben mataki</button>',
       "</div>",
       "</section>",
     ].join("");
@@ -634,12 +648,44 @@
   }
 
   function renderGradeBandButton(gradeBand, description) {
+    var moduleCount = (state.modules || []).filter(function (m) {
+      return m.gradeband === gradeBand;
+    }).length;
+    var hasBadge = moduleCount > 0
+      ? '<span class="band-badge band-badge--live">' + moduleCount + ' darasi</span>'
+      : '<span class="band-badge band-badge--soon">Nan gaba</span>';
     return [
-      '<button class="band-option" type="button" data-grade-band="' + escapeAttribute(gradeBand) + '">',
-      "<strong>" + escapeHtml(getGradeBandLabel(gradeBand)) + "</strong>",
+      '<button class="band-option' + (moduleCount === 0 ? ' band-option--empty' : '') + '" type="button"',
+      ' data-grade-band="' + escapeAttribute(gradeBand) + '">',
+      '<div class="band-option-header">',
+      '<strong class="band-option-label">' + escapeHtml(getGradeBandLabel(gradeBand)) + '</strong>',
+      hasBadge,
+      '</div>',
       '<span class="option-copy">' + escapeHtml(description) + "</span>",
       "</button>",
     ].join("");
+  }
+
+  function bindOnboardingScreen() {
+    var toggleBtns = document.querySelectorAll(".toggle-option[data-learner-type]");
+    toggleBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        toggleBtns.forEach(function (button) {
+          button.classList.remove("is-active");
+        });
+        btn.classList.add("is-active");
+      });
+    });
+    var continueBtn = document.getElementById("onboarding-continue");
+    if (continueBtn) {
+      continueBtn.addEventListener("click", function () {
+        pendingOnboardingData.displayName = (document.getElementById("onboarding-name") || {}).value || "";
+        pendingOnboardingData.displayName = pendingOnboardingData.displayName.trim() || "Dalibi";
+        var activeType = document.querySelector(".toggle-option.is-active[data-learner-type]");
+        pendingOnboardingData.learnerType = activeType ? activeType.dataset.learnerType : "child";
+        navigate("#/grade-select");
+      });
+    }
   }
 
   function renderQuizScreen() {
@@ -1343,6 +1389,11 @@
   }
 
   async function syncActiveScreen() {
+    if (state.route.name === "onboarding") {
+      bindOnboardingScreen();
+      return;
+    }
+
     if (state.route.name === "quiz") {
       syncQuizScreen();
       return;
@@ -2697,6 +2748,8 @@
     await saveSettings({
       onboarded: true,
       gradeBand: chosenBand,
+      displayName: pendingOnboardingData.displayName || state.settings.displayName || "Dalibi",
+      learnerType: pendingOnboardingData.learnerType || state.settings.learnerType || "child",
       audioDownloadPromptSeen: isFirstOnboarding ? false : state.settings.audioDownloadPromptSeen,
       audioDownloadState: normalizeAudioDownloadState({
         gradeBand: chosenBand,
@@ -2706,6 +2759,7 @@
         lastUpdatedAt: null,
       }),
     });
+    pendingOnboardingData = {};
     await prepareDownloadSession(true);
     state.quizResults = null;
     navigate(isFirstOnboarding ? "#/download" : "#/learning-path");

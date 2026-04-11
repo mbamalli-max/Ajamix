@@ -400,6 +400,39 @@ a {
   color: var(--color-muted);
 }
 
+.band-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 99px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.band-badge--live {
+  background: var(--color-gold, #E2C98A);
+  color: var(--color-bg, #0D1B2A);
+}
+
+.band-badge--soon {
+  background: transparent;
+  color: var(--color-text-muted, #B0B8C4);
+  border: 1px solid currentColor;
+  opacity: 0.7;
+}
+
+.band-option--empty {
+  opacity: 0.55;
+}
+
+.band-option-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .tab-bar {
   position: sticky;
   bottom: 0.8rem;
@@ -969,14 +1002,14 @@ a {
   direction: rtl;
   unicode-bidi: bidi-override;
   text-align: right;
-  font-size: var(--ajami-body);
-  line-height: var(--ajami-line-height);
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
 .ajami-title {
   font-family: var(--font-ajami);
   direction: rtl;
-  font-size: var(--ajami-title);
+  font-size: 2rem;
   font-weight: 700;
   line-height: var(--ajami-line-height);
 }
@@ -1002,6 +1035,67 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
+}
+
+.onboarding-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.onboarding-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted, #B0B8C4);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(226, 201, 138, 0.3);
+  background: var(--color-bg-elevated, #132A3E);
+  color: var(--color-text, #F5F5F5);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: var(--color-gold, #E2C98A);
+}
+
+.onboarding-type-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.toggle-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.toggle-option {
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  border: 1px solid rgba(226, 201, 138, 0.3);
+  background: transparent;
+  color: var(--color-text, #F5F5F5);
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-height: 48px;
+}
+
+.toggle-option.is-active {
+  background: var(--color-gold, #E2C98A);
+  color: var(--color-bg, #0D1B2A);
+  border-color: var(--color-gold, #E2C98A);
+  font-weight: 700;
 }
 
 .noscript-banner {
@@ -1042,8 +1136,9 @@ a {
 }
 
 .path-title-ajami {
-  margin: 0;
-  font-size: 1.45rem;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 0 0 0.25rem;
   text-align: right;
 }
 
