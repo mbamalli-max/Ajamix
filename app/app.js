@@ -1308,7 +1308,6 @@
       { name: "learning-path", label: "Koyo", route: "#/learning-path" },
       { name: "progress", label: "Ci gaba", route: "#/progress" },
       { name: "glossary", label: "Kalmomi", route: "#/glossary" },
-      { name: "settings", label: "Saituna", route: "#/settings" },
     ];
 
     return [
@@ -3852,6 +3851,8 @@
   function updateShellChrome() {
     var gradeChip = document.getElementById("selected-grade-chip");
     var connectionChip = document.getElementById("connection-status");
+    var gear = document.getElementById("settings-gear");
+    var home = document.getElementById("home-btn");
 
     if (gradeChip) {
       gradeChip.textContent = getGradeBandLabel(state.settings.gradeBand || "nursery1");
@@ -3861,6 +3862,15 @@
       connectionChip.textContent = state.connectivity ? "Kan layi" : "Offline";
       connectionChip.classList.toggle("is-online", state.connectivity);
       connectionChip.classList.toggle("is-offline", !state.connectivity);
+    }
+
+    if (gear) {
+      gear.classList.toggle("is-active", state.route.name === "settings");
+    }
+
+    if (home) {
+      var hideHome = state.route.name === "learning-path" || state.route.name === "onboarding";
+      home.style.display = hideHome ? "none" : "inline-flex";
     }
   }
 
