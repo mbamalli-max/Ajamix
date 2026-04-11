@@ -10,6 +10,8 @@
   var STREAK_OUT_THRESHOLD_DAYS = 5;
   var STREAK_VISUAL_COUNT = 7;
   var DEFAULT_AUDIO_SIZE_ESTIMATE_BYTES = 2 * 1024 * 1024;
+  var onboardingStep = 1;
+  var onboardingData = { displayName: "", learnerType: "child", scriptMode: "ajami" };
   var quizEngine = null;
   var DEFAULT_STREAK_DATA = {
     lastActivityDate: null,
@@ -28,6 +30,7 @@
     gradeBand: "nursery1",
     displayName: "Dalibi",
     learnerType: "child",
+    scriptMode: "ajami",
     audioMode: "on-demand",
     motionMode: "full",
     contentVersion: "sample-bundle",
@@ -57,7 +60,6 @@
     ss2: "SS 2",
     ss3: "SS 3"
   };
-  var pendingOnboardingData = {};
   var state = {
     db: null,
     settings: Object.assign({}, DEFAULT_SETTINGS),
@@ -87,6 +89,30 @@
 
   function getGradeBandLabel(band) {
     return GRADE_BAND_LABELS[band] || band;
+  }
+
+  function getDisplayTitle(module) {
+    if (!module) {
+      return "";
+    }
+    if (state.settings.scriptMode === "latin") {
+      return module.titleHa || module.titleEn || "";
+    }
+    return module.titleAjami || module.titleHa || "";
+  }
+
+  function getDisplayQuestion(questionText, questionAjami) {
+    if (state.settings.scriptMode === "latin") {
+      return escapeHtml(questionText || "");
+    }
+    return formatAjamiText(questionAjami || questionText || "");
+  }
+
+  function getDisplaySubject(module) {
+    if (state.settings.scriptMode === "latin") {
+      return escapeHtml(module.subject || "");
+    }
+    return escapeHtml(module.subjectHa || module.subject || "");
   }
 
   document.addEventListener("DOMContentLoaded", init);
@@ -165,6 +191,60 @@
     }
 
     event.preventDefault();
+
+    if (target.dataset.action === "onboarding-next") {
+      if (onboardingStep === 2) {
+        var nameInput = document.getElementById("ob-name-input");
+        onboardingData.displayName = nameInput ? nameInput.value.trim() : "";
+      }
+      if (onboardingStep < 5) {
+        onboardingStep += 1;
+        render();
+      }
+      return;
+    }
+
+    if (target.dataset.action === "onboarding-back") {
+      if (onboardingStep > 1) {
+        onboardingStep -= 1;
+        render();
+      }
+      return;
+    }
+
+    if (target.dataset.action === "ob-set-learner-child") {
+      onboardingData.learnerType = "child";
+      render();
+      return;
+    }
+
+    if (target.dataset.action === "ob-set-learner-adult") {
+      onboardingData.learnerType = "adult";
+      render();
+      return;
+    }
+
+    if (target.dataset.action === "ob-set-script-ajami") {
+      onboardingData.scriptMode = "ajami";
+      render();
+      return;
+    }
+
+    if (target.dataset.action === "ob-set-script-latin") {
+      onboardingData.scriptMode = "latin";
+      render();
+      return;
+    }
+
+    if (target.dataset.action === "settings-set-script-ajami") {
+      await saveSettings({ scriptMode: "ajami" });
+      return;
+    }
+
+    if (target.dataset.action === "settings-set-script-latin") {
+      await saveSettings({ scriptMode: "latin" });
+      return;
+    }
 
     if (target.dataset.action === "open-lesson") {
       if (isModuleLocked(target.dataset.moduleId)) {
@@ -484,7 +564,6 @@
     var moduleId = segments[1] || null;
     var validRoutes = [
       "onboarding",
-      "grade-select",
       "learning-path",
       "caregiver",
       "caregiver-activity",
@@ -507,7 +586,7 @@
   }
 
   function isPublicRoute(name) {
-    return name === "onboarding" || name === "grade-select";
+    return name === "onboarding";
   }
 
   function render() {
@@ -536,9 +615,6 @@
     switch (state.route.name) {
       case "onboarding":
         screenMarkup = renderOnboardingScreen();
-        break;
-      case "grade-select":
-        screenMarkup = renderGradeSelectScreen();
         break;
       case "learning-path":
         screenMarkup = renderLearningPathScreen();
@@ -576,7 +652,7 @@
   }
 
   function renderScreenLayout(screenName, content) {
-    var showTabs = state.settings.onboarded;
+    var showTabs = state.settings.onboarded && screenName !== "onboarding";
     return [
       '<section class="screen" data-screen="' + escapeHtml(screenName) + '">',
       renderAppBanners(),
@@ -587,44 +663,132 @@
   }
 
   function renderOnboardingScreen() {
+    var steps = [
+      renderOnboardingStep1,
+      renderOnboardingStep2,
+      renderOnboardingStep3,
+      renderOnboardingStep4,
+      renderOnboardingStep5,
+    ];
+    var stepFn = steps[onboardingStep - 1] || renderOnboardingStep1;
+    var progressDots = [1, 2, 3, 4, 5].map(function (n) {
+      return '<span class="ob-dot' + (n === onboardingStep ? ' ob-dot--active' : (n < onboardingStep ? ' ob-dot--done' : '')) + '"></span>';
+    }).join("");
     return [
-      '<section class="screen-panel screen-intro onboarding-screen">',
-      '<div class="screen-heading">',
-      '<p class="eyebrow">Maraba</p>',
-      '<h2>Manhajar lissafi da aka gina domin karatu cikin Ajami.</h2>',
-      '<p class="screen-copy">AJAMIX tana kawo darussa na lissafi cikin Hausa, Ajami, da lambobi masu saukin ganewa domin daliban tsangaya su iya koyon lissafi a hankali, ko da babu intanet.</p>',
-      "</div>",
-      '<ul class="feature-strip">',
-      "<li>Ba a bukatar login ko account. Komai yana ajiye a na'ura.</li>",
-      "<li>Darussa, tambayoyi, da ma'anoni suna zuwa cikin kunshin JSON guda daya.</li>",
-      "<li>Za ka iya fara da Nursery 1 sannan a kara zuwa Primary 1, JSS, ko SS daga Settings.</li>",
-      "</ul>",
-      '<div class="onboarding-fields">',
-      '<label class="onboarding-label" for="onboarding-name">Sunanka (zaɓi ne)</label>',
-      '<input class="text-input" id="onboarding-name" type="text" placeholder="Misali: Ahmad" maxlength="40" autocomplete="off" />',
-      '<div class="onboarding-type-row">',
-      '<span class="onboarding-label">Nau\'in mai koyo:</span>',
-      '<div class="toggle-group" role="group" aria-label="Nau\'in mai koyo">',
-      '<button class="toggle-option is-active" type="button" data-learner-type="child">Yaro</button>',
-      '<button class="toggle-option" type="button" data-learner-type="adult">Babba</button>',
-      '</div>',
-      '</div>',
-      '</div>',
-      '<div class="helper-row"><span class="pill">Offline-first PWA</span><span class="pill">Ajami + Hausa</span><span class="pill">Device-local progress</span></div>',
-      '<div class="btn-row">',
-      '<button class="btn" id="onboarding-continue" type="button">Fara zaben mataki</button>',
-      "</div>",
+      '<section class="screen-panel onboarding-screen">',
+      '<div class="ob-progress">' + progressDots + "</div>",
+      stepFn(),
       "</section>",
     ].join("");
   }
 
-  function renderGradeSelectScreen() {
+  function renderOnboardingStep1() {
     return [
-      '<section class="screen-panel grade-select-screen">',
+      '<div class="ob-step">',
+      '<div class="ob-hero">',
+      '<div class="ob-logo">📖</div>',
+      '<h1 class="ob-brand">AJAMIX</h1>',
+      '<p class="ajami ob-ajami-tagline">أَجَامِكْس</p>',
+      "</div>",
       '<div class="screen-heading">',
-      '<p class="eyebrow">Matakin karatu</p>',
-      "<h2>Zabi matakin da ya dace da dalibi.</h2>",
-      "<p class=\"screen-copy\">Za a iya canza wannan daga Settings a kowane lokaci. AJAMIX tana fara nuna darussa na matakin da aka zaba.</p>",
+      "<h2>Karatu cikin Hausa da Ajami</h2>",
+      '<p class="screen-copy">AJAMIX tana kawo darussa na makaranta cikin yaren da kuka riga kuka sani — Hausa da Ajami. Ko da babu intanet.</p>',
+      "</div>",
+      '<ul class="feature-strip">',
+      "<li>Ba a bukatar login. Komai yana ajiye a na'ura.</li>",
+      "<li>Audio, tambayoyi, da ma'anoni — duka offline.</li>",
+      "<li>Daga Nursery zuwa SS3, kowanne darasi yana nan.</li>",
+      "</ul>",
+      '<div class="ob-nav ob-nav--end">',
+      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      "</div>",
+      "</div>",
+    ].join("");
+  }
+
+  function renderOnboardingStep2() {
+    return [
+      '<div class="ob-step">',
+      '<div class="screen-heading">',
+      '<p class="eyebrow">Matakin 2 na 5</p>',
+      "<h2>Sunanka?</h2>",
+      '<p class="screen-copy">Za a yi amfani da sunanka a cikin app. Wannan zaɓi ne — za ka iya bar shi fanko.</p>',
+      "</div>",
+      '<div class="ob-field">',
+      '<label class="ob-label" for="ob-name-input">Suna</label>',
+      '<input class="text-input" id="ob-name-input" type="text" placeholder="Misali: Ahmad" maxlength="40" autocomplete="off" value="' + escapeAttribute(onboardingData.displayName) + '" />',
+      "</div>",
+      '<div class="ob-nav">',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
+      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      "</div>",
+      "</div>",
+    ].join("");
+  }
+
+  function renderOnboardingStep3() {
+    return [
+      '<div class="ob-step">',
+      '<div class="screen-heading">',
+      '<p class="eyebrow">Matakin 3 na 5</p>',
+      "<h2>Wane ne mai koyo?</h2>",
+      '<p class="screen-copy">Wannan yana taimaka wa AJAMIX wajen nuna tambayoyi da misalai masu dacewa.</p>',
+      "</div>",
+      '<div class="ob-choice-grid">',
+      '<button class="ob-choice' + (onboardingData.learnerType === "child" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-learner-child">',
+      '<div class="ob-choice-icon">🧒</div>',
+      "<strong>Yaro</strong>",
+      "<span>Ɗalibi mai shekara 8–18</span>",
+      "</button>",
+      '<button class="ob-choice' + (onboardingData.learnerType === "adult" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-learner-adult">',
+      '<div class="ob-choice-icon">🧑‍🦱</div>',
+      "<strong>Babba</strong>",
+      "<span>Mai koyo a kasuwa ko gida</span>",
+      "</button>",
+      "</div>",
+      '<div class="ob-nav">',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
+      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      "</div>",
+      "</div>",
+    ].join("");
+  }
+
+  function renderOnboardingStep4() {
+    return [
+      '<div class="ob-step">',
+      '<div class="screen-heading">',
+      '<p class="eyebrow">Matakin 4 na 5</p>',
+      "<h2>Yaya kake son karatu?</h2>",
+      '<p class="screen-copy">Za ka iya canza wannan daga Settings a kowane lokaci.</p>',
+      "</div>",
+      '<div class="ob-choice-grid">',
+      '<button class="ob-choice ob-choice--script' + (onboardingData.scriptMode === "ajami" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-ajami">',
+      '<div class="ob-script-sample ajami">أَجَامِكْس</div>',
+      "<strong>Ajami</strong>",
+      "<span>Rubutun Larabci na Hausa</span>",
+      "</button>",
+      '<button class="ob-choice ob-choice--script' + (onboardingData.scriptMode === "latin" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-latin">',
+      '<div class="ob-script-sample">AJAMIX</div>',
+      "<strong>Hausa (Latin)</strong>",
+      "<span>Haruffan boko na Hausa</span>",
+      "</button>",
+      "</div>",
+      '<div class="ob-nav">',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
+      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      "</div>",
+      "</div>",
+    ].join("");
+  }
+
+  function renderOnboardingStep5() {
+    return [
+      '<div class="ob-step">',
+      '<div class="screen-heading">',
+      '<p class="eyebrow">Matakin 5 na 5</p>',
+      "<h2>Wane matakin karatu?</h2>",
+      '<p class="screen-copy">Zabi matakin da ya dace. Za a iya canza wannan daga Settings.</p>',
       "</div>",
       '<div class="band-grid">',
       renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko."),
@@ -642,8 +806,10 @@
       renderGradeBandButton("ss2", "Senior Secondary School Year 2."),
       renderGradeBandButton("ss3", "Senior Secondary School Year 3."),
       "</div>",
-      '<button class="ghost-btn" data-route="#/onboarding" type="button">Koma baya</button>',
-      "</section>",
+      '<div class="ob-nav">',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
+      "</div>",
+      "</div>",
     ].join("");
   }
 
@@ -664,28 +830,6 @@
       '<span class="option-copy">' + escapeHtml(description) + "</span>",
       "</button>",
     ].join("");
-  }
-
-  function bindOnboardingScreen() {
-    var toggleBtns = document.querySelectorAll(".toggle-option[data-learner-type]");
-    toggleBtns.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        toggleBtns.forEach(function (button) {
-          button.classList.remove("is-active");
-        });
-        btn.classList.add("is-active");
-      });
-    });
-    var continueBtn = document.getElementById("onboarding-continue");
-    if (continueBtn) {
-      continueBtn.addEventListener("click", function () {
-        pendingOnboardingData.displayName = (document.getElementById("onboarding-name") || {}).value || "";
-        pendingOnboardingData.displayName = pendingOnboardingData.displayName.trim() || "Dalibi";
-        var activeType = document.querySelector(".toggle-option.is-active[data-learner-type]");
-        pendingOnboardingData.learnerType = activeType ? activeType.dataset.learnerType : "child";
-        navigate("#/grade-select");
-      });
-    }
   }
 
   function renderQuizScreen() {
@@ -720,11 +864,17 @@
       return [
         '<section class="screen-panel quiz-shell">',
         '<p class="eyebrow">Quiz</p>',
-        "<h2>" + escapeHtml(module.titleHa) + "</h2>",
+        "<h2>" +
+          (state.settings.scriptMode === "ajami"
+            ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
+            : escapeHtml(getDisplayTitle(module))) +
+          "</h2>",
         '<p class="helper-text">' + escapeHtml(session.error) + "</p>",
         '<div class="btn-row">',
-        '<button class="btn btn-primary" id="quiz-retry-button" type="button">Sake gwadawa</button>',
-        '<button class="ghost-btn" data-route="#/lesson/' + escapeAttribute(module.id) + '" type="button">Koma darasi</button>',
+        '<button class="btn btn-primary" type="button" data-action="retake-quiz" data-module-id="' +
+          escapeAttribute(module.id) +
+          '">Sake gwadawa</button>',
+        '<button class="ghost-btn" data-route="#/learning-path" type="button">Koma baya</button>',
         "</div>",
         "</section>",
       ].join("");
@@ -795,7 +945,11 @@
       '<section class="screen-panel quiz-shell">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Quiz</p>',
-      "<h2>" + escapeHtml(module.titleHa) + "</h2>",
+      "<h2>" +
+        (state.settings.scriptMode === "ajami"
+          ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
+          : escapeHtml(getDisplayTitle(module))) +
+        "</h2>",
       "<p class=\"screen-copy\">Ka amsa tambaya daya bayan daya. AJAMIX za ta duba sakamakon ta atomatik.</p>",
       "</div>",
       '<div class="quiz-progress-row">',
@@ -803,26 +957,17 @@
       '<span class="pill quiz-score-pill">Maki ' + escapeHtml(String(session.score)) + "</span>",
       "</div>",
       '<article class="quiz-question-card">',
-      '<p class="quiz-question-text">' + escapeHtml(question.questionText) + "</p>",
+      '<p class="quiz-question-text' + (state.settings.scriptMode === "ajami" ? ' ajami' : "") + '">' +
+        getDisplayQuestion(question.templateHa || question.questionText, question.templateAjami) +
+        "</p>",
       '<div class="quiz-options">' + optionMarkup + "</div>",
       feedbackMarkup,
       "</article>",
       '<div class="btn-row">',
-      '<button class="ghost-btn" data-route="#/lesson/' + escapeAttribute(module.id) + '" type="button">Koma darasi</button>',
+      '<button class="ghost-btn" data-route="#/learning-path" type="button">Koma baya</button>',
       "</div>",
       "</section>",
     ].join("");
-  }
-
-  function syncQuizScreen() {
-    var retryButton = document.getElementById("quiz-retry-button");
-    if (!retryButton) {
-      return;
-    }
-
-    retryButton.addEventListener("click", function () {
-      retryQuizSession(state.route.moduleId);
-    });
   }
 
   function renderProgressScreen() {
@@ -1071,6 +1216,19 @@
       "</div>",
       "</article>",
       '<article class="settings-panel">',
+      '<div class="settings-section">',
+      "<h3>Salon rubutu</h3>",
+      '<div class="ob-choice-grid ob-choice-grid--compact">',
+      '<button class="ob-choice' + (state.settings.scriptMode === "ajami" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-ajami">',
+      '<div class="ob-script-sample ajami">أَجَامِكْس</div>',
+      "<strong>Ajami</strong>",
+      "</button>",
+      '<button class="ob-choice' + (state.settings.scriptMode === "latin" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-latin">',
+      '<div class="ob-script-sample">AJAMIX</div>',
+      "<strong>Hausa</strong>",
+      "</button>",
+      "</div>",
+      "</div>",
       "<h3>Audio caching</h3>",
       '<ul class="settings-list">',
       '<li><label><input type="radio" name="audioMode" value="on-demand" ' +
@@ -1389,16 +1547,6 @@
   }
 
   async function syncActiveScreen() {
-    if (state.route.name === "onboarding") {
-      bindOnboardingScreen();
-      return;
-    }
-
-    if (state.route.name === "quiz") {
-      syncQuizScreen();
-      return;
-    }
-
     if (state.route.name === "lesson") {
       await syncLessonScreen();
       return;
@@ -1801,7 +1949,9 @@
     return [
       '<div class="micro-pause-card is-active" role="dialog" aria-modal="true" aria-labelledby="micro-pause-question" aria-live="assertive">',
       '<p class="eyebrow">Tsayawar fahimta ' + (session.activePauseIndex + 1) + "</p>",
-      '<h3 id="micro-pause-question">' + escapeHtml(pause.questionHa) + "</h3>",
+      '<h3 id="micro-pause-question"' + (state.settings.scriptMode === "ajami" ? ' class="ajami"' : "") + '>' +
+        getDisplayQuestion(pause.questionHa, pause.questionAjami) +
+        "</h3>",
       '<div class="micro-pause-options">',
       pause.options
         .map(function (option) {
@@ -2120,8 +2270,12 @@
           '<span class="path-module-number">Darasi ' + escapeHtml(String(module.moduleNumber)) + "</span>",
           '<span class="' + getPathBadgeClass(entry.state) + '">' + escapeHtml(getPathStateCopy(entry.state)) + "</span>",
           "</div>",
-          '<p class="ajami path-title-ajami">' + formatAjamiText(module.titleAjami) + "</p>",
-          '<p class="path-title-hausa">' + escapeHtml(module.titleHa) + "</p>",
+          state.settings.scriptMode === "ajami"
+            ? '<p class="ajami path-title-ajami">' + formatAjamiText(module.titleAjami || "") + "</p>"
+            : '<p class="path-title-hausa path-title-primary">' + escapeHtml(module.titleHa || "") + "</p>",
+          state.settings.scriptMode === "ajami"
+            ? '<p class="path-title-hausa">' + escapeHtml(module.titleHa || "") + "</p>"
+            : "",
           '<div class="path-meta-row"><span class="path-meta-item">' +
             listenCopy +
             '</span><span class="path-meta-item">' +
@@ -2300,8 +2454,12 @@
       '<div class="lesson-topbar">',
       '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="Koma baya">←</button>',
       '<div class="lesson-heading-block">',
-      '<p class="ajami lesson-title-large">' + formatAjamiText(module.titleAjami) + "</p>",
-      '<p class="lesson-title-small">' + escapeHtml(module.titleHa) + "</p>",
+      state.settings.scriptMode === "ajami"
+        ? '<p class="ajami lesson-title-large">' + formatAjamiText(getDisplayTitle(module)) + "</p>"
+        : '<p class="lesson-title-large lesson-title-large--latin">' + escapeHtml(getDisplayTitle(module)) + "</p>",
+      state.settings.scriptMode === "ajami"
+        ? '<p class="lesson-title-small">' + escapeHtml(module.titleHa || "") + "</p>"
+        : "",
       "</div>",
       "</div>",
       "</section>",
@@ -2748,8 +2906,9 @@
     await saveSettings({
       onboarded: true,
       gradeBand: chosenBand,
-      displayName: pendingOnboardingData.displayName || state.settings.displayName || "Dalibi",
-      learnerType: pendingOnboardingData.learnerType || state.settings.learnerType || "child",
+      displayName: onboardingData.displayName || state.settings.displayName || "Dalibi",
+      learnerType: onboardingData.learnerType || state.settings.learnerType || "child",
+      scriptMode: onboardingData.scriptMode || state.settings.scriptMode || "ajami",
       audioDownloadPromptSeen: isFirstOnboarding ? false : state.settings.audioDownloadPromptSeen,
       audioDownloadState: normalizeAudioDownloadState({
         gradeBand: chosenBand,
@@ -2759,7 +2918,8 @@
         lastUpdatedAt: null,
       }),
     });
-    pendingOnboardingData = {};
+    onboardingStep = 1;
+    onboardingData = { displayName: "", learnerType: "child", scriptMode: "ajami" };
     await prepareDownloadSession(true);
     state.quizResults = null;
     navigate(isFirstOnboarding ? "#/download" : "#/learning-path");
@@ -3403,9 +3563,17 @@
     clearQuizAdvanceTimer();
 
     try {
+      var quizTemplates = module.quizQuestions || [];
+      var generatedQuestions = quizEngine ? quizEngine.generateQuiz(quizTemplates) : [];
       state.quizSession = {
         moduleId: moduleId,
-        questions: quizEngine ? quizEngine.generateQuiz(module.quizQuestions || []) : [],
+        questions: generatedQuestions.map(function (question, index) {
+          var template = quizTemplates[index] || {};
+          return Object.assign({}, question, {
+            templateHa: template.templateHa || question.questionText || "",
+            templateAjami: template.templateAjami || "",
+          });
+        }),
         currentIndex: 0,
         selectedOption: null,
         feedbackState: null,
@@ -3595,7 +3763,11 @@
       '<section class="screen-panel quiz-shell quiz-result-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Sakamakon Quiz</p>',
-      "<h2>" + escapeHtml(module.titleHa) + "</h2>",
+      "<h2>" +
+        (state.settings.scriptMode === "ajami"
+          ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
+          : escapeHtml(getDisplayTitle(module))) +
+        "</h2>",
       '<p class="screen-copy">Ka samu ' +
         escapeHtml(String(results.score)) +
         " daga cikin " +
@@ -3632,7 +3804,10 @@
         ? '<button class="secondary-btn" type="button" data-action="retake-quiz" data-module-id="' +
           escapeAttribute(module.id) +
           '">Sake quiz</button>'
-        : '<button class="ghost-btn" type="button" data-route="#/progress">Duba ci gaba</button>',
+        : "",
+      nextModule && results.progressPassed
+        ? '<button class="ghost-btn" type="button" data-route="#/learning-path">Koma hanyar koyo</button>'
+        : "",
       "</div>",
       "</section>",
     ].join("");
