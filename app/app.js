@@ -958,7 +958,7 @@
       "</div>",
       '<article class="quiz-question-card">',
       '<p class="quiz-question-text' + (state.settings.scriptMode === "ajami" ? ' ajami' : "") + '">' +
-        getDisplayQuestion(question.templateHa || question.questionText, question.templateAjami) +
+        getDisplayQuestion(question.questionText, question.templateAjami) +
         "</p>",
       '<div class="quiz-options">' + optionMarkup + "</div>",
       feedbackMarkup,
@@ -1106,6 +1106,9 @@
 
     return [
       '<section class="screen-panel">',
+      '<div class="screen-back-row">',
+      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">← Komawa</button>',
+      '</div>',
       '<div class="screen-heading">',
       '<p class="eyebrow">Glossary</p>',
       "<h2>Kalmomin lissafi cikin Hausa da Ajami</h2>",
@@ -3761,6 +3764,9 @@
 
     return [
       '<section class="screen-panel quiz-shell quiz-result-screen">',
+      '<div class="screen-back-row">',
+      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">← Komawa</button>',
+      '</div>',
       '<div class="screen-heading">',
       '<p class="eyebrow">Sakamakon Quiz</p>',
       "<h2>" +

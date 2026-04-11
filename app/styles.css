@@ -329,6 +329,19 @@ a {
   border-color: var(--color-border);
 }
 
+.screen-back-row {
+  padding: 0.5rem 1rem 0;
+}
+
+.btn-back {
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+.btn-back:hover {
+  opacity: 1;
+}
+
 .btn:hover,
 .secondary-btn:hover,
 .ghost-btn:hover,
