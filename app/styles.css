@@ -55,7 +55,10 @@ body.motion-reduced *::after {
 
 @font-face {
   font-family: "Noto Naskh Arabic";
-  src: url("./fonts/NotoNaskhArabic-Regular.woff2") format("woff2");
+  src:
+    local("Noto Naskh Arabic"),
+    local("Noto Naskh Arabic Regular"),
+    local("Scheherazade New");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
