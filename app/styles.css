@@ -329,6 +329,19 @@ a {
   border-color: var(--color-border);
 }
 
+.screen-back-row {
+  padding: 0.5rem 1rem 0;
+}
+
+.btn-back {
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+.btn-back:hover {
+  opacity: 1;
+}
+
 .btn:hover,
 .secondary-btn:hover,
 .ghost-btn:hover,
@@ -1037,6 +1050,11 @@ a {
   gap: 0.65rem;
 }
 
+.settings-section {
+  display: grid;
+  gap: 0.75rem;
+}
+
 .onboarding-fields {
   display: flex;
   flex-direction: column;
@@ -1149,6 +1167,10 @@ a {
   font-weight: 700;
 }
 
+.path-title-primary {
+  font-size: 1.2rem;
+}
+
 .path-marker-check {
   color: #fff;
   border-color: transparent;
@@ -1200,6 +1222,10 @@ a {
 .lesson-title-large {
   font-size: clamp(1.8rem, 5vw, 2.5rem);
   text-align: right;
+}
+
+.lesson-title-large--latin {
+  text-align: left;
 }
 
 .lesson-title-small {
@@ -1438,6 +1464,137 @@ a {
 
 .ready-offline-panel strong {
   color: var(--color-primary);
+}
+
+/* Onboarding wizard */
+.ob-progress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 1rem 0 0.5rem;
+}
+
+.ob-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-text-muted, #B0B8C4);
+  opacity: 0.4;
+}
+
+.ob-dot--active {
+  background: var(--color-gold, #E2C98A);
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.ob-dot--done {
+  background: var(--color-gold, #E2C98A);
+  opacity: 0.6;
+}
+
+.ob-step {
+  padding: 0 0 2rem;
+}
+
+.ob-hero {
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+}
+
+.ob-logo {
+  font-size: 3rem;
+}
+
+.ob-brand {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-gold, #E2C98A);
+  margin: 0.25rem 0;
+}
+
+.ob-ajami-tagline {
+  font-size: 1.75rem;
+  color: var(--color-text-muted, #B0B8C4);
+  margin: 0;
+}
+
+.ob-field {
+  margin: 1rem 0;
+}
+
+.ob-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted, #B0B8C4);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.ob-choice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.ob-choice-grid--compact {
+  margin: 0.5rem 0;
+}
+
+.ob-choice {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.25rem 1rem;
+  border-radius: 12px;
+  border: 2px solid rgba(226, 201, 138, 0.2);
+  background: var(--color-bg-elevated, #132A3E);
+  color: var(--color-text, #F5F5F5);
+  cursor: pointer;
+  min-height: 48px;
+  text-align: center;
+}
+
+.ob-choice strong {
+  font-size: 1rem;
+}
+
+.ob-choice span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #B0B8C4);
+}
+
+.ob-choice--active {
+  border-color: var(--color-gold, #E2C98A);
+  background: rgba(226, 201, 138, 0.1);
+}
+
+.ob-choice--active strong {
+  color: var(--color-gold, #E2C98A);
+}
+
+.ob-script-sample {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ob-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.ob-nav--end {
+  justify-content: flex-end;
 }
 
 @media (min-width: 720px) {
