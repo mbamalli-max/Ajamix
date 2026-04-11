@@ -77,6 +77,11 @@
     listenersBound: false,
   };
 
+  function applyMotionMode(mode) {
+    document.body.classList.toggle("motion-reduced", mode === "reduced");
+    document.body.classList.toggle("motion-full", mode !== "reduced");
+  }
+
   function getGradeBandLabel(band) {
     return GRADE_BAND_LABELS[band] || band;
   }
@@ -88,6 +93,7 @@
       state.db = await openDatabase();
       await loadQuizEngine();
       await loadSettings();
+      applyMotionMode(state.settings.motionMode);
       await syncStreakState();
       await loadProgress();
       bindListeners();
@@ -198,8 +204,7 @@
     }
 
     if (target.dataset.action === "retake-quiz") {
-      ensureQuizSession(target.dataset.moduleId, true);
-      render();
+      retryQuizSession(target.dataset.moduleId);
       return;
     }
 
@@ -672,9 +677,7 @@
         "<h2>" + escapeHtml(module.titleHa) + "</h2>",
         '<p class="helper-text">' + escapeHtml(session.error) + "</p>",
         '<div class="btn-row">',
-        '<button class="btn" type="button" data-action="retake-quiz" data-module-id="' +
-          escapeAttribute(module.id) +
-          '">Sake gwadawa</button>',
+        '<button class="btn btn-primary" id="quiz-retry-button" type="button">Sake gwadawa</button>',
         '<button class="ghost-btn" data-route="#/lesson/' + escapeAttribute(module.id) + '" type="button">Koma darasi</button>',
         "</div>",
         "</section>",
@@ -763,6 +766,17 @@
       "</div>",
       "</section>",
     ].join("");
+  }
+
+  function syncQuizScreen() {
+    var retryButton = document.getElementById("quiz-retry-button");
+    if (!retryButton) {
+      return;
+    }
+
+    retryButton.addEventListener("click", function () {
+      retryQuizSession(state.route.moduleId);
+    });
   }
 
   function renderProgressScreen() {
@@ -1329,6 +1343,11 @@
   }
 
   async function syncActiveScreen() {
+    if (state.route.name === "quiz") {
+      syncQuizScreen();
+      return;
+    }
+
     if (state.route.name === "lesson") {
       await syncLessonScreen();
       return;
@@ -1729,9 +1748,9 @@
     var pause = module.microPauses[session.activePauseIndex];
 
     return [
-      '<div class="micro-pause-card is-active">',
+      '<div class="micro-pause-card is-active" role="dialog" aria-modal="true" aria-labelledby="micro-pause-question" aria-live="assertive">',
       '<p class="eyebrow">Tsayawar fahimta ' + (session.activePauseIndex + 1) + "</p>",
-      "<h3>" + escapeHtml(pause.questionHa) + "</h3>",
+      '<h3 id="micro-pause-question">' + escapeHtml(pause.questionHa) + "</h3>",
       '<div class="micro-pause-options">',
       pause.options
         .map(function (option) {
@@ -2243,11 +2262,11 @@
       '<div class="lesson-copy scrollable-copy"><p>' + escapeHtml(module.textExplanationHa) + "</p></div>",
       "</section>",
       module.imageCard
-        ? '<section class="screen-panel lesson-card-panel"><p class="eyebrow">Katin Ajami</p><div class="placeholder-media lesson-image-card"><strong>Ajami key terms card</strong><span>' +
+        ? '<section class="screen-panel lesson-card-panel"><p class="eyebrow">Katin Ajami</p><figure class="lesson-image-card"><img src="' +
           escapeHtml(module.imageCard) +
-          '</span><span class="ajami">' +
-          formatAjamiText(module.titleAjami) +
-          "</span></div></section>"
+          '" alt="' +
+          escapeHtml(module.titleHa || "") +
+          '" loading="lazy" /></figure></section>'
         : "",
       '<section class="screen-panel lesson-footer-panel">',
       '<button class="btn lesson-quiz-button" type="button" data-action="open-quiz" data-module-id="' +
@@ -2537,6 +2556,14 @@
     if (overlay) {
       overlay.innerHTML = renderLessonMicroPauseOverlay(module, session);
       overlay.classList.toggle("is-visible", session.activePauseIndex !== null);
+      if (session.activePauseIndex !== null) {
+        queueMicrotask(function () {
+          var firstOption = document.querySelector("#micro-pause-question ~ * button, .micro-pause-overlay button");
+          if (firstOption) {
+            firstOption.focus();
+          }
+        });
+      }
     }
 
     if (quizButton) {
@@ -2666,6 +2693,9 @@
 
     state.settings = Object.assign({}, state.settings, patch);
     state.settings.audioDownloadState = normalizeAudioDownloadState(state.settings.audioDownloadState);
+    if (Object.prototype.hasOwnProperty.call(patch, "motionMode")) {
+      applyMotionMode(state.settings.motionMode);
+    }
     updateShellChrome();
     render();
   }
@@ -3269,7 +3299,8 @@
     return quizEngine;
   }
 
-  function ensureQuizSession(moduleId, forceRefresh) {
+  function ensureQuizSession(moduleId, forceOptions) {
+    var forceRefresh = forceOptions === true || Boolean(forceOptions && forceOptions.force);
     if (
       !forceRefresh &&
       state.quizSession &&
@@ -3302,7 +3333,8 @@
         error: null,
       };
       state.quizResults = null;
-    } catch (error) {
+    } catch (err) {
+      console.warn("[quiz] generation error", err);
       state.quizSession = {
         moduleId: moduleId,
         questions: [],
@@ -3314,9 +3346,17 @@
         completed: false,
         authorityClass: "AUTO_VERIFIED",
         advanceTimerId: 0,
-        error: error instanceof Error ? error.message : "Ba a iya samar da tambayoyin quiz ba.",
+        error: err instanceof Error ? err.message : "Ba a iya samar da tambayoyin quiz ba.",
       };
     }
+  }
+
+  function retryQuizSession(moduleId) {
+    if (state.quizSession && state.quizSession.moduleId === moduleId) {
+      state.quizSession.error = null;
+    }
+    ensureQuizSession(moduleId, { force: true });
+    render();
   }
 
   function teardownQuizSession() {
