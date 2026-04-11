@@ -220,6 +220,35 @@ a {
   color: #ffe6bf;
 }
 
+.header-icon-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(226, 201, 138, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text, #F5F5F5);
+  font-size: 1.15rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.header-icon-btn:hover {
+  opacity: 1;
+}
+
+.header-icon-btn.is-active {
+  border-color: var(--color-gold, #E2C98A);
+  background: rgba(226, 201, 138, 0.12);
+  color: var(--color-gold, #E2C98A);
+  opacity: 1;
+}
+
 .eyebrow {
   margin: 0 0 0.4rem;
   color: var(--color-accent);
@@ -450,7 +479,7 @@ a {
   position: sticky;
   bottom: 0.8rem;
   z-index: 9;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 0.5rem;
   border-radius: 999px;
   background: rgba(255, 253, 248, 0.88);
