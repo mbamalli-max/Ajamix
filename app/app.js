@@ -2,7 +2,7 @@
   "use strict";
 
   var DB_NAME = "ajamix-db";
-  var DB_VERSION = 2;
+  var DB_VERSION = 3;
   var PASSING_SCORE = 3;
   var LESSON_DEFAULT_DURATION_MS = 180000;
   var QUIZ_AUTO_ADVANCE_DELAY_MS = 900;
@@ -903,10 +903,10 @@
           .map(function (item) {
             return [
               '<li class="glossary-item">',
-              "<strong>" + escapeHtml(item.term) + "</strong>",
-              '<span class="ajami">' + formatAjamiText(item.termAjami || "") + "</span>",
-              "<span>" + escapeHtml(item.meaningHa || "") + "</span>",
-              '<span class="muted-copy">' + escapeHtml(item.meaningEn || "") + "</span>",
+              "<strong>" + escapeHtml(getGlossaryHausa(item)) + "</strong>",
+              '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>",
+              "<span>" + escapeHtml(getGlossaryMeaningHa(item)) + "</span>",
+              '<span class="muted-copy">' + escapeHtml(getGlossaryMeaningEn(item)) + "</span>",
               "</li>",
             ].join("");
           })
@@ -1934,7 +1934,7 @@
   }
 
   function getGlossaryHausa(item) {
-    return item.termHausa || item.term || "";
+    return item.termHausa || item.termHa || item.term || "";
   }
 
   function getGlossaryAjami(item) {
@@ -1946,7 +1946,36 @@
   }
 
   function getGlossaryMeaningEn(item) {
-    return item.termEnglish || item.meaningEn || "";
+    return item.termEnglish || item.termEn || item.meaningEn || "";
+  }
+
+  function normalizeGlossaryItem(item) {
+    var normalized = Object.assign({}, item || {});
+    var hausa = getGlossaryHausa(normalized);
+    var ajami = getGlossaryAjami(normalized);
+    var english = normalized.termEnglish || normalized.termEn || normalized.meaningEn || "";
+    var meaningHa = normalized.definitionHa || normalized.meaningHa || "";
+    var meaningEn = normalized.meaningEn || english;
+
+    normalized.id = String(
+      normalized.id != null
+        ? normalized.id
+        : normalized.termKey ||
+          ajami ||
+          (english ? english + "::" + (normalized.subject || "") : "") ||
+          (hausa ? hausa + "::" + (normalized.subject || "") : "")
+    );
+    normalized.term = hausa;
+    normalized.termHausa = hausa;
+    normalized.termEnglish = english;
+    normalized.meaningHa = meaningHa;
+    normalized.meaningEn = meaningEn;
+
+    return normalized;
+  }
+
+  function normalizeGlossaryEntries(entries) {
+    return (entries || []).map(normalizeGlossaryItem);
   }
 
   function normalizeSearchValue(value) {
@@ -2777,7 +2806,7 @@
     if (!shouldUseNetwork) {
       state.modules = cachedModules.sort(sortModules);
       state.activities = cachedActivities;
-      state.glossary = cachedGlossary;
+      state.glossary = normalizeGlossaryEntries(cachedGlossary);
       return;
     }
 
@@ -2798,7 +2827,7 @@
 
       state.modules = cachedModules.sort(sortModules);
       state.activities = cachedActivities;
-      state.glossary = cachedGlossary;
+      state.glossary = normalizeGlossaryEntries(cachedGlossary);
     }
   }
 
@@ -2817,7 +2846,7 @@
   function applyBundleToState(bundle) {
     state.modules = (bundle.modules || []).slice().sort(sortModules);
     state.activities = (bundle.activities || []).slice();
-    state.glossary = bundle.glossary || [];
+    state.glossary = normalizeGlossaryEntries(bundle.glossary);
     state.settings.contentVersion = bundle.version || DEFAULT_SETTINGS.contentVersion;
   }
 
@@ -2841,6 +2870,7 @@
   }
 
   async function cacheContentBundle(bundle) {
+    var normalizedGlossary = normalizeGlossaryEntries(bundle.glossary);
     await clearStore("modules");
     await clearStore("activities");
     await clearStore("glossary");
@@ -2853,8 +2883,8 @@
       await putRecord("activities", bundle.activities[activityIndex]);
     }
 
-    for (var glossaryIndex = 0; glossaryIndex < (bundle.glossary || []).length; glossaryIndex += 1) {
-      await putRecord("glossary", bundle.glossary[glossaryIndex]);
+    for (var glossaryIndex = 0; glossaryIndex < normalizedGlossary.length; glossaryIndex += 1) {
+      await putRecord("glossary", normalizedGlossary[glossaryIndex]);
     }
   }
 
@@ -3729,9 +3759,10 @@
         if (!db.objectStoreNames.contains("progress")) {
           db.createObjectStore("progress", { keyPath: "id" });
         }
-        if (!db.objectStoreNames.contains("glossary")) {
-          db.createObjectStore("glossary", { keyPath: "term" });
+        if (db.objectStoreNames.contains("glossary")) {
+          db.deleteObjectStore("glossary");
         }
+        db.createObjectStore("glossary", { keyPath: "id" });
       };
 
       request.onsuccess = function () {
