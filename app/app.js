@@ -229,11 +229,18 @@
   }
 
   function getDisplaySubject(module) {
-    if (state.settings.scriptMode === "latin") {
-      return escapeHtml(module.subject || "");
+    if (state.settings.scriptMode === "ajami") {
+      return formatAjamiText(romanToAjami(module.subjectHa || module.subjectEn || module.subject || ""));
     }
-    // No subjectAjami field exists yet — transliterate subjectHa on the fly
-    return escapeHtml(module.subjectHa || module.subject || "");
+    return escapeHtml(module.subjectHa || module.subjectEn || module.subject || "");
+  }
+
+  function ha(text) {
+    if (!text) { return ""; }
+    if (state.settings.scriptMode === "ajami") {
+      return formatAjamiText(romanToAjami(text));
+    }
+    return escapeHtml(text);
   }
 
   document.addEventListener("DOMContentLoaded", init);
@@ -721,10 +728,10 @@
         "settings",
         [
           '<section class="screen-panel">',
-          '<p class="eyebrow">An samu matsala</p>',
-          "<h2>AJAMIX bai iya budewa ba.</h2>",
+          '<p class="eyebrow">' + ha("An samu matsala") + "</p>",
+          "<h2>" + ha("AJAMIX bai iya budewa ba.") + "</h2>",
           "<p>" + escapeHtml(state.bootError) + "</p>",
-          '<button class="btn" data-route="#/onboarding" type="button">Sake gwadawa</button>',
+          '<button class="btn" data-route="#/onboarding" type="button">' + ha("Sake gwadawa") + "</button>",
           "</section>",
         ].join("")
       );
@@ -812,16 +819,16 @@
       '<p class="ajami ob-ajami-tagline">أَجَامِكْس</p>',
       "</div>",
       '<div class="screen-heading">',
-      "<h2>Karatu cikin Hausa da Ajami</h2>",
-      '<p class="screen-copy">AJAMIX tana kawo darussa na makaranta cikin yaren da kuka riga kuka sani — Hausa da Ajami. Ko da babu intanet.</p>',
+      "<h2>" + ha("Karatu cikin Hausa da Ajami") + "</h2>",
+      '<p class="screen-copy">' + ha("AJAMIX tana kawo darussa na makaranta cikin yaren da kuka riga kuka sani - Hausa da Ajami. Ko da babu intanet.") + "</p>",
       "</div>",
       '<ul class="feature-strip">',
-      "<li>Ba a bukatar login. Komai yana ajiye a na'ura.</li>",
-      "<li>Audio, tambayoyi, da ma'anoni — duka offline.</li>",
-      "<li>Daga Nursery zuwa SS3, kowanne darasi yana nan.</li>",
+      "<li>" + ha("Ba a bukatar login. Komai yana ajiye a na'ura.") + "</li>",
+      "<li>" + ha("Audio, tambayoyi, da ma'anoni - duka offline.") + "</li>",
+      "<li>" + ha("Daga Nursery zuwa SS3, kowanne darasi yana nan.") + "</li>",
       "</ul>",
       '<div class="ob-nav ob-nav--end">',
-      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      '<button class="btn" type="button" data-action="onboarding-next">' + ha("Gaba →") + "</button>",
       "</div>",
       "</div>",
     ].join("");
@@ -831,17 +838,17 @@
     return [
       '<div class="ob-step">',
       '<div class="screen-heading">',
-      '<p class="eyebrow">Matakin 2 na 5</p>',
-      "<h2>Sunanka?</h2>",
-      '<p class="screen-copy">Za a yi amfani da sunanka a cikin app. Wannan zaɓi ne — za ka iya bar shi fanko.</p>',
+      '<p class="eyebrow">' + ha("Matakin 2 na 5") + "</p>",
+      "<h2>" + ha("Sunanka?") + "</h2>",
+      '<p class="screen-copy">' + ha("Za a yi amfani da sunanka a cikin app. Wannan zaɓi ne - za ka iya bar shi fanko.") + "</p>",
       "</div>",
       '<div class="ob-field">',
-      '<label class="ob-label" for="ob-name-input">Suna</label>',
-      '<input class="text-input" id="ob-name-input" type="text" placeholder="Misali: Ahmad" maxlength="40" autocomplete="off" value="' + escapeAttribute(onboardingData.displayName) + '" />',
+      '<label class="ob-label" for="ob-name-input">' + ha("Suna") + "</label>",
+      '<input class="text-input" id="ob-name-input" type="text" placeholder="' + ha("Misali: Ahmad") + '" maxlength="40" autocomplete="off" value="' + escapeAttribute(onboardingData.displayName) + '" />',
       "</div>",
       '<div class="ob-nav">',
-      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
-      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
+      '<button class="btn" type="button" data-action="onboarding-next">' + ha("Gaba →") + "</button>",
       "</div>",
       "</div>",
     ].join("");
@@ -851,25 +858,25 @@
     return [
       '<div class="ob-step">',
       '<div class="screen-heading">',
-      '<p class="eyebrow">Matakin 3 na 5</p>',
-      "<h2>Wane ne mai koyo?</h2>",
-      '<p class="screen-copy">Wannan yana taimaka wa AJAMIX wajen nuna tambayoyi da misalai masu dacewa.</p>',
+      '<p class="eyebrow">' + ha("Matakin 3 na 5") + "</p>",
+      "<h2>" + ha("Wane ne mai koyo?") + "</h2>",
+      '<p class="screen-copy">' + ha("Wannan yana taimaka wa AJAMIX wajen nuna tambayoyi da misalai masu dacewa.") + "</p>",
       "</div>",
       '<div class="ob-choice-grid">',
       '<button class="ob-choice' + (onboardingData.learnerType === "child" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-learner-child">',
       '<div class="ob-choice-icon">🧒</div>',
-      "<strong>Yaro</strong>",
-      "<span>Ɗalibi mai shekara 8–18</span>",
+      "<strong>" + ha("Yaro") + "</strong>",
+      "<span>" + ha("Ɗalibi mai shekara 8-18") + "</span>",
       "</button>",
       '<button class="ob-choice' + (onboardingData.learnerType === "adult" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-learner-adult">',
       '<div class="ob-choice-icon">🧑‍🦱</div>',
-      "<strong>Babba</strong>",
-      "<span>Mai koyo a kasuwa ko gida</span>",
+      "<strong>" + ha("Babba") + "</strong>",
+      "<span>" + ha("Mai koyo a kasuwa ko gida") + "</span>",
       "</button>",
       "</div>",
       '<div class="ob-nav">',
-      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
-      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
+      '<button class="btn" type="button" data-action="onboarding-next">' + ha("Gaba →") + "</button>",
       "</div>",
       "</div>",
     ].join("");
@@ -879,25 +886,25 @@
     return [
       '<div class="ob-step">',
       '<div class="screen-heading">',
-      '<p class="eyebrow">Matakin 4 na 5</p>',
-      "<h2>Yaya kake son karatu?</h2>",
-      '<p class="screen-copy">Za ka iya canza wannan daga Settings a kowane lokaci.</p>',
+      '<p class="eyebrow">' + ha("Matakin 4 na 5") + "</p>",
+      "<h2>" + ha("Yaya kake son karatu?") + "</h2>",
+      '<p class="screen-copy">' + ha("Za ka iya canza wannan daga Settings a kowane lokaci.") + "</p>",
       "</div>",
       '<div class="ob-choice-grid">',
       '<button class="ob-choice ob-choice--script' + (onboardingData.scriptMode === "ajami" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-ajami">',
       '<div class="ob-script-sample ajami">أَجَامِي</div>',
-      "<strong>Ajami</strong>",
-      "<span>Rubutun Larabci na Hausa</span>",
+      "<strong>" + ha("Ajami") + "</strong>",
+      "<span>" + ha("Rubutun Larabci na Hausa") + "</span>",
       "</button>",
       '<button class="ob-choice ob-choice--script' + (onboardingData.scriptMode === "latin" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-latin">',
       '<div class="ob-script-sample">Ajami</div>',
-      "<strong>Hausa (Latin)</strong>",
-      "<span>Haruffan boko na Hausa</span>",
+      "<strong>" + ha("Hausa (Latin)") + "</strong>",
+      "<span>" + ha("Haruffan boko na Hausa") + "</span>",
       "</button>",
       "</div>",
       '<div class="ob-nav">',
-      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
-      '<button class="btn" type="button" data-action="onboarding-next">Gaba →</button>',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
+      '<button class="btn" type="button" data-action="onboarding-next">' + ha("Gaba →") + "</button>",
       "</div>",
       "</div>",
     ].join("");
@@ -907,19 +914,19 @@
     return [
       '<div class="ob-step">',
       '<div class="screen-heading">',
-      '<p class="eyebrow">Matakin 5 na 5</p>',
-      "<h2>Wane matakin karatu?</h2>",
-      '<p class="screen-copy">Zabi matakin da ya dace. Za a iya canza wannan daga Settings.</p>',
+      '<p class="eyebrow">' + ha("Matakin 5 na 5") + "</p>",
+      "<h2>" + ha("Wane matakin karatu?") + "</h2>",
+      '<p class="screen-copy">' + ha("Zabi matakin da ya dace. Za a iya canza wannan daga Settings.") + "</p>",
       "</div>",
       '<div class="band-grid">',
-      renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko."),
-      renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko."),
-      renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko."),
-      renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2."),
-      renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3."),
-      renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4."),
-      renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5."),
-      renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6."),
+      renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko.", true),
+      renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko.", true),
+      renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko.", true),
+      renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2.", true),
+      renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3.", true),
+      renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4.", true),
+      renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5.", true),
+      renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6.", true),
       renderGradeBandButton("jss1", "Junior Secondary School Year 1."),
       renderGradeBandButton("jss2", "Junior Secondary School Year 2."),
       renderGradeBandButton("jss3", "Junior Secondary School Year 3."),
@@ -928,19 +935,19 @@
       renderGradeBandButton("ss3", "Senior Secondary School Year 3."),
       "</div>",
       '<div class="ob-nav">',
-      '<button class="ghost-btn" type="button" data-action="onboarding-back">← Baya</button>',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
       "</div>",
       "</div>",
     ].join("");
   }
 
-  function renderGradeBandButton(gradeBand, description) {
+  function renderGradeBandButton(gradeBand, description, isHausaDescription) {
     var moduleCount = (state.modules || []).filter(function (m) {
       return m.gradeband === gradeBand;
     }).length;
     var hasBadge = moduleCount > 0
-      ? '<span class="band-badge band-badge--live">' + moduleCount + ' darasi</span>'
-      : '<span class="band-badge band-badge--soon">Nan gaba</span>';
+      ? '<span class="band-badge band-badge--live">' + ha(String(moduleCount) + " darasi") + "</span>"
+      : '<span class="band-badge band-badge--soon">' + ha("Nan gaba") + "</span>";
     return [
       '<button class="band-option' + (moduleCount === 0 ? ' band-option--empty' : '') + '" type="button"',
       ' data-grade-band="' + escapeAttribute(gradeBand) + '">',
@@ -948,7 +955,7 @@
       '<strong class="band-option-label">' + escapeHtml(getGradeBandLabel(gradeBand)) + '</strong>',
       hasBadge,
       '</div>',
-      '<span class="option-copy">' + escapeHtml(description) + "</span>",
+      '<span class="option-copy">' + (isHausaDescription ? ha(description) : escapeHtml(description)) + "</span>",
       "</button>",
     ].join("");
   }
@@ -959,8 +966,8 @@
     if (!module) {
       return [
         '<section class="screen-panel">',
-        "<h2>Quiz din wannan darasi bai samu ba.</h2>",
-        '<button class="btn" data-route="#/learning-path" type="button">Koma baya</button>',
+        "<h2>" + ha("Quiz din wannan darasi bai samu ba.") + "</h2>",
+        '<button class="btn" data-route="#/learning-path" type="button">' + ha("Koma baya") + "</button>",
         "</section>",
       ].join("");
     }
@@ -973,10 +980,10 @@
       return [
         '<section class="screen-panel">',
         '<p class="eyebrow">Quiz</p>',
-        "<h2>Ba a iya fara quiz yanzu ba.</h2>",
+        "<h2>" + ha("Ba a iya fara quiz yanzu ba.") + "</h2>",
         '<button class="btn" data-action="retake-quiz" data-module-id="' +
           escapeAttribute(module.id) +
-          '" type="button">Sake lodawa</button>',
+          '" type="button">' + ha("Sake lodawa") + "</button>",
         "</section>",
       ].join("");
     }
@@ -994,8 +1001,8 @@
         '<div class="btn-row">',
         '<button class="btn btn-primary" type="button" data-action="retake-quiz" data-module-id="' +
           escapeAttribute(module.id) +
-          '">Sake gwadawa</button>',
-        '<button class="ghost-btn" data-route="#/learning-path" type="button">Koma baya</button>',
+          '">' + ha("Sake gwadawa") + "</button>",
+        '<button class="ghost-btn" data-route="#/learning-path" type="button">' + ha("Koma baya") + "</button>",
         "</div>",
         "</section>",
       ].join("");
@@ -1012,10 +1019,10 @@
       return [
         '<section class="screen-panel quiz-shell">',
         '<p class="eyebrow">Quiz</p>',
-        "<h2>Tambayoyin quiz ba su cika ba.</h2>",
+        "<h2>" + ha("Tambayoyin quiz ba su cika ba.") + "</h2>",
         '<button class="btn" type="button" data-action="retake-quiz" data-module-id="' +
           escapeAttribute(module.id) +
-          '">Sake quiz</button>',
+          '">' + ha("Sake quiz") + "</button>",
         "</section>",
       ].join("");
     }
@@ -1054,10 +1061,10 @@
     var feedbackMarkup = "";
 
     if (session.feedbackState === "correct") {
-      feedbackMarkup = '<p class="quiz-feedback is-correct">Daidai ne. Mu je tambaya ta gaba.</p>';
+      feedbackMarkup = '<p class="quiz-feedback is-correct">' + ha("Daidai ne. Mu je tambaya ta gaba.") + "</p>";
     } else if (session.feedbackState === "incorrect") {
       feedbackMarkup =
-        '<p class="quiz-feedback is-wrong">Ba daidai ba. Amsa ita ce ' +
+        '<p class="quiz-feedback is-wrong">' + ha("Ba daidai ba. Amsa ita ce ") +
         escapeHtml(question.correctAnswer) +
         ".</p>";
     }
@@ -1071,11 +1078,11 @@
           ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
           : escapeHtml(getDisplayTitle(module))) +
         "</h2>",
-      "<p class=\"screen-copy\">Ka amsa tambaya daya bayan daya. AJAMIX za ta duba sakamakon ta atomatik.</p>",
+      '<p class="screen-copy">' + ha("Ka amsa tambaya daya bayan daya. AJAMIX za ta duba sakamakon ta atomatik.") + "</p>",
       "</div>",
       '<div class="quiz-progress-row">',
       '<span class="pill quiz-progress-pill">' + escapeHtml(String(session.currentIndex + 1)) + "/" + escapeHtml(String(totalQuestions)) + "</span>",
-      '<span class="pill quiz-score-pill">Maki ' + escapeHtml(String(session.score)) + "</span>",
+      '<span class="pill quiz-score-pill">' + ha("Maki ") + escapeHtml(String(session.score)) + "</span>",
       "</div>",
       '<article class="quiz-question-card">',
       '<p class="quiz-question-text' + (state.settings.scriptMode === "ajami" ? ' ajami' : "") + '">' +
@@ -1085,7 +1092,7 @@
       feedbackMarkup,
       "</article>",
       '<div class="btn-row">',
-      '<button class="ghost-btn" data-route="#/learning-path" type="button">Koma baya</button>',
+      '<button class="ghost-btn" data-route="#/learning-path" type="button">' + ha("Koma baya") + "</button>",
       "</div>",
       "</section>",
     ].join("");
@@ -1111,15 +1118,16 @@
     var resultBanner = state.quizResults
       ? [
           '<section class="screen-panel">',
-          '<p class="eyebrow">Sabon sakamako</p>',
-          "<h2>" + escapeHtml(state.quizResults.moduleTitle) + "</h2>",
-          "<p>Ka samu " +
-            state.quizResults.score +
-            " cikin " +
-            state.quizResults.total +
+          '<p class="eyebrow">' + ha("Sabon sakamako") + "</p>",
+          "<h2>" + ha(state.quizResults.moduleTitle) + "</h2>",
+          "<p>" + ha("Ka samu ") +
+            escapeHtml(String(state.quizResults.score)) +
+            ha(" cikin ") +
+            escapeHtml(String(state.quizResults.total)) +
             (state.quizResults.passed
-              ? " a quiz na baya-bayan nan. An bude mataki na gaba idan akwai shi.</p>"
-              : " a quiz na baya-bayan nan. Ka sake gwadawa domin ka kai maki 3/5.</p>") +
+              ? ha(" a quiz na baya-bayan nan. An bude mataki na gaba idan akwai shi.")
+              : ha(" a quiz na baya-bayan nan. Ka sake gwadawa domin ka kai maki 3/5.")) +
+            "</p>" +
             '<span class="pill">AUTO_VERIFIED</span>',
           "</section>",
         ].join("")
@@ -1134,27 +1142,27 @@
           '<article class="metric-panel module-progress-card">',
           '<div class="progress-row">',
           '<div class="screen-stack">',
-          "<strong>" + escapeHtml(module.titleHa) + "</strong>",
+          "<strong>" + ha(module.titleHa) + "</strong>",
           '<span class="ajami">' + formatAjamiText(module.titleAjami) + "</span>",
           "</div>",
-          '<span class="' + getStatusBadgeClass(moduleMetrics.status) + '">' + escapeHtml(getStatusCopy(moduleMetrics.status)) + "</span>",
+          '<span class="' + getStatusBadgeClass(moduleMetrics.status) + '">' + getStatusCopy(moduleMetrics.status) + "</span>",
           "</div>",
           '<div class="module-progress-metrics">',
           '<span class="pill">Audio ' + escapeHtml(String(moduleMetrics.audioPct)) + "%</span>",
-          '<span class="pill">Tsayawa ' +
+          '<span class="pill">' + ha("Tsayawa ") +
             escapeHtml(String(moduleMetrics.microPauseCorrect)) +
             "/" +
             escapeHtml(String(moduleMetrics.microPauseTotal)) +
             " · " +
             escapeHtml(String(moduleMetrics.microPauseAccuracy)) +
             '%</span>',
-          '<span class="pill">Quiz ' + escapeHtml(moduleMetrics.quizScoreText) + "</span>",
+          '<span class="pill">Quiz ' + ha(moduleMetrics.quizScoreText) + "</span>",
           "</div>",
           '<div class="module-progress-bars">',
           '<div class="progress-stat-row"><span>Audio</span><div class="progress-stat-rail"><span class="progress-stat-fill is-audio" style="width: ' +
             escapeAttribute(String(moduleMetrics.audioPct)) +
             '%;"></span></div></div>',
-          '<div class="progress-stat-row"><span>Tsayawa</span><div class="progress-stat-rail"><span class="progress-stat-fill is-micro" style="width: ' +
+          '<div class="progress-stat-row"><span>' + ha("Tsayawa") + '</span><div class="progress-stat-rail"><span class="progress-stat-fill is-micro" style="width: ' +
             escapeAttribute(String(moduleMetrics.microPauseAccuracy)) +
             '%;"></span></div></div>',
           '<div class="progress-stat-row"><span>Quiz</span><div class="progress-stat-rail"><span class="progress-stat-fill is-quiz" style="width: ' +
@@ -1163,7 +1171,7 @@
           "</div>",
           '<div class="helper-row">',
           "<span>Attempts: " + escapeHtml(String(record.attempts || 0)) + "</span>",
-          "<span>" + escapeHtml(getLastActivityCopy(record)) + "</span>",
+          "<span>" + getLastActivityCopy(record) + "</span>",
           "</div>",
           "</article>",
         ].join("");
@@ -1174,30 +1182,30 @@
       resultBanner,
       '<section class="screen-panel progress-overview-screen">',
       '<div class="screen-heading">',
-      '<p class="eyebrow">Ci gaba</p>',
-      "<h2>Abin da aka kammala a " + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + "</h2>",
-      "<p class=\"screen-copy\">Flame streak yana nuna yawan ranakun da aka ci gaba da koyon lissafi, sannan kowane module yana nuna audio, tsayawar fahimta, da quiz.</p>",
+      '<p class="eyebrow">' + ha("Ci gaba") + "</p>",
+      "<h2>" + ha("Abin da aka kammala a ") + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + "</h2>",
+      '<p class="screen-copy">' + ha("Flame streak yana nuna yawan ranakun da aka ci gaba da koyon lissafi, sannan kowane module yana nuna audio, tsayawar fahimta, da quiz.") + "</p>",
       "</div>",
       '<article class="metric-panel streak-panel">',
       '<div class="progress-row">',
-      "<strong>Wutar ranaku</strong>",
-      '<span class="status-badge path-badge is-' + escapeAttribute(streakData.streakState) + '">' + escapeHtml(getStreakStateCopy(streakData.streakState)) + "</span>",
+      "<strong>" + ha("Wutar ranaku") + "</strong>",
+      '<span class="status-badge path-badge is-' + escapeAttribute(streakData.streakState) + '">' + getStreakStateCopy(streakData.streakState) + "</span>",
       "</div>",
       '<div class="flame-streak">' + renderFlames(streakData, STREAK_VISUAL_COUNT) + "</div>",
-      '<div class="streak-summary"><strong>' + escapeHtml(String(streakData.streakDays || 0)) + '</strong><span>Ranaku a streak</span></div>',
-      '<p class="helper-text">' + escapeHtml(getStreakSupportCopy(streakData)) + "</p>",
+      '<div class="streak-summary"><strong>' + escapeHtml(String(streakData.streakDays || 0)) + "</strong><span>" + ha("Ranaku a streak") + "</span></div>",
+      '<p class="helper-text">' + getStreakSupportCopy(streakData) + "</p>",
       "</article>",
       '<div class="path-progress-shell">',
       '<div class="path-progress-copy"><strong>' +
         completedCount +
         "/" +
         selectedModules.length +
-        '</strong><span>Modules an wuce</span></div>',
+        "</strong><span>" + ha("Modules an wuce") + "</span></div>",
       '<div class="path-progress-rail"><span class="path-progress-fill" style="width: ' + progressPct + '%;"></span></div>',
       "</div>",
       '<div class="metrics-grid">',
-      '<article class="metric-panel"><span>An fara modules</span><strong>' + startedCount + "</strong></article>",
-      '<article class="metric-panel"><span>Modules da aka gama</span><strong>' + completedCount + "</strong></article>",
+      '<article class="metric-panel"><span>' + ha("An fara modules") + "</span><strong>" + startedCount + "</strong></article>",
+      '<article class="metric-panel"><span>' + ha("Modules da aka gama") + "</span><strong>" + completedCount + "</strong></article>",
       '<article class="metric-panel"><span>Best quiz total</span><strong>' +
         bestScoreTotal +
         "/" +
@@ -1215,25 +1223,25 @@
           .map(function (item) {
             return [
               '<li class="glossary-item">',
-              "<strong>" + escapeHtml(getGlossaryHausa(item)) + "</strong>",
+              "<strong>" + ha(getGlossaryHausa(item)) + "</strong>",
               '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>",
-              "<span>" + escapeHtml(getGlossaryMeaningHa(item)) + "</span>",
+              "<span>" + ha(getGlossaryMeaningHa(item)) + "</span>",
               '<span class="muted-copy">' + escapeHtml(getGlossaryMeaningEn(item)) + "</span>",
               "</li>",
             ].join("");
           })
           .join("")
-      : '<li class="glossary-item">Babu bayanan glossary a cikin bundle yanzu.</li>';
+      : '<li class="glossary-item">' + ha("Babu bayanan glossary a cikin bundle yanzu.") + "</li>";
 
     return [
       '<section class="screen-panel">',
       '<div class="screen-back-row">',
-      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">← Komawa</button>',
+      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">' + ha("← Komawa") + "</button>",
       '</div>',
       '<div class="screen-heading">',
       '<p class="eyebrow">Glossary</p>',
-      "<h2>Kalmomin lissafi cikin Hausa da Ajami</h2>",
-      "<p class=\"screen-copy\">Wannan sashe yana nuna kalmomi na kowa da aka fi amfani da su a modules. Ana iya fadada shi daga content bundle ko pipeline na CSV.</p>",
+      "<h2>" + ha("Kalmomin lissafi cikin Hausa da Ajami") + "</h2>",
+      '<p class="screen-copy">' + ha("Wannan sashe yana nuna kalmomi na kowa da aka fi amfani da su a modules. Ana iya fadada shi daga content bundle ko pipeline na CSV.") + "</p>",
       "</div>",
       '<ul class="glossary-list">' + glossaryItems + "</ul>",
       "</section>",
@@ -1253,8 +1261,8 @@
             return [
               '<li class="download-item">',
               '<div class="progress-row">',
-              "<strong>" + escapeHtml(item.titleHa) + "</strong>",
-              '<span class="' + getDownloadStatusBadgeClass(item.status) + '">' + escapeHtml(getDownloadStatusCopy(item.status)) + "</span>",
+              "<strong>" + ha(item.titleHa) + "</strong>",
+              '<span class="' + getDownloadStatusBadgeClass(item.status) + '">' + getDownloadStatusCopy(item.status) + "</span>",
               "</div>",
               '<span class="muted-copy">' +
                 escapeHtml(item.url) +
@@ -1267,36 +1275,36 @@
             ].join("");
           })
           .join("")
-      : '<li class="download-item">Babu audio files na wannan grade band a bundle din yanzu.</li>';
+      : '<li class="download-item">' + ha("Babu audio files na wannan grade band a bundle din yanzu.") + "</li>";
 
     return [
       '<section class="screen-panel download-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Download Audio</p>',
-      "<h2>Adana sautukan " + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + " domin offline</h2>",
-      "<p class=\"screen-copy\">Zaka iya sauke duk audio na wannan mataki yanzu, ko kuma ka bar AJAMIX ta yi streaming a lokacin da ake bukata idan akwai intanet.</p>",
+      "<h2>" + ha("Adana sautukan ") + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + ha(" domin offline") + "</h2>",
+      '<p class="screen-copy">' + ha("Zaka iya sauke duk audio na wannan mataki yanzu, ko kuma ka bar AJAMIX ta yi streaming a lokacin da ake bukata idan akwai intanet.") + "</p>",
       "</div>",
       '<div class="metrics-grid">',
-      '<article class="metric-panel"><span>Fayiloli</span><strong>' + completedCount + "/" + totalFiles + "</strong></article>",
-      '<article class="metric-panel"><span>Kimanin girma</span><strong>' + escapeHtml(totalSizeCopy) + "</strong></article>",
-      '<article class="metric-panel"><span>Yanayi</span><strong>' + escapeHtml(getDownloadStatusCopy(session.status)) + "</strong></article>",
+      '<article class="metric-panel"><span>' + ha("Fayiloli") + "</span><strong>" + completedCount + "/" + totalFiles + "</strong></article>",
+      '<article class="metric-panel"><span>' + ha("Kimanin girma") + "</span><strong>" + escapeHtml(totalSizeCopy) + "</strong></article>",
+      '<article class="metric-panel"><span>' + ha("Yanayi") + "</span><strong>" + getDownloadStatusCopy(session.status) + "</strong></article>",
       "</div>",
       '<div class="btn-row">',
       '<button class="btn" type="button" data-action="start-audio-download"' +
         (!state.connectivity || !session.items.length || session.active ? " disabled" : "") +
         ">" +
-        escapeHtml(session.readyForOffline ? "Sake duba audio" : "Download All") +
+        (session.readyForOffline ? ha("Sake duba audio") : "Download All") +
         "</button>",
-      '<button class="ghost-btn" type="button" data-action="skip-audio-download">Tsallake yanzu</button>',
+      '<button class="ghost-btn" type="button" data-action="skip-audio-download">' + ha("Tsallake yanzu") + "</button>",
       "</div>",
       session.readyForOffline
-        ? '<article class="metric-panel ready-offline-panel"><strong>Ready for offline!</strong><span>Audio na wannan mataki ya shiga na\'urar, kuma darussa za su yi aiki ko da babu intanet.</span></article>'
+        ? '<article class="metric-panel ready-offline-panel"><strong>Ready for offline!</strong><span>' + ha("Audio na wannan mataki ya shiga na'urar, kuma darussa za su yi aiki ko da babu intanet.") + "</span></article>"
         : "",
-      session.error ? '<p class="helper-text">' + escapeHtml(session.error) + "</p>" : "",
-      !state.connectivity ? '<p class="helper-text">Kana offline yanzu. Download audio yana bukatar network idan ba a taba adana fayil din ba.</p>' : "",
+      session.error ? '<p class="helper-text">' + ha(session.error) + "</p>" : "",
+      !state.connectivity ? '<p class="helper-text">' + ha("Kana offline yanzu. Download audio yana bukatar network idan ba a taba adana fayil din ba.") + "</p>" : "",
       '<ul class="settings-list download-list">' + downloadItems + "</ul>",
       session.readyForOffline
-        ? '<button class="btn" type="button" data-route="#/learning-path">Shiga koyo</button>'
+        ? '<button class="btn" type="button" data-route="#/learning-path">' + ha("Shiga koyo") + "</button>"
         : "",
       "</section>",
     ].join("");
@@ -1307,30 +1315,30 @@
     var storageCopy = state.storageEstimate
       ? formatBytes(state.storageEstimate.usage || 0) +
         (state.storageEstimate.quota ? " / " + formatBytes(state.storageEstimate.quota) : "")
-      : "Ana lissafawa...";
+      : ha("Ana lissafawa...");
     var audioStorageCopy = state.storageEstimate
       ? formatBytes(state.storageEstimate.audioBytes || 0)
-      : "Ana lissafawa...";
+      : ha("Ana lissafawa...");
 
     return [
       '<section class="screen-panel settings-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Settings</p>',
-      "<h2>Saituna na wannan na'ura</h2>",
-      "<p class=\"screen-copy\">Ba a hada asusu ba. Ana adana settings, content, da progress a IndexedDB a cikin wannan browser.</p>",
+      "<h2>" + ha("Saituna na wannan na'ura") + "</h2>",
+      '<p class="screen-copy">' + ha("Ba a hada asusu ba. Ana adana settings, content, da progress a IndexedDB a cikin wannan browser.") + "</p>",
       "</div>",
       '<div class="settings-grid">',
       '<article class="settings-panel">',
       "<h3>Grade band</h3>",
       '<div class="band-grid">',
-      renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko."),
-      renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko."),
-      renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko."),
-      renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2."),
-      renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3."),
-      renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4."),
-      renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5."),
-      renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6."),
+      renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko.", true),
+      renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko.", true),
+      renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko.", true),
+      renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2.", true),
+      renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3.", true),
+      renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4.", true),
+      renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5.", true),
+      renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6.", true),
       renderGradeBandButton("jss1", "Junior Secondary School Year 1."),
       renderGradeBandButton("jss2", "Junior Secondary School Year 2."),
       renderGradeBandButton("jss3", "Junior Secondary School Year 3."),
@@ -1341,23 +1349,23 @@
       "</article>",
       '<article class="settings-panel">',
       '<div class="settings-section">',
-      "<h3>Salon rubutu</h3>",
+      "<h3>" + ha("Salon rubutu") + "</h3>",
       '<div class="ob-choice-grid ob-choice-grid--compact">',
       '<button class="ob-choice' + (state.settings.scriptMode === "ajami" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-ajami">',
       '<div class="ob-script-sample ajami">أَجَامِي</div>',
-      "<strong>Ajami</strong>",
+      "<strong>" + ha("Ajami") + "</strong>",
       "</button>",
       '<button class="ob-choice' + (state.settings.scriptMode === "latin" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-latin">',
       '<div class="ob-script-sample">Ajami</div>',
-      "<strong>Hausa</strong>",
+      "<strong>" + ha("Hausa") + "</strong>",
       "</button>",
       "</div>",
       '<div class="script-preview' + (state.settings.scriptMode === "ajami" ? ' ajami' : '') + '">',
       state.settings.scriptMode === "ajami"
         ? '<p>' + formatAjamiText(romanToAjami("Ina zuwa kasuwa")) + '</p>'
-        : '<p>Ina zuwa kasuwa</p>',
+        : '<p>' + ha("Ina zuwa kasuwa") + "</p>",
       '<p class="script-preview-label">(' +
-        (state.settings.scriptMode === "ajami" ? "Ajami" : "Hausa Latin") +
+        (state.settings.scriptMode === "ajami" ? ha("Ajami") : ha("Hausa Latin")) +
         ')</p>',
       '</div>',
       "</div>",
@@ -1380,20 +1388,20 @@
         ' /> Reduced motion</label></li>',
       "</ul>",
       '<div class="screen-stack">',
-      '<span class="pill">Audio status: ' + escapeHtml(getDownloadStatusCopy(audioState.status)) + "</span>",
-      '<span class="pill">Storage used: ' + escapeHtml(storageCopy) + "</span>",
-      '<span class="pill">Audio stored: ' + escapeHtml(audioStorageCopy) + "</span>",
+      '<span class="pill">Audio status: ' + getDownloadStatusCopy(audioState.status) + "</span>",
+      '<span class="pill">Storage used: ' + storageCopy + "</span>",
+      '<span class="pill">Audio stored: ' + audioStorageCopy + "</span>",
       "</div>",
       '<div class="btn-row">',
-      '<button class="secondary-btn" type="button" data-action="open-download-center">Bude download audio</button>',
-      '<button class="ghost-btn" type="button" data-action="delete-completed-audio">Goge audio na modules da aka gama</button>',
+      '<button class="secondary-btn" type="button" data-action="open-download-center">' + ha("Bude download audio") + "</button>",
+      '<button class="ghost-btn" type="button" data-action="delete-completed-audio">' + ha("Goge audio na modules da aka gama") + "</button>",
       "</div>",
       "</article>",
       "</div>",
       '<div class="helper-row"><span class="pill">Bundle: ' +
         escapeHtml(state.settings.contentVersion || "sample-bundle") +
         '</span><span class="pill">IndexedDB stores: settings, modules, audioCache, progress, glossary</span></div>',
-      '<button class="ghost-btn" type="button" data-action="reset-progress">Share progress a wannan na\'ura</button>',
+      '<button class="ghost-btn" type="button" data-action="reset-progress">' + ha("Share progress a wannan na'ura") + "</button>",
       "</section>",
     ].join("");
   }
@@ -1405,8 +1413,8 @@
       banners.push(
         [
           '<section class="app-banner is-shell-update">',
-          "<strong>Sabon sigar AJAMIX ta iso.</strong>",
-          '<button class="secondary-btn" type="button" data-action="reload-app">Sabunta app</button>',
+          "<strong>" + ha("Sabon sigar AJAMIX ta iso.") + "</strong>",
+          '<button class="secondary-btn" type="button" data-action="reload-app">' + ha("Sabunta app") + "</button>",
           "</section>",
         ].join("")
       );
@@ -1417,13 +1425,11 @@
         [
           '<section class="app-banner is-content-update">',
           "<strong>" +
-            escapeHtml(
-              state.contentUpdateBanner.error
-                ? state.contentUpdateBanner.error
-                : "Sabon abun ciki yana samuwa."
-            ) +
+            (state.contentUpdateBanner.error
+              ? escapeHtml(state.contentUpdateBanner.error)
+              : ha("Sabon abun ciki yana samuwa.")) +
             "</strong>",
-          '<button class="secondary-btn" type="button" data-action="apply-content-update">Sabunta yanzu</button>',
+          '<button class="secondary-btn" type="button" data-action="apply-content-update">' + ha("Sabunta yanzu") + "</button>",
           "</section>",
         ].join("")
       );
@@ -1434,9 +1440,9 @@
 
   function renderTabs() {
     var tabs = [
-      { name: "learning-path", label: "Koyo", route: "#/learning-path" },
-      { name: "progress", label: "Ci gaba", route: "#/progress" },
-      { name: "glossary", label: "Kalmomi", route: "#/glossary" },
+      { name: "learning-path", label: ha("Koyo"), route: "#/learning-path" },
+      { name: "progress", label: ha("Ci gaba"), route: "#/progress" },
+      { name: "glossary", label: ha("Kalmomi"), route: "#/glossary" },
     ];
 
     return [
@@ -1449,7 +1455,7 @@
               '" type="button" data-route="' +
               escapeAttribute(tab.route) +
               '">',
-            escapeHtml(tab.label),
+            tab.label,
             "</button>",
           ].join("");
         })
@@ -1610,26 +1616,26 @@
 
   function getStreakStateCopy(stateName) {
     if (stateName === "bright") {
-      return "Yana haske";
+      return ha("Yana haske");
     }
 
     if (stateName === "dim") {
-      return "Ya dan dusashe";
+      return ha("Ya dan dusashe");
     }
 
-    return "A kashe";
+    return ha("A kashe");
   }
 
   function getStreakSupportCopy(streakData) {
     if (!streakData.lastActivityDate || streakData.streakState === "out") {
-      return "Ka fara sabuwar streak ta yau ta hanyar shiga darasi ko quiz.";
+      return ha("Ka fara sabuwar streak ta yau ta hanyar shiga darasi ko quiz.");
     }
 
     if (streakData.streakState === "dim") {
-      return "An yi kwanaki kadan ba tare da koyon lissafi ba. Ka dawo yau domin wutar ta sake karfi.";
+      return ha("An yi kwanaki kadan ba tare da koyon lissafi ba. Ka dawo yau domin wutar ta sake karfi.");
     }
 
-    return "Kana kan hanya mai kyau. Ci gaba da buda darasi ko quiz kullum domin streak ta dore.";
+    return ha("Kana kan hanya mai kyau. Ci gaba da buda darasi ko quiz kullum domin streak ta dore.");
   }
 
   function getModuleProgressMetrics(module, record) {
@@ -1667,14 +1673,14 @@
 
   function getLastActivityCopy(record) {
     if (record.completedAt) {
-      return "An gama";
+      return ha("An gama");
     }
 
     if (record.lastAccessedAt) {
-      return "An taba budewa";
+      return ha("An taba budewa");
     }
 
-    return "Ba a fara ba";
+    return ha("Ba a fara ba");
   }
 
   async function syncActiveScreen() {
@@ -1756,18 +1762,18 @@
 
   function getPathStateCopy(stateName) {
     if (stateName === "completed") {
-      return "An wuce";
+      return ha("An wuce");
     }
 
     if (stateName === "in-progress") {
-      return "Ana yi";
+      return ha("Ana yi");
     }
 
     if (stateName === "available") {
-      return "A bude";
+      return ha("A bude");
     }
 
-    return "A kulle";
+    return ha("A kulle");
   }
 
   function getPathBadgeClass(stateName) {
@@ -2079,7 +2085,7 @@
 
     return [
       '<div class="micro-pause-card is-active" role="dialog" aria-modal="true" aria-labelledby="micro-pause-question" aria-live="assertive">',
-      '<p class="eyebrow">Tsayawar fahimta ' + (session.activePauseIndex + 1) + "</p>",
+      '<p class="eyebrow">' + ha("Tsayawar fahimta ") + escapeHtml(String(session.activePauseIndex + 1)) + "</p>",
       '<h3 id="micro-pause-question"' + (state.settings.scriptMode === "ajami" ? ' class="ajami"' : "") + '>' +
         getDisplayQuestion(pause.questionHa, pause.questionAjami) +
         "</h3>",
@@ -2098,7 +2104,7 @@
         })
         .join(""),
       "</div>",
-      '<p class="helper-text">Audio ya tsaya har sai ka zabi amsa daya.</p>',
+      '<p class="helper-text">' + ha("Audio ya tsaya har sai ka zabi amsa daya.") + "</p>",
       "</div>",
     ].join("");
   }
@@ -2115,23 +2121,23 @@
             ? "active"
             : "pending";
         var responseCopy = savedRecord
-          ? '<span class="pill">Lokaci: ' + escapeHtml(formatMilliseconds(savedRecord.responseTimeMs)) + "</span>"
-          : '<span class="pill">A ' + escapeHtml(formatMilliseconds(pause.pauseAtMs)) + "</span>";
+          ? '<span class="pill">' + ha("Lokaci: ") + escapeHtml(formatMilliseconds(savedRecord.responseTimeMs)) + "</span>"
+          : '<span class="pill">' + ha("A ") + escapeHtml(formatMilliseconds(pause.pauseAtMs)) + "</span>";
         var answerCopy = savedRecord
-          ? '<span class="pill">Amsa: ' + escapeHtml(savedRecord.selectedAnswer) + "</span>"
-          : '<span class="pill">Options: ' + escapeHtml(pause.options.join(", ")) + "</span>";
+          ? '<span class="pill">' + ha("Amsa: ") + escapeHtml(savedRecord.selectedAnswer) + "</span>"
+          : '<span class="pill">' + ha("Options: ") + escapeHtml(pause.options.join(", ")) + "</span>";
 
         return [
           '<li class="micro-pause-item is-' + escapeAttribute(stateName) + '">',
           '<div class="module-title-row">',
-          "<strong>Tsayawa " + (index + 1) + "</strong>",
+          "<strong>" + ha("Tsayawa ") + escapeHtml(String(index + 1)) + "</strong>",
           '<span class="status-badge micro-state is-' +
             escapeAttribute(stateName) +
             '">' +
-            escapeHtml(getMicroPauseStateCopy(stateName)) +
+            getMicroPauseStateCopy(stateName) +
             "</span>",
           "</div>",
-          "<p>" + escapeHtml(pause.questionHa) + "</p>",
+          "<p>" + ha(pause.questionHa) + "</p>",
           '<div class="helper-row">' + responseCopy + answerCopy + "</div>",
           "</li>",
         ].join("");
@@ -2141,18 +2147,18 @@
 
   function getMicroPauseStateCopy(stateName) {
     if (stateName === "correct") {
-      return "Daidai";
+      return ha("Daidai");
     }
 
     if (stateName === "wrong") {
-      return "A sake dubawa";
+      return ha("A sake dubawa");
     }
 
     if (stateName === "active") {
-      return "Yanzu";
+      return ha("Yanzu");
     }
 
-    return "Ana jira";
+    return ha("Ana jira");
   }
 
   function findPauseRecord(record, pauseIndex) {
@@ -2186,7 +2192,7 @@
 
   function renderLessonGlossaryChips(terms, selectedKey) {
     if (!terms.length) {
-      return '<span class="muted-copy">Babu kalmomin glossary da suka dace da wannan darasi a bundle din yanzu.</span>';
+      return '<span class="muted-copy">' + ha("Babu kalmomin glossary da suka dace da wannan darasi a bundle din yanzu.") + "</span>";
     }
 
     return terms
@@ -2198,7 +2204,7 @@
           '" type="button" data-action="toggle-glossary-term" data-term-key="' +
           escapeAttribute(key) +
           '">' +
-          escapeHtml(getGlossaryHausa(item)) +
+          ha(getGlossaryHausa(item)) +
           "</button>"
         );
       })
@@ -2207,14 +2213,14 @@
 
   function renderLessonGlossaryDetail(item) {
     if (!item) {
-      return "<p>Taɓa kalma daya domin ganin ma'anarta cikin Hausa da Ajami.</p>";
+      return "<p>" + ha("Taɓa kalma daya domin ganin ma'anarta cikin Hausa da Ajami.") + "</p>";
     }
 
     return [
       '<div class="screen-stack">',
-      "<strong>" + escapeHtml(getGlossaryHausa(item)) + "</strong>",
+      "<strong>" + ha(getGlossaryHausa(item)) + "</strong>",
       getGlossaryAjami(item) ? '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>" : "",
-      getGlossaryMeaningHa(item) ? "<span>" + escapeHtml(getGlossaryMeaningHa(item)) + "</span>" : "",
+      getGlossaryMeaningHa(item) ? "<span>" + ha(getGlossaryMeaningHa(item)) + "</span>" : "",
       getGlossaryMeaningEn(item) ? '<span class="muted-copy">' + escapeHtml(getGlossaryMeaningEn(item)) + "</span>" : "",
       "</div>",
     ].join("");
@@ -2350,7 +2356,7 @@
       '<div class="caregiver-entry-icon">🌱</div>',
       '<div class="caregiver-entry-text">',
       "<strong>Caregiver Mode</strong>",
-      "<span>Ayyuka don yara shekara 0–3</span>",
+      "<span>" + ha("Ayyuka don yara shekara 0-3") + "</span>",
       "</div>",
       '<span class="caregiver-arrow">▶</span>',
       "</a>",
@@ -2361,8 +2367,8 @@
       return [
         caregiverEntryMarkup,
         '<section class="screen-panel">',
-        "<h2>Babu darussa a wannan matakin yanzu.</h2>",
-        "<p>Canza grade band daga Settings ko sabunta content bundle domin ganin karin modules.</p>",
+        "<h2>" + ha("Babu darussa a wannan matakin yanzu.") + "</h2>",
+        "<p>" + ha("Canza grade band daga Settings ko sabunta content bundle domin ganin karin modules.") + "</p>",
         "</section>",
       ].join("");
     }
@@ -2380,10 +2386,10 @@
         var quizCopy =
           typeof record.bestScore === "number"
             ? "Quiz " + escapeHtml(String(record.bestScore)) + "/" + escapeHtml(String(module.quizQuestions.length))
-            : "Quiz ba a fara ba";
+            : ha("Quiz ba a fara ba");
         var listenCopy =
           record.lastAudioPositionSec > 5
-            ? "Ci gaba daga " + escapeHtml(formatSeconds(record.lastAudioPositionSec))
+            ? ha("Ci gaba daga ") + escapeHtml(formatSeconds(record.lastAudioPositionSec))
             : "Audio " + escapeHtml(String(record.audioListenedPct || 0)) + "%";
 
         return [
@@ -2398,14 +2404,14 @@
           "</div>",
           '<div class="module-item path-card">',
           '<div class="path-card-header">',
-          '<span class="path-module-number">Darasi ' + escapeHtml(String(module.moduleNumber)) + "</span>",
-          '<span class="' + getPathBadgeClass(entry.state) + '">' + escapeHtml(getPathStateCopy(entry.state)) + "</span>",
+          '<span class="path-module-number">' + ha("Darasi ") + escapeHtml(String(module.moduleNumber)) + "</span>",
+          '<span class="' + getPathBadgeClass(entry.state) + '">' + getPathStateCopy(entry.state) + "</span>",
           "</div>",
           state.settings.scriptMode === "ajami"
             ? '<p class="ajami path-title-ajami">' + formatAjamiText(module.titleAjami || romanToAjami(module.titleHa || "")) + "</p>"
-            : '<p class="path-title-hausa path-title-primary">' + escapeHtml(module.titleHa || "") + "</p>",
+            : '<p class="path-title-hausa path-title-primary">' + ha(module.titleHa || "") + "</p>",
           state.settings.scriptMode === "ajami"
-            ? '<p class="path-title-hausa">' + escapeHtml(module.titleHa || "") + "</p>"
+            ? '<p class="path-title-hausa">' + ha(module.titleHa || "") + "</p>"
             : "",
           '<div class="path-meta-row"><span class="path-meta-item">' +
             listenCopy +
@@ -2414,8 +2420,8 @@
             "</span></div>",
           '<div class="path-node-hint"><span>' +
             (isLocked
-              ? "Wannan module zai bude idan ka ci na baya da 3/5."
-              : "Taɓa domin bude darasi.") +
+              ? ha("Wannan module zai bude idan ka ci na baya da 3/5.")
+              : ha("Taɓa domin bude darasi.")) +
             "</span></div>",
           "</div>",
           "</button>",
@@ -2427,25 +2433,25 @@
       caregiverEntryMarkup,
       '<section class="screen-panel path-overview">',
       '<div class="screen-heading">',
-      '<p class="eyebrow">Hanyar koyo</p>',
+      '<p class="eyebrow">' + ha("Hanyar koyo") + "</p>",
       "<h2>" + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + " learning path</h2>",
-      "<p class=\"screen-copy\">Modules suna bude daya bayan daya. Ka ci quiz da aƙalla 3/5 domin bude darasi na gaba.</p>",
+      '<p class="screen-copy">' + ha("Modules suna bude daya bayan daya. Ka ci quiz da aƙalla 3/5 domin bude darasi na gaba.") + "</p>",
       "</div>",
       '<div class="path-progress-shell">',
       '<div class="path-progress-copy"><strong>' +
         completedCount +
         "/" +
         learningPath.length +
-        '</strong><span>An kammala</span></div>',
+        "</strong><span>" + ha("An kammala") + "</span></div>",
       '<div class="path-progress-rail"><span class="path-progress-fill" style="width: ' + progressPct + '%;"></span></div>',
       "</div>",
       nextModule
-        ? '<div class="path-next-callout"><span class="pill">Na gaba</span><strong>' +
-          escapeHtml(nextModule.module.titleHa) +
+        ? '<div class="path-next-callout"><span class="pill">' + ha("Na gaba") + "</span><strong>" +
+          ha(nextModule.module.titleHa) +
           '</strong><span class="muted-copy">' +
-          escapeHtml(getPathStateCopy(nextModule.state)) +
+          getPathStateCopy(nextModule.state) +
           "</span></div>"
-        : '<div class="path-next-callout"><span class="pill">Madalla</span><strong>Ka kammala duk modules na wannan mataki.</strong></div>',
+        : '<div class="path-next-callout"><span class="pill">' + ha("Madalla") + "</span><strong>" + ha("Ka kammala duk modules na wannan mataki.") + "</strong></div>",
       "</section>",
       '<section class="path-rail" aria-label="Learning path modules">' + moduleCards + "</section>",
     ].join("");
@@ -2457,8 +2463,8 @@
     if (!activities.length) {
       return [
         '<section class="screen-panel">',
-        '<button class="ghost-btn" type="button" data-route="#/learning-path">← Koma baya</button>',
-        "<h2>Babu ayyukan Caregiver Mode a yanzu.</h2>",
+        '<button class="ghost-btn" type="button" data-route="#/learning-path">' + ha("← Koma baya") + "</button>",
+        "<h2>" + ha("Babu ayyukan Caregiver Mode a yanzu.") + "</h2>",
         "</section>",
       ].join("");
     }
@@ -2479,7 +2485,7 @@
           '<a class="caregiver-card" href="#/caregiver-activity/' + escapeAttribute(activity.activityId) + '">',
           '<div class="caregiver-card-body">',
           '<p class="ajami caregiver-ajami">' + formatAjamiText(activity.topicAjami) + "</p>",
-          '<p class="caregiver-topic">' + escapeHtml(activity.topicHa) + "</p>",
+          '<p class="caregiver-topic">' + ha(activity.topicHa) + "</p>",
           "</div>",
           '<span class="caregiver-arrow">▶</span>',
           "</a>",
@@ -2488,7 +2494,7 @@
 
       return [
         '<div class="caregiver-age-group">',
-        '<p class="caregiver-age-label">Shekarun yaro: ' + escapeHtml(ageRange) + "</p>",
+        '<p class="caregiver-age-label">' + ha("Shekarun yaro: ") + escapeHtml(ageRange) + "</p>",
         items.join(""),
         "</div>",
       ].join("");
@@ -2496,10 +2502,10 @@
 
     return [
       '<section class="screen-panel caregiver-header-panel">',
-      '<button class="ghost-btn" type="button" data-route="#/learning-path">← Koma baya</button>',
-      '<p class="eyebrow">Caregiver Mode</p>',
-      '<h2>Ayyukan yara ƙanana</h2>',
-      '<p class="screen-copy">Waɗannan ayyuka an tsara su don iyaye da masu kula da yara tsakanin shekara 0 zuwa 3. Babu tambayoyi – kawai saurara, duba hoto, ka yi aikin tare da ɗanka.</p>',
+      '<button class="ghost-btn" type="button" data-route="#/learning-path">' + ha("← Koma baya") + "</button>",
+      '<p class="eyebrow">' + ha("Caregiver Mode") + "</p>",
+      '<h2>' + ha("Ayyukan yara ƙanana") + "</h2>",
+      '<p class="screen-copy">' + ha("Waɗannan ayyuka an tsara su don iyaye da masu kula da yara tsakanin shekara 0 zuwa 3. Babu tambayoyi - kawai saurara, duba hoto, ka yi aikin tare da ɗanka.") + "</p>",
       "</section>",
       '<section class="screen-panel caregiver-list-panel">',
       groupMarkup.join(""),
@@ -2513,8 +2519,8 @@
     if (!activity) {
       return [
         '<section class="screen-panel">',
-        '<button class="ghost-btn" type="button" data-route="#/caregiver">← Koma Caregiver Mode</button>',
-        "<h2>Ba a samu wannan aiki ba.</h2>",
+        '<button class="ghost-btn" type="button" data-route="#/caregiver">' + ha("← Koma Caregiver Mode") + "</button>",
+        "<h2>" + ha("Ba a samu wannan aiki ba.") + "</h2>",
         "</section>",
       ].join("");
     }
@@ -2522,35 +2528,35 @@
     return [
       '<section class="screen-panel lesson-shell">',
       '<div class="lesson-topbar">',
-      '<button class="ghost-btn lesson-back-button" type="button" data-route="#/caregiver" aria-label="Koma baya">←</button>',
+      '<button class="ghost-btn lesson-back-button" type="button" data-route="#/caregiver" aria-label="' + ha("Koma baya") + '">←</button>',
       '<div class="lesson-heading-block">',
       '<p class="ajami lesson-title-large">' + formatAjamiText(activity.topicAjami) + "</p>",
-      '<p class="lesson-title-small">' + escapeHtml(activity.topicHa) + "</p>",
+      '<p class="lesson-title-small">' + ha(activity.topicHa) + "</p>",
       "</div>",
       "</div>",
       "</section>",
       '<section class="screen-panel caregiver-age-banner">',
-      '<span class="caregiver-age-chip">Shekarun yaro: ' + escapeHtml(activity.ageRange) + "</span>",
+      '<span class="caregiver-age-chip">' + ha("Shekarun yaro: ") + escapeHtml(activity.ageRange) + "</span>",
       "</section>",
       '<section class="screen-panel lesson-player-panel">',
       '<audio class="lesson-audio-element" data-lesson-audio preload="metadata"></audio>',
       '<div class="lesson-player-controls">',
       '<button class="lesson-play-toggle" type="button" data-action="toggle-audio">',
       '<span class="lesson-play-icon" data-play-icon>▶</span>',
-      '<span class="lesson-play-label" data-play-label>Fara sauraro</span>',
+      '<span class="lesson-play-label" data-play-label>' + ha("Fara sauraro") + "</span>",
       "</button>",
       "</div>",
       '<div class="lesson-audio-progress">',
       '<div class="lesson-audio-rail"><span class="lesson-audio-fill" data-audio-progress-fill style="width:0%;"></span></div>',
       "</div>",
-      '<p class="lesson-audio-note" data-audio-notice>Sauraro tare da ɗanka. Babu tambayoyi a wannan aiki.</p>',
+      '<p class="lesson-audio-note" data-audio-notice>' + ha("Sauraro tare da ɗanka. Babu tambayoyi a wannan aiki.") + "</p>",
       "</section>",
       activity.imageCard
         ? [
             '<section class="screen-panel lesson-card-panel">',
-            '<p class="eyebrow">Katin Ajami</p>',
+            '<p class="eyebrow">' + ha("Katin Ajami") + "</p>",
             '<div class="placeholder-media lesson-image-card">',
-            '<strong>' + escapeHtml(activity.topicHa) + "</strong>",
+            '<strong>' + ha(activity.topicHa) + "</strong>",
             '<span class="ajami">' + formatAjamiText(activity.topicAjami) + "</span>",
             "</div>",
             "</section>",
@@ -2574,8 +2580,8 @@
     if (!module) {
       return [
         '<section class="screen-panel">',
-        "<h2>Ba a samu wannan darasi ba.</h2>",
-        '<button class="btn" data-route="#/learning-path" type="button">Koma hanyar koyo</button>',
+        "<h2>" + ha("Ba a samu wannan darasi ba.") + "</h2>",
+        '<button class="btn" data-route="#/learning-path" type="button">' + ha("Koma hanyar koyo") + "</button>",
         "</section>",
       ].join("");
     }
@@ -2583,13 +2589,13 @@
     return [
       '<section class="screen-panel lesson-shell">',
       '<div class="lesson-topbar">',
-      '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="Koma baya">←</button>',
+      '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="' + ha("Koma baya") + '">←</button>',
       '<div class="lesson-heading-block">',
       state.settings.scriptMode === "ajami"
         ? '<p class="ajami lesson-title-large">' + formatAjamiText(getDisplayTitle(module)) + "</p>"
         : '<p class="lesson-title-large lesson-title-large--latin">' + escapeHtml(getDisplayTitle(module)) + "</p>",
       state.settings.scriptMode === "ajami"
-        ? '<p class="lesson-title-small">' + escapeHtml(module.titleHa || "") + "</p>"
+        ? '<p class="lesson-title-small">' + ha(module.titleHa || "") + "</p>"
         : "",
       "</div>",
       "</div>",
@@ -2599,7 +2605,7 @@
       '<div class="lesson-player-controls">',
       '<button class="lesson-play-toggle" type="button" data-action="toggle-audio">',
       '<span class="lesson-play-icon" data-play-icon>▶</span>',
-      '<span class="lesson-play-label" data-play-label>Fara sauraro</span>',
+      '<span class="lesson-play-label" data-play-label>' + ha("Fara sauraro") + "</span>",
       "</button>",
       "</div>",
       '<div class="lesson-audio-progress">',
@@ -2619,22 +2625,22 @@
         escapeAttribute(String(resumeAtSec)) +
         '"' +
         (resumeAtSec > 5 ? "" : " hidden") +
-        ' data-resume-button>Ci gaba daga ' +
+        ' data-resume-button>' + ha("Ci gaba daga ") +
         escapeHtml(formatSeconds(resumeAtSec)) +
         "</button>",
       "</div>",
-      '<p class="lesson-audio-note" data-audio-notice>AJAMIX za ta fara da audio da aka sauke a na\'ura idan akwai shi.</p>',
+      '<p class="lesson-audio-note" data-audio-notice>' + ha("AJAMIX za ta fara da audio da aka sauke a na'ura idan akwai shi.") + "</p>",
       '<div class="micro-pause-overlay" data-micro-pause-overlay></div>',
       "</section>",
       '<section class="screen-panel lesson-text-panel">',
-      '<p class="eyebrow">Bayanin Hausa</p>',
-      '<div class="lesson-copy scrollable-copy"><p>' + escapeHtml(module.textExplanationHa) + "</p></div>",
+      '<p class="eyebrow">' + ha("Bayanin Hausa") + "</p>",
+      '<div class="lesson-copy scrollable-copy"><p>' + ha(module.textExplanationHa) + "</p></div>",
       "</section>",
       module.imageCard
-        ? '<section class="screen-panel lesson-card-panel"><p class="eyebrow">Katin Ajami</p><figure class="lesson-image-card"><img src="' +
+        ? '<section class="screen-panel lesson-card-panel"><p class="eyebrow">' + ha("Katin Ajami") + '</p><figure class="lesson-image-card"><img src="' +
           escapeHtml(module.imageCard) +
           '" alt="' +
-          escapeHtml(module.titleHa || "") +
+          ha(module.titleHa || "") +
           '" loading="lazy" /></figure></section>'
         : "",
       '<section class="screen-panel lesson-footer-panel">',
@@ -2642,9 +2648,9 @@
         escapeAttribute(module.id) +
         '"' +
         (canQuiz ? "" : " disabled") +
-        '>Fara Jarrabawa</button>',
+        ">" + ha("Fara Jarrabawa") + "</button>",
       '<p class="helper-text" data-quiz-ready-note>' +
-        escapeHtml(
+        ha(
           canQuiz
             ? "Ka saurara isasshe. Yanzu za ka iya shiga quiz."
             : "Sai ka saurara aƙalla 80% na audio kafin quiz ya bude."
@@ -2904,14 +2910,14 @@
     }
 
     if (notice) {
-      notice.textContent = session.audioError || getLessonAudioNotice(record);
+      notice.innerHTML = ha(session.audioError || getLessonAudioNotice(record));
     }
 
     if (resumeButton) {
       var resumeAt = Number(session.currentTimeSec || record.lastAudioPositionSec || 0);
       resumeButton.hidden = resumeAt <= 5;
       resumeButton.dataset.seekSeconds = String(resumeAt);
-      resumeButton.textContent = "Ci gaba daga " + formatSeconds(resumeAt);
+      resumeButton.innerHTML = ha("Ci gaba daga ") + escapeHtml(formatSeconds(resumeAt));
     }
 
     if (playIcon) {
@@ -2919,7 +2925,7 @@
     }
 
     if (playLabel) {
-      playLabel.textContent = isPaused ? "Fara sauraro" : "Dakatar";
+      playLabel.innerHTML = isPaused ? ha("Fara sauraro") : ha("Dakatar");
     }
 
     if (overlay) {
@@ -2940,9 +2946,9 @@
     }
 
     if (quizNote) {
-      quizNote.textContent = canQuiz
-        ? "Ka saurara isasshe. Yanzu za ka iya shiga quiz."
-        : "Sai ka saurara aƙalla 80% na audio kafin quiz ya bude.";
+      quizNote.innerHTML = canQuiz
+        ? ha("Ka saurara isasshe. Yanzu za ka iya shiga quiz.")
+        : ha("Sai ka saurara aƙalla 80% na audio kafin quiz ya bude.");
     }
   }
 
@@ -2968,11 +2974,12 @@
     }
 
     if (notice) {
-      notice.textContent =
+      notice.innerHTML = ha(
         audio.dataset.errorMessage ||
-        (caregiverActivity.audioFile
-          ? "Sauraro tare da ɗanka. Babu tambayoyi a wannan aiki."
-          : "Ba a samu fayil din audio ba tukuna. Da zarar an saka MP3 dinsa, player din zai yi aiki nan.");
+          (caregiverActivity.audioFile
+            ? "Sauraro tare da ɗanka. Babu tambayoyi a wannan aiki."
+            : "Ba a samu fayil din audio ba tukuna. Da zarar an saka MP3 dinsa, player din zai yi aiki nan.")
+      );
     }
 
     if (playIcon) {
@@ -2980,7 +2987,7 @@
     }
 
     if (playLabel) {
-      playLabel.textContent = audio.paused ? "Fara sauraro" : "Dakatar";
+      playLabel.innerHTML = audio.paused ? ha("Fara sauraro") : ha("Dakatar");
     }
   }
 
@@ -3893,18 +3900,18 @@
     return [
       '<section class="screen-panel quiz-shell quiz-result-screen">',
       '<div class="screen-back-row">',
-      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">← Komawa</button>',
+      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">' + ha("← Komawa") + "</button>",
       '</div>',
       '<div class="screen-heading">',
-      '<p class="eyebrow">Sakamakon Quiz</p>',
+      '<p class="eyebrow">' + ha("Sakamakon Quiz") + "</p>",
       "<h2>" +
         (state.settings.scriptMode === "ajami"
           ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
           : escapeHtml(getDisplayTitle(module))) +
         "</h2>",
-      '<p class="screen-copy">Ka samu ' +
+      '<p class="screen-copy">' + ha("Ka samu ") +
         escapeHtml(String(results.score)) +
-        " daga cikin " +
+        ha(" daga cikin ") +
         escapeHtml(String(results.total)) +
         ".</p>",
       "</div>",
@@ -3913,10 +3920,10 @@
       '<p class="quiz-result-copy ' +
         (results.passed ? "is-success" : "is-fail") +
         '">' +
-        escapeHtml(results.passed ? "An yi nasara!" : "Sake gwadawa") +
+        ha(results.passed ? "An yi nasara!" : "Sake gwadawa") +
         "</p>",
       '<p class="helper-text">' +
-        escapeHtml(
+        ha(
           results.passed
             ? nextModule
               ? "An bude module na gaba."
@@ -3932,15 +3939,15 @@
       nextModule && results.progressPassed
         ? '<button class="btn" type="button" data-route="#/lesson/' +
           escapeAttribute(nextModule.id) +
-          '">Bude na gaba</button>'
-        : '<button class="btn" type="button" data-route="#/learning-path">Koma hanyar koyo</button>',
+          '">' + ha("Bude na gaba") + "</button>"
+        : '<button class="btn" type="button" data-route="#/learning-path">' + ha("Koma hanyar koyo") + "</button>",
       !results.passed
         ? '<button class="secondary-btn" type="button" data-action="retake-quiz" data-module-id="' +
           escapeAttribute(module.id) +
-          '">Sake quiz</button>'
+          '">' + ha("Sake quiz") + "</button>"
         : "",
       nextModule && results.progressPassed
-        ? '<button class="ghost-btn" type="button" data-route="#/learning-path">Koma hanyar koyo</button>'
+        ? '<button class="ghost-btn" type="button" data-route="#/learning-path">' + ha("Koma hanyar koyo") + "</button>"
         : "",
       "</div>",
       "</section>",
@@ -3988,7 +3995,7 @@
     }
 
     if (connectionChip) {
-      connectionChip.textContent = state.connectivity ? "Kan layi" : "Offline";
+      connectionChip.innerHTML = state.connectivity ? ha("Kan layi") : "Offline";
       connectionChip.classList.toggle("is-online", state.connectivity);
       connectionChip.classList.toggle("is-offline", !state.connectivity);
     }
@@ -4005,14 +4012,14 @@
 
   function getStatusCopy(status) {
     if (status === "completed") {
-      return "An gama";
+      return ha("An gama");
     }
 
     if (status === "in-progress") {
-      return "Ana yi";
+      return ha("Ana yi");
     }
 
-    return "Ba a fara ba";
+    return ha("Ba a fara ba");
   }
 
   function getStatusBadgeClass(status) {
@@ -4029,22 +4036,22 @@
 
   function getDownloadStatusCopy(status) {
     if (status === "completed" || status === "complete") {
-      return "An gama";
+      return ha("An gama");
     }
 
     if (status === "downloading") {
-      return "Ana saukewa";
+      return ha("Ana saukewa");
     }
 
     if (status === "partial") {
-      return "An tsaya a tsakiya";
+      return ha("An tsaya a tsakiya");
     }
 
     if (status === "error") {
-      return "An samu matsala";
+      return ha("An samu matsala");
     }
 
-    return "Ana jira";
+    return ha("Ana jira");
   }
 
   function getDownloadStatusBadgeClass(status) {
