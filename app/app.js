@@ -102,18 +102,19 @@
     // Consonant mapping (multi-char entries must be checked first)
     var MULTI = {
       "sh": "ش",
+      "ts": "\u069F",  // ڟ  ejective alveolar affricate (tah with three dots below)
       "ng": "ڭ",
       "kh": "خ"
     };
     var SINGLE = {
-      "b": "ب", "t": "ت", "j": "ج", "h": "ه",
-      "d": "د", "r": "ر", "z": "ز", "s": "س",
-      "f": "ف", "k": "ك", "g": "گ", "l": "ل",
-      "m": "م", "n": "ن", "w": "و", "y": "ي",
+      "b": "ب", "c": "\u0686", "t": "ت", "j": "ج", "h": "ه",  // c = چ (ejective palatal)
+      "d": "د", "r": "ر",      "z": "ز", "s": "س",
+      "f": "ف", "k": "ك",      "g": "\u063A", "l": "ل",        // g = غ (ghain, NOT گ gaf)
+      "m": "م", "n": "ن",      "w": "و", "y": "ي",
       "p": "پ",
       // Hausa implosives / ejective
       "\u0253": "\u067B",  // ɓ → ٻ
-      "\u0257": "\u0688",  // ɗ → ڈ (retroflex dal, closest approximation)
+      "\u0257": "\u0688",  // ɗ → ڈ
       "\u0199": "\u06AA"   // ƙ → ڪ (swash kaf)
     };
     // Short vowels → Arabic diacritics (harakat)
