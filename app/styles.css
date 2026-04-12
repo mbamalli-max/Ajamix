@@ -1614,30 +1614,40 @@ a {
   gap: 0.4rem;
   padding: 1.25rem 1rem;
   border-radius: 12px;
-  border: 2px solid rgba(226, 201, 138, 0.2);
-  background: var(--color-bg-elevated, #132A3E);
-  color: var(--color-text, #F5F5F5);
+  /* Unselected: light cream bg, visible dark border, dark text — readable on the cream panel */
+  border: 2px solid rgba(13, 27, 42, 0.25);
+  background: var(--color-surface, #FDFCFB);
+  color: var(--color-primary, #0D1B2A);
   cursor: pointer;
   min-height: 48px;
   text-align: center;
+  transition: border-color 0.15s, background 0.15s;
 }
 
 .ob-choice strong {
   font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary, #0D1B2A);
 }
 
 .ob-choice span {
   font-size: 0.8rem;
-  color: var(--color-text-muted, #B0B8C4);
+  color: var(--color-muted, #4A5F74);
 }
 
+/* Selected: dark navy bg, gold border, gold text — clearly active */
 .ob-choice--active {
   border-color: var(--color-gold, #E2C98A);
-  background: rgba(226, 201, 138, 0.1);
+  background: var(--color-primary, #0D1B2A);
+  color: #F8F6F3;
 }
 
 .ob-choice--active strong {
   color: var(--color-gold, #E2C98A);
+}
+
+.ob-choice--active .ob-script-sample {
+  color: #F8F6F3;
 }
 
 .ob-script-sample {
