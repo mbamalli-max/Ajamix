@@ -1098,6 +1098,27 @@ a {
   gap: 0.75rem;
 }
 
+.script-preview {
+  margin: 0.75rem 0 0;
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(226, 201, 138, 0.15);
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.script-preview.ajami {
+  direction: rtl;
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: 1.4rem;
+}
+.script-preview-label {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #B0B8C4);
+}
+
 .onboarding-fields {
   display: flex;
   flex-direction: column;

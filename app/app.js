@@ -1352,6 +1352,14 @@
       "<strong>Hausa</strong>",
       "</button>",
       "</div>",
+      '<div class="script-preview' + (state.settings.scriptMode === "ajami" ? ' ajami' : '') + '">',
+      state.settings.scriptMode === "ajami"
+        ? '<p>' + formatAjamiText(romanToAjami("Ina zuwa kasuwa")) + '</p>'
+        : '<p>Ina zuwa kasuwa</p>',
+      '<p class="script-preview-label">(' +
+        (state.settings.scriptMode === "ajami" ? "Ajami" : "Hausa Latin") +
+        ')</p>',
+      '</div>',
       "</div>",
       "<h3>Audio caching</h3>",
       '<ul class="settings-list">',
