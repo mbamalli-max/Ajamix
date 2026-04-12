@@ -216,7 +216,7 @@
     if (state.settings.scriptMode === "latin") {
       return module.titleHa || module.titleEn || "";
     }
-    return module.titleAjami || module.titleHa || "";
+    return module.titleAjami || romanToAjami(module.titleHa || module.titleEn || "");
   }
 
   function getDisplayQuestion(questionText, questionAjami) {
@@ -1344,7 +1344,7 @@
       "<h3>Salon rubutu</h3>",
       '<div class="ob-choice-grid ob-choice-grid--compact">',
       '<button class="ob-choice' + (state.settings.scriptMode === "ajami" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-ajami">',
-      '<div class="ob-script-sample ajami">أَجَامِكْس</div>',
+      '<div class="ob-script-sample ajami">أَجَامِي</div>',
       "<strong>Ajami</strong>",
       "</button>",
       '<button class="ob-choice' + (state.settings.scriptMode === "latin" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-latin">',
@@ -2394,7 +2394,7 @@
           '<span class="' + getPathBadgeClass(entry.state) + '">' + escapeHtml(getPathStateCopy(entry.state)) + "</span>",
           "</div>",
           state.settings.scriptMode === "ajami"
-            ? '<p class="ajami path-title-ajami">' + formatAjamiText(module.titleAjami || "") + "</p>"
+            ? '<p class="ajami path-title-ajami">' + formatAjamiText(module.titleAjami || romanToAjami(module.titleHa || "")) + "</p>"
             : '<p class="path-title-hausa path-title-primary">' + escapeHtml(module.titleHa || "") + "</p>",
           state.settings.scriptMode === "ajami"
             ? '<p class="path-title-hausa">' + escapeHtml(module.titleHa || "") + "</p>"
