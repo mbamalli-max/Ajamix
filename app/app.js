@@ -161,6 +161,11 @@
       // 4 — Digits pass through (numbers like {a} substitutions are numerals)
       if (ch >= "0" && ch <= "9") { result += ch; atWordStart = false; i += 1; continue; }
 
+      // 4.5 — Apostrophe / glottal-stop marker → ع (ain)
+      if (ch === "'" || ch === "\u2019" || ch === "\u02BC") {
+        result += "\u0639"; atWordStart = false; i += 1; continue;
+      }
+
       // 5 — Multi-char consonant sequences (case-insensitive)
       var two = text.slice(i, i + 2).toLowerCase();
       if (MULTI[two]) {
@@ -171,20 +176,33 @@
       }
 
       // 6 — Short vowel: add alef carrier at word start, then diacritic.
-      // Word-final vowels get a mater lectionis per Hausa Ajami convention:
-      //   final 'a' → fatha + alef (اَ), final 'u' → damma + waw (وُ), final 'i' → kasra + ya (يِ)
+      // Diphthongs: ai/ae → fatha+ya; au/ao → fatha+waw (consume both chars).
+      // Long vowels: aa → fatha+alef; ii → kasra+ya; uu → damma+waw.
+      // Word-final vowels get a mater lectionis per Hausa Ajami convention.
       if (VOWEL[lc]) {
         if (atWordStart) { result += ALEF; }
         result += VOWEL[lc];
-        // Look-ahead: is this vowel at word end?
         var nextCh = text[i + 1] || "";
+        var nextLc = nextCh.toLowerCase();
+        // Diphthongs: a + i/e → ya mater; a + u/o → waw mater
+        if (lc === "a" && (nextLc === "i" || nextLc === "e")) {
+          result += "\u064A"; atWordStart = false; i += 2; continue; // ي
+        }
+        if (lc === "a" && (nextLc === "u" || nextLc === "o")) {
+          result += "\u0648"; atWordStart = false; i += 2; continue; // و
+        }
+        // Long vowels: aa → +alef, ii → +ya, uu → +waw
+        if (lc === "a" && nextLc === "a") { result += ALEF; atWordStart = false; i += 2; continue; }
+        if (lc === "i" && nextLc === "i") { result += "\u064A"; atWordStart = false; i += 2; continue; }
+        if (lc === "u" && nextLc === "u") { result += "\u0648"; atWordStart = false; i += 2; continue; }
+        // Look-ahead: is this vowel at word end?
         var isWordEnd = (nextCh === "" || nextCh === " " || nextCh === "\n" ||
                          nextCh === "?" || nextCh === "!" || nextCh === "." ||
                          nextCh === "," || nextCh === "{");
         if (isWordEnd) {
-          if (lc === "a") { result += ALEF; }        // fatha + alef
-          else if (lc === "u" || lc === "o") { result += "و"; }  // damma + waw
-          else if (lc === "i" || lc === "e") { result += "ي"; }  // kasra + ya
+          if (lc === "a") { result += ALEF; }              // fatha + alef
+          else if (lc === "u" || lc === "o") { result += "\u0648"; }  // damma + waw
+          else if (lc === "i" || lc === "e") { result += "\u064A"; }  // kasra + ya
         }
         atWordStart = false;
         i += 1;
@@ -194,8 +212,15 @@
       // 7 — Single consonant (including Hausa special chars)
       if (SINGLE[lc] || SINGLE[ch]) {
         result += SINGLE[lc] || SINGLE[ch];
+        // Gemination: doubled consonant → shadda ّ (consumes both occurrences)
+        var nextCh3 = text[i + 1] || "";
+        if (SINGLE[lc] && nextCh3.toLowerCase() === lc) {
+          result += "\u0651"; // shadda ّ
+          i += 2;
+        } else {
+          i += 1;
+        }
         atWordStart = false;
-        i += 1;
         continue;
       }
 
