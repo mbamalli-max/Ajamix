@@ -107,10 +107,11 @@
       "kh": "خ"
     };
     var SINGLE = {
-      "b": "ب", "c": "\u0686", "t": "ت", "j": "ج", "h": "ه",  // c = چ (ejective palatal)
-      "d": "د", "r": "ر",      "z": "ز", "s": "س",
-      "f": "ف", "k": "ك",      "g": "\u063A", "l": "ل",        // g = غ (ghain, NOT گ gaf)
-      "m": "م", "n": "ن",      "w": "و", "y": "ي",
+      // Note: 'c' and 'x' handled by dedicated steps above (4.6 / 4.7)
+      "b": "ب", "t": "ت", "j": "ج", "h": "ه",
+      "d": "د", "r": "ر", "z": "ز", "s": "س",
+      "f": "ف", "k": "ك", "g": "\u063A", "l": "ل",  // g = غ (ghain, NOT گ gaf)
+      "m": "م", "n": "ن", "w": "و", "y": "ي",
       "p": "پ",
       // Hausa implosives / ejective
       "\u0253": "\u067B",  // ɓ → ٻ
@@ -167,6 +168,23 @@
         result += "\u0639"; atWordStart = false; i += 1; continue;
       }
 
+      // 4.6 — 'x' → كس (represents /ks/ in Hausa loanwords)
+      if (lc === "x") {
+        result += "\u0643\u0633"; atWordStart = false; i += 1; continue;
+      }
+
+      // 4.7 — 'c' disambiguation: Hausa ejective palatal چ before i/e/y;
+      //        English /k/ sound → ك before a/o/u or consonants (loanword heuristic)
+      if (lc === "c") {
+        var cNext = (text[i + 1] || "").toLowerCase();
+        if (cNext === "i" || cNext === "e" || cNext === "y") {
+          result += "\u0686"; // چ  Hausa ejective palatal
+        } else {
+          result += "\u0643"; // ك  English /k/ before back vowels / consonants
+        }
+        atWordStart = false; i += 1; continue;
+      }
+
       // 5 — Multi-char consonant sequences (case-insensitive)
       var two = text.slice(i, i + 2).toLowerCase();
       if (MULTI[two]) {
@@ -213,9 +231,11 @@
       // 7 — Single consonant (including Hausa special chars)
       if (SINGLE[lc] || SINGLE[ch]) {
         result += SINGLE[lc] || SINGLE[ch];
-        // Gemination: doubled consonant → shadda ّ (consumes both occurrences)
+        // Gemination: doubled consonant → shadda ّ (consumes both occurrences).
+        // Guard: next char must be lowercase — uppercase signals a morpheme boundary
+        // (e.g. 'dD' in "IndexedDB") and must NOT trigger shadda.
         var nextCh3 = text[i + 1] || "";
-        if (SINGLE[lc] && nextCh3.toLowerCase() === lc) {
+        if (SINGLE[lc] && nextCh3.toLowerCase() === lc && nextCh3 === nextCh3.toLowerCase()) {
           result += "\u0651"; // shadda ّ
           i += 2;
         } else {
