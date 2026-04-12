@@ -91,6 +91,124 @@
     return GRADE_BAND_LABELS[band] || band;
   }
 
+  // ─── Hausa Ajami transliteration engine ──────────────────────────────────
+  // Converts Hausa written in Roman/Latin script to Hausa Ajami (Arabic script).
+  // Uses the deterministic consonant + diacritic-vowel mapping defined in the
+  // AJAMIX alphabet guide.  Template placeholders like {a} and {b} are preserved
+  // verbatim so the quiz engine can still substitute numbers.
+  function romanToAjami(text) {
+    if (!text) { return ""; }
+
+    // Consonant mapping (multi-char entries must be checked first)
+    var MULTI = {
+      "sh": "ش",
+      "ng": "ڭ",
+      "kh": "خ"
+    };
+    var SINGLE = {
+      "b": "ب", "t": "ت", "j": "ج", "h": "ه",
+      "d": "د", "r": "ر", "z": "ز", "s": "س",
+      "f": "ف", "k": "ك", "g": "گ", "l": "ل",
+      "m": "م", "n": "ن", "w": "و", "y": "ي",
+      "p": "پ",
+      // Hausa implosives / ejective
+      "\u0253": "\u067B",  // ɓ → ٻ
+      "\u0257": "\u0688",  // ɗ → ڈ (retroflex dal, closest approximation)
+      "\u0199": "\u06AA"   // ƙ → ڪ (swash kaf)
+    };
+    // Short vowels → Arabic diacritics (harakat)
+    var VOWEL = {
+      "a": "\u064E",  // fatha  َ
+      "i": "\u0650",  // kasra  ِ
+      "u": "\u064F",  // damma  ُ
+      "e": "\u0650",  // treated as i
+      "o": "\u064F"   // treated as u
+    };
+    var ALEF = "ا";  // vowel carrier at word start
+
+    var result = "";
+    var i = 0;
+    var atWordStart = true;
+
+    while (i < text.length) {
+      // 1 — Preserve {placeholder} patterns intact
+      if (text[i] === "{") {
+        var close = text.indexOf("}", i);
+        if (close !== -1) {
+          result += text.slice(i, close + 1);
+          i = close + 1;
+          atWordStart = false;
+          continue;
+        }
+      }
+
+      // 2 — Whitespace → pass through, reset word-start flag
+      var ch = text[i];
+      var lc = ch.toLowerCase();
+      if (ch === " " || ch === "\n" || ch === "\r" || ch === "\t") {
+        result += ch;
+        atWordStart = true;
+        i += 1;
+        continue;
+      }
+
+      // 3 — Arabic question / exclamation mark
+      if (ch === "?") { result += "\u061F"; atWordStart = true; i += 1; continue; }
+      if (ch === "!") { result += "!"; atWordStart = true; i += 1; continue; }
+      if (ch === ".") { result += "."; atWordStart = true; i += 1; continue; }
+      if (ch === ",") { result += "\u060C"; i += 1; continue; }
+
+      // 4 — Digits pass through (numbers like {a} substitutions are numerals)
+      if (ch >= "0" && ch <= "9") { result += ch; atWordStart = false; i += 1; continue; }
+
+      // 5 — Multi-char consonant sequences (case-insensitive)
+      var two = text.slice(i, i + 2).toLowerCase();
+      if (MULTI[two]) {
+        result += MULTI[two];
+        atWordStart = false;
+        i += 2;
+        continue;
+      }
+
+      // 6 — Short vowel: add alef carrier at word start, then diacritic.
+      // Word-final vowels get a mater lectionis per Hausa Ajami convention:
+      //   final 'a' → fatha + alef (اَ), final 'u' → damma + waw (وُ), final 'i' → kasra + ya (يِ)
+      if (VOWEL[lc]) {
+        if (atWordStart) { result += ALEF; }
+        result += VOWEL[lc];
+        // Look-ahead: is this vowel at word end?
+        var nextCh = text[i + 1] || "";
+        var isWordEnd = (nextCh === "" || nextCh === " " || nextCh === "\n" ||
+                         nextCh === "?" || nextCh === "!" || nextCh === "." ||
+                         nextCh === "," || nextCh === "{");
+        if (isWordEnd) {
+          if (lc === "a") { result += ALEF; }        // fatha + alef
+          else if (lc === "u" || lc === "o") { result += "و"; }  // damma + waw
+          else if (lc === "i" || lc === "e") { result += "ي"; }  // kasra + ya
+        }
+        atWordStart = false;
+        i += 1;
+        continue;
+      }
+
+      // 7 — Single consonant (including Hausa special chars)
+      if (SINGLE[lc] || SINGLE[ch]) {
+        result += SINGLE[lc] || SINGLE[ch];
+        atWordStart = false;
+        i += 1;
+        continue;
+      }
+
+      // 8 — Unknown character: pass through unchanged
+      result += ch;
+      atWordStart = false;
+      i += 1;
+    }
+
+    return result;
+  }
+  // ─────────────────────────────────────────────────────────────────────────
+
   function getDisplayTitle(module) {
     if (!module) {
       return "";
@@ -105,13 +223,16 @@
     if (state.settings.scriptMode === "latin") {
       return escapeHtml(questionText || "");
     }
-    return formatAjamiText(questionAjami || questionText || "");
+    // Use pre-validated Ajami if available, otherwise auto-transliterate from Hausa Latin
+    var ajami = questionAjami || romanToAjami(questionText || "");
+    return formatAjamiText(ajami);
   }
 
   function getDisplaySubject(module) {
     if (state.settings.scriptMode === "latin") {
       return escapeHtml(module.subject || "");
     }
+    // No subjectAjami field exists yet — transliterate subjectHa on the fly
     return escapeHtml(module.subjectHa || module.subject || "");
   }
 

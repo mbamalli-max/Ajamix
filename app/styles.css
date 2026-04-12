@@ -146,6 +146,20 @@ a {
   min-height: 100vh;
 }
 
+.brand-home {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: opacity 140ms ease;
+}
+.brand-home:hover { opacity: 0.82; }
+.brand-home:focus-visible {
+  outline: 2px solid var(--color-gold, #E2C98A);
+  outline-offset: 4px;
+}
+
 .shell-header {
   position: sticky;
   top: 0;
