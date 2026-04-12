@@ -837,3 +837,48 @@ Phase 3 additions:
 ```
 
 The current IndexedDB schema is designed to be forward-compatible with server sync. The `progress` store structure maps directly to a future `module_progress` PostgreSQL table. Adding sync means adding a `syncQueue` IndexedDB store and a sync worker — the same pattern used in Konfirmata.
+
+## Sprint Addendum — UX Lockdown + Ajami Engine (April 2026)
+
+### Navigation architecture change
+
+Bottom nav reduced from 4 to 3 tabs. Settings promoted to header icon.
+
+| Before | After |
+|--------|-------|
+| Koyo / Ci gaba / Kalmomi / Saituna (4 tabs) | Koyo / Ci gaba / Kalmomi (3 tabs) + ⚙ in header |
+
+`renderTabs()` (`app.js`) modified: `settings` entry removed from tabs array.
+`updateShellChrome()` (`app.js`) extended: toggles `is-active` on `#settings-gear`, hides/shows `#home-btn`.
+
+### Brand home link
+
+`app/index.html` `.shell-header` brand `<div>` replaced with:
+
+```html
+<a class="brand-home" data-route="#/learning-path" href="#/learning-path" aria-label="Gida — AJAMIX">
+```
+
+Caught by existing `data-route` event delegation in `handleClick()`. No new JS required.
+CSS: `.brand-home` — block, no underline, hover opacity 0.82, gold focus ring.
+
+### romanToAjami() transliteration engine
+
+**Location:** `app/app.js` ~line 99 (above display helpers).
+
+**Mapping layers (processed in this order):**
+1. `{placeholder}` patterns — preserved verbatim (for quiz number substitution)
+2. Whitespace / punctuation — passed through; `?` → `؟`, `,` → `،`
+3. Digits — passed through unchanged
+4. Multi-char digraphs: `sh → ش`, `ng → ڭ`, `kh → خ`
+5. Short vowels as Arabic diacritics: `a → َ`, `i → ِ`, `u → ُ`, `e → ِ`, `o → ُ`; word-initial vowels get alef carrier (ا); word-final vowels get mater lectionis (`a → ا`, `u/o → و`, `i/e → ي`)
+6. Single consonants: full consonant table per AJAMIX alphabet guide
+7. Hausa implosives/ejective: `ɓ → ٻ`, `ɗ → ڈ`, `ƙ → ڪ`
+8. Unknown characters — passed through unchanged
+
+**Fallback chain (render helpers):**
+- `getDisplayTitle(module)` → `titleAjami || romanToAjami(titleHa || titleEn)`
+- `getDisplayQuestion(text, ajami)` → `ajami || romanToAjami(text)`
+- `renderLearningPathScreen()` → `titleAjami || romanToAjami(titleHa)`
+
+Pre-validated content in `templateAjami` / `questionAjami` / `titleAjami` always takes precedence over auto-transliteration.

@@ -273,3 +273,33 @@ Each module contains:
 | Phase 5 | SS1–SS3 modules (WAEC/NECO aligned). All elective subjects. Offline peer comparison. Certificate generation. |
 | Phase 6 | Nursery content. Full subject coverage across all levels. SEDA integration: full Temporal Micro-Signature analysis, Structural Decay Engine with predictive modeling, evidence hierarchy beyond AUTO_VERIFIED. |
 | Phase 7 | Multi-language: extend beyond Hausa to other Ajami-literate communities (Fulfulde, Kanuri). |
+
+## Sprint Addendum — UX Lockdown + Ajami Engine (April 2026)
+
+### Features shipped to main
+
+**Onboarding & settings**
+- 5-step onboarding wizard (displayName, learnerType, scriptMode, gradeBand)
+- scriptMode toggle: Ajami (Arabic script) ↔ Hausa (Latin) persisted to IndexedDB
+
+**Header chrome**
+- AJAMIX brand wordmark is a home link (`data-route="#/learning-path"`)
+- Persistent ⚙ gear icon in header → #/settings (gold active state when on settings screen)
+- Persistent 🏠 home icon in header → #/learning-path (hidden on home + onboarding)
+- Bottom nav reduced from 4 tabs to 3: Koyo / Ci gaba / Kalmomi
+
+**Quiz & content fixes**
+- Quiz questions render engine-substituted numbers (e.g. "Aya 3 + 5 nawa?") not `{a}`/`{b}`
+- Ajami script toggle button label corrected to `أَجَامِي` (the word "Ajami")
+- Back buttons (← Komawa) added to Glossary and Quiz Results screens
+
+**Ajami transliteration engine**
+- `romanToAjami(text)` added to app.js — deterministic mapping of Hausa Latin → Arabic Ajami script
+- Consonant mapping, digraphs (sh/ng/kh), Hausa implosives (ɓ/ɗ/ƙ), vowel diacritics, word-final mater lectionis
+- `{a}`/`{b}` quiz template placeholders preserved verbatim through transliteration
+- Engine fires as automatic fallback when pre-validated `titleAjami`/`templateAjami`/`questionAjami` content fields are absent
+- Pre-validated Ajami content (from TIMSAN scholar review) takes precedence when present in content.json
+
+### Content gaps (parallel TIMSAN workstream)
+- `templateAjami` and `questionAjami` fields not yet in content.json — auto-transliteration used as interim
+- All 78 modules have `ajami_validated: false` — TIMSAN scholar review pending (mid-Q2 2026)
