@@ -3,6 +3,7 @@
 
   var DB_NAME = "ajamix-db";
   var DB_VERSION = 4;
+  var CONTENT_VERSION = "v3.0-dual-track";
   var PASSING_SCORE = 3;
   var LESSON_DEFAULT_DURATION_MS = 180000;
   var QUIZ_AUTO_ADVANCE_DELAY_MS = 900;
@@ -5530,15 +5531,18 @@
           ? module.track.toLowerCase()
           : "";
 
-        if (module.gradeband !== state.settings.gradeBand) {
+        // Wrong track: always exclude
+        if (activeTrack && moduleTrack && moduleTrack !== activeTrack) {
           return false;
         }
 
-        if (!activeTrack || !moduleTrack) {
-          return true;
+        // Vocational track: no gradeBand filter — vocational modules span all grade levels
+        if (activeTrack === "vocational") {
+          return moduleTrack === "vocational";
         }
 
-        return moduleTrack === activeTrack;
+        // Formal track or no track set: apply gradeBand filter
+        return module.gradeband === state.settings.gradeBand;
       })
       .sort(function (left, right) {
         return left.moduleNumber - right.moduleNumber;
@@ -5772,7 +5776,9 @@
     var cachedActivities = await getAllRecords("activities");
     var cachedGlossary = await getAllRecords("glossary");
     var importedBundle = !loadOptions.forceNetwork ? getImportedContentBundle() : null;
-    var shouldUseNetwork = loadOptions.forceNetwork || !cachedModules.length || !cachedActivities.length;
+    var cachedVersion = state.settings.contentVersion || "";
+    var shouldUseNetwork = loadOptions.forceNetwork || !cachedModules.length || !cachedActivities.length
+      || (cachedVersion !== CONTENT_VERSION);
     var bundleInfo = null;
 
     if (importedBundle) {
