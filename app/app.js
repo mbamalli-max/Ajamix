@@ -58,7 +58,7 @@
     gradeBand: "nursery1",
     displayName: "Dalibi",
     learnerType: "child",
-    scriptMode: "ajami",
+    scriptMode: "latin",
     audioMode: "on-demand",
     motionMode: "full",
     contentVersion: "sample-bundle",
@@ -164,7 +164,7 @@
     return {
       displayName: "",
       learnerType: "child",
-      scriptMode: "ajami",
+      scriptMode: "latin",
       gradeBand: "nursery1",
       trackPreference: null,
     };
@@ -719,7 +719,7 @@
       pair.ha
         ? '<p class="bilingual-copy-ha">' + escapeHtml(pair.ha) + "</p>"
         : "",
-      pair.ajami
+      pair.ajami && state.settings.scriptMode === "ajami"
         ? '<p class="bilingual-copy-ajami ajami">' + formatAjamiText(pair.ajami) + "</p>"
         : "",
       "</div>",
@@ -2451,7 +2451,6 @@
       '<div class="ob-hero">',
       '<div class="ob-logo">📖</div>',
       '<h1 class="ob-brand">AJAMIX</h1>',
-      '<p class="ajami ob-ajami-tagline">أَجَامِكْس</p>',
       "</div>",
       '<div class="screen-heading">',
       "<h2>" + ha("Karatu cikin Hausa da Ajami") + "</h2>",
@@ -2522,20 +2521,8 @@
       '<div class="ob-step">',
       '<div class="screen-heading">',
       '<p class="eyebrow">' + ha("Matakin 4 na 7") + "</p>",
-      "<h2>" + ha("Yaya kake son karatu?") + "</h2>",
-      '<p class="screen-copy">' + ha("Za ka iya canza wannan daga Settings a kowane lokaci.") + "</p>",
-      "</div>",
-      '<div class="ob-choice-grid">',
-      '<button class="ob-choice ob-choice--script' + (onboardingData.scriptMode === "ajami" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-ajami">',
-      '<div class="ob-script-sample ajami">أَجَامِي</div>',
-      "<strong>" + ha("Ajami") + "</strong>",
-      "<span>" + ha("Rubutun Larabci na Hausa") + "</span>",
-      "</button>",
-      '<button class="ob-choice ob-choice--script' + (onboardingData.scriptMode === "latin" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-latin">',
-      '<div class="ob-script-sample">Ajami</div>',
-      "<strong>" + ha("Hausa (Latin)") + "</strong>",
-      "<span>" + ha("Haruffan boko na Hausa") + "</span>",
-      "</button>",
+      "<h2>" + ha("Salon rubutu") + "</h2>",
+      '<p class="screen-copy">' + ha("A wannan lokacin, karatu zai kasance a Hausa (Latin) kawai. Za a kara Ajami bayan an tabbatar da fassarar.") + "</p>",
       "</div>",
       '<div class="ob-nav">',
       '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
@@ -2832,7 +2819,9 @@
           '<div class="progress-row">',
           '<div class="screen-stack">',
           "<strong>" + ha(module.titleHa) + "</strong>",
-          '<span class="ajami">' + formatAjamiText(module.titleAjami) + "</span>",
+          state.settings.scriptMode === "ajami"
+            ? '<span class="ajami">' + formatAjamiText(module.titleAjami) + "</span>"
+            : "",
           "</div>",
           '<span class="' + getStatusBadgeClass(moduleMetrics.status) + '">' + getStatusCopy(moduleMetrics.status) + "</span>",
           "</div>",
@@ -2938,7 +2927,9 @@
             return [
               '<li class="glossary-item">',
               "<strong>" + ha(getGlossaryHausa(item)) + "</strong>",
-              '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>",
+              state.settings.scriptMode === "ajami"
+                ? '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>"
+                : "",
               "<span>" + ha(getGlossaryMeaningHa(item)) + "</span>",
               '<span class="muted-copy">' + escapeHtml(getGlossaryMeaningEn(item)) + "</span>",
               "</li>",
@@ -3091,26 +3082,6 @@
       "</article>",
       '<article class="settings-panel">',
       '<div class="settings-section">',
-      "<h3>" + ha("Salon rubutu") + "</h3>",
-      '<div class="ob-choice-grid ob-choice-grid--compact">',
-      '<button class="ob-choice' + (state.settings.scriptMode === "ajami" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-ajami">',
-      '<div class="ob-script-sample ajami">أَجَامِي</div>',
-      "<strong>" + ha("Ajami") + "</strong>",
-      "</button>",
-      '<button class="ob-choice' + (state.settings.scriptMode === "latin" ? ' ob-choice--active' : '') + '" type="button" data-action="settings-set-script-latin">',
-      '<div class="ob-script-sample">Ajami</div>',
-      "<strong>" + ha("Hausa") + "</strong>",
-      "</button>",
-      "</div>",
-      '<div class="script-preview' + (state.settings.scriptMode === "ajami" ? ' ajami' : '') + '">',
-      state.settings.scriptMode === "ajami"
-        ? '<p>' + formatAjamiText(romanToAjami("Ina zuwa kasuwa")) + '</p>'
-        : '<p>' + ha("Ina zuwa kasuwa") + "</p>",
-      '<p class="script-preview-label">(' +
-        (state.settings.scriptMode === "ajami" ? ha("Ajami") : ha("Hausa Latin")) +
-        ')</p>',
-      '</div>',
-      "</div>",
       "<h3>" + ha("Ajiye audio") + "</h3>",
       '<ul class="settings-list">',
       '<li><label><input type="radio" name="audioMode" value="on-demand" ' +
@@ -4457,13 +4428,15 @@
         "</a>" +
         escapeHtml(outro) +
         "</p>",
-      '<p class="bilingual-copy-ajami ajami">' +
-        formatAjamiText(romanToAjami(intro)) +
-        '<span class="share-production-link lamba-ltr">' +
-        escapeHtml(PRODUCTION_URL) +
-        "</span>" +
-        formatAjamiText(romanToAjami(outro)) +
-        "</p>",
+      state.settings.scriptMode === "ajami"
+        ? '<p class="bilingual-copy-ajami ajami">' +
+          formatAjamiText(romanToAjami(intro)) +
+          '<span class="share-production-link lamba-ltr">' +
+          escapeHtml(PRODUCTION_URL) +
+          "</span>" +
+          formatAjamiText(romanToAjami(outro)) +
+          "</p>"
+        : "",
       "</div>",
     ].join("");
   }
@@ -5596,7 +5569,7 @@
       gradeBand: chosenBand,
       displayName: onboardingData.displayName || state.settings.displayName || "Dalibi",
       learnerType: onboardingData.learnerType || state.settings.learnerType || "child",
-      scriptMode: onboardingData.scriptMode || state.settings.scriptMode || "ajami",
+      scriptMode: "latin",
       trackPreference: chosenTrack,
       featureFlags: nextFeatureFlags,
       audioDownloadPromptSeen: isFirstOnboarding ? false : state.settings.audioDownloadPromptSeen,
@@ -5701,6 +5674,7 @@
       nextSettings.gradeBand = "nursery1";
     }
 
+    nextSettings.scriptMode = "latin";
     nextSettings.trackPreference = normalizeTrackPreference(nextSettings.trackPreference);
     nextSettings.privacyMode = normalizePrivacyMode(nextSettings.privacyMode);
     nextSettings.featureFlags = normalizeFeatureFlags(nextSettings.featureFlags);
@@ -5709,6 +5683,15 @@
     nextSettings.referralBadgeState = normalizeReferralBadgeState(nextSettings.referralBadgeState);
     state.settings = nextSettings;
     state.streakData = normalizeStreakData(nextSettings.streakData);
+
+    var storedScriptMode = records.find(function (r) { return r.key === "scriptMode"; });
+    if (storedScriptMode && storedScriptMode.value !== "latin") {
+      try {
+        await putRecord("settings", { key: "scriptMode", value: "latin" });
+      } catch (error) {
+        logError(error);
+      }
+    }
   }
 
   async function loadProgress() {

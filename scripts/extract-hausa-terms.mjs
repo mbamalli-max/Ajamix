@@ -1,0 +1,295 @@
+#!/usr/bin/env node
+// Extract Hausa (Latin) terms from app/content.json and app/app.js
+// Output: docs/HAUSA-TERMS.md
+//
+// Usage: node scripts/extract-hausa-terms.mjs
+
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = resolve(__dirname, "..");
+const CONTENT_PATH = resolve(ROOT, "app/content.json");
+const APP_JS_PATH = resolve(ROOT, "app/app.js");
+const OUT_PATH = resolve(ROOT, "docs/HAUSA-TERMS.md");
+
+const RECURRING_THRESHOLD = 3;
+
+// Fields in content.json whose string values are Hausa-Latin prose.
+const HA_FIELDS = new Set([
+  "titleHa",
+  "textExplanationHa",
+  "audioScript",
+  "subjectHa",
+  "templateHa",
+  "questionHa",
+  "termHa",
+  "definitionHa",
+  "useTodayPrompt",
+  "gapTeaser",
+  "correctAnswer",
+  "answerHa",
+  "choiceHa",
+]);
+
+function readContent() {
+  const raw = readFileSync(CONTENT_PATH, "utf8");
+  return JSON.parse(raw);
+}
+
+function walkHausa(node, pathTrail, sink) {
+  if (node == null) return;
+  if (Array.isArray(node)) {
+    node.forEach((item, i) => walkHausa(item, `${pathTrail}[${i}]`, sink));
+    return;
+  }
+  if (typeof node === "object") {
+    for (const [key, value] of Object.entries(node)) {
+      const nextPath = pathTrail ? `${pathTrail}.${key}` : key;
+      if (HA_FIELDS.has(key) && typeof value === "string" && value.trim()) {
+        sink.push({ path: nextPath, text: value, field: key });
+      } else if (typeof value === "object") {
+        walkHausa(value, nextPath, sink);
+      }
+    }
+  }
+}
+
+// Tokenize Hausa-Latin: preserve ɓ ɗ ƙ (and their uppercase), apostrophe inside
+// words ('yan), drop {placeholders}, digits, and punctuation.
+function tokenize(text) {
+  const cleaned = text
+    .replace(/\{[^}]+\}/g, " ")
+    .replace(/\[[^\]]+\]/g, " ")
+    .replace(/[0-9]+/g, " ")
+    .toLowerCase();
+  const WORD = /[a-zɓɗƙ'ʼ\u2019]+/gu;
+  const out = [];
+  let m;
+  while ((m = WORD.exec(cleaned)) !== null) {
+    const token = m[0].replace(/^['\u2019ʼ]+|['\u2019ʼ]+$/g, "");
+    if (token && /[a-zɓɗƙ]/.test(token)) out.push(token);
+  }
+  return out;
+}
+
+function extractHaCalls(src) {
+  // Match ha("...") and ha('...') — string arg only, no nested template literals.
+  const calls = [];
+  const re = /\bha\(\s*(".*?"|'.*?')\s*[,)]/g;
+  let m;
+  while ((m = re.exec(src)) !== null) {
+    const raw = m[1].slice(1, -1);
+    // Unescape basic sequences.
+    const str = raw
+      .replace(/\\n/g, " ")
+      .replace(/\\t/g, " ")
+      .replace(/\\"/g, '"')
+      .replace(/\\'/g, "'")
+      .replace(/\\\\/g, "\\");
+    if (str.trim()) {
+      const line = src.slice(0, m.index).split("\n").length;
+      calls.push({ text: str, line });
+    }
+  }
+  return calls;
+}
+
+function extractProverbs(src) {
+  const m = src.match(/AJAMI_PROVERBS\s*=\s*\[([\s\S]*?)\]/);
+  if (!m) return [];
+  const body = m[1];
+  const out = [];
+  const re = /"((?:[^"\\]|\\.)*)"|'((?:[^'\\]|\\.)*)'/g;
+  let s;
+  while ((s = re.exec(body)) !== null) {
+    out.push(s[1] ?? s[2]);
+  }
+  return out;
+}
+
+function mdEscape(s) {
+  return s.replace(/\|/g, "\\|").replace(/\n/g, " ");
+}
+
+function truncate(s, n) {
+  return s.length <= n ? s : s.slice(0, n - 1) + "…";
+}
+
+function main() {
+  const content = readContent();
+  const appJs = readFileSync(APP_JS_PATH, "utf8");
+
+  // 1. Collect Hausa text from content.json.
+  const contentStrings = [];
+  walkHausa(content, "", contentStrings);
+
+  // 2. Collect ha() UI strings.
+  const uiStrings = extractHaCalls(appJs);
+
+  // 3. Proverbs.
+  const proverbs = extractProverbs(appJs);
+
+  // ---- Word-frequency pass ----
+  const freq = new Map(); // token -> { count, contexts: [{src, text}] }
+
+  function bump(token, srcLabel, text) {
+    const entry = freq.get(token) || { count: 0, contexts: [] };
+    entry.count += 1;
+    if (entry.contexts.length < 3) {
+      entry.contexts.push({ src: srcLabel, text: truncate(text, 80) });
+    }
+    freq.set(token, entry);
+  }
+
+  for (const item of contentStrings) {
+    for (const tok of tokenize(item.text)) bump(tok, item.path, item.text);
+  }
+  for (const item of uiStrings) {
+    for (const tok of tokenize(item.text)) bump(tok, `app.js:${item.line}`, item.text);
+  }
+  for (const p of proverbs) {
+    for (const tok of tokenize(p)) bump(tok, "AJAMI_PROVERBS", p);
+  }
+
+  const allTokens = [...freq.entries()]
+    .map(([token, data]) => ({ token, ...data }))
+    .sort((a, b) => b.count - a.count || a.token.localeCompare(b.token));
+
+  const recurring = allTokens.filter((t) => t.count >= RECURRING_THRESHOLD);
+  const singles = allTokens.filter((t) => t.count === 1);
+  const twos = allTokens.filter((t) => t.count === 2);
+
+  // ---- Glossary entries (pair termHa with definitionHa) ----
+  const glossary = [];
+  walkGlossary(content, glossary);
+
+  // ---- Build markdown ----
+  const lines = [];
+  lines.push("# Hausa Terms Inventory");
+  lines.push("");
+  lines.push(`_Generated by \`scripts/extract-hausa-terms.mjs\` — re-run after any content edit._`);
+  lines.push("");
+  lines.push("## Summary");
+  lines.push("");
+  lines.push(`- Total unique Hausa tokens: **${allTokens.length}**`);
+  lines.push(`- Recurring (≥ ${RECURRING_THRESHOLD}): **${recurring.length}**`);
+  lines.push(`- Mid-frequency (= 2): **${twos.length}**`);
+  lines.push(`- Single-occurrence: **${singles.length}**`);
+  lines.push(`- \`content.json\` Hausa strings: **${contentStrings.length}**`);
+  lines.push(`- \`app.js\` \`ha(...)\` UI strings: **${uiStrings.length}**`);
+  lines.push(`- Proverbs: **${proverbs.length}**`);
+  lines.push(`- Glossary entries: **${glossary.length}**`);
+  lines.push("");
+
+  // Recurring table
+  lines.push(`## Recurring words (frequency ≥ ${RECURRING_THRESHOLD})`);
+  lines.push("");
+  lines.push("Rank the Ajami spelling of these first — each one appears in many places, so fixing them propagates widely.");
+  lines.push("");
+  lines.push("| # | Word | Count | Sample contexts |");
+  lines.push("|---|------|-------|-----------------|");
+  recurring.forEach((entry, i) => {
+    const ctx = entry.contexts
+      .map((c) => `\`${c.src}\` — ${mdEscape(c.text)}`)
+      .join("<br>");
+    lines.push(`| ${i + 1} | \`${entry.token}\` | ${entry.count} | ${ctx} |`);
+  });
+  lines.push("");
+
+  // Mid-frequency
+  lines.push("## Mid-frequency words (2 occurrences)");
+  lines.push("");
+  lines.push("| Word | Sources |");
+  lines.push("|------|---------|");
+  twos.forEach((entry) => {
+    const ctx = entry.contexts.map((c) => `\`${c.src}\``).join(", ");
+    lines.push(`| \`${entry.token}\` | ${ctx} |`);
+  });
+  lines.push("");
+
+  // Single-occurrence
+  lines.push("## Single-occurrence words");
+  lines.push("");
+  lines.push("These appear once each — likely subject-specific vocabulary or long-tail terms. Skim for anything that looks misspelled.");
+  lines.push("");
+  lines.push("| Word | Source |");
+  lines.push("|------|--------|");
+  singles.forEach((entry) => {
+    lines.push(`| \`${entry.token}\` | \`${entry.contexts[0].src}\` |`);
+  });
+  lines.push("");
+
+  // UI strings verbatim
+  lines.push("## UI strings (verbatim `ha(...)` literals)");
+  lines.push("");
+  lines.push("Every distinct user-facing string rendered by `app.js`. These are the exact sentences a pilot user will see.");
+  lines.push("");
+  const uniqUi = dedupe(uiStrings, (u) => u.text);
+  lines.push("| Line | String |");
+  lines.push("|------|--------|");
+  uniqUi
+    .sort((a, b) => a.line - b.line)
+    .forEach((u) => {
+      lines.push(`| ${u.line} | ${mdEscape(u.text)} |`);
+    });
+  lines.push("");
+
+  // Proverbs
+  lines.push("## Proverbs (AJAMI_PROVERBS)");
+  lines.push("");
+  proverbs.forEach((p, i) => lines.push(`${i + 1}. ${p}`));
+  lines.push("");
+
+  // Glossary
+  lines.push("## Glossary (content.json)");
+  lines.push("");
+  lines.push("| Term (Latin) | Definition (Latin) | Subject |");
+  lines.push("|--------------|--------------------|---------|");
+  glossary.forEach((g) => {
+    lines.push(`| ${mdEscape(g.termHa || "")} | ${mdEscape(g.definitionHa || "")} | ${mdEscape(g.subject || "")} |`);
+  });
+  lines.push("");
+
+  mkdirSync(dirname(OUT_PATH), { recursive: true });
+  writeFileSync(OUT_PATH, lines.join("\n"), "utf8");
+
+  console.log(`Wrote ${OUT_PATH}`);
+  console.log(`  ${allTokens.length} unique tokens (${recurring.length} recurring, ${singles.length} single)`);
+  console.log(`  ${uniqUi.length} unique UI strings`);
+  console.log(`  ${glossary.length} glossary entries`);
+}
+
+function walkGlossary(node, sink) {
+  if (node == null) return;
+  if (Array.isArray(node)) {
+    const looksLikeGlossary = node.length > 0 && node.every(
+      (n) => n && typeof n === "object" && ("termHa" in n || "definitionHa" in n)
+    );
+    if (looksLikeGlossary) {
+      node.forEach((n) => sink.push({
+        termHa: n.termHa,
+        definitionHa: n.definitionHa,
+        subject: n.subject || n.subjectHa || "",
+      }));
+      return;
+    }
+    node.forEach((n) => walkGlossary(n, sink));
+    return;
+  }
+  if (typeof node === "object") {
+    for (const v of Object.values(node)) walkGlossary(v, sink);
+  }
+}
+
+function dedupe(arr, keyFn) {
+  const seen = new Map();
+  for (const item of arr) {
+    const k = keyFn(item);
+    if (!seen.has(k)) seen.set(k, item);
+  }
+  return [...seen.values()];
+}
+
+main();
