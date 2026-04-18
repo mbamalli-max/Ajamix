@@ -1,70 +1,114 @@
-# AJAMIX Smoke Test Checklist
+# AJAMIX v3.0 Smoke Test
 
-Manual end-to-end validation before pilot. Run this against:
-- **Local**: `python3 serve.py` → http://localhost:3002/app/
-- **Vercel preview**: `<PR preview URL>` on real Android (Galaxy A03 or similar)
-- **Production**: `<prod URL>`
+Manual end-to-end validation for the dual-track AJAMIX PWA.
 
-Mark each step Pass / Fail / N/A and record any issues.
+Run against:
+- Local: `python3 serve.py` → `http://localhost:3002/app/`
+- Vercel preview: preview deployment on a real Android device when possible
+- Production: `https://ajamix.ng/app/`
 
-## Pre-test setup
-- [ ] Silent stubs generated (`./tools/generate-stubs.sh`) — required for audio-in flows
-- [ ] Chrome DevTools → Application → IndexedDB → Clear `ajamix-db` before first run
-- [ ] Chrome DevTools → Application → Service Workers → Unregister any old SW
+## Reset Before Testing
 
-## 11-step functional smoke test
+- Clear `ajamix-db` in Chrome DevTools → Application → IndexedDB
+- Unregister any old service worker in DevTools → Application → Service Workers
+- If testing upgrade migration, first install the older build, generate some progress, then upgrade without clearing storage
 
-1. **First launch** — onboarding → grade-select picker shows all 14 grade bands (nursery1–ss3)
-2. **Pick Nursery 1** — learning path shows 12 modules grouped by subject
-3. **Open `n1-maths-01`** — lesson loads, silent audio plays, image card renders if test image present
-4. **Micro-pause 1 fires at 60s ± 500ms** — overlay appears, announced by screen reader (VoiceOver / ChromeVox)
-5. **Answer micro-pause** — DevTools → Application → IndexedDB → progress → record has `microPauseData` entry with `responseTimeMs`
-6. **Seek protection** — scrub past the next pause → audio auto-pauses and overlay appears
-7. **Complete lesson → quiz** — 5 questions render with randomized variables (reload twice, confirm numbers change)
-8. **Quiz retry** — intentionally force an error (e.g., corrupt `quizQuestions` in DevTools) → "Sake gwadawa" button appears and works
-9. **Pass quiz (3/5)** — quiz-results → unlock animation → learning-path shows next node unlocked
-10. **Switch grade band** — settings → P1 → learning-path shows 54 modules
-11. **Offline flow** — DevTools → Network → Offline → reload → full flow still works; close tab, reopen → state persists
+## Fresh Install Flow
 
-## Ajami glyph render check
+1. Launch the app from a clean profile.
+2. Verify onboarding shows the current flow with track selection and the optional PIN step, and confirm there is no voice-selection step.
+3. Finish onboarding without setting a PIN.
+4. Confirm the user lands in the app and is routed through the selected track.
+5. Repeat once more with a fresh profile and set a valid 4-digit PIN.
+6. Reload the app and confirm the PIN gate appears before any route content renders.
+7. Enter a wrong PIN 3 times and verify the app locks for 30 seconds.
+8. After lockout, enter the correct PIN and confirm the app unlocks normally.
 
-On the learning-path screen for Nursery 1, screenshot every titleAjami at `.ajami-title` size. Save to `docs/ajami-render-check/<device>-<date>/`. Flag any glyph that renders as tofu (□) or substitutes incorrectly. Those are candidates for the Scheherazade New fallback font.
+## Upgrade / Migration Flow
 
-## Accessibility check
+1. Start from a build before the latest sprint set and create progress in at least 2 modules.
+2. Upgrade to the current build without clearing IndexedDB.
+3. Confirm existing progress, settings, and track state are still present.
+4. Confirm the `events` store still exists and new events continue to be written.
 
-- [ ] Tap targets ≥ 48px (DevTools → Rendering → Emulate vision deficiency → none; then manually hover nav buttons to check computed height)
-- [ ] Quiz option buttons ≥ 56px
-- [ ] Ajami body text ≥ 1.25rem (20px)
-- [ ] Focus ring visible on keyboard Tab through onboarding
-- [ ] Micro-pause overlay announced by VoiceOver/ChromeVox
+## Track / Ad Slot Rules
 
-## PWA install check (HTTPS required — Vercel preview only)
+1. Set `featureFlags.adSlots=false` and confirm no ads appear anywhere.
+2. Set `featureFlags.adSlots=true` and `trackPreference="vocational"`.
+3. Verify ad slots appear only on:
+   - vocational home / learning-path
+   - track-select
+4. Verify ad slots do not appear on:
+   - onboarding
+   - lesson
+   - quiz
+   - progress
+   - settings
+   - PIN gate
 
-- [ ] Chrome menu shows "Install AJAMIX"
-- [ ] Installed app launches in standalone mode (no browser chrome)
-- [ ] Airplane mode → full offline flow still works
-- [ ] Cold-launch after quit → state persists
+## Lesson / Quiz / Chain Flow
 
-## Performance budget (PRD §10)
+1. Open a module lesson and confirm `module_started` is written to IndexedDB events.
+2. Open a second distinct module lesson and confirm `second_module_started` is written once.
+3. Complete a quiz with a passing score (`>= 3`) and confirm:
+   - `quiz_passed` is written
+   - the Use Today modal appears
+4. Choose `Zan yi amfani da shi yau` and confirm `use_today_yes` is written.
+5. Repeat with `Wata rana` and confirm `use_today_deferred` is written.
+6. Complete a vocational chained module such as `V01` and verify:
+   - the gap teaser card appears
+   - the next button resolves via `chainNext`
+7. Complete `V10` and verify:
+   - the leaf completion banner appears
+   - no gap teaser card is shown
 
-Run Lighthouse mobile audit against http://localhost:3002/app/ with 4× CPU throttling and Slow 4G. Record values:
+## Tomorrow Check Retention Loop
 
-| Metric | Budget | Measured | Pass? |
-|---|---|---|---|
-| First Contentful Paint | < 2.0s | | |
-| Time to Interactive | < 3.0s | | |
-| Performance score | > 80 | | |
-| Total JS (uncompressed) | < 200KB | | |
-| App shell (gzip) | < 150KB | | |
-| Lighthouse PWA score | > 90 | | |
+1. Pass a quiz and set a Use Today action.
+2. Advance the system clock at least 12 hours.
+3. Fully close and reopen the app.
+4. Verify the Tomorrow Check sheet appears exactly once.
+5. Answer `Haka` and confirm `tomorrow_check_yes` is written.
+6. Repeat with `Ba haka` and confirm `tomorrow_check_no` is written.
+7. Reopen the app again and confirm the same Tomorrow Check does not reappear.
 
-## Known gaps during preview test
-- No real audio files committed (`.gitignore` excludes `*.mp3`). Every lesson shows the graceful fallback: "Ba a samu fayil din audio ba tukuna…". This is expected during the UX lockdown sprint.
-- All 78 modules flagged `ajami_validated: false`. Scholar review is a parallel workstream.
+## Sharing / Referral
 
-## Sign-off
+1. Set `featureFlags.sharing=true`.
+2. In Settings, export a full `.ajamix` package.
+3. Confirm:
+   - a `.ajamix` file downloads or saves
+   - the post-export Chrome disclaimer sheet appears
+4. Import the same `.ajamix` file via `?import` or file handler.
+5. Confirm content reloads successfully after import.
+6. Export the delta pack and confirm a plain JSON file downloads.
+7. Set `featureFlags.referral=true`.
+8. Complete 5 distinct modules and verify the `Kawowa Daya — Mai Yada Ilimi` modal appears once.
+9. Dismiss the referral modal with `Rufe` and verify the badge remains on the progress screen.
+10. Tap the progress badge and verify the share flow opens.
+11. Complete a 6th distinct module and verify the referral modal does not appear again.
+12. Set `featureFlags.referral=false` and verify there is no referral modal and no progress badge.
+
+## Analytics / KPI Sync
+
+1. Open Settings and leave analytics consent OFF.
+2. Perform a few actions that generate events.
+3. Confirm there are no network calls to `/api/kpi`.
+4. Turn analytics consent ON.
+5. Reopen a lesson, pass a quiz, and complete a module.
+6. Confirm `/api/kpi` is called and unsynced rows begin moving to `synced=true`.
+7. Open `/dashboard` and verify KPI cards load from `/api/dashboard`.
+8. Use `Fitarwa: bayanan amfani` in Settings and confirm a JSON file containing events downloads.
+
+## Offline / Stability
+
+1. Put DevTools Network into Offline mode.
+2. Reload the app and verify cached app shell content still opens.
+3. Confirm PIN gate still appears first when enabled.
+4. Confirm no tight retry loop hits `/api/kpi` while offline.
+
+## Sign-Off
+
 - Local smoke test: date / tester
-- Vercel preview smoke test: date / tester / device
+- Preview smoke test: date / tester / device
 - Production smoke test: date / tester / device
-
----

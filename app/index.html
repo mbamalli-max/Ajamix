@@ -4,6 +4,10 @@
     <base href="/app/" />
     <meta charset="utf-8" />
     <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://*.supabase.co; img-src 'self' data:; font-src 'self'; media-src 'self' blob:;"
+    />
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
@@ -61,19 +65,8 @@
       </div>
     </noscript>
 
+    <script defer src="/app/vendor/jszip.min.js"></script>
+    <script defer src="./bootstrap.js"></script>
     <script defer src="./app.js"></script>
-    <script>
-      window.addEventListener("load", function () {
-        if (!("serviceWorker" in navigator)) {
-          return;
-        }
-
-        navigator.serviceWorker
-          .register("./sw.js", { scope: "/app/" })
-          .catch(function (error) {
-            console.error("AJAMIX service worker registration failed:", error);
-          });
-      });
-    </script>
   </body>
 </html>

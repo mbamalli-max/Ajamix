@@ -1,4 +1,4 @@
-const CACHE_VERSION = "ajamix-v8";
+const CACHE_VERSION = "ajamix-v21";
 const SHELL_CACHE = `ajamix-shell-${CACHE_VERSION}`;
 const CONTENT_CACHE = `ajamix-content-${CACHE_VERSION}`;
 const ASSET_CACHE = `ajamix-assets-${CACHE_VERSION}`;
@@ -8,10 +8,15 @@ const SHELL_FILES = [
   "/app/",
   "/app/index.html",
   "/app/styles.css",
+  "/app/bootstrap.js",
   "/app/app.js",
+  "/app/ads.json",
+  "/app/vendor/jszip.min.js",
   "/app/quiz-engine.js",
   "/app/manifest.json",
   "/app/fonts/NotoNaskhArabic-Regular.woff2",
+  "/app/icons/icon-192.png",
+  "/app/icons/icon-512.png",
 ];
 
 self.addEventListener("install", (event) => {

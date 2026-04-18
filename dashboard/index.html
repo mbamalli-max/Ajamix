@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ha">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AJAMIX KPI Dashboard</title>
+    <!-- Protect this route in Vercel Dashboard → Settings → Password Protection -->
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f4ec;
+        --panel: #fffdf8;
+        --line: rgba(27, 67, 50, 0.14);
+        --text: #16322a;
+        --muted: #5f6f68;
+        --accent: #e8a849;
+        --accent-dark: #8a5a00;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background:
+          radial-gradient(circle at top right, rgba(232, 168, 73, 0.18), transparent 28%),
+          linear-gradient(180deg, #f7f4ec, #f1efe7);
+        color: var(--text);
+      }
+
+      main {
+        width: min(1100px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 3rem;
+      }
+
+      .hero,
+      .note,
+      .health,
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        box-shadow: 0 18px 36px rgba(27, 67, 50, 0.08);
+      }
+
+      .hero,
+      .note,
+      .health {
+        padding: 1.4rem;
+      }
+
+      .hero p,
+      .note p,
+      .health p {
+        margin: 0.45rem 0 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .eyebrow {
+        margin: 0;
+        font-size: 0.8rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      h1, h2 {
+        margin: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 1.25rem;
+      }
+
+      .card {
+        padding: 1.1rem;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .value {
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        font-weight: 700;
+      }
+
+      .label {
+        font-size: 0.98rem;
+        color: var(--muted);
+      }
+
+      .bar {
+        height: 0.55rem;
+        border-radius: 999px;
+        background: rgba(27, 67, 50, 0.08);
+        overflow: hidden;
+      }
+
+      .bar > span {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--accent), #f5cf85);
+      }
+
+      .state {
+        margin-top: 1rem;
+        color: var(--muted);
+      }
+
+      .stack {
+        display: grid;
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+      }
+
+      .health-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0.9rem;
+      }
+
+      .health-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        border: 1px solid rgba(27, 67, 50, 0.18);
+        background: rgba(27, 67, 50, 0.06);
+        font-weight: 700;
+      }
+
+      .health-pill.ok {
+        color: #1b5e20;
+        border-color: rgba(27, 94, 32, 0.24);
+        background: rgba(27, 94, 32, 0.08);
+      }
+
+      .health-pill.error {
+        color: #8b2500;
+        border-color: rgba(139, 37, 0, 0.22);
+        background: rgba(139, 37, 0, 0.08);
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 0.96rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">AJAMIX KPI</p>
+        <h1>Allon kididdiga na AJAMIX</h1>
+        <p>
+          Wannan shafin yana karanta KPI daga <code>/api/dashboard</code> a wannan origin din.
+          An tsara shi don amfani da Vercel + Supabase free tier.
+        </p>
+      </section>
+
+      <section class="health" aria-live="polite">
+        <p class="eyebrow">Lafiyar tsarin</p>
+        <h2>System health</h2>
+        <p>
+          This quick check calls <code>/api/health</code> so the founder can confirm the
+          deployment is alive before trusting the KPI cards below.
+        </p>
+        <div class="health-row">
+          <span id="health-status" class="health-pill">Checking...</span>
+          <span id="health-time" class="meta">Last checked: not yet</span>
+        </div>
+      </section>
+
+      <section id="kpi-grid" class="grid" aria-live="polite"></section>
+      <p id="state" class="state">Ana debo bayanai...</p>
+
+      <div class="stack">
+        <section class="note">
+          <p class="eyebrow">Founder Note</p>
+          <h2>Free-tier usage warning</h2>
+          <p>
+            Vercel and Supabase free tiers are enough for a small pilot, but they do have
+            real limits. Watch Vercel function invocations, bandwidth, and build usage, and
+            watch Supabase database size, row growth, and egress. Review both dashboards at
+            least once per month so the pilot does not silently run into a quota cliff.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const KPI_CONFIG = [
+        { key: "totalActiveDays", label: "Jimillar kwanakin da aka samu events" },
+        { key: "eventsLast7Days", label: "Events a kwanaki 7 na baya" },
+        { key: "moduleStarted", label: "Modules da aka fara" },
+        { key: "moduleCompleted", label: "Modules da aka gama" },
+        { key: "quizPassed", label: "Quiz da aka ci" },
+        { key: "useTodayYesRate", label: "Kason Use Today = Eh", percent: true },
+        { key: "shareInitiated", label: "Yawan share da aka fara" }
+      ];
+
+      function formatValue(metric, value) {
+        if (metric.percent) {
+          return Math.round((Number(value || 0)) * 100) + "%";
+        }
+        return String(value ?? 0);
+      }
+
+      function getBarWidth(metric, value, maxCount) {
+        if (metric.percent) {
+          return Math.max(0, Math.min(100, Math.round(Number(value || 0) * 100)));
+        }
+        if (!maxCount) {
+          return 0;
+        }
+        return Math.max(6, Math.round((Number(value || 0) / maxCount) * 100));
+      }
+
+      function setHealthState(kind, timestamp, message) {
+        const statusNode = document.getElementById("health-status");
+        const timeNode = document.getElementById("health-time");
+        statusNode.className = "health-pill " + kind;
+        statusNode.textContent = message;
+        timeNode.textContent = "Last checked: " + timestamp;
+      }
+
+      async function loadHealth() {
+        const checkedAt = new Date().toLocaleString();
+
+        try {
+          const response = await fetch("/api/health", { credentials: "same-origin" });
+          if (!response.ok) {
+            throw new Error("Health endpoint returned a non-200 response.");
+          }
+
+          const payload = await response.json();
+          const statusLabel = payload && payload.ok ? "OK" : "ERROR";
+          setHealthState(payload && payload.ok ? "ok" : "error", checkedAt, statusLabel);
+        } catch (error) {
+          setHealthState("error", checkedAt, "ERROR");
+        }
+      }
+
+      async function loadDashboard() {
+        const stateNode = document.getElementById("state");
+        const grid = document.getElementById("kpi-grid");
+
+        try {
+          const response = await fetch("/api/dashboard", { credentials: "same-origin" });
+          if (!response.ok) {
+            throw new Error("Ba a samu dashboard data ba.");
+          }
+
+          const data = await response.json();
+          const kpis = data && data.kpis ? data.kpis : {};
+          const maxCount = KPI_CONFIG.reduce((max, metric) => {
+            if (metric.percent) return max;
+            return Math.max(max, Number(kpis[metric.key] || 0));
+          }, 0);
+
+          grid.innerHTML = KPI_CONFIG.map((metric) => {
+            const rawValue = kpis[metric.key] || 0;
+            return `
+              <article class="card">
+                <div class="value">${formatValue(metric, rawValue)}</div>
+                <div class="label">${metric.label}</div>
+                <div class="bar"><span style="width:${getBarWidth(metric, rawValue, maxCount)}%"></span></div>
+              </article>
+            `;
+          }).join("");
+
+          stateNode.textContent = "An sabunta dashboard data.";
+        } catch (error) {
+          stateNode.textContent = error instanceof Error ? error.message : "An kasa loda dashboard.";
+        }
+      }
+
+      loadHealth();
+      loadDashboard();
+    </script>
+  </body>
+</html>

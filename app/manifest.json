@@ -2,22 +2,45 @@
   "name": "AJAMIX",
   "short_name": "AJAMIX",
   "start_url": "/app/",
+  "scope": "/app/",
   "display": "standalone",
   "background_color": "#1B4332",
   "theme_color": "#1B4332",
   "description": "Full Nigerian curriculum Nursery to SS3, delivered in Ajami, offline-first.",
+  "file_handlers": [
+    {
+      "action": "/app/?import",
+      "accept": {
+        "application/zip": [
+          ".ajamix"
+        ]
+      }
+    }
+  ],
   "icons": [
     {
       "src": "/app/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/app/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "/app/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/app/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

@@ -1,11 +1,51 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/(.*\\.ajamix)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/zip"
+        }
+      ]
+    }
+  ],
   "routes": [
     {
-      "src": "/app/(.*)",
+      "src": "^/api/(.*)$",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "^/dashboard$",
+      "dest": "/dashboard/index.html"
+    },
+    {
+      "src": "^/dashboard/$",
+      "dest": "/dashboard/index.html"
+    },
+    {
+      "src": "^/dashboard/(.*)$",
+      "dest": "/dashboard/index.html"
+    },
+    {
+      "src": "^/$",
+      "dest": "/app/index.html"
+    },
+    {
+      "src": "^/app$",
+      "dest": "/app/index.html"
+    },
+    {
+      "src": "^/app/$",
+      "dest": "/app/index.html"
+    },
+    {
+      "src": "^/app/(.*)$",
       "dest": "/app/$1"
     },
     {
-      "src": "/(.*)",
+      "src": "^/(.*)$",
       "dest": "/app/index.html"
     }
   ]
