@@ -987,8 +987,8 @@
     var currentRoute = getAdRouteName();
 
     if (DEV && ALLOWED_AD_ROUTES.indexOf(currentRoute) === -1) {
-      console.error("AdSlot rendered on disallowed route: " + currentRoute);
-      throw new Error("AdSlot rendered on disallowed route: " + currentRoute);
+      console.warn("AdSlot rendered on disallowed route: " + currentRoute);
+      return "";
     }
 
     if (!shouldRenderAdsForCurrentRoute()) {
