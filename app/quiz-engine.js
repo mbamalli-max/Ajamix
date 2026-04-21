@@ -101,6 +101,52 @@ function substituteFormula(formula, variables) {
   return expression.trim();
 }
 
+function parseArithmetic(expression) {
+  const tokens = expression.match(/\d+(?:\.\d+)?|[+\-*/()]/g) || [];
+  let pos = 0;
+  function peek() { return tokens[pos]; }
+  function consume() { return tokens[pos++]; }
+  function parseExpr() {
+    let left = parseTerm();
+    while (peek() === "+" || peek() === "-") {
+      const op = consume();
+      const right = parseTerm();
+      left = op === "+" ? left + right : left - right;
+    }
+    return left;
+  }
+  function parseTerm() {
+    let left = parseFactor();
+    while (peek() === "*" || peek() === "/") {
+      const op = consume();
+      const right = parseFactor();
+      if (op === "/") {
+        if (right === 0) throw new Error("Division by zero");
+        left = left / right;
+      } else {
+        left = left * right;
+      }
+    }
+    return left;
+  }
+  function parseFactor() {
+    if (peek() === "(") {
+      consume();
+      const val = parseExpr();
+      consume();
+      return val;
+    }
+    const tok = consume();
+    if (tok === undefined) throw new Error("Unexpected end of expression");
+    const num = Number(tok);
+    if (!Number.isFinite(num)) throw new Error(`Unexpected token: ${tok}`);
+    return num;
+  }
+  const result = parseExpr();
+  if (pos !== tokens.length) throw new Error(`Unexpected token: ${tokens[pos]}`);
+  return result;
+}
+
 function evaluateFormula(formula, variables) {
   const expression = substituteFormula(formula, variables);
 
@@ -112,8 +158,7 @@ function evaluateFormula(formula, variables) {
     throw new Error(`Division by zero detected: ${expression}`);
   }
 
-  const evaluator = new Function(`"use strict"; return (${expression});`);
-  const result = evaluator();
+  const result = parseArithmetic(expression);
 
   if (!Number.isFinite(result)) {
     throw new Error(`Invalid formula result: ${expression}`);
