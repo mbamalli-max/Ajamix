@@ -393,8 +393,16 @@
 
     onboardingData.trackPreference = normalizedTrack;
     state.onboardingPinMessage = "";
-    await saveSettings({ trackPreference: normalizedTrack }, { render: false });
-    onboardingStep = 7;
+
+    if (normalizedTrack === "vocational") {
+      onboardingData.gradeBand = null;
+      await saveSettings({ trackPreference: normalizedTrack }, { render: false });
+      onboardingStep = 7;
+    } else {
+      await saveSettings({ trackPreference: normalizedTrack }, { render: false });
+      onboardingStep = 6;
+    }
+
     render();
   }
 
@@ -1663,7 +1671,7 @@
           ALLOWED_GRADE_BANDS.indexOf(target.dataset.gradeBand) >= 0
             ? target.dataset.gradeBand
             : "nursery1";
-        onboardingStep = 6;
+        onboardingStep = 7;
         render();
         return;
       }
@@ -1694,7 +1702,11 @@
     if (target.dataset.action === "onboarding-back") {
       if (onboardingStep > 1) {
         state.onboardingPinMessage = "";
-        onboardingStep -= 1;
+        if (onboardingStep === 7 && onboardingData.trackPreference === "vocational") {
+          onboardingStep = 5;
+        } else {
+          onboardingStep -= 1;
+        }
         render();
       }
       return;
@@ -1735,13 +1747,18 @@
     }
 
     if (target.dataset.action === "track-set-vocational") {
-      await saveSettings({ trackPreference: "vocational" });
+      await saveSettings({ trackPreference: "vocational", gradeBand: null });
       navigate("#/learning-path");
       return;
     }
 
     if (target.dataset.action === "track-set-formal") {
-      await saveSettings({ trackPreference: "formal" });
+      await saveSettings({
+        trackPreference: "formal",
+        gradeBand: ALLOWED_GRADE_BANDS.indexOf(state.settings.gradeBand) >= 0
+          ? state.settings.gradeBand
+          : "nursery1",
+      });
       navigate("#/learning-path");
       return;
     }
@@ -2533,13 +2550,39 @@
   }
 
   function renderOnboardingStep5() {
-    var chosenBand = onboardingData.gradeBand || state.settings.gradeBand || "nursery1";
+    var currentTrack = onboardingData.trackPreference || state.settings.trackPreference || "formal";
     return [
       '<div class="ob-step">',
       '<div class="screen-heading">',
       '<p class="eyebrow">' + ha("Matakin 5 na 7") + "</p>",
+      "<h2>" + ha("Wacce hanya kake son bi?") + "</h2>",
+      '<p class="screen-copy">' + ha("Za ka iya canja hanya daga Settings a kowane lokaci.") + "</p>",
+      "</div>",
+      '<div class="ob-choice-grid">',
+      '<button class="ob-choice' + (currentTrack === "vocational" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-track-vocational">',
+      "<strong>" + ha("Hanyar Kasuwanci") + "</strong>",
+      "<span>" + ha("Darussan kasuwanci, aiki, da rayuwar yau da kullum.") + "</span>",
+      "</button>",
+      '<button class="ob-choice' + (currentTrack === "formal" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-track-formal">',
+      "<strong>" + ha("Hanyar Makaranta") + "</strong>",
+      "<span>" + ha("Darussan makaranta bisa matakin karatu.") + "</span>",
+      "</button>",
+      "</div>",
+      '<div class="ob-nav">',
+      '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
+      "</div>",
+      "</div>",
+    ].join("");
+  }
+
+  function renderOnboardingStep6() {
+    var chosenBand = onboardingData.gradeBand || state.settings.gradeBand || "nursery1";
+    return [
+      '<div class="ob-step">',
+      '<div class="screen-heading">',
+      '<p class="eyebrow">' + ha("Matakin 6 na 7") + "</p>",
       "<h2>" + ha("Wane matakin karatu?") + "</h2>",
-      '<p class="screen-copy">' + ha("Zabi matakin da ya dace. Bayan haka za ka zabi hanya da PIN idan kana so.") + "</p>",
+      '<p class="screen-copy">' + ha("Zabi matakin da ya dace. Bayan haka za ka sa PIN idan kana so.") + "</p>",
       '<p class="muted">' + ha("Zaɓaɓɓen mataki yanzu: ") + escapeHtml(getGradeBandLabel(chosenBand)) + "</p>",
       "</div>",
       '<div class="band-grid">',
@@ -2557,32 +2600,6 @@
       renderGradeBandButton("ss1", "Senior Secondary School Year 1."),
       renderGradeBandButton("ss2", "Senior Secondary School Year 2."),
       renderGradeBandButton("ss3", "Senior Secondary School Year 3."),
-      "</div>",
-      '<div class="ob-nav">',
-      '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
-      "</div>",
-      "</div>",
-    ].join("");
-  }
-
-  function renderOnboardingStep6() {
-    var currentTrack = onboardingData.trackPreference || state.settings.trackPreference || "formal";
-    return [
-      '<div class="ob-step">',
-      '<div class="screen-heading">',
-      '<p class="eyebrow">' + ha("Matakin 6 na 7") + "</p>",
-      "<h2>" + ha("Wacce hanya kake son bi?") + "</h2>",
-      '<p class="screen-copy">' + ha("Za ka iya canja hanya daga Settings a kowane lokaci.") + "</p>",
-      "</div>",
-      '<div class="ob-choice-grid">',
-      '<button class="ob-choice' + (currentTrack === "vocational" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-track-vocational">',
-      "<strong>" + ha("Hanyar Kasuwanci") + "</strong>",
-      "<span>" + ha("Darussan kasuwanci, aiki, da rayuwar yau da kullum.") + "</span>",
-      "</button>",
-      '<button class="ob-choice' + (currentTrack === "formal" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-track-formal">',
-      "<strong>" + ha("Hanyar Makaranta") + "</strong>",
-      "<span>" + ha("Darussan makaranta bisa matakin karatu.") + "</span>",
-      "</button>",
       "</div>",
       '<div class="ob-nav">',
       '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
@@ -3036,23 +3053,27 @@
       "</div>",
       '<div class="settings-grid">',
       '<article class="settings-panel">',
-      "<h3>" + ha("Matakin karatu") + "</h3>",
-      '<div class="band-grid">',
-      renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko.", true),
-      renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko.", true),
-      renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko.", true),
-      renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2.", true),
-      renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3.", true),
-      renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4.", true),
-      renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5.", true),
-      renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6.", true),
-      renderGradeBandButton("jss1", "Junior Secondary School Year 1."),
-      renderGradeBandButton("jss2", "Junior Secondary School Year 2."),
-      renderGradeBandButton("jss3", "Junior Secondary School Year 3."),
-      renderGradeBandButton("ss1", "Senior Secondary School Year 1."),
-      renderGradeBandButton("ss2", "Senior Secondary School Year 2."),
-      renderGradeBandButton("ss3", "Senior Secondary School Year 3."),
-      "</div>",
+      state.settings.trackPreference === "vocational"
+        ? ""
+        : [
+            "<h3>" + ha("Matakin karatu") + "</h3>",
+            '<div class="band-grid">',
+            renderGradeBandButton("nursery1", "Fara da lambobi, zane, da wasanni na farko.", true),
+            renderGradeBandButton("nursery2", "Ci gaba da lambobi da kalmomin farko.", true),
+            renderGradeBandButton("p1", "Kirgawa, ƙari, ragewa, da kimiyya ta farko.", true),
+            renderGradeBandButton("p2", "Lissafi, Kimiyya, da Karatun Al'umma na P2.", true),
+            renderGradeBandButton("p3", "Lissafi, Kimiyya, da Karatun Al'umma na P3.", true),
+            renderGradeBandButton("p4", "Lissafi, Kimiyya, da Karatun Al'umma na P4.", true),
+            renderGradeBandButton("p5", "Lissafi, Kimiyya, da Karatun Al'umma na P5.", true),
+            renderGradeBandButton("p6", "Lissafi, Kimiyya, da Karatun Al'umma na P6.", true),
+            renderGradeBandButton("jss1", "Junior Secondary School Year 1."),
+            renderGradeBandButton("jss2", "Junior Secondary School Year 2."),
+            renderGradeBandButton("jss3", "Junior Secondary School Year 3."),
+            renderGradeBandButton("ss1", "Senior Secondary School Year 1."),
+            renderGradeBandButton("ss2", "Senior Secondary School Year 2."),
+            renderGradeBandButton("ss3", "Senior Secondary School Year 3."),
+            "</div>",
+          ].join(""),
       '<div class="settings-section">',
       "<h3>" + ha("Hanyar koyo") + "</h3>",
       '<p class="muted">' + ha("Hanya yanzu: ") + ha(state.settings.trackPreference ? getTrackLabel(state.settings.trackPreference) : "Ba a zaba ba tukuna.") + "</p>",
@@ -3504,12 +3525,33 @@
     });
   }
 
+  function findPrerequisiteModule(module) {
+    if (!module || module.track !== "vocational") {
+      return null;
+    }
+    return state.modules.find(function (candidate) {
+      return candidate.track === "vocational" && candidate.chainNext === module.id;
+    }) || null;
+  }
+
   function getPathStateFromContext(modules, index, progressMap) {
     var module = modules[index];
     var record = progressMap[module.id] || getProgressRecord(module.id);
-    var previousModule = index > 0 ? modules[index - 1] : null;
-    var previousRecord = previousModule ? progressMap[previousModule.id] || getProgressRecord(previousModule.id) : null;
-    var isUnlocked = index === 0 || hasPassedModule(previousRecord);
+    var isUnlocked;
+
+    if (module.track === "vocational") {
+      var prereq = findPrerequisiteModule(module);
+      if (!prereq) {
+        isUnlocked = true;
+      } else {
+        var prereqRecord = progressMap[prereq.id] || getProgressRecord(prereq.id);
+        isUnlocked = hasPassedModule(prereqRecord);
+      }
+    } else {
+      var previousModule = index > 0 ? modules[index - 1] : null;
+      var previousRecord = previousModule ? progressMap[previousModule.id] || getProgressRecord(previousModule.id) : null;
+      isUnlocked = index === 0 || hasPassedModule(previousRecord);
+    }
 
     if (hasPassedModule(record)) {
       return "completed";
@@ -4765,6 +4807,7 @@
     var adSlot = renderAdSlot();
     var learningPath = buildLearningPath();
     var trackSwitchControls = renderTrackSwitchControls();
+    var isVocational = state.settings.trackPreference === "vocational";
     var caregiverEntryMarkup = [
       '<section class="screen-panel caregiver-entry-panel">',
       '<a class="caregiver-entry-card" href="#/caregiver">',
@@ -4796,6 +4839,73 @@
     }).length;
     var nextModule = getNextLearningPathEntry(learningPath);
     var progressPct = Math.round((completedCount / learningPath.length) * 100);
+
+    if (isVocational) {
+      var vocationalCards = learningPath
+        .map(function (entry) {
+          var module = entry.module;
+          var record = entry.record;
+          var isLocked = entry.state === "locked";
+          var prereq = findPrerequisiteModule(module);
+          var lockedHint = prereq
+            ? ha("Kammala ") + ha(prereq.titleHa || prereq.id) + ha(" don buɗewa.")
+            : ha("Za a buɗe nan gaba.");
+          var quizCount = Array.isArray(module.quizQuestions) ? module.quizQuestions.length : 0;
+          var quizCopy =
+            typeof record.bestScore === "number"
+              ? "Quiz " + escapeHtml(String(record.bestScore)) + "/" + escapeHtml(String(quizCount))
+              : ha("Quiz ba a fara ba");
+          return [
+            '<button class="voc-card voc-card--' + escapeAttribute(entry.state) + '" type="button"' +
+              (isLocked ? " disabled" : ' data-action="open-lesson" data-module-id="' + escapeAttribute(module.id) + '"') +
+              '>',
+            '<div class="voc-card-header">',
+            '<span class="voc-card-id">' + escapeHtml(module.id) + "</span>",
+            '<span class="' + getPathBadgeClass(entry.state) + '">' + getPathStateCopy(entry.state) + "</span>",
+            "</div>",
+            '<p class="voc-card-title">' + ha(module.titleHa || module.titleEn || "") + "</p>",
+            module.summary && module.summary.ha
+              ? '<p class="voc-card-summary muted">' + ha(module.summary.ha) + "</p>"
+              : "",
+            '<div class="voc-card-meta"><span class="voc-card-meta-item">' + quizCopy + "</span></div>",
+            '<div class="voc-card-hint">' +
+              (isLocked ? lockedHint : ha("Taɓa domin bude darasi.")) +
+              "</div>",
+            "</button>",
+          ].join("");
+        })
+        .join("");
+
+      return [
+        adSlot,
+        caregiverEntryMarkup,
+        '<section class="screen-panel path-overview">',
+        '<div class="screen-heading">',
+        '<p class="eyebrow">' + ha("Hanyar koyo") + "</p>",
+        "<h2>" + ha("Hanyar Kasuwanci") + "</h2>",
+        '<p class="screen-copy">' + ha("Darussan kasuwanci. Wasu suna buƙatar a kammala wani kafin a bude su.") + "</p>",
+        "</div>",
+        trackSwitchControls,
+        '<div class="path-progress-shell">',
+        '<div class="path-progress-copy"><strong>' +
+          completedCount +
+          "/" +
+          learningPath.length +
+          "</strong><span>" + ha("An kammala") + "</span></div>",
+        '<div class="path-progress-rail"><span class="path-progress-fill" style="width: ' + progressPct + '%;"></span></div>',
+        "</div>",
+        nextModule
+          ? '<div class="path-next-callout"><span class="pill">' + ha("Na gaba") + "</span><strong>" +
+            ha(nextModule.module.titleHa) +
+            '</strong><span class="muted-copy">' +
+            getPathStateCopy(nextModule.state) +
+            "</span></div>"
+          : '<div class="path-next-callout"><span class="pill">' + ha("Madalla") + "</span><strong>" + ha("Ka kammala duk darussan kasuwanci.") + "</strong></div>",
+        "</section>",
+        '<section class="voc-grid" aria-label="Vocational courses">' + vocationalCards + "</section>",
+      ].join("");
+    }
+
     var moduleCards = learningPath
       .map(function (entry, index) {
         var module = entry.module;
@@ -5553,10 +5663,15 @@
   }
 
   async function completeOnboarding() {
-    var chosenBand = ALLOWED_GRADE_BANDS.indexOf(onboardingData.gradeBand) >= 0
-      ? onboardingData.gradeBand
-      : (state.settings.gradeBand || "nursery1");
     var chosenTrack = normalizeTrackPreference(onboardingData.trackPreference || state.settings.trackPreference) || "formal";
+    var chosenBand;
+    if (chosenTrack === "vocational") {
+      chosenBand = null;
+    } else {
+      chosenBand = ALLOWED_GRADE_BANDS.indexOf(onboardingData.gradeBand) >= 0
+        ? onboardingData.gradeBand
+        : (state.settings.gradeBand || "nursery1");
+    }
     var isFirstOnboarding = !state.settings.onboarded;
     var nextFeatureFlags = normalizeFeatureFlags(state.settings.featureFlags);
 
@@ -5670,12 +5785,15 @@
       nextSettings[record.key] = record.value;
     });
 
-    if (ALLOWED_GRADE_BANDS.indexOf(nextSettings.gradeBand) === -1) {
-      nextSettings.gradeBand = "nursery1";
-    }
-
     nextSettings.scriptMode = "latin";
     nextSettings.trackPreference = normalizeTrackPreference(nextSettings.trackPreference);
+    if (nextSettings.trackPreference === "vocational") {
+      nextSettings.gradeBand = ALLOWED_GRADE_BANDS.indexOf(nextSettings.gradeBand) >= 0
+        ? nextSettings.gradeBand
+        : null;
+    } else if (ALLOWED_GRADE_BANDS.indexOf(nextSettings.gradeBand) === -1) {
+      nextSettings.gradeBand = "nursery1";
+    }
     nextSettings.privacyMode = normalizePrivacyMode(nextSettings.privacyMode);
     nextSettings.featureFlags = normalizeFeatureFlags(nextSettings.featureFlags);
     nextSettings.analyticsConsent = normalizeAnalyticsConsent(nextSettings.analyticsConsent);
@@ -7196,7 +7314,9 @@
     var home = document.getElementById("home-btn");
 
     if (gradeChip) {
-      gradeChip.textContent = getGradeBandLabel(state.settings.gradeBand || "nursery1");
+      gradeChip.textContent = state.settings.trackPreference === "vocational" && !state.settings.gradeBand
+        ? getTrackLabel("vocational")
+        : getGradeBandLabel(state.settings.gradeBand || "nursery1");
     }
 
     if (connectionChip) {

@@ -619,6 +619,83 @@ a {
   border-color: rgba(27, 67, 50, 0.1);
 }
 
+.voc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.85rem;
+  padding: 0 1rem 1.25rem;
+}
+
+.voc-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1rem 1.1rem;
+  text-align: left;
+  border-radius: 1rem;
+  border: 1px solid rgba(27, 67, 50, 0.14);
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(27, 67, 50, 0.06);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  color: inherit;
+  font: inherit;
+}
+
+.voc-card:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(27, 67, 50, 0.1);
+}
+
+.voc-card:disabled,
+.voc-card--locked {
+  cursor: not-allowed;
+  opacity: 0.55;
+  background: rgba(27, 67, 50, 0.04);
+  box-shadow: none;
+}
+
+.voc-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.voc-card-id {
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.voc-card-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+
+.voc-card-summary {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.voc-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.voc-card-hint {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
 .path-badge.is-bright {
   color: #6c4700;
   background: rgba(232, 168, 73, 0.2);
