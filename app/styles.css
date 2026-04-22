@@ -1534,6 +1534,102 @@ a {
   width: min(100%, 22rem);
 }
 
+.voc-lesson {
+  gap: 1.1rem;
+}
+
+.voc-lesson-header .lesson-title-small {
+  justify-self: start;
+}
+
+.voc-lesson-sections {
+  display: grid;
+  gap: 1rem;
+}
+
+.voc-lesson-section,
+.voc-glossary,
+.voc-example {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+  border: 1px solid rgba(13, 27, 42, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.voc-lesson-section h3,
+.voc-glossary h3,
+.voc-example h3,
+.voc-gap-teaser h3,
+.voc-today-prompt h3 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.voc-lesson-body,
+.voc-glossary-definition,
+.voc-example-scenario,
+.voc-example-takeaway,
+.voc-gap-teaser-copy,
+.voc-today-prompt-copy {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.voc-glossary {
+  border-color: rgba(226, 201, 138, 0.42);
+  background:
+    linear-gradient(135deg, rgba(226, 201, 138, 0.18), rgba(255, 255, 255, 0.84));
+}
+
+.voc-glossary-term {
+  font-weight: 800;
+}
+
+.voc-example {
+  border-color: rgba(13, 27, 42, 0.18);
+  background:
+    linear-gradient(135deg, rgba(13, 27, 42, 0.05), rgba(226, 201, 138, 0.14)),
+    rgba(255, 255, 255, 0.78);
+}
+
+.voc-example-takeaway {
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(13, 27, 42, 0.06);
+}
+
+.voc-gap-teaser,
+.voc-today-prompt {
+  display: grid;
+  gap: 0.9rem;
+  border-color: rgba(226, 201, 138, 0.46);
+  background:
+    radial-gradient(circle at top right, rgba(226, 201, 138, 0.24), transparent 34%),
+    linear-gradient(180deg, rgba(255, 250, 236, 0.98), rgba(255, 255, 255, 0.96));
+}
+
+.voc-today-prompt {
+  padding: 1rem;
+  border: 1px solid rgba(45, 106, 79, 0.24);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(45, 106, 79, 0.09), rgba(226, 201, 138, 0.15)),
+    rgba(255, 255, 255, 0.9);
+}
+
+.voc-lesson .ajami,
+.voc-glossary .ajami,
+.voc-example .ajami,
+.voc-gap-teaser .ajami,
+.voc-today-prompt .ajami {
+  line-height: var(--ajami-line-height);
+}
+
 .micro-pause-overlay.is-visible {
   position: absolute;
   inset: 1rem;

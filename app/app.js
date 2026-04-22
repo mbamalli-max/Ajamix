@@ -2977,6 +2977,10 @@
     }).length;
     var totalFiles = session.items.length;
     var totalSizeCopy = formatBytes(session.totalEstimatedBytes || 0);
+    var downloadHeading =
+      state.settings.trackPreference === "vocational"
+        ? ha("Adana darussan Kasuwanci domin offline")
+        : ha("Adana sautukan ") + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + ha(" domin offline");
     var downloadItems = session.items.length
       ? session.items
           .map(function (item) {
@@ -3002,7 +3006,7 @@
       '<section class="screen-panel download-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">Download Audio</p>',
-      "<h2>" + ha("Adana sautukan ") + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + ha(" domin offline") + "</h2>",
+      "<h2>" + downloadHeading + "</h2>",
       '<p class="screen-copy">' + ha("Zaka iya sauke duk audio na wannan mataki yanzu, ko kuma ka bar AJAMIX ta yi streaming a lokacin da ake bukata idan akwai intanet.") + "</p>",
       "</div>",
       '<div class="metrics-grid">',
@@ -4223,7 +4227,11 @@
   }
 
   function canStartQuiz(moduleId) {
+    var module = getModuleById(moduleId);
     var record = getProgressRecord(moduleId);
+    if (isVocationalModule(module)) {
+      return !isModuleLocked(moduleId);
+    }
     return !isModuleLocked(moduleId) && Number(record.audioListenedPct || 0) >= 80;
   }
 
@@ -5097,6 +5105,20 @@
 
   function renderLessonScreen() {
     var module = getModuleById(state.route.moduleId);
+
+    if (!module) {
+      return [
+        '<section class="screen-panel">',
+        "<h2>" + ha("Ba a samu wannan darasi ba.") + "</h2>",
+        '<button class="btn" data-route="#/learning-path" type="button">' + ha("Koma hanyar koyo") + "</button>",
+        "</section>",
+      ].join("");
+    }
+
+    if (isVocationalModule(module)) {
+      return renderVocationalLesson(module);
+    }
+
     var session = state.lessonSession || buildLessonSessionSnapshot(module ? module.id : null);
     var record = getProgressRecord(module ? module.id : null);
     var listenedPct = Math.max(session.listenedPct || 0, record.audioListenedPct || 0);
@@ -5109,18 +5131,9 @@
     var canQuiz = module ? canStartQuiz(module.id) : false;
     var quizReadyText = audioMissing
       ? "Sauti yana zuwa. Za ka samu player da quiz din da zarar an saka MP3 dinsa."
-      : canQuiz
-        ? "Ka saurara isasshe. Yanzu za ka iya shiga quiz."
-        : "Sai ka saurara aƙalla 80% na audio kafin quiz ya bude.";
-
-    if (!module) {
-      return [
-        '<section class="screen-panel">',
-        "<h2>" + ha("Ba a samu wannan darasi ba.") + "</h2>",
-        '<button class="btn" data-route="#/learning-path" type="button">' + ha("Koma hanyar koyo") + "</button>",
-        "</section>",
-      ].join("");
-    }
+        : canQuiz
+          ? "Ka saurara isasshe. Yanzu za ka iya shiga quiz."
+          : "Sai ka saurara aƙalla 80% na audio kafin quiz ya bude.";
 
     return [
       '<section class="screen-panel lesson-shell">',
@@ -5202,6 +5215,121 @@
             "</section>",
           ].join("")
         : "",
+    ].join("");
+  }
+
+  function renderVocationalLesson(module) {
+    var lessonSections = Array.isArray(module.lessons) ? module.lessons : [];
+    var lessonMarkup = lessonSections
+      .map(function (section, index) {
+        return renderVocationalLessonSection(section, index);
+      })
+      .filter(Boolean)
+      .join("");
+
+    if (!lessonMarkup) {
+      lessonMarkup = '<article class="voc-lesson-section voc-lesson-prose"><p>' +
+        renderLocalizedInline(module.summary || module.textExplanationHa || "", "voc-lesson-body") +
+        "</p></article>";
+    }
+
+    return [
+      '<section class="screen-panel lesson-shell voc-lesson-header">',
+      '<div class="lesson-topbar">',
+      '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="' + ha("Koma baya") + '">←</button>',
+      '<div class="lesson-heading-block">',
+      state.settings.scriptMode === "ajami"
+        ? '<p class="ajami lesson-title-large">' + formatAjamiText(getDisplayTitle(module)) + "</p>"
+        : '<p class="lesson-title-large lesson-title-large--latin">' + escapeHtml(getDisplayTitle(module)) + "</p>",
+      '<p class="lesson-title-small">' + getDisplaySubject(module) + "</p>",
+      "</div>",
+      "</div>",
+      "</section>",
+      '<section class="screen-panel lesson-text-panel voc-lesson">',
+      '<p class="eyebrow">' + ha("Darasin Kasuwanci") + "</p>",
+      '<div class="voc-lesson-sections">' + lessonMarkup + "</div>",
+      "</section>",
+      renderVocationalGapTeaser(module),
+      '<section class="screen-panel lesson-footer-panel voc-lesson-footer">',
+      '<button class="btn lesson-quiz-button" type="button" data-action="open-quiz" data-module-id="' +
+        escapeAttribute(module.id) +
+        '">' + ha("Ci gaba zuwa tambayoyi") + "</button>",
+      '<p class="helper-text">' + ha("Ka gama karatun sassan nan. Yanzu ka gwada abin da ka fahimta.") + "</p>",
+      "</section>",
+    ].join("");
+  }
+
+  function renderVocationalLessonSection(section, index) {
+    section = section || {};
+    var sectionType = String(section && section.type ? section.type : "").toLowerCase();
+
+    if (sectionType === "glossary-card") {
+      return [
+        '<article class="voc-glossary" data-voc-section="' + escapeAttribute(String(index + 1)) + '">',
+        '<p class="eyebrow">' + ha("Kalma") + "</p>",
+        "<h3>" + renderLocalizedInline(section.term, "voc-glossary-term") + "</h3>",
+        '<p class="voc-glossary-definition">' + renderLocalizedInline(section.definition, "voc-glossary-copy") + "</p>",
+        "</article>",
+      ].join("");
+    }
+
+    if (sectionType === "example") {
+      return [
+        '<article class="voc-example" data-voc-section="' + escapeAttribute(String(index + 1)) + '">',
+        '<p class="eyebrow">' + ha("Misali") + "</p>",
+        "<h3>" + renderLocalizedInline(section.title, "voc-example-title") + "</h3>",
+        '<p class="voc-example-scenario">' + renderLocalizedInline(section.scenario, "voc-example-copy") + "</p>",
+        section.takeaway
+          ? '<p class="voc-example-takeaway"><strong>' + ha("Abin dauka: ") + "</strong>" +
+            renderLocalizedInline(section.takeaway, "voc-example-copy") +
+            "</p>"
+          : "",
+        "</article>",
+      ].join("");
+    }
+
+    if (sectionType === "prose" || section.heading || section.body) {
+      return [
+        '<article class="voc-lesson-section voc-lesson-prose" data-voc-section="' + escapeAttribute(String(index + 1)) + '">',
+        section.heading ? "<h3>" + renderLocalizedInline(section.heading, "voc-lesson-heading") + "</h3>" : "",
+        section.body ? '<p class="voc-lesson-body">' + renderLocalizedInline(section.body, "voc-lesson-copy") + "</p>" : "",
+        "</article>",
+      ].join("");
+    }
+
+    return "";
+  }
+
+  function renderVocationalGapTeaser(module) {
+    if (!module || !hasLocalizedCopy(module.gapTeaser)) {
+      return "";
+    }
+
+    return [
+      '<section class="screen-panel voc-gap-teaser">',
+      '<div class="gap-teaser-card-head">',
+      '<span class="gap-teaser-icon" aria-hidden="true">!</span>',
+      '<div class="screen-stack">',
+      '<p class="eyebrow">' + ha("Abin da ke gaba") + "</p>",
+      "<h3>" + ha("Yanzu da ka gane...") + "</h3>",
+      "</div>",
+      "</div>",
+      '<p class="voc-gap-teaser-copy">' + renderLocalizedInline(module.gapTeaser, "voc-gap-teaser-text") + "</p>",
+      "</section>",
+    ].join("");
+  }
+
+  function renderVocationalUseTodayPromptCard(module) {
+    if (!isVocationalModule(module) || !hasLocalizedCopy(module.useTodayPrompt)) {
+      return "";
+    }
+
+    return [
+      '<article class="voc-today-prompt">',
+      '<p class="eyebrow">' + ha("Alkawarin yau") + "</p>",
+      "<h3>" + ha("Gwada wannan a kasuwarka yau") + "</h3>",
+      '<p class="voc-today-prompt-copy">' + renderLocalizedInline(module.useTodayPrompt, "voc-today-prompt-text") + "</p>",
+      "</article>",
     ].join("");
   }
 
@@ -5636,6 +5764,10 @@
     return state.modules.find(function (module) {
       return module.id === moduleId;
     });
+  }
+
+  function isVocationalModule(module) {
+    return Boolean(module && String(module.track || "").toLowerCase() === "vocational");
   }
 
   function getActivityById(activityId) {
@@ -7199,6 +7331,7 @@
     };
     var nextModule = results.nextModuleId ? getModuleById(results.nextModuleId) : getNextModuleAfter(module.id);
     var endOfModuleBridge = results.progressPassed ? renderEndOfModuleBridge(module) : "";
+    var vocationalTodayPrompt = renderVocationalUseTodayPromptCard(module);
 
     return [
       '<section class="screen-panel quiz-shell quiz-result-screen">',
@@ -7212,6 +7345,7 @@
           ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
           : escapeHtml(getDisplayTitle(module))) +
         "</h2>",
+      vocationalTodayPrompt,
       '<p class="screen-copy">' + ha("Ka samu ") +
         escapeHtml(String(results.score)) +
         ha(" daga cikin ") +
