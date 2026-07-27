@@ -1,0 +1,13 @@
+{
+  "purpose": "Pipeline proofs only; placeholder base is not AI art and must not become a learner asset.",
+  "baseArtwork": "placeholder-base-not-ai-art.png",
+  "sourceManifest": "tools/image-manifest/p2-bsci-image-manifest.json",
+  "sourceModule": "p2-bsci-16",
+  "latinLabels": ["Ruwa", "Iska", "Hasken Rana", "Ƙasa"],
+  "outputs": {
+    "latin-p2-bsci-16-proof.png": { "ajami": false, "exactLabels": ["Ruwa", "Iska", "Hasken Rana", "Ƙasa"] },
+    "ajami-unvalidated-proof.png": { "ajami": true, "marker": "GWAJI — BA A TANTANCE BA / UNVALIDATED TEST" },
+    "bilingual-unvalidated-proof.png": { "ajami": true, "marker": "GWAJI — BA A TANTANCE BA / UNVALIDATED TEST" },
+    "math-27-plus-15-equals-42-proof.png": { "ajami": false, "exactMath": "27 + 15 = 42", "columnLines": ["  27", "+ 15", "────", "  42"] }
+  }
+}

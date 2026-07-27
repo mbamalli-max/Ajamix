@@ -1,0 +1,2854 @@
+{
+  "generatedFrom": "tools/image-manifest/*.json (230 total entries, 12 already rendered in the pilot, 218 remaining)",
+  "totalBatches": 73,
+  "batchSize": 3,
+  "ordering": "Tier 1: Mathematics diagrams (exact/schematic, P1-P6). Tier 2: Basic Science diagrams (labelled). Tier 3: Basic Science illustrations (contextual, unlabelled). Within each tier, ordered by grade band then module id.",
+  "batches": [
+    {
+      "batch": 1,
+      "items": [
+        {
+          "id": "p1-maths-02",
+          "imagePath": "images/p1-maths-02.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A number path from 11 to 20 with each number written in order and a small object (book or chair) beside several of them, with 15 circled as the midpoint example the module itself calls out.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-03",
+          "imagePath": "images/p1-maths-03.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A number path from 21 to 30 with the transition from 29 to 30 specifically highlighted, matching the module's own callout that the next number after 29 is 30.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-04",
+          "imagePath": "images/p1-maths-04.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A number path from 31 to 40 with the transition from 39 to 40 specifically highlighted, matching the module's own callout that the next number after 39 is 40.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "items": [
+        {
+          "id": "p1-maths-05",
+          "imagePath": "images/p1-maths-05.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A number path from 41 to 50 with the transition from 49 to 50 specifically highlighted, matching the module's own callout that the next number after 49 is 50.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-06",
+          "imagePath": "images/p1-maths-06.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "Two labelled boxes, tens and units, showing 37 broken into 3 tens and 7 units, beside a side-by-side comparison of 24 and 42 to show that swapping the digit positions changes the value.",
+          "labelsHa": [
+            "Goma",
+            "Guda"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-07",
+          "imagePath": "images/p1-maths-07.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "Two number comparisons with the > symbol's open mouth pointing at the larger number: 28 > 23, and 12 < 15, each pair shown with matching counted objects beneath them.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "items": [
+        {
+          "id": "p1-maths-08",
+          "imagePath": "images/p1-maths-08.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "7 pencils split into two groups with one pencil left over and circled (odd), beside 6 pencils splitting evenly into two groups of 3 with none left over (even).",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-09",
+          "imagePath": "images/p1-maths-09.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "5 dots combined with 3 more dots making 8 total, shown beside a matching pencil-counting version: 5 pencils plus 3 pencils equals 8 pencils.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-10",
+          "imagePath": "images/p1-maths-10.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A worked addition 8 + 5 = 13 where ten of the combined dots are circled into one group and 3 remain loose, showing the carried ten moving to the tens place.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "items": [
+        {
+          "id": "p1-maths-11",
+          "imagePath": "images/p1-maths-11.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "9 pencils with 4 of them crossed out or covered, leaving 5 clearly visible, illustrating 9 − 4 = 5.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-12",
+          "imagePath": "images/p1-maths-12.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "illustration",
+          "depictEn": "A calm, confident child working through a worksheet that mixes counting, addition, and subtraction questions, with a teacher nearby offering quiet encouragement.",
+          "labelsHa": [],
+          "safetyNote": "Depict the child calm and confident, not anxious or stressed — the module frames this as ordinary review, not a frightening test."
+        },
+        {
+          "id": "p1-maths-13",
+          "imagePath": "images/p1-maths-13.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A number path from 51 to 70 with the sequence 59 to 60 to 61 specifically highlighted, matching the module's own callout of this transition.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "items": [
+        {
+          "id": "p1-maths-14",
+          "imagePath": "images/p1-maths-14.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "Three groups of 3 balls each (3 + 3 + 3 = 9) shown beside the matching multiplication sentence 3 × 3 = 9.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-15",
+          "imagePath": "images/p1-maths-15.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "8 small items shared equally among 4 children, 2 each, shown as a fair-sharing scene with each child holding the same amount.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-16",
+          "imagePath": "images/p1-maths-16.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A round plate coloured half one colour and half another to show rabi (half), beside a second identical plate divided into 4 equal coloured quarters to show rubu'i (quarter).",
+          "labelsHa": [
+            "Rabi",
+            "Rubu'i"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 6,
+      "items": [
+        {
+          "id": "p1-maths-17",
+          "imagePath": "images/p1-maths-17.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "Nigerian naira notes arranged in order — ₦5, ₦10, ₦20, ₦50, and ₦100 — with a small side note showing 100 kobo equal ₦1.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        },
+        {
+          "id": "p1-maths-18",
+          "imagePath": "images/p1-maths-18.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A market scene showing ₦20 and ₦30 combined into ₦50, beside a second panel showing a ₦100 note paid for a ₦70 item with ₦30 change being returned.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        },
+        {
+          "id": "p1-maths-19",
+          "imagePath": "images/p1-maths-19.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A metre tape measuring a table's length, with a small comparison panel showing 2 metres (200 cm) is longer than 150 cm.",
+          "labelsHa": [
+            "Mita",
+            "Santimita"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 7,
+      "items": [
+        {
+          "id": "p1-maths-20",
+          "imagePath": "images/p1-maths-20.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A 2-litre bottle shown half full (1 litre) beside the same bottle shown completely full (2 litres), with a small side comparison of a 5-litre container next to a 3-litre container.",
+          "labelsHa": [
+            "Lita"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-21",
+          "imagePath": "images/p1-maths-21.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A simple balance scale comparing a 5-kilogram sack of rice against a 2-kilogram sack, tipping toward the heavier side.",
+          "labelsHa": [
+            "Kilogiram"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-22",
+          "imagePath": "images/p1-maths-22.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A seven-day week strip with each day named in order from Litinin to Lahadi, beside an analog clock face showing 3 o'clock.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 8,
+      "items": [
+        {
+          "id": "p1-maths-23",
+          "imagePath": "images/p1-maths-23.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "Flat shapes — a triangle, a square, and a circle — shown beside solid shapes — a cube like a box and a sphere like a ball — to compare two-face and three-face shapes directly.",
+          "labelsHa": [
+            "Alwatika",
+            "Murabba'i"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p1-maths-24",
+          "imagePath": "images/p1-maths-24.png",
+          "subject": "maths",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A simple pictograph with two rows — fish and meat — each showing a count of small icon symbols representing classmates' food preferences collected and tallied.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-01",
+          "imagePath": "images/p2-maths-01.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A 1–100 number chart with 46 circled and labelled with its word form (arba'in da shida), plus a small side note showing carefully handwritten 6 and 9 side by side to prevent confusing them.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 9,
+      "items": [
+        {
+          "id": "p2-maths-02",
+          "imagePath": "images/p2-maths-02.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Two number paths: one going forward 21, 22, 23, 24 with a forward-pointing arrow, and one going backward 30, 29, 28, 27 with a backward-pointing arrow.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-03",
+          "imagePath": "images/p2-maths-03.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Place-value boxes for 37 (3 tens, 7 units) beside a side-by-side comparison of 46 and 64 to show that swapping the digits changes the value.",
+          "labelsHa": [
+            "Goma",
+            "Ɗaya-Ɗaya"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-04",
+          "imagePath": "images/p2-maths-04.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "12 eggs compared to 9 eggs with a greater-than symbol between them, beside a second panel comparing 47 and 39 with their tens digits (4 and 3) highlighted first.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 10,
+      "items": [
+        {
+          "id": "p2-maths-05",
+          "imagePath": "images/p2-maths-05.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Number cards 12, 18, and 25 arranged in ascending order with an upward arrow, beside 40, 30, and 20 arranged in descending order with a downward arrow.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-06",
+          "imagePath": "images/p2-maths-06.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A simple addition board with tens and units columns showing 20 + 4 = 24, beside a second worked example 30 + 6 = 36.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-07",
+          "imagePath": "images/p2-maths-07.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A number-line addition for 18 + 5: a jump of +2 reaching 20, then a further jump of +3 reaching 23, showing the make-a-ten strategy step by step.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 11,
+      "items": [
+        {
+          "id": "p2-maths-09",
+          "imagePath": "images/p2-maths-09.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A worked subtraction for 23 − 8: one ten bundle is broken into 10 loose units (making 13 units total), then 13 − 8 = 5, with the 1 remaining ten giving a final answer of 15.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-10",
+          "imagePath": "images/p2-maths-10.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A word-problem scene: a basket with 12 mangoes, a mother adding 5 more mangoes, with the total 12 + 5 = 17 shown beside it.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-11",
+          "imagePath": "images/p2-maths-11.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A word-problem scene: a child with 18 balls giving 6 to a friend, with 18 − 6 = 12 shown as the amount remaining.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 12,
+      "items": [
+        {
+          "id": "p2-maths-12",
+          "imagePath": "images/p2-maths-12.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A number path counting by 2s (2, 4, 6, 8, 10) with a pair of shoes shown beside each number to represent counting things that naturally come in twos.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-13",
+          "imagePath": "images/p2-maths-13.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A number path counting by 5s (5, 10, 15, 20, 25) with a small group of five ₦5 coins shown beside each number, and the pattern that each number ends in 5 or 0 highlighted.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        },
+        {
+          "id": "p2-maths-14",
+          "imagePath": "images/p2-maths-14.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Bundles of ten pencils being counted 10, 20, 30, 40, 50, beside a small panel showing 23 → 33 → 43 to illustrate that only the tens digit changes while the ones digit stays the same.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 13,
+      "items": [
+        {
+          "id": "p2-maths-15",
+          "imagePath": "images/p2-maths-15.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Three groups of 2 balls each, shown as 2 + 2 + 2 = 6, with the matching multiplication sentence 3 sau 2 = 6 written beside it.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-16",
+          "imagePath": "images/p2-maths-16.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Four children, each with their 2 eyes marked, totalling 8 eyes altogether, illustrating 4 sau 2 = 8.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-17",
+          "imagePath": "images/p2-maths-17.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Four raised hands each showing 5 fingers, totalling 20, illustrating 4 sau 5 = 20, beside a small group of three ₦5 coins totalling ₦15.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        }
+      ]
+    },
+    {
+      "batch": 14,
+      "items": [
+        {
+          "id": "p2-maths-18",
+          "imagePath": "images/p2-maths-18.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Four bundles of ten pencils each, totalling 40, illustrating 4 sau 10 = 40, with a small note that multiplying by 10 always ends in 0.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-19",
+          "imagePath": "images/p2-maths-19.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Nigerian naira notes arranged in order — ₦50, ₦100, ₦200, and ₦500 — with a small kobo coin shown separately, labelled as a much smaller unit rarely used in everyday purchases.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions; depict money as something to be cared for, not wasted or taken from someone else, per the module's own framing."
+        },
+        {
+          "id": "p2-maths-20",
+          "imagePath": "images/p2-maths-20.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A market scene showing a ₦5 sweet and a ₦10 biscuit combined into a ₦15 total, with the addition written beside them.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        }
+      ]
+    },
+    {
+      "batch": 15,
+      "items": [
+        {
+          "id": "p2-maths-21",
+          "imagePath": "images/p2-maths-21.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A long stick compared to a short spoon, both starting from the same baseline, beside two lines of different lengths also starting from the same point for direct comparison.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p2-maths-22",
+          "imagePath": "images/p2-maths-22.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A stone weighed against a sheet of paper (the stone heavier), and an empty bucket compared with a full water bucket (the full one heavier), with a small note showing a child asking an adult for help lifting something very heavy.",
+          "labelsHa": [],
+          "safetyNote": "No child depicted lifting a heavy object alone — the module explicitly says to ask an adult for help with anything very heavy."
+        },
+        {
+          "id": "p2-maths-23",
+          "imagePath": "images/p2-maths-23.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Four everyday objects matched to their shapes: a plate (circle), floor tiles (square), a door (rectangle), and a roof (triangle).",
+          "labelsHa": [
+            "Da’ira",
+            "Murabba’i",
+            "Alwatika"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 16,
+      "items": [
+        {
+          "id": "p2-maths-24",
+          "imagePath": "images/p2-maths-24.png",
+          "subject": "maths",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Two analog clocks side by side, both with the hour hand near 7: one with the big hand on 12 showing 7 o'clock, the other with the big hand on 6 showing half past 7.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-01",
+          "imagePath": "images/p3-maths-01.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A place-value chart breaking the number 342 into three labelled columns — hundreds (3), tens (4), ones (2) — beside a small sack-of-millet icon being counted in hundreds, then tens, then single units, matching the module's own market analogy.",
+          "labelsHa": [
+            "Daruruwa",
+            "Gommai",
+            "Ɗaya-Ɗaya"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-02",
+          "imagePath": "images/p3-maths-02.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A vertical worked addition board for 27 + 15: ones column 7 + 5 = 12 (write 2, carry 1 to tens), tens column 2 + 1 + 1 = 4, final answer 42 — the carried 1 shown as a small arrow moving to the tens column.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 17,
+      "items": [
+        {
+          "id": "p3-maths-03",
+          "imagePath": "images/p3-maths-03.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A vertical worked subtraction board for 52 − 18: ones column cannot subtract 8 from 2, so one ten is borrowed making 12 − 8 = 4, tens column becomes 4 − 1 = 3, final answer 34 — shown alongside the module's own money framing of ₦52 spending ₦18.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-04",
+          "imagePath": "images/p3-maths-04.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Three equal groups of four water bottles (4 + 4 + 4 = 12) illustrating 4 × 3, each bottle priced at ₦10 so five bottles total ₦50 — repeated-addition grouping shown alongside the matching multiplication sentence.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-05",
+          "imagePath": "images/p3-maths-05.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "20 sweets being shared equally among 10 children, 2 sweets each, with an arrow connecting this to the related multiplication fact 10 × 2 = 20 shown beside it.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 18,
+      "items": [
+        {
+          "id": "p3-maths-06",
+          "imagePath": "images/p3-maths-06.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A round loaf of bread split into two equal halves (labelled rabi) beside a second identical loaf split into four equal quarters (labelled kwata), plus a small panel showing 10 oranges shared equally between two children, 5 each.",
+          "labelsHa": [
+            "Rabi",
+            "Kwata"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-07",
+          "imagePath": "images/p3-maths-07.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Two numbers, 632 and 581, shown stacked with their hundreds digits (6 and 5) highlighted and a greater-than arrow pointing to 632, showing that comparison starts from the hundreds place.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-08",
+          "imagePath": "images/p3-maths-08.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Two labelled columns of numbers: 2, 4, 6, 8, 10 grouped as pairs with no remainder (even); 1, 3, 5, 7, 9 shown each leaving one unpaired item (odd) — the last digit of each number circled to show the quick-check rule.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 19,
+      "items": [
+        {
+          "id": "p3-maths-09",
+          "imagePath": "images/p3-maths-09.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Four short number paths shown stacked: 2, 4, 6, 8, 10; 5, 10, 15, 20; 10, 20, 30; 100, 200, 300 — each path's constant jump size marked with a small arrow between consecutive numbers.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-10",
+          "imagePath": "images/p3-maths-10.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Nigerian naira notes being counted and totaled in a market scene: two ₦20 items totaling ₦40, and a separate ₦50 note plus a ₦30 note combined to show a ₦80 total.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions, and no branded goods."
+        },
+        {
+          "id": "p3-maths-11",
+          "imagePath": "images/p3-maths-11.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A market stall scene: an item priced ₦70, a ₦100 note handed over by a customer, and ₦30 in change being returned by the seller, with the subtraction 100 − 70 = 30 shown beside it.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions, and no branded goods."
+        }
+      ]
+    },
+    {
+      "batch": 20,
+      "items": [
+        {
+          "id": "p3-maths-13",
+          "imagePath": "images/p3-maths-13.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A metre-length rope or table edge measured with a metre stick beside a pencil measured with a centimetre ruler, with a small conversion note showing 100 centimetres equal 1 metre.",
+          "labelsHa": [
+            "Mita",
+            "Santimita"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-14",
+          "imagePath": "images/p3-maths-14.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A balance/weighing scale comparing a sack of rice measured in kilograms with a small packet of spice or medicine measured in grams, with a conversion note showing 1,000 grams equal 1 kilogram.",
+          "labelsHa": [
+            "Kilogiram",
+            "Giram"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-15",
+          "imagePath": "images/p3-maths-15.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Two transparent bottles side by side, one holding 1 litre and one holding 2 litres, showing the larger bottle holds more; a small medicine cup marked in millilitres shown separately, with a conversion note that 1,000 millilitres equal 1 litre.",
+          "labelsHa": [
+            "Lita",
+            "Mililita"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 21,
+      "items": [
+        {
+          "id": "p3-maths-16",
+          "imagePath": "images/p3-maths-16.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Four shapes labelled with their side and corner counts: a square (4 equal sides, 4 corners), a rectangle (4 sides, 4 corners, two sides longer), a triangle (3 sides, 3 corners), and a circle (no corners).",
+          "labelsHa": [
+            "Murabba’i",
+            "Alwatika"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-17",
+          "imagePath": "images/p3-maths-17.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A small gallery of line types — straight, curved, horizontal, vertical, and diagonal — beside a square (4 corners), a triangle (3 corners), and a circle (0 corners, since its curved line never forms a meeting-point corner).",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-18",
+          "imagePath": "images/p3-maths-18.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A square with each of its 4 sides labelled 3 centimetres, with the addition 3 + 3 + 3 + 3 = 12 written around its border to show the perimeter, beside a triangle with 3 sides of 5 centimetres each totaling 15.",
+          "labelsHa": [
+            "Kewaye"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 22,
+      "items": [
+        {
+          "id": "p3-maths-19",
+          "imagePath": "images/p3-maths-19.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A simple two-row table with a name column and a book-count column, showing Musa's row and Aisha's row, with an arrow tracing from the row label and column header to the cell where they meet.",
+          "labelsHa": [
+            "Tebur"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-20",
+          "imagePath": "images/p3-maths-20.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A simple bar chart with two labelled bars of different heights — a taller bar showing a larger quantity and a shorter bar showing a smaller quantity — with gridline numbers along the side for reading the exact values.",
+          "labelsHa": [
+            "Jadawalin Sanduna"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-21",
+          "imagePath": "images/p3-maths-21.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A word-problem scene showing 35 books with 12 more books being added, totaling 47, beside a second panel showing ₦80 with ₦25 spent, leaving ₦55 — each scene paired with its worked equation.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        }
+      ]
+    },
+    {
+      "batch": 23,
+      "items": [
+        {
+          "id": "p3-maths-22",
+          "imagePath": "images/p3-maths-22.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Four bags each holding 6 oranges (4 × 6 = 24 total) shown beside a second panel where the same 24 oranges are shared equally among 6 children, 4 each — grouping and sharing shown as two related operations.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p3-maths-23",
+          "imagePath": "images/p3-maths-23.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A four-panel review board combining a number comparison, a naira addition and change example, a metre/centimetre ruler, and a kilogram/gram weighing scale — one small worked example in each panel.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        },
+        {
+          "id": "p3-maths-24",
+          "imagePath": "images/p3-maths-24.png",
+          "subject": "maths",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A tidy revision poster with small labelled icons for each P3 topic covered — numbers to 1,000, addition/subtraction, multiplication/division, fractions, money, measurement, shapes, and tables/bar charts — arranged as a bridge pointing toward P4.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 24,
+      "items": [
+        {
+          "id": "p4-maths-01",
+          "imagePath": "images/p4-maths-01.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A place-value chart decomposing 4,386 into labelled columns — thousands (4), hundreds (3), tens (8), ones (6) — beside a second number, 7,050, with its zero highlighted to show a placeholder holding an empty position.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-02",
+          "imagePath": "images/p4-maths-02.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A place-value chart for 6,245 with each digit in its own labelled column — thousands (6 = 6,000), hundreds (2 = 200), tens (4 = 40), ones (5) — with bundled counters or place-value cards shown beneath each column.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-03",
+          "imagePath": "images/p4-maths-03.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Two numbers, 8,500 and 950, stacked with their place columns aligned so the extra thousands digit in 8,500 is visibly highlighted, with a greater-than arrow showing 8,500 is larger.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 25,
+      "items": [
+        {
+          "id": "p4-maths-04",
+          "imagePath": "images/p4-maths-04.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A vertical worked addition board for 2,345 + 1,230, columns aligned by place value (ones, tens, hundreds, thousands), each column's sum written beneath it, reaching the final total 3,575.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-05",
+          "imagePath": "images/p4-maths-05.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A vertical worked subtraction board for 3,456 − 1,234, columns aligned by place value from ones to thousands, each column's difference written beneath it, reaching the final answer 2,222.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-06",
+          "imagePath": "images/p4-maths-06.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Seven plates, each holding 3 oranges, arranged in a row (7 × 3 = 21) with the repeated-addition sentence 3 + 3 + 3 + 3 + 3 + 3 + 3 written beneath, showing the same total two ways.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 26,
+      "items": [
+        {
+          "id": "p4-maths-07",
+          "imagePath": "images/p4-maths-07.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "24 oranges shown two ways: shared equally among 6 children (4 each) in the left panel, and arranged into groups of 4 on plates (6 plates total) in the right panel — the same 24 oranges illustrating sharing versus grouping.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-08",
+          "imagePath": "images/p4-maths-08.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A long-division working for 84 ÷ 7 = 12 shown step by step, with a check panel beside it showing the reverse multiplication 12 × 7 = 84 confirming the answer.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-09",
+          "imagePath": "images/p4-maths-09.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Three identical round loaves of bread divided into 2, 4, and 6 equal parts respectively, with 1, 2, and 3 parts shaded in each — the same covered amount shown three ways to illustrate 1/2 = 2/4 = 3/6.",
+          "labelsHa": [
+            "Kashi Masu Ƙima Ɗaya"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 27,
+      "items": [
+        {
+          "id": "p4-maths-10",
+          "imagePath": "images/p4-maths-10.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Two identical round loaves of bread, each cut into 8 equal slices: one showing 5 slices shaded/taken, the other showing 3 slices shaded/taken, placed side by side to compare 5/8 versus 3/8.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-11",
+          "imagePath": "images/p4-maths-11.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A 10-part strip with 3 parts shaded (labelled 3 goma-goma) beside a 100-square grid with 25 cells shaded (labelled 25 ɗari-ɗari), plus a small equivalence note showing 4 goma-goma equals 40 ɗari-ɗari.",
+          "labelsHa": [
+            "Goma-Goma",
+            "Ɗari-Ɗari"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-12",
+          "imagePath": "images/p4-maths-12.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A square with each side labelled 5 metres and the perimeter sum 5 + 5 + 5 + 5 = 20 written around its border, beside a rectangle labelled length 8 and width 3 with its perimeter shown as 2 × (8 + 3) = 22.",
+          "labelsHa": [
+            "Perimita"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 28,
+      "items": [
+        {
+          "id": "p4-maths-13",
+          "imagePath": "images/p4-maths-13.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A square with side 6 shown as a 6-by-6 grid of unit squares totaling 36, beside a rectangle with length 8 and width 3 shown as an 8-by-3 grid of unit squares totaling 24 — grids used to make the area visibly countable.",
+          "labelsHa": [
+            "Yanki"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-14",
+          "imagePath": "images/p4-maths-14.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Three door-opening angle examples in one row: a door opened only partway (an angle less than a right angle), a book corner shown as the right-angle reference, and a door opened wide (an angle greater than a right angle).",
+          "labelsHa": [
+            "Kusurwa Madaidaiciya"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-15",
+          "imagePath": "images/p4-maths-15.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A protractor measuring three angles side by side: 30 degrees, a 90-degree right angle, and 120 degrees, each angle's degree value clearly marked at its vertex.",
+          "labelsHa": [
+            "Digiri"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 29,
+      "items": [
+        {
+          "id": "p4-maths-17",
+          "imagePath": "images/p4-maths-17.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A bar chart with two labelled bars: rice at 30 and beans at 20, with a bracket marking the difference of 10 between them, and gridline numbers along the side for reading exact values.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-18",
+          "imagePath": "images/p4-maths-18.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Three paired clock displays, each showing an analog clock face beside its 24-hour digital equivalent: 8:00, 13:00 (1 o'clock afternoon), and 20:00 (8 o'clock evening).",
+          "labelsHa": [
+            "Agogon Awa 24"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-19",
+          "imagePath": "images/p4-maths-19.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A three-panel school-shop story: 120 books on a shelf, then 35 more books arriving (120 + 35 = 155), then 20 books being given out (155 − 20 = 135) — each panel showing the running total.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 30,
+      "items": [
+        {
+          "id": "p4-maths-20",
+          "imagePath": "images/p4-maths-20.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "8 plates each holding 6 oranges (8 × 6 = 48) shown beside a second panel where the same 48 oranges are shared equally among 8 children, 6 each — grouping and sharing shown as related operations.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-21",
+          "imagePath": "images/p4-maths-21.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Three small linked scenes: a market price-and-change calculation in naira, a rope measured in metres beside its centimetre equivalent, and two clock times with the hours-between calculation shown beneath them.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        },
+        {
+          "id": "p4-maths-22",
+          "imagePath": "images/p4-maths-22.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A rectangle labelled length 8 and width 3 with its perimeter sum 8 + 3 + 8 + 3 = 22 written around the border, its area 8 × 3 = 24 shown as a shaded grid inside, and a small 90-degree right-angle marker at one corner.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 31,
+      "items": [
+        {
+          "id": "p4-maths-23",
+          "imagePath": "images/p4-maths-23.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A simple table and matching bar chart showing rice = 45, beans = 30, and millet = 25, with the rice and beans bars highlighted and their combined total 75 shown beside them.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p4-maths-24",
+          "imagePath": "images/p4-maths-24.png",
+          "subject": "maths",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A tidy revision poster with small labelled icons for each P4 topic covered — numbers to 10,000, place value, the four operations, fractions and decimals, perimeter/area, angles, tables/bar charts, money, and the 24-hour clock — arranged as a bridge pointing toward P5.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-01",
+          "imagePath": "images/p5-maths-01.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A place-value chart decomposing 68,425 into labelled columns — ten-thousands (6), thousands (8), hundreds (4), tens (2), ones (5) — with a small note showing 100,000 read as one hundred thousand.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 32,
+      "items": [
+        {
+          "id": "p5-maths-02",
+          "imagePath": "images/p5-maths-02.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A place-value chart for 74,318 where each digit's actual worth is written beneath it: 7 → 70,000; 4 → 4,000; 3 → 300; 1 → 10; 8 → 8, showing the value is not just the digit itself.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-03",
+          "imagePath": "images/p5-maths-03.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Two numbers, 56,210 and 65,120, stacked with their ten-thousands digits (5 and 6) highlighted first, with a greater-than arrow showing 65,120 is larger.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-04",
+          "imagePath": "images/p5-maths-04.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Two number lines stacked: one marked at multiples of 2 (2, 4, 6, 8, 10) and one marked at multiples of 3 (3, 6, 9, 12), with 6 circled on both lines as their first shared meeting point.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 33,
+      "items": [
+        {
+          "id": "p5-maths-05",
+          "imagePath": "images/p5-maths-05.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Two factor lists side by side — factors of 12 (1, 2, 3, 4, 6, 12) and factors of 18 (1, 2, 3, 6, 9, 18) — with the shared factors 1, 2, 3, 6 circled in both lists and 6 highlighted as the largest.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-06",
+          "imagePath": "images/p5-maths-06.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Two contrasting scenes side by side: two bells ringing together every 4 and every 6 minutes (an LCM scenario, meeting point marked), and 24 sweets with 36 biscuits being sorted into equal groups without leftovers (an HCF scenario).",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-07",
+          "imagePath": "images/p5-maths-07.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "An orange divided into 4 equal parts with 1 part shaded, labelled with the numerator over the denominator (1 cikin 4), beside a bar divided into 5 equal parts with 3 shaded, labelled 3 cikin 5.",
+          "labelsHa": [
+            "Lambar Sama",
+            "Lambar Ƙasa"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 34,
+      "items": [
+        {
+          "id": "p5-maths-08",
+          "imagePath": "images/p5-maths-08.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Two identical round bread loaves: one cut in half with 1 part shaded, the other cut into quarters with 2 parts shaded — the same covered amount shown two ways to illustrate 1/2 = 2/4.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-09",
+          "imagePath": "images/p5-maths-09.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A round item cut into eighths with 3 parts shaded beside an identical one with 2 parts shaded, comparing 3/8 and 2/8 directly; a smaller side panel compares 1/3 versus 1/4 to show that with the same numerator, the larger denominator gives smaller pieces.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-10",
+          "imagePath": "images/p5-maths-10.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Two fraction strips both divided into sixths: 1/2 relabelled as 3/6 and 1/3 relabelled as 2/6, shown stacked directly beneath each other for comparison once they share a common denominator.",
+          "labelsHa": [
+            "Lambar Ƙasa ta Gari"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 35,
+      "items": [
+        {
+          "id": "p5-maths-11",
+          "imagePath": "images/p5-maths-11.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A worked fraction-addition board: 1/2 converted to 3/6, plus 1/3 converted to 2/6, summing to 5/6 — shown with matching shaded fraction strips beside each step.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-12",
+          "imagePath": "images/p5-maths-12.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A worked fraction-subtraction board: 1/2 converted to 3/6, minus 1/3 converted to 2/6, resulting in 1/6 — shown with matching shaded fraction strips beside each step.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-14",
+          "imagePath": "images/p5-maths-14.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Two decimals, 5.2 and 4.9, stacked with their whole-number digits (5 and 4) highlighted first to show 5.2 is larger; a small side note shows 2.5 and 2.50 marked as equal in value despite the extra zero.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 36,
+      "items": [
+        {
+          "id": "p5-maths-15",
+          "imagePath": "images/p5-maths-15.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A vertical addition board for 2.3 + 1.4 with the decimal points aligned in one column, the tenths column summed (3 + 4 = 7) and the whole-number column summed (2 + 1 = 3), giving 3.7.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-16",
+          "imagePath": "images/p5-maths-16.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A vertical subtraction board for 9.8 − 5.8 = 4.0 with decimal points aligned, plus a small side note showing 6.5 rewritten as 6.50 so it can be subtracted from 2.25 at matching decimal places.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-17",
+          "imagePath": "images/p5-maths-17.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A 100-square grid with 25 cells shaded, labelled 25% = 1/4, beside a second 100-square grid with 50 cells shaded, labelled 50% = rabi (half).",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 37,
+      "items": [
+        {
+          "id": "p5-maths-18",
+          "imagePath": "images/p5-maths-18.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A row of 80 identical objects with three marked portions shown in separate panels: 10% shaded (8 objects), 50% shaded (40 objects), and 25% shaded (20 objects), each labelled with its percentage and count.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-19",
+          "imagePath": "images/p5-maths-19.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "2 red balls and 3 blue balls shown as a 2:3 ratio, beside a scaled-up version with 4 red balls and 6 blue balls (still 2:3), plus a small panel showing 1 rice bag feeding 4 children scaled to 3 bags feeding 12 children.",
+          "labelsHa": [
+            "Rasiyo"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-20",
+          "imagePath": "images/p5-maths-20.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "An L-shaped composite figure made of two joined rectangles (6 × 4 = 24 and 3 × 4 = 12), each sub-rectangle's area labelled and their total 36 shown, with the outer perimeter traced in a different colour along only the outside edge.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 38,
+      "items": [
+        {
+          "id": "p5-maths-21",
+          "imagePath": "images/p5-maths-21.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A protractor measuring three angle types side by side: an acute angle under 90 degrees, a right angle at exactly 90 degrees, and an obtuse angle between 90 and 180 degrees, each labelled with its degree value.",
+          "labelsHa": [
+            "Kusurwa Madaidaiciya",
+            "Ma'aunin Kusurwa"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-22",
+          "imagePath": "images/p5-maths-22.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Three children each holding a score card (6, 8, and 10) with arrows combining them into a total of 24, then a division-by-3 arrow leading to a balanced bar showing the average, 8.",
+          "labelsHa": [
+            "Matsakaici"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p5-maths-23",
+          "imagePath": "images/p5-maths-23.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A market scene: 4 books priced ₦200 each, a ₦1,000 note handed over, with the two-step calculation shown beside it — 4 × 200 = 800, then 1,000 − 800 = 200 change.",
+          "labelsHa": [],
+          "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+        }
+      ]
+    },
+    {
+      "batch": 39,
+      "items": [
+        {
+          "id": "p5-maths-24",
+          "imagePath": "images/p5-maths-24.png",
+          "subject": "maths",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A tidy revision poster with small labelled icons for each P5 topic covered — large numbers, LCM/HCF, fractions, decimals, percentages, ratio, composite-shape area/perimeter, angles, and average — arranged as a bridge pointing toward P6.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-01",
+          "imagePath": "images/p6-maths-01.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A place-value chart decomposing 742,615 into labelled columns with comma-grouping shown every three digits from the right — hundred-thousands, ten-thousands, thousands, hundreds, tens, ones.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-02",
+          "imagePath": "images/p6-maths-02.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A place-value chart for 586,304 with each digit's actual worth written beneath it (5 → 500,000; 8 → 80,000; 6 → 6,000; 3 → 300; 0 → 0 tens; 4 → 4), beside a small note showing the millions column for 1,000,000.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 40,
+      "items": [
+        {
+          "id": "p6-maths-03",
+          "imagePath": "images/p6-maths-03.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A worked subtraction 73,500 − 18,200 = 55,300 shown column by place value, with a check-addition beside it showing 55,300 + 18,200 returning to 73,500 to verify the answer.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-04",
+          "imagePath": "images/p6-maths-04.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A worked multiplication 230 × 4 split into two partial products, 200 × 4 = 800 and 30 × 4 = 120, combined into the final answer 920, shown as a labelled split-diagram.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-05",
+          "imagePath": "images/p6-maths-05.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "240 books shared equally among 6 classrooms, 40 books each, with a check-multiplication 40 × 6 = 240 shown beside it to verify the division.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 41,
+      "items": [
+        {
+          "id": "p6-maths-06",
+          "imagePath": "images/p6-maths-06.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "Two number lines: one showing 48,620 rounding up to the nearest thousand, 49,000; the other showing 243,100 rounding down to the nearest ten-thousand, 240,000 — each with the original number and rounded target marked.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-07",
+          "imagePath": "images/p6-maths-07.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A four-panel rule chart, one panel per operation: finding a common denominator before adding or subtracting fractions, multiplying numerators together and denominators together for multiplication, and flipping the second fraction before multiplying for division.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-08",
+          "imagePath": "images/p6-maths-08.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "Four fraction-to-decimal conversions shown side by side, each with a shaded strip or grid: 1/2 → 0.5, 1/4 → 0.25, 7/10 → 0.7, and 36/100 → 0.36.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 42,
+      "items": [
+        {
+          "id": "p6-maths-09",
+          "imagePath": "images/p6-maths-09.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A row of decimal-to-percent conversions with matching hundred-grids: 0.25 → 25%, 0.5 → 50%, 0.37 → 37%, 0.8 (written as 0.80) → 80%, and a fully shaded grid for 1.00 → 100%.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-10",
+          "imagePath": "images/p6-maths-10.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "Four fraction-to-percentage conversions shown side by side: 32/100 → 32%, 7/10 → 70%, 1/4 → 25%, and 1/5 → 20%, each with the scaling arrow used to reach a denominator of 100.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-12",
+          "imagePath": "images/p6-maths-12.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "Three small worked panels: 50% of 80 = 40 (shown as half), 25% of 120 = 30 (shown as a quarter), and 0.3 of a 90 kg bag = 27 kg (0.3 shown converted to 3/10 first).",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 43,
+      "items": [
+        {
+          "id": "p6-maths-13",
+          "imagePath": "images/p6-maths-13.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "2 Hausa books and 3 English books shown as a 2:3 ratio, scaled up with a ×4 arrow to 8 Hausa books and 12 English books — still 2:3 — showing the ratio is preserved when both parts are multiplied together.",
+          "labelsHa": [
+            "Rasiyo"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-14",
+          "imagePath": "images/p6-maths-14.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A scaling table of sacks to mudu measures: 1 bag = 8 mudu, 3 bags = 24 mudu, 6 bags = 48 mudu, with arrows showing the proportional doubling relationship between rows.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-15",
+          "imagePath": "images/p6-maths-15.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A balance-scale model with \"x + 5\" on one side and \"12\" on the other side, perfectly level, with the solved value x = 7 shown beneath it.",
+          "labelsHa": [
+            "Algebra",
+            "Canji",
+            "Ma'aunin Lissafi"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 44,
+      "items": [
+        {
+          "id": "p6-maths-16",
+          "imagePath": "images/p6-maths-16.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "Two balance-scale models side by side: one for 4 × x = 28 solved as x = 7, and one for x ÷ 5 = 6 solved as x = 30, each with the unknown shown as a covered box on the scale.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-17",
+          "imagePath": "images/p6-maths-17.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A school field rectangle labelled length 40 m and width 25 m, with its area 40 × 25 = 1,000 m² shown filled inside and its perimeter 2 × (40 + 25) = 130 m traced in a different colour along the outer edge only.",
+          "labelsHa": [
+            "Yanki",
+            "Perimita"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-18",
+          "imagePath": "images/p6-maths-18.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A cuboid box labelled 10 cm long, 6 cm wide, and 4 cm tall, drawn with visible unit cubes inside, with the volume calculation 10 × 6 × 4 = 240 cm³ shown beside it.",
+          "labelsHa": [
+            "Kuboid",
+            "Girma"
+          ],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 45,
+      "items": [
+        {
+          "id": "p6-maths-19",
+          "imagePath": "images/p6-maths-19.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A triangle with two angles labelled 50 degrees and 60 degrees, and the third angle solved as 70 degrees, with the sum 50 + 60 + 70 = 180 written beside it.",
+          "labelsHa": [
+            "Alwatika"
+          ],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-20",
+          "imagePath": "images/p6-maths-20.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A rectangle with all four 90-degree angles marked and the sum 90 + 90 + 90 + 90 = 360 written around it, beside a small triangle reminder showing its own angle sum is 180 for comparison.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-21",
+          "imagePath": "images/p6-maths-21.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A bar chart with two labelled bars, rice at 80 and beans at 55, with a bracket marking the difference of 25 between them, and gridline numbers along the side for reading exact values.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 46,
+      "items": [
+        {
+          "id": "p6-maths-22",
+          "imagePath": "images/p6-maths-22.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A cloth bag containing 3 red balls and 2 blue balls, with a label reading \"3 daga cikin 5\" showing the chance of drawing a red ball out of the 5 total.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-23",
+          "imagePath": "images/p6-maths-23.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A simple table showing 12 zobo drinks and 8 kunu drinks (20 total), with an arrow connecting the table to a probability statement \"12 daga cikin 20\" for picking a zobo drink.",
+          "labelsHa": [],
+          "safetyNote": ""
+        },
+        {
+          "id": "p6-maths-24",
+          "imagePath": "images/p6-maths-24.png",
+          "subject": "maths",
+          "grade": "P6",
+          "type": "diagram",
+          "depictEn": "A tidy revision poster with small labelled icons for each P6 topic covered — large numbers, the four operations, fractions/decimals/percentages, ratio and proportion, algebra, area/perimeter/volume, triangle angles, and data/probability — arranged as a bridge pointing toward JSS1.",
+          "labelsHa": [],
+          "safetyNote": ""
+        }
+      ]
+    },
+    {
+      "batch": 47,
+      "items": [
+        {
+          "id": "p1-bsci-02",
+          "imagePath": "images/p1-bsci-02.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A child listening with a hand cupped near an ear (ears gently highlighted), surrounded by small linked icons of sound sources named in the lesson: a teacher speaking, a car, a crying baby, and a singing bird.",
+          "labelsHa": [
+            "Kunnuwa"
+          ],
+          "safetyNote": "Do not depict any object, finger, or sharp item near or inside the ear, and do not show a loud sound source (e.g. siren, horn) directly beside the child's ear."
+        },
+        {
+          "id": "p1-bsci-03",
+          "imagePath": "images/p1-bsci-03.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A child's hand touching two contrasting textures placed side by side — a soft cotton tuft (auduga) and a hard stone (dutse) — with a small fire shown at a clear distance in the same scene, marked as something the child is NOT reaching toward, to illustrate that touch also warns us away from heat.",
+          "labelsHa": [],
+          "safetyNote": "The child must never be shown touching, reaching for, or standing close to the fire — it appears only as a distant, clearly-avoided hazard, consistent with the lesson's own caution against touching fire or hot things unsupervised."
+        },
+        {
+          "id": "p1-bsci-04",
+          "imagePath": "images/p1-bsci-04.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "Two small linked panels: one shows a child sniffing a familiar, named item (a bar of soap or a flower) with the nose highlighted; the other shows a child tasting a named food (a sugar cube or a slice of lemon) with the tongue/mouth highlighted, to contrast sweet and sour.",
+          "labelsHa": [
+            "Hanci",
+            "Baki"
+          ],
+          "safetyNote": "Only show the specific, everyday items named in the lesson (soap, sugar, lemon) being smelled or tasted with visible care — never depict a child eating or drinking an unlabeled or unknown substance, matching the lesson's own caution against consuming unknown things without permission."
+        }
+      ]
+    },
+    {
+      "batch": 48,
+      "items": [
+        {
+          "id": "p1-bsci-05",
+          "imagePath": "images/p1-bsci-05.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A single child illustration with five small labeled call-outs pointing to the five sense organs in use: eyes looking at a book, ears listening to a bell, a hand touching a leaf, a nose smelling a flower, and a mouth/tongue tasting fruit — arranged as a simple five-panel summary around the child.",
+          "labelsHa": [
+            "Idanu",
+            "Kunnuwa",
+            "Hannu",
+            "Hanci",
+            "Baki"
+          ],
+          "safetyNote": "Keep all five example objects ordinary and harmless (book, bell, leaf, flower, fruit) — no hot, sharp, or unknown items in any panel."
+        },
+        {
+          "id": "p1-bsci-06",
+          "imagePath": "images/p1-bsci-06.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A friendly village/farm scene showing several named animals demonstrating different kinds of movement: a dog (kare) walking on four legs, a bird (tsuntsu) flying, and a fish (kifi) swimming in a small pond — grouped together to show that living things move, eat, and grow in different ways.",
+          "labelsHa": [],
+          "safetyNote": "Show all animals calm, healthy, and unharmed — no depiction of a child mistreating, chasing, or hurting an animal, consistent with the lesson's instruction to treat animals with kindness."
+        },
+        {
+          "id": "p1-bsci-07",
+          "imagePath": "images/p1-bsci-07.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A labeled plant (e.g. a young tree or maize/gero stalk) showing its leaf, stem, and fruit, growing in soil with visible sunlight rays above and a small watering can or rain shown beside it, to depict what a plant needs (soil, water, air, sunlight) to grow.",
+          "labelsHa": [
+            "Ganye",
+            "Tushe",
+            "'Ya'ya"
+          ],
+          "safetyNote": "No child depicted uprooting, cutting, or damaging the plant — the scene should show only healthy, cared-for growth."
+        }
+      ]
+    },
+    {
+      "batch": 49,
+      "items": [
+        {
+          "id": "p1-bsci-08",
+          "imagePath": "images/p1-bsci-08.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A side-by-side comparison scene: on one side a living thing (a dog or a tree) shown moving/growing; on the other side several non-living objects named in the lesson (a stone, a table, a shoe, a book, a bottle) sitting still, to visually contrast things that breathe/grow/move on their own with things that do not.",
+          "labelsHa": [
+            "Mai Rai",
+            "Marasa Rai"
+          ],
+          "safetyNote": "Depict the non-living objects only in their ordinary, undamaged form (no broken glass from the bottle, no sharp edges) — nothing hazardous to a child."
+        },
+        {
+          "id": "p1-bsci-09",
+          "imagePath": "images/p1-bsci-09.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A two-part scene: one half shows named water sources (a tap/famfo, a well/rijya, rain falling, a river/rafi); the other half shows named everyday uses (a person drinking, bathing, cooking, and watering plants), with a covered water pot or tank visible to show safe storage.",
+          "labelsHa": [],
+          "safetyNote": "Show only clean, clear water and a covered storage container — no depiction of dirty/stagnant water being used for drinking, matching the lesson's emphasis on using clean, covered water for health."
+        },
+        {
+          "id": "p1-bsci-11",
+          "imagePath": "images/p1-bsci-11.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A four-panel weather diagram showing the same simple outdoor scene (a house and a tree) under four different named conditions: sunny (rana) with bright sun, rainy (ruwan sama) with falling rain and a child under an umbrella, windy (iska) with the tree bending, and cloudy (gizagizai) with the sun covered by clouds.",
+          "labelsHa": [
+            "Rana",
+            "Ruwan Sama",
+            "Iska",
+            "Gizagizai"
+          ],
+          "safetyNote": "No lightning, flooding, or storm damage depicted — each panel should show mild, everyday weather only."
+        }
+      ]
+    },
+    {
+      "batch": 50,
+      "items": [
+        {
+          "id": "p1-bsci-12",
+          "imagePath": "images/p1-bsci-12.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A simple lever diagram: a long stick resting on a small block (fulcrum), with a heavy stone on one end and a hand pressing down gently on the other end to show the stone lifting — plus a small side illustration of a rocking chair (kujera mai jujjuyawa) as a second example of a lever.",
+          "labelsHa": [
+            "Lefe"
+          ],
+          "safetyNote": "Show the hand pressing the lever at a safe distance from the pivot point — no fingers shown near the fulcrum where they could be pinched."
+        },
+        {
+          "id": "p1-bsci-13",
+          "imagePath": "images/p1-bsci-13.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A labeled diagram of a wheelbarrow (keken hannu) at rest, with its wheel and the central axle rod clearly labeled, plus a small side view showing how the round wheel turns on the straight axle rod to make moving a load easier.",
+          "labelsHa": [
+            "Daba",
+            "Sandar da ke Tsakiya"
+          ],
+          "safetyNote": "The wheelbarrow/cart must be shown stationary and empty of any child — no child riding on or being pulled by the vehicle."
+        },
+        {
+          "id": "p1-bsci-14",
+          "imagePath": "images/p1-bsci-14.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "Three small linked panels: (1) the sun shining with both light rays and wavy heat lines over a house with a solar panel on its roof; (2) a lamp/fitila glowing in a dark room, giving light only; (3) a cooking fire at a safe distance from a seated adult, giving off visible heat waves, to contrast sources of light versus heat.",
+          "labelsHa": [
+            "Haske",
+            "Zafi"
+          ],
+          "safetyNote": "The fire must be shown tended by an adult at a safe distance, never touched or approached by a child, and no child shown standing in direct harsh sun without shade — matching the lesson's own caution about fire and prolonged sun exposure."
+        }
+      ]
+    },
+    {
+      "batch": 51,
+      "items": [
+        {
+          "id": "p1-bsci-15",
+          "imagePath": "images/p1-bsci-15.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "diagram",
+          "depictEn": "A simple review grid of small icons summarizing the term's topics — an eye/ear/hand/nose/mouth for the senses, a dog and a tree for living things, a stone for non-living things, a water drop, a wind swirl, a sun-and-cloud pair for weather, and a wheel — with a calm, smiling child in the center looking over the icons, as if recalling what was learned.",
+          "labelsHa": [],
+          "safetyNote": "The child must be shown calm, confident, and smiling, never anxious, stressed, or fearful — matching the lesson's own encouragement to answer 'ba tare da firgita ba' (without panic)."
+        },
+        {
+          "id": "p2-bsci-01",
+          "imagePath": "images/p2-bsci-01.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Two-group comparison scene: left side shows living things (a goat, a chicken, a tree, a potted bean plant, a person) that grow and need water/food; right side shows non-living things (a stone, a chair, a writing board, a bowl, a gown, a book). Children observe both groups from a distance, not touching the animal.",
+          "labelsHa": [
+            "Masu Rai",
+            "Marasa Rai"
+          ],
+          "safetyNote": "Do not depict a child touching, picking up, or handling the goat or chicken — the module explicitly says to sort things without harming or picking up an animal."
+        },
+        {
+          "id": "p2-bsci-02",
+          "imagePath": "images/p2-bsci-02.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A labeled mango-tree-style plant illustration showing five parts: the root system in the soil, the stem rising up, leaves, a flower, and a fruit (mango), each with a small label line pointing to it.",
+          "labelsHa": [
+            "Tushe",
+            "Kara",
+            "Ganye",
+            "Fure",
+            "'Ya'ya"
+          ],
+          "safetyNote": "Do not depict a child pulling off a leaf or breaking the stem — the module tells children to only look and point, not remove leaves or break the stem."
+        }
+      ]
+    },
+    {
+      "batch": 52,
+      "items": [
+        {
+          "id": "p2-bsci-03",
+          "imagePath": "images/p2-bsci-03.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A small compound scene with labeled domestic animals standing calmly: a goat, a sheep, a chicken, a cow, a donkey, a dog, and a cat, each near simple items showing their use (an egg near the chicken, a milk pail near the cow, a small load near the donkey). A child watches from a comfortable distance, not touching any animal.",
+          "labelsHa": [
+            "Akuya",
+            "Tunkiya",
+            "Kaza",
+            "Saniya",
+            "Jaki",
+            "Kare",
+            "Kyanwa"
+          ],
+          "safetyNote": "Do not depict a child throwing a stone at, scaring, or closely handling an animal — the module warns against throwing stones or frightening animals and says to ask an adult before touching an unfamiliar one."
+        },
+        {
+          "id": "p2-bsci-04",
+          "imagePath": "images/p2-bsci-04.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Four small linked weather panels: a bright sun, a gray cloud, wind shown moving leaves and dust, and gentle rain falling. A child with an umbrella (held with an adult nearby) represents the rain-safety tip.",
+          "labelsHa": [
+            "Rana",
+            "Gajimare",
+            "Iska",
+            "Ruwan Sama"
+          ],
+          "safetyNote": "Do not depict a storm, lightning, flooding, or a child alone outdoors in heavy rain — keep the weather depiction mild and the umbrella scene shows adult presence, matching the module's 'with adult permission' framing."
+        },
+        {
+          "id": "p2-bsci-05",
+          "imagePath": "images/p2-bsci-05.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A grid of small scenes showing water's everyday uses: a child drinking from a cup, a child washing hands at a tap, cooking pots on a fire (adult tending), a watering can for a plant, and an animal drinking from a bowl. One panel shows a hand turning off a tap.",
+          "labelsHa": [
+            "Famfo"
+          ],
+          "safetyNote": "Do not depict a running/wasted tap left open or a child drinking from a dirty source — the module stresses turning off the tap and drinking only clean water."
+        }
+      ]
+    },
+    {
+      "batch": 53,
+      "items": [
+        {
+          "id": "p2-bsci-06",
+          "imagePath": "images/p2-bsci-06.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A sequence of small hygiene-habit panels: a child washing hands with soap and water, a child brushing teeth, a child combing hair, a child wearing clean clothes, and a child covering a cough/sneeze with their elbow.",
+          "labelsHa": [],
+          "safetyNote": "Do not depict a sick or symptomatic child, an explicit toilet/bathroom scene, a child cutting their own nails (an adult should be shown trimming them), or two children sharing a toothbrush — the module says not to share a toothbrush and has an adult trim nails."
+        },
+        {
+          "id": "p2-bsci-07",
+          "imagePath": "images/p2-bsci-07.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A three-section plate illustration grouping foods by role: energy foods (tuwo, rice, cassava, potato, bread), body-building foods (beans, egg, fish, meat, milk), and protective foods (spinach-type leaves, moringa leaves, mango, orange). A cup of water and a child washing hands shown beside the plate.",
+          "labelsHa": [],
+          "safetyNote": "Do not depict food being picked up off the ground or eaten unwashed — the module tells children to wash hands before eating and never eat food that has fallen."
+        },
+        {
+          "id": "p2-bsci-08",
+          "imagePath": "images/p2-bsci-08.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A friendly child figure with five simple callouts pointing to each sense organ: eyes (seeing a picture), ears (hearing a bell), nose (smelling food), tongue (tasting a fruit), and skin/hand (feeling a soft cloth).",
+          "labelsHa": [
+            "Idanu",
+            "Kunnuwa",
+            "Hanci",
+            "Harshe",
+            "Fata"
+          ],
+          "safetyNote": "Do not depict a child looking directly at the sun, inserting an object into an ear or nose, or eating an unidentified item — these are explicit cautions in the module text."
+        }
+      ]
+    },
+    {
+      "batch": 54,
+      "items": [
+        {
+          "id": "p2-bsci-09",
+          "imagePath": "images/p2-bsci-09.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A home safety scene shown from a distance with hazards circled or crossed with a small 'no' icon rather than approached: a stove/fire, an electric socket and wire, a knife/razor/nail and a broken bottle, and a medicine bottle and fuel container on a high shelf. A separate panel shows a child calmly telling an adult about spilled water or smoke.",
+          "labelsHa": [],
+          "safetyNote": "Do not depict a child touching, holding, or standing close to fire, a socket, sharp objects, or a chemical/medicine container — every hazard must be shown as something to avoid, never something the child is interacting with, per the module's own list of things not to touch."
+        },
+        {
+          "id": "p2-bsci-10",
+          "imagePath": "images/p2-bsci-10.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A tidy compound scene: a child dropping a banana peel/wrapper into a covered waste bin, a swept path, and a small separate panel showing a puddle of standing dirty water near a house being pointed out to an adult (not touched).",
+          "labelsHa": [],
+          "safetyNote": "Do not depict a child directly handling loose trash or standing water with bare hands — the module says to wash hands after touching waste and flags standing dirty water as a mosquito-breeding risk to report, not touch."
+        },
+        {
+          "id": "p2-bsci-11",
+          "imagePath": "images/p2-bsci-11.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A flat-lay of everyday, non-electric household tools labeled with their names: a spoon, a broom, a bucket, and a key. A knife is shown set apart in an adult's hand, not a child's, to reflect the supervised-use caution.",
+          "labelsHa": [
+            "Cokali",
+            "Tsintsiya",
+            "Guga",
+            "Mabuɗi"
+          ],
+          "safetyNote": "Do not depict a child holding the knife or any sharp/heavy tool unsupervised, and do not depict a powered/electric machine — the module explicitly says these simple tools need no electric machine and that a knife is for adult-supervised use only."
+        }
+      ]
+    },
+    {
+      "batch": 55,
+      "items": [
+        {
+          "id": "p2-bsci-12",
+          "imagePath": "images/p2-bsci-12.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "The sun shown as the main light source in a daytime sky, with small inset icons of a lamp, a torch, and an electric bulb as other light sources. A separate small panel shows a child's own shadow cast on the ground while the child looks down, not at the sun.",
+          "labelsHa": [
+            "Rana",
+            "Fitila",
+            "Inuwa"
+          ],
+          "safetyNote": "Do not depict a child looking directly at the sun or standing close to an open flame — the module explicitly warns against looking straight at the sun."
+        },
+        {
+          "id": "p2-bsci-13",
+          "imagePath": "images/p2-bsci-13.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A child gently tapping a small drum, shown with faint motion/vibration lines around the drumhead to indicate it shaking as it makes sound. Small side icons show a bell, a radio at low volume, and a car, as other everyday sound sources.",
+          "labelsHa": [
+            "Ganga"
+          ],
+          "safetyNote": "Do not depict loud banging, a child striking an ear, or a radio/device shown at high volume — the module warns against noise that disturbs people or hurts ears and says to keep device volume low."
+        },
+        {
+          "id": "p2-bsci-14",
+          "imagePath": "images/p2-bsci-14.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Split scene: on one side a child gently watering a potted plant with a small watering can; on the other side a child placing a bowl of food and water near a goat and a chicken in a clean, shaded spot, without touching the animals.",
+          "labelsHa": [],
+          "safetyNote": "Do not depict a child throwing anything at an animal, pulling its tail, or breaking the plant's branches — the module explicitly forbids both."
+        }
+      ]
+    },
+    {
+      "batch": 56,
+      "items": [
+        {
+          "id": "p2-bsci-15",
+          "imagePath": "images/p2-bsci-15.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A covered water storage container with a lid, a clean cup and ladle resting beside it (not inside the water), and a separate small panel showing an adult boiling or filtering water at a source that looks uncertain, plus a covered well.",
+          "labelsHa": [
+            "Mazubi Mai Murfi"
+          ],
+          "safetyNote": "Do not depict a hand placed directly into the drinking water, a child alone at an open well, or muddy/dirty water being consumed — the module warns against dirty hands in the water and unclean sources."
+        },
+        {
+          "id": "p2-bsci-17",
+          "imagePath": "images/p2-bsci-17.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "Three small matched scenes, each creature shown in its own local habitat: a fish in a pond/stream, a plant growing in soil, and a bird perched in a tree beside its nest. A fourth small panel shows a farm with crops and small animals near a house with a chicken and goat. Children observe each scene from a distance.",
+          "labelsHa": [],
+          "safetyNote": "Do not depict a child touching a nest, a burrow/hole, or any wild animal — the module explicitly says not to touch a nest, hole, or wild animal and to observe from a distance."
+        },
+        {
+          "id": "p2-bsci-18",
+          "imagePath": "images/p2-bsci-18.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "diagram",
+          "depictEn": "A labeled flat-lay of everyday objects grouped by material: a wooden table/door for wood, a metal spoon and nail for metal, a rubber shoe for rubber, a cloth gown for cloth, and a plastic bucket for plastic.",
+          "labelsHa": [
+            "Itace",
+            "Ƙarfe",
+            "Roba",
+            "Zane",
+            "Filastik"
+          ],
+          "safetyNote": "Do not depict broken glass, a sharp/pointed metal edge, or a hot object — the module explicitly warns children not to touch broken glass, sharp metal, or anything hot."
+        }
+      ]
+    },
+    {
+      "batch": 57,
+      "items": [
+        {
+          "id": "p3-bsci-01",
+          "imagePath": "images/p3-bsci-01.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A split scene: left side shows two or three plants (e.g. maize, beans, grass) with visible roots, stem, leaves; right side shows two or three animals of different kinds (a hen, a fish in water, a goat on land) to show classification into plants vs animals, with a small habitat cue for each animal (water, land).",
+          "labelsHa": [
+            "Tsirrai",
+            "Dabbobi"
+          ],
+          "safetyNote": "No people depicted touching or handling the animals; keep the scene a calm outdoor/farm setting, not a market or slaughter context."
+        },
+        {
+          "id": "p3-bsci-02",
+          "imagePath": "images/p3-bsci-02.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A friendly, fully-clothed child illustration (front view) with simple labeled pointer lines to eyes, ears, nose, mouth, hands, and legs/feet — each doing its function subtly implied (e.g. eyes looking, hand holding a book).",
+          "labelsHa": [
+            "Idanu",
+            "Kunnuwa",
+            "Hanci",
+            "Baki",
+            "Hannu",
+            "Ƙafafu"
+          ],
+          "safetyNote": "Non-graphic, fully clothed child, no internal body parts (heart/skin layers) shown beyond a simple external labeled figure."
+        },
+        {
+          "id": "p3-bsci-03",
+          "imagePath": "images/p3-bsci-03.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A three-row life-cycle diagram with looping arrows: row 1 seed to sprout to young plant to flower/seed; row 2 egg to chick to hen/rooster; row 3 baby to child to teenager to adult, shown as simple growth-stage silhouettes.",
+          "labelsHa": [
+            "Ƙwai",
+            "Kaza"
+          ],
+          "safetyNote": "Human growth row must show only clothed, generic silhouettes at each age stage — no depiction of birth or medical process."
+        }
+      ]
+    },
+    {
+      "batch": 58,
+      "items": [
+        {
+          "id": "p3-bsci-04",
+          "imagePath": "images/p3-bsci-04.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A labeled overview scene of a tidy compound/neighborhood showing a home, a school building, a well with a cover, trees, a path, and a covered waste bin — everything clean and in good repair, illustrating what makes up one's environment.",
+          "labelsHa": [
+            "Kwandon Shara"
+          ],
+          "safetyNote": "Keep the whole scene clean and undamaged (this module is about naming environment components and tidiness habits, not pollution) — no litter, no open well, no smoke."
+        },
+        {
+          "id": "p3-bsci-05",
+          "imagePath": "images/p3-bsci-05.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A circular water-cycle diagram: sun over a stream/pond with wavy lines rising (evaporation), rising into a cloud, cloud releasing rain onto ground/well/river, arrow looping back to the stream — plus a small inset of a covered water container for clean drinking water.",
+          "labelsHa": [
+            "Ƙafewa",
+            "Gajimare",
+            "Ruwan Sama"
+          ],
+          "safetyNote": "Do not depict anyone drinking directly from an open stream or dirty water source; show a covered container for the clean-water example."
+        },
+        {
+          "id": "p3-bsci-06",
+          "imagePath": "images/p3-bsci-06.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A three-panel comparison: (1) a solid object (a stone or a book) holding its shape, (2) water being poured from a jug into a cup, taking the cup's shape, (3) a light wisp of steam rising from a covered cup of warm water, showing the gas state, with a soft warning glow/steam-only depiction (no visible flame).",
+          "labelsHa": [
+            "Abu Mai Tauri",
+            "Ruwa",
+            "Iska"
+          ],
+          "safetyNote": "No open flame or fire; do not show a child's hand near the warm water or steam — the steam panel should be a small, distant wisp only, consistent with the module using hot water only as an adult-supervised example."
+        }
+      ]
+    },
+    {
+      "batch": 59,
+      "items": [
+        {
+          "id": "p3-bsci-07",
+          "imagePath": "images/p3-bsci-07.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Two side-by-side panels: a ruler laid against a pencil showing a centimeter scale, and a simple balance/weighing scale with a small sack of grain on one side, both starting from a visible zero mark.",
+          "labelsHa": [
+            "Santimita",
+            "Mita",
+            "Giram",
+            "Kilogiram"
+          ],
+          "safetyNote": "Show a child using only lightweight, simple tools (ruler, small scale) — no heavy or industrial weighing equipment, consistent with the module's advice to ask an adult for heavy tools."
+        },
+        {
+          "id": "p3-bsci-08",
+          "imagePath": "images/p3-bsci-08.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A large analog clock face with the small hour hand and large minute hand clearly distinguished by size/color, plus a small side panel showing a child watering a plant with a start-clock and end-clock pair to illustrate elapsed time.",
+          "labelsHa": [
+            "Agogo"
+          ],
+          "safetyNote": "No safety hazard content needed; keep the scene calm and ordinary (a clock and a watering task)."
+        },
+        {
+          "id": "p3-bsci-09",
+          "imagePath": "images/p3-bsci-09.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A cross-section of ground showing plant roots reaching into soil layered with tiny rock bits and decomposed leaves, beside two small soil-sample panels labeled sandy soil and clay soil, and a small inset showing soil used to make bricks and a clay pot.",
+          "labelsHa": [
+            "Ƙasa Mai Yashi",
+            "Ƙasa Mai Laka"
+          ],
+          "safetyNote": "Show the child observing soil only, not tasting it; include a small hand-washing cue since the module tells children to wash hands after touching soil."
+        }
+      ]
+    },
+    {
+      "batch": 60,
+      "items": [
+        {
+          "id": "p3-bsci-10",
+          "imagePath": "images/p3-bsci-10.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "Two panels: (1) a calm scene showing wind's effect — clothes flapping on a line and a toy pinwheel spinning, with a light cloth/leaf shown tilting to indicate wind direction; (2) a safety panel showing a child and an adult walking together toward a sturdy shelter away from a tree and a weak wall during a dust storm, covering nose and mouth.",
+          "labelsHa": [],
+          "safetyNote": "No open flame anywhere in the image (the module warns against using fire to check wind direction); the storm panel must show the child accompanied by an adult, at a safe distance from trees and weak walls, not alone."
+        },
+        {
+          "id": "p3-bsci-11",
+          "imagePath": "images/p3-bsci-11.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A side-by-side comparison: left side shows traditional tools at rest (a hand hoe, a mortar and pestle, a donkey cart), right side shows modern tools at rest (a tractor, a grinding mill, a car), all shown stationary and unattended by children.",
+          "labelsHa": [
+            "Fartanya",
+            "Turmi da Taɓarya",
+            "Keken Jaki",
+            "Babbar Na'urar Noma",
+            "Injin Niƙa",
+            "Mota"
+          ],
+          "safetyNote": "No child touching, operating, or standing close to any tool or machine; no running engine, no exposed wire or socket, no child near the grinding mill — tools shown idle only, per the module's caution."
+        },
+        {
+          "id": "p3-bsci-13",
+          "imagePath": "images/p3-bsci-13.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A calm three-panel sequence: (1) a child checking the area is safe and calling an adult (raised hand gesture, speech bubble toward an adult figure); (2) an adult gently pressing a clean cloth on a child's arm (no wound visible, just the cloth and a caring expression); (3) an adult holding a child's hand under a running tap of cool water with a small clock icon showing time passing, for a burn.",
+          "labelsHa": [],
+          "safetyNote": "No visible blood, open wound, burn mark, or injury detail of any kind — depict only the calm, competent care actions (checking safety, calling an adult, clean cloth, cool running water); do not show oil, toothpaste, or ice being applied; do not depict broken glass, a fallen wire, floodwater, or smoke up close — those hazards should only be implied by the child pointing/stepping away."
+        }
+      ]
+    },
+    {
+      "batch": 61,
+      "items": [
+        {
+          "id": "p3-bsci-14",
+          "imagePath": "images/p3-bsci-14.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A set of small labeled panels: a fish with visible fins swimming in water, a duck with webbed feet on a pond, a bird's nest built in a tree holding eggs, a rabbit at the entrance of a burrow, and a farm scene with a ventilated chicken coop and a shaded goat/sheep shelter with clean water nearby.",
+          "labelsHa": [
+            "Sheƙa",
+            "Rami"
+          ],
+          "safetyNote": "Do not depict a child reaching into, disturbing, or breaking a wild animal's nest or burrow — observation only, from a distance, per the module's instruction."
+        },
+        {
+          "id": "p3-bsci-15",
+          "imagePath": "images/p3-bsci-15.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A plate divided into three labeled sections with everyday Nigerian foods: energy foods (tuwo, shinkafa, gero, dankali), body-building foods (wake, kifi, ƙwai, nama), and protective foods (alayyahu, zogale, and a fruit like lemu or ayaba), with a cup of clean water beside the plate.",
+          "labelsHa": [],
+          "safetyNote": "Depict only ordinary, affordable, locally available foods already named in the module text — no sugary sweets/alewa shown as part of the balanced plate, and no depiction of a child's body size."
+        },
+        {
+          "id": "p3-bsci-16",
+          "imagePath": "images/p3-bsci-16.png",
+          "subject": "bsci",
+          "grade": "P3",
+          "type": "diagram",
+          "depictEn": "A labeled cross-section of a whole plant showing the root system with fine rootlets in soil, small internal transport lines running up through the stem to the leaves (with arrows showing water/nutrients moving up), a leaf catching sunlight, and a flower transitioning into a fruit (e.g. tumatir or kabewa) containing visible seeds.",
+          "labelsHa": [
+            "Tushe",
+            "Kara",
+            "Ganye",
+            "Fure"
+          ],
+          "safetyNote": "No depiction of a farmer or child breaking the stem or tearing leaves — the diagram should show only the intact healthy plant and its internal pathways, not the damage scenario described in the text."
+        }
+      ]
+    },
+    {
+      "batch": 62,
+      "items": [
+        {
+          "id": "p4-bsci-02",
+          "imagePath": "images/p4-bsci-02.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Two animal groups compared: a hen, a goat, and a fish shown with a simple backbone/spine line highlighted along the body; an earthworm, a bee, and a butterfly shown with no such spine line. The bee and worm are shown at a safe illustrative distance, not touched or held.",
+          "labelsHa": [
+            "Masu Ƙashin Baya",
+            "Marasa Ƙashin Baya"
+          ],
+          "safetyNote": "Do not depict a child touching, catching, or throwing objects at any animal, and keep the bee at a safe distance — the module explicitly warns it may sting."
+        },
+        {
+          "id": "p4-bsci-05",
+          "imagePath": "images/p4-bsci-05.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Four everyday energy sources shown with their effect: the sun giving light and warmth, a cooking fire tended only by an adult with a child standing back, strong wind turning a grinding mill or boat sail, and a battery powering a torch or radio.",
+          "labelsHa": [
+            "Rana",
+            "Wuta",
+            "Iska",
+            "Baturi"
+          ],
+          "safetyNote": "Fire must be adult-tended only with the child at a visible safe distance; no child touching electrical items or approaching smoke, matching the module's explicit cautions."
+        },
+        {
+          "id": "p4-bsci-06",
+          "imagePath": "images/p4-bsci-06.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A safe battery-powered torch glowing beside a clearly marked warning icon over a wall socket and a frayed wire, contrasting what to use (torch) with what must never be touched (socket, bare wire, wet electrical item).",
+          "labelsHa": [
+            "Soket",
+            "Waya",
+            "Fitilar Hannu"
+          ],
+          "safetyNote": "No child depicted touching a socket, wire, or wet electrical item — the image must show only the safe alternative and the prohibited items marked off-limits, per the module's explicit warning."
+        }
+      ]
+    },
+    {
+      "batch": 63,
+      "items": [
+        {
+          "id": "p4-bsci-07",
+          "imagePath": "images/p4-bsci-07.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Two side-by-side panels: a child pushing a door open with an arrow showing push direction, and a child pulling a bucket of water up from a well by rope with an arrow showing pull direction. A small third panel shows a ball mid-roll to illustrate force causing motion.",
+          "labelsHa": [
+            "Tura",
+            "Ja"
+          ],
+          "safetyNote": "No child pushing another person or animal, and no child shown pulling a heavy load alone — the module says to ask an adult for help with anything heavy."
+        },
+        {
+          "id": "p4-bsci-08",
+          "imagePath": "images/p4-bsci-08.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A ball shown rolling a long distance on a smooth floor versus stopping quickly after a short distance on sand, with motion arrows of different lengths illustrating friction. A separate small panel shows a child's shoe with a good grippy sole beside a wet path.",
+          "labelsHa": [
+            "Goga"
+          ],
+          "safetyNote": "No child depicted running on a wet or slippery surface — the module explicitly warns against this."
+        },
+        {
+          "id": "p4-bsci-13",
+          "imagePath": "images/p4-bsci-13.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A simple weather-station display showing a thermometer, a rain gauge collecting rainfall, and a wind vane pointing to show wind direction, each clearly separated, being observed by children from a safe distance rather than handled directly.",
+          "labelsHa": [
+            "Ma'aunin Zafi",
+            "Ma'aunin Ruwan Sama",
+            "Alamar Iska"
+          ],
+          "safetyNote": "No child touching the instruments without permission, and no depiction of a child standing in an open field during a thunderstorm — the module explicitly warns against both."
+        }
+      ]
+    },
+    {
+      "batch": 64,
+      "items": [
+        {
+          "id": "p4-bsci-14",
+          "imagePath": "images/p4-bsci-14.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A simple weather-record table with a day column and an icon column (sun, cloud, or rain) filled in for several days, shown being completed by a child looking out through a window at the sky rather than standing outside.",
+          "labelsHa": [],
+          "safetyNote": "The child observes from indoors or a window during any depicted rain, never standing outside during heavy rain or a thunderstorm, per the module's explicit caution."
+        },
+        {
+          "id": "p4-bsci-16",
+          "imagePath": "images/p4-bsci-16.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Two paired comparison panels: ice melting into water and then refreezing back into ice, labelled as a change that can be reversed; beside a broken clay cup and a cooked egg, labelled as changes that are not easily reversed. Any hot material is shown only as adult-handled and distant from the child.",
+          "labelsHa": [
+            "Ƙanƙara"
+          ],
+          "safetyNote": "No child touching fire, boiling water, or hot material — an adult or teacher alone handles anything hot, per the module's explicit rule; the child only observes from a distance and records what is seen."
+        },
+        {
+          "id": "p4-bsci-17",
+          "imagePath": "images/p4-bsci-17.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "Two paired, arrowed life-cycle diagrams shown side by side for direct comparison: bean seed to sprout to young plant to mature plant producing new seeds; and egg to chick to hen/rooster producing new eggs. A small recording panel shows a bean seedling being measured with a ruler every two days over a week, plotted on a simple growth chart.",
+          "labelsHa": [
+            "Wake",
+            "Kaza"
+          ],
+          "safetyNote": "Non-graphic, simple stage silhouettes only — no depiction of the hatching process or animal distress; the child observes and measures, not digging up the seedling repeatedly, per the module's own caution."
+        }
+      ]
+    },
+    {
+      "batch": 65,
+      "items": [
+        {
+          "id": "p4-bsci-19",
+          "imagePath": "images/p4-bsci-19.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A vibrating drum or a stretched rubber band, held and released by a teacher (never flicked at anyone), sending visible sound-wave ripples through the air toward a listener at a measured distance. A second small panel shows a hand gently feeling the throat while speaking to sense the vibration.",
+          "labelsHa": [
+            "Sauti"
+          ],
+          "safetyNote": "No loud noise-source close to an ear, no child flicking the rubber band at anyone, and no child placing an object in the ear — matching the module's explicit cautions."
+        },
+        {
+          "id": "p4-bsci-20",
+          "imagePath": "images/p4-bsci-20.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A parked, stationary vehicle with five external parts visible and pointed to: wheels/tyres, headlights, mirrors, doors, and windscreen; a small cutaway shows the central connecting rod linking the wheels. A child stands at a safe distance with an adult, drawing the parts on paper rather than touching the vehicle.",
+          "labelsHa": [
+            "Fitilu",
+            "Madubai",
+            "Gilashin Gaba",
+            "Sandar da ke Tsakiya"
+          ],
+          "safetyNote": "Vehicle must be parked with no one inside or driving; no child touching a moving part, hot engine, battery, or wire; never label the axle as 'gatari' — use 'sandar da ke tsakiya' only, per the standing terminology ruling."
+        },
+        {
+          "id": "p4-bsci-21",
+          "imagePath": "images/p4-bsci-21.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "diagram",
+          "depictEn": "A three-section plate illustration with grouped Nigerian foods: energy foods (tuwo, shinkafa, gero, doya, rogo), body-building foods (wake, ƙwai, kifi, gyada, nama), and protective foods (kabewa, alayyahu, tumatir, mangwaro, gwanda, lemu), with a cup of clean water beside the plate. A second smaller panel compares this balanced meal against a plate of biscuit and sugary drink.",
+          "labelsHa": [],
+          "safetyNote": "Depict only ordinary, affordable local foods already named in the module; no body-size depiction of children, no shaming of either meal choice."
+        }
+      ]
+    },
+    {
+      "batch": 66,
+      "items": [
+        {
+          "id": "p5-bsci-01",
+          "imagePath": "images/p5-bsci-01.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Side-by-side comparison scene: left half shows a clean environment (clear stream, trees, a covered waste bin, tidy path); right half shows a damaged environment (smoke, litter, a discolored stream, a dead fish). No people touching hazards.",
+          "labelsHa": [
+            "Muhalli Mai Kyau",
+            "Muhalli da Ya Lalace"
+          ],
+          "safetyNote": "Do not depict a child inside the polluted scene or touching waste/smoke/water."
+        },
+        {
+          "id": "p5-bsci-02",
+          "imagePath": "images/p5-bsci-02.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "Three labeled bins or piles side by side showing simple waste separation: rotting food/leaves, paper/plastic bottles, metal. A clean reused container (e.g. a jar for storage) shown separately.",
+          "labelsHa": [
+            "Abin da ke Ruɓewa",
+            "Takarda da Roba",
+            "Ƙarfe"
+          ],
+          "safetyNote": "Show only clean paper/plastic/metal items, no broken glass, sharp metal, or medical waste."
+        },
+        {
+          "id": "p5-bsci-04",
+          "imagePath": "images/p5-bsci-04.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A labeled flower illustration showing colorful petals and the central part, with a small arrow/insect (bee or butterfly) shown moving between two flowers to depict pollen transfer. A small side panel shows the flower's fruit result (e.g. tomato or mango).",
+          "labelsHa": [
+            "Ganyen Fure",
+            "Sashin Tsakiya",
+            "Ƙurar Fure"
+          ],
+          "safetyNote": "Depict the bee at a safe illustrative distance, not close to a child's hand or face."
+        }
+      ]
+    },
+    {
+      "batch": 67,
+      "items": [
+        {
+          "id": "p5-bsci-07",
+          "imagePath": "images/p5-bsci-07.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A flat-lay of drawing instruments (pencil, eraser, ruler, set square) labeled with their names, plus a small side panel showing three material samples (wood, clay pot, rubber bowl).",
+          "labelsHa": [
+            "Fensir",
+            "Magogi",
+            "Ma'auni",
+            "Kusurwar Awo"
+          ],
+          "safetyNote": "No sharp or powered tools depicted."
+        },
+        {
+          "id": "p5-bsci-08",
+          "imagePath": "images/p5-bsci-08.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A parked car or bus illustration with labeled external parts: wheel/tyre, headlight, mirror, windscreen, door, seat belt (visible through a window). A separate small icon showing 'brakes' conceptually (e.g. a stop symbol near the wheel).",
+          "labelsHa": [
+            "Taya",
+            "Fitila",
+            "Madubi",
+            "Gilashin Gaba",
+            "Bel ɗin Zama"
+          ],
+          "safetyNote": "Vehicle must be parked/stationary, no people near moving parts, no engine/underside view."
+        },
+        {
+          "id": "p5-bsci-09",
+          "imagePath": "images/p5-bsci-09.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A simple three-panel arrow diagram: (1) battery → torch → light, (2) sunlight → covered water container → steam/heat wave lines, (3) food plate → child running. Arrows connecting each pair.",
+          "labelsHa": [
+            "Batiri",
+            "Haske",
+            "Rana",
+            "Zafi",
+            "Abinci",
+            "Motsi"
+          ],
+          "safetyNote": "No open flame, no engine, no mains socket depicted."
+        }
+      ]
+    },
+    {
+      "batch": 68,
+      "items": [
+        {
+          "id": "p5-bsci-10",
+          "imagePath": "images/p5-bsci-10.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A classroom-style thermometer illustration with a simple scale, next to two small weather-icon panels (a sunny hot day vs a cooler day) for comparison, teacher's hand holding the thermometer (not a child's).",
+          "labelsHa": [
+            "Na'urar Auna Zafi"
+          ],
+          "safetyNote": "No fire, no boiling water, no medical thermometer used on a child unsupervised."
+        },
+        {
+          "id": "p5-bsci-12",
+          "imagePath": "images/p5-bsci-12.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A horseshoe or bar magnet shown attracting a small iron nail, with a wooden block, rubber, and paper shown nearby unaffected (small 'not attracted' indicator, e.g. a faint X or gap).",
+          "labelsHa": [
+            "Maganadisu",
+            "Ƙusa ta Baƙin Ƙarfe"
+          ],
+          "safetyNote": "Do not depict the magnet near a phone/computer/storage card, consistent with the module's own caution."
+        },
+        {
+          "id": "p5-bsci-13",
+          "imagePath": "images/p5-bsci-13.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A three-section plate illustration with affordable Nigerian foods grouped: grains/tubers (gero, dawa, shinkafa, rogo), protein (wake, gyada, ƙwai, kifi), and vegetables/fruit (ganye, tumatir, mangwaro). A cup of clean water beside the plate.",
+          "labelsHa": [],
+          "safetyNote": "Depict only ordinary, affordable food items already named in the module text — no body-size depiction of children."
+        }
+      ]
+    },
+    {
+      "batch": 69,
+      "items": [
+        {
+          "id": "p5-bsci-14",
+          "imagePath": "images/p5-bsci-14.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A simple hygiene-and-prevention scene: a child washing hands with soap, a covered food plate, a mosquito net over a bed, a glass of clean water — four small linked panels.",
+          "labelsHa": [],
+          "safetyNote": "No depiction of a sick or symptomatic child, no medical/clinical imagery, non-alarming tone throughout."
+        },
+        {
+          "id": "p5-bsci-15",
+          "imagePath": "images/p5-bsci-15.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "diagram",
+          "depictEn": "A simple three-step safety sequence for a child: (1) a raised hand gesture meaning 'no', (2) a child walking away toward safety, (3) a child talking to a trusted adult. No substances, packaging, or people depicted using anything.",
+          "labelsHa": [
+            "Ka Ce A'a",
+            "Ka Matsa",
+            "Ka Sanar da Babba"
+          ],
+          "safetyNote": "Do not depict any substance, bottle, cigarette, or medicine — the image must show only the child's three safety actions, per the module's non-stigmatizing, substance-free framing."
+        },
+        {
+          "id": "p1-bsci-10",
+          "imagePath": "images/p1-bsci-10.png",
+          "subject": "bsci",
+          "grade": "P1",
+          "type": "illustration",
+          "depictEn": "An outdoor scene where air's invisible presence is shown through its effects: a tree's leaves and a flag both blown sideways by wind, and a child blowing gently onto the palm of their own hand to feel air moving — air itself is not drawn, only its visible effects.",
+          "labelsHa": [],
+          "safetyNote": "Depict only a gentle, ordinary breeze — no storm, dust cloud, or debris flying, keeping the scene calm and non-threatening."
+        }
+      ]
+    },
+    {
+      "batch": 70,
+      "items": [
+        {
+          "id": "p2-bsci-19",
+          "imagePath": "images/p2-bsci-19.png",
+          "subject": "bsci",
+          "grade": "P2",
+          "type": "illustration",
+          "depictEn": "A pair of hands gently moulding a small lump of moist clay into a simple ball and a small bowl shape on a clean surface, with a hardened, dried clay shape (e.g. a small toy animal) shown finished beside it for comparison. An adult figure present nearby.",
+          "labelsHa": [
+            "Laka"
+          ],
+          "safetyNote": "Do not depict a child putting clay in their mouth or throwing clay at someone, and do not depict unclean/muddy ground clay — the module explicitly forbids putting clay in the mouth or throwing it, and specifies clean clay from an approved source."
+        },
+        {
+          "id": "p4-bsci-01",
+          "imagePath": "images/p4-bsci-01.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "Three plants at the same scale for direct comparison: a tall tree with one thick stem (mangwaro or kuka), a shrub with several woody stems branching low near the ground (lalle), and a soft-stemmed herb with a thin stem (albasa onion or alayyahu spinach). No plant is uprooted, cut, or removed.",
+          "labelsHa": [
+            "Bishiya",
+            "Ƙaramar Bishiya",
+            "Ganyayyaki"
+          ],
+          "safetyNote": "Do not depict a child cutting, uprooting, or damaging any plant — the module explicitly says to observe without removing it."
+        },
+        {
+          "id": "p4-bsci-03",
+          "imagePath": "images/p4-bsci-03.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "Three soil samples in shallow clear trays for comparison: sandy soil with large loose grains, clay soil that clumps and sticks together, and dark loamy farming soil mixed with decayed leaf matter. A small pair of hands shown feeling one sample's texture with permission, followed by a handwashing cue.",
+          "labelsHa": [
+            "Ƙasa Mai Yashi",
+            "Ƙasa Mai Laka"
+          ],
+          "safetyNote": "Show only supervised soil-touching with adult permission, plus a handwashing follow-up, as the module specifies; no tasting or ingesting soil."
+        }
+      ]
+    },
+    {
+      "batch": 71,
+      "items": [
+        {
+          "id": "p4-bsci-04",
+          "imagePath": "images/p4-bsci-04.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "A small farm scene showing an adult/farmer inspecting soil before planting, with two soil types shown side by side: sandy soil letting water drain through quickly, and clay soil holding standing water. A child clears litter from the field and carefully avoids stepping on a young seedling.",
+          "labelsHa": [],
+          "safetyNote": "Depict only adult-led farm decisions; the child's role is limited to clearing litter and avoiding new seedlings, not operating farm tools or deciding irrigation, per the module's own framing."
+        },
+        {
+          "id": "p4-bsci-09",
+          "imagePath": "images/p4-bsci-09.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "A four-step hygiene sequence: washing hands with soap and clean water, bathing, wearing clean clothes, and coughing into the elbow rather than the open hand, followed by handwashing.",
+          "labelsHa": [],
+          "safetyNote": "No depiction of a sick or symptomatic child and no medical treatment shown — the module is explicit that a child's role is hygiene and telling an adult, not diagnosing or self-treating."
+        },
+        {
+          "id": "p4-bsci-10",
+          "imagePath": "images/p4-bsci-10.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "A clean-surroundings scene: a child placing rubbish in a covered bin rather than the road or a drain, a swept compound, and an adult clearing standing water near the house. A small inset shows broken glass being pointed out, not picked up by hand.",
+          "labelsHa": [],
+          "safetyNote": "No child depicted picking up broken glass, sharp debris, or handling waste with bare hands — the module explicitly reserves that for an adult; the child wears shoes and reports hazards."
+        }
+      ]
+    },
+    {
+      "batch": 72,
+      "items": [
+        {
+          "id": "p4-bsci-11",
+          "imagePath": "images/p4-bsci-11.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "A child safely tucked under a properly closed mosquito net at night, with a second panel showing an adult clearing standing water near the compound to prevent mosquito breeding.",
+          "labelsHa": [
+            "Gidan Sauro"
+          ],
+          "safetyNote": "No depiction of illness symptoms, medication, or a child buying/taking medicine — the module explicitly says a child never buys or takes medicine alone."
+        },
+        {
+          "id": "p4-bsci-12",
+          "imagePath": "images/p4-bsci-12.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "A prevention sequence: handwashing with soap before eating, a covered plate of food protected from flies, and a cup of clean drinking water — three linked panels emphasizing hygiene before illness occurs.",
+          "labelsHa": [],
+          "safetyNote": "No depiction of diarrhoea symptoms or a sick child, and no self-medication shown — the module explicitly reserves treatment decisions for an adult and health worker."
+        },
+        {
+          "id": "p4-bsci-15",
+          "imagePath": "images/p4-bsci-15.png",
+          "subject": "bsci",
+          "grade": "P4",
+          "type": "illustration",
+          "depictEn": "A safe-distance cooking scene: an adult tends a small cooking fire or stove while a child stands well back at a marked safe distance. A second panel shows a child immediately walking away from a smoky doorway rather than entering, with an alert cue toward an adult.",
+          "labelsHa": [
+            "Wuta"
+          ],
+          "safetyNote": "No child near an open flame, striking a match, pouring anything on fire, or carrying hot water — all explicitly prohibited by the module; fire is adult-controlled only, symbolic and non-graphic."
+        }
+      ]
+    },
+    {
+      "batch": 73,
+      "items": [
+        {
+          "id": "p5-bsci-05",
+          "imagePath": "images/p5-bsci-05.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "illustration",
+          "depictEn": "A row of 4-5 different rocks of varying color, size, and texture (smooth vs rough) laid out for comparison, plus a small inset showing rocks used in a building wall or road.",
+          "labelsHa": [],
+          "safetyNote": "Show only smooth, blunt rocks — no sharp fragments, no quarry scene."
+        },
+        {
+          "id": "p5-bsci-06",
+          "imagePath": "images/p5-bsci-06.png",
+          "subject": "bsci",
+          "grade": "P5",
+          "type": "illustration",
+          "depictEn": "A teacher (adult) at a table demonstrating with two clearly-labeled, capped household items (e.g. a lemon and a bar of soap) at a safe distance, with children seated/watching from a distance, not touching anything.",
+          "labelsHa": [],
+          "safetyNote": "No open containers, no child hands near the items, no chemical names beyond the two adult-known examples already in the text."
+        }
+      ]
+    }
+  ]
+}

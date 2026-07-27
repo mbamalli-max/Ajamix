@@ -1,0 +1,260 @@
+[
+  {
+    "id": "p4-bsci-01",
+    "imagePath": "images/p4-bsci-01.png",
+    "titleEn": "Plant Groups: Trees, Shrubs, and Herbs",
+    "titleHa": "Rukunin Tsirrai: Bishiyoyi, Ƙananan Bishiyoyi, da Ganyayyaki",
+    "type": "illustration",
+    "depictEn": "Three plants at the same scale for direct comparison: a tall tree with one thick stem (mangwaro or kuka), a shrub with several woody stems branching low near the ground (lalle), and a soft-stemmed herb with a thin stem (albasa onion or alayyahu spinach). No plant is uprooted, cut, or removed.",
+    "labelsHa": [
+      "Bishiya",
+      "Ƙaramar bishiya",
+      "Ganyayyaki"
+    ],
+    "safetyNote": "Do not depict a child cutting, uprooting, or damaging any plant — the module explicitly says to observe without removing it."
+  },
+  {
+    "id": "p4-bsci-02",
+    "imagePath": "images/p4-bsci-02.png",
+    "titleEn": "Animal Groups: Vertebrates and Invertebrates",
+    "titleHa": "Rukunin Dabbobi: Masu Ƙashin Baya da Marasa Ƙashin Baya",
+    "type": "diagram",
+    "depictEn": "Two animal groups compared: a hen, a goat, and a fish shown with a simple backbone/spine line highlighted along the body; an earthworm, a bee, and a butterfly shown with no such spine line. The bee and worm are shown at a safe illustrative distance, not touched or held.",
+    "labelsHa": [
+      "Masu Ƙashin Baya",
+      "Marasa Ƙashin Baya"
+    ],
+    "safetyNote": "Do not depict a child touching, catching, or throwing objects at any animal, and keep the bee at a safe distance — the module explicitly warns it may sting."
+  },
+  {
+    "id": "p4-bsci-03",
+    "imagePath": "images/p4-bsci-03.png",
+    "titleEn": "Types of Soil",
+    "titleHa": "Nau'o'in Ƙasa",
+    "type": "illustration",
+    "depictEn": "Three soil samples in shallow clear trays for comparison: sandy soil with large loose grains, clay soil that clumps and sticks together, and dark loamy farming soil mixed with decayed leaf matter. A small pair of hands shown feeling one sample's texture with permission, followed by a handwashing cue.",
+    "labelsHa": [
+      "Ƙasa mai yashi",
+      "Ƙasa mai laka"
+    ],
+    "safetyNote": "Show only supervised soil-touching with adult permission, plus a handwashing follow-up, as the module specifies; no tasting or ingesting soil."
+  },
+  {
+    "id": "p4-bsci-04",
+    "imagePath": "images/p4-bsci-04.png",
+    "titleEn": "Soil and Farming",
+    "titleHa": "Ƙasa da Aikin Noma",
+    "type": "illustration",
+    "depictEn": "A small farm scene showing an adult/farmer inspecting soil before planting, with two soil types shown side by side: sandy soil letting water drain through quickly, and clay soil holding standing water. A child clears litter from the field and carefully avoids stepping on a young seedling.",
+    "labelsHa": [],
+    "safetyNote": "Depict only adult-led farm decisions; the child's role is limited to clearing litter and avoiding new seedlings, not operating farm tools or deciding irrigation, per the module's own framing."
+  },
+  {
+    "id": "p4-bsci-05",
+    "imagePath": "images/p4-bsci-05.png",
+    "titleEn": "Everyday Sources of Energy",
+    "titleHa": "Tushen Ƙarfi a Rayuwar Yau da Kullum",
+    "type": "diagram",
+    "depictEn": "Four everyday energy sources shown with their effect: the sun giving light and warmth, a cooking fire tended only by an adult with a child standing back, strong wind turning a grinding mill or boat sail, and a battery powering a torch or radio.",
+    "labelsHa": [
+      "Rana",
+      "Wuta",
+      "Iska",
+      "Baturi"
+    ],
+    "safetyNote": "Fire must be adult-tended only with the child at a visible safe distance; no child touching electrical items or approaching smoke, matching the module's explicit cautions."
+  },
+  {
+    "id": "p4-bsci-06",
+    "imagePath": "images/p4-bsci-06.png",
+    "titleEn": "Simple Electricity Safety",
+    "titleHa": "Lantarki Mai Sauƙi da Tsaro",
+    "type": "diagram",
+    "depictEn": "A safe battery-powered torch glowing beside a clearly marked warning icon over a wall socket and a frayed wire, contrasting what to use (torch) with what must never be touched (socket, bare wire, wet electrical item).",
+    "labelsHa": [
+      "soket",
+      "waya",
+      "fitilar hannu"
+    ],
+    "safetyNote": "No child depicted touching a socket, wire, or wet electrical item — the image must show only the safe alternative and the prohibited items marked off-limits, per the module's explicit warning."
+  },
+  {
+    "id": "p4-bsci-07",
+    "imagePath": "images/p4-bsci-07.png",
+    "titleEn": "Push and Pull",
+    "titleHa": "Tura da Ja",
+    "type": "diagram",
+    "depictEn": "Two side-by-side panels: a child pushing a door open with an arrow showing push direction, and a child pulling a bucket of water up from a well by rope with an arrow showing pull direction. A small third panel shows a ball mid-roll to illustrate force causing motion.",
+    "labelsHa": [
+      "Tura",
+      "Ja"
+    ],
+    "safetyNote": "No child pushing another person or animal, and no child shown pulling a heavy load alone — the module says to ask an adult for help with anything heavy."
+  },
+  {
+    "id": "p4-bsci-08",
+    "imagePath": "images/p4-bsci-08.png",
+    "titleEn": "Movement and Friction",
+    "titleHa": "Motsi da Guga",
+    "type": "diagram",
+    "depictEn": "A ball shown rolling a long distance on a smooth floor versus stopping quickly after a short distance on sand, with motion arrows of different lengths illustrating friction. A separate small panel shows a child's shoe with a good grippy sole beside a wet path.",
+    "labelsHa": [
+      "Guga"
+    ],
+    "safetyNote": "No child depicted running on a wet or slippery surface — the module explicitly warns against this."
+  },
+  {
+    "id": "p4-bsci-09",
+    "imagePath": "images/p4-bsci-09.png",
+    "titleEn": "Personal Hygiene and Health",
+    "titleHa": "Tsaftar Jiki da Lafiya",
+    "type": "illustration",
+    "depictEn": "A four-step hygiene sequence: washing hands with soap and clean water, bathing, wearing clean clothes, and coughing into the elbow rather than the open hand, followed by handwashing.",
+    "labelsHa": [],
+    "safetyNote": "No depiction of a sick or symptomatic child and no medical treatment shown — the module is explicit that a child's role is hygiene and telling an adult, not diagnosing or self-treating."
+  },
+  {
+    "id": "p4-bsci-10",
+    "imagePath": "images/p4-bsci-10.png",
+    "titleEn": "Clean Surroundings",
+    "titleHa": "Tsaftar Muhalli",
+    "type": "illustration",
+    "depictEn": "A clean-surroundings scene: a child placing rubbish in a covered bin rather than the road or a drain, a swept compound, and an adult clearing standing water near the house. A small inset shows broken glass being pointed out, not picked up by hand.",
+    "labelsHa": [],
+    "safetyNote": "No child depicted picking up broken glass, sharp debris, or handling waste with bare hands — the module explicitly reserves that for an adult; the child wears shoes and reports hazards."
+  },
+  {
+    "id": "p4-bsci-11",
+    "imagePath": "images/p4-bsci-11.png",
+    "titleEn": "Malaria Prevention",
+    "titleHa": "Kare Kai daga Zazzabin Cizon Sauro",
+    "type": "illustration",
+    "depictEn": "A child safely tucked under a properly closed mosquito net at night, with a second panel showing an adult clearing standing water near the compound to prevent mosquito breeding.",
+    "labelsHa": [
+      "gidan sauro"
+    ],
+    "safetyNote": "No depiction of illness symptoms, medication, or a child buying/taking medicine — the module explicitly says a child never buys or takes medicine alone."
+  },
+  {
+    "id": "p4-bsci-12",
+    "imagePath": "images/p4-bsci-12.png",
+    "titleEn": "Preventing Diarrhoea",
+    "titleHa": "Kare Kai daga Gudawa",
+    "type": "illustration",
+    "depictEn": "A prevention sequence: handwashing with soap before eating, a covered plate of food protected from flies, and a cup of clean drinking water — three linked panels emphasizing hygiene before illness occurs.",
+    "labelsHa": [],
+    "safetyNote": "No depiction of diarrhoea symptoms or a sick child, and no self-medication shown — the module explicitly reserves treatment decisions for an adult and health worker."
+  },
+  {
+    "id": "p4-bsci-13",
+    "imagePath": "images/p4-bsci-13.png",
+    "titleEn": "Weather Instruments",
+    "titleHa": "Kayan Auna Yanayi",
+    "type": "diagram",
+    "depictEn": "A simple weather-station display showing a thermometer, a rain gauge collecting rainfall, and a wind vane pointing to show wind direction, each clearly separated, being observed by children from a safe distance rather than handled directly.",
+    "labelsHa": [
+      "Ma'aunin zafi",
+      "Ma'aunin ruwan sama",
+      "Alamar iska"
+    ],
+    "safetyNote": "No child touching the instruments without permission, and no depiction of a child standing in an open field during a thunderstorm — the module explicitly warns against both."
+  },
+  {
+    "id": "p4-bsci-14",
+    "imagePath": "images/p4-bsci-14.png",
+    "titleEn": "Keeping Weather Records",
+    "titleHa": "Rubuta Lura da Yanayi",
+    "type": "diagram",
+    "depictEn": "A simple weather-record table with a day column and an icon column (sun, cloud, or rain) filled in for several days, shown being completed by a child looking out through a window at the sky rather than standing outside.",
+    "labelsHa": [],
+    "safetyNote": "The child observes from indoors or a window during any depicted rain, never standing outside during heavy rain or a thunderstorm, per the module's explicit caution."
+  },
+  {
+    "id": "p4-bsci-15",
+    "imagePath": "images/p4-bsci-15.png",
+    "titleEn": "Fire, Heat, and Safety",
+    "titleHa": "Wuta, Zafi, da Tsaro",
+    "type": "illustration",
+    "depictEn": "A safe-distance cooking scene: an adult tends a small cooking fire or stove while a child stands well back at a marked safe distance. A second panel shows a child immediately walking away from a smoky doorway rather than entering, with an alert cue toward an adult.",
+    "labelsHa": [
+      "Wuta"
+    ],
+    "safetyNote": "No child near an open flame, striking a match, pouring anything on fire, or carrying hot water — all explicitly prohibited by the module; fire is adult-controlled only, symbolic and non-graphic."
+  },
+  {
+    "id": "p4-bsci-16",
+    "imagePath": "images/p4-bsci-16.png",
+    "titleEn": "Temporary and Permanent Changes; Heating and Cooling",
+    "titleHa": "Sauye-sauyen da Za a Iya Mayarwa da Waɗanda Ba Su Sauƙin Mayarwa",
+    "type": "diagram",
+    "depictEn": "Two paired comparison panels: ice melting into water and then refreezing back into ice, labelled as a change that can be reversed; beside a broken clay cup and a cooked egg, labelled as changes that are not easily reversed. Any hot material is shown only as adult-handled and distant from the child.",
+    "labelsHa": [
+      "Ƙanƙara"
+    ],
+    "safetyNote": "No child touching fire, boiling water, or hot material — an adult or teacher alone handles anything hot, per the module's explicit rule; the child only observes from a distance and records what is seen."
+  },
+  {
+    "id": "p4-bsci-17",
+    "imagePath": "images/p4-bsci-17.png",
+    "titleEn": "Plant and Animal Life-Cycle Changes",
+    "titleHa": "Matakan Girman Tsiro da Dabba",
+    "type": "diagram",
+    "depictEn": "Two paired, arrowed life-cycle diagrams shown side by side for direct comparison: bean seed to sprout to young plant to mature plant producing new seeds; and egg to chick to hen/rooster producing new eggs. A small recording panel shows a bean seedling being measured with a ruler every two days over a week, plotted on a simple growth chart.",
+    "labelsHa": [
+      "Wake",
+      "Kaza"
+    ],
+    "safetyNote": "Non-graphic, simple stage silhouettes only — no depiction of the hatching process or animal distress; the child observes and measures, not digging up the seedling repeatedly, per the module's own caution."
+  },
+  {
+    "id": "p4-bsci-18",
+    "imagePath": "images/p4-bsci-18.png",
+    "titleEn": "Digestive System and Teeth",
+    "titleHa": "Yadda Jiki Ke Sarrafa Abinci da Ayyukan Haƙora",
+    "type": "diagram",
+    "depictEn": "A simple clothed torso outline with the food path shown from mouth through stomach and intestines in muted, subdued, non-vivid tones (soft pastel outline shapes, not saturated pink or red), plus four tooth shapes beside the mouth for cutting and grinding.",
+    "labelsHa": [
+      "Baki",
+      "Bututun abinci",
+      "Haƙora"
+    ],
+    "safetyNote": "Non-graphic educational outline only; no exposed organs, procedure, or illness."
+  },
+  {
+    "id": "p4-bsci-19",
+    "imagePath": "images/p4-bsci-19.png",
+    "titleEn": "How Sound Is Produced and Travels",
+    "titleHa": "Yadda Sauti Ke Samuwa da Tafiya",
+    "type": "diagram",
+    "depictEn": "A vibrating drum or a stretched rubber band, held and released by a teacher (never flicked at anyone), sending visible sound-wave ripples through the air toward a listener at a measured distance. A second small panel shows a hand gently feeling the throat while speaking to sense the vibration.",
+    "labelsHa": [
+      "Sauti"
+    ],
+    "safetyNote": "No loud noise-source close to an ear, no child flicking the rubber band at anyone, and no child placing an object in the ear — matching the module's explicit cautions."
+  },
+  {
+    "id": "p4-bsci-20",
+    "imagePath": "images/p4-bsci-20.png",
+    "titleEn": "Vehicles, External Parts and Safe Technology Use",
+    "titleHa": "Ababen Hawa, Sassan Waje, da Amfani Cikin Aminci",
+    "type": "diagram",
+    "depictEn": "A parked, stationary vehicle with five external parts visible and pointed to: wheels/tyres, headlights, mirrors, doors, and windscreen; a small cutaway shows the central connecting rod linking the wheels. A child stands at a safe distance with an adult, drawing the parts on paper rather than touching the vehicle.",
+    "labelsHa": [
+      "Fitilu",
+      "Madubai",
+      "gilashin gaba",
+      "sandar da ke tsakiya"
+    ],
+    "safetyNote": "Vehicle must be parked with no one inside or driving; no child touching a moving part, hot engine, battery, or wire; never label the axle as 'gatari' — use 'sandar da ke tsakiya' only, per the standing terminology ruling."
+  },
+  {
+    "id": "p4-bsci-21",
+    "imagePath": "images/p4-bsci-21.png",
+    "titleEn": "Nutrition and Healthy Growth",
+    "titleHa": "Abinci Mai Gina Jiki da Girma Cikin Lafiya",
+    "type": "diagram",
+    "depictEn": "A three-section plate illustration with grouped Nigerian foods: energy foods (tuwo, shinkafa, gero, doya, rogo), body-building foods (wake, ƙwai, kifi, gyada, nama), and protective foods (kabewa, alayyahu, tumatir, mangwaro, gwanda, lemu), with a cup of clean water beside the plate. A second smaller panel compares this balanced meal against a plate of biscuit and sugary drink.",
+    "labelsHa": [],
+    "safetyNote": "Depict only ordinary, affordable local foods already named in the module; no body-size depiction of children, no shaming of either meal choice."
+  }
+]

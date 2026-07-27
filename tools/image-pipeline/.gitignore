@@ -1,0 +1,4 @@
+output/raw/**
+output/accepted/**
+!output/raw/.gitkeep
+!output/accepted/.gitkeep

@@ -1,0 +1,848 @@
+[
+  {
+    "id": "p3-socs-01",
+    "gradeband": "p3",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 1,
+    "titleEn": "The Meaning and Importance of Social and Citizenship Studies",
+    "titleHa": "Ma’ana da Muhimmancin Nazarin Zamantakewa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Nazarin Zamantakewa yana koya maka yadda mutane suke rayuwa tare a gida, makaranta, unguwa, da ƙasa. Yana taimaka maka ka fahimci ayyukan mutane, dokoki, al’adu, da hanyoyin taimakon juna. Idan ka san abin da al’umma take bukata, za ka iya kula da kayan jama’a, sauraron wasu, da warware matsala cikin natsuwa. Darasin yana kuma nuna maka cewa kana da muhimmiyar rawa. Za ka iya bin dokar makaranta, zuba shara a inda ya dace, girmama mutane, da faɗin gaskiya. A Kano, Katsina, ko wani gari, mutane suna da ayyuka da al’adu iri-iri, amma haɗin kai yana taimaka musu su zauna lafiya. Koyon wannan darasi ba haddace suna kawai ba ne. Yana koya maka lura, tambaya, tattaunawa, da yin abin kirki. Saboda haka, Nazarin Zamantakewa yana shirya ka ka zama mai kulawa da al’ummarka.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa. Yau za mu koyi ma’ana da muhimmancin Nazarin Zamantakewa. [MAIN] Nazarin Zamantakewa yana koya maka yadda mutane suke rayuwa tare a gida, makaranta, unguwa, da ƙasa. Yana bayyana ayyukan mutane, dokoki, al’adu, da taimakon juna. Idan ka fahimci bukatun al’umma, za ka iya kula da kayan jama’a, sauraron wasu, da warware matsala cikin natsuwa. [PAUSE 1] Me Nazarin Zamantakewa yake koya maka game da mutane? [MAIN] Kai ma kana da rawa a al’umma. Za ka iya bin dokar makaranta, zuba shara a inda ya dace, girmama mutane, da faɗin gaskiya. Mutane na iya samun ayyuka da al’adu iri-iri, amma haɗin kai yana taimaka musu su zauna lafiya. Wannan darasi yana koya maka lura, tambaya, tattaunawa, da yin abin kirki. [PAUSE 2] Wane hali ne yake taimaka wa mutane su zauna lafiya? [OUTRO] Ka lura da abu ɗaya da ke nuna haɗin kai a gidanku ko makarantarku; wannan shi ne Nazarin Zamantakewa a aikace.",
+    "audioFile": "audio/p3-socs-01.mp3",
+    "imageCard": "images/p3-socs-01.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me Nazarin Zamantakewa yake koya maka game da mutane?",
+        "correctAnswer": "yadda mutane suke rayuwa tare",
+        "options": [
+          "yadda mutane suke rayuwa tare",
+          "yadda ake ɓoye kaya",
+          "yadda ake guje wa makaranta"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane hali ne yake taimaka wa mutane su zauna lafiya?",
+        "correctAnswer": "haɗin kai",
+        "options": [
+          "rashin sauraro",
+          "haɗin kai",
+          "lalata kayan jama’a"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me Nazarin Zamantakewa yake koya maka game da mutane?",
+        "answerFormula": "yadda mutane suke rayuwa tare",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yadda ake ɓoye kaya",
+          "yadda ake tsere",
+          "yadda ake wasa kawai"
+        ]
+      },
+      {
+        "templateHa": "Wane abu darasin yake taimaka maka ka fahimta?",
+        "answerFormula": "bukatun al’umma",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "launin takalmi",
+          "girman kujera",
+          "yawan ƙwallo"
+        ]
+      },
+      {
+        "templateHa": "Wane hali ne yake taimaka wa mutane su zauna lafiya?",
+        "answerFormula": "haɗin kai",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "faɗa",
+          "rashin sauraro",
+          "zargi"
+        ]
+      },
+      {
+        "templateHa": "Wane aiki ne ɗalibi zai iya yi domin al’umma?",
+        "answerFormula": "kula da kayan jama’a",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "lalata kujera",
+          "jefa shara a hanya",
+          "ƙin bin doka"
+        ]
+      },
+      {
+        "templateHa": "Wace hanya ce Nazarin Zamantakewa yake koya maka wajen matsala?",
+        "answerFormula": "warware matsala cikin natsuwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yin ihu",
+          "ƙin sauraro",
+          "barin matsala kullum"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-socs-02",
+    "gradeband": "p3",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 2,
+    "titleEn": "Our Local Government Area",
+    "titleHa": "Yankin Ƙaramar Hukumarmu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ƙaramar hukuma (LGA) hukuma ce da take kusa da jama’ar gari da ƙauye. Tana kula da ayyukan da mutane suke bukata a yankinta. Ana raba yankin ƙaramar hukuma zuwa ƙananan yankuna domin wakilai da ma’aikata su san bukatun jama’a. Akwai ofishin ƙaramar hukuma inda ake tsara ayyuka da karɓar bayani daga al’umma. Ayyukan ƙaramar hukuma na iya haɗawa da kula da kasuwa, wasu hanyoyi, tsaftar muhalli, wuraren ruwa, makarantu, da cibiyoyin lafiya. Ba ƙaramar hukuma kaɗai take yin komai ba; hukumomin jiha, ma’aikata, da jama’a suna iya haɗa hannu. Idan famfon ruwa ya lalace ko shara ta taru, manya za su iya sanar da ofishin da ya dace cikin ladabi. Shugabanni da wakilai suna da alhakin sauraron bukatun jama’a da tsara yadda za a yi aiki. Sanin ƙaramar hukumarku yana taimaka maka ka fahimci inda ake neman wasu ayyukan jama’a da yadda al’umma take shiga cikin gyara yankinta.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa. Yau za mu koyi yankin ƙaramar hukumarmu. [MAIN] Ƙaramar hukuma (LGA) hukuma ce da take kusa da jama’ar gari da ƙauye. Tana kula da wasu ayyukan da mutane suke bukata a yankinta. Ana raba yankin zuwa ƙananan yankuna domin wakilai da ma’aikata su san bukatun jama’a. A ofishin ƙaramar hukuma ake tsara ayyuka da karɓar bayani. [PAUSE 1] Wace hukuma ce take kusa da jama’ar gari da ƙauye? [MAIN] Ayyukan ƙaramar hukuma na iya haɗawa da kula da kasuwa, wasu hanyoyi, tsaftar muhalli, wuraren ruwa, makarantu, da cibiyoyin lafiya. Hukumomin jiha, ma’aikata, da jama’a su ma suna iya taimakawa. Idan wani wurin ruwa ya lalace, manya za su iya sanar da ofishin da ya dace cikin ladabi. Shugabanni da wakilai suna sauraron bukatun jama’a kuma suna tsara aiki. [PAUSE 2] Ina ake karɓar bayani game da bukatun yankin ƙaramar hukuma? [OUTRO] Ka tambayi babba sunan ƙaramar hukumarku da wani aikin jama’a da take yi a yankinku.",
+    "audioFile": "audio/p3-socs-02.mp3",
+    "imageCard": "images/p3-socs-02.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wace hukuma ce take kusa da jama’ar gari da ƙauye?",
+        "correctAnswer": "ƙaramar hukuma",
+        "options": [
+          "ƙungiyar wasa",
+          "ƙaramar hukuma",
+          "ajin makaranta"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Ina ake karɓar bayani game da bukatun yankin ƙaramar hukuma?",
+        "correctAnswer": "ofishin ƙaramar hukuma",
+        "options": [
+          "filin wasa",
+          "cikin mota",
+          "ofishin ƙaramar hukuma"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wace hukuma ce take kusa da jama’ar gari da ƙauye?",
+        "answerFormula": "ƙaramar hukuma",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ajin makaranta",
+          "ƙungiyar wasa",
+          "gidan iyali"
+        ]
+      },
+      {
+        "templateHa": "Wane wuri ƙaramar hukuma za ta iya kula da shi?",
+        "answerFormula": "kasuwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "cikin jakar ɗalibi",
+          "ɗakin kwana",
+          "filin wasa na gida"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata wakilai su saurara?",
+        "answerFormula": "bukatun jama’a",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hayaniyar mota",
+          "waƙar yara",
+          "labarin wasa"
+        ]
+      },
+      {
+        "templateHa": "Ina ake karɓar bayani game da bukatun yankin ƙaramar hukuma?",
+        "answerFormula": "ofishin ƙaramar hukuma",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙarƙashin gada",
+          "cikin gona",
+          "filin ƙwallo"
+        ]
+      },
+      {
+        "templateHa": "Me manya za su iya yi idan famfon jama’a ya lalace?",
+        "answerFormula": "sanar da ofishin da ya dace",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɓoye matsalar",
+          "lalata sauran famfuna",
+          "barin ruwa yana zuba"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-socs-03",
+    "gradeband": "p3",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 3,
+    "titleEn": "Community Needs and Services",
+    "titleHa": "Bukatun Al’umma da Ayyukan Jama’a",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Al’umma tana da bukatun da suke taimaka wa mutane su rayu cikin lafiya da kwanciyar hankali. Ruwa mai tsabta, cibiyar lafiya, hanya, makaranta, kasuwa, da tsaftataccen muhalli misalan bukatun jama’a ne. Aikin da ake yi domin biyan buƙata shi ake kira hidimar jama’a. Misali, gyaran famfo hidima ce da take taimaka wa mutane su sami ruwa. Koyarwa a makaranta da kula da marasa lafiya su ma hidimomi ne. Don gano buƙata, za ka iya lura da yankinku ka tambayi mutane cikin ladabi. Wurin da ruwa yake taruwa a hanya na iya bukatar magudanar ruwa. Makarantar da ba ta da kwandon shara na iya bukatar wurin zuba shara. Bayan gano buƙata, al’umma za ta iya sanar da hukuma ko shirya taimakon da ya dace da manya. Yara ba sa yin aiki mai haɗari, amma za su iya kula da kayan jama’a da bayar da bayani ga babba. Haɗin kai yana sa hidima ta amfani kowa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa. Yau za mu koyi bukatun al’umma da ayyukan jama’a. [MAIN] Ruwa mai tsabta, cibiyar lafiya, hanya, makaranta, kasuwa, da tsaftataccen muhalli bukatun jama’a ne. Aikin da ake yi domin biyan buƙata shi ake kira hidimar jama’a. Gyaran famfo yana taimaka wa mutane su sami ruwa, koyarwa tana taimaka wa yara, kuma kula da marasa lafiya yana taimaka wa masu jinya. [PAUSE 1] Wane abu ne misalin buƙatar al’umma? [MAIN] Don gano buƙata, ka lura da yankinku kuma ka tambayi mutane cikin ladabi. Ruwa da ya taru a hanya na iya nuna buƙatar magudanar ruwa. Bayan an gano matsala, al’umma za ta iya sanar da hukuma ko shirya taimako tare da manya. Yara ba sa yin aiki mai haɗari, amma za su iya kula da kayan jama’a da gaya wa babba abin da suka gani. [PAUSE 2] Me ake kira aikin da ake yi domin biyan buƙatar jama’a? [OUTRO] Ka zana taswirar unguwarku ka nuna buƙata ɗaya da hidimar da za ta iya taimakawa.",
+    "audioFile": "audio/p3-socs-03.mp3",
+    "imageCard": "images/p3-socs-03.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane abu ne misalin buƙatar al’umma?",
+        "correctAnswer": "Ruwa mai tsabta",
+        "options": [
+          "Ruwa mai tsabta",
+          "takalmi mai tsada",
+          "abin wasa na mutum"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ake kira aikin da ake yi domin biyan buƙatar jama’a?",
+        "correctAnswer": "hidimar jama’a",
+        "options": [
+          "sirrin gida",
+          "hidimar jama’a",
+          "wasan mutum ɗaya"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane abu ne misalin buƙatar al’umma?",
+        "answerFormula": "Ruwa mai tsabta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "abin wasa na mutum",
+          "sabuwar hula",
+          "takalmi mai tsada"
+        ]
+      },
+      {
+        "templateHa": "Me ake kira aikin da ake yi domin biyan buƙatar jama’a?",
+        "answerFormula": "hidimar jama’a",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "wasan gida",
+          "sirrin mutum",
+          "hutun dare"
+        ]
+      },
+      {
+        "templateHa": "Wace hidima ce take taimaka wa yara su koyi karatu?",
+        "answerFormula": "Koyarwa a makaranta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "rufe makaranta",
+          "ɓoye littattafai",
+          "lalata allo"
+        ]
+      },
+      {
+        "templateHa": "Me ruwa da ya taru a hanya zai iya nuna bukatarsa?",
+        "answerFormula": "magudanar ruwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙarin takalma",
+          "doguwar kujera",
+          "sabuwar ƙwallo"
+        ]
+      },
+      {
+        "templateHa": "Wane aiki yaro zai iya yi idan ya ga matsalar kayan jama’a?",
+        "answerFormula": "gaya wa babba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gyara abu mai haɗari shi kaɗai",
+          "ɓoye matsalar",
+          "lalata sauran kayan"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-socs-04",
+    "gradeband": "p3",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 4,
+    "titleEn": "Transportation — Road and Rail",
+    "titleHa": "Sufuri ta Hanya da Jirgin Ƙasa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Sufuri yana nufin ɗaukar mutane ko kaya daga wani wuri zuwa wani. A hanya, mutane suna amfani da mota, babur, keke, da babbar mota. Babbar mota tana iya ɗaukar amfanin gona daga ƙauye zuwa kasuwa. Jirgin ƙasa kuma yana tafiya a kan layin dogo, yana ɗaukar fasinjoji ko kaya tsakanin wurare. Hanya tana kaiwa wurare da yawa, yayin da jirgin ƙasa yake bin layinsa. Tsaro yana da muhimmanci a duk tafiya. Ka zauna a wurin da ya dace, ka ɗaura abin kariya idan yana nan, kuma kada ka fitar da hannu daga mota. Kafin ka tsallaka hanya, tsaya ka duba ɓangarori biyu a wuri mai aminci, kuma ka bi umarnin babba. Kada ka yi wasa a kan hanya ko kusa da layin dogo. Kada ka tsallaka layin jirgin ƙasa idan jirgi yana zuwa. Bin dokokin hanya da na tashar jirgi yana kare ka da sauran matafiya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa. Yau za mu koyi sufuri ta hanya da jirgin ƙasa. [MAIN] Sufuri yana nufin ɗaukar mutane ko kaya daga wani wuri zuwa wani. Mota, babur, keke, da babbar mota suna tafiya a hanya. Jirgin ƙasa yana tafiya a kan layin dogo, yana ɗaukar fasinjoji ko kaya. Babbar mota na iya kai amfanin gona kasuwa, jirgin ƙasa kuma yana bin layinsa tsakanin wurare. [PAUSE 1] A ina jirgin ƙasa yake tafiya? [MAIN] Tsaro yana da muhimmanci. Ka zauna a wurin da ya dace, ka ɗaura abin kariya idan yana nan, kuma kada ka fitar da hannu daga mota. Kafin ka tsallaka hanya, tsaya ka duba ɓangarori biyu a wuri mai aminci, ka bi umarnin babba. Kada ka yi wasa a hanya ko kusa da layin dogo. [PAUSE 2] Me ya kamata ka yi kafin ka tsallaka hanya? [OUTRO] A tafiyarka ta gaba, ka bambanta abin hawa na hanya da jirgin da yake bin layin dogo, sannan ka tuna da dokar tsaro ɗaya.",
+    "audioFile": "audio/p3-socs-04.mp3",
+    "imageCard": "images/p3-socs-04.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "A ina jirgin ƙasa yake tafiya?",
+        "correctAnswer": "a kan layin dogo",
+        "options": [
+          "a cikin kasuwa",
+          "a kan layin dogo",
+          "a cikin kogin"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi kafin ka tsallaka hanya?",
+        "correctAnswer": "tsaya ka duba ɓangarori biyu",
+        "options": [
+          "gudu ba tare da dubawa ba",
+          "yi wasa a hanya",
+          "tsaya ka duba ɓangarori biyu"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me sufuri yake nufi?",
+        "answerFormula": "ɗaukar mutane ko kaya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gina ɗaki",
+          "dafa abinci",
+          "shuka itace"
+        ]
+      },
+      {
+        "templateHa": "A ina jirgin ƙasa yake tafiya?",
+        "answerFormula": "a kan layin dogo",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "a cikin kogi",
+          "a filin noma",
+          "a kan rufin gida"
+        ]
+      },
+      {
+        "templateHa": "Wane abin hawa ne yake tafiya a hanya?",
+        "answerFormula": "mota",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "jirgin ruwa",
+          "jirgin sama",
+          "kwale-kwale"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi kafin ka tsallaka hanya?",
+        "answerFormula": "tsaya ka duba ɓangarori biyu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gudu ba dubawa",
+          "rufe ido",
+          "yi wasa a hanya"
+        ]
+      },
+      {
+        "templateHa": "Wane wuri ne bai dace yara su yi wasa ba saboda jirgin ƙasa?",
+        "answerFormula": "kusa da layin dogo",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "filin wasa",
+          "cikin aji",
+          "farfajiyar gida"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-socs-05",
+    "gradeband": "p3",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 5,
+    "titleEn": "Transportation — Air and Water",
+    "titleHa": "Sufuri ta Sama da Ruwa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ana amfani da jirgin sama da jirgin ruwa domin ɗaukar mutane da kaya. Jirgin sama yana tashi daga filin jirgin sama, yana bi ta sama, sannan ya sauka a wani fili. Yana iya kai matafiya zuwa wurare masu nisa cikin ɗan lokaci. Jirgin ruwa, kwale-kwale, da jirgin fasinja suna tafiya a ruwa kamar kogi, tafki, ko teku. Suna iya ɗaukar mutane, kifi, hatsi, da sauran kaya zuwa kasuwa ko tashar jirgi. Sufurin sama da na ruwa suna taimaka wa tafiye-tafiye da ciniki tsakanin wurare, har ma da wasu ƙasashe. Tsaro ya zama na farko. A jirgin sama, ka bi umarnin ma’aikata kuma ka ɗaura abin kariya idan an ce ka yi. A jirgin ruwa, ka sa rigar kariya ta ruwa, ka zauna cikin natsuwa, kuma kada a ɗora kaya ko mutane fiye da kima. Yaro ya yi tafiya tare da babba. Kada ka shiga ruwa ko jirgi kai kaɗai. Bin umarni yana kare kowa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa. Yau za mu koyi sufuri ta sama da ruwa. [MAIN] Jirgin sama yana tashi daga filin jirgin sama, yana bi ta sama, sannan ya sauka a wani fili. Jirgin ruwa da kwale-kwale suna tafiya a kogi, tafki, ko teku. Dukansu suna ɗaukar mutane da kaya. Sufurin sama da na ruwa suna taimaka wa tafiye-tafiye da ciniki tsakanin wurare da wasu ƙasashe. [PAUSE 1] Daga ina jirgin sama yake tashi? [MAIN] A jirgin sama, ka bi umarnin ma’aikata kuma ka ɗaura abin kariya idan an ce ka yi. A jirgin ruwa, ka sa rigar kariya ta ruwa, ka zauna cikin natsuwa, kuma kada a ɗora kaya ko mutane fiye da kima. Yaro ya yi tafiya tare da babba, kada ya shiga ruwa ko jirgi shi kaɗai. [PAUSE 2] Me ya kamata matafiyi ya sa a jirgin ruwa domin tsaro? [OUTRO] Idan ka ga jirgin sama ko kwale-kwale, ka tuna wurin da yake tafiya da dokar tsaro da ta dace da shi.",
+    "audioFile": "audio/p3-socs-05.mp3",
+    "imageCard": "images/p3-socs-05.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Daga ina jirgin sama yake tashi?",
+        "correctAnswer": "filin jirgin sama",
+        "options": [
+          "filin jirgin sama",
+          "cikin kasuwa",
+          "layin dogo"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata matafiyi ya sa a jirgin ruwa domin tsaro?",
+        "correctAnswer": "rigar kariya ta ruwa",
+        "options": [
+          "rigar kariya ta ruwa",
+          "jakar kasuwa",
+          "takalmin makaranta"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Daga ina jirgin sama yake tashi?",
+        "answerFormula": "filin jirgin sama",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "layin dogo",
+          "cikin kasuwa",
+          "filin noma"
+        ]
+      },
+      {
+        "templateHa": "A ina kwale-kwale yake tafiya?",
+        "answerFormula": "a ruwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "a sama",
+          "a layin dogo",
+          "a cikin gona"
+        ]
+      },
+      {
+        "templateHa": "Me sufurin sama da na ruwa suke taimakawa?",
+        "answerFormula": "tafiye-tafiye da ciniki",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "lalata kaya",
+          "rufe kasuwa",
+          "hana mutane tafiya"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata matafiyi ya sa a jirgin ruwa domin tsaro?",
+        "answerFormula": "rigar kariya ta ruwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "jakar kasuwa",
+          "hular biki",
+          "tabarma"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ne bai dace a yi wa jirgin ruwa ba?",
+        "answerFormula": "ɗora kaya ko mutane fiye da kima",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "sa rigar kariya ta ruwa",
+          "bin umarnin ma’aikata",
+          "zama cikin natsuwa"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-socs-06",
+    "gradeband": "p3",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 6,
+    "titleEn": "Communication — Traditional Methods",
+    "titleHa": "Sadarwa ta Hanyoyin Gargajiya",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Sadarwa tana nufin isar da saƙo daga mutum zuwa wani. Kafin na’urorin zamani su yawaita, al’umma suna amfani da hanyoyin gargajiya. Mai shela yana zagaya gari yana faɗa wa mutane saƙon shugabanni ko sanarwar taro. A kasuwa, ana iya yin sanarwa da babbar murya domin masu saye da masu sayarwa su ji. Ana kuma buga ganga ko kalangu da wata alama da mutanen yankin suka sani. Wani bugun ganga na iya kiran mutane zuwa taro, amma ma’anarsa tana dogara da abin da al’ummar ta amince da shi. Waɗannan hanyoyi suna amfani idan saƙo ya shafi mutanen da suke kusa. Duk da haka, iska, nisa, ko hayaniya na iya hana wasu ji. Saboda haka, mai isar da saƙo ya yi magana a sarari, ya maimaita muhimmin bayani, kuma kada ya canza saƙon. Mai sauraro kuma ya saurara da kyau ya tambaya idan bai fahimta ba. Sadarwa mai kyau tana taimaka wa al’umma ta samu bayani cikin lokaci.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa. Yau za mu koyi sadarwa ta hanyoyin gargajiya. [MAIN] Sadarwa tana nufin isar da saƙo daga mutum zuwa wani. Mai shela yana zagaya gari yana faɗa wa mutane sanarwar taro ko wani saƙon jama’a. A kasuwa, ana iya sanarwa da babbar murya. Ana kuma buga ganga ko kalangu da wata alama da mutanen yankin suka sani. Ma’anar bugun tana dogara da abin da al’ummar ta amince da shi. [PAUSE 1] Wa yake zagaya gari yana faɗa wa mutane sanarwa? [MAIN] Hanyoyin gargajiya suna amfani ga mutanen da suke kusa, amma nisa ko hayaniya na iya hana wasu ji. Mai isar da saƙo ya yi magana a sarari, ya maimaita muhimmin bayani, kuma kada ya canza saƙon. Mai sauraro ya saurara da kyau ya tambaya idan bai fahimta ba. [PAUSE 2] Me mai isar da saƙo ya kamata ya yi da muhimmin bayani? [OUTRO] Idan ka ji shela ko bugun sanarwa, ka lura da wanda ya aika saƙon, abin da aka faɗa, da mutanen da ake son su ji.",
+    "audioFile": "audio/p3-socs-06.mp3",
+    "imageCard": "images/p3-socs-06.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wa yake zagaya gari yana faɗa wa mutane sanarwa?",
+        "correctAnswer": "Mai shela",
+        "options": [
+          "direban jirgi",
+          "Mai shela",
+          "ɗan wasa"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me mai isar da saƙo ya kamata ya yi da muhimmin bayani?",
+        "correctAnswer": "ya maimaita shi",
+        "options": [
+          "ya ɓoye shi",
+          "ya canza shi",
+          "ya maimaita shi"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me sadarwa take nufi?",
+        "answerFormula": "isar da saƙo",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɓoye kaya",
+          "gina hanya",
+          "ɗaukar ruwa"
+        ]
+      },
+      {
+        "templateHa": "Wa yake zagaya gari yana faɗa wa mutane sanarwa?",
+        "answerFormula": "Mai shela",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "direban mota",
+          "ɗan wasa",
+          "mai aikin gona"
+        ]
+      },
+      {
+        "templateHa": "Wane kayan gargajiya ake iya bugawa domin isar da alama?",
+        "answerFormula": "ganga ko kalangu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "jirgin sama",
+          "wayar hannu",
+          "talabijin"
+        ]
+      },
+      {
+        "templateHa": "Me zai iya hana wasu jin sanarwar gargajiya?",
+        "answerFormula": "nisa ko hayaniya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "sauraro da kyau",
+          "magana a sarari",
+          "maimaita bayani"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata mai sauraro ya yi idan bai fahimci shela ba?",
+        "answerFormula": "ya tambaya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ya canza saƙon",
+          "ya faɗa wa mutane ƙarya",
+          "ya yi kamar ya ji"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "id": "p4-bsci-16",
+    "gradeband": "p4",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 16,
+    "titleEn": "Temporary and Permanent Changes; Heating and Cooling",
+    "titleHa": "Sauye-sauyen da Za a Iya Mayarwa da Waɗanda Ba Su Sauƙin Mayarwa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Abubuwa suna iya sauyawa ta hanyoyi daban-daban. Wasu sauye-sauye za a iya mayar da su yadda suke a dā, amma wasu ba sa sauƙin komawa. Ƙanƙara idan ta sami ɗumi tana narkewa ta zama ruwa; idan ruwan ya yi sanyi sosai, yana daskarewa ya sake zama ƙanƙara. Wannan sauyi ne da za a iya mayarwa. Riga mai ruwa tana bushewa, kuma rigar za ta iya sake jike. Idan an karya kofin yumbu, ba ya sauƙin komawa yadda yake. Dafa ƙwai ma yana sauya shi ta yadda ba ya komawa ɗanyen ƙwai. Amma ba kowane sauyi da ɗumi ya jawo ne yake zama na dindindin ba; narkewar ƙanƙara misali ne. A aji, malami ko wani babba ne kaɗai zai riƙe abu mai zafi. Kai ka lura daga nesa, ka rubuta abin da ka gani kafin sanyaya ƙanƙara da bayanta. Kada ka taɓa wuta, tafasasshen ruwa, ko abu mai zafi.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi sauye-sauyen da za a iya mayarwa da waɗanda ba su sauƙin mayarwa. [MAIN] Ƙanƙara tana narkewa ta zama ruwa idan ta sami ɗumi, ruwan kuma yana iya sake daskarewa ya zama ƙanƙara. Riga mai ruwa tana bushewa, kuma za ta iya sake jike. [PAUSE 1] Me ruwan ƙanƙara yake zama bayan ya daskare? [MAIN] Karyewar kofin yumbu ko dafuwar ƙwai ba sa sauƙin komawa yadda suke a dā. Ba kowane sauyin ɗumi ne yake zama na dindindin ba. Babba ne kaɗai zai riƙe abu mai zafi; kai ka lura daga nesa ka rubuta abin da ka gani. [PAUSE 2] Wa ya kamata ya riƙe abu mai zafi? [OUTRO] Ka kwatanta ƙanƙara kafin narkewa da bayanta, sannan ka ware sauyin da za a iya mayarwa daga wanda ba ya sauƙin mayarwa.",
+    "audioFile": "audio/p4-bsci-16.mp3",
+    "imageCard": "images/p4-bsci-16.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Me ruwan ƙanƙara yake zama bayan ya daskare?", "correctAnswer": "ƙanƙara", "options": ["ƙanƙara", "yashi", "itace"] },
+      { "pauseAtMs": 150000, "questionHa": "Wa ya kamata ya riƙe abu mai zafi?", "correctAnswer": "babba", "options": ["babba", "yaro shi kaɗai", "jariri"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Wane sauyi ne za a iya mayarwa?", "answerFormula": "narkewar ƙanƙara da sake daskarewar ruwa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["karyewar kofin yumbu", "dafuwar ƙwai", "ƙonewar takarda"] },
+      { "templateHa": "Me zai faru da ƙanƙara idan ta sami ɗumi?", "answerFormula": "za ta narke ta zama ruwa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["za ta zama itace", "za ta zama yashi", "za ta zama ƙarfe"] },
+      { "templateHa": "Wane misali ne ba ya sauƙin komawa yadda yake a dā?", "answerFormula": "karyewar kofin yumbu", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["daskarewar ruwa", "narkewar ƙanƙara", "sake jikewar riga"] },
+      { "templateHa": "Me ya dace yaro ya yi yayin kallon abu mai zafi?", "answerFormula": "ya lura daga nesa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ya taɓa shi", "ya ɗauke shi", "ya kunna wuta"] },
+      { "templateHa": "Me ya sa narkewar ƙanƙara ba ta nuna cewa kowane sauyin ɗumi na dindindin ne?", "answerFormula": "ruwan na iya sake daskarewa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ruwan yana zama dutse", "ƙanƙara ba ta taɓa narkewa", "ɗumi yana karya kowane abu"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p4-bsci-17",
+    "gradeband": "p4", "subject": "Basic Science", "subjectHa": "Kimiyya", "moduleNumber": 17,
+    "titleEn": "Plant and Animal Life-Cycle Changes", "titleHa": "Matakan Girman Tsiro da Dabba", "titleAjami": null, "ajami_validated": false,
+    "textExplanationHa": "Halittu suna sauyawa yayin da suke girma. A rayuwar wake, iri yana fara toho, ya zama ƙaramin tsiro, sannan ya girma ya zama cikakken tsiro mai samar da sabbin iri. A rayuwar kaza kuwa, ƙwai yana ƙyanƙyashewa ya fito da ɗan kaza; ɗan kazar yana girma ya zama babbar kaza, babbar kazar kuma tana iya samar da sabbin ƙwai. Dukansu suna da matakai masu jere: farawa, ƙuruciya, da girma. Bambancinsu shi ne tsiro yana farawa daga iri kuma cikakken tsiro yana samar da iri, yayin da kaza take farawa daga ƙwai kuma babbar kaza take samar da ƙwai. Don lura a kan lokaci, a shuka wake tare da babba. A rubuta ranar shuka, sannan kowace rana biyu a zana ko auna tsayinsa da mazubi. Kada a tono shi kullum. Bayan mako guda, a jera bayanan domin a ga sabon ganye, ƙarin tsayi, ko wani sauyi. Wannan rikodi yana nuna cewa girma yana faruwa a hankali.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu kwatanta matakan girman tsiro da kaza. [MAIN] Wake yana farawa daga iri, ya zama ƙaramin tsiro, sannan cikakken tsiro mai samar da sabbin iri. Kaza tana farawa daga ƙwai, ta zama ɗan kaza, sannan babbar kaza mai iya samar da sabbin ƙwai. [PAUSE 1] Wane mataki ne yake zuwa bayan iri ya fara toho? [MAIN] Duk rayuwar biyu suna da matakai masu jere, amma farkonsu da abin da babba yake samarwa sun bambanta. Ka shuka wake tare da babba, ka rubuta ranar shuka, ka zana ko ka auna tsayinsa kowace rana biyu. [PAUSE 2] Me cikakken tsiron wake yake samarwa? [OUTRO] Ka jera zane-zanen wake bisa ranaku, sannan ka bayyana sauyi ɗaya da ya faru tsakanin rikodi biyu.",
+    "audioFile": "audio/p4-bsci-17.mp3", "imageCard": "images/p4-bsci-17.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Wane mataki ne yake zuwa bayan iri ya fara toho?", "correctAnswer": "ƙaramin tsiro", "options": ["ƙaramin tsiro", "babbar kaza", "ƙwai"] },
+      { "pauseAtMs": 150000, "questionHa": "Me cikakken tsiron wake yake samarwa?", "correctAnswer": "sabbin iri", "options": ["sabbin iri", "ƙwai", "gashin tsuntsu"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Wane jeri ne daidai ga rayuwar wake?", "answerFormula": "iri, ƙaramin tsiro, cikakken tsiro", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ƙwai, ɗan kaza, babbar kaza", "cikakken tsiro, dutse, iri", "iri, kifi, bishiya"] },
+      { "templateHa": "Wane jeri ne daidai ga rayuwar kaza?", "answerFormula": "ƙwai, ɗan kaza, babbar kaza", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["iri, ƙaramin tsiro, cikakken tsiro", "ɗan kaza, iri, akuya", "ƙwai, ganye, kifi"] },
+      { "templateHa": "Wace kamanceceniya ce tsakanin rayuwar wake da ta kaza?", "answerFormula": "dukansu suna da matakai masu jere", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["dukansu suna farawa daga ƙwai", "dukansu suna samar da iri", "dukansu suna rayuwa a ruwa"] },
+      { "templateHa": "Ta yaya za a riƙa bin girman wake a kan lokaci?", "answerFormula": "a rubuta rana a zana ko auna tsayinsa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["a tono shi kullum", "a karya kararsa", "a ɓoye shi cikin akwati"] },
+      { "templateHa": "Wane bambanci ne tsakanin cikakken tsiron wake da babbar kaza?", "answerFormula": "tsiron yana samar da iri, kazar kuma ƙwai", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["dukansu suna samar da ƙwai", "dukansu suna samar da iri", "babu ɗayansu da yake samar da sabuwar halitta"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p4-bsci-18",
+    "gradeband": "p4", "subject": "Basic Science", "subjectHa": "Kimiyya", "moduleNumber": 18,
+    "titleEn": "Digestive System and Teeth", "titleHa": "Yadda Jiki Ke Sarrafa Abinci da Ayyukan Haƙora", "titleAjami": null, "ajami_validated": false,
+    "textExplanationHa": "Abinci yana shiga jiki ta baki. Haƙora suna gutsura da niƙa abinci ya koma ƙananan gutsure. Ruwan baki yana gauraya da abincin, ya sa ya fi sauƙin haɗiyewa. Bayan an haɗiye, abincin yana wucewa ta bututun abinci zuwa jakar da ke karɓar abinci a cikin jiki. A nan da sauran sassan hanyar abinci, jiki yana ci gaba da narkar da abincin domin ya iya amfani da abin da ke cikinsa. Saboda haka, narkar da abinci ba ya faruwa a wuri ɗaya kawai. Haƙoran gaba suna yanka abinci; haƙora masu tsini suna taimakawa wajen yayyage shi; manyan haƙoran baya suna murƙushewa da niƙawa. Ka kalli haƙoranka a madubi mai tsabta ba tare da ka taɓa su da wani abu ba, ka kwatanta siffofin gaba da baya. A goge haƙora safe da dare da buroshi mai tsabta, kuma kada a yawaita alewa ko abin sha mai sukari. A wanke hannu kafin cin abinci.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi yadda jiki ke sarrafa abinci da ayyukan haƙora. [MAIN] Abinci yana shiga ta baki. Haƙora suna gutsura shi, ruwan baki ya taimaka masa ya fi sauƙin haɗiyewa. Sai ya wuce ta bututun abinci zuwa jakar da ke karɓar abinci a cikin jiki. [PAUSE 1] Me ruwan baki yake taimakawa abinci ya yi? [MAIN] Jiki yana narkar da abinci a sassa fiye da ɗaya domin ya yi amfani da abin da ke cikinsa. Haƙoran gaba suna yanka, masu tsini suna yayyagewa, manyan na baya kuma suna niƙawa. A goge haƙora safe da dare, a rage yawan kayan zaƙi. [PAUSE 2] Wane aiki manyan haƙoran baya suke yi? [OUTRO] Ka kalli siffofin haƙoran gaba da na baya a madubi, ka bayyana yadda bambancin siffofinsu yake taimaka musu yin ayyuka daban-daban.",
+    "audioFile": "audio/p4-bsci-18.mp3", "imageCard": "images/p4-bsci-18.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Me ruwan baki yake taimakawa abinci ya yi?", "correctAnswer": "ya fi sauƙin haɗiyewa", "options": ["ya fi sauƙin haɗiyewa", "ya zama dutse", "ya koma takarda"] },
+      { "pauseAtMs": 150000, "questionHa": "Wane aiki manyan haƙoran baya suke yi?", "correctAnswer": "murƙushewa da niƙawa", "options": ["murƙushewa da niƙawa", "gani da ji", "shaƙar iska"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Ta ina abinci yake shiga jiki?", "answerFormula": "ta baki", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ta kunne", "ta ido", "ta gashi"] },
+      { "templateHa": "Me haƙora suke yi wa abinci?", "answerFormula": "suna gutsura da niƙa shi", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["suna juya shi iska", "suna auna nauyinsa", "suna canja shi ruwa nan take"] },
+      { "templateHa": "Ta ina abinci yake wucewa bayan an haɗiye shi?", "answerFormula": "ta bututun abinci", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ta bututun numfashi", "ta ƙashin hannu", "ta cikin kunne"] },
+      { "templateHa": "Wane hali ne yake taimaka wa lafiyar haƙora?", "answerFormula": "goge su safe da dare", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["yawaita alewa", "tauna dutse", "rashin wanke buroshi"] },
+      { "templateHa": "Me siffofin haƙora daban-daban suke taimakawa?", "answerFormula": "yanka, yayyagewa, da niƙa abinci", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["gani, ji, da wari", "tafiya, tsalle, da gudu", "rubutu, lissafi, da zane"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p4-bsci-19",
+    "gradeband": "p4", "subject": "Basic Science", "subjectHa": "Kimiyya", "moduleNumber": 19,
+    "titleEn": "How Sound Is Produced and Travels", "titleHa": "Yadda Sauti Ke Samuwa da Tafiya", "titleAjami": null, "ajami_validated": false,
+    "textExplanationHa": "Sauti yana samuwa idan abu yana rawa da sauri. Wannan rawar ana iya ganinta ko a ji ta cikin aminci. Ka ɗora yatsunka a wuyanka a hankali yayin magana; za ka ji wata rawa. Tare da kulawar malami, ana iya ja zaren roba da aka ɗaura sosai, a sake shi a hankali, a ga yana rawa yana bada sauti. Kada a harba zaren zuwa ga kowa. Sauti yana tafiya ta iska daga abin da ya yi rawar zuwa kunnen mai sauraro. Yana kuma iya wucewa ta wasu abubuwa kamar itace ko ƙarfe. Idan an taɓa tebur a hankali, mutum kusa zai fi jin sautin a sarari fiye da wanda yake nesa. Bugawa da ƙarfi kan haifar da sauti mai ƙara, bugawa a hankali kuma kan haifar da mai laushi. A gwada taɓa fensir biyu a hankali daga nisan matakai biyu da shida, sannan a rubuta inda aka fi ji a sarari. A kare kunne daga sauti mai ƙara sosai.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi yadda sauti ke samuwa da tafiya. [MAIN] Sauti yana samuwa idan abu yana rawa da sauri. Za ka iya jin wannan rawar idan ka ɗora yatsunka a wuyanka a hankali yayin magana. Sauti yana tafiya ta iska da wasu abubuwa kamar itace da ƙarfe. [PAUSE 1] Me yake samar da sauti? [MAIN] Sauti mai ƙara ya bambanta da mai laushi. Nisa kuma yana shafar yadda ake jin sauti a sarari. Ka saurari taɓawar fensir a hankali daga matakai biyu da shida, ka rubuta inda aka fi ji, ba tare da ƙara sautin sosai ba. [PAUSE 2] A wane nisa za a fi jin taɓawar fensir a sarari? [OUTRO] Ka haɗa abin da ka gani ko ka ji yana rawa da sautin da ya samar, sannan ka kare kunnenka daga ƙara mai yawa.",
+    "audioFile": "audio/p4-bsci-19.mp3", "imageCard": "images/p4-bsci-19.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Me yake samar da sauti?", "correctAnswer": "rawar abu da sauri", "options": ["rawar abu da sauri", "launin abu", "nauyin littafi"] },
+      { "pauseAtMs": 150000, "questionHa": "A wane nisa za a fi jin taɓawar fensir a sarari?", "correctAnswer": "matakai biyu", "options": ["matakai biyu", "matakai shida", "bayan bango mai nisa"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Ta yaya sauti yake samuwa?", "answerFormula": "idan abu yana rawa da sauri", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["idan abu ya canja launi", "idan abu ya yi nauyi", "idan dare ya yi"] },
+      { "templateHa": "Ta wace hanya sauti daga bakin mai magana yake isa kunne?", "answerFormula": "ta iska", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ta haske", "ta inuwa", "ta launi"] },
+      { "templateHa": "Wane abu sauti zai iya wucewa ta cikinsa ban da iska?", "answerFormula": "itace", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["inuwa", "launi", "wari"] },
+      { "templateHa": "Me nisa yake yi ga jin sauti?", "answerFormula": "yana rage yadda ake jin sautin a sarari", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["yana mayar da sauti haske", "yana sa abu ya zama ruwa", "ba ya da wani tasiri ga sauti"] },
+      { "templateHa": "Wane rikodi ne ya dace bayan sauraron sauti daga nisa biyu?", "answerFormula": "a rubuta nisan da aka fi jin sauti a sarari", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["a rubuta launin takalmi", "a auna tsayin ƙofa", "a ƙirga ganyen bishiya"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p4-bsci-20",
+    "gradeband": "p4", "subject": "Basic Science", "subjectHa": "Kimiyya", "moduleNumber": 20,
+    "titleEn": "Vehicles, External Parts and Safe Technology Use", "titleHa": "Ababen Hawa, Sassan Waje, da Amfani Cikin Aminci", "titleAjami": null, "ajami_validated": false,
+    "textExplanationHa": "A Najeriya muna ganin ababen hawa kamar keke, babur, mota, bas, da babbar mota. Sassan wajensu suna da ayyuka daban-daban. Ƙafafu da tayoyi suna taimaka wa abin hawa ya motsa a hanya. Fitilu suna taimaka wa direba ya gani kuma wasu su ga abin hawan. Madubai suna taimaka wa direba ya lura da abin da yake gefe ko baya. Ƙofofi suna ba da hanyar shiga da fita; gilashin gaba yana kare direba daga iska da ƙura tare da barinsa ya ga hanya. A wasu ababen hawa, sandar da ke tsakiya tana haɗa ƙafafu domin su juya yadda ya dace. Daga wuri mai aminci, ka zaɓi abin hawa da yake tsaye, tare da babba, ka zana sassan wajensa guda biyar ka rubuta aikinsu. Gyara, duba mai, da kula da injin aikin manya ne. Kada ka taɓa abin hawa mai motsi, injin mai zafi, batiri, waya, ko injina. A ketare hanya a wurin da ya dace tare da babba.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi ababen hawa, sassan wajensu, da amfani cikin aminci. [MAIN] Ƙafafu da tayoyi suna taimaka wa abin hawa ya motsa. Fitilu suna taimakawa wajen gani, madubai wajen lura da gefe ko baya, gilashin gaba kuma yana kare direba daga iska da ƙura. [PAUSE 1] Wane sashe yake taimaka wa direba ya lura da abin da yake baya? [MAIN] Ƙofofi hanyar shiga da fita ce. Sandar da ke tsakiya tana iya haɗa ƙafafu. Gyara da kula da injin aikin manya ne. Kada ka taɓa abin hawa mai motsi, injin mai zafi, batiri, ko waya. [PAUSE 2] Wa ya kamata ya gyara abin hawa? [OUTRO] Daga wuri mai aminci, ka zana abin hawa mai tsaye ka haɗa kowane sashe na waje da aikinsa.",
+    "audioFile": "audio/p4-bsci-20.mp3", "imageCard": "images/p4-bsci-20.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Wane sashe yake taimaka wa direba ya lura da abin da yake baya?", "correctAnswer": "madubi", "options": ["madubi", "taya", "ƙofa"] },
+      { "pauseAtMs": 150000, "questionHa": "Wa ya kamata ya gyara abin hawa?", "correctAnswer": "babba mai ƙwarewa", "options": ["babba mai ƙwarewa", "yaro shi kaɗai", "jariri"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Menene aikin taya a abin hawa?", "answerFormula": "ta taimaka masa ya motsa a hanya", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ta dafa abinci", "ta auna lokaci", "ta wanke tufafi"] },
+      { "templateHa": "Menene aikin gilashin gaba?", "answerFormula": "ya kare direba daga iska da ƙura yana barinsa ya ga hanya", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ya juya tayoyi", "ya buɗe ƙofa", "ya auna man fetur"] },
+      { "templateHa": "Menene aikin fitilun abin hawa?", "answerFormula": "taimakawa wajen gani da nuna abin hawan", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ɗaga abin hawa", "cika tayoyi da iska", "rufe ƙofofi"] },
+      { "templateHa": "Me bai kamata yaro ya taɓa ba?", "answerFormula": "injin abin hawa mai zafi", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["littafin Kimiyya", "fensirinsa", "takardar zanensa"] },
+      { "templateHa": "Wane aiki ne sandar da ke tsakiya take yi a wasu ababen hawa?", "answerFormula": "tana haɗa ƙafafu domin su juya", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["tana kunna fitilu", "tana wanke gilashi", "tana buɗe ƙofofi"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p4-bsci-21",
+    "gradeband": "p4", "subject": "Basic Science", "subjectHa": "Kimiyya", "moduleNumber": 21,
+    "titleEn": "Nutrition and Healthy Growth", "titleHa": "Abinci Mai Gina Jiki da Girma Cikin Lafiya", "titleAjami": null, "ajami_validated": false,
+    "textExplanationHa": "Yara suna bukatar abinci iri-iri domin girma, motsa jiki, da lafiya. Abincin bada kuzari, kamar tuwo, shinkafa, gero, doya, ko rogo, yana taimaka wa jiki yin wasa da aiki. Abincin gina jiki, kamar wake, ƙwai, kifi, gyada, ko nama gwargwadon hali, yana taimaka wa jiki ya gina sassa yayin girma. Abincin kariya, kamar kabewa, alayyahu, tumatir, mangwaro, gwanda, ko lemu, yana kawo sinadarai masu taimaka wa jiki ya zauna lafiya. Ruwa mai tsafta yana taimaka wa jiki yin ayyukansa. Iri-iri yana da muhimmanci domin rukuni ɗaya ba ya yin dukkan ayyukan. Ka kwatanta abinci biyu: tuwo da miya mai alayyahu da wake yana haɗa kuzari, gina jiki, da kariya; biskit da abin sha mai zaƙi ba su ba da irin wannan bambanci. Ba sai abinci ya yi tsada ba. A zaɓi abin da ake samu a gida, a wanke hannu da sabulu kafin ci, kuma a sha ruwa mai tsafta.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi yadda abinci iri-iri yake taimaka wa girma cikin lafiya. [MAIN] Tuwo, shinkafa, gero, doya, da rogo suna bada kuzari. Wake, ƙwai, kifi, da gyada suna taimakawa gina jiki. Kayan lambu da 'ya'yan itatuwa suna taimaka wa jiki ya zauna lafiya. [PAUSE 1] Wane aiki abincin gina jiki yake yi? [MAIN] Ruwa mai tsafta yana taimaka wa ayyukan jiki. Tuwo da miya mai alayyahu da wake yana da rukuni iri-iri fiye da biskit da abin sha mai zaƙi. Abinci na gida mai araha zai iya haɗa nau'ikan da ake bukata. A wanke hannu kafin ci. [PAUSE 2] Wane abinci ne ya fi haɗa rukuni iri-iri? [OUTRO] Ka kwatanta abincin rana biyu ta aikin kowane rukuni, sannan ka nuna yadda za a ƙara iri-iri da abin da ake samu a gida.",
+    "audioFile": "audio/p4-bsci-21.mp3", "imageCard": "images/p4-bsci-21.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Wane aiki abincin gina jiki yake yi?", "correctAnswer": "yana taimaka wa jiki ya gina sassa", "options": ["yana taimaka wa jiki ya gina sassa", "yana mayar da abinci dutse", "yana hana mutum shan ruwa"] },
+      { "pauseAtMs": 150000, "questionHa": "Wane abinci ne ya fi haɗa rukuni iri-iri?", "correctAnswer": "tuwo da miya mai alayyahu da wake", "options": ["tuwo da miya mai alayyahu da wake", "biskit kaɗai", "abin sha mai zaƙi kaɗai"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Wane aiki abincin bada kuzari yake yi?", "answerFormula": "yana taimaka wa jiki yin motsi da aiki", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["yana mayar da jiki dutse", "yana hana girma", "yana maye gurbin ruwa"] },
+      { "templateHa": "Wane abinci ne misalin mai gina jiki?", "answerFormula": "wake", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["sukari kaɗai", "gishiri kaɗai", "ruwa kaɗai"] },
+      { "templateHa": "Me kayan lambu da 'ya'yan itatuwa suke taimakawa?", "answerFormula": "kare lafiyar jiki", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["juya ƙashi ƙarfe", "maye gurbin barci", "hana buƙatar ruwa"] },
+      { "templateHa": "Me ya sa ake bukatar abinci iri-iri?", "answerFormula": "rukuni daban-daban suna taimaka wa jiki ta hanyoyi daban-daban", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["abinci ɗaya yana yin kowane aiki", "abinci mai tsada kaɗai yake da amfani", "ruwa ba shi da amfani"] },
+      { "templateHa": "Ta yaya tuwo da miya mai alayyahu da wake ya fi biskit kaɗai taimaka wa girma?", "answerFormula": "yana haɗa kuzari, gina jiki, da kariya", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["yana ƙunshe da sukari kaɗai", "ba ya da wani rukuni na abinci", "yana maye gurbin ruwa da barci"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  }
+]

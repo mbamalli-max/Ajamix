@@ -1,0 +1,211 @@
+[
+  {
+    "id": "p6-bsci-01",
+    "imagePath": "images/p6-bsci-01.png",
+    "titleEn": "The Solar System and Gravity",
+    "titleHa": "Tsarin Rana da Ƙarfin Jan Ƙasa",
+    "type": "diagram",
+    "depictEn": "A schematic solar-system diagram: the Sun at the centre with the eight planets arranged in order around it (not to true scale), plus a small classroom inset showing a soft ball being dropped and falling straight down, illustrating gravity pulling objects toward Earth.",
+    "labelsHa": [
+      "Rana",
+      "Duniyoyi",
+      "Ƙarfin jan Ƙasa"
+    ],
+    "safetyNote": "Schematic/non-realistic scale only, per the module's own caution that a classroom model cannot show true distances. No child throwing heavy objects or stones in the gravity demonstration — only a soft ball."
+  },
+  {
+    "id": "p6-bsci-02",
+    "imagePath": "images/p6-bsci-02.png",
+    "titleEn": "Earth's Movements, Day and Night",
+    "titleHa": "Juyawar Ƙasa da Samuwar Rana da Dare",
+    "type": "diagram",
+    "depictEn": "A ball-and-lamp classroom model showing one side of the ball lit (day) and the other in shadow (night), with a small orbit arrow showing the ball's path around the lamp; two small labeled insets show a solar eclipse (Moon between Sun and Earth) and a lunar eclipse (Earth's shadow on the Moon), depicted as simple non-realistic diagram shapes.",
+    "labelsHa": [
+      "Rana",
+      "Dare",
+      "Kusufin Rana",
+      "Husufin Wata"
+    ],
+    "safetyNote": "Depict only the classroom ball-and-lamp model, not a photorealistic Sun; no child looking directly at any bright light source, consistent with the module's explicit warning never to look directly at the Sun."
+  },
+  {
+    "id": "p6-bsci-03",
+    "imagePath": "images/p6-bsci-03.png",
+    "titleEn": "Weather Symbols, Climate Records, and Change",
+    "titleHa": "Alamomin Yanayi da Rubuta Sauye-sauyensa",
+    "type": "diagram",
+    "depictEn": "A simple weather-symbol key (sun, cloud, wind, rain) beside a small weekly observation chart being filled in by a pupil from a classroom window, plus a two-panel seasonal contrast showing a greener rainy-season scene beside a drier harmattan-season scene of the same Northern Nigerian setting.",
+    "labelsHa": [
+      "Rana",
+      "Gajimare",
+      "Iska",
+      "Ruwan sama",
+      "Damina",
+      "Rani"
+    ],
+    "safetyNote": "Pupil observes calmly from indoors/a window; no depiction of a child outside during storm, flood, or extreme heat, matching the module's explicit warning against going out to gather data in severe weather."
+  },
+  {
+    "id": "p6-bsci-04",
+    "imagePath": "images/p6-bsci-04.png",
+    "titleEn": "Forces and Friction",
+    "titleHa": "Ƙarfi da Guga Tsakanin Abubuwa",
+    "type": "diagram",
+    "depictEn": "A fair-test diagram: the same small lightweight toy or blunt bottle being gently pushed across two different surfaces (e.g. smooth tile and rough mat) side by side, with a push-arrow and a distance line for each; a small separate inset shows a magnet attracting a metal paperclip without touching it.",
+    "labelsHa": [
+      "Ƙarfi",
+      "Guga"
+    ],
+    "safetyNote": "Only a small lightweight toy or blunt bottle is pushed by hand — no vehicle, blade, heavy object, or steep/dangerous slope, matching the module's explicit restriction."
+  },
+  {
+    "id": "p6-bsci-05",
+    "imagePath": "images/p6-bsci-05.png",
+    "titleEn": "The Heart, Blood Vessels, and Circulation",
+    "titleHa": "Zuciya, Jijiyoyin Jini, da Zagayawar Jini",
+    "type": "diagram",
+    "depictEn": "A simple non-graphic schematic showing a heart shape with two labeled vessel loops (one carrying blood out, one bringing it back) in a plain body outline — not a realistic anatomical rendering; a separate small inset shows a pupil calmly resting two fingers on their own wrist beside a supervising adult, both seated, to feel a pulse.",
+    "labelsHa": [
+      "Zuciya",
+      "Jijiyoyin jini"
+    ],
+    "safetyNote": "Non-graphic, simple schematic heart/vessel outline only — no exposed internal organ realism, no blood shown flowing outside vessels. The pulse-check must show calm, seated pupils under adult supervision, not framed as a medical diagnosis, matching the module's explicit caution."
+  },
+  {
+    "id": "p6-bsci-06",
+    "imagePath": "images/p6-bsci-06.png",
+    "titleEn": "Puberty, Hygiene, and Body Privacy",
+    "titleHa": "Balaga, Tsafta, da Sirrin Jiki",
+    "type": "diagram",
+    "depictEn": "A fully clothed, non-anatomical diagram: a simple child-to-teen silhouette growth arrow (both figures modestly and identically dressed, no body detail shown), paired with a hygiene-items row (soap, clean folded clothes, a wash basin of water) and a small trusted-adult figure a child can walk toward — representing the module's guidance to go to a safe place and tell a trusted adult.",
+    "labelsHa": [
+      "Balaga",
+      "Tsafta",
+      "Amintaccen babba"
+    ],
+    "safetyNote": "No depiction of any body part normally covered by clothing, no undressed or partially dressed figure, no anatomical or medical illustration. Every figure stays fully and modestly clothed throughout; the growth arrow shows only outline silhouettes, not physical development detail."
+  },
+  {
+    "id": "p6-bsci-07",
+    "imagePath": "images/p6-bsci-07.png",
+    "titleEn": "Human Reproduction, Growth, and Development",
+    "titleHa": "Haihuwar Ɗan Adam, Girma, da Ci Gaba",
+    "type": "diagram",
+    "depictEn": "A purely symbolic, non-figurative diagram (in the same restrained register as a printed textbook infographic, with no body silhouette or body-like shape anywhere): a simple labeled outline for the reproductive-system layout, followed by a row of plain geometric placeholders — a small dot, then a slightly larger circle, then a larger oval, then a larger oval still — representing the stages of prenatal development purely through size progression inside a simple oval womb outline, with no curled, fetal, or body-shaped contour used at any stage.",
+    "labelsHa": [
+      "Haihuwa",
+      "Girma"
+    ],
+    "safetyNote": "Purely symbolic/geometric register only — no body silhouette, no fetal or figure-shaped outline of any kind at any development stage, no realistic human bodies, no nudity, no facial detail anywhere in the image, no sexual or intimate content of any kind. Every development stage must be a plain geometric shape (dot/circle/oval) distinguished only by size, never by a body-like contour. Confine the entire image to flat labeled-diagram shapes, consistent with the module's explicit instruction that this is scientific information delivered via one teacher-approved diagram, not a depiction of any real people or act."
+  },
+  {
+    "id": "p6-bsci-08",
+    "imagePath": "images/p6-bsci-08.png",
+    "titleEn": "Air Pressure and Its Uses",
+    "titleHa": "Matsin Iska da Amfaninsa",
+    "type": "diagram",
+    "depictEn": "Three small labeled panels: an empty capped plastic bottle resisting a gentle squeeze, a bicycle pump inflating a tyre, and a child sipping a drink through a straw — each panel shows the everyday object clearly with a simple arrow indicating air movement or pressure.",
+    "labelsHa": [
+      "Matsin iska"
+    ],
+    "safetyNote": "No blowing up a bottle forcefully, no heating a sealed container, and no depiction of fire or flame, matching the module's explicit prohibitions."
+  },
+  {
+    "id": "p6-bsci-09",
+    "imagePath": "images/p6-bsci-09.png",
+    "titleEn": "Nigeria's Mineral Resources and Responsible Use",
+    "titleHa": "Albarkatun Ma'adinai na Najeriya da Amfani Mai Alhaki",
+    "type": "diagram",
+    "depictEn": "A simple sample-tray diagram showing a few labeled, teacher-approved mineral samples (a gold-colored nugget shape, a dark coal lump, an iron-ore rock, limestone, salt crystals, and a small sealed jar representing crude oil) beside a small responsible-use panel showing recycling and land-restoration icons.",
+    "labelsHa": [
+      "Zinariya",
+      "Kwal",
+      "Dutsen ƙarfe",
+      "Gishiri",
+      "Ɗanyen mai"
+    ],
+    "safetyNote": "No pupil entering a mine, touching crude oil, tasting a rock, or burning a sample — samples are shown only as classroom display items or images, matching the module's explicit restriction."
+  },
+  {
+    "id": "p6-bsci-10",
+    "imagePath": "images/p6-bsci-10.png",
+    "titleEn": "White Light, Primary Colours, and Pigments",
+    "titleHa": "Farin Haske, Launukan Asali, da Launin Fenti",
+    "type": "diagram",
+    "depictEn": "A simple prism diagram showing a beam of white light entering a triangular prism and separating into a small rainbow band on the other side, beside a separate small paint-mixing panel showing three paint blobs (red, yellow, blue) with two of them overlapping into a mixed colour — kept visually distinct from the light diagram to avoid implying the two follow the same rule.",
+    "labelsHa": [
+      "Farin haske",
+      "Launuka"
+    ],
+    "safetyNote": "No broken glass, no direct depiction of the Sun as a light source, and no child tasting paint or ink, matching the module's explicit prohibitions."
+  },
+  {
+    "id": "p6-bsci-11",
+    "imagePath": "images/p6-bsci-11.png",
+    "titleEn": "Drawing Instruments and Accurate Technical Lines",
+    "titleHa": "Kayan Zane na Fasaha da Madaidaicin Layi",
+    "type": "diagram",
+    "depictEn": "A labeled flat-lay of technical drawing instruments on a desk: a ruler, a T-square, a triangular set-square, a protractor, a compass, and a divider, each clearly separated and identifiable, beside a small paper showing two measured straight lines being compared for equal length.",
+    "labelsHa": [
+      "Rula",
+      "Ma'aunin T",
+      "Ma'aunin kusurwa",
+      "Komfas"
+    ],
+    "safetyNote": "No child pointing a compass point at another person, no unsupervised handling of the compass tip, and instruments shown resting flat on the desk, matching the module's explicit safety note."
+  },
+  {
+    "id": "p6-bsci-12",
+    "imagePath": "images/p6-bsci-12.png",
+    "titleEn": "Hand Tools: Identification, Care, and Safety",
+    "titleHa": "Kayan Aikin Hannu: Ganewa, Kulawa, da Tsaro",
+    "type": "diagram",
+    "depictEn": "A labeled identification chart of hand tools grouped by function: a tape measure and ruler (measuring), a pencil and marking gauge (marking), and a saw and hand-plane (cutting/shaping), each shown resting on a workbench, not in use — a pupil in the corner is shown only pointing at and sorting picture cards of the tools, not holding any of them.",
+    "labelsHa": [
+      "Awo",
+      "Alama",
+      "Yanka"
+    ],
+    "safetyNote": "This is a recognition-only lesson: no pupil touching, holding, or using the saw or any sharp/pointed tool — tools are shown resting on the bench or as picture cards only, matching the module's explicit restriction."
+  },
+  {
+    "id": "p6-bsci-13",
+    "imagePath": "images/p6-bsci-13.png",
+    "titleEn": "Maintenance, Workshop Safety, and Road Safety",
+    "titleHa": "Kulawa, Tsaron Wurin Aiki, da Tsaron Hanya",
+    "type": "diagram",
+    "depictEn": "Two side-by-side safety panels: a tidy workshop corner with tools stored on a rack, a warning sign, and a pupil wearing a helmet and gloves at a safe distance from any equipment; and a road-safety panel showing a pupil standing with an adult at a marked pedestrian crossing, looking both ways before crossing, with a traffic light and reflective triangle visible.",
+    "labelsHa": [
+      "Kariya",
+      "Tsallaka hanya"
+    ],
+    "safetyNote": "No pupil shown inside the road or operating workshop equipment; the pupil in both panels is stationary and supervised, matching the module's explicit rule against entering the road or workshop area to test anything."
+  },
+  {
+    "id": "p6-bsci-14",
+    "imagePath": "images/p6-bsci-14.png",
+    "titleEn": "Levers and Pulleys",
+    "titleHa": "Sandar Ɗagawa da Na'urar Dabaran Igiya",
+    "type": "diagram",
+    "depictEn": "A simple labeled lever diagram (a seesaw shape marking the fulcrum, load, and effort points) beside a simple pulley diagram showing a wheel-and-rope system with a small lightweight paper-cup load, plus a small classroom inset of a pupil pointing at a paper diagram rather than lifting anything.",
+    "labelsHa": [
+      "Madogara",
+      "Kaya",
+      "Turawa"
+    ],
+    "safetyNote": "No pupil lifting a heavy object, standing under a suspended load, or using rope on a person — only a lightweight paper-cup load and a paper diagram are shown, matching the module's explicit restriction."
+  },
+  {
+    "id": "p6-bsci-15",
+    "imagePath": "images/p6-bsci-15.png",
+    "titleEn": "Inclined Planes and P6 Science Consolidation",
+    "titleHa": "Shimfiɗar Gangara da Maimaitawar Kimiyya ta P6",
+    "type": "diagram",
+    "depictEn": "A simple fair-test diagram of two ramps at different slopes (a gentle ramp and a steeper ramp) made from classroom boxes, with the same lightweight, blunt toy being pushed up each and a small results table icon beside it; a small summary wheel in the corner connects icons back to a few of the term's topics (a ball for gravity, a heart for circulation, a prism for light) as a gentle recap motif.",
+    "labelsHa": [
+      "Gangara",
+      "Ƙarfi"
+    ],
+    "safetyNote": "No pupil climbing or standing on the test ramp, no heavy load, and no real road or construction site depicted — only classroom boxes and a lightweight toy, matching the module's explicit restriction."
+  }
+]

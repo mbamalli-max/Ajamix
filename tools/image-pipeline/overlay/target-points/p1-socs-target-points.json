@@ -1,0 +1,461 @@
+[
+  {
+    "id": "p1-socs-01",
+    "labels": [
+      {
+        "text": "Muhalli",
+        "targetPoint": {
+          "x": 0.52,
+          "y": 0.32
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Al'umma",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.44
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-02",
+    "labels": [
+      {
+        "text": "Ruwa",
+        "targetPoint": {
+          "x": 0.36,
+          "y": 0.24
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Abinci",
+        "targetPoint": {
+          "x": 0.79,
+          "y": 0.28
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Sutura",
+        "targetPoint": {
+          "x": 0.28,
+          "y": 0.72
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Asibiti",
+        "targetPoint": {
+          "x": 0.78,
+          "y": 0.75
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-03",
+    "labels": [
+      {
+        "text": "Uba",
+        "targetPoint": {
+          "x": 0.2,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Uwa",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Yara",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.6
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-04",
+    "labels": [
+      {
+        "text": "Soyayya",
+        "targetPoint": {
+          "x": 0.78,
+          "y": 0.6
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Taimakon juna",
+        "targetPoint": {
+          "x": 0.35,
+          "y": 0.65
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-05",
+    "labels": [
+      {
+        "text": "Gaskiya",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Biyayya",
+        "targetPoint": {
+          "x": 0.4,
+          "y": 0.55
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Taimako",
+        "targetPoint": {
+          "x": 0.78,
+          "y": 0.65
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-06",
+    "labels": [
+      {
+        "text": "Aji",
+        "targetPoint": {
+          "x": 0.1,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ɗakin karatu",
+        "targetPoint": {
+          "x": 0.33,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Filin wasa",
+        "targetPoint": {
+          "x": 0.6,
+          "y": 0.6
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-07",
+    "labels": [
+      {
+        "text": "Malami",
+        "targetPoint": {
+          "x": 0.17,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Shugaban makaranta",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mai tsabta",
+        "targetPoint": {
+          "x": 0.65,
+          "y": 0.68
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mai tsaro",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.62
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-08",
+    "labels": [
+      {
+        "text": "Manomi",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.65
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ɗan kasuwa",
+        "targetPoint": {
+          "x": 0.28,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Malami",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Likita",
+        "targetPoint": {
+          "x": 0.85,
+          "y": 0.55
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-09",
+    "labels": [
+      {
+        "text": "Ofishin 'yan sanda",
+        "targetPoint": {
+          "x": 0.14,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kasuwa",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.82
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Asibiti",
+        "targetPoint": {
+          "x": 0.72,
+          "y": 0.52
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Makaranta",
+        "targetPoint": {
+          "x": 0.9,
+          "y": 0.53
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-10",
+    "labels": [
+      {
+        "text": "Likita",
+        "targetPoint": {
+          "x": 0.1,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ɗan sanda",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Manomi",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.6
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mai dinki",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.75
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-11",
+    "labels": [
+      {
+        "text": "Al'ada",
+        "targetPoint": {
+          "x": 0.55,
+          "y": 0.4
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Tufafi",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Abinci",
+        "targetPoint": {
+          "x": 0.35,
+          "y": 0.85
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-12",
+    "labels": [
+      {
+        "text": "Al'ada ta zahiri",
+        "targetPoint": {
+          "x": 0.22,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Al'ada ta ruhaniya",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.55
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-13",
+    "labels": [
+      {
+        "text": "Sallah",
+        "targetPoint": {
+          "x": 0.14,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kirsimati",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Durbar",
+        "targetPoint": {
+          "x": 0.85,
+          "y": 0.5
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-14",
+    "labels": [
+      {
+        "text": "Girmamawa",
+        "targetPoint": {
+          "x": 0.38,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kula da wurin jama'a",
+        "targetPoint": {
+          "x": 0.82,
+          "y": 0.65
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-socs-15",
+    "labels": [
+      {
+        "text": "Iyali",
+        "targetPoint": {
+          "x": 0.26,
+          "y": 0.22
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Makaranta",
+        "targetPoint": {
+          "x": 0.74,
+          "y": 0.22
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Al'umma",
+        "targetPoint": {
+          "x": 0.78,
+          "y": 0.7
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Al'ada",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.8
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Girmamawa",
+        "targetPoint": {
+          "x": 0.19,
+          "y": 0.6
+        },
+        "confidence": "low"
+      }
+    ]
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "p5-bsci-01",
+    "imagePath": "images/p5-bsci-01.png",
+    "titleEn": "Environmental Changes, Pollution, and Environmental Quality",
+    "titleHa": "Sauye-sauyen Muhalli da Gurɓacewarsa",
+    "type": "diagram",
+    "depictEn": "Side-by-side comparison scene: left half shows a clean environment (clear stream, trees, a covered waste bin, tidy path); right half shows a damaged environment (smoke, litter, a discolored stream, a dead fish). No people touching hazards.",
+    "labelsHa": [
+      "Muhalli Mai Kyau",
+      "Muhalli da Ya Lalace"
+    ],
+    "safetyNote": "Do not depict a child inside the polluted scene or touching waste/smoke/water."
+  },
+  {
+    "id": "p5-bsci-02",
+    "imagePath": "images/p5-bsci-02.png",
+    "titleEn": "Waste Disposal, Reuse, and Recycling",
+    "titleHa": "Zubar da Shara, Sake Amfani, da Sarrafawa",
+    "type": "diagram",
+    "depictEn": "Three labeled bins or piles side by side showing simple waste separation: rotting food/leaves, paper/plastic bottles, metal. A clean reused container (e.g. a jar for storage) shown separately.",
+    "labelsHa": [
+      "Abin da ke Ruɓewa",
+      "Takarda da Roba",
+      "Ƙarfe"
+    ],
+    "safetyNote": "Show only clean paper/plastic/metal items, no broken glass, sharp metal, or medical waste."
+  },
+  {
+    "id": "p5-bsci-03",
+    "imagePath": "images/p5-bsci-03.png",
+    "titleEn": "Human Skeleton, Joints, and Movement",
+    "titleHa": "Tsarin Ƙasusuwan Jiki da Motsi",
+    "type": "diagram",
+    "depictEn": "A simple, non-graphic outline of a human skeleton (front view) with three joints circled or highlighted: elbow, knee, shoulder. Friendly cartoon style, not anatomically explicit.",
+    "labelsHa": [
+      "Gwiwar Hannu",
+      "Gwiwa",
+      "Kafada"
+    ],
+    "safetyNote": "Non-graphic, no injury, no exposed internal detail beyond a simple bone outline."
+  },
+  {
+    "id": "p5-bsci-04",
+    "imagePath": "images/p5-bsci-04.png",
+    "titleEn": "Flower Parts, Pollination, and Seed and Fruit Formation",
+    "titleHa": "Sassan Fure da Samar da Iri da 'Ya'ya",
+    "type": "diagram",
+    "depictEn": "A labeled flower illustration showing colorful petals and the central part, with a small arrow/insect (bee or butterfly) shown moving between two flowers to depict pollen transfer. A small side panel shows the flower's fruit result (e.g. tomato or mango).",
+    "labelsHa": [
+      "Ganyen Fure",
+      "Sashin Tsakiya",
+      "Ƙurar Fure"
+    ],
+    "safetyNote": "Depict the bee at a safe illustrative distance, not close to a child's hand or face."
+  },
+  {
+    "id": "p5-bsci-05",
+    "imagePath": "images/p5-bsci-05.png",
+    "titleEn": "Rocks: Properties, Groups, and Uses",
+    "titleHa": "Duwatsu: Siffofi, Rukuni, da Amfani",
+    "type": "illustration",
+    "depictEn": "A row of several different rocks of varying colour, size, and texture (smooth vs rough) laid out for comparison, plus a small inset showing rocks used in a building wall or road.",
+    "labelsHa": [],
+    "safetyNote": "Show only smooth, blunt rocks — no sharp fragments, no quarry scene."
+  },
+  {
+    "id": "p5-bsci-06",
+    "imagePath": "images/p5-bsci-06.png",
+    "titleEn": "Acids, Bases, and Household Substances",
+    "titleHa": "Rukunan Wasu Sinadarai da Tsaronsu",
+    "type": "illustration",
+    "depictEn": "A teacher (adult) at a table demonstrating with two clearly-labeled, capped household items (e.g. a lemon and a bar of soap) at a safe distance, with children seated/watching from a distance, not touching anything.",
+    "labelsHa": [],
+    "safetyNote": "No open containers, no child hands near the items, no chemical names beyond the two adult-known examples already in the text."
+  },
+  {
+    "id": "p5-bsci-07",
+    "imagePath": "images/p5-bsci-07.png",
+    "titleEn": "Materials, Maintenance, and Drawing Instruments",
+    "titleHa": "Kayan Aiki, Kulawa, da Kayan Zane",
+    "type": "diagram",
+    "depictEn": "A flat-lay of drawing instruments (pencil, eraser, ruler, set square) labeled with their names, plus a small side panel showing three material samples (wood, clay pot, rubber bowl).",
+    "labelsHa": [
+      "Fensir",
+      "Magogi",
+      "Ma'auni",
+      "Kusurwar Awo"
+    ],
+    "safetyNote": "No sharp or powered tools depicted."
+  },
+  {
+    "id": "p5-bsci-08",
+    "imagePath": "images/p5-bsci-08.png",
+    "titleEn": "Vehicle Parts, Functions, and Safety",
+    "titleHa": "Sassan Abin Hawa, Ayyukansu, da Tsaro",
+    "type": "diagram",
+    "depictEn": "A parked car or bus illustration with labeled external parts: wheel/tyre, headlight, mirror, windscreen, door, seat belt (visible through a window). A separate small icon showing 'brakes' conceptually (e.g. a stop symbol near the wheel).",
+    "labelsHa": [
+      "Taya",
+      "Fitila",
+      "Madubi",
+      "Gilashin Gaba",
+      "Bel ɗin Zama"
+    ],
+    "safetyNote": "Vehicle must be parked/stationary, no people near moving parts, no engine/underside view."
+  },
+  {
+    "id": "p5-bsci-09",
+    "imagePath": "images/p5-bsci-09.png",
+    "titleEn": "Energy Conversion",
+    "titleHa": "Sauyawar Makamashi",
+    "type": "diagram",
+    "depictEn": "A simple three-panel arrow diagram: a battery connected to a torch giving off light; sunlight warming a covered water container with steam/heat wave lines rising; and a child eating from a food plate then running — arrows connecting each pair to show the energy passing from one form to the next.",
+    "labelsHa": [
+      "Batiri",
+      "Haske",
+      "Rana",
+      "Zafi",
+      "Abinci",
+      "Motsi"
+    ],
+    "safetyNote": "No open flame, no engine, no mains socket depicted."
+  },
+  {
+    "id": "p5-bsci-10",
+    "imagePath": "images/p5-bsci-10.png",
+    "titleEn": "Heat and Temperature",
+    "titleHa": "Zafi da Matsayin Zafi ko Sanyi",
+    "type": "diagram",
+    "depictEn": "A classroom-style thermometer illustration with a simple scale, next to two small weather-icon panels (a sunny hot day vs a cooler day) for comparison, teacher's hand holding the thermometer (not a child's).",
+    "labelsHa": [
+      "Na'urar Auna Zafi"
+    ],
+    "safetyNote": "No fire, no boiling water, no medical thermometer used on a child unsupervised."
+  },
+  {
+    "id": "p5-bsci-11",
+    "imagePath": "images/p5-bsci-11.png",
+    "titleEn": "Battery, Insulated Wire, and Bulb: Simple Circuits",
+    "titleHa": "Batiri, Waya Mai Lulluɓi, da Ƙaramar Fitila",
+    "type": "diagram",
+    "depictEn": "A simple classroom circuit diagram: battery connected by insulated wire to a small bulb, forming a closed loop, bulb shown lit. A second small panel shows the same loop with a gap, bulb shown unlit, to contrast complete vs incomplete.",
+    "labelsHa": [
+      "Batiri",
+      "Waya",
+      "Fitila"
+    ],
+    "safetyNote": "No wall socket, no household wiring, no exposed/damaged battery depicted."
+  },
+  {
+    "id": "p5-bsci-12",
+    "imagePath": "images/p5-bsci-12.png",
+    "titleEn": "Magnets and Magnetic Materials",
+    "titleHa": "Maganadisu da Abubuwan da Yake Jan Hankalinsu",
+    "type": "diagram",
+    "depictEn": "A horseshoe or bar magnet shown attracting a small iron nail, with a wooden block, rubber, and paper shown nearby unaffected (small 'not attracted' indicator, e.g. a faint X or gap).",
+    "labelsHa": [
+      "Maganadisu",
+      "Ƙusa ta Baƙin Ƙarfe"
+    ],
+    "safetyNote": "Do not depict the magnet near a phone/computer/storage card, consistent with the module's own caution."
+  },
+  {
+    "id": "p5-bsci-13",
+    "imagePath": "images/p5-bsci-13.png",
+    "titleEn": "Nutrients, Healthy Growth, and Deficiency Prevention",
+    "titleHa": "Sinadaran Abinci da Lafiyayyen Girma",
+    "type": "diagram",
+    "depictEn": "A three-section plate illustration with affordable Nigerian foods grouped: grains/tubers (gero, dawa, shinkafa, rogo), protein (wake, gyada, ƙwai, kifi), and vegetables/fruit (ganye, tumatir, mangwaro). A cup of clean water beside the plate.",
+    "labelsHa": [],
+    "safetyNote": "Depict only ordinary, affordable food items already named in the module text — no body-size depiction of children."
+  },
+  {
+    "id": "p5-bsci-14",
+    "imagePath": "images/p5-bsci-14.png",
+    "titleEn": "Diseases and Prevention",
+    "titleHa": "Cututtuka da Hanyoyin Kariya",
+    "type": "diagram",
+    "depictEn": "A simple hygiene-and-prevention scene: a child washing hands with soap, a covered food plate, a mosquito net over a bed, a glass of clean water — four small linked panels.",
+    "labelsHa": [],
+    "safetyNote": "No depiction of a sick or symptomatic child, no medical/clinical imagery, non-alarming tone throughout."
+  },
+  {
+    "id": "p5-bsci-15",
+    "imagePath": "images/p5-bsci-15.png",
+    "titleEn": "Harmful Substances and Drug-Awareness Safety",
+    "titleHa": "Kariya Daga Abubuwa Masu Cutarwa",
+    "type": "diagram",
+    "depictEn": "A simple three-step safety sequence for a child: a raised hand gesture meaning 'no'; a child walking away toward safety; and a child talking to a trusted adult. No substances, packaging, or people depicted using anything.",
+    "labelsHa": [
+      "Ka Ce A'a",
+      "Ka Matsa",
+      "Ka Sanar da Babba"
+    ],
+    "safetyNote": "Do not depict any substance, bottle, cigarette, or medicine — the image must show only the child's three safety actions, per the module's non-stigmatizing, substance-free framing."
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "id": "p6-maths-01",
+    "imagePath": "images/p6-maths-01.png",
+    "titleEn": "Numbers up to 1,000,000",
+    "titleHa": "Lambobi Har Zuwa 1,000,000",
+    "type": "diagram",
+    "depictEn": "A place-value chart with exactly six labelled-but-blank columns in this exact order left to right: hundred-thousands, ten-thousands, thousands, hundreds, tens, ones — six columns total, not more, not fewer — with small comma-shaped divider marks placed after the thousands column and after the hundred-thousands column to show the grouping structure; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-02",
+    "imagePath": "images/p6-maths-02.png",
+    "titleEn": "Place Value to Millions",
+    "titleHa": "Matsayin Lamba Har Zuwa Miliyan",
+    "type": "diagram",
+    "depictEn": "A place-value chart for a six-digit number with each column left blank beneath it for its actual worth to be added later, beside a small note-card placeholder representing the millions column; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-03",
+    "imagePath": "images/p6-maths-03.png",
+    "titleEn": "Addition and Subtraction Mastery",
+    "titleHa": "Ƙwarewa a Ƙari da Ragi",
+    "type": "diagram",
+    "depictEn": "A worked subtraction board with blank columns by place value, with a small check-addition board shown beside it using the same blank-column structure to verify the answer; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-04",
+    "imagePath": "images/p6-maths-04.png",
+    "titleEn": "Multiplication Mastery",
+    "titleHa": "Ƙwarewa a Ninkawa",
+    "type": "diagram",
+    "depictEn": "A worked multiplication shown as a labelled split-diagram with exactly two separate rectangular partial-product boxes side by side, each completely blank inside, connected by two arrows that both point down into one single final blank result box below them — this must read clearly as two-boxes-merging-into-one via arrows, not as a continuous multi-column chart or grid; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-05",
+    "imagePath": "images/p6-maths-05.png",
+    "titleEn": "Division Mastery",
+    "titleHa": "Ƙwarewa a Rabawa",
+    "type": "diagram",
+    "depictEn": "A pile of books shared equally among several classrooms shown as separate small stacks of matching height, with a small check-multiplication placeholder shown beside it to verify the division; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-06",
+    "imagePath": "images/p6-maths-06.png",
+    "titleEn": "Rounding and Estimating Large Numbers",
+    "titleHa": "Kiyasta da Zagaye Manyan Lambobi",
+    "type": "diagram",
+    "depictEn": "Two number lines: one with a blank tick mark rounding up toward the nearest thousand-mark, the other with a blank tick mark rounding down toward the nearest ten-thousand-mark, each with the original position and rounded target marked by small arrows; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-07",
+    "imagePath": "images/p6-maths-07.png",
+    "titleEn": "Fraction Operations Mastery",
+    "titleHa": "Ƙwarewa a Aikin Kashi",
+    "type": "diagram",
+    "depictEn": "A four-panel rule chart, one panel per operation: finding a common denominator before adding or subtracting fractions, multiplying numerators together and denominators together for multiplication, and flipping the second fraction before multiplying for division.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-08",
+    "imagePath": "images/p6-maths-08.png",
+    "titleEn": "Fractions to Decimals",
+    "titleHa": "Mayar da Kashi Zuwa Desimal",
+    "type": "diagram",
+    "depictEn": "Four fraction-to-decimal conversions shown side by side, each with a shaded strip or grid and a small blank arrow pointing toward a blank decimal-placeholder card; no numerals, fraction symbols, or decimal points rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-09",
+    "imagePath": "images/p6-maths-09.png",
+    "titleEn": "Decimals to Percentages",
+    "titleHa": "Mayar da Desimal Zuwa Percent",
+    "type": "diagram",
+    "depictEn": "A row of decimal-to-percent conversions with matching hundred-grids, each grid's shaded proportion visually distinct, plus one fully shaded grid at the end; no numerals, decimal points, or percentage symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-10",
+    "imagePath": "images/p6-maths-10.png",
+    "titleEn": "Fractions to Percentages",
+    "titleHa": "Mayar da Kashi Zuwa Percent",
+    "type": "diagram",
+    "depictEn": "Four fraction-to-percentage conversions shown side by side, each with a scaling arrow used to reach a grid of one hundred cells; no numerals, fraction symbols, or percentage symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-11",
+    "imagePath": "images/p6-maths-11.png",
+    "titleEn": "Mixed Fractions, Decimals, and Percentages",
+    "titleHa": "Haɗa Kashi, Desimal, da Percent",
+    "type": "diagram",
+    "depictEn": "Three aligned equivalence panels, each showing a fraction strip, a matching hundred-cell grid shaded to the same proportion, and a blank connecting arrow between them; no numerals, fraction symbols, decimal points, or percentage symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "p6-maths-12",
+    "imagePath": "images/p6-maths-12.png",
+    "titleEn": "Word Problems with Fractions and Percentages",
+    "titleHa": "Matsalolin Kashi, Desimal, da Percent",
+    "type": "diagram",
+    "depictEn": "Three small worked panels: a shaded half of a group of objects, a shaded quarter of a different group of objects, and a shaded portion of a sack of grain being weighed on a scale; no numerals, fraction symbols, decimal points, or percentage symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-13",
+    "imagePath": "images/p6-maths-13.png",
+    "titleEn": "Ratio Scaling Practice",
+    "titleHa": "Atisayen Faɗaɗa Rasiyo",
+    "type": "diagram",
+    "depictEn": "A small group of Hausa books and a small group of English books shown as a ratio pair, scaled up with a multiplication-shaped arrow to proportionally more of each — the same balance preserved when both groups grow together; no numerals or ratio-notation symbols rendered.",
+    "labelsHa": [
+      "Rasiyo"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-14",
+    "imagePath": "images/p6-maths-14.png",
+    "titleEn": "Proportion Word Problems",
+    "titleHa": "Matsalolin Kalma na Daidaiton Rabo",
+    "type": "diagram",
+    "depictEn": "A scaling table shown as blank rows connecting sacks to mudu measures, with a clearly visible curved arrow drawn between each consecutive pair of rows, pointing downward from one row to the next, to show the proportional doubling relationship — the arrows must be clearly rendered and visible, not omitted; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-15",
+    "imagePath": "images/p6-maths-15.png",
+    "titleEn": "Introduction to Algebra",
+    "titleHa": "Gabatarwa ga Algebra",
+    "type": "diagram",
+    "depictEn": "A balance-scale model with a small blank box labelled x plus a modestly sized bundled-counter group on one side, and a noticeably larger bundled-counter group on the other side — the two pans must NOT hold equal or matching quantities; the side without the box must clearly outweigh and out-count the side with the box, so the scale is shown perfectly level only because the covered unknown box adds the missing weight, not because the two visible counter groups are equal. The solved value is shown as a small blank placeholder card beneath it; no numerals or equation symbols rendered.",
+    "labelsHa": [
+      "Algebra",
+      "canji",
+      "ma'aunin lissafi"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-16",
+    "imagePath": "images/p6-maths-16.png",
+    "titleEn": "Multiplication and Division Equations",
+    "titleHa": "Ma'aunin Lissafi na Ninkawa da Rabawa",
+    "type": "diagram",
+    "depictEn": "Two balance-scale models side by side, each with an unknown shown as a covered box on one side and a bundled-counter group on the other, perfectly level; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-17",
+    "imagePath": "images/p6-maths-17.png",
+    "titleEn": "Area and Perimeter Review",
+    "titleHa": "Bitar Yanki da Perimita",
+    "type": "diagram",
+    "depictEn": "A school field rectangle with its two visibly different side-lengths tick-marked around the border, its area shown filled inside with a light shaded tone, and its perimeter traced in a different colour along the outer edge only; no numerals rendered.",
+    "labelsHa": [
+      "Yanki",
+      "Perimita"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-18",
+    "imagePath": "images/p6-maths-18.png",
+    "titleEn": "Volume of a Cuboid",
+    "titleHa": "Girma na Kuboid",
+    "type": "diagram",
+    "depictEn": "A cuboid box drawn with visible unit cubes inside filling its volume, its three dimensions visually distinguishable by their different tick-marked lengths; no numerals rendered.",
+    "labelsHa": [
+      "Kuboid",
+      "Girma"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-19",
+    "imagePath": "images/p6-maths-19.png",
+    "titleEn": "Angle Sum in a Triangle",
+    "titleHa": "Jimlar Kusurwoyi a Alwatika",
+    "type": "diagram",
+    "depictEn": "A triangle with two of its angles marked by small arc symbols of visibly different sizes, and the third angle left as a blank arc for its solved value to be added later; no numerals rendered.",
+    "labelsHa": [
+      "Alwatika"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-20",
+    "imagePath": "images/p6-maths-20.png",
+    "titleEn": "Angles in Triangles and Quadrilaterals",
+    "titleHa": "Kusurwoyi a Alwatika da Siffa Mai Gefe Huɗu",
+    "type": "diagram",
+    "depictEn": "A rectangle with all four corners marked by small right-angle arc symbols, beside a small triangle reminder shown with its own three angle-arcs marked for comparison; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-21",
+    "imagePath": "images/p6-maths-21.png",
+    "titleEn": "Reading Tables and Bar Charts",
+    "titleHa": "Karanta Teburi da Jadawalin Sanduna",
+    "type": "diagram",
+    "depictEn": "A bar chart with two labelled-but-unlabelled bars of visibly different heights, with a small bracket marking the height difference between them, and blank gridlines along the side; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-22",
+    "imagePath": "images/p6-maths-22.png",
+    "titleEn": "Simple Probability with Counts",
+    "titleHa": "Sauƙaƙƙiyar Yiwuwar Faruwa da Ƙidaya",
+    "type": "diagram",
+    "depictEn": "A cloth bag containing a small group of red balls and a smaller group of blue balls, with a blank label placeholder beside it where the chance statement will be added later; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-23",
+    "imagePath": "images/p6-maths-23.png",
+    "titleEn": "Data and Probability Practice",
+    "titleHa": "Atisayen Bayanai da Yiwuwar Faruwa",
+    "type": "diagram",
+    "depictEn": "A simple table showing two rows of schematic drink-cup icons (zobo and kunu) of visibly different pile sizes, with an arrow connecting the table to a blank probability-statement placeholder; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p6-maths-24",
+    "imagePath": "images/p6-maths-24.png",
+    "titleEn": "P6 Mathematics Revision and Bridge to JSS1",
+    "titleHa": "Bitar Lissafin P6 da Gada Zuwa JSS1",
+    "type": "diagram",
+    "depictEn": "A tidy revision poster with small labelled-but-unlabelled icons for each P6 topic covered — large numbers, the four operations, fractions/decimals/percentages, ratio and proportion, algebra, area/perimeter/volume, triangle angles, and data/probability — arranged as a bridge pointing toward JSS1; icons are generic pictograms, no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  }
+]

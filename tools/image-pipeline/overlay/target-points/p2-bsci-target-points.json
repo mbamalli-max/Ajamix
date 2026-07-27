@@ -1,0 +1,411 @@
+[
+  {
+    "id": "p2-bsci-01",
+    "labels": [
+      {
+        "text": "Masu Rai",
+        "targetPoint": {
+          "x": 0.33,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Marasa Rai",
+        "targetPoint": {
+          "x": 0.7,
+          "y": 0.6
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-02",
+    "labels": [
+      {
+        "text": "Tushe",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.9
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kara",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ganye",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.3
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Fure",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.28
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "'Ya'ya",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.48
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-03",
+    "labels": [
+      {
+        "text": "Akuya",
+        "targetPoint": {
+          "x": 0.13,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Tunkiya",
+        "targetPoint": {
+          "x": 0.27,
+          "y": 0.65
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kaza",
+        "targetPoint": {
+          "x": 0.38,
+          "y": 0.78
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Saniya",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Jaki",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kare",
+        "targetPoint": {
+          "x": 0.8,
+          "y": 0.68
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kyanwa",
+        "targetPoint": {
+          "x": 0.88,
+          "y": 0.7
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-04",
+    "labels": [
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.13,
+          "y": 0.37
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Gajimare",
+        "targetPoint": {
+          "x": 0.375,
+          "y": 0.4
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Iska",
+        "targetPoint": {
+          "x": 0.625,
+          "y": 0.5
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Ruwan Sama",
+        "targetPoint": {
+          "x": 0.875,
+          "y": 0.45
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-05",
+    "labels": [
+      {
+        "text": "Famfo",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.72
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-08",
+    "labels": [
+      {
+        "text": "Idanu",
+        "targetPoint": {
+          "x": 0.2,
+          "y": 0.2
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kunnuwa",
+        "targetPoint": {
+          "x": 0.8,
+          "y": 0.2
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Hanci",
+        "targetPoint": {
+          "x": 0.16,
+          "y": 0.52
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Harshe",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Fata",
+        "targetPoint": {
+          "x": 0.2,
+          "y": 0.82
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-11",
+    "labels": [
+      {
+        "text": "Cokali",
+        "targetPoint": {
+          "x": 0.1,
+          "y": 0.6
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Tsintsiya",
+        "targetPoint": {
+          "x": 0.27,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Guga",
+        "targetPoint": {
+          "x": 0.52,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mabuɗi",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.8
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-12",
+    "labels": [
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.32
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Fitila",
+        "targetPoint": {
+          "x": 0.49,
+          "y": 0.33
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Inuwa",
+        "targetPoint": {
+          "x": 0.77,
+          "y": 0.81
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-13",
+    "labels": [
+      {
+        "text": "Ganga",
+        "targetPoint": {
+          "x": 0.31,
+          "y": 0.68
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-15",
+    "labels": [
+      {
+        "text": "Mazubi Mai Murfi",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.42
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-16",
+    "labels": [
+      {
+        "text": "Ruwa",
+        "targetPoint": {
+          "x": 0.29,
+          "y": 0.3
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Iska",
+        "targetPoint": {
+          "x": 0.22,
+          "y": 0.54
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Hasken Rana",
+        "targetPoint": {
+          "x": 0.59,
+          "y": 0.29
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙasa",
+        "targetPoint": {
+          "x": 0.2,
+          "y": 0.77
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-18",
+    "labels": [
+      {
+        "text": "Itace",
+        "targetPoint": {
+          "x": 0.18,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙarfe",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.64
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Roba",
+        "targetPoint": {
+          "x": 0.57,
+          "y": 0.66
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Zane",
+        "targetPoint": {
+          "x": 0.76,
+          "y": 0.47
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Filastik",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.73
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p2-bsci-19",
+    "labels": [
+      {
+        "text": "Laka",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.68
+        },
+        "confidence": "medium"
+      }
+    ]
+  }
+]

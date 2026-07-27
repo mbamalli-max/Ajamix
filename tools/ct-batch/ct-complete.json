@@ -1,0 +1,2929 @@
+[
+  {
+    "id": "CT01",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 1,
+    "titleEn": "Is This True? Checking a Message Before Sharing It",
+    "titleHa": "Shin An Tabbatar da Wannan? Tantance Saƙo Kafin A Yaɗa Shi",
+    "titleAjami": null,
+    "title": {
+      "ha": "Shin An Tabbatar da Wannan? Tantance Saƙo Kafin A Yaɗa Shi",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Saƙon waya na iya zuwa da labari mai muhimmanci, amma a tsaya a duba kafin a yaɗa shi. Ka gane abin da saƙon yake cewa, ka nemi tushen bayani mai suna, sannan ka duba ko abin dogaro ya tabbatar da shi.",
+      "ajami": null
+    },
+    "textExplanationHa": "Wani saƙon waya ya shigo wa Amina yana cewa an canja lokacin taron iyali, kuma ya ce a tura wa kowa nan da nan. Kafin ta yaɗa saƙon, Amina ta tsaya ta tambayi kanta: mene ne ainihin abin da ake cewa? Wannan shi ne iƙirari, wato magana da ke cewa wani abu gaskiya ne. Daga nan ta duba ko saƙon ya ambaci tushen bayani mai suna, kamar wanda ke shirya taron. Tushen bayani shi ne inda labari ya fito. Sai ta kira mutum mai shirya taron domin ta duba ko labarin ya dace. Idan tushen abin dogaro ya tabbatar da iƙirarin, za ta iya faɗa cewa an tabbatar. Idan ba ta sami tabbaci ba, ba dole ne labarin ya zama ƙarya ba; amma bai dace ta gabatar da shi a matsayin tabbatacce ba. Dakatawa kafin yaɗawa na rage ruɗani. Ka gano iƙirari, ka nemi tushen bayani, ka duba tabbaci daga abin dogaro, sannan ka yanke shawara mai hankali.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT01.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Saƙon da ya zo da gaggawa",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Amina ta ga saƙon waya mai cewa an canja lokacin taron iyali kuma a tura shi nan da nan. Ta tsaya kafin ta yaɗa shi, domin saƙo ba ya zama tabbatacce saboda an turo shi kawai.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Iƙirari",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Maganar da ke cewa wani abu gaskiya ne, wadda za a iya dubawa ko an tabbatar da ita.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Tushen bayani",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Mutum, ƙungiya, ko wuri da labari ya fito daga gare shi.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Kiran mai shirya taro",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Amina ta ga cewa saƙon bai nuna wanda ya canja lokacin ba. Ta kira mutumin da ke shirya taron, kuma ya ce lokacin bai canja ba.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Tambayar tushen bayani da dubawa daga abin dogaro sun hana yaɗuwar kuskure.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Idan ba a tabbatar ba",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Rashin tabbatarwa ba hujjar cewa labari ƙarya ne ba. Amma dalili ne kada a faɗa shi kamar an tabbatar; ka jira bayani daga tushen abin dogaro.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "A cikin saƙon waya, mene ne iƙirari?",
+        "answerFormula": "Maganar da ke cewa wani abu gaskiya ne",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Sunan wanda ya karɓi saƙo",
+          "Lokacin da aka buɗe waya",
+          "Launin allon waya"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ya fi nuna tushen bayani a saƙon canjin taro?",
+        "answerFormula": "Sunan mutumin da ke shirya taron",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Yawan mutanen da suka tura saƙon",
+          "Tsawon saƙon",
+          "Hoton da ke tare da saƙon"
+        ]
+      },
+      {
+        "templateHa": "Idan saƙo bai ambaci tushen bayani ba, wane mataki ya fi dacewa?",
+        "answerFormula": "A nemi wanda zai iya tabbatar da labarin",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A yaɗa shi saboda yana da gaggawa",
+          "A ce tabbas gaskiya ne",
+          "A ƙara masa wasu bayanai"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi kafin ka ce an tabbatar da iƙirari?",
+        "answerFormula": "Ka duba ko tushen abin dogaro ya tabbatar da shi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ka duba ko an tura shi sau da yawa",
+          "Ka duba ko rubutun yana da manyan haruffa",
+          "Ka tambayi mutum ɗaya da bai san batun ba"
+        ]
+      },
+      {
+        "templateHa": "Idan ba ka sami tabbacin saƙo ba, wace magana ta fi dacewa?",
+        "answerFormula": "Ba zan gabatar da shi a matsayin tabbatacce ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Lallai ƙarya ne",
+          "Dole kowa ya yaɗa shi",
+          "Babu bukatar a duba tushensa"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "A cikin saƙon waya, mene ne iƙirari?",
+        "answerFormula": "Maganar da ke cewa wani abu gaskiya ne",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Sunan wanda ya karɓi saƙo",
+          "Lokacin da aka buɗe waya",
+          "Launin allon waya"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ya fi nuna tushen bayani a saƙon canjin taro?",
+        "answerFormula": "Sunan mutumin da ke shirya taron",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Yawan mutanen da suka tura saƙon",
+          "Tsawon saƙon",
+          "Hoton da ke tare da saƙon"
+        ]
+      },
+      {
+        "templateHa": "Idan saƙo bai ambaci tushen bayani ba, wane mataki ya fi dacewa?",
+        "answerFormula": "A nemi wanda zai iya tabbatar da labarin",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A yaɗa shi saboda yana da gaggawa",
+          "A ce tabbas gaskiya ne",
+          "A ƙara masa wasu bayanai"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi kafin ka ce an tabbatar da iƙirari?",
+        "answerFormula": "Ka duba ko tushen abin dogaro ya tabbatar da shi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ka duba ko an tura shi sau da yawa",
+          "Ka duba ko rubutun yana da manyan haruffa",
+          "Ka tambayi mutum ɗaya da bai san batun ba"
+        ]
+      },
+      {
+        "templateHa": "Idan ba ka sami tabbacin saƙo ba, wace magana ta fi dacewa?",
+        "answerFormula": "Ba zan gabatar da shi a matsayin tabbatacce ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Lallai ƙarya ne",
+          "Dole kowa ya yaɗa shi",
+          "Babu bukatar a duba tushensa"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan saƙo yana da iƙirari, wane dalili yake bayarwa don ya sa ka yarda, kuma mene ne yake neman ka yi?",
+      "ajami": null
+    },
+    "chainNext": "CT02",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, zaɓi saƙon waya guda kafin ka yaɗa shi: gano iƙirarinsa kuma ka tambayi tushen bayaninsa.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT02",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 2,
+    "titleEn": "Claim, Reason and Conclusion — Taking a Message Apart",
+    "titleHa": "Iƙirari, Dalili da Kammalawa — Rarrabe Saƙo",
+    "titleAjami": null,
+    "title": {
+      "ha": "Iƙirari, Dalili da Kammalawa — Rarrabe Saƙo",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Za ka iya raba saƙon waya zuwa iƙirari, dalili, da kammalawa. Dalili ya kamata ya goyi bayan iƙirari; maimaita iƙirari ko tsoratarwa kaɗai ba hujja ba ce. Ka duba ko kammalawa bai fi dalilin ƙarfi ba.",
+      "ajami": null
+    },
+    "textExplanationHa": "Wani saƙon waya ya ce an canja lokacin taron iyali zuwa ƙarfe takwas saboda wani ya ji haka daga aboki, sannan ya ce a kira kowa nan da nan kada ya yi kuskure. Za mu iya raba saƙon. Iƙirari shi ne cewa an canja lokacin taron. Dalili shi ne abin da saƙon ya bayar don ya sa mu yarda da iƙirarin; a nan, wai wani ya ji daga aboki. Kammalawa shi ne abin da dalilai suke kaiwa gare shi, ko matakin da saƙon yake cewa ya kamata a ɗauka; a nan, a kira kowa nan da nan. Dalili ya kamata ya goyi bayan iƙirari. Maimaita iƙirari, kamar a ce “lokacin ya canja domin ya canja”, ba ya ƙara hujja. Haka kuma gargadin da ke tayar da tsoro ba hujja ba ne da kansa. Idan dalilin bai da ƙarfi, kammalawa mai nauyi na iya wuce abin da dalilin ya tabbatar. A wannan yanayin, mataki mai hankali shi ne a duba mai shirya taron kafin a kira mutane. Rarrabe sassan saƙo yana taimaka maka ka san abin da aka ce, dalilin da aka bayar, da abin da ake nema daga gare ka.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT02.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Saƙo mai sassa uku",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Saƙon waya ya ce an canja lokacin taron iyali saboda wani ya ji daga aboki, sannan ya ce a kira kowa nan da nan. Ka raba abin da aka ce, dalilin da aka bayar, da matakin da ake nema.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Dalili",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Abin da ake bayarwa domin ya goyi bayan iƙirari.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Kammalawa",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Abin da dalilai suke kaiwa gare shi, ko matakin da ake cewa ya kamata ya biyo baya.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Shin dalilin ya isa?",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "A cikin saƙon, “wani ya ji daga aboki” shi ne dalilin. Amma saƙon ya nemi a kira kowa nan da nan, duk da cewa ba a duba mai shirya taron ba.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Kammalawa na iya fi ƙarfin dalilin da aka bayar; a duba kafin a ɗauki mataki mai faɗi.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Tsoro ba hujja ba ne",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Gargadin “kada ku yi kuskure” na iya sa mutum ya firgita, amma ba ya tabbatar da iƙirari. Dalili mai kyau yana ba da abin da za a iya dubawa.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "A saƙon canjin taro, wane ne iƙirari?",
+        "answerFormula": "An canja lokacin taron iyali",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Wani ya ji daga aboki",
+          "A kira kowa nan da nan",
+          "Kada ku yi kuskure"
+        ]
+      },
+      {
+        "templateHa": "Wane sashe ne dalilin da saƙon ya bayar?",
+        "answerFormula": "Wani ya ji daga aboki",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An canja lokacin taron iyali",
+          "A kira kowa nan da nan",
+          "Wayar ta karɓi saƙon"
+        ]
+      },
+      {
+        "templateHa": "A matsayin kammalawa, wane mataki ne saƙon yake neman a ɗauka?",
+        "answerFormula": "A kira kowa nan da nan",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Wani ya ji daga aboki",
+          "An canja lokacin taron",
+          "Saƙon ya iso da safe"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa maimaita iƙirari ba ya zama dalili?",
+        "answerFormula": "Domin bai ba da abin da zai goyi bayan iƙirarin ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin yana sa iƙirari ya zama gaskiya",
+          "Domin yana canja kammalawa zuwa dalili",
+          "Domin yana hana a duba saƙo"
+        ]
+      },
+      {
+        "templateHa": "Idan dalilin saƙo bai da ƙarfi amma yana neman a kira kowa, me ya fi dacewa?",
+        "answerFormula": "A duba mai shirya taron kafin a ɗauki mataki",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A kira kowa saboda gargadin yana da tsoro",
+          "A ce dalilin ya isa saboda an maimaita shi",
+          "A ƙara tsoratarwa a saƙon"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "A saƙon canjin taro, wane ne iƙirari?",
+        "answerFormula": "An canja lokacin taron iyali",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Wani ya ji daga aboki",
+          "A kira kowa nan da nan",
+          "Kada ku yi kuskure"
+        ]
+      },
+      {
+        "templateHa": "Wane sashe ne dalilin da saƙon ya bayar?",
+        "answerFormula": "Wani ya ji daga aboki",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An canja lokacin taron iyali",
+          "A kira kowa nan da nan",
+          "Wayar ta karɓi saƙon"
+        ]
+      },
+      {
+        "templateHa": "A matsayin kammalawa, wane mataki ne saƙon yake neman a ɗauka?",
+        "answerFormula": "A kira kowa nan da nan",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Wani ya ji daga aboki",
+          "An canja lokacin taron",
+          "Saƙon ya iso da safe"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa maimaita iƙirari ba ya zama dalili?",
+        "answerFormula": "Domin bai ba da abin da zai goyi bayan iƙirarin ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin yana sa iƙirari ya zama gaskiya",
+          "Domin yana canja kammalawa zuwa dalili",
+          "Domin yana hana a duba saƙo"
+        ]
+      },
+      {
+        "templateHa": "Idan dalilin saƙo bai da ƙarfi amma yana neman a kira kowa, me ya fi dacewa?",
+        "answerFormula": "A duba mai shirya taron kafin a ɗauki mataki",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A kira kowa saboda gargadin yana da tsoro",
+          "A ce dalilin ya isa saboda an maimaita shi",
+          "A ƙara tsoratarwa a saƙon"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan mutum ya faɗi magana da ƙarfin gwiwa, ta yaya za ka bambanta tabbataccen bayani, ra'ayi, da zato?",
+      "ajami": null
+    },
+    "chainNext": "CT03",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, raba saƙon waya guda zuwa iƙirari, dalili, da kammalawa; ka duba ko dalilin ya isa.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT03",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 3,
+    "titleEn": "Fact, Opinion and Guess",
+    "titleHa": "Tabbataccen Bayani, Ra'ayi da Zato",
+    "titleAjami": null,
+    "title": {
+      "ha": "Tabbataccen Bayani, Ra'ayi da Zato",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "A cikin zancen rediyo, yanayi, gida, ko unguwa, ka bambanta tabbataccen bayani, ra'ayi, da zato. Tabbataccen bayani ana iya dubawa, ra'ayi yana nuna yadda mutum yake gani, zato kuma bai sami isasshen tabbaci ba.",
+      "ajami": null
+    },
+    "textExplanationHa": "A rediyo, mai gabatarwa ya ce ma'aunin yanayi ya nuna ruwan sama ya sauka a garin jiya. Wannan tabbataccen bayani ne idan za a iya komawa ga ma'aunin ko rahoton da ya dace a duba shi. Tabbataccen bayani ba ya nufin kowa ya ji shi; yana nufin akwai hanyar tantancewa. Sai wata mata ta ce, “Ni kam ina ganin lokacin sanyi ya fi daɗi.” Wannan ra'ayi ne, domin yana bayyana abin da take so ko yadda take hukunci, ba abin da za a tabbatar wa kowa iri ɗaya ba. A wata hira kuma, wani ya ce lallai ruwan sama zai yi da yamma saboda sama ta yi duhu. Wannan zato ne idan ba a ba da isasshen tabbaci ba. Murya mai ƙarfin gwiwa ba ta canja zato zuwa tabbataccen bayani. Ka tambayi: za a iya dubawa? Shin magana tana nuna zaɓi ko hukunci? Ko kuwa ana faɗar abu ne ba tare da isasshen tabbaci ba? Waɗannan tambayoyi suna taimaka maka ka saurari zancen yau da kullum cikin hankali.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT03.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Zancen rediyo da zancen gida",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Mai rediyo ya ce ma'aunin yanayi ya nuna an samu ruwan sama jiya. A gida kuma, wani ya ce lokacin sanyi ya fi daɗi. Ba irin magana ɗaya ba ce.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Tabbataccen bayani",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Maganar da za a iya dubawa a gano ko ta dace da abin da aka auna ko aka lura.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Zato",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Maganar da aka yi ba tare da isasshen tabbaci ba.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Zato game da yanayi",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "A hirar unguwa, Sani ya ce lallai ruwan sama zai yi da yamma saboda sama ta yi duhu. Bai nuna rahoto ko wata hanyar tabbatarwa ba.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Wannan zato ne, domin ganin sama ta yi duhu kaɗai bai isa ya tabbatar da cewa ruwan sama zai yi ba.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Tambayoyi uku kafin ka yarda",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Ka tambayi ko za a iya dubawa, ko magana tana nuna zaɓin mutum, ko kuma ba ta da isasshen tabbaci. Hakan yana raba tabbataccen bayani, ra'ayi, da zato.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "Wace magana ce tabbataccen bayani?",
+        "answerFormula": "Ma'aunin yanayi ya nuna an samu ruwan sama jiya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Lokacin sanyi ya fi daɗi",
+          "Lallai ruwan sama zai yi da yamma saboda sama ta yi duhu",
+          "Kowa ya fi son iska mai sanyi"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa “lokacin sanyi ya fi daɗi” ra'ayi ne?",
+        "answerFormula": "Yana bayyana zaɓi ko yadda mutum yake gani",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Yana nuna abin da ma'auni ya auna",
+          "Yana da rahoton tabbatarwa",
+          "Yana zama gaskiya ga kowa"
+        ]
+      },
+      {
+        "templateHa": "Wace magana ce zato a hirar unguwa?",
+        "answerFormula": "Lallai ruwan sama zai yi da yamma saboda sama ta yi duhu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An ga ruwa ya taru a kwano bayan ruwan sama",
+          "Ni na fi son a sha shayi da safe",
+          "Ma'aunin yanayi ya nuna ruwan sama jiya"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ta fi taimaka wajen gane tabbataccen bayani?",
+        "answerFormula": "Za a iya dubawa a tantance maganar?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An faɗe ta da ƙarfi?",
+          "Mutane da yawa suna son ta?",
+          "Tana sa a yi dariya?"
+        ]
+      },
+      {
+        "templateHa": "Idan an faɗi zato da ƙarfin gwiwa, me ya canja?",
+        "answerFormula": "Ba ya zama tabbataccen bayani sai an samu tabbaci",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Nan take ya zama gaskiya",
+          "Ya zama ra'ayin kowa",
+          "Ba a sake bukatar a duba shi"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wace magana ce tabbataccen bayani?",
+        "answerFormula": "Ma'aunin yanayi ya nuna an samu ruwan sama jiya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Lokacin sanyi ya fi daɗi",
+          "Lallai ruwan sama zai yi da yamma saboda sama ta yi duhu",
+          "Kowa ya fi son iska mai sanyi"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa “lokacin sanyi ya fi daɗi” ra'ayi ne?",
+        "answerFormula": "Yana bayyana zaɓi ko yadda mutum yake gani",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Yana nuna abin da ma'auni ya auna",
+          "Yana da rahoton tabbatarwa",
+          "Yana zama gaskiya ga kowa"
+        ]
+      },
+      {
+        "templateHa": "Wace magana ce zato a hirar unguwa?",
+        "answerFormula": "Lallai ruwan sama zai yi da yamma saboda sama ta yi duhu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An ga ruwa ya taru a kwano bayan ruwan sama",
+          "Ni na fi son a sha shayi da safe",
+          "Ma'aunin yanayi ya nuna ruwan sama jiya"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ta fi taimaka wajen gane tabbataccen bayani?",
+        "answerFormula": "Za a iya dubawa a tantance maganar?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An faɗe ta da ƙarfi?",
+          "Mutane da yawa suna son ta?",
+          "Tana sa a yi dariya?"
+        ]
+      },
+      {
+        "templateHa": "Idan an faɗi zato da ƙarfin gwiwa, me ya canja?",
+        "answerFormula": "Ba ya zama tabbataccen bayani sai an samu tabbaci",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Nan take ya zama gaskiya",
+          "Ya zama ra'ayin kowa",
+          "Ba a sake bukatar a duba shi"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan mutane biyu sun ba da labari iri ɗaya, wane ne ya fi kusa da abin da ya faru, kuma ta yaya za ka tantance?",
+      "ajami": null
+    },
+    "chainNext": "CT04",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, saurari magana guda a rediyo ko gida; ka faɗi ko tabbataccen bayani ne, ra'ayi ne, ko zato ne, tare da dalilinka.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT04",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 4,
+    "titleEn": "Who Said It, and How Would They Know?",
+    "titleHa": "Wa Ya Faɗa, Kuma Ta Yaya Ya Sani?",
+    "titleAjami": null,
+    "title": {
+      "ha": "Wa Ya Faɗa, Kuma Ta Yaya Ya Sani?",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Ka duba wanda ya faɗi iƙirari, ko yana da ilimin da ya dace, ko ya gani ko ya ji da kansa, da kuma yadda za ka tantance bayanin ta wurin wani tushen bayani da ake iya dogara da shi.",
+      "ajami": null
+    },
+    "textExplanationHa": "An turo saƙo cewa an matsar da taron unguwa. Musa ya ce ya ji haka daga maƙwabcinsa. Amma Rabi ta yi magana kai tsaye da mai shirya taron, wanda ya ce ba a canja lokacin ba. Ba duka tushen bayani suke da matsayi ɗaya ba. Ka fara tambaya: wa ya faɗa? Shin mutumin yana da damar sanin batun? Shin ya gani ko ya ji da kansa, ko kuwa ya ji daga wani? Sannan ka tambayi ko wani tushen bayani abin dogaro zai iya tabbatar da shi. Abin da mutum ya gani ko ya ji da kansa ya fi kusa da abin da ya faru fiye da labarin da ya bi hannaye da yawa. Haka kuma, wanda ke da ilimin da ya dace da batun na iya taimakawa, amma ba ya zama ba ya kuskure. Sunan mutum, yawan masu maimaita magana, ko ƙarfin gwiwar mai magana ba hujja ba ne su kaɗai. A wannan misali, ya dace a tabbatar da bayanin ta wurin mai shirya taron kafin a sanar da kowa.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT04.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Saƙo biyu game da taro",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Musa ya ji daga maƙwabcinsa cewa an matsar da taron. Rabi kuma ta yi magana kai tsaye da mai shirya taron. Kafin a ɗauki mataki, a duba yadda kowane mutum ya sami bayaninsa.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Abin da mutum ya gani ko ya ji da kansa",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Bayani daga mutum da ya kasance a wurin abin da ya faru ko ya ji shi kai tsaye.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Tushen bayani abin dogaro",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Tushen bayani da yake da damar sani ko ilimin da ya dace da batun, kuma za a iya komawa gare shi.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Mai shirya taro ya fi kusa da bayani",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Rabi ta kira mai shirya taron, ya duba tsarin taron ya ce lokaci bai canja ba. Musa bai yi magana da wanda ya shirya taron ba.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "A nan an fi dogara da bayanin mai shirya taron, amma har yanzu ana iya sake tantance idan sabon bayani ya fito.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Ƙarfin gwiwa bai isa ba",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Mutum na iya yi magana da ƙarfi ko mutane da yawa su maimaita saƙo, amma hakan ba ya nuna yadda suka sani. Ka nemi tushen da za a iya tambaya da kuma wata hanyar tabbatarwa.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "Wane mutum ne ya fi dacewa ya san ko an canja lokacin taro?",
+        "answerFormula": "Mai shirya taron da ya duba tsarin taron",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Maƙwabcin da ya ji daga wani",
+          "Mutum mai magana da ƙarfin gwiwa",
+          "Mutane da yawa da suka tura saƙo"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ta fi dacewa bayan ka ji wani labari?",
+        "answerFormula": "Shin mutumin ya gani ko ya ji da kansa?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Shin ya yi magana da sauri?",
+        "Shin ya ji labarin daga mutum ɗaya kawai?",
+          "Shin mutane da yawa suna son labarin?"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa sunan mutum kaɗai bai isa ya tabbatar da iƙirari ba?",
+        "answerFormula": "Domin mutum mai suna na iya zama bai san batun ba ko ya yi kuskure",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin suna yana canja iƙirari zuwa ra'ayi",
+          "Domin ba a iya tambayar mutum mai suna",
+          "Domin kowane suna yake nuna zato"
+        ]
+      },
+      {
+        "templateHa": "Idan tushen bayani ya ji labari daga wani kawai, wane mataki ya fi dacewa?",
+        "answerFormula": "A nemi wanda ya fi kusa da abin da ya faru",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ɗauki labarin a matsayin tabbatacce",
+          "A ƙara yawan masu yaɗa labarin",
+          "A daina tambayar kowa"
+        ]
+      },
+      {
+        "templateHa": "Wace magana ce ta nuna tunani mai hankali game da tushen bayani?",
+        "answerFormula": "Tushen da ya dace da batun na iya kuskure, don haka zan iya tantance daga wani mai dogaro",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Idan mutum ya dace da batun, ba ya kuskure",
+          "Yawan masu maimaita magana ya fi duk wata hujja",
+          "Ƙarfin gwiwa ya tabbatar da komai"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane mutum ne ya fi dacewa ya san ko an canja lokacin taro?",
+        "answerFormula": "Mai shirya taron da ya duba tsarin taron",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Maƙwabcin da ya ji daga wani",
+          "Mutum mai magana da ƙarfin gwiwa",
+          "Mutane da yawa da suka tura saƙo"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ta fi dacewa bayan ka ji wani labari?",
+        "answerFormula": "Shin mutumin ya gani ko ya ji da kansa?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Shin ya yi magana da sauri?",
+        "Shin ya ji labarin daga mutum ɗaya kawai?",
+          "Shin mutane da yawa suna son labarin?"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa sunan mutum kaɗai bai isa ya tabbatar da iƙirari ba?",
+        "answerFormula": "Domin mutum mai suna na iya zama bai san batun ba ko ya yi kuskure",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin suna yana canja iƙirari zuwa ra'ayi",
+          "Domin ba a iya tambayar mutum mai suna",
+          "Domin kowane suna yake nuna zato"
+        ]
+      },
+      {
+        "templateHa": "Idan tushen bayani ya ji labari daga wani kawai, wane mataki ya fi dacewa?",
+        "answerFormula": "A nemi wanda ya fi kusa da abin da ya faru",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ɗauki labarin a matsayin tabbatacce",
+          "A ƙara yawan masu yaɗa labarin",
+          "A daina tambayar kowa"
+        ]
+      },
+      {
+        "templateHa": "Wace magana ce ta nuna tunani mai hankali game da tushen bayani?",
+        "answerFormula": "Tushen da ya dace da batun na iya kuskure, don haka zan iya tantance daga wani mai dogaro",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Idan mutum ya dace da batun, ba ya kuskure",
+          "Yawan masu maimaita magana ya fi duk wata hujja",
+          "Ƙarfin gwiwa ya tabbatar da komai"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan iƙirari ya zo da lambobi, wane cikakken bayani ya kamata ka nema kafin ka yarda da shi?",
+      "ajami": null
+    },
+    "chainNext": "CT05",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, zaɓi wani labari da ka ji; rubuta wa ya faɗa, yadda ya sani, da mutum ko wuri guda da za ka iya tantancewa.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT05",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 5,
+    "titleEn": "Numbers Used to Persuade",
+    "titleHa": "Lambobi Masu Neman Sa Ka Yarda",
+    "titleAjami": null,
+    "title": {
+      "ha": "Lambobi Masu Neman Sa Ka Yarda",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Ka duba lambobi a cikin iƙirari ta hanyar tambayar waɗanda aka ƙirga, lokacin da aka ƙirga su, abin da aka kwatanta, da bayanin da aka bari a waje.",
+      "ajami": null
+    },
+    "textExplanationHa": "A wata takarda an rubuta cewa “mutane 8 cikin 10 sun amince da sabon lokaci.” Lambar tana iya sa magana ta yi ƙarfi, amma kafin a yarda da ita akwai tambayoyi. Mutane nawa aka ƙirga? Su wane ne? An tambayi mutane goma ne kawai ko wasu da yawa? An kwatanta da me? A wane lokaci aka tattara amsoshin? Idan aka ce adadi ya ninka, sai a san adadin farko da lokacin da aka auna na gaba. Idan jadawali ya nuna sanda ɗaya ya fi wani tsawo, a duba ma'aunin jadawalin, inda ma'aunin ya fara, da abin da ake kwatantawa. Lamba ba ta zama hujja mai ƙarfi saboda tana cikin rubutu kawai. Cikakken bayani da ke kewaye da lamba yana taimaka mana mu fahimci abin da take nufi. Wannan ba darasin lissafi mai wahala ba ne; tambayoyin nan ne za su hana ka ɗaukar “mafi yawa” ko “ya ninka” a matsayin tabbaci ba tare da mahallinsa ba. Idan ba a ba da mahimmin bayani ba, abin da ya dace shi ne a nemi ƙari kafin a yanke kammalawa.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT05.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "“Mutane 8 cikin 10”",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Saƙo ya ce mutane 8 cikin 10 sun amince da sabon lokaci. Kafin ka ɗauki wannan a matsayin hujja mai ƙarfi, ka tambayi su wane ne goma ɗin da yadda aka zaɓe su.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Cikakken bayani da ke kewaye da lamba",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Bayanan da ke nuna wanda aka ƙirga, abin da aka kwatanta, da lokacin da aka tattara lamba.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Jadawali",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Hanyar nuna ƙididdiga da tebur ko sassa masu gani domin a kwatanta bayanai.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Adadin da ya ninka",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Wani ya ce yawan mahalarta ya ninka, amma bai faɗi adadin farko, adadin na gaba, ko tsawon lokacin ba.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Maganar tana buƙatar waɗannan bayanai kafin a san girman sauyin da ake nufi.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Tambayi mahallin lamba",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Ka nemi yawan da aka ƙirga, waɗanda aka saka cikin ƙididdigar, kwatancen da aka yi, da lokaci. Idan jadawali bai nuna ma'auninsa ba, kada tsawon sassa ya sa ka hanzarta kammalawa.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "Idan aka ce “mutane 8 cikin 10 sun amince”, wane bayani ya fi muhimmanci a nema?",
+        "answerFormula": "Su wane ne mutane goma da aka tambaya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko an ce adadin daidai ne sosai",
+          "Ko mutane takwas sun isa su wakilci kowa",
+          "Ko saƙon ya ce yawancin mutane sun amince"
+        ]
+      },
+      {
+        "templateHa": "Idan aka ce wani adadi ya ninka, me ya kamata a sani?",
+        "answerFormula": "Adadin farko da adadin na gaba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko adadin na gaba ya fi na farko girma",
+          "Ko an ce adadin ya ninka sau biyu",
+          "Ko adadin na gaba yana da yawa"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ke taimaka wa lamba ta sami mahalli?",
+        "answerFormula": "A wane lokaci aka tattara wannan ƙididdiga?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Wane ne ya fi son lamba?",
+          "Shin an ce lambar daidai ce sosai?",
+          "Shin lambar tana da girma?"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka duba idan jadawali ya nuna bambanci mai girma?",
+        "answerFormula": "Ko an nuna ma'auni da abin da ake kwatantawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko tsawon sandunan kaɗai ya nuna bambancin gaske",
+          "Ko jadawalin ya nuna bayanai masu yawa",
+          "Ko taken jadawalin ya ce bambancin yana da girma"
+        ]
+      },
+      {
+        "templateHa": "Wace kammalawa ce ta fi hankali game da lamba a saƙo?",
+        "answerFormula": "Lamba tana buƙatar cikakken bayani kafin ta zama hujja mai ƙarfi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Duk lamba tabbataccen bayani ce",
+          "Lamba tana nuna dalili kai tsaye",
+          "Ba a buƙatar a tambayi yadda aka tara lamba"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Idan aka ce “mutane 8 cikin 10 sun amince”, wane bayani ya fi muhimmanci a nema?",
+        "answerFormula": "Su wane ne mutane goma da aka tambaya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko an ce adadin daidai ne sosai",
+          "Ko mutane takwas sun isa su wakilci kowa",
+          "Ko saƙon ya ce yawancin mutane sun amince"
+        ]
+      },
+      {
+        "templateHa": "Idan aka ce wani adadi ya ninka, me ya kamata a sani?",
+        "answerFormula": "Adadin farko da adadin na gaba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko adadin na gaba ya fi na farko girma",
+          "Ko an ce adadin ya ninka sau biyu",
+          "Ko adadin na gaba yana da yawa"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ke taimaka wa lamba ta sami mahalli?",
+        "answerFormula": "A wane lokaci aka tattara wannan ƙididdiga?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Wane ne ya fi son lamba?",
+          "Shin an ce lambar daidai ce sosai?",
+          "Shin lambar tana da girma?"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka duba idan jadawali ya nuna bambanci mai girma?",
+        "answerFormula": "Ko an nuna ma'auni da abin da ake kwatantawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko tsawon sandunan kaɗai ya nuna bambancin gaske",
+          "Ko jadawalin ya nuna bayanai masu yawa",
+          "Ko taken jadawalin ya ce bambancin yana da girma"
+        ]
+      },
+      {
+        "templateHa": "Wace kammalawa ce ta fi hankali game da lamba a saƙo?",
+        "answerFormula": "Lamba tana buƙatar cikakken bayani kafin ta zama hujja mai ƙarfi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Duk lamba tabbataccen bayani ce",
+          "Lamba tana nuna dalili kai tsaye",
+          "Ba a buƙatar a tambayi yadda aka tara lamba"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan abu ya faru bayan wani abu, ta yaya za ka sani ko na farko ne ya jawo na biyun?",
+      "ajami": null
+    },
+    "chainNext": "CT06",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, duba lamba guda a saƙo ko jawabi; tambayi wanda aka ƙirga, abin da aka kwatanta, da lokacin da aka tara ta.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT06",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 6,
+    "titleEn": "Cause, or Merely What Happened Next?",
+    "titleHa": "Dalili ne, Ko Abin da Ya Biyo Baya Kawai?",
+    "titleAjami": null,
+    "title": {
+      "ha": "Dalili ne, Ko Abin da Ya Biyo Baya Kawai?",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Ka bambanta abin da ya jawo wani abu da abin da ya faru a gabansa kawai; ka nemi wasu bayanai idan akwai wani bayani mai yiwuwa.",
+      "ajami": null
+    },
+    "textExplanationHa": "An danna maballi, fitila ta haska. A nan akwai hanyar da za a fahimci yadda maballin yana cikin tsarin da ke kai wuta zuwa fitilar, don haka akwai dalili mai ƙarfi a ce maballin ya sa fitilar ta haska. Amma idan wani ya sa sabbin takalma sannan ruwan sama ya fara, abin da ya faru daga baya ba ya nuna takalman ne suka jawo ruwan. Wani lokaci abubuwa biyu sukan faru a jere ne kawai. A wani wuri, halartar taro ta canja bayan an gyara jadawalin lokaci. Kada a ce jadawalin kaɗai ne ya jawo canjin idan akwai yiwuwar wasu abubuwa ma sun canja, kamar wurin taro ko ranar sanarwa. Ka raba abubuwa huɗu: dalilin da aka nuna, abubuwan da suka biyo juna, wani bayani mai yiwuwa, da rashin isasshen bayani. “B ya faru bayan A” na iya zama farkon tambaya, ba ƙarshen hujja ba. Ka nemi yadda A zai iya jawo B, ka duba ko akwai wasu canje-canje, sannan ka yarda da “ban sani ba tukuna” idan hujja ba ta isa ba.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT06.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Maballi da fitila",
+          "ajami": null
+        },
+        "body": {
+          "ha": "An danna maballi sai fitila ta haska. Saboda tsarin wuta ya haɗa maballi da fitila, akwai dalili mai kyau a bincika maballin a matsayin abin da ya jawo hasken.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Abin da ya jawo wani abu",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Abu ko canji da hujja ta nuna yana haifar da wani sakamako.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Wani bayani mai yiwuwa",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Wani dalili daban da zai iya bayyana abin da aka lura da shi.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Sabbin takalma da ruwan sama",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Sani ya sa sabbin takalma da safe, sai ruwan sama ya yi da yamma. Bai nuna wata hanya da takalman za su iya jawo ruwan ba.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Jerin lokaci kaɗai bai isa ya haɗa abubuwa biyu da dalili da sakamako ba.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Ka nemi abin da ya canja",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Idan halartar taro ta canja bayan sabon jadawali, ka tambayi ko wurin taro, ranar sanarwa, ko wani abu ma ya canja. Idan ba a da isasshen bayani, a dakatar da kammalawa.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "Wane misali ya fi nuna dalili da aka bayyana?",
+        "answerFormula": "An danna maballi sai fitila ta haska a tsarin wuta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An sa sabbin takalma sai ruwan sama ya yi",
+          "An ga gajimare bayan an sha ruwa",
+          "An ji ƙara bayan an buɗe taga"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa sabbin takalma ba hujja ba ne cewa sun jawo ruwan sama?",
+        "answerFormula": "Ruwan ya biyo bayan takalman ne kawai ba tare da hanyar haɗi ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Sabbin takalma suna hana ruwa",
+          "Duk abin da ya faru da yamma ƙarya ne",
+        "Saboda takalman sun zo kafin ruwan, dole ne su jawo shi"
+        ]
+      },
+      {
+        "templateHa": "Idan halartar taro ta canja bayan sabon jadawali, wane bayani ya dace?",
+        "answerFormula": "A duba ko wasu abubuwa ma sun canja",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ce jadawalin kaɗai ne ya jawo komai",
+          "A ƙi duba duk wani bayani",
+          "A canja jadawalin sau da yawa nan take"
+        ]
+      },
+      {
+        "templateHa": "Wane ne wani bayani mai yiwuwa?",
+        "answerFormula": "Wani dalili daban da zai iya bayyana sakamako",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Kammalawa da ba ta buƙatar hujja",
+          "Ra'ayi da aka maimaita sau da yawa",
+          "Lamba da aka rubuta a jadawali"
+        ]
+      },
+      {
+        "templateHa": "Idan babu isasshen hujja game da dalili, me ya fi dacewa?",
+        "answerFormula": "A ce ana buƙatar ƙarin bayani kafin a yanke kammalawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A zaɓi dalili na farko da aka ji",
+          "A ce duk abubuwa suna da dalili iri ɗaya",
+          "A maimaita cewa B ya biyo bayan A"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane misali ya fi nuna dalili da aka bayyana?",
+        "answerFormula": "An danna maballi sai fitila ta haska a tsarin wuta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "An sa sabbin takalma sai ruwan sama ya yi",
+          "An ga gajimare bayan an sha ruwa",
+          "An ji ƙara bayan an buɗe taga"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa sabbin takalma ba hujja ba ne cewa sun jawo ruwan sama?",
+        "answerFormula": "Ruwan ya biyo bayan takalman ne kawai ba tare da hanyar haɗi ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Sabbin takalma suna hana ruwa",
+          "Duk abin da ya faru da yamma ƙarya ne",
+        "Saboda takalman sun zo kafin ruwan, dole ne su jawo shi"
+        ]
+      },
+      {
+        "templateHa": "Idan halartar taro ta canja bayan sabon jadawali, wane bayani ya dace?",
+        "answerFormula": "A duba ko wasu abubuwa ma sun canja",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ce jadawalin kaɗai ne ya jawo komai",
+          "A ƙi duba duk wani bayani",
+          "A canja jadawalin sau da yawa nan take"
+        ]
+      },
+      {
+        "templateHa": "Wane ne wani bayani mai yiwuwa?",
+        "answerFormula": "Wani dalili daban da zai iya bayyana sakamako",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Kammalawa da ba ta buƙatar hujja",
+          "Ra'ayi da aka maimaita sau da yawa",
+          "Lamba da aka rubuta a jadawali"
+        ]
+      },
+      {
+        "templateHa": "Idan babu isasshen hujja game da dalili, me ya fi dacewa?",
+        "answerFormula": "A ce ana buƙatar ƙarin bayani kafin a yanke kammalawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A zaɓi dalili na farko da aka ji",
+          "A ce duk abubuwa suna da dalili iri ɗaya",
+          "A maimaita cewa B ya biyo bayan A"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan kana son wani sakamako ya faru, wace hanya za ta taimaka maka kada son naka ya rinjayi dubawarka?",
+      "ajami": null
+    },
+    "chainNext": "CT07",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, tuna wani iƙirari da ya ce abu ya jawo wani abu; rubuta wani bayani mai yiwuwa da za ka bincika kafin ka yarda.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT07",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 7,
+    "titleEn": "When You Already Want It to Be True",
+    "titleHa": "Idan Kana Son Ya Zama Gaskiya",
+    "titleAjami": null,
+    "title": {
+      "ha": "Idan Kana Son Ya Zama Gaskiya",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Ka gane yadda son wani sakamako zai iya karkatar da dubawa, sannan ka nemi hujjar da ta saba da abin da ka fi so kuma ka tambayi abin da zai canja tunaninka.",
+      "ajami": null
+    },
+    "textExplanationHa": "Kana son tafiya gobe ta yiwu, sai ka ga rahoton yanayi guda da ya ce ba za a yi ruwa ba. Za ka iya jin daɗin wannan rahoto, amma idan ka watsar da sauran rahotannin da suka nuna yiwuwar ruwa, son tafiyar na iya karkatar da yadda ka tantance. Son iƙirari ya zama gaskiya ba ya tabbatar da cewa iƙirarin ƙarya ne. Amma alama ce da za ta sa ka tsaya ka duba kanka da kyau. Wasu lokuta muna tuna misalan da ke goyon bayan abin da muke so, mu manta da waɗanda suka saba da shi. Ka yi tambayoyi uku: wace hujja ce ta saba da abin da nake so? Shin na ba ta kulawa iri ɗaya? Me zai sa in canja kammalawata? Wannan ba kuskure ne na wasu mutane kawai ba; kowa na iya fuskantarsa. Hanya mai kyau ita ce neman bayani daga wurare daban, a rubuta abin da ya goyi baya da abin da ya saba, sannan a bar hujja ta jagoranci kammalawa. Hakan yana sa tantancewar ta fi daidaito ko da sakamakon bai dace da burinka ba.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT07.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Rahoton yanayi da tafiya",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Kana son tafiya ta yiwu, don haka rahoto mai kyau ya yi maka daɗi. Amma idan akwai wani rahoto da ya nuna yiwuwar ruwa, bai dace ka watsar da shi saboda ba ka so ba.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Son wani sakamako ya sa mutum ya karkata",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Halin da son abin da mutum yake fata ya rinjayi yadda yake duba hujja.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Hujjar da ta saba",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Hujjar da ba ta goyon bayan iƙirari ko kammalawar da mutum ya fi so.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Misalan da aka tuna",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Fatima ta fi son bayani ɗaya game da jinkirin taro. Ta tuna abubuwan da ke goyon bayansa, amma ta ƙi duba bayanan da ke nuna wani bayani daban.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Ta fi taimakon kanta idan ta nemi bayanin da zai iya ƙalubalantar kammalawarta.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Tambayi abin da zai canja tunani",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Ka faɗi wa kanka wace hujja za ta sa ka canja ra'ayi. Idan babu abin da za ka yarda ya canja tunaninka, son sakamako na iya zama ya rufe hanyar dubawa.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "Idan kana son tafiya ta yiwu, wane mataki ya fi dacewa game da rahoton yanayi?",
+        "answerFormula": "A duba rahotannin da suka dace har da wanda bai dace da burinka ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A yarda da rahoto mafi daɗi kawai",
+          "A ce duk rahotanni iri ɗaya ne",
+          "A daina duba yanayi saboda kana son tafiya"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka nema idan kana son wani iƙirari ya zama gaskiya?",
+        "answerFormula": "Hujjar da ta saba da iƙirarin",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Mutanen da za su maimaita iƙirarin",
+        "A nemi hujjar da ke goyon bayan abin da ka riga ka so",
+          "Kalma mai ƙarfi da za ta sa ka ji daɗi"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ke taimaka wa mutum ya duba kansa?",
+        "answerFormula": "Me zai sa in canja kammalawata?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Me ya sa nake son a yarda da ni?",
+          "Ta yaya zan sa kowa ya yarda?",
+          "Wane ne ya fi ƙarfin murya?"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa tunawa da misalai masu goyon baya kaɗai matsala ce?",
+        "answerFormula": "Domin yana iya ɓoye hujjar da ta saba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin misalai ba su da amfani",
+          "Domin duk misali ra'ayi ne",
+          "Domin ba a iya tuna komai"
+        ]
+      },
+      {
+        "templateHa": "Wace hanya ce ta fi adalci idan son wani sakamako ya sa ka karkata?",
+        "answerFormula": "A rubuta hujjar da ke goyon baya da wadda ta saba kafin kammalawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A zaɓi hujjar da ta faranta maka rai",
+          "A ƙi duk wata hujja da ba ka so",
+          "A ce sonka ya zama dalili"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Idan kana son tafiya ta yiwu, wane mataki ya fi dacewa game da rahoton yanayi?",
+        "answerFormula": "A duba rahotannin da suka dace har da wanda bai dace da burinka ba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A yarda da rahoto mafi daɗi kawai",
+          "A ce duk rahotanni iri ɗaya ne",
+          "A daina duba yanayi saboda kana son tafiya"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka nema idan kana son wani iƙirari ya zama gaskiya?",
+        "answerFormula": "Hujjar da ta saba da iƙirarin",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Mutanen da za su maimaita iƙirarin",
+        "A nemi hujjar da ke goyon bayan abin da ka riga ka so",
+          "Kalma mai ƙarfi da za ta sa ka ji daɗi"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ke taimaka wa mutum ya duba kansa?",
+        "answerFormula": "Me zai sa in canja kammalawata?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Me ya sa nake son a yarda da ni?",
+          "Ta yaya zan sa kowa ya yarda?",
+          "Wane ne ya fi ƙarfin murya?"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa tunawa da misalai masu goyon baya kaɗai matsala ce?",
+        "answerFormula": "Domin yana iya ɓoye hujjar da ta saba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin misalai ba su da amfani",
+          "Domin duk misali ra'ayi ne",
+          "Domin ba a iya tuna komai"
+        ]
+      },
+      {
+        "templateHa": "Wace hanya ce ta fi adalci idan son wani sakamako ya sa ka karkata?",
+        "answerFormula": "A rubuta hujjar da ke goyon baya da wadda ta saba kafin kammalawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A zaɓi hujjar da ta faranta maka rai",
+          "A ƙi duk wata hujja da ba ka so",
+          "A ce sonka ya zama dalili"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan ba ka da cikakken tabbaci, wane mataki zai iya rage haɗari yayin da kake neman ƙarin bayani?",
+      "ajami": null
+    },
+    "chainNext": "CT08",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, zaɓi wani abin da ka fi son ya zama gaskiya; rubuta hujja guda da za ta iya sa ka sake duba kammalawarka.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT08",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 8,
+    "titleEn": "Deciding When You Cannot Be Certain",
+    "titleHa": "Yanke Shawara Idan Ba Ka da Cikakken Tabbaci",
+    "titleAjami": null,
+    "title": {
+      "ha": "Yanke Shawara Idan Ba Ka da Cikakken Tabbaci",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Ka zaɓi mataki mai hankali idan bayanai ba su cika ba ta hanyar duba amfani, yiwuwar illa, gaggawa, yiwuwar juyawa baya, da ƙarin bayani ko shawara mai dacewa.",
+      "ajami": null
+    },
+    "textExplanationHa": "An yi hasashen yiwuwar ruwan sama, kuma kana son zaɓar hanyar tafiya. Ba ka da cikakken tabbaci game da yanayi, amma har yanzu kana iya yanke shawara mai hankali. Ka duba amfani da yiwuwar illa: wace hanya za ta iya zama mai sauƙi, kuma wace za ta iya zama mai wahala idan ruwa ya zo? Ka tambayi ko matakin za a iya juyawa baya. Zaɓar hanyar da za a iya sauyawa idan buƙata ta taso ko ɗaukar kayan kariya na iya zama abu mai sauƙin canzawa; canji mai girma da ba za a iya gyarawa ba yana buƙatar ƙarin tabbaci. Ka duba gaggawa: shin dole ne a yanke hukunci, ko za a iya jira a samu ƙarin bayani? Haka kuma ka duba ko akwai tsarin madadi ko shawarar wanda ya dace. Manomi na iya fara ƙaramin ɓangare na aiki yayin da yake jiran ƙarin bayanin yanayi, maimakon yin babban canji da ba zai iya gyarawa ba. Rashin tabbaci ba ya nufin a dakatar da komai ba; yana nufin a daidaita mataki da haɗari da abin da aka sani. Idan batun lafiya ya taso, a nemi ƙwararren ma'aikacin lafiya ko babban mutum abin dogaro.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT08.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Hanya a yanayi mai rashin tabbaci",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Akwai yiwuwar ruwan sama, amma ba a tabbatar ba. Kana iya zaɓar hanya mai madadin hanya, ka shirya kayan kariya, ko ka jira sabon bayani idan ba gaggawa ba ne.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Rashin tabbaci",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Halin da bayanin da ake da shi bai isa ya nuna abin da zai faru da cikakkiyar tabbas ba.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Matakin da za a iya juyawa baya",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Shawarar da za a iya canzawa ko gyarawa idan sabon bayani ya bayyana.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Fara da ƙaramin gwaji",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Wani manomi yana tunanin lokacin fara wani aiki, amma bayanin yanayi bai cika ba. Ya fara da ƙaramin ɓangare kuma ya bar damar canja tsari.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Ƙaramin mataki mai sauƙin gyarawa na iya rage illa yayin da ake jiran ƙarin bayani.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Daidaita mataki da haɗari",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Tambayi abin da za ka samu, abin da zai iya lalacewa, ko za ka iya juyawa baya, da ko akwai madadi. Idan akwai batun lafiya, neman ƙwararren ma'aikacin lafiya shi ne matakin hankali.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "A yanayi mai rashin tabbaci, wane mataki ya fi sauƙin juyawa baya?",
+        "answerFormula": "Zaɓar hanyar da za a iya sauyawa idan buƙata ta taso",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Yanke duk wata hanya ba tare da bayani ba",
+          "Yin babban canji da ba za a iya gyarawa ba",
+          "Yin watsi da duk wani rahoton yanayi"
+        ]
+      },
+      {
+        "templateHa": "Idan ba gaggawa ba ne kuma ana iya samun sabon bayani, me ya fi dacewa?",
+        "answerFormula": "A jira a tantance ƙarin bayani",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ɗauki mataki mafi girma nan take",
+          "A ce rashin tabbaci ya ɓace",
+          "A ƙi yin wani shiri"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka duba kafin yanke shawara mai rashin tabbaci?",
+        "answerFormula": "Yiwuwar amfani, illa, da tsarin madadi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko amfani kawai ya fi yawa",
+          "Yawan mutanen da suka ji labarin",
+          "Ko zaɓin zai sa rashin tabbaci ya ɓace"
+        ]
+      },
+      {
+        "templateHa": "Idan batun lafiya ya taso cikin rashin tabbaci, wane mataki ya dace?",
+        "answerFormula": "A nemi shawarar ƙwararren ma'aikacin lafiya ko babban mutum abin dogaro",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A yanke magani da kai",
+          "A bi labarin da aka ji kawai",
+          "A gwada abu mai haɗari domin a gani"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa ƙaramin gwaji zai iya zama mai hankali?",
+        "answerFormula": "Domin za a iya gyara shi idan sabon bayani ya nuna wata hanya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin yana kawar da duk rashin tabbaci",
+          "Domin baya buƙatar wani shiri",
+          "Domin yana tabbatar da sakamako ɗaya"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "A yanayi mai rashin tabbaci, wane mataki ya fi sauƙin juyawa baya?",
+        "answerFormula": "Zaɓar hanyar da za a iya sauyawa idan buƙata ta taso",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Yanke duk wata hanya ba tare da bayani ba",
+          "Yin babban canji da ba za a iya gyarawa ba",
+          "Yin watsi da duk wani rahoton yanayi"
+        ]
+      },
+      {
+        "templateHa": "Idan ba gaggawa ba ne kuma ana iya samun sabon bayani, me ya fi dacewa?",
+        "answerFormula": "A jira a tantance ƙarin bayani",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ɗauki mataki mafi girma nan take",
+          "A ce rashin tabbaci ya ɓace",
+          "A ƙi yin wani shiri"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka duba kafin yanke shawara mai rashin tabbaci?",
+        "answerFormula": "Yiwuwar amfani, illa, da tsarin madadi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko amfani kawai ya fi yawa",
+          "Yawan mutanen da suka ji labarin",
+          "Ko zaɓin zai sa rashin tabbaci ya ɓace"
+        ]
+      },
+      {
+        "templateHa": "Idan batun lafiya ya taso cikin rashin tabbaci, wane mataki ya dace?",
+        "answerFormula": "A nemi shawarar ƙwararren ma'aikacin lafiya ko babban mutum abin dogaro",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A yanke magani da kai",
+          "A bi labarin da aka ji kawai",
+          "A gwada abu mai haɗari domin a gani"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa ƙaramin gwaji zai iya zama mai hankali?",
+        "answerFormula": "Domin za a iya gyara shi idan sabon bayani ya nuna wata hanya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Domin yana kawar da duk rashin tabbaci",
+          "Domin baya buƙatar wani shiri",
+          "Domin yana tabbatar da sakamako ɗaya"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Idan an ba ka labari daga gefe ɗaya kawai, wane bayani zai iya canja fahimtarka?",
+      "ajami": null
+    },
+    "chainNext": "CT09",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, kafin yanke wata ƙaramar shawara da ba ta da gaggawa, rubuta abin da ka sani, abin da ba ka sani ba, da mataki mai sauƙin juyawa baya.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT09",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 9,
+    "titleEn": "What Was Left Out?",
+    "titleHa": "Me Aka Bari a Waje?",
+    "titleAjami": null,
+    "title": {
+      "ha": "Me Aka Bari a Waje?",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+      "ha": "Ka gano bayanin da ya ɓace, labari daga gefe ɗaya, kwatancen da ba a faɗa ba, da misali da ba a san ko yana wakiltar sauran al'amuran da ake magana a kai ba.",
+      "ajami": null
+    },
+    "textExplanationHa": "A gidan iyali, ka ji mutum ɗaya ya bayyana dalilin rashin zuwa wani taro. Labarinsa na iya zama mai muhimmanci, amma ba ya nuna cikakken abin da ya faru idan ba a ji sauran bayanan ba. Ka tambayi: wa ba a ji daga gare shi ba? Me ya faru kafin haka, kuma me ya biyo baya? A wani saƙo an ce sakamakon ya “fi na baya,” amma ba a faɗi sakamakon baya ko abin da ake kwatantawa ba. A wani rubutu kuma an cire jumla guda daga doguwar hira; jumlar na iya canja ma'ana idan an duba abin da ya zo gabanta da bayanta. Bayanai da aka bari a waje na iya hana mu fahimtar iƙirari yadda ya kamata. Wannan ba koyarwar warware rigima ba ce; hanya ce ta lura da abin da ba ya cikin labarin. Ka kuma tambayi ko misali ɗaya yana wakiltar sauran al'amuran da ake magana a kai, ko an zaɓe shi ne saboda yana goyon bayan kammalawa. Ba sai ka yanke cewa labari ƙarya ne saboda akwai giɓi a bayanin ba. Mataki mai kyau shi ne a faɗi wane bayani ya fi muhimmanci a samu kafin a ci gaba da kammalawa.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT09.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Labari daga mutum ɗaya",
+          "ajami": null
+        },
+        "body": {
+          "ha": "A wani rashin jituwa na gida, ka ji bayanin mutum ɗaya kawai. Kafin ka gina kammalawa, ka lura cewa akwai sauran mutanen da za su iya ba da bayanin abin da suka gani.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Bayanin da ya ɓace",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Mahimmin bayani da ba a bayar ba amma zai iya canja yadda ake fahimtar iƙirari.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Bayani daga gefe ɗaya",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Labari da aka samu daga mutum ko ra'ayi guda ba tare da sauran bayanan da suka dace ba.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Jumla da aka cire daga mahalli",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Saƙo ya kawo jumla guda daga wata hira ba tare da abin da aka faɗa kafin ta da bayan ta ba.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Duba abin da ya kewaye jumlar na iya nuna ko an fahimci ma'anarta yadda ya dace.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Nemi kwatance mai dacewa",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Idan aka ce sakamako ya fi na baya, tambayi menene na baya. Idan aka kawo misali guda, tambayi ko yana wakiltar yawancin abin da ake magana a kai ko an zaɓe shi kawai.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "Idan ka ji labari daga mutum ɗaya game da abin da ya faru, me ya fi muhimmanci a nema?",
+        "answerFormula": "Bayanin sauran mutanen da suka dace da batun",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko mutumin ya yi magana da ƙarfin gwiwa",
+          "Yawan lokacin da ya maimaita labarin",
+          "Ko labarinsa ya dace da abin da ka riga ka yi imani da shi"
+        ]
+      },
+      {
+        "templateHa": "Idan aka ce sakamako ya fi na baya, wane bayani ya ɓace?",
+        "answerFormula": "Sakamakon baya da abin da ake kwatantawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Sunan wanda ya karanta sakamakon",
+          "Ko saƙon ya ce sakamakon ya fi na baya sosai",
+          "Ko sabon sakamakon yana da yawa"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka duba idan an kawo jumla guda daga hira?",
+        "answerFormula": "Abin da aka faɗa kafin jumlar da bayan ta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko jumlar tana da ma'ana idan aka karanta ita kaɗai",
+          "Ko jumlar tana goyon bayan abin da ka riga ka yi imani da shi",
+          "Ko mai karatu ya yarda da ita"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ke duba ko misali yana wakiltar abin da ake magana a kai?",
+        "answerFormula": "Shin misalin yana wakiltar sauran al'amuran da ake magana a kai?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+        "Shin misalin ya fito daga mutumin da ya faɗi labarin?",
+          "Shin misalin ya bayyana mutum ɗaya dalla-dalla?",
+          "Shin misalin ya faru kwanan nan?"
+        ]
+      },
+      {
+        "templateHa": "Idan akwai mahimmin bayani da ya ɓace, wane mataki ya fi dacewa?",
+        "answerFormula": "A bayyana bayanin da ake buƙata kafin a yanke kammalawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ce iƙirari ƙarya ne nan take",
+          "A zaɓi gefen da ya fi maka daɗi",
+          "A yi watsi da abin da ya ɓace"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Idan ka ji labari daga mutum ɗaya game da abin da ya faru, me ya fi muhimmanci a nema?",
+        "answerFormula": "Bayanin sauran mutanen da suka dace da batun",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko mutumin ya yi magana da ƙarfin gwiwa",
+          "Yawan lokacin da ya maimaita labarin",
+          "Ko labarinsa ya dace da abin da ka riga ka yi imani da shi"
+        ]
+      },
+      {
+        "templateHa": "Idan aka ce sakamako ya fi na baya, wane bayani ya ɓace?",
+        "answerFormula": "Sakamakon baya da abin da ake kwatantawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Sunan wanda ya karanta sakamakon",
+          "Ko saƙon ya ce sakamakon ya fi na baya sosai",
+          "Ko sabon sakamakon yana da yawa"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka duba idan an kawo jumla guda daga hira?",
+        "answerFormula": "Abin da aka faɗa kafin jumlar da bayan ta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko jumlar tana da ma'ana idan aka karanta ita kaɗai",
+          "Ko jumlar tana goyon bayan abin da ka riga ka yi imani da shi",
+          "Ko mai karatu ya yarda da ita"
+        ]
+      },
+      {
+        "templateHa": "Wace tambaya ce ke duba ko misali yana wakiltar abin da ake magana a kai?",
+        "answerFormula": "Shin misalin yana wakiltar sauran al'amuran da ake magana a kai?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+        "Shin misalin ya fito daga mutumin da ya faɗi labarin?",
+          "Shin misalin ya bayyana mutum ɗaya dalla-dalla?",
+          "Shin misalin ya faru kwanan nan?"
+        ]
+      },
+      {
+        "templateHa": "Idan akwai mahimmin bayani da ya ɓace, wane mataki ya fi dacewa?",
+        "answerFormula": "A bayyana bayanin da ake buƙata kafin a yanke kammalawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ce iƙirari ƙarya ne nan take",
+          "A zaɓi gefen da ya fi maka daɗi",
+          "A yi watsi da abin da ya ɓace"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": {
+      "ha": "Yaya za ka haɗa duk waɗannan tambayoyi zuwa jerin dubawa guda kafin ka karɓi iƙirari?",
+      "ajami": null
+    },
+    "chainNext": "CT10",
+    "isChainLeaf": false,
+    "useTodayPrompt": {
+      "ha": "Yau, saurari labari guda; rubuta bayanin da aka bayar da bayani guda da ka ga ya ɓace kafin ka faɗi kammalawarka.",
+      "ajami": null
+    }
+  },
+  {
+    "id": "CT10",
+    "gradeband": "adult",
+    "subject": "Critical Thinking",
+    "subjectHa": "Tunani da Tantancewa",
+    "moduleNumber": 10,
+    "titleEn": "A Checklist for Evaluating Any Claim",
+    "titleHa": "Jerin Dubawa Domin Tantance Kowane Iƙirari",
+    "titleAjami": null,
+    "title": {
+      "ha": "Jerin Dubawa Domin Tantance Kowane Iƙirari",
+      "ajami": null
+    },
+    "ajami_validated": false,
+    "summary": {
+        "ha": "Ka yi amfani da jerin dubawa mai amfani domin tantance iƙirari: tushen bayani, yadda aka sani, dalili da hujja, nau'in magana, lambobi, dalili da sakamako, ko son wani sakamako yana sa ka karkata, bayanin da ya ɓace, da mataki mai hankali.",
+      "ajami": null
+    },
+    "textExplanationHa": "Wani saƙo ya ce za a matsar da aikin tsaftace unguwa saboda ruwan sama zai yi, kuma ya ce “mutane 8 cikin 10 sun yarda.” Kafin ka canja shirinka, yi jerin dubawa. Mene ne iƙirari? Wa ya faɗa, kuma ta yaya ya sani? Shin akwai dalili da hujja, ko magana ce ta mutum kawai? Ka raba tabbataccen bayani, ra'ayi, da zato. Idan akwai lamba, tambayi su wane ne aka ƙirga, da abin da aka kwatanta, da lokacin da aka tattara bayanan. Idan saƙon ya ce wani abu ya jawo wani, tambayi ko an nuna haɗin ko abubuwa ne kawai suka biyo juna. Ka duba ko son wani sakamako yana sa ka karkata: kada ka karɓi rahoto guda saboda ya dace da burinka. Ka tambayi abin da aka bari a waje, kamar bayanin mai shirya aikin ko sabon rahoton yanayi. A ƙarshe, zaɓi mataki mai hankali: ka kira mai shirya aikin, ka shirya madadi, ko ka jira tabbaci idan ba gaggawa ba ne. Jerin nan ba ya ba da amsa da kansa; yana taimaka maka ka san abin da za ka tantance kafin ka kammala.",
+    "textExplanationAjami": null,
+    "audioScript": null,
+    "audioFile": "audio/critical-thinking/CT10.mp3",
+    "imageCard": null,
+    "lessons": [
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Saƙo mai abubuwa da yawa",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Saƙo ya ce za a matsar da aikin tsaftace unguwa saboda ruwan sama zai yi, kuma ya kawo lamba. Maimakon karɓar saƙon kai tsaye, ka bi tambayoyi a jere.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Jerin dubawa",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Tsarin tambayoyi da ake bi domin a tantance iƙirari kafin a yanke kammalawa.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "glossary-card",
+        "term": {
+          "ha": "Mataki mai hankali",
+          "ajami": null
+        },
+        "definition": {
+          "ha": "Aikin da ya dace da hujjar da ake da ita, rashin tabbaci, da yiwuwar illa.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "example",
+        "title": {
+          "ha": "Tantance saƙon tsaftace unguwa",
+          "ajami": null
+        },
+        "scenario": {
+          "ha": "Ka gano iƙirari, ka kira mai shirya aikin, ka tambayi yadda aka tara “8 cikin 10,” sannan ka duba sabon rahoton yanayi kafin ka canja shirinka.",
+          "ajami": null
+        },
+        "takeaway": {
+          "ha": "Tambayoyin daban-daban sun nuna abin da za a bincika kafin a zaɓi jira, canja shiri, ko shirya madadi.",
+          "ajami": null
+        }
+      },
+      {
+        "type": "prose",
+        "heading": {
+          "ha": "Bi tambayoyi, sannan ka zaɓi mataki",
+          "ajami": null
+        },
+        "body": {
+          "ha": "Ka gano iƙirari da tushen bayani; ka duba yadda aka sani, dalili da hujja, da nau'in magana. Ka duba lambobi, dalili da sakamako, kuma ka duba ko son wani sakamako yana sa ka karkata. Ka duba bayanin da ya ɓace. Sannan ka zaɓi mataki mai hankali.",
+          "ajami": null
+        }
+      }
+    ],
+    "microPauses": [],
+    "passingScore": 3,
+    "quiz": [
+      {
+        "templateHa": "Bayan ka gano iƙirari, wace tambaya ce ta gaba a jerin dubawa?",
+        "answerFormula": "Wa ya faɗa kuma ta yaya ya sani?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Shin mai saƙon ya ce yana da tabbaci?",
+          "Mutane nawa suka tura saƙon?",
+          "Shin saƙon ya yi kama da abin da ka riga ka ji?"
+        ]
+      },
+      {
+        "templateHa": "Idan iƙirari yana ɗauke da lamba, me ya kamata ka duba?",
+        "answerFormula": "Waɗanda aka ƙirga, abin da aka kwatanta, da lokacin da aka tattara bayanan",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko lambar tana da takamaiman adadi",
+          "Ko lambar tana da girma sosai",
+          "Ko mai magana yana son lamba"
+        ]
+      },
+      {
+        "templateHa": "Idan saƙo ya ce A ya jawo B, me ya kamata ka tambaya?",
+        "answerFormula": "Ko an nuna haɗin dalili ko B ya biyo bayan A kawai",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko A ya faru kafin B",
+          "Ko mutane da yawa sun ce A ne ya jawo B",
+          "Ko B yana da muhimmanci sosai"
+        ]
+      },
+      {
+        "templateHa": "Idan kana son wani sakamako, me ya kamata ka yi?",
+        "answerFormula": "Ka nemi hujjar da ta saba da abin da kake so",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ka karɓi rahoto mafi daɗi kawai",
+          "Ka cire bayanin da ba ka so",
+          "Ka ce burinka hujja ne"
+        ]
+      },
+      {
+        "templateHa": "Bayan jerin dubawa ya nuna rashin tabbaci, wane mataki ya fi hankali?",
+        "answerFormula": "A tuntubi mai shirya aikin domin tabbatar da bayanin, sannan a shirya madadi idan ya dace",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ce an gama tabbatar da komai",
+          "A yaɗa saƙon ba tare da tambaya ba",
+          "A yi watsi da bayanin da ya ɓace"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Bayan ka gano iƙirari, wace tambaya ce ta gaba a jerin dubawa?",
+        "answerFormula": "Wa ya faɗa kuma ta yaya ya sani?",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Shin mai saƙon ya ce yana da tabbaci?",
+          "Mutane nawa suka tura saƙon?",
+          "Shin saƙon ya yi kama da abin da ka riga ka ji?"
+        ]
+      },
+      {
+        "templateHa": "Idan iƙirari yana ɗauke da lamba, me ya kamata ka duba?",
+        "answerFormula": "Waɗanda aka ƙirga, abin da aka kwatanta, da lokacin da aka tattara bayanan",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko lambar tana da takamaiman adadi",
+          "Ko lambar tana da girma sosai",
+          "Ko mai magana yana son lamba"
+        ]
+      },
+      {
+        "templateHa": "Idan saƙo ya ce A ya jawo B, me ya kamata ka tambaya?",
+        "answerFormula": "Ko an nuna haɗin dalili ko B ya biyo bayan A kawai",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ko A ya faru kafin B",
+          "Ko mutane da yawa sun ce A ne ya jawo B",
+          "Ko B yana da muhimmanci sosai"
+        ]
+      },
+      {
+        "templateHa": "Idan kana son wani sakamako, me ya kamata ka yi?",
+        "answerFormula": "Ka nemi hujjar da ta saba da abin da kake so",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "Ka karɓi rahoto mafi daɗi kawai",
+          "Ka cire bayanin da ba ka so",
+          "Ka ce burinka hujja ne"
+        ]
+      },
+      {
+        "templateHa": "Bayan jerin dubawa ya nuna rashin tabbaci, wane mataki ya fi hankali?",
+        "answerFormula": "A tuntubi mai shirya aikin domin tabbatar da bayanin, sannan a shirya madadi idan ya dace",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "A ce an gama tabbatar da komai",
+          "A yaɗa saƙon ba tare da tambaya ba",
+          "A yi watsi da bayanin da ya ɓace"
+        ]
+      }
+    ],
+    "track": "vocational",
+    "targetAudience": "adult",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": {
+      "ha": "Yau, ɗauki iƙirari guda daga zancen yau da kullum; bi jerin dubawar nan, rubuta abin da ka tantance, sannan zaɓi mataki mai hankali.",
+      "ajami": null
+    }
+  }
+]

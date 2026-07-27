@@ -1,0 +1,176 @@
+{
+  "runAt": "2026-07-12T14:23:54.758Z",
+  "scope": "PoC pipeline proofs only",
+  "automated": [
+    {
+      "id": "label-source-provenance",
+      "status": "PASS",
+      "details": {
+        "sourceManifest": "tools/image-manifest/p2-bsci-image-manifest.json",
+        "module": "p2-bsci-16",
+        "expected": [
+          "Ruwa",
+          "Iska",
+          "Hasken Rana",
+          "Ƙasa"
+        ],
+        "record": [
+          "Ruwa",
+          "Iska",
+          "Hasken Rana",
+          "Ƙasa"
+        ]
+      }
+    },
+    {
+      "id": "math-validation",
+      "status": "PASS",
+      "details": {
+        "expression": "27 + 15 = 42"
+      }
+    },
+    {
+      "id": "asset:latin-p2-bsci-16-proof.png:format-dimensions",
+      "status": "PASS",
+      "details": {
+        "format": "png",
+        "width": 1536,
+        "height": 1024,
+        "alpha": false
+      }
+    },
+    {
+      "id": "asset:latin-p2-bsci-16-proof.png:alpha-background",
+      "status": "PASS",
+      "details": {
+        "policy": "PoC composites must be opaque"
+      }
+    },
+    {
+      "id": "asset:latin-p2-bsci-16-proof.png:checksum",
+      "status": "PASS",
+      "details": {
+        "sha256": "62547542de1288595a19c5dc755521a6fa973305008975d56ffec8038a79f3e0"
+      }
+    },
+    {
+      "id": "asset:latin-p2-bsci-16-proof.png:label-spelling",
+      "status": "MANUAL_REQUIRED",
+      "details": {
+        "verbatimManifestStrings": [
+          "Ruwa",
+          "Iska",
+          "Hasken Rana",
+          "Ƙasa"
+        ]
+      }
+    },
+    {
+      "id": "asset:ajami-unvalidated-proof.png:format-dimensions",
+      "status": "PASS",
+      "details": {
+        "format": "png",
+        "width": 1536,
+        "height": 1024,
+        "alpha": false
+      }
+    },
+    {
+      "id": "asset:ajami-unvalidated-proof.png:alpha-background",
+      "status": "PASS",
+      "details": {
+        "policy": "PoC composites must be opaque"
+      }
+    },
+    {
+      "id": "asset:ajami-unvalidated-proof.png:checksum",
+      "status": "PASS",
+      "details": {
+        "sha256": "0168423c1a5a5d76aa0a93bed3e4e478d8f4f3f83a05588251ee926a588c7538"
+      }
+    },
+    {
+      "id": "asset:ajami-unvalidated-proof.png:unvalidated-marker",
+      "status": "MANUAL_REQUIRED",
+      "details": "GWAJI — BA A TANTANCE BA / UNVALIDATED TEST"
+    },
+    {
+      "id": "asset:bilingual-unvalidated-proof.png:format-dimensions",
+      "status": "PASS",
+      "details": {
+        "format": "png",
+        "width": 1536,
+        "height": 1024,
+        "alpha": false
+      }
+    },
+    {
+      "id": "asset:bilingual-unvalidated-proof.png:alpha-background",
+      "status": "PASS",
+      "details": {
+        "policy": "PoC composites must be opaque"
+      }
+    },
+    {
+      "id": "asset:bilingual-unvalidated-proof.png:checksum",
+      "status": "PASS",
+      "details": {
+        "sha256": "c69ec64b143648c5734200344100e0c59f65435dd5af3eecaee60c7ca6b69497"
+      }
+    },
+    {
+      "id": "asset:bilingual-unvalidated-proof.png:unvalidated-marker",
+      "status": "MANUAL_REQUIRED",
+      "details": "GWAJI — BA A TANTANCE BA / UNVALIDATED TEST"
+    },
+    {
+      "id": "asset:math-27-plus-15-equals-42-proof.png:format-dimensions",
+      "status": "PASS",
+      "details": {
+        "format": "png",
+        "width": 1536,
+        "height": 1024,
+        "alpha": false
+      }
+    },
+    {
+      "id": "asset:math-27-plus-15-equals-42-proof.png:alpha-background",
+      "status": "PASS",
+      "details": {
+        "policy": "PoC composites must be opaque"
+      }
+    },
+    {
+      "id": "asset:math-27-plus-15-equals-42-proof.png:checksum",
+      "status": "PASS",
+      "details": {
+        "sha256": "bee1171c5ddb125fea54aee7ae23f08e9b9e0f9d0eff09d4cba9a57c17f09a04"
+      }
+    },
+    {
+      "id": "asset:math-27-plus-15-equals-42-proof.png:math-overlay",
+      "status": "MANUAL_REQUIRED",
+      "details": {
+        "exact": "27 + 15 = 42",
+        "columnLines": [
+          "  27",
+          "+ 15",
+          "────",
+          "  42"
+        ]
+      }
+    }
+  ],
+  "manualChecklist": "qa/manual-checklist.md",
+  "overall": "PASS",
+  "manualRequired": [
+    "generated-text leakage (not applicable to placeholder, mandatory for API art)",
+    "watermark detection",
+    "label clipping/overlap",
+    "contrast",
+    "mobile-card legibility",
+    "RTL direction and visual joining",
+    "scientific diagram accuracy",
+    "accepted/rejected decision and rejection reason"
+  ]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "p4-maths-09",
+    "labels": [
+      {
+        "text": "rabi",
+        "targetPoint": { "x": 0.238, "y": 0.391 },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-maths-11",
+    "labels": [
+      {
+        "text": "Goma-Goma",
+        "targetPoint": { "x": 0.335, "y": 0.754 },
+        "confidence": "high"
+      },
+      {
+        "text": "Ɗari-Ɗari",
+        "targetPoint": { "x": 0.622, "y": 0.625 },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-maths-12",
+    "labels": [
+      {
+        "text": "perimita",
+        "targetPoint": { "x": 0.324, "y": 0.622 },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p4-maths-13",
+    "labels": [
+      {
+        "text": "Yanki",
+        "targetPoint": { "x": 0.333, "y": 0.576 },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p4-maths-14",
+    "labels": [
+      {
+        "text": "kusurwa madaidaiciya",
+        "targetPoint": { "x": 0.404, "y": 0.688 },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-maths-15",
+    "labels": [
+      {
+        "text": "Digiri",
+        "targetPoint": { "x": 0.491, "y": 0.781 },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p4-maths-18",
+    "labels": [
+      {
+        "text": "Agogon Awa 24",
+        "targetPoint": { "x": 0.628, "y": 0.566 },
+        "confidence": "medium"
+      }
+    ]
+  }
+]

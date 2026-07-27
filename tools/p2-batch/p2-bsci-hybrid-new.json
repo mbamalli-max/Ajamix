@@ -1,0 +1,98 @@
+[
+  {
+    "id": "p2-bsci-16",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 16,
+    "titleEn": "What Plants Need to Grow",
+    "titleHa": "Abubuwan da Tsiro Ke Bukata Domin Girma",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tsiro abu ne mai rai, kuma yana bukatar abubuwa domin ya girma lafiya. Tushensa yana samun ruwa daga ƙasa, ganyensa kuma yana amfani da hasken rana. Tsiro yana bukatar iska da ƙasa mai dacewa domin tushensa ya zauna. Idan aka shuka wake a tukunya tare da babba, a zuba ruwa kaɗan-kaɗan; ruwa mai yawa na iya damun tsiro. A sanya tukunyar a wurin da take samun hasken rana, amma kada a ja ganye ko a karya kara. Ka lura da tsiro kowace rana: ko sabon ganye ya fito, ko ƙasa ta bushe. Ka faɗa wa babba abin da ka gani. Ruwa, iska, hasken rana, da ƙasa mai dacewa suna taimaka wa tsiro ya girma. Kulawa mai kyau tana taimaka wa tsiro ya zama lafiya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi abubuwan da tsiro ke bukata domin girma. [MAIN] Tsiro yana bukatar ruwa, iska, hasken rana, da ƙasa mai dacewa domin ya girma. Tushensa yana samun ruwa daga ƙasa, ganyensa kuma yana amfani da hasken rana. [PAUSE 1] Wane abu ne tushen tsiro yake samu daga ƙasa? [MAIN] Idan ka shuka wake a tukunya tare da babba, ka zuba ruwa kaɗan-kaɗan. Ka sanya tukunyar a wurin da take samun hasken rana, amma kada ka ja ganye ko ka karya kara. Ka lura ko sabon ganye ya fito. [PAUSE 2] Me bai kamata ka yi wa tsiro ba? [OUTRO] Ka kula da tsiro cikin hankali; ruwa, iska, hasken rana, da ƙasa mai dacewa suna taimaka masa girma.",
+    "audioFile": "audio/p2-bsci-16.mp3",
+    "imageCard": "images/p2-bsci-16.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Wane abu ne tushen tsiro yake samu daga ƙasa?", "correctAnswer": "ruwa", "options": ["ruwa", "toka", "gilashi"] },
+      { "pauseAtMs": 150000, "questionHa": "Me bai kamata ka yi wa tsiro ba?", "correctAnswer": "ka karya kara", "options": ["ka karya kara", "ka lura da shi", "ka zuba ruwa kaɗan"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Wane abubuwa ne tsiro yake bukata domin ya girma?", "answerFormula": "ruwa, iska, hasken rana, da ƙasa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["toka da gilashi", "takarda da fenti", "dutse da ƙusa"] },
+      { "templateHa": "Wane sashe na tsiro yake samun ruwa daga ƙasa?", "answerFormula": "tushe", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ganye", "fure", "'ya'ya"] },
+      { "templateHa": "Me ya kamata ka yi idan ƙasar tukunya ta bushe?", "answerFormula": "ka sanar da babba a zuba ruwa kaɗan", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ka karya tukunya", "ka cire ganye", "ka zuba yashi kawai"] },
+      { "templateHa": "Ina ya dace a sanya tukunyar tsiro?", "answerFormula": "wurin da yake samun hasken rana", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["cikin duhu kullum", "cikin firiza", "ƙarƙashin ruwa"] },
+      { "templateHa": "Me za ka lura da shi a tsiro kullum?", "answerFormula": "ko sabon ganye ya fito", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ko ya zama dutse", "ko ya zama littafi", "ko ya zama mota"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-17",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 17,
+    "titleEn": "Habitats and Their Differences",
+    "titleHa": "Mazaunin Halittu da Bambancinsu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Mazauni wuri ne da halitta take rayuwa ko take samun abin da take bukata. Kifi yana rayuwa a ruwa, tsiro yana iya girma a ƙasa, kuma tsuntsu na iya zama a bishiya ko ya gina sheƙa. A gona za ka iya ganin amfanin gona da ƙananan dabbobi; a gida kuma za ka iya ganin kaza ko akuya tare da masu kula da su. Wuri ɗaya ba ya dace da kowace halitta. Kifi ba ya rayuwa a busasshiyar ƙasa, kuma tsiro ba ya girma da kyau ba tare da wurin da tushensa zai zauna ba. Ka lura da halittu daga nesa ka haɗa su da wurinsu, amma kada ka taɓa sheƙa, rami, ko dabbar daji. Idan ka ga dabba mai hatsari ko wurin da ba ka sani ba, ka sanar da babba. Halittu daban-daban suna sa muhallinmu ya zama mai ban sha'awa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi mazaunin halittu da bambancinsu. [MAIN] Mazauni wuri ne da halitta take rayuwa ko take samun abin da take bukata. Kifi yana rayuwa a ruwa, tsiro yana girma a ƙasa, tsuntsu kuma na iya zama a bishiya ko ya gina sheƙa. [PAUSE 1] A ina kifi yake rayuwa? [MAIN] Ka lura da halittu daga nesa ka haɗa su da wurinsu. Kada ka taɓa sheƙa, rami, ko dabbar daji. Idan ka ga dabba mai hatsari ko wurin da ba ka sani ba, ka sanar da babba. [PAUSE 2] Me bai kamata ka taɓa ba domin wasa? [OUTRO] Ka girmama mazaunin halittu; kowane wuri yana taimaka wa wata halitta ta rayu."
+    ,"audioFile": "audio/p2-bsci-17.mp3", "imageCard": "images/p2-bsci-17.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "A ina kifi yake rayuwa?", "correctAnswer": "a ruwa", "options": ["a ruwa", "cikin wuta", "a kan rufi"] },
+      { "pauseAtMs": 150000, "questionHa": "Me bai kamata ka taɓa ba domin wasa?", "correctAnswer": "sheƙar tsuntsu", "options": ["sheƙar tsuntsu", "littafi", "allon aji"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Menene mazauni?", "answerFormula": "wurin da halitta take rayuwa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["nau'in abinci", "sunan dabba", "kayan wasa"] },
+      { "templateHa": "Wane wuri ya dace da kifi?", "answerFormula": "ruwa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["busasshiyar hanya", "cikin tukunyar wuta", "saman bishiya"] },
+      { "templateHa": "A ina tsuntsu zai iya gina sheƙa?", "answerFormula": "a bishiya", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["cikin ruwa", "cikin firiza", "ƙarƙashin mota"] },
+      { "templateHa": "Me ya kamata ka yi idan ka ga dabba mai hatsari?", "answerFormula": "ka sanar da babba", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ka kusance ta", "ka jefa mata dutse", "ka taɓa ta"] },
+      { "templateHa": "Me ya sa ba a rushe ramin dabbar daji?", "answerFormula": "wurin rayuwarta ne", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["kayan wasa ne", "wurin zane ne", "abincin mutum ne"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-18",
+    "gradeband": "p2", "subject": "Basic Science", "subjectHa": "Kimiyya", "moduleNumber": 18,
+    "titleEn": "Materials, Their Properties and Uses", "titleHa": "Kayan Abu, Halayensu da Amfaninsu", "titleAjami": null, "ajami_validated": false,
+    "textExplanationHa": "Ana yin abubuwa da kayan abu daban-daban. Itace tana iya zama tebur ko ƙofa; ƙarfe yana iya zama cokali ko ƙusa; roba tana iya zama takalmi; zane yana iya zama riga; filastik kuma yana iya zama guga. Kowane kaya yana da halinsa. Wasu suna da tauri, wasu masu laushi ne; wasu suna da santsi, wasu masu kaushi ne. Wasu abubuwa suna lanƙwasuwa da sauƙi, wasu kuwa ba sa lanƙwasuwa da sauƙi. Wasu ba sa shan ruwa, wasu kuma suna tsotse ruwa. Ka duba abu mai aminci a gida ko a aji ka faɗi kayan da aka yi shi da su da dalilin amfaninsa. Kada ka taɓa gilashi da ya karye, ƙarfe mai kaifi, ko abu mai zafi. Ka sanar da babba idan ka ga irin waɗannan abubuwa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi kayan abu, halayensu da amfaninsu. [MAIN] Ana yin abubuwa da itace, ƙarfe, roba, zane, filastik, da gilashi. Itace tana iya zama tebur, ƙarfe yana iya zama cokali, roba tana iya zama takalmi, zane kuma yana iya zama riga. [PAUSE 1] Wane kaya ake iya yin riga da shi? [MAIN] Wasu kayan suna da tauri, wasu masu laushi ne; wasu suna da santsi, wasu masu kaushi ne. Wasu suna lanƙwasuwa da sauƙi, wasu ba sa lanƙwasuwa da sauƙi. Kada ka taɓa gilashi da ya karye, ƙarfe mai kaifi, ko abu mai zafi. [PAUSE 2] Me ya kamata ka yi idan ka ga gilashi da ya karye? [OUTRO] Ka duba kayan abu masu aminci a kusa da kai, ka faɗi halinsu da abin da ya sa ake amfani da su."
+    ,"audioFile": "audio/p2-bsci-18.mp3", "imageCard": "images/p2-bsci-18.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Wane kaya ake iya yin riga da shi?", "correctAnswer": "zane", "options": ["zane", "ruwa", "iska"] },
+      { "pauseAtMs": 150000, "questionHa": "Me ya kamata ka yi idan ka ga gilashi da ya karye?", "correctAnswer": "ka sanar da babba", "options": ["ka sanar da babba", "ka ɗauke shi da hannu", "ka taka shi"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Wane kaya ake iya yin tebur da shi?", "answerFormula": "itace", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["iska", "ruwa", "hayaƙi"] },
+      { "templateHa": "Wane kaya ake iya yin takalmi da shi?", "answerFormula": "roba", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["gajimare", "ruwa", "iska"] },
+      { "templateHa": "Wane hali ne na abu mai santsi?", "answerFormula": "fuskarsa ba ta da kaushi", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["yana da ƙaya", "yana da wuta", "yana da sauti"] },
+      { "templateHa": "Wane abu ne zai iya tsotse ruwa?", "answerFormula": "zane", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["gilashi", "dutse", "ƙarfe"] },
+      { "templateHa": "Me bai kamata ka taɓa da hannu ba?", "answerFormula": "gilashi da ya karye", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["riga mai tsabta", "littafi", "allon aji"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-19", "gradeband": "p2", "subject": "Basic Science", "subjectHa": "Kimiyya", "moduleNumber": 19,
+    "titleEn": "Clay and Moulding Shapes", "titleHa": "Laka da Ƙera Siffofi", "titleAjami": null, "ajami_validated": false,
+    "textExplanationHa": "Laka ƙasa ce mai laushi idan ta sami ruwa kaɗan. Ana iya matse laka da hannu a ƙera siffa mai sauƙi, kamar ƙwallo, ƙaramin kwano, ko dabba ta wasa. Idan laka ta bushe, siffar na ƙara tauri kuma ba ta sauya sauƙi. A wasu wurare ana amfani da laka wajen yin tukwane da wasu kayan gida. Idan za ka yi aiki da laka, ka nemi izinin babba kuma ka yi amfani da laka mai tsafta daga wurin da aka amince da shi. Kada ka ɗauki ƙasa mai datti, kada ka sa laka a baki, kuma kada ka jefa wa wani. Bayan ka gama, ka wanke hannuwanka da sabulu da ruwa. Ka lura da bambanci tsakanin laka mai ɗan ruwa, wadda take sauƙin ƙerawa, da laka busasshiya, wadda ta fi tauri.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi laka da ƙera siffofi. [MAIN] Laka ƙasa ce mai laushi idan ta sami ruwa kaɗan. Ana iya matse ta da hannu a ƙera ƙwallo, ƙaramin kwano, ko dabba ta wasa. Idan laka ta bushe, siffar na ƙara tauri. [PAUSE 1] Yaya laka take idan ta sami ruwa kaɗan? [MAIN] Ka yi aiki da laka tare da izinin babba kuma ka yi amfani da laka mai tsafta. Kada ka sa laka a baki ko ka jefa wa wani. Bayan ka gama, ka wanke hannuwanka da sabulu da ruwa. [PAUSE 2] Me ya kamata ka yi bayan aikin laka? [OUTRO] Ka lura da laka mai ɗan ruwa da busasshiyar laka; ɗayarsu tana sauƙin ƙerawa, ɗayar kuma ta fi tauri."
+    ,"audioFile": "audio/p2-bsci-19.mp3", "imageCard": "images/p2-bsci-19.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Yaya laka take idan ta sami ruwa kaɗan?", "correctAnswer": "mai laushi", "options": ["mai laushi", "mai ƙonewa", "mai kaifi"] },
+      { "pauseAtMs": 150000, "questionHa": "Me ya kamata ka yi bayan aikin laka?", "correctAnswer": "ka wanke hannuwanka", "options": ["ka wanke hannuwanka", "ka sa laka a baki", "ka jefa laka wa wani"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Yaya laka take idan ta sami ruwa kaɗan?", "answerFormula": "mai laushi", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["mai ƙonewa", "mai kaifi", "mai iska"] },
+      { "templateHa": "Me za a iya ƙerawa da laka?", "answerFormula": "ƙwallo", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ruwan sama", "iska", "sauti"] },
+      { "templateHa": "Me ke faruwa da laka idan ta bushe?", "answerFormula": "ta fi tauri", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ta zama ruwa", "ta zama iska", "ta zama haske"] },
+      { "templateHa": "Wane irin laka ya dace a yi amfani da ita?", "answerFormula": "laka mai tsafta", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["laka mai datti", "laka daga baki", "laka mai ƙaya"] },
+      { "templateHa": "Me bai kamata ka yi da laka ba?", "answerFormula": "ka sa ta a baki", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ka ƙera ƙwallo", "ka nemi izinin babba", "ka wanke hannu"] }
+    ],
+    "track": "formal", "targetAudience": "youth", "gapTeaser": null, "chainNext": null, "isChainLeaf": true, "useTodayPrompt": null
+  }
+]

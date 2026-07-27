@@ -1,0 +1,429 @@
+[
+  {
+    "id": "p6-bsci-01",
+    "labels": [
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.44,
+          "y": 0.48
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Duniyoyi",
+        "targetPoint": {
+          "x": 0.4,
+          "y": 0.54
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Ƙarfin jan Ƙasa",
+        "targetPoint": {
+          "x": 0.85,
+          "y": 0.43
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-02",
+    "labels": [
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.58,
+          "y": 0.45
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Dare",
+        "targetPoint": {
+          "x": 0.34,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kusufin Rana",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.34
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Husufin Wata",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.53
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-03",
+    "labels": [
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.16,
+          "y": 0.2
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Gajimare",
+        "targetPoint": {
+          "x": 0.4,
+          "y": 0.22
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Iska",
+        "targetPoint": {
+          "x": 0.63,
+          "y": 0.22
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ruwan sama",
+        "targetPoint": {
+          "x": 0.86,
+          "y": 0.22
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Damina",
+        "targetPoint": {
+          "x": 0.6,
+          "y": 0.72
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Rani",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.72
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-04",
+    "labels": [
+      {
+        "text": "Ƙarfi",
+        "targetPoint": {
+          "x": 0.27,
+          "y": 0.34
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Guga",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.6
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-05",
+    "labels": [
+      {
+        "text": "Zuciya",
+        "targetPoint": {
+          "x": 0.36,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Jijiyoyin jini",
+        "targetPoint": {
+          "x": 0.35,
+          "y": 0.3
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-06",
+    "labels": [
+      {
+        "text": "Balaga",
+        "targetPoint": {
+          "x": 0.14,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Tsafta",
+        "targetPoint": {
+          "x": 0.34,
+          "y": 0.83
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Amintaccen babba",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.5
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-07",
+    "labels": [
+      {
+        "text": "Haihuwa",
+        "targetPoint": {
+          "x": 0.25,
+          "y": 0.45
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Girma",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.48
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-08",
+    "labels": [
+      {
+        "text": "Matsin iska",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-09",
+    "labels": [
+      {
+        "text": "Zinariya",
+        "targetPoint": {
+          "x": 0.14,
+          "y": 0.38
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kwal",
+        "targetPoint": {
+          "x": 0.34,
+          "y": 0.37
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Dutsen ƙarfe",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.36
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Gishiri",
+        "targetPoint": {
+          "x": 0.34,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ɗanyen mai",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.63
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-10",
+    "labels": [
+      {
+        "text": "Farin haske",
+        "targetPoint": {
+          "x": 0.13,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Launuka",
+        "targetPoint": {
+          "x": 0.55,
+          "y": 0.51
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-11",
+    "labels": [
+      {
+        "text": "Rula",
+        "targetPoint": {
+          "x": 0.41,
+          "y": 0.39
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ma'aunin T",
+        "targetPoint": {
+          "x": 0.18,
+          "y": 0.54
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ma'aunin kusurwa",
+        "targetPoint": {
+          "x": 0.61,
+          "y": 0.71
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Komfas",
+        "targetPoint": {
+          "x": 0.48,
+          "y": 0.86
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-12",
+    "labels": [
+      {
+        "text": "Awo",
+        "targetPoint": {
+          "x": 0.25,
+          "y": 0.38
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Alama",
+        "targetPoint": {
+          "x": 0.55,
+          "y": 0.42
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Yanka",
+        "targetPoint": {
+          "x": 0.71,
+          "y": 0.41
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-13",
+    "labels": [
+      {
+        "text": "Kariya",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.54
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Tsallaka hanya",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.54
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-14",
+    "labels": [
+      {
+        "text": "Madogara",
+        "targetPoint": {
+          "x": 0.25,
+          "y": 0.66
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kaya",
+        "targetPoint": {
+          "x": 0.06,
+          "y": 0.6
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Turawa",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.46
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p6-bsci-15",
+    "labels": [
+      {
+        "text": "Gangara",
+        "targetPoint": {
+          "x": 0.21,
+          "y": 0.71
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙarfi",
+        "targetPoint": {
+          "x": 0.27,
+          "y": 0.63
+        },
+        "confidence": "medium"
+      }
+    ]
+  }
+]

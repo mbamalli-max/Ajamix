@@ -1,0 +1,152 @@
+[
+  {
+    "id": "p4-socs-01",
+    "imagePath": "images/p4-socs-01.png",
+    "titleEn": "Nigeria — Our Country",
+    "titleHa": "Nijeriya — Ƙasarmu",
+    "type": "map",
+    "depictEn": "A clear current outline map of Nigeria showing all 36 states, the Federal Capital Territory, Abuja, the six geopolitical zones by neutral pastel boundaries, a north arrow, and the Atlantic coast; include a small learner inset locating their state and its capital.",
+    "labelsHa": ["Nijeriya", "Abuja", "Arewa", "Kudu", "Gabas", "Yamma"],
+    "safetyNote": "Geographic and civic framing only: no historical dates, kingdoms, colonial borders, independence scene, disputed-boundary claim, party colour, politician, flag dominance, or ranking of zones; verify administrative boundaries before rendering."
+  },
+  {
+    "id": "p4-socs-02",
+    "imagePath": "images/p4-socs-02.png",
+    "titleEn": "The Nigerian People — Ethnic Groups and Languages",
+    "titleHa": "Al’ummomin Nijeriya da Harsunansu",
+    "type": "illustration",
+    "depictEn": "A balanced Nigerian classroom language circle with girls and boys holding equal-size language cards—Hausa, Fulani, Yoruba, Igbo, Kanuri, Tiv, Edo, and Ibibio—while cooperating on one shared map activity.",
+    "labelsHa": ["Hausa", "Fulani", "Yoruba", "Igbo", "Kanuri", "Tiv", "Edo", "Ibibio", "Haɗin kai"],
+    "safetyNote": "Give every named community equal visual weight; no major/minor ranking, skin-tone coding, caricature, costume spectacle, fixed occupation, religious symbol, regional hierarchy, or suggestion that appearance determines language."
+  },
+  {
+    "id": "p4-socs-03",
+    "imagePath": "images/p4-socs-03.png",
+    "titleEn": "Nigeria's Geography — Landscape and Regions",
+    "titleHa": "Yanayin Ƙasa da Yankunan Nijeriya",
+    "type": "map",
+    "depictEn": "A present-day physical-geography map of Nigeria with broad, approximate environmental bands for Sahel, Sudan grassland, forest, and coastal mangrove; clearly trace the Niger and Benue rivers meeting at Lokoja and add small neutral icons for plains, hills, coast, farming, grazing, water, forest, and minerals.",
+    "labelsHa": ["Sahel", "Filayen ciyawa", "Dazuzzuka", "Gabar teku", "Kogin Neja", "Kogin Binuwai", "Lokoja"],
+    "safetyNote": "Mandatory neutrality review: geography/civics only, with no historical narrative, pre-colonial kingdom, colonial content, migration grievance, conflict zone, ethnic overlay, resource-ownership claim, or implication that resources follow exact hard boundaries."
+  },
+  {
+    "id": "p4-socs-04",
+    "imagePath": "images/p4-socs-04.png",
+    "titleEn": "National Identity — Our Flag, Anthem, Pledge, and Symbols",
+    "titleHa": "Tuta, Taken Ƙasa, Alkawarin Ƙasa, da Alamomi",
+    "type": "symbol",
+    "depictEn": "A respectful study sheet with an accurate Nigerian green-white-green flag, a verified coat of arms, a generic musical-note panel for the national anthem, a speech panel for the national pledge, and a diverse pupil group standing calmly with equal prominence.",
+    "labelsHa": ["Tutar Nijeriya", "Tambarin Nijeriya", "Taken ƙasa", "Alkawarin ƙasa", "Zaman lafiya", "Haɗin kai"],
+    "safetyNote": "Verify current official symbol designs; do not print anthem or pledge lyrics, alter the coat of arms, add a party colour or logo, show a politician, militarise the scene, or imply compulsory political loyalty."
+  },
+  {
+    "id": "p4-socs-05",
+    "imagePath": "images/p4-socs-05.png",
+    "titleEn": "Nigerian Government — The Three Tiers",
+    "titleHa": "Matakan Gwamnati Uku a Nijeriya",
+    "type": "diagram",
+    "depictEn": "A three-level civic-services diagram linking the Federal Government to nationwide currency and inter-state work, a state government to schools, hospitals, and state roads, and a local government office to markets, sanitation, water points, and local roads; shared-service arrows connect the levels.",
+    "labelsHa": ["Gwamnatin Tarayya", "Gwamnatin jiha", "Ƙaramar hukuma", "Ayyukan jama’a"],
+    "safetyNote": "No real seal, named office-holder, party branding, campaign material, hierarchy of human worth, or claim that one tier alone supplies every service; depict shared responsibilities and women and men as workers and residents."
+  },
+  {
+    "id": "p4-socs-06",
+    "imagePath": "images/p4-socs-06.png",
+    "titleEn": "The Three Arms of Government",
+    "titleHa": "Rassan Gwamnati Uku",
+    "type": "diagram",
+    "depictEn": "Three equal connected panels: an executive office implementing a public-service plan, a diverse legislature discussing a draft law, and a neutral courtroom resolving a simple civic dispute; two-way check arrows show that no arm works without legal limits.",
+    "labelsHa": ["Reshen zartarwa", "Reshen kafa doka", "Reshen shari’a", "Adalci", "Bin doka"],
+    "safetyNote": "Keep all three arms equal in size; no real politician, party logo, judicial seal, gavel stereotype as punishment, arrest, prison, ideological message, or visual claim that courts or lawmakers control every other arm."
+  },
+  {
+    "id": "p4-socs-07",
+    "imagePath": "images/p4-socs-07.png",
+    "titleEn": "Democracy and Elections",
+    "titleHa": "Yadda Jama’a Ke Nuna Wanda Suke So Ya Jagorance Su",
+    "type": "diagram",
+    "depictEn": "A strictly neutral step sequence showing eligible adults registering, joining an orderly queue, privately marking one generic choice once, placing it through the approved process, and officials counting under observation; INEC appears only as a plain institutional label.",
+    "labelsHa": ["INEC", "Rajista", "Sau ɗaya", "Sirri", "Gaskiya"],
+    "safetyNote": "No party, candidate, slogan, ideology, party colour, ballot choice text, result prediction, campaign crowd, inducement, intimidation, child voting, or endorsement; balance gender, region, disability, and dress without profiling."
+  },
+  {
+    "id": "p4-socs-08",
+    "imagePath": "images/p4-socs-08.png",
+    "titleEn": "Nigerian Economy — Agriculture",
+    "titleHa": "Tattalin Arzikin Nijeriya — Noma da Kiwo",
+    "type": "diagram",
+    "depictEn": "A farm-to-market diagram with Northern groundnuts and grains, cocoa and oil-palm examples from wetter southern areas, safely cared-for cattle, goats, sheep, poultry, and fish, plus a small fadama dry-season vegetable plot using retained water and a chain through storage, transport, processing, and market.",
+    "labelsHa": ["Gyada", "Koko", "Manja", "Fadama", "Kiwo", "Ajiya", "Kasuwa"],
+    "safetyNote": "No child labor, pesticides, blade use, heavy loads, distressed livestock, unsafe irrigation, exact crop-region boundary, gendered work roles, or claim that one crop belongs exclusively to one ethnic group."
+  },
+  {
+    "id": "p4-socs-09",
+    "imagePath": "images/p4-socs-09.png",
+    "titleEn": "Nigerian Economy — Industry and Trade",
+    "titleHa": "Tattalin Arzikin Nijeriya — Masana’antu da Ciniki",
+    "type": "diagram",
+    "depictEn": "A simple supply-chain strip showing grain becoming flour, cotton becoming cloth, and leather becoming shoes, then safe transport to a market; a separate balanced inset shows generic oil and gas extraction linked to processing and a seaport without dominating the wider economy.",
+    "labelsHa": ["Albarkatun ƙasa", "Masana’antu", "Sufuri", "Tashar jiragen ruwa", "Kasuwa", "Ciniki"],
+    "safetyNote": "No company logo, oil spill, flames, worker danger, child factory work, geopolitical ownership claim, wealth promise, political message, or portrayal of oil and gas as Nigeria’s only industry."
+  },
+  {
+    "id": "p4-socs-10",
+    "imagePath": "images/p4-socs-10.png",
+    "titleEn": "Population and Settlement",
+    "titleHa": "Yawan Jama’a da Matsugunansu",
+    "type": "comparison",
+    "depictEn": "Two equal panels compare a Northern Nigerian village with dispersed homes, farms, grazing space, and a small market against a city with denser homes, schools, hospitals, offices, roads, and a large market; a neutral household-counting inset explains planning without displaying personal data.",
+    "labelsHa": ["Ƙauye", "Birni", "Yawan jama’a", "Makaranta", "Wurin lafiya", "Ruwa"],
+    "safetyNote": "Do not rank rural or urban life, show slums as spectacle, publish a population number, expose household details, stereotype poverty, imply every village or city looks alike, or tie settlement type to ethnicity."
+  },
+  {
+    "id": "p4-socs-11",
+    "imagePath": "images/p4-socs-11.png",
+    "titleEn": "Migration and Urbanisation",
+    "titleHa": "Sauya Wurin Zama da Girman Birane",
+    "type": "diagram",
+    "depictEn": "A reversible movement diagram between a village, town, and city with respectful family and adult-worker figures; reason icons show work, school, family care, business, land, and services, while city panels balance opportunities with needs for housing, water, transport, sanitation, health care, and schools.",
+    "labelsHa": ["Sauya wurin zama", "Ƙauye", "Birni", "Aiki", "Makaranta", "Ƙarin hidimomi"],
+    "safetyNote": "No trafficking, forced displacement, conflict zone, border crossing, ethnic blame, criminalisation of newcomers, poverty caricature, child moving alone, or claim that movement is always rural-to-urban or always beneficial."
+  },
+  {
+    "id": "p4-socs-12",
+    "imagePath": "images/p4-socs-12.png",
+    "titleEn": "Social Problems — Poverty and Community Responses",
+    "titleHa": "Matsalar Talauci da Yadda Al’umma Take Taimakawa",
+    "type": "diagram",
+    "depictEn": "A dignity-first response map connecting household needs—food, water, housing, health, clothing, and education—to public services, skills training, a mutual-aid savings group, communal work, and discreet food support; include children learning and adults in varied lawful work.",
+    "labelsHa": ["Abinci", "Ruwa", "Lafiya", "Ilimi", "Koyar da sana’a", "Taimakon juna"],
+    "safetyNote": "No humiliating pose, torn-clothing shorthand, begging scene, named beneficiary, photography of aid, moral blame, ethnic or religious attribution, gender stereotype, political credit-claim, or guarantee that one intervention ends poverty."
+  },
+  {
+    "id": "p4-socs-13",
+    "imagePath": "images/p4-socs-13.png",
+    "titleEn": "Social Problems — Child Labour and Child Rights",
+    "titleHa": "Aikin da Yake Cutar da Yara da Haƙƙoƙinsu",
+    "type": "comparison",
+    "depictEn": "A clear safe-versus-harmful comparison: one side shows a child briefly tidying books and toys under adult care, with school, rest, health, and play preserved; the other uses crossed-out hazard icons for heavy loads, fire, blades, chemicals, machinery, and work that blocks school, followed by a child speaking to a trusted teacher.",
+    "labelsHa": ["Koyo", "Hutu", "Wasa", "Lafiya", "Kariya", "Amintaccen babba"],
+    "safetyNote": "No graphic injury, identifiable employer, real workplace accusation, forced pose, exploitative detail, child using a hazard, convention acronym or formal title, victim blame, or claim that all household help is harmful."
+  },
+  {
+    "id": "p4-socs-14",
+    "imagePath": "images/p4-socs-14.png",
+    "titleEn": "Cooperation — Family, Community, Nation",
+    "titleHa": "Haɗin Kai a Iyali, Al’umma, da Ƙasa",
+    "type": "illustration",
+    "depictEn": "Three linked scenes: a family shares age-appropriate tasks, pupils plan a group assignment with equal speaking turns, and a Northern Nigerian community performs communal work planting trees and improving a meeting area; a small final globe panel shows countries sharing health and education knowledge.",
+    "labelsHa": ["Haɗin kai", "Gayya", "Raba aiki", "Sauraro", "Mutunta bambanci"],
+    "safetyNote": "No hazardous child work, gendered domestic roles, dominant leader, coerced labor, ethnic or religious uniformity, party symbol, military alliance, international-organization logo, or suggestion that cooperation removes disagreement."
+  },
+  {
+    "id": "p4-socs-15",
+    "imagePath": "images/p4-socs-15.png",
+    "titleEn": "Revision and Assessment — P4 Social and Citizenship Studies",
+    "titleHa": "Bita da Tantancewa — Nazarin Zamantakewa na Aji Huɗu",
+    "type": "diagram",
+    "depictEn": "A balanced revision wheel around one learner with spokes for Nigeria’s map and geography, peoples and languages, national symbols, three tiers and three arms of government, neutral civic participation, agriculture, industry and trade, population and movement, poverty responses, child rights, and cooperation.",
+    "labelsHa": ["Nijeriya", "Jama’a", "Gwamnati", "Noma da kiwo", "Ciniki", "Yawan jama’a", "Haƙƙin yara", "Haɗin kai"],
+    "safetyNote": "Keep all topics equal; no historical narrative, kingdom or colonial imagery, ethnic ranking, party or candidate, child voting, child labor, poverty spectacle, dangerous industry, exam score, or implication that one region represents all Nigeria."
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "p5-maths-07",
+    "labels": [
+      {
+        "text": "lambar sama",
+        "targetPoint": { "x": 0.55, "y": 0.63 },
+        "confidence": "medium"
+      },
+      {
+        "text": "lambar ƙasa",
+        "targetPoint": { "x": 0.64, "y": 0.75 },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-maths-10",
+    "labels": [
+      {
+        "text": "lambar ƙasa ta gari",
+        "targetPoint": { "x": 0.55, "y": 0.32 },
+        "confidence": "medium"
+      },
+      {
+        "text": "lambobin sama",
+        "targetPoint": { "x": 0.39, "y": 0.32 },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-maths-19",
+    "labels": [
+      {
+        "text": "Rasiyo",
+        "targetPoint": { "x": 0.22, "y": 0.29 },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-maths-21",
+    "labels": [
+      {
+        "text": "Kusurwa madaidaiciya",
+        "targetPoint": { "x": 0.46, "y": 0.72 },
+        "confidence": "high"
+      },
+      {
+        "text": "ma'aunin kusurwa",
+        "targetPoint": { "x": 0.49, "y": 0.86 },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-maths-22",
+    "labels": [
+      {
+        "text": "Matsakaici",
+        "targetPoint": { "x": 0.86, "y": 0.69 },
+        "confidence": "high"
+      }
+    ]
+  }
+]

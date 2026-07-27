@@ -1,0 +1,267 @@
+[
+  {
+    "id": "p3-maths-01",
+    "imagePath": "images/p3-maths-01.png",
+    "titleEn": "Numbers to 1,000 and Place Value",
+    "titleHa": "Lambobi Har Zuwa 1,000 da Matsayin Lamba",
+    "type": "diagram",
+    "depictEn": "A place-value chart with three labelled-but-blank columns — hundreds, tens, ones — each column left empty for its digit to be added later, beside a small sack-of-millet icon being counted out in three groups of decreasing size to match the module's own market analogy; no numerals rendered.",
+    "labelsHa": [
+      "daruruwa",
+      "gommai",
+      "ɗaya-ɗaya"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-02",
+    "imagePath": "images/p3-maths-02.png",
+    "titleEn": "Addition with Regrouping",
+    "titleHa": "Ƙari da Sake Haɗawa",
+    "type": "diagram",
+    "depictEn": "A vertical addition board with blank ones and tens columns for two numbers being combined, with a small curved arrow showing a carried group moving from the ones column to the tens column; no numerals or equation symbols rendered — this matches the already-accepted style of the P3 maths pilot image.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-03",
+    "imagePath": "images/p3-maths-03.png",
+    "titleEn": "Subtraction with Regrouping",
+    "titleHa": "Ragi da Ɗaukar Aro",
+    "type": "diagram",
+    "depictEn": "A vertical subtraction board with blank ones and tens columns, showing one ten-bundle being broken apart and moved into the ones column to allow the subtraction, beside the module's own money-framing shown as two schematic naira notes; no numerals, equation symbols, or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-04",
+    "imagePath": "images/p3-maths-04.png",
+    "titleEn": "Multiplication Tables 2, 3, 4, 5, and 10",
+    "titleHa": "Teburin Ninkawa na 2, 3, 4, 5, da 10",
+    "type": "diagram",
+    "depictEn": "Three equal groups of four water bottles arranged side by side, each bottle a plain schematic shape, beside a small blank price-tag placeholder on one bottle; no numerals, equation symbols, or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-05",
+    "imagePath": "images/p3-maths-05.png",
+    "titleEn": "Introduction to Division",
+    "titleHa": "Gabatarwa ga Rarrabawa",
+    "type": "diagram",
+    "depictEn": "A fair-sharing scene: a pile of sweets being distributed equally among ten children, each ending with the same small visible amount, with a small curved arrow connecting this scene to a blank multiplication-sentence placeholder beside it; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-06",
+    "imagePath": "images/p3-maths-06.png",
+    "titleEn": "Simple Fractions: Half and Quarter",
+    "titleHa": "Sauƙaƙan Kaso: Rabi da Kwata",
+    "type": "diagram",
+    "depictEn": "A round loaf of bread split into two equal halves (labelled rabi) beside a second identical loaf split into four equal quarters (labelled kwata), plus a small panel showing a pile of oranges being shared equally between two children; no numerals or fraction symbols rendered.",
+    "labelsHa": [
+      "Rabi",
+      "Kwata"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-07",
+    "imagePath": "images/p3-maths-07.png",
+    "titleEn": "Comparing and Ordering Numbers to 1,000",
+    "titleHa": "Kwatanta da Jera Lambobi Har Zuwa 1,000",
+    "type": "diagram",
+    "depictEn": "Two stacked place-value charts, each with blank hundreds/tens/ones columns, with the hundreds column of each chart visually emphasised (e.g. a soft highlight box) and a blank comparison-symbol gap between them; no numerals or comparison symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-08",
+    "imagePath": "images/p3-maths-08.png",
+    "titleEn": "Even and Odd Numbers",
+    "titleHa": "Lambobin Biyu-Biyu da Marasa Biyu-Biyu",
+    "type": "diagram",
+    "depictEn": "Two labelled columns of small object-groups: one column shows several groups splitting evenly into pairs with no remainder (even), the other shows several groups each leaving one unpaired item (odd) — a small circle marks the odd one out in each group; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-09",
+    "imagePath": "images/p3-maths-09.png",
+    "titleEn": "Counting in 2s, 5s, 10s, and 100s",
+    "titleHa": "Tsallake Ƙirga Biyu-Biyu, Biyar-Biyar, Goma-Goma, da Ɗari-Ɗari",
+    "type": "diagram",
+    "depictEn": "Four short stepping-stone number paths shown stacked, each path's constant jump size marked with a small arrow between consecutive stones, the paths' jump sizes visually distinguished by spacing rather than any written numeral; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-10",
+    "imagePath": "images/p3-maths-10.png",
+    "titleEn": "Money: Naira, Kobo, and Simple Totals",
+    "titleHa": "Kuɗi: Naira da Sauƙaƙan Jimla",
+    "type": "diagram",
+    "depictEn": "A market scene with naira notes and coins being counted and combined into small piles by a seller and buyer, shown as schematic coloured shapes; no numerals or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions, and no branded goods."
+  },
+  {
+    "id": "p3-maths-11",
+    "imagePath": "images/p3-maths-11.png",
+    "titleEn": "Giving Change",
+    "titleHa": "Bayar da Canji",
+    "type": "diagram",
+    "depictEn": "A market stall scene: an item with a small blank price tag, a schematic naira note handed over by a customer, and a few schematic coins being returned as change by the seller; no numerals, equation symbols, or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions, and no branded goods."
+  },
+  {
+    "id": "p3-maths-12",
+    "imagePath": "images/p3-maths-12.png",
+    "titleEn": "Time to the Hour, Half-Hour, and Quarter-Hour",
+    "titleHa": "Lokaci: Sa’a, Rabin Sa’a, da Kwata Sa’a",
+    "type": "diagram",
+    "depictEn": "Two large analog clock faces and a simple daily schedule illustrating “Time to the Hour, Half-Hour, and Quarter-Hour”; hour and minute hands are visually distinct and point exactly to the stated times.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "p3-maths-13",
+    "imagePath": "images/p3-maths-13.png",
+    "titleEn": "Length: Metre and Centimetre",
+    "titleHa": "Tsawo: Mita da Santimita",
+    "type": "diagram",
+    "depictEn": "A metre-length rope or table edge measured with a metre stick, beside a pencil measured with a small ruler; no numerals or unit labels rendered.",
+    "labelsHa": [
+      "Mita",
+      "Santimita"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-14",
+    "imagePath": "images/p3-maths-14.png",
+    "titleEn": "Weight: Kilogram and Gram",
+    "titleHa": "Nauyi: Kilogiram da Giram",
+    "type": "diagram",
+    "depictEn": "A balance/weighing scale comparing a sack of rice with a small packet of spice or medicine on the opposite side, the scale tipping toward the heavier sack; no numerals or unit labels rendered.",
+    "labelsHa": [
+      "Kilogiram",
+      "Giram"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-15",
+    "imagePath": "images/p3-maths-15.png",
+    "titleEn": "Capacity: Litre and Millilitre",
+    "titleHa": "Ma’aunin Ruwa: Lita da Mililita",
+    "type": "diagram",
+    "depictEn": "Two transparent bottles side by side, one visibly holding more liquid than the other, beside a small medicine cup shown separately; no numerals or unit labels rendered.",
+    "labelsHa": [
+      "Lita",
+      "Mililita"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-16",
+    "imagePath": "images/p3-maths-16.png",
+    "titleEn": "Simple Shapes and Their Properties",
+    "titleHa": "Sauƙaƙan Siffofi da Halayensu",
+    "type": "diagram",
+    "depictEn": "Four shapes shown side by side with their sides and corners visually countable but unlabelled — a square, a rectangle with two visibly longer sides, a triangle, and a circle; no numerals rendered.",
+    "labelsHa": [
+      "Murabba’i",
+      "Alwatika"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-17",
+    "imagePath": "images/p3-maths-17.png",
+    "titleEn": "Lines and Corners",
+    "titleHa": "Layuka da Kusurwa",
+    "type": "diagram",
+    "depictEn": "A small gallery of line types — straight, curved, horizontal, vertical, and diagonal — beside a square, a triangle, and a circle, each shape's corners left visually countable but unlabelled; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-18",
+    "imagePath": "images/p3-maths-18.png",
+    "titleEn": "Simple Perimeter by Counting Sides",
+    "titleHa": "Sauƙaƙan Kewaye ta Ƙirga Gefuna",
+    "type": "diagram",
+    "depictEn": "A square with each side marked by a small tick mark of equal length around its border to show the sides are equal, beside a triangle with its own three equal tick-marked sides; no numerals or equation symbols rendered.",
+    "labelsHa": [
+      "Kewaye"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-19",
+    "imagePath": "images/p3-maths-19.png",
+    "titleEn": "Reading Simple Tables",
+    "titleHa": "Karanta Sauƙaƙan Tebur",
+    "type": "diagram",
+    "depictEn": "A simple two-row table with a name column and a book-count column, showing Musa's row and Aisha's row, with an arrow tracing from the row label and column header to the cell where they meet.",
+    "labelsHa": [
+      "Tebur"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-20",
+    "imagePath": "images/p3-maths-20.png",
+    "titleEn": "Simple Bar Charts",
+    "titleHa": "Sauƙaƙan Jadawalin Sanduna",
+    "type": "diagram",
+    "depictEn": "A simple bar chart with two labelled bars of different heights — a taller bar showing a larger quantity and a shorter bar showing a smaller quantity — with gridline numbers along the side for reading the exact values.",
+    "labelsHa": [
+      "Jadawalin Sanduna"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-21",
+    "imagePath": "images/p3-maths-21.png",
+    "titleEn": "Word Problems with Addition and Subtraction",
+    "titleHa": "Matsalolin Labari na Ƙari da Ragi",
+    "type": "diagram",
+    "depictEn": "A word-problem scene showing a stack of books with more books being added to it by a pupil, beside a second panel showing a small pile of naira notes with some being spent at a stall and the remainder visible; no numerals, equation symbols, or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p3-maths-22",
+    "imagePath": "images/p3-maths-22.png",
+    "titleEn": "Word Problems with Multiplication and Division",
+    "titleHa": "Matsalolin Labari na Ninkawa da Rarrabawa",
+    "type": "diagram",
+    "depictEn": "Four bags each holding the same number of oranges, shown beside a second panel where the same total oranges are shared equally among several children; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p3-maths-23",
+    "imagePath": "images/p3-maths-23.png",
+    "titleEn": "Mixed Review: Numbers, Money, and Measurement",
+    "titleHa": "Bita Mai Haɗi: Lambobi, Kuɗi, da Awo",
+    "type": "diagram",
+    "depictEn": "A four-panel review board combining a number comparison, a naira addition and change example, a metre/centimetre ruler, and a kilogram/gram weighing scale — one small worked example in each panel.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p3-maths-24",
+    "imagePath": "images/p3-maths-24.png",
+    "titleEn": "P3 Mathematics Revision and Bridge to P4",
+    "titleHa": "Bitar Lissafin P3 da Gada Zuwa P4",
+    "type": "diagram",
+    "depictEn": "A tidy revision poster with small labelled-but-unlabelled icons for each P3 topic covered — numbers, addition/subtraction, multiplication/division, fractions, money, measurement, shapes, and tables/bar charts — arranged as a bridge pointing toward P4; icons are generic pictograms, no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  }
+]

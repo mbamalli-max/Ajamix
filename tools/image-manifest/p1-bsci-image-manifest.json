@@ -1,0 +1,185 @@
+[
+  {
+    "id": "p1-bsci-01",
+    "imagePath": "images/p1-bsci-01.png",
+    "titleEn": "The Senses – Sight",
+    "titleHa": "Hankali – Gani",
+    "type": "diagram",
+    "depictEn": "A child in a bright classroom looking at and pointing toward a few named objects — a book, a pencil, and their teacher — with the child's eyes gently highlighted/circled to show which body part is being used to see. Soft daylight from a window lights the scene.",
+    "labelsHa": [
+      "Idanu"
+    ],
+    "safetyNote": "Do not show the child's hand touching or near the eye, and do not depict anyone looking directly at the sun."
+  },
+  {
+    "id": "p1-bsci-02",
+    "imagePath": "images/p1-bsci-02.png",
+    "titleEn": "The Senses – Hearing",
+    "titleHa": "Hankali – Ji",
+    "type": "diagram",
+    "depictEn": "A child listening with a hand cupped near an ear (ears gently highlighted), surrounded by small linked icons of sound sources named in the lesson: a teacher speaking, a car, a crying baby, and a singing bird.",
+    "labelsHa": [
+      "Kunnuwa"
+    ],
+    "safetyNote": "Do not depict any object, finger, or sharp item near or inside the ear, and do not show a loud sound source (e.g. siren, horn) directly beside the child's ear."
+  },
+  {
+    "id": "p1-bsci-03",
+    "imagePath": "images/p1-bsci-03.png",
+    "titleEn": "The Senses – Touch",
+    "titleHa": "Hankali – Taɓa",
+    "type": "diagram",
+    "depictEn": "A child's hand touching two contrasting textures placed side by side — a soft cotton tuft (auduga) and a hard stone (dutse) — with a small fire shown at a clear distance in the same scene, marked as something the child is NOT reaching toward, to illustrate that touch also warns us away from heat.",
+    "labelsHa": [],
+    "safetyNote": "The child must never be shown touching, reaching for, or standing close to the fire — it appears only as a distant, clearly-avoided hazard, consistent with the lesson's own caution against touching fire or hot things unsupervised."
+  },
+  {
+    "id": "p1-bsci-04",
+    "imagePath": "images/p1-bsci-04.png",
+    "titleEn": "The Senses – Smell and Taste",
+    "titleHa": "Hankali – Jin Ƙamshi da Dandano",
+    "type": "diagram",
+    "depictEn": "Two small linked panels: one shows a child sniffing a familiar, named item (a bar of soap or a flower) with the nose highlighted; the other shows a child tasting a named food (a sugar cube or a slice of lemon) with the tongue/mouth highlighted, to contrast sweet and sour.",
+    "labelsHa": [
+      "Hanci",
+      "Baki"
+    ],
+    "safetyNote": "Only show the specific, everyday items named in the lesson (soap, sugar, lemon) being smelled or tasted with visible care — never depict a child eating or drinking an unlabeled or unknown substance, matching the lesson's own caution against consuming unknown things without permission."
+  },
+  {
+    "id": "p1-bsci-05",
+    "imagePath": "images/p1-bsci-05.png",
+    "titleEn": "The Five Senses Review",
+    "titleHa": "Hankali Biyar Maimaitawa",
+    "type": "diagram",
+    "depictEn": "A single child illustration with five small labeled call-outs pointing to the five sense organs in use: eyes looking at a book, ears listening to a bell, a hand touching a leaf, a nose smelling a flower, and a mouth/tongue tasting fruit — arranged as a simple five-panel summary around the child.",
+    "labelsHa": [
+      "Idanu",
+      "Kunnuwa",
+      "Hannu",
+      "Hanci",
+      "Baki"
+    ],
+    "safetyNote": "Keep all five example objects ordinary and harmless (book, bell, leaf, flower, fruit) — no hot, sharp, or unknown items in any panel."
+  },
+  {
+    "id": "p1-bsci-06",
+    "imagePath": "images/p1-bsci-06.png",
+    "titleEn": "Living Things – Animals",
+    "titleHa": "Abubuwa masu rai – Dabbobi",
+    "type": "diagram",
+    "depictEn": "A friendly village/farm scene showing several named animals demonstrating different kinds of movement: a dog (kare) walking on four legs, a bird (tsuntsu) flying, and a fish (kifi) swimming in a small pond — grouped together to show that living things move, eat, and grow in different ways.",
+    "labelsHa": [],
+    "safetyNote": "Show all animals calm, healthy, and unharmed — no depiction of a child mistreating, chasing, or hurting an animal, consistent with the lesson's instruction to treat animals with kindness."
+  },
+  {
+    "id": "p1-bsci-07",
+    "imagePath": "images/p1-bsci-07.png",
+    "titleEn": "Living Things – Plants",
+    "titleHa": "Abubuwa masu rai – Tsire-tsire",
+    "type": "diagram",
+    "depictEn": "A labeled plant (e.g. a young tree or maize/gero stalk) showing its leaf, stem, and fruit, growing in soil with visible sunlight rays above and a small watering can or rain shown beside it, to depict what a plant needs (soil, water, air, sunlight) to grow.",
+    "labelsHa": [
+      "Ganye",
+      "Tushe",
+      "'Ya'ya"
+    ],
+    "safetyNote": "No child depicted uprooting, cutting, or damaging the plant — the scene should show only healthy, cared-for growth."
+  },
+  {
+    "id": "p1-bsci-08",
+    "imagePath": "images/p1-bsci-08.png",
+    "titleEn": "Non-Living Things",
+    "titleHa": "Abubuwa marasa rai",
+    "type": "diagram",
+    "depictEn": "A side-by-side comparison scene: on one side a living thing (a dog or a tree) shown moving/growing; on the other side several non-living objects named in the lesson (a stone, a table, a shoe, a book, a bottle) sitting still, to visually contrast things that breathe/grow/move on their own with things that do not.",
+    "labelsHa": [
+      "Mai Rai",
+      "Marasa Rai"
+    ],
+    "safetyNote": "Depict the non-living objects only in their ordinary, undamaged form (no broken glass from the bottle, no sharp edges) — nothing hazardous to a child."
+  },
+  {
+    "id": "p1-bsci-09",
+    "imagePath": "images/p1-bsci-09.png",
+    "titleEn": "Water – Sources and Uses",
+    "titleHa": "Ruwa – Maɓuɓɓugansa da amfaninsa",
+    "type": "diagram",
+    "depictEn": "A two-part scene: one half shows named water sources (a tap/famfo, a well/rijya, gentle rain falling from a cloud, a river/rafi) — the rain shown as a light, calm shower with no standing water, flooding, or puddle accumulation; the other half shows named everyday uses (a person drinking, bathing, cooking, and watering plants), with a covered water pot or tank visible to show safe storage.",
+    "labelsHa": [],
+    "safetyNote": "Show only clean, clear water and a covered storage container — no depiction of dirty/stagnant water being used for drinking, matching the lesson's emphasis on using clean, covered water for health."
+  },
+  {
+    "id": "p1-bsci-10",
+    "imagePath": "images/p1-bsci-10.png",
+    "titleEn": "Air – What is Air?",
+    "titleHa": "Iska – Mene ne iska?",
+    "type": "illustration",
+    "depictEn": "An outdoor scene where air's invisible presence is shown through its effects: a tree's leaves and a flag both blown sideways by wind, and a child blowing gently onto the palm of their own hand to feel air moving — air itself is not drawn, only its visible effects.",
+    "labelsHa": [],
+    "safetyNote": "Depict only a gentle, ordinary breeze — no storm, dust cloud, or debris flying, keeping the scene calm and non-threatening."
+  },
+  {
+    "id": "p1-bsci-11",
+    "imagePath": "images/p1-bsci-11.png",
+    "titleEn": "The Weather",
+    "titleHa": "Yanayi",
+    "type": "diagram",
+    "depictEn": "A four-panel weather diagram showing the same simple outdoor scene (a house and a tree) under four different named conditions: sunny (rana) with bright sun, rainy (ruwan sama) with falling rain and a child under an umbrella, windy (iska) with the tree bending, and cloudy (gizagizai) with the sun covered by clouds.",
+    "labelsHa": [
+      "Rana",
+      "Ruwan Sama",
+      "Iska",
+      "Gizagizai"
+    ],
+    "safetyNote": "No lightning, flooding, or storm damage depicted — each panel should show mild, everyday weather only."
+  },
+  {
+    "id": "p1-bsci-12",
+    "imagePath": "images/p1-bsci-12.png",
+    "titleEn": "Simple Machines – Lever",
+    "titleHa": "Na'urori masu sauƙi – Lefe",
+    "type": "diagram",
+    "depictEn": "A simple lever diagram: a long stick resting on a small block (fulcrum), with a heavy stone on one end and a hand pressing down gently on the other end to show the stone lifting — plus a small side illustration of a rocking chair (kujera mai jujjuyawa) as a second example of a lever.",
+    "labelsHa": [
+      "Lefe"
+    ],
+    "safetyNote": "Show the hand pressing the lever at a safe distance from the pivot point — no fingers shown near the fulcrum where they could be pinched."
+  },
+  {
+    "id": "p1-bsci-13",
+    "imagePath": "images/p1-bsci-13.png",
+    "titleEn": "Simple Machines – Wheel and Axle",
+    "titleHa": "Na'urori masu sauƙi – Daba da sandar da ke tsakiya",
+    "type": "diagram",
+    "depictEn": "A labeled diagram of a wheelbarrow (keken hannu) at rest, with its wheel and the central axle rod clearly labeled, plus a small side view showing how the round wheel turns on the straight axle rod to make moving a load easier.",
+    "labelsHa": [
+      "Daba",
+      "Sandar da ke Tsakiya"
+    ],
+    "safetyNote": "The wheelbarrow/cart must be shown stationary and empty of any child — no child riding on or being pulled by the vehicle."
+  },
+  {
+    "id": "p1-bsci-14",
+    "imagePath": "images/p1-bsci-14.png",
+    "titleEn": "Energy – Light and Heat",
+    "titleHa": "Ƙarfi – Haske da Zafi",
+    "type": "diagram",
+    "depictEn": "Three small linked panels: the sun shining with both light rays and wavy heat lines over a house with a solar panel on its roof; a lamp/fitila glowing in a dark room, giving light only; and a cooking fire at a safe distance from a seated adult, giving off visible heat waves, to contrast sources of light versus heat.",
+    "labelsHa": [
+      "Haske",
+      "Zafi"
+    ],
+    "safetyNote": "The fire must be shown tended by an adult at a safe distance, never touched or approached by a child, and no child shown standing in direct harsh sun without shade — matching the lesson's own caution about fire and prolonged sun exposure."
+  },
+  {
+    "id": "p1-bsci-15",
+    "imagePath": "images/p1-bsci-15.png",
+    "titleEn": "Revision and Assessment",
+    "titleHa": "Maimaitawa da jarrabawa",
+    "type": "diagram",
+    "depictEn": "A simple review grid of small icons summarizing the term's topics — an eye/ear/hand/nose/mouth for the senses, a dog and a tree for living things, a stone for non-living things, a water drop, a wind swirl, a sun-and-cloud pair for weather, and a wheel — with a calm, smiling child in the center looking over the icons, as if recalling what was learned.",
+    "labelsHa": [],
+    "safetyNote": "The child must be shown calm, confident, and smiling, never anxious, stressed, or fearful — matching the lesson's own encouragement to answer 'ba tare da firgita ba' (without panic)."
+  }
+]

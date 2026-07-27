@@ -1,0 +1,152 @@
+[
+  {
+    "id": "p6-socs-01",
+    "imagePath": "images/p6-socs-01.png",
+    "titleEn": "Globalisation and Its Effects",
+    "titleHa": "Haɗuwar Duniya ta Ciniki, Fasaha, da Sadarwa",
+    "type": "diagram",
+    "depictEn": "A balanced network map connecting Northern Nigerian farming, crafts, music, learning, mobile communication, transport, and lawful trade with several neutral world regions; two equal paths mark opportunities such as learning and markets and challenges such as false information and pressure on small businesses.",
+    "labelsHa": ["Ciniki", "Sufuri", "Sadarwa", "Fasaha", "Damar koyo", "Bincika sahihancinsa"],
+    "safetyNote": "No national or cultural ranking, corporate brand, platform logo, inaccurate border emphasis, luxury-consumption message, or claim that foreign culture replaces Nigerian culture; show exchange flowing both toward and from Nigeria."
+  },
+  {
+    "id": "p6-socs-02",
+    "imagePath": "images/p6-socs-02.png",
+    "titleEn": "Human Rights — Deeper Study",
+    "titleHa": "Haƙƙin Ɗan Adam — Nazari Mai Zurfi",
+    "type": "diagram",
+    "depictEn": "An equal five-part rights wheel in a diverse Nigerian civic setting: civil rights represented by a fair hearing, political rights by a neutral participation symbol, economic rights by lawful work, social rights by school and clinic access, and cultural rights by language and arts; a calm route leads to a trusted adult, complaint desk, and court.",
+    "labelsHa": ["Haƙƙoƙin jama’a", "Haƙƙin siyasa", "Haƙƙin tattalin arziki", "Haƙƙin zamantakewa", "Haƙƙin al’adu", "Neman gyara"],
+    "safetyNote": "Mandatory neutrality: no party, candidate, protest slogan, detention, police confrontation, graphic violation, group blame, hierarchy among rights, or promise of a particular legal outcome; every person has equal visual standing."
+  },
+  {
+    "id": "p6-socs-03",
+    "imagePath": "images/p6-socs-03.png",
+    "titleEn": "Gender Equality and Women's Empowerment",
+    "titleHa": "Daidaiton Matsayin Mata da Maza a Zama Ƴan Ƙasa",
+    "type": "illustration",
+    "depictEn": "Girls and boys at equal scale move from a safe classroom toward a broad, non-ranked horizon of lawful occupations including education, health, farming, engineering, law, business, technology, and public service; Nigerian women appear as teachers, health professionals, researchers, farmers, legal professionals, entrepreneurs, and community-project leaders.",
+    "labelsHa": ["Haƙƙin koyo", "Bunƙasa basira", "Sana’a ta halal", "Hidimar jama’a", "Raba aiki bisa basira"],
+    "safetyNote": "Mandatory pre-approved framing: citizenship and equal educational and occupational opportunity only. No domestic-role prescription, marriage, pregnancy, reproduction, family-practice critique, religious or cultural critique, fixed gender occupation, tokenism, or ranking of work."
+  },
+  {
+    "id": "p6-socs-04",
+    "imagePath": "images/p6-socs-04.png",
+    "titleEn": "Sustainable Development",
+    "titleHa": "Ci Gaba Mai Kare Damar Masu Zuwa",
+    "type": "diagram",
+    "depictEn": "Three interlocking circles for economic, social, and environmental development around a Northern Nigerian community water point: local repair work and livelihoods, equitable school and clinic access, and protected soil, water, trees, and animals; a small ring of seventeen unlabeled goal segments indicates the global goals without reproducing official icons.",
+    "labelsHa": ["Tattalin arziki", "Zamantakewa", "Muhalli", "Damar masu zuwa", "Rage ɓarnar ruwa"],
+    "safetyNote": "No official SDG logos unless licensing is cleared, no greenwashing brand, no claim that one pillar can replace another, no unsafe tools in children's hands, and no distressed environmental scene."
+  },
+  {
+    "id": "p6-socs-05",
+    "imagePath": "images/p6-socs-05.png",
+    "titleEn": "Electoral Process — Deeper Study",
+    "titleHa": "Matakan Zaɓe — Nazari Mai Zurfi",
+    "type": "diagram",
+    "depictEn": "A neutral left-to-right civic process showing voter registration, lawful campaigning with blank message boards, confidential voting, sorting and counting, collation, authorized result announcement, and a separate evidence-based petition route to an unbranded tribunal or court; all candidates and voters are visually equal.",
+    "labelsHa": ["Rajista", "Yaƙin neman zaɓe", "Jefa ƙuri’a", "Ƙirga ƙuri’u", "Tattara sakamako", "Ƙarar zaɓe"],
+    "safetyNote": "Mandatory political neutrality: no real party, candidate, office-holder, slogan, colour coding, logo, ballot mark, campaign persuasion, result figure, victory scene, intimidation, violence, or implication that a petition guarantees reversal."
+  },
+  {
+    "id": "p6-socs-06",
+    "imagePath": "images/p6-socs-06.png",
+    "titleEn": "The Nigerian Judiciary — Protecting Rights",
+    "titleHa": "Reshen Shari’a na Nijeriya — Kare Haƙƙoƙi",
+    "type": "diagram",
+    "depictEn": "A branching, non-ladder court map: Magistrate Courts handle many first matters; High Courts handle important matters and some appeals; specified review paths lead to the Court of Appeal and then the Supreme Court of Nigeria, while distinct state, federal, Sharia, and customary court structures appear as honest parallel branches with legally bounded connection points.",
+    "labelsHa": ["Kotunan majistare", "Manyan Kotuna", "Kotun Ɗaukaka Ƙara", "Kotun Koli ta Nijeriya", "Kotunan Shari’a", "Kotunan al’ada"],
+    "safetyNote": "The layout must never be a single simple ladder. Verify every connection with a Nigerian legal expert before rendering; no real seal, judge portrait, active case, punishment, gavel stereotype, religious hierarchy, or claim that every matter follows one route."
+  },
+  {
+    "id": "p6-socs-07",
+    "imagePath": "images/p6-socs-07.png",
+    "titleEn": "Social Cohesion — Inter-ethnic and Inter-religious Tolerance",
+    "titleHa": "Haɗin Kan Al’umma — Haƙuri Tsakanin Al’ummomi da Addinai",
+    "type": "illustration",
+    "depictEn": "A balanced Northern Nigerian school, market, farm, and community-service montage where people of varied backgrounds cooperate on ordinary shared tasks; a neutral mediation circle includes women, youth, teachers, elders, and faith-community representatives listening at equal level.",
+    "labelsHa": ["Mutunta bambanci", "Sauraro cikin ladabi", "Haɗin gwiwa", "Tattaunawa", "Ba tare da fifiko ba"],
+    "safetyNote": "Mandatory ethnic and religious neutrality: no named sect, live conflict, armed group, sacred-object comparison, clothing-based belief assignment, caricature, conversion message, historical grievance, profiling, or depiction of any community as the source of conflict."
+  },
+  {
+    "id": "p6-socs-08",
+    "imagePath": "images/p6-socs-08.png",
+    "titleEn": "Migration — Internal and International",
+    "titleHa": "Sauya Wurin Zama — Cikin Ƙasa da Ketare",
+    "type": "comparison",
+    "depictEn": "A two-panel map comparison: one family route remains within a simplified Nigeria outline and another route crosses an international border; below, respectful service icons show education, health, water, protection, and listening, with UNHCR represented only by its text acronym pending logo clearance.",
+    "labelsHa": ["Cikin ƙasa", "Ketare iyaka", "Mutunci", "Kariya", "Ilimi", "UNHCR"],
+    "safetyNote": "No current conflict, actor, camp stereotype, distressed crowd, border enforcement, dangerous journey, trafficking implication, fixed statistic, national blame, or loss-of-dignity framing; do not use the UNHCR emblem without permission."
+  },
+  {
+    "id": "p6-socs-09",
+    "imagePath": "images/p6-socs-09.png",
+    "titleEn": "Safety and Security — Staying Safe as a Citizen",
+    "titleHa": "Aminci da Tsaro — Yadda Ɗan Ƙasa Zai Tsare Kansa",
+    "type": "symbol",
+    "depictEn": "An entirely abstract, non-graphic three-step safety symbol: a simple arrow moves away from a neutral grey unknown-object shape without touching it, then points to a shield-shaped instruction symbol and a trusted-adult communication icon; use calm geometric forms on a plain background, with no scene and no depicted threat.",
+    "labelsHa": ["Nisanta", "Kada ka taɓa", "Bi umarni", "Sanar da babba", "Wuri mai aminci"],
+    "safetyNote": "MANDATORY ABSTRACT BOUNDARY: no weapon, fire, blast, injury, danger scene, emergency reenactment, suspicious package detail, crowd, threatening person or group, uniformed raid, extremist or militant reference, recruitment sign, tactic, profiling cue, religion, ethnicity, clothing cue, real logo, or phone number."
+  },
+  {
+    "id": "p6-socs-10",
+    "imagePath": "images/p6-socs-10.png",
+    "titleEn": "Technology and Society",
+    "titleHa": "Fasaha da Al’umma",
+    "type": "diagram",
+    "depictEn": "A Northern Nigerian pupil uses an unbranded phone and shared computer for learning, family communication, and a small-business lesson; a privacy shield protects password, address, and personal-photo symbols, while a calm response path to online abuse shows preserve limited evidence, block, and tell a trusted adult.",
+    "labelsHa": ["Duba tushe", "Kalmar sirri", "Nemi izini", "Adana hujja", "Sanar da babba"],
+    "safetyNote": "No platform or device brand, readable private data, humiliating message, victim image, hacking interface, retaliation, public evidence-sharing, adult stranger contact scene, or implication that blocking alone replaces trusted-adult help."
+  },
+  {
+    "id": "p6-socs-11",
+    "imagePath": "images/p6-socs-11.png",
+    "titleEn": "Civic Role Models in Nigeria",
+    "titleHa": "Mutanen Koyi a Aikin Ɗan Ƙasa a Nijeriya",
+    "type": "portrait",
+    "depictEn": "Five equally sized, historically respectful portrait medallions of Nana Asma’u, Aminu Kano, Funmilayo Ransome-Kuti, Herbert Macaulay, and Wole Soyinka, each paired with one civic-contribution symbol: teaching and writing, social justice and listening, women’s civic participation, organization and representation, and literature with freedom of expression.",
+    "labelsHa": ["Nana Asma’u", "Aminu Kano", "Funmilayo Ransome-Kuti", "Herbert Macaulay", "Wole Soyinka", "Hidima"],
+    "safetyNote": "Mandatory neutrality: verify likeness rights and historical references; equal portrait size, no party marks, campaign imagery, sainthood, personality ranking, decontextualized quotation, historical battle scene, or implication that any person stands above law or represents an entire region."
+  },
+  {
+    "id": "p6-socs-12",
+    "imagePath": "images/p6-socs-12.png",
+    "titleEn": "Population Growth and Civic Responsibility",
+    "titleHa": "Ƙaruwar Jama’a da Nauyin Ɗan Ƙasa",
+    "type": "diagram",
+    "depictEn": "A qualitative planning diagram with a growing set of neutral household dots connected to expandable school, clinic, water, housing, transport, food, and employment icons; an official census form and community planning table show accurate information guiding fair service planning without displaying a population number.",
+    "labelsHa": ["Ƙidayar jama’a", "Sahihin bayani", "Makarantu", "Asibitoci", "Ruwa", "Tsara gaba"],
+    "safetyNote": "No undated number, population counter, family-size prescription, pregnancy or reproduction image, coercive message, blame toward parents or communities, overcrowding panic, ethnic distribution, or claim that population growth is only a burden."
+  },
+  {
+    "id": "p6-socs-13",
+    "imagePath": "images/p6-socs-13.png",
+    "titleEn": "Entrepreneurship and Self-Reliance",
+    "titleHa": "Kafa Sana’a da Dogaro da Kai",
+    "type": "diagram",
+    "depictEn": "A practical small-enterprise planning board linking community needs to tailoring, farming, livestock care, repairs, crafts, food processing, and trade; a simple ledger separates business and personal money, while distinct unbranded signposts describe Bank of Agriculture support for qualifying agriculture ventures and BOI finance or advice for qualifying enterprises.",
+    "labelsHa": ["Gano bukata", "Koyon ƙwarewa", "Rubuta kuɗi", "Inganci", "Bankin Aikin Gona", "BOI"],
+    "safetyNote": "No retired NACRDB name, guaranteed loan, instant-wealth claim, interest-rate figure, real bank logo, child labour, unsafe tools, gendered occupation, unlicensed financial advice, or implication that borrowing is required for every business."
+  },
+  {
+    "id": "p6-socs-14",
+    "imagePath": "images/p6-socs-14.png",
+    "titleEn": "Peace Education and Conflict Prevention",
+    "titleHa": "Ilimin Zaman Lafiya da Hana Saɓani",
+    "type": "diagram",
+    "depictEn": "A calm prevention pathway in a diverse Nigerian school and community: agree fair rules, share tasks and resources, hear concerns early, correct false information, include an isolated pupil, use a neutral mediator, and complete a joint clean-up or cooperative game; the final symbol combines dignity, justice, listening, and peace.",
+    "labelsHa": ["Aminci", "Adalci", "Mutunci", "Sauraro", "Mafita mai adalci", "Haɗin gwiwa"],
+    "safetyNote": "No current or historical conflict actor, armed group, sect, weapon, operational detail, threat scene, forced reconciliation, ethnic or religious coding, victim blame, or suggestion that a child mediates danger; unsafe situations go to a trusted adult."
+  },
+  {
+    "id": "p6-socs-15",
+    "imagePath": "images/p6-socs-15.png",
+    "titleEn": "Revision and Consolidation — Bridge to JSS1",
+    "titleHa": "Bita da Ƙarfafawa — Shiri Zuwa Ajin Farko na Sakandare",
+    "type": "diagram",
+    "depictEn": "A four-ring P3–P6 consolidation map: local government, services, transport, communication, farming, markets, environment, citizenship, national geography and symbols, government and democracy, resources and rights, global links, courts, migration, safety, technology, population, enterprise, and peace all feed into a central secondary-school inquiry cycle.",
+    "labelsHa": ["Tambayar tushe", "Kwatanta hujja", "Sauraro", "Tsara aiki", "Haƙƙoƙi da nauyi", "Aikin ɗan ƙasa"],
+    "safetyNote": "Keep all four bands and topic families visually balanced; no party, candidate, religious or ethnic hierarchy, graphic disaster or danger, weapon, live conflict, substance depiction, family-size message, stale statistic, false court ladder, or real institutional logo."
+  }
+]

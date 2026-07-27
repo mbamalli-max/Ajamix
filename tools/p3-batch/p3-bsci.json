@@ -1,0 +1,458 @@
+[
+  {
+    "id": "p3-bsci-01",
+    "gradeband": "p3",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 1,
+    "titleEn": "Classifying Living Things",
+    "titleHa": "Rarraba Abubuwa Masu Rai",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "A wannan darasi, za ka koyi rarraba abubuwa masu rai zuwa tsirrai da dabbobi. Abu mai rai yana girma, yana bukatar abinci ko ruwa, yana numfashi, kuma yana iya haihuwa ko samar da iri. Tsirrai kamar masara, wake, mangwaro, da ciyawa suna yin abincinsu da taimakon hasken rana, ruwa, da iska. Sau da yawa suna da tushe, kara, ganye, furanni, ko 'ya'ya. Dabbobi kamar kaza, akuya, saniya, kifi, da ɓera suna motsi daga wuri zuwa wuri domin neman abinci, ruwa, ko mafaka. Wasu suna da ƙafafu, wasu fikafikai, wasu kuma suna rayuwa cikin ruwa. Idan ka je gida, gona, ko makaranta, ka riƙa lura: shin abin da kake gani shuka ce ko dabba? Wannan rarrabawa tana taimaka maka ka fahimci halittu da yadda za ka kula da su.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi rarraba abubuwa masu rai. [MAIN] Abu mai rai yana girma, yana bukatar abinci ko ruwa, yana numfashi, kuma yana iya haihuwa ko samar da iri. Tsirrai kamar masara, wake, mangwaro, da ciyawa suna da tushe, kara, ganye, ko 'ya'ya. Dabbobi kamar kaza, akuya, saniya, kifi, da ɓera suna motsi domin neman abinci, ruwa, ko mafaka. [PAUSE 1] Wane rukuni ne masara take ciki? [MAIN] Idan ka kalli gida, gona, ko makaranta, za ka ga tsirrai da dabbobi. Ka tambayi kanka: shin abin da nake gani yana da ganye ne, ko yana motsi kamar dabba? Wannan tambaya tana taimaka maka ka rarraba halittu cikin sauƙi. [PAUSE 2] Wane rukuni ne akuya take ciki? [OUTRO] Ka ci gaba da lura da halittu a kewaye da kai domin ka fi gane tsirrai da dabbobi.",
+    "audioFile": "audio/p3-bsci-01.mp3",
+    "imageCard": "images/p3-bsci-01.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane rukuni ne masara take ciki?",
+        "correctAnswer": "tsirrai",
+        "options": [
+          "tsirrai",
+          "dabbobi",
+          "kayan aiki"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane rukuni ne akuya take ciki?",
+        "correctAnswer": "dabbobi",
+        "options": [
+          "tsirrai",
+          "dabbobi",
+          "ruwa"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane rukuni ne wake yake ciki?",
+        "answerFormula": "tsirrai",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["dabbobi", "duwatsu", "kayan aiki"]
+      },
+      {
+        "templateHa": "Wane rukuni ne kaza take ciki?",
+        "answerFormula": "dabbobi",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["tsirrai", "ruwa", "laka"]
+      },
+      {
+        "templateHa": "Me tsirrai suke bukata domin girma?",
+        "answerFormula": "ruwa",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["takalmi", "ƙusa", "alli"]
+      },
+      {
+        "templateHa": "Wane sashi ne yawanci shuka take da shi?",
+        "answerFormula": "ganye",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ƙafa", "kunne", "fikafiki"]
+      },
+      {
+        "templateHa": "Me dabbobi suke yi domin neman abinci?",
+        "answerFormula": "motsi",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["tsayawa kamar dutse", "zama ganye", "zama ruwa"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-bsci-02",
+    "gradeband": "p3",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 2,
+    "titleEn": "Parts of the Body and Their Functions",
+    "titleHa": "Sassan Jiki da Ayyukansu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Jikinka yana da sassa da yawa, kuma kowane sashi yana da aikin da yake yi. Kai yana ɗauke da ƙwaƙwalwa, idanu, kunnuwa, hanci, da baki. Da idanu kake gani, da kunnuwa kake jin sauti, da hanci kake jin ƙamshi, da baki kake magana da cin abinci. Hannu suna taimaka maka ka rubuta, ka ɗauki littafi, ka wanke kwano, ko ka riƙe kwallo. Ƙafafu suna taimaka maka ka tsaya, ka yi tafiya, ka gudu, ko ka hau mataki. Fata tana rufe jiki kuma tana taimaka maka ka ji zafi, sanyi, laushi, ko tauri. Zuciya tana bugawa a cikin ƙirji domin ta taimaka wa jini ya zagaya jiki. Ka kula da sassan jikinka ta hanyar wanka, cin abinci mai kyau, hutu, da guje wa wasa mai haɗari.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi sassan jiki da ayyukansu. [MAIN] Jikinka yana da sassa da yawa. Da idanu kake gani, da kunnuwa kake jin sauti, da hanci kake jin ƙamshi, da baki kake magana da cin abinci. Hannu suna taimaka maka ka rubuta ko ka ɗauki littafi. Ƙafafu suna taimaka maka ka tsaya, ka yi tafiya, ko ka gudu. [PAUSE 1] Wane sashi ne yake taimaka maka ka gani? [MAIN] Fata tana rufe jiki kuma tana taimaka maka ka ji zafi, sanyi, laushi, ko tauri. Zuciya tana bugawa a cikin ƙirji domin ta taimaka wa jini ya zagaya jiki. Ka kula da jikinka da wanka, abinci mai kyau, hutu, da wasa lafiya. [PAUSE 2] Wane sashi ne yake taimaka maka ka yi tafiya? [OUTRO] Ka tuna cewa kowane sashin jiki yana da amfani, don haka ka kula da jikinka kullum.",
+    "audioFile": "audio/p3-bsci-02.mp3",
+    "imageCard": "images/p3-bsci-02.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane sashi ne yake taimaka maka ka gani?",
+        "correctAnswer": "idanu",
+        "options": [
+          "idanu",
+          "ƙafafu",
+          "hanci"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane sashi ne yake taimaka maka ka yi tafiya?",
+        "correctAnswer": "ƙafafu",
+        "options": [
+          "kunnuwa",
+          "ƙafafu",
+          "baki"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Da me kake jin sauti?",
+        "answerFormula": "kunnuwa",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["idanu", "ƙafafu", "hannu"]
+      },
+      {
+        "templateHa": "Wane sashi ne yake taimaka maka ka rubuta?",
+        "answerFormula": "hannu",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["kunnuwa", "hanci", "ƙafafu"]
+      },
+      {
+        "templateHa": "Da me kake jin ƙamshi?",
+        "answerFormula": "hanci",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["baki", "idanu", "ƙafafu"]
+      },
+      {
+        "templateHa": "Wane sashi ne yake rufe jiki?",
+        "answerFormula": "fata",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["littafi", "takalmi", "teburi"]
+      },
+      {
+        "templateHa": "Me zuciya take taimaka wa ya zagaya jiki?",
+        "answerFormula": "jini",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["yashi", "toka", "alli"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-bsci-03",
+    "gradeband": "p3",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 3,
+    "titleEn": "Growth and Life Cycles",
+    "titleHa": "Girma da Zagayowar Rayuwa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Abubuwa masu rai suna girma kuma suna bin matakai na rayuwa. Wannan ake kira zagayowar rayuwa. Idan ka shuka iri na wake ko masara a ƙasa mai kyau, ka ba shi ruwa, sai ya fara toho. Daga nan sai ya zama ƙaramar shuka, ya fitar da ganye, kara, furanni, sannan ya iya yin 'ya'ya ko sabbin iri. Kaza ma tana da zagayowar rayuwa. Uwar kaza tana yin ƙwai, ƙwai ya ƙyanƙyashe, sai ɗan kaza ya fito. Ɗan kaza yana cin abinci, yana sha, yana girma har ya zama babbar kaza ko zakara. Mutane ma suna girma daga jariri zuwa yaro, matashi, sannan babba. Idan ka kula da abinci, ruwa, tsafta, da mafaka, kana taimaka wa halittu su girma lafiya a kullum.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi girma da zagayowar rayuwa. [MAIN] Abubuwa masu rai suna girma kuma suna bin matakai na rayuwa. Idan ka shuka iri na wake ko masara a ƙasa mai kyau, ka ba shi ruwa, sai ya fara toho. Daga nan sai ya zama ƙaramar shuka, ya fitar da ganye, kara, furanni, sannan ya iya yin 'ya'ya ko sabbin iri. [PAUSE 1] Me iri yake fara yi bayan an shuka shi da kyau? [MAIN] Kaza ma tana da zagayowar rayuwa. Uwar kaza tana yin ƙwai, ƙwai ya ƙyanƙyashe, sai ɗan kaza ya fito. Ɗan kaza yana cin abinci, yana sha, yana girma har ya zama babbar kaza ko zakara. [PAUSE 2] Me ke fitowa daga ƙwai idan ya ƙyanƙyashe? [OUTRO] Ka tuna cewa halittu suna bukatar abinci, ruwa, tsafta, da mafaka domin su girma lafiya.",
+    "audioFile": "audio/p3-bsci-03.mp3",
+    "imageCard": "images/p3-bsci-03.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me iri yake fara yi bayan an shuka shi da kyau?",
+        "correctAnswer": "toho",
+        "options": [
+          "toho",
+          "ƙwai",
+          "tafiya"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ke fitowa daga ƙwai idan ya ƙyanƙyashe?",
+        "correctAnswer": "ɗan kaza",
+        "options": [
+          "ɗan kaza",
+          "ganye",
+          "dutse"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me ake shukawa domin samun sabon tsiro?",
+        "answerFormula": "iri",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["takalmi", "ƙwai", "kwando"]
+      },
+      {
+        "templateHa": "Me shuka take bukata domin girma?",
+        "answerFormula": "ruwa",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ƙusa", "hula", "ƙwallo"]
+      },
+      {
+        "templateHa": "Me kaza take yi kafin ɗan kaza ya fito?",
+        "answerFormula": "ƙwai",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ganye", "kara", "laka"]
+      },
+      {
+        "templateHa": "Me ke fitowa daga ƙwai idan ya ƙyanƙyashe?",
+        "answerFormula": "ɗan kaza",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ɗan shuka", "dutse", "ruwa"]
+      },
+      {
+        "templateHa": "Wane mataki ne mutum yake fara rayuwa da shi?",
+        "answerFormula": "jariri",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["babban mutum", "zakara", "shuka"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-bsci-04",
+    "gradeband": "p3",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 4,
+    "titleEn": "Our Environment",
+    "titleHa": "Muhallinmu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Muhalli shi ne wurin da kake rayuwa, wasa, karatu, da taimakon iyali. Muhallinka ya haɗa da gida, makaranta, masallaci, kasuwa, gona, titi, rijiya, bishiyoyi, dabbobi, mutane, iska, ruwa, da ƙasa. A gida, ka ga ɗaki, tsakar gida, wurin dafa abinci, da wurin zubar da shara. A makaranta, ka ga aji, allo, teburi, filin wasa, da bandaki. A unguwa, ka ga makwabta, shaguna, magudanar ruwa, da hanya. Muhalli mai tsabta yana sa ka ji daɗi kuma yana rage cuta. Kada ka zubar da leda ko ƙashin abinci ko'ina. Ka riƙa sanya shara a kwandon shara, ka share aji, ka rufe rijiya, kuma ka kula da bishiyoyi. Idan kowa ya kula da muhallinsa, gida, makaranta, da al'umma za su kasance lafiya da kyau kullum.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi muhalli. [MAIN] Muhalli shi ne wurin da kake rayuwa, wasa, karatu, da taimakon iyali. Ya haɗa da gida, makaranta, masallaci, kasuwa, gona, titi, rijiya, bishiyoyi, dabbobi, mutane, iska, ruwa, da ƙasa. [PAUSE 1] Wane wuri ne yake cikin muhallin makaranta? [MAIN] Muhalli mai tsabta yana rage cuta kuma yana sa ka ji daɗi. Kada ka zubar da leda ko ƙashin abinci ko'ina. Ka sanya shara a kwandon shara, ka share aji, ka rufe rijiya, kuma ka kula da bishiyoyi. [PAUSE 2] A ina ya kamata ka sanya shara? [OUTRO] Ka kula da muhallinka domin gida, makaranta, da al'umma su kasance lafiya da kyau.",
+    "audioFile": "audio/p3-bsci-04.mp3",
+    "imageCard": "images/p3-bsci-04.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane wuri ne yake cikin muhallin makaranta?",
+        "correctAnswer": "aji",
+        "options": [
+          "aji",
+          "ƙwai",
+          "tocila"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "A ina ya kamata ka sanya shara?",
+        "correctAnswer": "kwandon shara",
+        "options": [
+          "kwandon shara",
+          "kan hanya",
+          "cikin ruwan sha"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me ake kira wurin da kake rayuwa?",
+        "answerFormula": "muhalli",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ƙwai", "toho", "hanci"]
+      },
+      {
+        "templateHa": "Wane abu ne yake cikin muhalli?",
+        "answerFormula": "gida",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["mafarki", "amo kawai", "launi kawai"]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi da shara?",
+        "answerFormula": "sanya ta a kwandon shara",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["jefa ta kan hanya", "saka ta cikin rijiya", "ɓoye ta a littafi"]
+      },
+      {
+        "templateHa": "Me muhalli mai tsabta yake ragewa?",
+        "answerFormula": "cuta",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["lafiya", "karatu", "wasa lafiya"]
+      },
+      {
+        "templateHa": "Me ya kamata a yi da rijiya bayan amfani?",
+        "answerFormula": "rufe ta",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["bar ta buɗe", "zuba shara", "jefa takalmi"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-bsci-05",
+    "gradeband": "p3",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 5,
+    "titleEn": "The Water Cycle",
+    "titleHa": "Zagayowar Ruwa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ruwa yana zagayawa a duniya ta hanyoyi masu sauƙi. Idan rana ta haskaka rafi, tabki, tukunyar ruwa, ko ƙasa mai ɗan danshi, wani ruwa yana tashi sama kamar tururi. Wannan ake kira ƙafewa. Tururin ruwa yana hawa sama, inda iska mai sanyi take sa shi ya taru ya zama gajimare. Idan gajimare ya yi nauyi, ruwa yana saukowa a matsayin ruwan sama. Ruwan sama yana shiga ƙasa, yana cika rijiya, yana shiga kogi, ko yana taimaka wa tsirrai su girma. Daga baya rana za ta sake ɗaga wani ruwa sama, zagayowar ta ci gaba. Ka iya ganin wannan a gida idan ruwan zafi ya fitar da tururi daga tukunya. Ka tuna, zagayowar ruwa tana taimaka wa mutane, dabbobi, da tsirrai su samu ruwa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi zagayowar ruwa. [MAIN] Idan rana ta haskaka rafi, tabki, tukunyar ruwa, ko ƙasa mai ɗan danshi, wani ruwa yana tashi sama kamar tururi. Wannan ake kira ƙafewa. Tururin ruwa yana hawa sama, inda iska mai sanyi take sa shi ya taru ya zama gajimare. [PAUSE 1] Me ake kira lokacin da ruwa ya tashi sama kamar tururi? [MAIN] Idan gajimare ya yi nauyi, ruwa yana saukowa a matsayin ruwan sama. Ruwan sama yana shiga ƙasa, yana cika rijiya, yana shiga kogi, ko yana taimaka wa tsirrai su girma. Daga baya rana za ta sake ɗaga wani ruwa sama. [PAUSE 2] Me ke saukowa daga gajimare mai nauyi? [OUTRO] Ka tuna cewa zagayowar ruwa tana taimaka wa mutane, dabbobi, da tsirrai su samu ruwa.",
+    "audioFile": "audio/p3-bsci-05.mp3",
+    "imageCard": "images/p3-bsci-05.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me ake kira lokacin da ruwa ya tashi sama kamar tururi?",
+        "correctAnswer": "ƙafewa",
+        "options": [
+          "ƙafewa",
+          "ganye",
+          "motsi"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ke saukowa daga gajimare mai nauyi?",
+        "correctAnswer": "ruwan sama",
+        "options": [
+          "ruwan sama",
+          "ƙasa",
+          "ƙusa"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me rana take iya sa ruwa ya zama?",
+        "answerFormula": "tururi",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["dutse", "ƙusa", "takalmi"]
+      },
+      {
+        "templateHa": "Me ake kira taruwar tururin ruwa a sama?",
+        "answerFormula": "gajimare",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["kwando", "baki", "hannu"]
+      },
+      {
+        "templateHa": "Me ke saukowa idan gajimare ya yi nauyi?",
+        "answerFormula": "ruwan sama",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ƙwallo", "ƙwai", "toka"]
+      },
+      {
+        "templateHa": "Me ruwan sama yake taimaka wa su girma?",
+        "answerFormula": "tsirrai",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["takalma", "duwatsu", "kujeru"]
+      },
+      {
+        "templateHa": "Wane abu ne misalin ruwa mai tashi daga tukunya?",
+        "answerFormula": "tururi",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ganye", "ƙafa", "kunne"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-bsci-06",
+    "gradeband": "p3",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 6,
+    "titleEn": "States of Matter",
+    "titleHa": "Yanayin Abu: Abu Mai Tauri, Ruwa, da Iska",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Abubuwa a kewaye da kai suna iya kasancewa a yanayi uku: abu mai tauri, ruwa, ko iska. Abu mai tauri yana da siffa da za ka iya riƙewa, kamar dutse, littafi, kujera, ƙwallo, ko ƙanƙara. Idan ka ɗauki dutse, ba ya canza siffa cikin sauƙi. Ruwa yana zubowa kuma yana ɗaukar siffar abin da aka zuba shi a ciki, kamar kofi, kwano, ko guga. Misalai sun haɗa da ruwan sha, mai, madara, da ruwan sama. Iska kuwa ba ka iya riƙe ta da hannu, amma tana cika wuri. Za ka iya jin iska idan ta busa fuskarka ko ta motsa leda. Tururi daga ruwan zafi ma yana nuna yanayin iska. Idan ka kalli gida da aji, za ka ga misalan waɗannan yanayi uku kullum.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi yanayin abu: abu mai tauri, ruwa, da iska. [MAIN] Abu mai tauri yana da siffa da za ka iya riƙewa, kamar dutse, littafi, kujera, ƙwallo, ko ƙanƙara. Idan ka ɗauki dutse, ba ya canza siffa cikin sauƙi. Ruwa yana zubowa kuma yana ɗaukar siffar abin da aka zuba shi a ciki, kamar kofi, kwano, ko guga. [PAUSE 1] Wane yanayi ne dutse yake ciki? [MAIN] Iska ba ka iya riƙe ta da hannu, amma tana cika wuri. Za ka iya jin iska idan ta busa fuskarka ko ta motsa leda. Tururi daga ruwan zafi ma yana nuna yanayin iska. Ka kalli gida da aji, za ka ga misalan yanayi uku kullum. [PAUSE 2] Wane yanayi ne ruwan sha yake ciki? [OUTRO] Ka tuna cewa abubuwa suna iya kasancewa abu mai tauri, ruwa, ko iska.",
+    "audioFile": "audio/p3-bsci-06.mp3",
+    "imageCard": "images/p3-bsci-06.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane yanayi ne dutse yake ciki?",
+        "correctAnswer": "abu mai tauri",
+        "options": [
+          "abu mai tauri",
+          "ruwa",
+          "iska"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane yanayi ne ruwan sha yake ciki?",
+        "correctAnswer": "ruwa",
+        "options": [
+          "abu mai tauri",
+          "ruwa",
+          "ganye"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane yanayi ne littafi yake ciki?",
+        "answerFormula": "abu mai tauri",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["ruwa", "iska", "tururi"]
+      },
+      {
+        "templateHa": "Wane yanayi ne madara take ciki?",
+        "answerFormula": "ruwa",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["abu mai tauri", "iska", "ganye"]
+      },
+      {
+        "templateHa": "Wane abu ne misalin iska?",
+        "answerFormula": "tururi",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["dutse", "littafi", "kujera"]
+      },
+      {
+        "templateHa": "Me ruwa yake ɗauka idan an zuba shi cikin kofi?",
+        "answerFormula": "siffar kofi",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["siffar dutse", "siffar kunne", "siffar rana"]
+      },
+      {
+        "templateHa": "Wane abu ne iska take iya motsawa?",
+        "answerFormula": "leda",
+        "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } },
+        "distractorFormulas": ["rijiya", "bango", "dutse mai nauyi"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

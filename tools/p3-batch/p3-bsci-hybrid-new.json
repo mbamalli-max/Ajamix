@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p3-bsci-16",
+    "gradeband": "p3",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 16,
+    "titleEn": "Plant Parts and Functions (Deeper Study)",
+    "titleHa": "Sassan Tsiro da Ayyukansu: Nazari Mai Zurfi",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Sassan tsiro suna aiki tare kamar ƙungiya domin tsiro ya rayu. Tushen dawa yana bazuwa cikin ƙasa, yana kafa shukar sosai, sannan ƙananan rassansa su jawo ruwa da sinadaran gina jiki daga ƙasa. Kara tana ɗauke da ƙananan hanyoyi a cikinta; waɗannan hanyoyi suna kai ruwa da sinadarai zuwa ganye, suna kuma rarraba abincin da aka samar zuwa sauran sassa. Ganye suna karɓar hasken rana da iska, sannan su haɗa su da ruwan da ya iso domin samar wa tsiro abinci. Furanni suna taimakawa wajen samar da iri. Bayan an samu iri, wasu furanni sukan bunƙasa su zama 'ya'ya masu kare irin, kamar kabewa ko tumatir. 'Ya'yan da suka nuna suna ɗauke da iri da za a iya shukawa a wata gona. Idan tushe ya lalace, ruwa ba zai isa sosai ba; idan ganye suka ƙone, samar da abinci zai ragu. Saboda haka manomi yana sassauta ƙasa a hankali, yana ba shuka ruwa gwargwado, kuma ba ya karya kara ko cire ganye ba tare da dalili ba.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu zurfafa nazarin ayyukan sassan tsiro. [MAIN] Tushen dawa yana kafa shuka kuma ƙananan rassansa suna jawo ruwa da sinadaran gina jiki. Ƙananan hanyoyi a cikin kara suna kai waɗannan abubuwa zuwa ganye. Ganye suna amfani da hasken rana, iska, da ruwa domin samar da abinci. [PAUSE 1] Ta wace hanya ruwa yake tafiya daga tushe zuwa ganye? [MAIN] Furanni suna taimakawa wajen samar da iri, wasu kuma sukan bunƙasa su zama 'ya'ya kamar kabewa ko tumatir. 'Ya'yan suna kare iri har su nuna. Lalacewar tushe tana rage shan ruwa, lalacewar ganye kuma tana rage samar da abinci. [PAUSE 2] Wane aiki 'ya'ya suke yi wa iri? [OUTRO] Ka tuna cewa tushe, kara, ganye, fure, da 'ya'ya suna da ayyuka masu haɗuwa domin tsiro ya rayu ya samar da sabon iri.",
+    "audioFile": "audio/p3-bsci-16.mp3",
+    "imageCard": "images/p3-bsci-16.png",
+    "microPauses": [
+      { "pauseAtMs": 90000, "questionHa": "Ta wace hanya ruwa yake tafiya daga tushe zuwa ganye?", "correctAnswer": "ta ƙananan hanyoyin cikin kara", "options": ["ta ƙananan hanyoyin cikin kara", "ta cikin fure kawai", "ta saman 'ya'ya"] },
+      { "pauseAtMs": 150000, "questionHa": "Wane aiki 'ya'ya suke yi wa iri?", "correctAnswer": "suna kare iri", "options": ["suna kare iri", "suna yanke tushe", "suna busar da ƙasa"] }
+    ],
+    "quizQuestions": [
+      { "templateHa": "Ta yaya ƙananan rassan tushe suke taimaka wa tsiro?", "answerFormula": "suna jawo ruwa da sinadaran gina jiki", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["suna samar da inuwa", "suna nuna lokaci", "suna busar da iri"] },
+      { "templateHa": "Menene aikin ƙananan hanyoyin da ke cikin kara?", "answerFormula": "kai ruwa da sinadarai zuwa ganye", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["ajiye ƙwai", "auna nauyin shuka", "mayar da haske"] },
+      { "templateHa": "Me ganye suke amfani da shi wajen samar da abinci?", "answerFormula": "hasken rana, iska, da ruwa", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["duwatsu da ƙusa", "toka da gilashi", "yashi kaɗai"] },
+      { "templateHa": "Wane aiki fure yake taimakawa tsiro ya yi?", "answerFormula": "samar da iri", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["shan ruwa daga ƙasa", "kafa shuka a ƙasa", "auna tsawon kara"] },
+      { "templateHa": "Me zai iya faruwa idan ganye da yawa suka lalace?", "answerFormula": "samar da abinci zai ragu", "variableRanges": { "a": { "min": 0, "max": 0 }, "b": { "min": 0, "max": 0 } }, "distractorFormulas": ["tushe zai zama dutse", "ƙasa za ta zama madubi", "fure zai auna lokaci"] }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

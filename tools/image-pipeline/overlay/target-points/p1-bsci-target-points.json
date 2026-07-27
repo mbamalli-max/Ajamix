@@ -1,0 +1,236 @@
+[
+  {
+    "id": "p1-bsci-01",
+    "labels": [
+      {
+        "text": "Idanu",
+        "targetPoint": {
+          "x": 0.257,
+          "y": 0.53
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-02",
+    "labels": [
+      {
+        "text": "Kunnuwa",
+        "targetPoint": {
+          "x": 0.44,
+          "y": 0.58
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-04",
+    "labels": [
+      {
+        "text": "Hanci",
+        "targetPoint": {
+          "x": 0.215,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Baki",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.565
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-05",
+    "labels": [
+      {
+        "text": "Idanu",
+        "targetPoint": {
+          "x": 0.51,
+          "y": 0.34
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Kunnuwa",
+        "targetPoint": {
+          "x": 0.18,
+          "y": 0.36
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Hannu",
+        "targetPoint": {
+          "x": 0.13,
+          "y": 0.68
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Hanci",
+        "targetPoint": {
+          "x": 0.8,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Baki",
+        "targetPoint": {
+          "x": 0.82,
+          "y": 0.77
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-07",
+    "labels": [
+      {
+        "text": "Ganye",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.47
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Tushe",
+        "targetPoint": {
+          "x": 0.495,
+          "y": 0.63
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "'Ya'ya",
+        "targetPoint": {
+          "x": 0.566,
+          "y": 0.51
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-08",
+    "labels": [
+      {
+        "text": "Mai Rai",
+        "targetPoint": {
+          "x": 0.35,
+          "y": 0.68
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Marasa Rai",
+        "targetPoint": {
+          "x": 0.65,
+          "y": 0.72
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-11",
+    "labels": [
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.09,
+          "y": 0.3
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ruwan Sama",
+        "targetPoint": {
+          "x": 0.38,
+          "y": 0.63
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Iska",
+        "targetPoint": {
+          "x": 0.57,
+          "y": 0.44
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Gizagizai",
+        "targetPoint": {
+          "x": 0.85,
+          "y": 0.37
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-12",
+    "labels": [
+      {
+        "text": "Lefe",
+        "targetPoint": {
+          "x": 0.31,
+          "y": 0.53
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-13",
+    "labels": [
+      {
+        "text": "Daba",
+        "targetPoint": {
+          "x": 0.52,
+          "y": 0.74
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Sandar da ke Tsakiya",
+        "targetPoint": {
+          "x": 0.9,
+          "y": 0.76
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p1-bsci-14",
+    "labels": [
+      {
+        "text": "Haske",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.66
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Zafi",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.63
+        },
+        "confidence": "medium"
+      }
+    ]
+  }
+]

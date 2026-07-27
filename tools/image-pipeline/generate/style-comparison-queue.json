@@ -1,0 +1,44 @@
+{
+  "queueVersion": "1.0",
+  "purpose": "Phase 1 style comparison only — dry-run records; no rendering authorization",
+  "defaultModel": "gpt-image-1",
+  "maxRetries": 2,
+  "jobs": [
+    {
+      "id": "style-a-p2-bsci-16",
+      "status": "queued",
+      "style": "A — Textured gouache storybook",
+      "moduleId": "p2-bsci-16",
+      "output": "tools/image-pipeline/output/raw/style-a-p2-bsci-16.png",
+      "prompt": "Premium textured gouache children’s editorial illustration, landscape 3:2. A potted bean plant has four clearly visual cues: a small watering can for water, gentle air movement lines, warm sun rays, and visible healthy soil around roots. Amina, a 6–7 year-old Northern Nigerian primary learner from the AJAMIX recurring-character guide, gently checks the soil without touching leaves or stem. Warm storybook composition, clean silhouettes, controlled focal hierarchy, classroom sill or courtyard context, upper-left and lower-right quiet label-safe space. No text in artwork; labels will be composited later.",
+      "negativePrompt": "No words, letters, numbers, watermark, logo, branding, photorealism, glossy 3D render, flat generic vector art, busy background, decorative tribal motifs, exaggerated facial features, unsafe child behavior, distorted hands, broken plant, or label/callout graphics.",
+      "labelSource": { "manifest": "tools/image-manifest/p2-bsci-image-manifest.json", "id": "p2-bsci-16", "labelsHa": ["Ruwa", "Iska", "Hasken Rana", "Ƙasa"] },
+      "safetyNote": "Do not depict a child pulling a leaf or breaking the stem, and do not show excessive water being poured.",
+      "attempts": 0
+    },
+    {
+      "id": "style-b-p2-bsci-16",
+      "status": "queued",
+      "style": "B — Clean watercolor editorial",
+      "moduleId": "p2-bsci-16",
+      "output": "tools/image-pipeline/output/raw/style-b-p2-bsci-16.png",
+      "prompt": "Clean watercolor editorial illustration for a premium children’s curriculum, landscape 3:2. A potted bean plant has four clear visual cues: watering can for water, gentle air movement, sunlight, and suitable soil around roots. Amina, a 6–7 year-old Northern Nigerian primary learner from the AJAMIX recurring-character guide, carefully checks soil without pulling any leaf or stem. Translucent controlled watercolor, bright paper-white negative space, culturally grounded classroom/courtyard detail, empty upper band and margins for later label overlay. Do not include any writing, symbols, arrows, or labels.",
+      "negativePrompt": "No text, letters, numbers, watermark, logo, brand, photorealism, generic flat icon set, dark muddy wash, over-rendered texture, pseudo-African patterning, caricature, unsafe child behavior, plant damage, distorted anatomy, or rendered callout labels.",
+      "labelSource": { "manifest": "tools/image-manifest/p2-bsci-image-manifest.json", "id": "p2-bsci-16", "labelsHa": ["Ruwa", "Iska", "Hasken Rana", "Ƙasa"] },
+      "safetyNote": "Do not depict a child pulling a leaf or breaking the stem, and do not show excessive water being poured.",
+      "attempts": 0
+    },
+    {
+      "id": "style-c-p2-bsci-16",
+      "status": "queued",
+      "style": "C — Soft digital-paint editorial with restrained dimensional lighting",
+      "moduleId": "p2-bsci-16",
+      "output": "tools/image-pipeline/output/raw/style-c-p2-bsci-16.png",
+      "prompt": "Soft digital-paint editorial illustration for a premium primary curriculum, landscape 3:2. A potted bean plant has four distinct evidence cues: a watering can, gentle air movement, sunlight, and suitable soil around roots. Amina, a 6–7 year-old Northern Nigerian primary learner from the AJAMIX recurring-character guide, gently checks the soil without damaging leaves or stem. Matte brushwork, restrained dimensional daylight, clean readable silhouettes, culturally specific Northern Nigerian classroom/courtyard, low-detail upper-left and lower-right label-safe space. Artwork contains no text, labels, numbers, arrows, watermark, or brand.",
+      "negativePrompt": "No words, text, lettering, numbers, watermark, logo, branding, photorealism, glossy CGI, dramatic cinematic lighting, generic vector icons, decorative stereotypes, exaggerated faces, clutter, unsafe child behavior, damaged plant, distorted hands, or generated diagram labels.",
+      "labelSource": { "manifest": "tools/image-manifest/p2-bsci-image-manifest.json", "id": "p2-bsci-16", "labelsHa": ["Ruwa", "Iska", "Hasken Rana", "Ƙasa"] },
+      "safetyNote": "Do not depict a child pulling a leaf or breaking the stem, and do not show excessive water being poured.",
+      "attempts": 0
+    }
+  ]
+}

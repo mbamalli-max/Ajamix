@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "p2-bsci-07",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 7,
+    "titleEn": "Food Groups",
+    "titleHa": "Rukunan Abinci",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Abinci yana taimaka wa jikinka ya girma, ya samu ƙarfi, kuma ya kasance lafiya. A wannan darasi, za ka koyi rukunan abinci cikin sauƙi. Wasu abinci suna ba ka ƙarfi, kamar tuwo, shinkafa, masara, gero, dankali, da doya. Wasu abinci suna gina jiki, kamar wake, ƙwai, kifi, nama, madara, da gyada. Wasu kuma suna kare jiki daga cuta, kamar mangwaro, ayaba, lemu, alayyahu, zogale, da tumatir. Idan kana cin abinci iri ɗaya kullum, jikinka ba zai samu duk abin da yake bukata ba. Ka yi ƙoƙari ka ci abinci daban-daban idan akwai. Ka wanke hannu kafin cin abinci, ka kuma ci abinci mai tsafta. Idan ka san rukunan abinci, za ka iya zaɓar abin da zai taimaka wa jikinka a gida, makaranta, ko wajen wasa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi rukunan abinci. [MAIN] Abinci yana taimaka wa jiki ya girma, ya samu ƙarfi, kuma ya kasance lafiya. Tuwo, shinkafa, masara, gero, dankali, da doya suna ba jiki ƙarfi. Wake, ƙwai, kifi, nama, madara, da gyada suna gina jiki. Mangwaro, ayaba, lemu, alayyahu, zogale, da tumatir suna taimaka wa jiki ya guji cuta. [PAUSE 1] Wane abinci ne yake ba jiki ƙarfi? [MAIN] Ka yi ƙoƙari ka ci abinci daban-daban idan akwai. Ka wanke hannu kafin cin abinci, ka ci abinci mai tsafta, kuma ka saurari shawarar manya game da abinci. [PAUSE 2] Me ya kamata ka yi kafin cin abinci? [OUTRO] Ka tuna cewa abinci mai kyau yana taimaka maka ka yi karatu, wasa, da aiki cikin lafiya.",
+    "audioFile": "audio/p2-bsci-07.mp3",
+    "imageCard": "images/p2-bsci-07.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane abinci ne yake ba jiki ƙarfi?",
+        "correctAnswer": "tuwo",
+        "options": [
+          "tuwo",
+          "sabulu",
+          "toka"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi kafin cin abinci?",
+        "correctAnswer": "wanke hannu",
+        "options": [
+          "wanke hannu",
+          "ɓoye abinci",
+          "bar abinci a ƙura"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane abinci ne yake ba jiki ƙarfi?",
+        "answerFormula": "shinkafa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "sabulu",
+          "toka",
+          "alli"
+        ]
+      },
+      {
+        "templateHa": "Wane abinci ne yake gina jiki?",
+        "answerFormula": "wake",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "riga",
+          "dutse",
+          "kujera"
+        ]
+      },
+      {
+        "templateHa": "Wane abinci ne yake taimaka wa jiki ya guji cuta?",
+        "answerFormula": "lemun zaƙi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "takalmi",
+          "guga",
+          "makulli"
+        ]
+      },
+      {
+        "templateHa": "Me ya fi kyau a yi idan abinci iri daban-daban yana samuwa?",
+        "answerFormula": "cin abinci iri daban-daban",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "cin abu ɗaya kullum",
+          "barin abinci a ƙura",
+          "wasa da abinci"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi kafin cin abinci?",
+        "answerFormula": "wanke hannu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɗaukar datti",
+          "taɓa ƙura",
+          "zubar da ruwa"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-08",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 8,
+    "titleEn": "The Five Senses",
+    "titleHa": "Gabobin Ji Biyar",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Allah ya ba ka gabobin ji biyar domin ka fahimci abin da ke kewaye da kai. Idanu suna taimaka maka ka gani. Kunnuwa suna taimaka maka ka ji sauti, kamar kiran malami ko ƙarar mota. Hanci yana taimaka maka ka ji ƙamshi, kamar ƙamshin abinci ko wari mara daɗi. Harshe yana taimaka maka ka gane ɗanɗano, kamar zaƙi, ɗaci, ko gishiri. Fata tana taimaka maka ka ji taɓawa, zafi, sanyi, laushi, ko kaushi. Ka kula da waɗannan gabobi. Kada ka kalli rana kai tsaye. Kada ka saka abu mai kaifi a kunne ko hanci. Kada ka ci abu da ba ka sani ba. Idan ka san aikin gabobin ji, za ka fi kula da jikinka, ka kuma fi gane darussa a gida da makaranta.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi gabobin ji biyar. [MAIN] Gabobin ji biyar suna taimaka maka ka gane duniya. Idanu suna gani. Kunnuwa suna jin sauti. Hanci yana jin ƙamshi. Harshe yana gane ɗanɗano. Fata tana jin taɓawa, zafi, sanyi, laushi, ko kaushi. [PAUSE 1] Wace gaba ce take taimaka maka ka gani? [MAIN] Ka kula da gabobin jikinka. Kada ka kalli rana kai tsaye, kada ka saka abu mai kaifi a kunne ko hanci, kuma kada ka ci abu da ba ka sani ba. Idan wata gaba ta yi ciwo, ka sanar da babba. [PAUSE 2] Wace gaba ce take gane ɗanɗano? [OUTRO] Ka yi amfani da gabobin ji cikin kulawa. Suna taimaka maka ka koya, ka yi wasa, kuma ka zauna lafiya.",
+    "audioFile": "audio/p2-bsci-08.mp3",
+    "imageCard": "images/p2-bsci-08.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wace gaba ce take taimaka maka ka gani?",
+        "correctAnswer": "idanu",
+        "options": [
+          "idanu",
+          "harshe",
+          "fata"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wace gaba ce take gane ɗanɗano?",
+        "correctAnswer": "harshe",
+        "options": [
+          "hanci",
+          "harshe",
+          "kunnuwa"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wace gaba ce ake amfani da ita wajen gani?",
+        "answerFormula": "idanu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "harshe",
+          "hanci",
+          "ƙafa"
+        ]
+      },
+      {
+        "templateHa": "Wace gaba ce take jin sauti?",
+        "answerFormula": "kunnuwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "idanu",
+          "harshe",
+          "gwiwa"
+        ]
+      },
+      {
+        "templateHa": "Wace gaba ce take jin ƙamshi?",
+        "answerFormula": "hanci",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "fata",
+          "kunnuwa",
+          "gashi"
+        ]
+      },
+      {
+        "templateHa": "Wace gaba ce take jin taɓawa?",
+        "answerFormula": "fata",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hanci",
+          "harshe",
+          "ido"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace ka saka a kunne ba?",
+        "answerFormula": "abu mai kaifi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "murya mai laushi",
+          "shawarar malami",
+          "sauti mai sauƙi"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-09",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 9,
+    "titleEn": "Safety at Home",
+    "titleHa": "Tsaro a Gida",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tsaro a gida yana nufin yin abubuwa cikin kulawa domin kada ka ji rauni. A gida akwai abubuwa masu amfani, amma wasu na iya zama hatsari idan yara suka yi wasa da su. Kada ka taɓa wuta, murhu, tukunyar zafi, ko garwashi. Kada ka saka hannu a soket ko ka ja wayar lantarki. Ka guji wuƙa, reza, ƙusa, da kwalbar da ta fashe. Idan ka ga magani, man fetur, ko sinadarin wanki, kada ka sha ko ka taɓa shi ba tare da babba ba. Idan ruwa ya zube a ɗaki, ka sanar da babba domin kada mutum ya zame. Ka ajiye kayan wasa daga hanyar tafiya. Idan ka ji wari ko ka ga hayaƙi, ka kira babba nan da nan. Tsaro yana farawa ne da lura, tambaya, da bin umarnin manya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi tsaro a gida. [MAIN] Gida wuri ne na zama, amma dole ka yi hankali. Kada ka taɓa wuta, murhu, tukunyar zafi, soket, ko wayar lantarki. Ka guji wuƙa, reza, ƙusa, da kwalbar da ta fashe. Idan ka ga magani ko man fetur, kada ka sha ko ka taɓa shi ba tare da babba ba. [PAUSE 1] Me bai dace ka taɓa da hannunka ba? [MAIN] Idan ruwa ya zube a ɗaki, ka sanar da babba. Ka ajiye kayan wasa daga hanyar tafiya. Idan ka ji wari ko ka ga hayaƙi, ka kira babba nan da nan. [PAUSE 2] Wa za ka kira idan ka ga hayaƙi a gida? [OUTRO] Ka tuna cewa yaro mai hankali yana tambaya kafin ya taɓa abu mai hatsari.",
+    "audioFile": "audio/p2-bsci-09.mp3",
+    "imageCard": "images/p2-bsci-09.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me bai dace ka taɓa da hannunka ba?",
+        "correctAnswer": "tukunyar zafi",
+        "options": [
+          "tukunyar zafi",
+          "littafi",
+          "tabarma"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wa za ka kira idan ka ga hayaƙi a gida?",
+        "correctAnswer": "babba",
+        "options": [
+          "babba",
+          "ƙwallo",
+          "takalmi"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me bai dace yaro ya taɓa ba?",
+        "answerFormula": "wuta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "littafi",
+          "fensir",
+          "tabarma"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi idan ruwa ya zube a ɗaki?",
+        "answerFormula": "sanar da babba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gudu a kai",
+          "wasa a kai",
+          "ɓoye shi"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ne mai kaifi?",
+        "answerFormula": "wuƙa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "matashi",
+          "bargo",
+          "kwando"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace ka sha ba tare da babba ba?",
+        "answerFormula": "magani",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ruwa mai tsafta",
+          "madara da aka ba ka",
+          "kunu daga uwa"
+        ]
+      },
+      {
+        "templateHa": "Me tsaro a gida yake taimaka maka ka guje wa?",
+        "answerFormula": "rauni",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "karatu",
+          "tsafta",
+          "sallama"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-10",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 10,
+    "titleEn": "Clean Environment",
+    "titleHa": "Muhalli Mai Tsafta",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Muhalli shi ne wurin da kake zaune, kake karatu, ko kake wasa. Muhalli mai tsafta yana taimaka maka ka zauna lafiya. A gida, aji, masallaci, ko kasuwa, datti na iya jawo ƙwari, wari, da cuta. Ka riƙa zuba shara a kwandon shara. Kada ka jefa leda, takarda, ko bawon abinci a hanya. Idan ka gama cin ayaba ko mangwaro, ka kai bawon wurin shara. Ka taimaka wajen share ɗaki ko tsakar gida idan manya sun ba ka dama. Ruwa mai datti bai kamata ya taru kusa da gida ba, domin sauro na iya yawaita a wurin. Ka wanke hannu bayan ka taɓa shara. Idan kowa ya kula da muhalli, gida da makaranta za su fi kyau, ƙamshi, da lafiya. Kai ma kana da rawar da za ka taka.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi muhalli mai tsafta. [MAIN] Muhalli shi ne wurin da kake zaune, karatu, ko wasa. Idan muhalli ya yi datti, ƙwari, wari, da cuta na iya yawaita. Ka zuba shara a kwandon shara. Kada ka jefa leda, takarda, ko bawon abinci a hanya. [PAUSE 1] Ina ya kamata ka zuba shara? [MAIN] Ka taimaka wajen share ɗaki ko tsakar gida idan manya sun ba ka dama. Kada ruwa mai datti ya taru kusa da gida, domin sauro na iya yawaita a wurin. Ka wanke hannu bayan ka taɓa shara. [PAUSE 2] Me zai iya yawaita a ruwan datti da ya taru? [OUTRO] Muhalli mai tsafta yana sa gida da makaranta su fi kyau da lafiya.",
+    "audioFile": "audio/p2-bsci-10.mp3",
+    "imageCard": "images/p2-bsci-10.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Ina ya kamata ka zuba shara?",
+        "correctAnswer": "kwandon shara",
+        "options": [
+          "kwandon shara",
+          "hanyar gida",
+          "kan tabarma"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me zai iya yawaita a ruwan datti da ya taru?",
+        "correctAnswer": "sauro",
+        "options": [
+          "sauro",
+          "littafi",
+          "alkalami"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me ake kira wurin da kake zaune ko karatu?",
+        "answerFormula": "muhalli",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "harshe",
+          "madara",
+          "ƙwai"
+        ]
+      },
+      {
+        "templateHa": "Ina ya kamata ka zuba shara?",
+        "answerFormula": "kwandon shara",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "kan hanya",
+          "cikin rijiya",
+          "kan tabarma"
+        ]
+      },
+      {
+        "templateHa": "Me datti zai iya jawo?",
+        "answerFormula": "cuta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙarin lafiya",
+          "haske",
+          "abinci mai kyau"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi bayan ka taɓa shara?",
+        "answerFormula": "wanke hannu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ci abinci nan da nan",
+          "taɓa fuska",
+          "ɓoye hannu"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ne sauro zai iya samu idan ruwa mai datti ya taru?",
+        "answerFormula": "wurin yawaita",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "littafin karatu",
+          "tufafi masu tsabta",
+          "abinci mai kyau"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-11",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 11,
+    "titleEn": "Simple Machines at Home",
+    "titleHa": "Sauƙaƙan Kayan Aiki a Gida",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Sauƙaƙan kayan aiki suna taimaka wa mutane su yi aiki da sauƙi a gida. Ba dole sai injin lantarki ba. Cokali yana taimaka maka ka ɗebo abinci. Wuƙa tana yanka abu, amma yara ba sa amfani da ita sai da kulawar babba. Tsintsiya tana taimaka wajen share gida. Guga yana taimaka wajen ɗaukar ruwa. Mabuɗi yana buɗe ƙofa. Ƙaramar matattakala tana taimaka wa mutum ya kai abu da ke sama, amma sai a yi hankali kada a faɗi. Keken ɗinki, injin niƙa, ko karamin turmi na iya taimaka wa manya su yi aiki cikin sauƙi. Ka kalli kayan aiki a gidanku ka tambayi: wane aiki suke yi? Ka yi amfani da kayan da suka dace da shekarunka, ka kuma nemi izinin babba kafin ka taɓa abu mai kaifi ko nauyi.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi sauƙaƙan kayan aiki a gida. [MAIN] Sauƙaƙan kayan aiki suna taimaka mana mu yi aiki da sauƙi. Cokali yana ɗebo abinci. Tsintsiya tana share gida. Guga yana ɗaukar ruwa. Mabuɗi yana buɗe ƙofa. Wuƙa tana yanka abu, amma yara sai da kulawar babba. [PAUSE 1] Wane kayan aiki ne ake amfani da shi wajen share gida? [MAIN] Ka lura da kayan aiki a gidanku. Wasu sun dace da yara, wasu kuma sai manya. Kada ka taɓa abu mai kaifi ko nauyi ba tare da izini ba. [PAUSE 2] Me ya kamata ka yi kafin ka taɓa wuƙa? [OUTRO] Ka tuna cewa kayan aiki suna taimakawa, amma dole a yi amfani da su cikin hankali.",
+    "audioFile": "audio/p2-bsci-11.mp3",
+    "imageCard": "images/p2-bsci-11.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane kayan aiki ne ake amfani da shi wajen share gida?",
+        "correctAnswer": "tsintsiya",
+        "options": [
+          "tsintsiya",
+          "ƙwai",
+          "madara"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi kafin ka taɓa wuƙa?",
+        "correctAnswer": "nemi izinin babba",
+        "options": [
+          "nemi izinin babba",
+          "yi wasa da ita",
+          "ɓoye ta a aljihu"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane kayan aiki ne ake amfani da shi wajen ɗebo abinci?",
+        "answerFormula": "cokali",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "tsintsiya",
+          "mabuɗi",
+          "guga"
+        ]
+      },
+      {
+        "templateHa": "Wane kayan aiki ne yake buɗe ƙofa?",
+        "answerFormula": "mabuɗi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "cokali",
+          "tsintsiya",
+          "tabarma"
+        ]
+      },
+      {
+        "templateHa": "Wane kayan aiki ne yake ɗaukar ruwa?",
+        "answerFormula": "guga",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "alli",
+          "hula",
+          "fensir"
+        ]
+      },
+      {
+        "templateHa": "Me wuƙa take yi?",
+        "answerFormula": "yanka abu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "share gida",
+          "buɗe ƙofa",
+          "shayar da dabba"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata yaro ya yi kafin amfani da abu mai kaifi?",
+        "answerFormula": "nemi izinin babba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yi wasa da shi",
+          "gudu da shi",
+          "bar shi a hanya"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-12",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 12,
+    "titleEn": "Sources of Light",
+    "titleHa": "Tushen Haske",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Haske yana taimaka maka ka gani. Idan ɗaki ya yi duhu, karatu, tafiya, ko neman abu na iya zama wahala. Tushen haske shi ne abin da yake ba da haske. Rana ita ce babban tushen haske da muke gani da rana. Da dare, mutane na amfani da fitila, ƙwan fitila, tocila, ko fitilar mai domin samun haske. Wuta ma tana iya ba da haske, amma tana da haɗari, don haka yara ba sa wasa da ita. Haske yana taimaka wa malamai su rubuta a allo, yara su karanta littafi, kuma iyaye su yi aiki a gida. Kada ka kalli rana kai tsaye, domin hakan na iya cutar da ido. Ka kuma kashe fitila idan ba a bukata, domin a adana wuta ko batir. Idan ka san tushen haske, za ka fi kula da idanunka da kayan gida.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi tushen haske. [MAIN] Haske yana taimaka mana mu gani. Rana tana ba da haske da rana. Da dare, mutane na amfani da fitila, ƙwan fitila, tocila, ko fitilar mai. Wuta ma tana iya ba da haske, amma tana da haɗari ga yara. [PAUSE 1] Wane babban tushen haske ne muke gani da rana? [MAIN] Ka yi amfani da haske cikin kulawa. Kada ka kalli rana kai tsaye, domin hakan na iya cutar da ido. Ka kashe fitila idan ba a bukata, domin a adana wuta ko batir. [PAUSE 2] Me ya sa bai dace ka kalli rana kai tsaye ba? [OUTRO] Ka tuna cewa haske yana taimaka maka ka karanta, tafiya, da neman abu lafiya.",
+    "audioFile": "audio/p2-bsci-12.mp3",
+    "imageCard": "images/p2-bsci-12.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane babban tushen haske ne muke gani da rana?",
+        "correctAnswer": "rana",
+        "options": [
+          "rana",
+          "guga",
+          "tabarma"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya sa bai dace ka kalli rana kai tsaye ba?",
+        "correctAnswer": "tana iya cutar da ido",
+        "options": [
+          "tana iya cutar da ido",
+          "tana da sanyi",
+          "tana ɗebo ruwa"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me haske yake taimaka mana mu yi?",
+        "answerFormula": "gani",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "jin ƙamshi",
+          "ɗanɗano",
+          "taɓawa"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ne tushen haske da rana?",
+        "answerFormula": "rana",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "dutse",
+          "guga",
+          "hula"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ne ake amfani da shi domin haske da dare?",
+        "answerFormula": "tocila",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gishiri",
+          "tabarma",
+          "ƙofa"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace ka kalla kai tsaye ba?",
+        "answerFormula": "rana",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "littafi",
+          "allo",
+          "ƙofar gida"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi da fitila idan ba a bukata?",
+        "answerFormula": "kashe ta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "bar ta kullum",
+          "jefa ta",
+          "wasa da ita"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-13",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 13,
+    "titleEn": "Sound Around Us",
+    "titleHa": "Sauti a Kewaye da Mu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Sauti shi ne abin da kake ji da kunnuwanka. A kullum kana jin sautuka da yawa. Za ka iya jin muryar malami, kiran sallah, kukan jariri, ƙarar mota, busar iska, ko ƙarar ƙwanƙwasa ƙofa. Wasu sautuka suna da daɗi, kamar karatun Alƙur'ani ko waƙar yara. Wasu sautuka kuma suna iya zama da ƙarfi, kamar horn na mota ko ihu kusa da kunne. Sauti mai ƙarfi sosai na iya cutar da kunne. Saboda haka, kada ka riƙa ihu a kunnen aboki. Kada ka sa rediyo ko waya da ƙarfi sosai. Idan ka ji sautin hatsari, kamar ƙarar mota ko kiran taimako, ka matsa gefe ko ka sanar da babba. Sauti yana taimaka maka ka san abin da ke faruwa a gida, makaranta, titi, da kasuwa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi sauti a kewaye da mu. [MAIN] Sauti shi ne abin da kake ji da kunnuwa. Kana iya jin muryar malami, kiran sallah, kukan jariri, ƙarar mota, busar iska, ko ƙwanƙwasa ƙofa. Wasu sautuka suna da daɗi, wasu kuma suna da ƙarfi sosai. [PAUSE 1] Wace gaba ce take jin sauti? [MAIN] Sauti mai ƙarfi na iya cutar da kunne. Kada ka yi ihu kusa da kunnen aboki. Kada ka sa rediyo ko waya da ƙarfi sosai. Idan ka ji sautin hatsari, ka matsa gefe ko ka sanar da babba. [PAUSE 2] Me sauti mai ƙarfi zai iya cutarwa? [OUTRO] Ka saurari sautuka cikin hankali, domin suna taimaka maka ka gane abin da ke faruwa.",
+    "audioFile": "audio/p2-bsci-13.mp3",
+    "imageCard": "images/p2-bsci-13.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wace gaba ce take jin sauti?",
+        "correctAnswer": "kunnuwa",
+        "options": [
+          "kunnuwa",
+          "idanu",
+          "harshe"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me sauti mai ƙarfi zai iya cutarwa?",
+        "correctAnswer": "kunne",
+        "options": [
+          "kunne",
+          "takalmi",
+          "kwando"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me ake ji da kunnuwa?",
+        "answerFormula": "sauti",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "haske",
+          "launi",
+          "ƙamshi"
+        ]
+      },
+      {
+        "templateHa": "Wane misali ne na sauti?",
+        "answerFormula": "muryar malami",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "launin riga",
+          "siffar kwano",
+          "ɗanɗanon gishiri"
+        ]
+      },
+      {
+        "templateHa": "Me sauti mai ƙarfi zai iya cutarwa?",
+        "answerFormula": "kunne",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "takalmi",
+          "tabarma",
+          "ƙwallo"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace ka yi kusa da kunnen aboki ba?",
+        "answerFormula": "ihu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yin magana a hankali",
+          "sallama",
+          "sauraro"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi idan ka ji sautin hatsari?",
+        "answerFormula": "sanar da babba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙara kusanta",
+          "rufe ido kawai",
+          "ci gaba da wasa"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-14",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 14,
+    "titleEn": "Care of Plants and Animals",
+    "titleHa": "Kula da Tsirrai da Dabbobi",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tsirrai da dabbobi abubuwa ne masu rai, don haka suna bukatar kulawa. Idan kana da shuka a gida ko makaranta, ka ba ta ruwa gwargwadon bukata. Ka cire ciyawa da ke takura mata, amma kada ka karya rassanta. Ka sa ta a wurin da za ta samu haske idan irin shukar tana bukata. Dabbobin gida kamar akuya, kaza, saniya, kare, da kyanwa suna bukatar abinci, ruwa, inuwa, da wuri mai tsafta. Kada ka jefa wa dabba dutse ko ka ja wutsiyarta. Idan dabba ta yi ciwo, manya za su iya neman likitan dabbobi. Ka riƙa wanke hannu bayan ka taɓa dabba ko ƙasa. Kula da tsirrai da dabbobi yana nuna tausayi, yana kuma taimaka wa gida da unguwa su kasance masu kyau da amfani.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi kula da tsirrai da dabbobi. [MAIN] Tsirrai da dabbobi masu rai ne. Shuka tana bukatar ruwa, haske, da wuri mai kyau. Kada ka karya rassanta. Dabbobin gida kamar akuya, kaza, saniya, kare, da kyanwa suna bukatar abinci, ruwa, inuwa, da tsafta. [PAUSE 1] Me shuka take bukata domin ta girma? [MAIN] Kada ka jefa wa dabba dutse ko ka ja wutsiyarta. Idan dabba ta yi ciwo, manya za su iya neman likitan dabbobi. Ka wanke hannu bayan ka taɓa dabba ko ƙasa. [PAUSE 2] Me ya kamata ka yi bayan ka taɓa dabba? [OUTRO] Ka kula da tsirrai da dabbobi cikin tausayi, domin su ma halittu ne masu rai.",
+    "audioFile": "audio/p2-bsci-14.mp3",
+    "imageCard": "images/p2-bsci-14.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me shuka take bukata domin ta girma?",
+        "correctAnswer": "ruwa",
+        "options": [
+          "ruwa",
+          "toka",
+          "takalmi"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi bayan ka taɓa dabba?",
+        "correctAnswer": "wanke hannu",
+        "options": [
+          "wanke hannu",
+          "taɓa abinci nan da nan",
+          "ɓoye hannunka"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me shuka take bukata daga mai kula da ita?",
+        "answerFormula": "ruwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "dutse",
+          "hayaƙi",
+          "ƙusa"
+        ]
+      },
+      {
+        "templateHa": "Me dabbar gida take bukata?",
+        "answerFormula": "abinci da ruwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙura da hayaƙi",
+          "ƙusa da dutse",
+          "fenti da toka"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace ka yi wa dabba ba?",
+        "answerFormula": "jefa mata dutse",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ba ta ruwa",
+          "ba ta abinci",
+          "kula da ita"
+        ]
+      },
+      {
+        "templateHa": "Wa zai iya taimaka idan dabba ta yi ciwo?",
+        "answerFormula": "likitan dabbobi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙwallo",
+          "tabarma",
+          "kwando"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi bayan ka taɓa dabba?",
+        "answerFormula": "wanke hannu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ci abinci nan da nan",
+          "taɓa ido",
+          "goge hannu a riga"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-bsci-15",
+    "gradeband": "p2",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 15,
+    "titleEn": "Keeping Water Safe",
+    "titleHa": "Kiyaye Ruwa Mai Tsabta",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ruwa mai tsafta yana taimaka wa jikinka ya kasance lafiya. Ruwa na iya fitowa daga famfo, rijiya, borehole, kogi, ko ruwan sama. Amma ba kowane ruwa ne ya dace a sha kai tsaye ba. Idan ruwa ya samu datti, ƙwari, ko laka, zai iya jawo ciwon ciki. A gida, ka riƙa ajiye ruwan sha a mazubi mai murfi. Kada ka saka hannu mai datti cikin ruwan sha. Yi amfani da kofi ko ludayi mai tsafta. Idan ruwa ya fito daga wuri da ba a tabbatar da tsabtarsa ba, manya za su iya tacewa, tafasawa, ko amfani da hanyar tsarkakewa da suka sani. Kada ka yi wanka ko wanki kusa da wurin ɗiban ruwan sha. Ka kuma rufe rijiya idan an gama amfani da ita. Kiyaye ruwa mai tsafta yana kare kai, iyali, da abokanka daga cuta.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Kimiyya. Yau za mu koyi kiyaye ruwa mai tsafta. [MAIN] Ruwa mai tsafta yana taimaka wa jiki ya kasance lafiya. Ruwa na iya fitowa daga famfo, rijiya, borehole, kogi, ko ruwan sama. Amma ruwa mai datti, ƙwari, ko laka zai iya jawo ciwon ciki. [PAUSE 1] A cikin me ya kamata ka ajiye ruwan sha? [MAIN] Ka ajiye ruwan sha a mazubi mai murfi. Kada ka saka hannu mai datti cikin ruwan sha. Yi amfani da kofi ko ludayi mai tsafta. Idan ruwa bai tabbata ba, manya za su iya tacewa ko tafasawa. [PAUSE 2] Me zai iya jawo ciwon ciki? [OUTRO] Ka kiyaye ruwa mai tsafta domin ka kare kanka, iyalinka, da abokanka daga cuta.",
+    "audioFile": "audio/p2-bsci-15.mp3",
+    "imageCard": "images/p2-bsci-15.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "A cikin me ya kamata ka ajiye ruwan sha?",
+        "correctAnswer": "mazubi mai murfi",
+        "options": [
+          "mazubi mai murfi",
+          "ƙasa mai ƙura",
+          "kan hanya"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me zai iya jawo ciwon ciki?",
+        "correctAnswer": "ruwa mai datti",
+        "options": [
+          "ruwa mai datti",
+          "kofi mai tsafta",
+          "murfi mai kyau"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane ruwa ne ya fi dacewa a sha?",
+        "answerFormula": "ruwa mai tsafta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ruwa mai laka",
+          "ruwa mai datti",
+          "ruwa mai ƙwari"
+        ]
+      },
+      {
+        "templateHa": "A cikin me ya kamata a ajiye ruwan sha?",
+        "answerFormula": "mazubi mai murfi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "kwando buɗe",
+          "kan hanya",
+          "cikin ƙura"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace ka saka cikin ruwan sha ba?",
+        "answerFormula": "hannu mai datti",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "kofi mai tsafta",
+          "murfi",
+          "ludayi mai tsafta"
+        ]
+      },
+      {
+        "templateHa": "Me manya za su iya yi idan ruwa bai tabbata ba?",
+        "answerFormula": "tafasawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "zuba ƙura",
+          "bar shi buɗe",
+          "wasa da shi"
+        ]
+      },
+      {
+        "templateHa": "Me kiyaye ruwa mai tsafta yake taimaka maka ka guje wa?",
+        "answerFormula": "cuta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "lafiya",
+          "tsabta",
+          "karatu"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

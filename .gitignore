@@ -2,3 +2,7 @@ node_modules
 .env
 .DS_Store
 *.mp3
+.vercel
+*.bak
+tools/image-pipeline/output/
+ajamix-polished/

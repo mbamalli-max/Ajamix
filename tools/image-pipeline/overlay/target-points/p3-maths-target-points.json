@@ -1,0 +1,63 @@
+[
+  {
+    "id": "p3-maths-01",
+    "labels": [
+      { "text": "daruruwa", "targetPoint": { "x": 0.12, "y": 0.55 }, "confidence": "high" },
+      { "text": "gommai", "targetPoint": { "x": 0.265, "y": 0.55 }, "confidence": "high" },
+      { "text": "ɗaya-ɗaya", "targetPoint": { "x": 0.41, "y": 0.55 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-maths-06",
+    "labels": [
+      { "text": "Rabi", "targetPoint": { "x": 0.16, "y": 0.62 }, "confidence": "high" },
+      { "text": "Kwata", "targetPoint": { "x": 0.45, "y": 0.62 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-maths-13",
+    "labels": [
+      { "text": "Mita", "targetPoint": { "x": 0.5, "y": 0.63 }, "confidence": "high" },
+      { "text": "Santimita", "targetPoint": { "x": 0.55, "y": 0.79 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-maths-14",
+    "labels": [
+      { "text": "Kilogiram", "targetPoint": { "x": 0.28, "y": 0.42 }, "confidence": "high" },
+      { "text": "Giram", "targetPoint": { "x": 0.78, "y": 0.4 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-maths-15",
+    "labels": [
+      { "text": "Lita", "targetPoint": { "x": 0.29, "y": 0.55 }, "confidence": "high" },
+      { "text": "Mililita", "targetPoint": { "x": 0.7, "y": 0.78 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-maths-16",
+    "labels": [
+      { "text": "Murabba’i", "targetPoint": { "x": 0.15, "y": 0.68 }, "confidence": "high" },
+      { "text": "Alwatika", "targetPoint": { "x": 0.6, "y": 0.68 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-maths-18",
+    "labels": [
+      { "text": "Kewaye", "targetPoint": { "x": 0.4, "y": 0.55 }, "confidence": "medium" }
+    ]
+  },
+  {
+    "id": "p3-maths-19",
+    "labels": [
+      { "text": "Tebur", "targetPoint": { "x": 0.5, "y": 0.6 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-maths-20",
+    "labels": [
+      { "text": "Jadawalin Sanduna", "targetPoint": { "x": 0.5, "y": 0.6 }, "confidence": "high" }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "p5-socs-01",
+    "imagePath": "images/p5-socs-01.png",
+    "titleEn": "Natural Resources of Nigeria",
+    "titleHa": "Albarkatun Ƙasa na Nijeriya",
+    "type": "diagram",
+    "depictEn": "A balanced Nigeria resource landscape divided into connected scenes: Northern farmland and livestock, a river used for water and fishing, a managed forest with wildlife habitat, a neutral mineral-rock inset, and distant regulated oil and gas facilities; arrows connect resources to food, work, and manufactured goods.",
+    "labelsHa": ["Ƙasa", "Ruwa", "Dazuzzuka", "Ma’adanai", "Man fetur", "Iskar gas"],
+    "safetyNote": "No company logos, political figures, ethnic ownership claims, unsafe mining, spills, flames, child labour, or suggestion that oil and gas are Nigeria's only resources; show girls and boys observing from a safe public viewpoint."
+  },
+  {
+    "id": "p5-socs-02",
+    "imagePath": "images/p5-socs-02.png",
+    "titleEn": "Conservation of Natural Resources",
+    "titleHa": "Kula da Albarkatun Ƙasa",
+    "type": "comparison",
+    "depictEn": "A two-column Northern Nigerian community comparison: on the left, responsibly managed grazing, tree planting, a closed water tap, reuse of containers, and small solar and wind installations; on the right, non-graphic overgrazed ground, an open dripping tap, and tree stumps, with clear green action arrows toward restoration.",
+    "labelsHa": ["Dasa itatuwa", "Rufe famfo", "Kiyaye ciyayi", "Makamashin rana", "Makamashin iska"],
+    "safetyNote": "Keep degradation mild and educational; no distressed people or animals, no dangerous tools in children's hands, no claim that one livelihood group causes all damage, and no brand or commercial-energy promotion."
+  },
+  {
+    "id": "p5-socs-03",
+    "imagePath": "images/p5-socs-03.png",
+    "titleEn": "Environmental Pollution",
+    "titleHa": "Gurɓata Muhalli",
+    "type": "comparison",
+    "depictEn": "Three paired panels labeled air, water, and land: each contrasts a mildly polluted scene with a clean community response—reduced smoke and planted trees, protected water with waste kept out, and sorted rubbish placed in bins while drains remain clear.",
+    "labelsHa": ["Iska", "Ruwa", "Ƙasa", "Kwandon shara", "Kiyaye magudana", "Dasa itatuwa"],
+    "safetyNote": "No graphic illness, dead wildlife, hazardous chemical symbols, identifiable factories, children touching sharp waste, or climate-disaster imagery; adults handle any unsafe waste and children only observe or use ordinary bins."
+  },
+  {
+    "id": "p5-socs-04",
+    "imagePath": "images/p5-socs-04.png",
+    "titleEn": "Disaster Preparedness and Safety",
+    "titleHa": "Shiri da Kariya Lokacin Bala’i",
+    "type": "diagram",
+    "depictEn": "A calm school safety-plan diagram showing a marked exit route, a safe assembly point, a teacher leading pupils away from simplified flood, fire, and road-accident warning icons, plus radio and town-crier alert symbols; trained adult responders appear only as distant neutral icons.",
+    "labelsHa": ["Hanyar fita", "Wurin taruwa", "Wuri mai aminci", "Gargadi", "Masu horo"],
+    "safetyNote": "No injury, panic, bodies, active rescue instruction, dangerous proximity to water, fire, vehicles, fuel, or glass; no emergency-service logo or unsupported phone number; children follow adults and never perform rescue."
+  },
+  {
+    "id": "p5-socs-05",
+    "imagePath": "images/p5-socs-05.png",
+    "titleEn": "The Nigerian Constitution and Rule of Law",
+    "titleHa": "Kundin Tsarin Mulkin Nijeriya da Bin Doka",
+    "type": "diagram",
+    "depictEn": "A neutral civic balance diagram with an unbranded book titled in Hausa at the centre, equal paths leading to government, citizens, and a simple courthouse, and small symbols for rights, duties, elections, evidence, and public property; all people stand at the same level before the law.",
+    "labelsHa": ["Kundin tsarin mulki", "Bin doka", "Haƙƙoƙi", "Nauyi", "Hujja da doka", "Dimokuradiyya"],
+    "safetyNote": "Mandatory neutrality: no real constitutional page, section number, party colour, politician, candidate, campaign mark, ballot instruction, judge portrait, coercion, punishment, religious symbol, or claim that any person or group is above the law."
+  },
+  {
+    "id": "p5-socs-06",
+    "imagePath": "images/p5-socs-06.png",
+    "titleEn": "Civic Education — Rights and Responsibilities",
+    "titleHa": "Ilimin Ɗan Ƙasa — Haƙƙoƙi da Nauyi",
+    "type": "comparison",
+    "depictEn": "A balanced rights-and-responsibilities wheel in a diverse Nigerian school: learning pairs with caring for books, peaceful expression pairs with listening without insults, public water access pairs with protecting the tap, and child protection pairs with speaking to a trusted adult.",
+    "labelsHa": ["Haƙƙoƙi", "Nauyi", "Ilimi", "Mutunci", "Kula da kayan jama’a", "Amintaccen babba"],
+    "safetyNote": "Mandatory neutrality: equal representation by gender and background; no party, ideology, religion, protest slogan, police, detention, graphic harm, legal-section citation, or suggestion that rights belong only to a favoured group."
+  },
+  {
+    "id": "p5-socs-07",
+    "imagePath": "images/p5-socs-07.png",
+    "titleEn": "Social Issues — Drug Abuse",
+    "titleHa": "Matsalar Amfani da Taba, Giya, ko Magani Ba Bisa Ƙa’ida Ba",
+    "type": "illustration",
+    "depictEn": "An entirely non-graphic healthy-choices scene: a child calmly walks away from an off-frame pressure situation and speaks with a trusted parent, teacher, doctor, or health worker; three large abstract steps show say no, leave, and seek help, with a protective heart-and-shield symbol.",
+    "labelsHa": ["A’a", "Barin wurin", "Neman taimako", "Babban da na yarda da shi", "Mutunci"],
+    "safetyNote": "MANDATORY: depict no substance, medicine container, cigarette, alcohol container, smoke, use, intoxication, offer, procurement, concealment, street slang, distressed person, or shaming. The image must communicate refusal and trusted-adult help only."
+  },
+  {
+    "id": "p5-socs-08",
+    "imagePath": "images/p5-socs-08.png",
+    "titleEn": "Social Issues — Conflict and Conflict Resolution",
+    "titleHa": "Saɓani da Yadda Ake Warware Shi Cikin Lumana",
+    "type": "diagram",
+    "depictEn": "A four-step classroom mediation sequence: two pupils pause and calm down, each explains while the other listens, a neutral teacher mediates, and the pupils agree on a fair division of shared materials; speech bubbles remain blank except for short Hausa step labels.",
+    "labelsHa": ["Natsuwa", "Faɗin gaskiya", "Sauraro", "Mafita mai adalci", "Mai shiga tsakani"],
+    "safetyNote": "No current conflict zone, armed group, sectarian or ethnic identifiers, weapons, threats, physical fight, victim blaming, or forced reconciliation; depict an ordinary low-stakes school disagreement and a genuinely neutral mediator."
+  },
+  {
+    "id": "p5-socs-09",
+    "imagePath": "images/p5-socs-09.png",
+    "titleEn": "The Nigerian Family — Change and Continuity",
+    "titleHa": "Iyalan Nijeriya — Sauyi da Abubuwan da Suke Ci Gaba",
+    "type": "comparison",
+    "depictEn": "Two respectful Nigerian family arrangements side by side: one household with caregivers and children, another including grandparents and other relatives; across both, women and men share reading support, caregiving, safe household tasks, paid work preparation, and family discussion around a schedule.",
+    "labelsHa": ["Kulawa", "Tarbiyya", "Raba alhaki", "Girmama juna", "Sauraro", "Zumunci"],
+    "safetyNote": "No family-planning content or symbol of any kind, no pregnancy or reproductive imagery, no ranking of household forms, no fixed gender roles, no religious prescription, and no child performing heavy or dangerous work."
+  },
+  {
+    "id": "p5-socs-10",
+    "imagePath": "images/p5-socs-10.png",
+    "titleEn": "Education and Its Importance",
+    "titleHa": "Ilimi da Muhimmancinsa",
+    "type": "comparison",
+    "depictEn": "Three connected learning scenes: girls and boys in a primary classroom, mixed learners in a supervised practical-skills workshop, and a child learning through family conversation and observing the local environment; arrows lead to literacy, problem-solving, health knowledge, and lawful occupations.",
+    "labelsHa": ["Makaranta", "Horaswa", "Rayuwar yau da kullum", "Sani", "Basira", "Ilimin asali"],
+    "safetyNote": "Give girls and boys equal prominence and aspiration; no implication that schooling is only for wealthy, urban, male, or able-bodied learners; no unsafe workshop tools, brand logos, religious ranking, or depiction of one learning route as worthless."
+  },
+  {
+    "id": "p5-socs-11",
+    "imagePath": "images/p5-socs-11.png",
+    "titleEn": "Nigeria and Africa — ECOWAS and the African Union",
+    "titleHa": "Nijeriya da Afirka — ECOWAS da Tarayyar Afirka",
+    "type": "map",
+    "depictEn": "A two-scale map graphic: West Africa highlighted neutrally for ECOWAS cooperation and the full African continent highlighted for African Union cooperation, with simple icons for trade, transport, communication, agriculture, peace, and development; Nigeria is located without being visually dominant.",
+    "labelsHa": ["Yammacin Afirka", "ECOWAS", "Tarayyar Afirka", "Ciniki", "Sufuri", "Haɗin kai"],
+    "safetyNote": "Do not print a member count or fixed member list; verify current membership and borders at render time. No disputed-border claim, flag ranking, national superiority, current leader, military scene, party colour, or inaccurate institutional logo."
+  },
+  {
+    "id": "p5-socs-12",
+    "imagePath": "images/p5-socs-12.png",
+    "titleEn": "Nigeria and the World — United Nations",
+    "titleHa": "Nijeriya da Duniya — Majalisar Ɗinkin Duniya",
+    "type": "diagram",
+    "depictEn": "A simple institutional diagram with the United Nations at the centre and three distinct branches: a circular assembly of country desks for the General Assembly, a peace-and-security discussion table for the Security Council, and a child-centred health, education, clean-water, and protection scene for UNICEF; a small Nigeria delegate joins the assembly.",
+    "labelsHa": ["Majalisar Ɗinkin Duniya", "Babban Taro", "Kwamitin Tsaro", "UNICEF", "Yara", "Zaman lafiya"],
+    "safetyNote": "No combat, weapons, current conflict, national ranking, permanent-member flag dominance, political leader, graphic emergency, or claim that all three bodies have identical powers; use generic institutional symbols unless official-logo licensing is cleared."
+  },
+  {
+    "id": "p5-socs-13",
+    "imagePath": "images/p5-socs-13.png",
+    "titleEn": "Cultural Diversity and National Unity",
+    "titleHa": "Bambancin Al’adu da Haɗin Kan Ƙasa",
+    "type": "illustration",
+    "depictEn": "A balanced Nigerian school-and-community circle where children and adults from varied regions share language cards, foods, textiles, music, and one joint service project; a small neutral NYSC service icon shows young graduates cooperating in a community without highlighting any one group.",
+    "labelsHa": ["Bambancin al’adu", "Girmama bambanci", "Haɗin kai", "Aiki tare", "NYSC", "Mutunci"],
+    "safetyNote": "Enhanced religious and ethnic neutrality: no ranking, caricature, skin-tone coding, major/minor label, costume spectacle, fixed occupation, sacred object, worship comparison, conversion message, party symbol, or implication that appearance determines language or belief."
+  },
+  {
+    "id": "p5-socs-14",
+    "imagePath": "images/p5-socs-14.png",
+    "titleEn": "Leadership and Good Governance",
+    "titleHa": "Jagoranci da Kyakkyawan Mulki",
+    "type": "diagram",
+    "depictEn": "A neutral community accountability meeting with a woman and man co-facilitating, residents asking respectful questions, a transparent public-project board listing school, health, water, and road needs, and separate simple signposts for ICPC prevention/public education and EFCC economic-and-financial-crime investigation.",
+    "labelsHa": ["Gaskiya", "Bin doka", "Alhaki", "Kayan jama’a", "ICPC", "EFCC"],
+    "safetyNote": "Mandatory neutrality: no party, candidate, office-holder, campaign colour, cash handoff, accused person, arrest, handcuffs, guilt claim, agency seal, ethnic/religious blame, or suggestion that either agency replaces the courts; depict roles as lawful and nonpartisan."
+  },
+  {
+    "id": "p5-socs-15",
+    "imagePath": "images/p5-socs-15.png",
+    "titleEn": "Revision and Assessment — P5 Social and Citizenship Studies",
+    "titleHa": "Bita da Tantancewa — Nazarin Zamantakewa na Aji Biyar",
+    "type": "diagram",
+    "depictEn": "A full-band revision wheel with nine equal segments: resources, environmental care, disaster safety, constitution and rights, healthy refusal and trusted-adult help, peaceful dialogue, family and education, international cooperation, and cultural unity with accountable leadership; diverse pupils point to segments during a quiz.",
+    "labelsHa": ["Albarkatu", "Muhalli", "Bin doka", "Haƙƙoƙi", "Neman taimako", "Sauraro", "Ilimi", "Haɗin kai", "Alhaki"],
+    "safetyNote": "Keep every segment equal and nonpartisan; no substance depiction in the safety segment, no family-planning imagery, no conflict actor, no political or religious hierarchy, no fixed ECOWAS count, and no graphic disaster or corruption scene."
+  }
+]

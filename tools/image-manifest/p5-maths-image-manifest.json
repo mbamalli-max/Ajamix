@@ -1,0 +1,255 @@
+[
+  {
+    "id": "p5-maths-01",
+    "imagePath": "images/p5-maths-01.png",
+    "titleEn": "Numbers up to 100,000",
+    "titleHa": "Lambobi Har Zuwa 100,000",
+    "type": "diagram",
+    "depictEn": "A place-value chart with five labelled-but-blank columns — ten-thousands, thousands, hundreds, tens, ones — each left empty for its digit to be added later; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-02",
+    "imagePath": "images/p5-maths-02.png",
+    "titleEn": "Place Value to Hundred Thousands",
+    "titleHa": "Matsayin Lamba Har Zuwa Dubu Ɗari",
+    "type": "diagram",
+    "depictEn": "A place-value chart for a five-digit number with each column left blank beneath it for its actual worth to be added later, showing the chart structure that makes clear the value is not just the digit itself; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-03",
+    "imagePath": "images/p5-maths-03.png",
+    "titleEn": "Comparing and Ordering Large Numbers",
+    "titleHa": "Kwatanta Da Jeranta Manyan Lambobi",
+    "type": "diagram",
+    "depictEn": "Two stacked place-value charts, each with blank ten-thousands/thousands/hundreds/tens/ones columns, with one chart's ten-thousands column visually emphasised and a blank comparison-symbol gap between them; no numerals or comparison symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-04",
+    "imagePath": "images/p5-maths-04.png",
+    "titleEn": "Intro to Lowest Common Multiple",
+    "titleHa": "Gabatarwa Ga Mafi Ƙaramin Ninki Na Gari",
+    "type": "diagram",
+    "depictEn": "Two number lines stacked, each with evenly spaced blank tick marks, with matching tick positions on both lines visually joined by a dotted connector line to show their first shared meeting point; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-05",
+    "imagePath": "images/p5-maths-05.png",
+    "titleEn": "Intro to Highest Common Factor",
+    "titleHa": "Gabatarwa Ga Mafi Girman Mai Raba Gari",
+    "type": "diagram",
+    "depictEn": "Two factor lists shown as two columns of small blank cards side by side, with a matching subset of cards on each list visually circled and connected by a line to the largest shared card; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-06",
+    "imagePath": "images/p5-maths-06.png",
+    "titleEn": "LCM and HCF Practice",
+    "titleHa": "Atisayen LCM Da HCF",
+    "type": "diagram",
+    "depictEn": "Two contrasting scenes side by side: two bells with sound-wave marks ringing together at a shared meeting point on a blank timeline (an LCM scenario), and a pile of sweets with a pile of biscuits being sorted into equal small groups without leftovers (an HCF scenario); no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-07",
+    "imagePath": "images/p5-maths-07.png",
+    "titleEn": "Fractions Review",
+    "titleHa": "Bitar Kashi",
+    "type": "diagram",
+    "depictEn": "An orange divided into four equal parts with one part shaded, beside a bar divided into five equal parts with three parts shaded; no numerals or fraction symbols rendered.",
+    "labelsHa": [
+      "lambar sama",
+      "lambar ƙasa"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-08",
+    "imagePath": "images/p5-maths-08.png",
+    "titleEn": "Equivalent Fractions",
+    "titleHa": "Kashi Masu Ƙima Ɗaya",
+    "type": "diagram",
+    "depictEn": "Two identical round bread loaves: one cut in half with one part shaded, the other cut into quarters with a matching proportion shaded — the same covered amount shown two ways; no numerals or fraction symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-09",
+    "imagePath": "images/p5-maths-09.png",
+    "titleEn": "Comparing Fractions",
+    "titleHa": "Kwatanta Kashi",
+    "type": "diagram",
+    "depictEn": "A round item cut into eight equal parts with several parts shaded beside an identical one with fewer parts shaded, comparing the two directly; a smaller side panel compares two differently-sized pieces to show that a larger denominator gives smaller pieces; no numerals or fraction symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-10",
+    "imagePath": "images/p5-maths-10.png",
+    "titleEn": "Common Denominators",
+    "titleHa": "Lambobin Ƙasa Na Gari",
+    "type": "diagram",
+    "depictEn": "Two fraction strips both divided into six equal parts, with matching proportions shaded on each, shown stacked directly beneath each other for comparison once they share the same number of parts; no numerals or fraction symbols rendered.",
+    "labelsHa": [
+      "lambar ƙasa ta gari",
+      "lambobin sama"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-11",
+    "imagePath": "images/p5-maths-11.png",
+    "titleEn": "Adding Fractions with Unlike Denominators",
+    "titleHa": "Haɗa Kashi Masu Lambobin Ƙasa Daban",
+    "type": "diagram",
+    "depictEn": "A worked fraction-addition board with two shaded fraction strips both divided into the same number of equal parts, shown combining into one fuller strip; no numerals, fraction symbols, or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-12",
+    "imagePath": "images/p5-maths-12.png",
+    "titleEn": "Subtracting Fractions with Unlike Denominators",
+    "titleHa": "Rage Kashi Masu Lambobin Ƙasa Daban",
+    "type": "diagram",
+    "depictEn": "A worked fraction-subtraction board with a shaded fraction strip having a portion visibly removed, leaving a smaller shaded portion; no numerals, fraction symbols, or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-13",
+    "imagePath": "images/p5-maths-13.png",
+    "titleEn": "Decimal Place Value",
+    "titleHa": "Darajar Matsayin Desimal",
+    "type": "diagram",
+    "depictEn": "A place-value chart and hundred-grid for “Decimal Place Value”, with the decimal point clearly aligned and tenths/hundredths shown by shaded cells.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "p5-maths-14",
+    "imagePath": "images/p5-maths-14.png",
+    "titleEn": "Comparing Decimals",
+    "titleHa": "Kwatanta Desimal",
+    "type": "diagram",
+    "depictEn": "Two blank decimal-place boards stacked, each with a whole-number column and a smaller tenths column, with one board's whole-number column visually emphasised; a small side note shows two identically-shaped blank cards to represent equal values despite an extra placeholder; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-15",
+    "imagePath": "images/p5-maths-15.png",
+    "titleEn": "Adding Decimals",
+    "titleHa": "Haɗa Desimal",
+    "type": "diagram",
+    "depictEn": "A vertical addition board with a decimal-point column aligned between a whole-number column and a tenths column, both columns holding small bundled-counter groups being combined; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-16",
+    "imagePath": "images/p5-maths-16.png",
+    "titleEn": "Subtracting Decimals",
+    "titleHa": "Rage Desimal",
+    "type": "diagram",
+    "depictEn": "A vertical subtraction board with a decimal-point column aligned between a whole-number column and a tenths column, showing counters being taken away; a small side note shows two identically-aligned blank decimal boards to represent matching decimal places; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-17",
+    "imagePath": "images/p5-maths-17.png",
+    "titleEn": "Meaning of Percentages",
+    "titleHa": "Ma'anar Kashi Cikin Ɗari",
+    "type": "diagram",
+    "depictEn": "A hundred-square grid with a portion of cells shaded, labelled rabi (half) in one version, beside a second hundred-square grid with a different portion shaded; no numerals or percentage symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-18",
+    "imagePath": "images/p5-maths-18.png",
+    "titleEn": "Percentage Word Problems",
+    "titleHa": "Matsalolin Kashi Cikin Ɗari",
+    "type": "diagram",
+    "depictEn": "A row of identical objects with three marked portions shown in separate panels, each panel's shaded portion visually distinct in size from the others; no numerals or percentage symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-19",
+    "imagePath": "images/p5-maths-19.png",
+    "titleEn": "Introduction to Ratio and Proportion",
+    "titleHa": "Gabatarwa ga Rasiyo da Daidaiton Rabo",
+    "type": "diagram",
+    "depictEn": "A small group of red balls and a small group of blue balls shown as a ratio pair, beside a scaled-up version with proportionally more of each colour but the same balance between them, plus a small panel showing one rice bag feeding a few children scaled to more bags feeding proportionally more children; no numerals or ratio-notation symbols rendered.",
+    "labelsHa": [
+      "Rasiyo"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-20",
+    "imagePath": "images/p5-maths-20.png",
+    "titleEn": "Area and Perimeter of Composite Shapes",
+    "titleHa": "Yanki da Perimita na Haɗaɗɗun Siffofi",
+    "type": "diagram",
+    "depictEn": "An L-shaped composite figure made of two joined rectangles, each sub-rectangle shown as a grid of unit squares, with the outer perimeter traced in a different colour along only the outside edge; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-21",
+    "imagePath": "images/p5-maths-21.png",
+    "titleEn": "Types and Measuring of Angles",
+    "titleHa": "Nau'o'in Kusurwa da Aunawa",
+    "type": "diagram",
+    "depictEn": "A protractor measuring three angle types side by side — a small acute angle, a right angle, and a wider obtuse angle — with a blank marker at each vertex where the degree value will be added later; no numerals rendered.",
+    "labelsHa": [
+      "Kusurwa madaidaiciya",
+      "ma'aunin kusurwa"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-22",
+    "imagePath": "images/p5-maths-22.png",
+    "titleEn": "Introduction to Average or Mean",
+    "titleHa": "Gabatarwa ga Matsakaici",
+    "type": "diagram",
+    "depictEn": "Three children each holding a blank score card, with arrows combining the cards into one pile, then a division arrow leading to a single balanced bar representing the average; no numerals or equation symbols rendered.",
+    "labelsHa": [
+      "Matsakaici"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p5-maths-23",
+    "imagePath": "images/p5-maths-23.png",
+    "titleEn": "Word Problems with Combined Operations",
+    "titleHa": "Matsalolin Kalma Masu Haɗa Ayyuka",
+    "type": "diagram",
+    "depictEn": "A market scene: a few identical books with blank price tags, a schematic naira note handed over — the note rendered as a single flat, solid-coloured shape with NO decorative engraving, guilloche pattern, corner flourish, or ornamental border of any kind that could resemble a numeral or digit, just a plain blank coloured rectangle — with a small two-step calculation shown as blank placeholder boxes beside it; no numerals, equation symbols, or currency symbols rendered anywhere, including in any decorative pattern.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p5-maths-24",
+    "imagePath": "images/p5-maths-24.png",
+    "titleEn": "P5 Mathematics Revision and Bridge to P6",
+    "titleHa": "Bitar Lissafin P5 da Gada Zuwa P6",
+    "type": "diagram",
+    "depictEn": "A tidy revision poster with small labelled-but-unlabelled icons for each P5 topic covered — large numbers, LCM/HCF, fractions, decimals, percentages, ratio, composite-shape area/perimeter, angles, and average — arranged as a bridge pointing toward P6; icons are generic pictograms, no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  }
+]

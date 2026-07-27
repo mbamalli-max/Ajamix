@@ -1,0 +1,249 @@
+[
+  {
+    "id": "p2-maths-01",
+    "imagePath": "images/p2-maths-01.png",
+    "titleEn": "Numbers 1 to 100",
+    "titleHa": "Lambobi 1 zuwa 100",
+    "type": "diagram",
+    "depictEn": "A number-chart grid of blank equal cells with one cell marked by a plain circle outline as the module's callout position, plus a small side panel showing two simple handwritten-style digit-shape outlines placed side by side to illustrate how alike two digit shapes can look if not written carefully; no legible numerals actually rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-02",
+    "imagePath": "images/p2-maths-02.png",
+    "titleEn": "Counting Forward and Backward",
+    "titleHa": "Ƙirga Gaba da Baya",
+    "type": "diagram",
+    "depictEn": "Two number paths of blank stepping-stones: one with a forward-pointing arrow running left to right, one with a backward-pointing arrow running right to left; no numerals written on either path.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-03",
+    "imagePath": "images/p2-maths-03.png",
+    "titleEn": "Place Value: Tens and Units",
+    "titleHa": "Matsayin Lamba: Goma da Ɗaya-Ɗaya",
+    "type": "diagram",
+    "depictEn": "Two labelled-but-blank boxes, tens and units, each holding a distinct bundled-stick group, beside a second identical pair of boxes with the stick bundles swapped between them, showing that swapping the groups changes the total; no numerals rendered anywhere.",
+    "labelsHa": [
+      "Goma",
+      "Ɗaya-Ɗaya"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-04",
+    "imagePath": "images/p2-maths-04.png",
+    "titleEn": "Comparing Numbers",
+    "titleHa": "Kwatanta Lambobi",
+    "type": "diagram",
+    "depictEn": "A basket of eggs compared to a smaller basket of eggs with a blank comparison-symbol gap between them, beside a second panel comparing two bundled-stick tens-groups of different sizes with the larger one visually emphasised; no numerals or comparison symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-05",
+    "imagePath": "images/p2-maths-05.png",
+    "titleEn": "Ordering Numbers",
+    "titleHa": "Jera Lambobi",
+    "type": "diagram",
+    "depictEn": "Three blank number cards arranged with an upward arrow showing ascending order, beside three blank number cards arranged with a downward arrow showing descending order; no numerals written on any card.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-06",
+    "imagePath": "images/p2-maths-06.png",
+    "titleEn": "Addition Without Regrouping",
+    "titleHa": "Tarawa Ba Tare da Canjin Goma ba",
+    "type": "diagram",
+    "depictEn": "A simple addition board with tens and units columns, each column holding bundled-stick groups being combined, the columns left blank for their totals to be added later; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-07",
+    "imagePath": "images/p2-maths-07.png",
+    "titleEn": "Addition With Regrouping",
+    "titleHa": "Tarawa Tare da Canjin Goma",
+    "type": "diagram",
+    "depictEn": "A number-line addition shown as a blank stepping-stone path with two connected forward jumps marked by curved arrows, illustrating the make-a-ten strategy step by step; no numerals rendered on the line.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-08",
+    "imagePath": "images/p2-maths-08.png",
+    "titleEn": "Subtraction Without Borrowing",
+    "titleHa": "Ragi Ba Tare da Aro ba",
+    "type": "diagram",
+    "depictEn": "A subtraction comparison using bundled-stick tens groups and loose unit counters, with several unit counters crossed out and the remaining counters clearly visible, shown beside a second matching vertical column-board with ones aligned; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "p2-maths-09",
+    "imagePath": "images/p2-maths-09.png",
+    "titleEn": "Subtraction With Borrowing",
+    "titleHa": "Ragi Tare da Aro",
+    "type": "diagram",
+    "depictEn": "A worked subtraction scene: one ten-bundle of sticks being broken apart into loose single sticks and combined with existing loose sticks, then several of the combined loose sticks crossed out, leaving the remaining sticks clearly visible alongside the untouched ten-bundle; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-10",
+    "imagePath": "images/p2-maths-10.png",
+    "titleEn": "Word Problems: Addition",
+    "titleHa": "Matsalolin Labari na Tarawa",
+    "type": "diagram",
+    "depictEn": "A word-problem scene: a basket of mangoes with a mother adding a few more mangoes to it, the combined total left visually countable but without any written total; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-11",
+    "imagePath": "images/p2-maths-11.png",
+    "titleEn": "Word Problems: Subtraction",
+    "titleHa": "Matsalolin Labari na Ragi",
+    "type": "diagram",
+    "depictEn": "A word-problem scene: a child with a pile of balls giving some to a friend, with the remaining balls clearly visible and countable; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-12",
+    "imagePath": "images/p2-maths-12.png",
+    "titleEn": "Skip Counting by 2",
+    "titleHa": "Tsallake Ƙirga Biyu-Biyu",
+    "type": "diagram",
+    "depictEn": "A number path of blank stepping-stones with a pair of shoes shown beside each one, representing counting things that naturally come in twos; no numerals written on the path.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-13",
+    "imagePath": "images/p2-maths-13.png",
+    "titleEn": "Skip Counting by 5",
+    "titleHa": "Tsallake Ƙirga Biyar-Biyar",
+    "type": "diagram",
+    "depictEn": "A number path of blank stepping-stones with a small group of five schematic coins shown beside each one; no numerals or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p2-maths-14",
+    "imagePath": "images/p2-maths-14.png",
+    "titleEn": "Skip Counting by 10",
+    "titleHa": "Tsallake Ƙirga Goma-Goma",
+    "type": "diagram",
+    "depictEn": "Bundles of ten pencils being counted out in a row, beside a small separate side panel showing exactly three identical plain blank round stepping-stone shapes in a row (not pencils, not erasers, not any other object — plain round stones only), with the rightmost stone's position visually emphasised by a soft highlight glow to show the tens-place changing while the others stay visually plain; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-15",
+    "imagePath": "images/p2-maths-15.png",
+    "titleEn": "Introduction to Multiplication",
+    "titleHa": "Gabatarwa ga Ninkawa",
+    "type": "diagram",
+    "depictEn": "Three groups of two balls each, arranged side by side, with a small blank equation-shaped placeholder box beside them where the matching multiplication sentence will be added later; no numerals or operator symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-16",
+    "imagePath": "images/p2-maths-16.png",
+    "titleEn": "Multiplication by 2",
+    "titleHa": "Ninkawa da 2",
+    "type": "diagram",
+    "depictEn": "Four children, each with their two eyes lightly marked, shown together in one row; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-17",
+    "imagePath": "images/p2-maths-17.png",
+    "titleEn": "Multiplication by 5",
+    "titleHa": "Ninkawa da 5",
+    "type": "diagram",
+    "depictEn": "Four raised hands each showing five fingers, shown together in one row, beside a small group of three schematic coins; no numerals, equation symbols, or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p2-maths-18",
+    "imagePath": "images/p2-maths-18.png",
+    "titleEn": "Multiplication by 10",
+    "titleHa": "Ninkawa da 10",
+    "type": "diagram",
+    "depictEn": "Four bundles of ten pencils each, shown together in one row, with a small blank note-card beside them where the multiplication sentence will be added later; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-19",
+    "imagePath": "images/p2-maths-19.png",
+    "titleEn": "Nigerian Money: Naira and Kobo",
+    "titleHa": "Kuɗin Nijeriya: Naira da Kobo",
+    "type": "diagram",
+    "depictEn": "Four schematic Nigerian naira notes of visibly different sizes and colours arranged in order, with a small schematic coin shown separately beside them; no printed numerals or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions; depict money as something to be cared for, not wasted or taken from someone else, per the module's own framing."
+  },
+  {
+    "id": "p2-maths-20",
+    "imagePath": "images/p2-maths-20.png",
+    "titleEn": "Adding Small Amounts of Money",
+    "titleHa": "Tara Ƙananan Kuɗi",
+    "type": "diagram",
+    "depictEn": "A market scene showing a schematic sweet and a schematic biscuit being combined into one small pile, with a blank addition-sentence placeholder shown beside them; no numerals, currency symbols, or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p2-maths-21",
+    "imagePath": "images/p2-maths-21.png",
+    "titleEn": "Length: Long and Short",
+    "titleHa": "Tsawo: Dogaye da Gajeru",
+    "type": "diagram",
+    "depictEn": "A long stick compared to a short spoon, both starting from the same baseline, beside two lines of different lengths also starting from the same point for direct comparison.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-22",
+    "imagePath": "images/p2-maths-22.png",
+    "titleEn": "Weight: Heavy and Light",
+    "titleHa": "Nauyi: Masu Nauyi da Masu Sauƙi",
+    "type": "diagram",
+    "depictEn": "A stone weighed against a sheet of paper (the stone heavier), and an empty bucket compared with a full water bucket (the full one heavier), with a small note showing a child asking an adult for help lifting something very heavy.",
+    "labelsHa": [],
+    "safetyNote": "No child depicted lifting a heavy object alone — the module explicitly says to ask an adult for help with anything very heavy."
+  },
+  {
+    "id": "p2-maths-23",
+    "imagePath": "images/p2-maths-23.png",
+    "titleEn": "Shapes Around Us",
+    "titleHa": "Siffofi a Kewaye da Mu",
+    "type": "diagram",
+    "depictEn": "Four everyday objects matched to their shapes: a plate (circle), floor tiles (square), a door (rectangle), and a roof (triangle).",
+    "labelsHa": [
+      "Da’ira",
+      "Murabba’i",
+      "Alwatika"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p2-maths-24",
+    "imagePath": "images/p2-maths-24.png",
+    "titleEn": "Telling Time: Hour and Half Hour",
+    "titleHa": "Faɗin Lokaci: Awa da Rabin Awa",
+    "type": "diagram",
+    "depictEn": "Two analog clock faces side by side, both with blank hour markers (no numerals). Both clocks' hour hands must point in exactly the same direction and rest at exactly the same angle on the clock face — verify the two hour hands match before finishing. The only difference between the two clocks is the minute hand: the left clock's minute hand points straight up, the right clock's minute hand points straight down — this is the only visual difference between the two clocks, used to distinguish a whole hour from a half hour.",
+    "labelsHa": [],
+    "safetyNote": ""
+  }
+]

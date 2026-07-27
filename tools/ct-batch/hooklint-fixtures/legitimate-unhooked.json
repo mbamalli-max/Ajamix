@@ -1,0 +1,35 @@
+{
+  "name": "hooked forms and documented legitimate unhooked words across field types",
+  "expectedWords": [],
+  "value": {
+    "lessons": [
+      {
+        "heading": {
+          "ha": "Ƙarfin gwiwa"
+        },
+        "body": {
+          "ha": "ƙaramin mataki da ƙaramar hanya"
+        }
+      },
+      {
+        "scenario": {
+          "ha": "kara na shuka yana tsaye; a karanta karatu."
+        },
+        "takeaway": {
+          "ha": "kasance cikin natsuwa, kada ka danna maballi."
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "templateHa": "Wace hanya ce take nuna ƙaramar hanya?",
+        "answerFormula": "ƙarfinsa",
+        "distractorFormulas": [
+          "ƙaramin mataki",
+          "ƙaramar hanya",
+          "Ƙarfin gwiwa"
+        ]
+      }
+    ]
+  }
+}

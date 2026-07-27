@@ -1,0 +1,257 @@
+[
+  {
+    "id": "p4-maths-01",
+    "imagePath": "images/p4-maths-01.png",
+    "titleEn": "Numbers up to 10,000",
+    "titleHa": "Lambobi Har Zuwa 10,000",
+    "type": "diagram",
+    "depictEn": "A place-value chart with four labelled-but-blank columns — thousands, hundreds, tens, ones — beside a second identical blank chart with one column's placeholder marked by a small dot to represent a placeholder position holding an empty value; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-02",
+    "imagePath": "images/p4-maths-02.png",
+    "titleEn": "Place Value to Thousands",
+    "titleHa": "Matsayin Lamba Har Zuwa Dubu",
+    "type": "diagram",
+    "depictEn": "A place-value chart with four labelled-but-blank columns — thousands, hundreds, tens, ones — with bundled counters or place-value cards shown beneath each column to represent its group size; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-03",
+    "imagePath": "images/p4-maths-03.png",
+    "titleEn": "Comparing and Ordering Numbers",
+    "titleHa": "Kwatanta da Jera Lambobi",
+    "type": "diagram",
+    "depictEn": "Two stacked place-value charts, each with blank thousands/hundreds/tens/ones columns, with one chart's extra thousands-column visually emphasised (e.g. a soft highlight box) and a blank comparison-symbol gap between them; no numerals or comparison symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-04",
+    "imagePath": "images/p4-maths-04.png",
+    "titleEn": "Addition of Larger Numbers",
+    "titleHa": "Ƙarin Manyan Lambobi",
+    "type": "diagram",
+    "depictEn": "A vertical addition board with blank ones/tens/hundreds/thousands columns for two numbers being combined, each column shown with its own small bundled-counter groups; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-05",
+    "imagePath": "images/p4-maths-05.png",
+    "titleEn": "Subtraction of Larger Numbers",
+    "titleHa": "Ragin Manyan Lambobi",
+    "type": "diagram",
+    "depictEn": "A vertical subtraction board with blank ones/tens/hundreds/thousands columns, showing bundled-counter groups being taken away column by column; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-06",
+    "imagePath": "images/p4-maths-06.png",
+    "titleEn": "Multiplication Tables Review up to 10",
+    "titleHa": "Bita Kan Teburin Ninkawa Har Zuwa 10",
+    "type": "diagram",
+    "depictEn": "Seven plates, each holding the same small number of oranges, arranged in a row, with a small blank equation-shaped placeholder box beside them showing the same total two ways; no numerals or operator symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-07",
+    "imagePath": "images/p4-maths-07.png",
+    "titleEn": "Division as Sharing and Grouping",
+    "titleHa": "Rabawa Daidai da Yin Rukuni",
+    "type": "diagram",
+    "depictEn": "A pile of oranges shown two ways in two panels: shared equally among several children in the left panel, and arranged into equal small groups on plates in the right panel — the same oranges illustrating sharing versus grouping; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-08",
+    "imagePath": "images/p4-maths-08.png",
+    "titleEn": "Intro to Long Division",
+    "titleHa": "Gabatarwa Ga Doguwar Rabawa",
+    "type": "diagram",
+    "depictEn": "A long-division working frame shown as a blank stepped diagram with bracket lines, beside a small check panel showing a blank multiplication placeholder confirming the answer; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-09",
+    "imagePath": "images/p4-maths-09.png",
+    "titleEn": "Equivalent Fractions",
+    "titleHa": "Kashi Masu Ƙima Ɗaya",
+    "type": "diagram",
+    "depictEn": "Three identical round loaves of bread divided into two, four, and six equal parts respectively, with a matching proportion of parts shaded in each — the same covered amount shown three ways; no numerals or fraction symbols rendered.",
+    "labelsHa": [
+      "rabi"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-10",
+    "imagePath": "images/p4-maths-10.png",
+    "titleEn": "Comparing Fractions",
+    "titleHa": "Kwatanta Kashi",
+    "type": "diagram",
+    "depictEn": "Two identical round loaves of bread, each cut into eight equal slices: one showing more slices shaded than the other, placed side by side to compare the two proportions; no numerals or fraction symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-11",
+    "imagePath": "images/p4-maths-11.png",
+    "titleEn": "Intro Decimals: Tenths and Hundredths",
+    "titleHa": "Gabatarwa Ga Desimal: Goma-Goma da Ɗari-Ɗari",
+    "type": "diagram",
+    "depictEn": "A ten-part strip with a few parts shaded (labelled goma-goma), beside a hundred-square grid with a matching proportion of cells shaded (labelled ɗari-ɗari); no numerals or fraction symbols rendered.",
+    "labelsHa": [
+      "Goma-Goma",
+      "Ɗari-Ɗari"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-12",
+    "imagePath": "images/p4-maths-12.png",
+    "titleEn": "Perimeter of Simple Shapes",
+    "titleHa": "Kewayen Sauƙaƙan Siffofi",
+    "type": "diagram",
+    "depictEn": "A square with each side marked by a small equal tick-mark around its border to show the perimeter concept, beside a rectangle with its two visibly different side-lengths similarly tick-marked; no numerals or equation symbols rendered.",
+    "labelsHa": [
+      "perimita"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-13",
+    "imagePath": "images/p4-maths-13.png",
+    "titleEn": "Area of Squares and Rectangles",
+    "titleHa": "Yankin Murabba'i da Siffar Rektangul",
+    "type": "diagram",
+    "depictEn": "A square shown as a grid of unit squares, beside a rectangle shown as a grid of unit squares with visibly different row and column counts — grids used to make the area visibly countable without any written total; no numerals rendered.",
+    "labelsHa": [
+      "Yanki"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-14",
+    "imagePath": "images/p4-maths-14.png",
+    "titleEn": "Angles Intro",
+    "titleHa": "Gabatarwa Ga Kusurwa",
+    "type": "diagram",
+    "depictEn": "Three door-opening angle examples in one row: a door opened only partway (an angle less than a right angle), a book corner shown as the right-angle reference, and a door opened wide (an angle greater than a right angle).",
+    "labelsHa": [
+      "kusurwa madaidaiciya"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-15",
+    "imagePath": "images/p4-maths-15.png",
+    "titleEn": "Measuring Angles with Simple Degrees",
+    "titleHa": "Auna Kusurwa da Sauƙaƙan Digiri",
+    "type": "diagram",
+    "depictEn": "A protractor measuring three angles side by side of visibly different sizes — one small acute angle, one right angle, and one wider obtuse angle — with a blank marker at each vertex where the degree value will be added later; no numerals rendered.",
+    "labelsHa": [
+      "Digiri"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-16",
+    "imagePath": "images/p4-maths-16.png",
+    "titleEn": "Reading Simple Tables",
+    "titleHa": "Karanta Sauƙaƙan Teburi",
+    "type": "diagram",
+    "depictEn": "One exact two-column table titled Littattafai with two blank rows left for pupil names and values, and a small blank comparison placeholder beside it; no numerals, digits, chart, pictograph, average, or probability display rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "p4-maths-17",
+    "imagePath": "images/p4-maths-17.png",
+    "titleEn": "Reading Simple Bar Charts",
+    "titleHa": "Karanta Sauƙaƙan Jadawalin Sanduna",
+    "type": "diagram",
+    "depictEn": "A bar chart with two labelled-but-unlabelled bars of visibly different heights, with a small bracket marking the height difference between them, and blank gridlines along the side; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-18",
+    "imagePath": "images/p4-maths-18.png",
+    "titleEn": "24-Hour Clock Intro",
+    "titleHa": "Gabatarwa Ga Agogon Awa 24",
+    "type": "diagram",
+    "depictEn": "Three paired clock displays, each showing an analog clock face with blank hour markers (no numerals) beside a blank digital-display placeholder shape, hands positioned to show three distinct times of day (morning, early afternoon, evening); no numerals rendered.",
+    "labelsHa": [
+      "Agogon Awa 24"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-19",
+    "imagePath": "images/p4-maths-19.png",
+    "titleEn": "Mixed Addition and Subtraction Word Problems",
+    "titleHa": "Matsalolin Kalma na Ƙari da Ragi",
+    "type": "diagram",
+    "depictEn": "A three-panel school-shop story: books on a shelf, then more books arriving and being added to the shelf, then some books being given out and removed — each panel showing a visually countable but unlabelled running pile; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-20",
+    "imagePath": "images/p4-maths-20.png",
+    "titleEn": "Mixed Multiplication and Division Word Problems",
+    "titleHa": "Matsalolin Kalma na Ninkawa da Rabawa",
+    "type": "diagram",
+    "depictEn": "Eight plates each holding the same small number of oranges, shown beside a second panel where the same total oranges are shared equally among several children; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-21",
+    "imagePath": "images/p4-maths-21.png",
+    "titleEn": "Money, Measures, and Time Word Problems",
+    "titleHa": "Matsalolin Kuɗi, Awo, da Lokaci",
+    "type": "diagram",
+    "depictEn": "Three small linked scenes: a market price-and-change calculation in naira, a rope measured in metres beside its centimetre equivalent, and two clock times with the hours-between calculation shown beneath them.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p4-maths-22",
+    "imagePath": "images/p4-maths-22.png",
+    "titleEn": "Shapes Review: Perimeter, Area, and Angles",
+    "titleHa": "Bitar Siffofi: Perimita, Yanki, da Kusurwa",
+    "type": "diagram",
+    "depictEn": "A rectangle with its two visibly different side-lengths tick-marked around the border for perimeter, its area shown as a shaded grid inside, and a small right-angle marker at one corner; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-23",
+    "imagePath": "images/p4-maths-23.png",
+    "titleEn": "Data Review with Tables and Bar Charts",
+    "titleHa": "Bitar Bayanai da Teburi da Jadawalin Sanduna",
+    "type": "diagram",
+    "depictEn": "A simple table and matching bar chart with three labelled-but-unlabelled bars of visibly different heights, with two of the bars visually grouped together and a small bracket showing their combined height; no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p4-maths-24",
+    "imagePath": "images/p4-maths-24.png",
+    "titleEn": "P4 Mathematics Revision and Bridge to P5",
+    "titleHa": "Bitar Lissafin P4 da Gada Zuwa P5",
+    "type": "diagram",
+    "depictEn": "A tidy revision poster with small labelled-but-unlabelled icons for each P4 topic covered — numbers, place value, the four operations, fractions and decimals, perimeter/area, angles, tables/bar charts, money, and the clock — arranged as a bridge pointing toward P5; icons are generic pictograms, no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  }
+]

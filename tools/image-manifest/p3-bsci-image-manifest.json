@@ -1,0 +1,213 @@
+[
+  {
+    "id": "p3-bsci-01",
+    "imagePath": "images/p3-bsci-01.png",
+    "titleEn": "Classifying Living Things",
+    "titleHa": "Rarraba Abubuwa Masu Rai",
+    "type": "diagram",
+    "depictEn": "A split scene: left side shows two or three plants (e.g. maize, beans, grass) with visible roots, stem, leaves; right side shows two or three animals of different kinds (a hen, a fish in water, a goat on land) to show classification into plants vs animals, with a small habitat cue for each animal (water, land).",
+    "labelsHa": [
+      "Tsirrai",
+      "Dabbobi"
+    ],
+    "safetyNote": "No people depicted touching or handling the animals; keep the scene a calm outdoor/farm setting, not a market or slaughter context."
+  },
+  {
+    "id": "p3-bsci-02",
+    "imagePath": "images/p3-bsci-02.png",
+    "titleEn": "Parts of the Body and Their Functions",
+    "titleHa": "Sassan Jiki da Ayyukansu",
+    "type": "diagram",
+    "depictEn": "A friendly, fully-clothed child illustration (front view) actively using each named body part so its function is visually implied without any drawn line or label — eyes looking at something, ears turned toward a sound, nose near a flower, mouth smiling, hands holding a book, legs/feet standing or stepping. No pointer lines, callouts, or labels of any kind; those are added later by the overlay step.",
+    "labelsHa": [
+      "Idanu",
+      "Kunnuwa",
+      "Hanci",
+      "Baki",
+      "Hannu",
+      "Ƙafafu"
+    ],
+    "safetyNote": "Non-graphic, fully clothed child, no internal body parts (heart/skin layers) shown beyond a simple external labeled figure."
+  },
+  {
+    "id": "p3-bsci-03",
+    "imagePath": "images/p3-bsci-03.png",
+    "titleEn": "Growth and Life Cycles",
+    "titleHa": "Girma da Zagayowar Rayuwa",
+    "type": "diagram",
+    "depictEn": "A three-row life-cycle diagram with looping arrows: the top row shows seed to sprout to young plant to flower/seed; the middle row shows egg to chick to hen/rooster; the bottom row shows baby to child to teenager to adult, shown as simple growth-stage silhouettes.",
+    "labelsHa": [
+      "Ƙwai",
+      "Kaza"
+    ],
+    "safetyNote": "Human growth row must show only clothed, generic silhouettes at each age stage — no depiction of birth or medical process."
+  },
+  {
+    "id": "p3-bsci-04",
+    "imagePath": "images/p3-bsci-04.png",
+    "titleEn": "Our Environment",
+    "titleHa": "Muhallinmu",
+    "type": "diagram",
+    "depictEn": "A labeled overview scene of a tidy compound/neighborhood showing a home, a school building, a well with a cover, trees, a path, and a covered waste bin — everything clean and in good repair, illustrating what makes up one's environment.",
+    "labelsHa": [
+      "Kwandon Shara"
+    ],
+    "safetyNote": "Keep the whole scene clean and undamaged (this module is about naming environment components and tidiness habits, not pollution) — no litter, no open well, no smoke."
+  },
+  {
+    "id": "p3-bsci-05",
+    "imagePath": "images/p3-bsci-05.png",
+    "titleEn": "The Water Cycle",
+    "titleHa": "Zagayowar Ruwa",
+    "type": "diagram",
+    "depictEn": "A circular water-cycle diagram: sun over a stream/pond with wavy lines rising (evaporation), rising into a cloud, cloud releasing rain onto ground/well/river, arrow looping back to the stream — plus a small inset of a covered water container for clean drinking water.",
+    "labelsHa": [
+      "Ƙafewa",
+      "Gajimare",
+      "Ruwan Sama"
+    ],
+    "safetyNote": "Do not depict anyone drinking directly from an open stream or dirty water source; show a covered container for the clean-water example."
+  },
+  {
+    "id": "p3-bsci-06",
+    "imagePath": "images/p3-bsci-06.png",
+    "titleEn": "States of Matter",
+    "titleHa": "Yanayin Abu: Abu Mai Tauri, Ruwa, da Iska",
+    "type": "diagram",
+    "depictEn": "A three-panel comparison: a solid object (a stone or a book) holding its shape; water being poured from a jug into a cup, taking the cup's shape; and a light wisp of steam rising from a covered cup of warm water, showing the gas state, with a soft warning glow/steam-only depiction (no visible flame).",
+    "labelsHa": [
+      "Abu Mai Tauri",
+      "Ruwa",
+      "Iska"
+    ],
+    "safetyNote": "No open flame or fire; do not show a child's hand near the warm water or steam — the steam panel should be a small, distant wisp only, consistent with the module using hot water only as an adult-supervised example."
+  },
+  {
+    "id": "p3-bsci-07",
+    "imagePath": "images/p3-bsci-07.png",
+    "titleEn": "Measuring Length and Mass",
+    "titleHa": "Auna Tsawo da Nauyi",
+    "type": "diagram",
+    "depictEn": "Two side-by-side panels: a ruler laid against a pencil showing a centimeter scale, and a simple balance/weighing scale with a small sack of grain on one side, both starting from a visible zero mark.",
+    "labelsHa": [
+      "Santimita",
+      "Mita",
+      "Giram",
+      "Kilogiram"
+    ],
+    "safetyNote": "Show a child using only lightweight, simple tools (ruler, small scale) — no heavy or industrial weighing equipment, consistent with the module's advice to ask an adult for heavy tools."
+  },
+  {
+    "id": "p3-bsci-08",
+    "imagePath": "images/p3-bsci-08.png",
+    "titleEn": "Measuring Time",
+    "titleHa": "Auna Lokaci",
+    "type": "diagram",
+    "depictEn": "A large analog clock face with the small hour hand and large minute hand clearly distinguished by size/color, plus a small side panel showing a child watering a plant with a start-clock and end-clock pair to illustrate elapsed time.",
+    "labelsHa": [
+      "Agogo"
+    ],
+    "safetyNote": "No safety hazard content needed; keep the scene calm and ordinary (a clock and a watering task)."
+  },
+  {
+    "id": "p3-bsci-09",
+    "imagePath": "images/p3-bsci-09.png",
+    "titleEn": "Soil and Its Uses",
+    "titleHa": "Ƙasa da Amfaninta",
+    "type": "diagram",
+    "depictEn": "A cross-section of ground showing plant roots reaching into soil layered with tiny rock bits and decomposed leaves, beside two small soil-sample panels labeled sandy soil and clay soil, and a small inset showing soil used to make bricks and a clay pot.",
+    "labelsHa": [
+      "Ƙasa Mai Yashi",
+      "Ƙasa Mai Laka"
+    ],
+    "safetyNote": "Show the child observing soil only, not tasting it; include a small hand-washing cue since the module tells children to wash hands after touching soil."
+  },
+  {
+    "id": "p3-bsci-10",
+    "imagePath": "images/p3-bsci-10.png",
+    "titleEn": "Air in Motion",
+    "titleHa": "Iska Mai Motsi",
+    "type": "diagram",
+    "depictEn": "Two panels: a calm scene showing wind's effect — clothes flapping on a line and a toy pinwheel spinning, with a light cloth/leaf shown tilting to indicate wind direction; and a safety panel showing a child and an adult walking together toward a sturdy shelter away from a tree and a weak wall during a dust storm, covering nose and mouth.",
+    "labelsHa": [],
+    "safetyNote": "No open flame anywhere in the image (the module warns against using fire to check wind direction); the storm panel must show the child accompanied by an adult, at a safe distance from trees and weak walls, not alone."
+  },
+  {
+    "id": "p3-bsci-11",
+    "imagePath": "images/p3-bsci-11.png",
+    "titleEn": "Traditional and Modern Technology",
+    "titleHa": "Kayan Aikin Gargajiya da na Zamani",
+    "type": "diagram",
+    "depictEn": "A side-by-side comparison: left side shows traditional tools at rest (a hand hoe, a mortar and pestle, a donkey cart), right side shows modern tools at rest (a tractor, a grinding mill, a car), all shown stationary and unattended by children.",
+    "labelsHa": [
+      "Fartanya",
+      "Turmi da Taɓarya",
+      "Keken Jaki",
+      "Babbar Na'urar Noma",
+      "Injin Niƙa",
+      "Mota"
+    ],
+    "safetyNote": "No child touching, operating, or standing close to any tool or machine; no running engine, no exposed wire or socket, no child near the grinding mill — tools shown idle only, per the module's caution."
+  },
+  {
+    "id": "p3-bsci-12",
+    "imagePath": "images/p3-bsci-12.png",
+    "titleEn": "Light and Mirrors",
+    "titleHa": "Haske da Madubi",
+    "type": "diagram",
+    "depictEn": "Two panels: a ray from a safe classroom lamp bouncing from a fixed mirror toward an eye icon, with arrows showing the correct path; and the same upright object casting a long morning shadow and a short midday shadow, with the sun positions shown but no person looking toward the sun.",
+    "labelsHa": [
+      "Madubi",
+      "Inuwa"
+    ],
+    "safetyNote": "Do not depict anyone looking directly at the sun or angling a mirror's reflection toward another person's or animal's eyes; show the mirror handled gently, not near a fall risk of breaking."
+  },
+  {
+    "id": "p3-bsci-13",
+    "imagePath": "images/p3-bsci-13.png",
+    "titleEn": "First Aid and Safety",
+    "titleHa": "Taimakon Farko da Tsaro",
+    "type": "diagram",
+    "depictEn": "A calm three-panel sequence: a child checking the area is safe and calling an adult (raised hand gesture, speech bubble toward an adult figure); an adult gently pressing a clean cloth on a child's arm (no wound visible, just the cloth and a caring expression); and an adult holding a child's hand under a running tap of cool water, with a small clock-face icon (blank hour markers, no numerals) showing time passing, for a burn.",
+    "labelsHa": [],
+    "safetyNote": "No visible blood, open wound, burn mark, or injury detail of any kind — depict only the calm, competent care actions (checking safety, calling an adult, clean cloth, cool running water); do not show oil, toothpaste, or ice being applied; do not depict broken glass, a fallen wire, floodwater, or smoke up close — those hazards should only be implied by the child pointing/stepping away."
+  },
+  {
+    "id": "p3-bsci-14",
+    "imagePath": "images/p3-bsci-14.png",
+    "titleEn": "Animal Habitats and Shelters",
+    "titleHa": "Mazauni da Mafakar Dabbobi",
+    "type": "diagram",
+    "depictEn": "A set of small labeled panels: a fish with visible fins swimming in water, a duck with webbed feet on a pond, a bird's nest built in a tree holding eggs, a rabbit at the entrance of a burrow, and a farm scene with a ventilated chicken coop and a shaded goat/sheep shelter with clean water nearby.",
+    "labelsHa": [
+      "Sheƙa",
+      "Rami"
+    ],
+    "safetyNote": "Do not depict a child reaching into, disturbing, or breaking a wild animal's nest or burrow — observation only, from a distance, per the module's instruction."
+  },
+  {
+    "id": "p3-bsci-15",
+    "imagePath": "images/p3-bsci-15.png",
+    "titleEn": "Balanced Meals",
+    "titleHa": "Abinci Mai Gina Jiki",
+    "type": "diagram",
+    "depictEn": "A plate divided into three labeled sections with everyday Nigerian foods: energy foods (tuwo, shinkafa, gero, dankali), body-building foods (wake, kifi, ƙwai, nama), and protective foods (alayyahu, zogale, and a fruit like lemu or ayaba), with a cup of clean water beside the plate.",
+    "labelsHa": [],
+    "safetyNote": "Depict only ordinary, affordable, locally available foods already named in the module text — no sugary sweets/alewa shown as part of the balanced plate, and no depiction of a child's body size."
+  },
+  {
+    "id": "p3-bsci-16",
+    "imagePath": "images/p3-bsci-16.png",
+    "titleEn": "Plant Parts and Functions (Deeper Study)",
+    "titleHa": "Sassan Tsiro da Ayyukansu: Nazari Mai Zurfi",
+    "type": "diagram",
+    "depictEn": "A labeled cross-section of a whole plant showing the root system with fine rootlets in soil, small internal transport lines running up through the stem to the leaves (with arrows showing water/nutrients moving up), a leaf catching sunlight, and a flower transitioning into a fruit (e.g. tumatir or kabewa) containing visible seeds.",
+    "labelsHa": [
+      "Tushe",
+      "Kara",
+      "Ganye",
+      "Fure"
+    ],
+    "safetyNote": "No depiction of a farmer or child breaking the stem or tearing leaves — the diagram should show only the intact healthy plant and its internal pathways, not the damage scenario described in the text."
+  }
+]

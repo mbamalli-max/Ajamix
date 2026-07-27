@@ -1,0 +1,371 @@
+[
+  {
+    "id": "p3-bsci-01",
+    "labels": [
+      {
+        "text": "Tsirrai",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.54
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Dabbobi",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.49
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-02",
+    "labels": [
+      {
+        "text": "Idanu",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.29
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kunnuwa",
+        "targetPoint": {
+          "x": 0.51,
+          "y": 0.29
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Hanci",
+        "targetPoint": {
+          "x": 0.39,
+          "y": 0.32
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Baki",
+        "targetPoint": {
+          "x": 0.4,
+          "y": 0.34
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Hannu",
+        "targetPoint": {
+          "x": 0.51,
+          "y": 0.53
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Ƙafafu",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.93
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-03",
+    "labels": [
+      {
+        "text": "Ƙwai",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.52
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kaza",
+        "targetPoint": {
+          "x": 0.59,
+          "y": 0.48
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-04",
+    "labels": [
+      {
+        "text": "Kwandon Shara",
+        "targetPoint": {
+          "x": 0.875,
+          "y": 0.75
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-05",
+    "labels": [
+      {
+        "text": "Ƙafewa",
+        "targetPoint": {
+          "x": 0.27,
+          "y": 0.48
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Gajimare",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.18
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ruwan Sama",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.37
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-06",
+    "labels": [
+      {
+        "text": "Abu Mai Tauri",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.71
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ruwa",
+        "targetPoint": {
+          "x": 0.54,
+          "y": 0.76
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Iska",
+        "targetPoint": {
+          "x": 0.82,
+          "y": 0.73
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-07",
+    "labels": [
+      {
+        "text": "Santimita",
+        "targetPoint": {
+          "x": 0.28,
+          "y": 0.79
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mita",
+        "targetPoint": {
+          "x": 0.36,
+          "y": 0.78
+        },
+        "confidence": "low"
+      },
+      {
+        "text": "Giram",
+        "targetPoint": {
+          "x": 0.59,
+          "y": 0.68
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Kilogiram",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.78
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-08",
+    "labels": [
+      {
+        "text": "Agogo",
+        "targetPoint": {
+          "x": 0.26,
+          "y": 0.56
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-09",
+    "labels": [
+      {
+        "text": "Ƙasa Mai Yashi",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.39
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙasa Mai Laka",
+        "targetPoint": {
+          "x": 0.9,
+          "y": 0.39
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-11",
+    "labels": [
+      {
+        "text": "Fartanya",
+        "targetPoint": {
+          "x": 0.1,
+          "y": 0.59
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Turmi da Taɓarya",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.64
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Keken Jaki",
+        "targetPoint": {
+          "x": 0.34,
+          "y": 0.54
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Babbar Na'urar Noma",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.47
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Injin Niƙa",
+        "targetPoint": {
+          "x": 0.7,
+          "y": 0.72
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mota",
+        "targetPoint": {
+          "x": 0.93,
+          "y": 0.62
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-12",
+    "labels": [
+      {
+        "text": "Madubi",
+        "targetPoint": {
+          "x": 0.39,
+          "y": 0.37
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Inuwa",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.71
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-14",
+    "labels": [
+      {
+        "text": "Sheƙa",
+        "targetPoint": {
+          "x": 0.8,
+          "y": 0.36
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Rami",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.79
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p3-bsci-16",
+    "labels": [
+      {
+        "text": "Tushe",
+        "targetPoint": {
+          "x": 0.49,
+          "y": 0.83
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kara",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.39
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ganye",
+        "targetPoint": {
+          "x": 0.27,
+          "y": 0.44
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Fure",
+        "targetPoint": {
+          "x": 0.4,
+          "y": 0.15
+        },
+        "confidence": "high"
+      }
+    ]
+  }
+]

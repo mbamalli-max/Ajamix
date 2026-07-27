@@ -30,6 +30,8 @@
   var onboardingStep = 1;
   var onboardingData = createOnboardingData();
   var quizEngine = null;
+  var contentBundleNetworkPromise = null;
+  var contentBundleLoadStarted = false;
   var DEFAULT_STREAK_DATA = {
     lastActivityDate: null,
     streakDays: 0,
@@ -108,6 +110,7 @@
     bootError: null,
     activeLessonModuleId: null,
     lessonSession: null,
+    vocationalAudioSession: null,
     streakData: Object.assign({}, DEFAULT_STREAK_DATA),
     downloadSession: null,
     storageEstimate: null,
@@ -119,6 +122,8 @@
     adsLoadingPromise: null,
     listenersBound: false,
     confirmResetPending: false,
+    confirmDeleteAudioPending: false,
+    deleteAudioMessage: "",
     onboardingPinMessage: "",
     settingsPinMessage: "",
     privacyGate: {
@@ -176,6 +181,9 @@
   }
 
   function getGradeBandLabel(band) {
+    if (!band) {
+      return "Ba a zaba ba tukuna";
+    }
     return GRADE_BAND_LABELS[band] || band;
   }
 
@@ -994,12 +1002,12 @@
   function renderAdSlot() {
     var currentRoute = getAdRouteName();
 
-    if (DEV && ALLOWED_AD_ROUTES.indexOf(currentRoute) === -1) {
-      console.warn("AdSlot rendered on disallowed route: " + currentRoute);
+    if (!shouldRenderAdsForCurrentRoute()) {
       return "";
     }
 
-    if (!shouldRenderAdsForCurrentRoute()) {
+    if (DEV && ALLOWED_AD_ROUTES.indexOf(currentRoute) === -1) {
+      console.warn("AdSlot rendered on disallowed route: " + currentRoute);
       return "";
     }
 
@@ -1618,7 +1626,7 @@
       checkForContentUpdate().catch(logError);
     } catch (error) {
       console.error("AJAMIX boot failed:", error);
-      state.bootError = error instanceof Error ? error.message : "Failed to boot application.";
+      state.bootError = true;
       bindListeners();
       updateShellChrome();
       render();
@@ -1645,10 +1653,34 @@
     document.addEventListener("change", function (event) {
       handleChange(event).catch(logError);
     });
+    document.addEventListener("error", handleImageLoadError, true);
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.addEventListener("message", function (event) {
         handleServiceWorkerMessage(event);
       });
+    }
+  }
+
+  function handleImageLoadError(event) {
+    var image = event.target;
+    if (!image || image.tagName !== "IMG" || !image.dataset.lessonImageCard) {
+      return;
+    }
+
+    showLessonImageFallback(image);
+  }
+
+  function showLessonImageFallback(image) {
+    if (!image || image.dataset.imageFallbackShown === "true") {
+      return;
+    }
+
+    image.dataset.imageFallbackShown = "true";
+    image.hidden = true;
+
+    var fallback = image.nextElementSibling;
+    if (fallback && fallback.dataset.imageComingSoon !== undefined) {
+      fallback.hidden = false;
     }
   }
 
@@ -1860,6 +1892,24 @@
       return;
     }
 
+    if (target.dataset.action === "toggle-vocational-audio") {
+      toggleVocationalAudio();
+      return;
+    }
+
+    if (target.dataset.action === "vocational-audio-previous") {
+      // data-voc-section holds the CURRENT 1-indexed card position (activeIndex + 1).
+      // The target 0-based index one card back is (activeIndex - 1) = vocSection - 2.
+      selectVocationalAudioCard(Number(target.dataset.vocSection) - 2, true).catch(logError);
+      return;
+    }
+
+    if (target.dataset.action === "vocational-audio-next") {
+      // Target 0-based index one card forward is (activeIndex + 1) = vocSection.
+      selectVocationalAudioCard(Number(target.dataset.vocSection), true).catch(logError);
+      return;
+    }
+
     if (target.dataset.action === "resume-audio") {
       resumeLessonAudio(target.dataset.seekSeconds);
       return;
@@ -1918,6 +1968,7 @@
 
     if (target.dataset.action === "reset-progress") {
       state.confirmResetPending = true;
+      state.confirmDeleteAudioPending = false;
       render();
       return;
     }
@@ -1932,6 +1983,7 @@
       state.activeLessonModuleId = null;
       teardownQuizSession();
       teardownLessonSession();
+      teardownVocationalAudioSession();
       await refreshStorageEstimate();
       render();
       return;
@@ -1974,7 +2026,25 @@
     }
 
     if (target.dataset.action === "delete-completed-audio") {
-      await deleteAudioForCompletedModules();
+      state.confirmDeleteAudioPending = true;
+      state.confirmResetPending = false;
+      state.deleteAudioMessage = "";
+      render();
+      return;
+    }
+
+    if (target.dataset.action === "confirm-delete-audio-yes") {
+      state.confirmDeleteAudioPending = false;
+      var deleteSummary = await deleteAudioForCompletedModules();
+      state.deleteAudioMessage = buildDeleteAudioMessage(deleteSummary);
+      render();
+      return;
+    }
+
+    if (target.dataset.action === "confirm-delete-audio-no") {
+      state.confirmDeleteAudioPending = false;
+      state.deleteAudioMessage = "";
+      render();
       return;
     }
 
@@ -2027,7 +2097,7 @@
       if (state.privacyGate.failedAttempts >= 3) {
         state.privacyGate.failedAttempts = 0;
         state.privacyGate.lockoutUntil = Date.now() + PRIVACY_LOCKOUT_DURATION_MS;
-        state.privacyGate.message = "An kulle app na sakan 30. Jira kadan kafin sake gwadawa.";
+        state.privacyGate.message = "An kulle app na sakan 30. Jira kaɗan kafin sake gwadawa.";
         schedulePrivacyGateUnlock();
       } else {
         state.privacyGate.message = "PIN bai yi daidai ba. Ka sake gwadawa.";
@@ -2216,6 +2286,7 @@
 
     if (leavingLesson) {
       teardownLessonSession();
+      teardownVocationalAudioSession();
     }
 
     if (leavingQuiz) {
@@ -2367,7 +2438,7 @@
           '<section class="screen-panel">',
           '<p class="eyebrow">' + ha("An samu matsala") + "</p>",
           "<h2>" + ha("AJAMIX bai iya budewa ba.") + "</h2>",
-          "<p>" + escapeHtml(state.bootError) + "</p>",
+          "<p>" + ha("An kasa loda darussa. Duba haɗin intanet ɗinka sannan ka sake gwadawa.") + "</p>",
           '<button class="btn" data-route="#/onboarding" type="button">' + ha("Sake gwadawa") + "</button>",
           "</section>",
         ].join("")
@@ -2825,6 +2896,10 @@
     var referralBadgeCard = shouldShowReferralBadge()
       ? renderProgressReferralCard()
       : "";
+    var progressHeading =
+      state.settings.trackPreference === "vocational"
+        ? ha("Abin da aka kammala a Hanyar Kasuwanci")
+        : ha("Abin da aka kammala a ") + escapeHtml(getGradeBandLabel(state.settings.gradeBand));
 
     var moduleProgress = selectedModules
       .map(function (module) {
@@ -2879,7 +2954,7 @@
       '<section class="screen-panel progress-overview-screen">',
       '<div class="screen-heading">',
       '<p class="eyebrow">' + ha("Ci gaba") + "</p>",
-      "<h2>" + ha("Abin da aka kammala a ") + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + "</h2>",
+      "<h2>" + progressHeading + "</h2>",
       '<p class="screen-copy">' + ha("Flame streak yana nuna yawan ranakun da aka ci gaba da koyon lissafi, sannan kowane module yana nuna audio, tsayawar fahimta, da quiz.") + "</p>",
       "</div>",
       '<article class="metric-panel streak-panel">',
@@ -2975,6 +3050,12 @@
     var completedCount = session.items.filter(function (item) {
       return item.status === "completed";
     }).length;
+    var missingCount = session.items.filter(function (item) {
+      return item.status === "missing";
+    }).length;
+    var failedCount = session.items.filter(function (item) {
+      return item.status === "failed";
+    }).length;
     var totalFiles = session.items.length;
     var totalSizeCopy = formatBytes(session.totalEstimatedBytes || 0);
     var downloadHeading =
@@ -3011,6 +3092,7 @@
       "</div>",
       '<div class="metrics-grid">',
       '<article class="metric-panel"><span>' + ha("Fayiloli") + "</span><strong>" + completedCount + "/" + totalFiles + "</strong></article>",
+      '<article class="metric-panel"><span>' + ha("An tsallake") + "</span><strong>" + (missingCount + failedCount) + "</strong></article>",
       '<article class="metric-panel"><span>' + ha("Kimanin girma") + "</span><strong>" + escapeHtml(totalSizeCopy) + "</strong></article>",
       '<article class="metric-panel"><span>' + ha("Yanayi") + "</span><strong>" + getDownloadStatusCopy(session.status) + "</strong></article>",
       "</div>",
@@ -3134,6 +3216,20 @@
       '<button class="secondary-btn" type="button" data-action="open-download-center">' + ha("Bude download audio") + "</button>",
       '<button class="ghost-btn" type="button" data-action="delete-completed-audio">' + ha("Goge audio na modules da aka gama") + "</button>",
       "</div>",
+      state.confirmDeleteAudioPending
+        ? [
+            '<div class="confirm-reset-panel">',
+            '<p>' + ha("Ka tabbata kana so ka goge audio na modules da aka gama daga wannan na'ura? Za ka iya sake sauke su daga baya idan akwai intanet.") + '</p>',
+            '<div class="btn-row">',
+            '<button class="btn btn-danger" type="button" data-action="confirm-delete-audio-yes">' + ha("Ee, goge audio") + '</button>',
+            '<button class="ghost-btn" type="button" data-action="confirm-delete-audio-no">' + ha("A'a, soke") + '</button>',
+            '</div>',
+            '</div>',
+          ].join("")
+        : "",
+      state.deleteAudioMessage
+        ? '<p class="muted">' + ha(state.deleteAudioMessage) + "</p>"
+        : "",
       '<div class="settings-section">',
       "<h3>" + ha("Bayanan amfani") + "</h3>",
       '<label class="settings-toggle"><input type="checkbox" name="analyticsConsent"' +
@@ -3453,7 +3549,7 @@
     }
 
     if (streakData.streakState === "dim") {
-      return ha("An yi kwanaki kadan ba tare da koyon lissafi ba. Ka dawo yau domin wutar ta sake karfi.");
+      return ha("An yi kwanaki kaɗan ba tare da koyon lissafi ba. Ka dawo yau domin wutar ta sake karfi.");
     }
 
     return ha("Kana kan hanya mai kyau. Ci gaba da buda darasi ko quiz kullum domin streak ta dore.");
@@ -3506,6 +3602,11 @@
 
   async function syncActiveScreen() {
     if (state.route.name === "lesson") {
+      if (isVocationalModule(getModuleById(state.route.moduleId))) {
+        await syncVocationalAudioScreen();
+        return;
+      }
+
       await syncLessonScreen();
       return;
     }
@@ -3627,10 +3728,25 @@
   }
 
   async function prepareLessonSession(moduleId) {
+    var module = getModuleById(moduleId);
+
+    if (isVocationalModule(module)) {
+      if (state.vocationalAudioSession && state.vocationalAudioSession.moduleId === moduleId) {
+        return;
+      }
+
+      teardownLessonSession();
+      teardownVocationalAudioSession();
+      state.vocationalAudioSession = buildVocationalAudioSession(moduleId);
+      await recordLessonOpen(moduleId);
+      return;
+    }
+
     if (state.lessonSession && state.lessonSession.moduleId === moduleId) {
       return;
     }
 
+    teardownVocationalAudioSession();
     teardownLessonSession();
     state.lessonSession = buildLessonSessionSnapshot(moduleId);
     await recordLessonOpen(moduleId);
@@ -3650,10 +3766,51 @@
     state.lessonSession = null;
   }
 
+  function teardownVocationalAudioSession() {
+    var audio = document.querySelector("[data-vocational-audio]");
+    if (audio) {
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+    }
+
+    if (state.vocationalAudioSession && state.vocationalAudioSession.objectUrls) {
+      Object.keys(state.vocationalAudioSession.objectUrls).forEach(function (index) {
+        var objectUrl = state.vocationalAudioSession.objectUrls[index];
+        if (objectUrl) {
+          URL.revokeObjectURL(objectUrl);
+        }
+      });
+    }
+
+    state.vocationalAudioSession = null;
+  }
+
+  function buildVocationalAudioSession(moduleId) {
+    var module = getModuleById(moduleId);
+    var sections = module && Array.isArray(module.lessons) ? module.lessons : [];
+
+    return {
+      moduleId: moduleId,
+      currentCardIndex: 0,
+      isPlaying: false,
+      cardAudioStatus: sections.map(function (section) {
+        return section && section.audioFile ? "unknown" : "missing";
+      }),
+      audioSources: {},
+      objectUrls: {},
+      audioError: null,
+      requestId: 0,
+      lastSyncedCardIndex: null,
+    };
+  }
+
   async function syncLessonScreen() {
     var module = getModuleById(state.route.moduleId);
     var session = state.lessonSession;
     var audio = document.querySelector("[data-lesson-audio]");
+
+    syncLessonImageCards();
 
     if (!module || !session || !audio) {
       return;
@@ -3705,6 +3862,49 @@
     }
 
     syncLessonUi();
+  }
+
+  async function syncVocationalAudioScreen() {
+    var module = getModuleById(state.route.moduleId);
+    var session = state.vocationalAudioSession;
+    var audio = document.querySelector("[data-vocational-audio]");
+
+    if (!module || !session || !audio || !isVocationalModule(module)) {
+      return;
+    }
+
+    if (!audio.dataset.bound) {
+      audio.dataset.bound = "true";
+      bindVocationalAudioElement(audio, module.id);
+    }
+
+    syncVocationalAudioUi();
+
+    if (!audio.getAttribute("src")) {
+      await loadVocationalAudioCard(module, session.currentCardIndex, false, session.requestId);
+    }
+  }
+
+  function bindVocationalAudioElement(audio, moduleId) {
+    audio.addEventListener("play", function () {
+      if (state.vocationalAudioSession && state.vocationalAudioSession.moduleId === moduleId) {
+        state.vocationalAudioSession.isPlaying = true;
+        state.vocationalAudioSession.audioError = null;
+        syncVocationalAudioUi();
+      }
+    });
+    audio.addEventListener("pause", function () {
+      if (state.vocationalAudioSession && state.vocationalAudioSession.moduleId === moduleId) {
+        state.vocationalAudioSession.isPlaying = false;
+        syncVocationalAudioUi();
+      }
+    });
+    audio.addEventListener("ended", function () {
+      advanceVocationalAudioAfterEnd(moduleId).catch(logError);
+    });
+    audio.addEventListener("error", function () {
+      handleVocationalAudioError(moduleId);
+    });
   }
 
   async function syncCaregiverActivityScreen() {
@@ -4073,6 +4273,42 @@
     ].join("");
   }
 
+  function renderLessonImageComingSoon() {
+    return [
+      '<div class="lesson-audio-coming-soon lesson-image-coming-soon" data-image-coming-soon role="note" aria-label="' +
+        ha("Hoto yana zuwa") +
+        '" hidden>',
+      '<div class="lesson-audio-coming-soon-body">',
+      '<span class="lesson-audio-coming-soon-icon" aria-hidden="true">▧</span>',
+      '<div class="lesson-audio-coming-soon-copy">',
+      '<strong class="lesson-audio-coming-soon-title">' + ha("Hoto yana zuwa") + "</strong>",
+      '<p class="lesson-audio-coming-soon-text">' + ha("Za a ƙara hoton wannan darasi nan gaba.") + "</p>",
+      "</div>",
+      "</div>",
+      "</div>",
+    ].join("");
+  }
+
+  function renderLessonImageCard(module) {
+    if (!module || !module.imageCard) {
+      return "";
+    }
+
+    return [
+      '<section class="screen-panel lesson-card-panel">',
+      '<p class="eyebrow">' + ha("Katin Ajami") + "</p>",
+      '<figure class="lesson-image-card">',
+      '<img src="' +
+        escapeAttribute(module.imageCard) +
+        '" data-lesson-image-card="true" alt="' +
+        escapeAttribute(module.titleHa || "") +
+        '" loading="lazy" />',
+      renderLessonImageComingSoon(),
+      "</figure>",
+      "</section>",
+    ].join("");
+  }
+
   function renderLessonGlossaryChips(terms, selectedKey) {
     if (!terms.length) {
       return '<span class="muted-copy">' + ha("Babu kalmomin glossary da suka dace da wannan darasi a bundle din yanzu.") + "</span>";
@@ -4408,8 +4644,8 @@
       '<button class="ghost-btn referral-close-btn" type="button" data-action="dismiss-referral-modal" aria-label="' + escapeAttribute(getLocalizedPlainText("Rufe")) + '">' + ha("× Rufe") + "</button>",
       '<div class="referral-modal-body">',
       renderReferralBadgeGraphic("referral-badge-hero"),
-      '<p class="eyebrow">' + ha("Kawowa Daya") + "</p>",
-      '<h2 id="referral-modal-title">' + ha("Kawowa Daya — Mai Yada Ilimi") + "</h2>",
+      '<p class="eyebrow">' + ha("Kawo mutum Ɗaya") + "</p>",
+      '<h2 id="referral-modal-title">' + ha("Kawo mutum Ɗaya — Mai Yada Ilimi") + "</h2>",
       renderBilingualMessage(
         {
           ha: "Ka kammala modules biyar. Ka taimaka wani ya shiga AJAMIX domin ilimi ya kara yaduwa.",
@@ -5190,13 +5426,7 @@
       '<p class="eyebrow">' + ha("Bayanin Hausa") + "</p>",
       '<div class="lesson-copy scrollable-copy">' + renderLessonBodyCopy(module) + "</div>",
       "</section>",
-      module.imageCard
-        ? '<section class="screen-panel lesson-card-panel"><p class="eyebrow">' + ha("Katin Ajami") + '</p><figure class="lesson-image-card"><img src="' +
-          escapeHtml(module.imageCard) +
-          '" alt="' +
-          ha(module.titleHa || "") +
-          '" loading="lazy" /></figure></section>'
-        : "",
+      renderLessonImageCard(module),
       '<section class="screen-panel lesson-footer-panel">',
       '<button class="btn lesson-quiz-button" type="button" data-action="open-quiz" data-module-id="' +
         escapeAttribute(module.id) +
@@ -5220,6 +5450,10 @@
 
   function renderVocationalLesson(module) {
     var lessonSections = Array.isArray(module.lessons) ? module.lessons : [];
+    var audioSession =
+      state.vocationalAudioSession && state.vocationalAudioSession.moduleId === module.id
+        ? state.vocationalAudioSession
+        : buildVocationalAudioSession(module.id);
     var lessonMarkup = lessonSections
       .map(function (section, index) {
         return renderVocationalLessonSection(section, index);
@@ -5245,6 +5479,7 @@
       "</div>",
       "</div>",
       "</section>",
+      renderVocationalAudioPlayer(lessonSections, audioSession),
       '<section class="screen-panel lesson-text-panel voc-lesson">',
       '<p class="eyebrow">' + ha("Darasin Kasuwanci") + "</p>",
       '<div class="voc-lesson-sections">' + lessonMarkup + "</div>",
@@ -5255,6 +5490,52 @@
         escapeAttribute(module.id) +
         '">' + ha("Ci gaba zuwa tambayoyi") + "</button>",
       '<p class="helper-text">' + ha("Ka gama karatun sassan nan. Yanzu ka gwada abin da ka fahimta.") + "</p>",
+      "</section>",
+    ].join("");
+  }
+
+  function renderVocationalAudioPlayer(lessonSections, session) {
+    var totalCards = lessonSections.length;
+    var activeIndex = Math.max(0, Math.min(totalCards - 1, Number(session.currentCardIndex || 0)));
+    var audioStatus = session.cardAudioStatus[activeIndex] || "missing";
+    var audioUnavailable = audioStatus !== "ready";
+
+    return [
+      '<section class="screen-panel voc-audio-player" data-voc-audio-player>',
+      '<audio class="voc-audio-element" data-vocational-audio preload="metadata"' + (audioUnavailable ? " hidden" : "") + "></audio>",
+      '<div class="voc-audio-player-controls" data-voc-audio-player-ui' + (audioUnavailable ? " hidden" : "") + ">",
+      '<button class="voc-audio-play-toggle" type="button" data-action="toggle-vocational-audio">',
+      '<span class="voc-audio-play-icon" data-voc-audio-play-icon>▶</span>',
+      '<span data-voc-audio-play-label>' + ha("Fara sauraro") + "</span>",
+      "</button>",
+      '<p class="voc-audio-status" data-voc-audio-notice></p>',
+      "</div>",
+      '<div class="voc-audio-coming-soon lesson-audio-coming-soon" data-voc-audio-coming-soon' +
+        (audioUnavailable ? "" : " hidden") + ">" +
+        renderLessonAudioComingSoonBanner() +
+        "</div>",
+      '<div class="voc-audio-card-nav" aria-label="' + ha("Sassan darasi") + '">',
+      '<button class="secondary-btn voc-audio-card-button" type="button" data-action="vocational-audio-previous" data-voc-section="' +
+        escapeAttribute(String(activeIndex + 1)) +
+        '" data-voc-audio-previous' +
+        (activeIndex <= 0 ? " disabled" : "") +
+        ">← " +
+        ha("Sashin baya") +
+        "</button>",
+      '<span class="voc-audio-card-count" data-voc-audio-card-count>' +
+        ha("Sashe ") +
+        escapeHtml(String(activeIndex + 1)) +
+        " / " +
+        escapeHtml(String(totalCards)) +
+        "</span>",
+      '<button class="secondary-btn voc-audio-card-button" type="button" data-action="vocational-audio-next" data-voc-section="' +
+        escapeAttribute(String(activeIndex + 1)) +
+        '" data-voc-audio-next' +
+        (activeIndex >= totalCards - 1 ? " disabled" : "") +
+        ">" +
+        ha("Sashi na gaba") +
+        " →</button>",
+      "</div>",
       "</section>",
     ].join("");
   }
@@ -5430,8 +5711,27 @@
     };
   }
 
+  function syncLessonImageCards() {
+    var images = document.querySelectorAll("img[data-lesson-image-card]");
+    images.forEach(function (image) {
+      if (image.complete && image.naturalWidth === 0) {
+        showLessonImageFallback(image);
+      }
+    });
+  }
+
   async function resolveLessonAudioSource(module) {
-    if (!module || !module.audioFile) {
+    return resolveAudioSourceForPath(
+      module && module.audioFile,
+      module && module.id,
+      state.lessonSession && state.lessonSession.moduleId === (module && module.id)
+        ? state.lessonSession.objectUrl
+        : null
+    );
+  }
+
+  async function resolveAudioSourceForPath(filePath, cacheKey, existingObjectUrl) {
+    if (!filePath) {
       return {
         url: "",
         objectUrl: null,
@@ -5439,20 +5739,20 @@
       };
     }
 
-    if (state.lessonSession && state.lessonSession.moduleId === module.id && state.lessonSession.objectUrl) {
+    if (existingObjectUrl) {
       return {
-        url: state.lessonSession.objectUrl,
-        objectUrl: state.lessonSession.objectUrl,
+        url: existingObjectUrl,
+        objectUrl: existingObjectUrl,
         status: "ready",
       };
     }
 
-    var cachedAudio = await getRecord("audioCache", module.audioFile).catch(function () {
+    var cachedAudio = await getRecord("audioCache", filePath).catch(function () {
       return null;
     });
 
-    if (!cachedAudio) {
-      cachedAudio = await getRecord("audioCache", module.id).catch(function () {
+    if (!cachedAudio && cacheKey && cacheKey !== filePath) {
+      cachedAudio = await getRecord("audioCache", cacheKey).catch(function () {
         return null;
       });
     }
@@ -5470,7 +5770,7 @@
     }
 
     try {
-      var headResponse = await fetch(module.audioFile, {
+      var headResponse = await fetch(filePath, {
         method: "HEAD",
         cache: "no-store",
       });
@@ -5483,14 +5783,252 @@
         };
       }
     } catch (error) {
-      console.warn("Could not verify lesson audio file:", module.audioFile, error);
+      console.warn("Could not verify lesson audio file:", filePath, error);
     }
 
     return {
-      url: module.audioFile,
+      url: filePath,
       objectUrl: null,
       status: "ready",
     };
+  }
+
+  function getVocationalAudioFile(module, cardIndex) {
+    var section = module && Array.isArray(module.lessons) ? module.lessons[cardIndex] : null;
+    return section && section.audioFile ? section.audioFile : "";
+  }
+
+  async function selectVocationalAudioCard(cardIndex, shouldPlay) {
+    var session = state.vocationalAudioSession;
+    var module = session ? getModuleById(session.moduleId) : null;
+    var totalCards = module && Array.isArray(module.lessons) ? module.lessons.length : 0;
+
+    if (!session || !module || !Number.isInteger(cardIndex) || cardIndex < 0 || cardIndex >= totalCards) {
+      return false;
+    }
+
+    var audio = document.querySelector("[data-vocational-audio]");
+    if (audio) {
+      audio.pause();
+    }
+
+    session.currentCardIndex = cardIndex;
+    session.isPlaying = false;
+    session.audioError = null;
+    session.requestId += 1;
+    syncVocationalAudioUi();
+
+    return loadVocationalAudioCard(module, cardIndex, shouldPlay, session.requestId);
+  }
+
+  async function loadVocationalAudioCard(module, cardIndex, shouldPlay, requestId) {
+    var session = state.vocationalAudioSession;
+    var audio = document.querySelector("[data-vocational-audio]");
+
+    if (!session || session.moduleId !== module.id || !audio || session.currentCardIndex !== cardIndex) {
+      return false;
+    }
+
+    var filePath = getVocationalAudioFile(module, cardIndex);
+    var source = session.audioSources[cardIndex]
+      ? {
+          url: session.audioSources[cardIndex],
+          objectUrl: session.objectUrls[cardIndex] || null,
+          status: "ready",
+        }
+      : await resolveAudioSourceForPath(
+          filePath,
+          module.id + "-lesson-" + String(cardIndex + 1),
+          session.objectUrls[cardIndex] || null
+        );
+
+    if (
+      !state.vocationalAudioSession ||
+      state.vocationalAudioSession !== session ||
+      session.moduleId !== module.id ||
+      session.currentCardIndex !== cardIndex ||
+      session.requestId !== requestId
+    ) {
+      if (source.objectUrl && source.objectUrl !== session.objectUrls[cardIndex]) {
+        URL.revokeObjectURL(source.objectUrl);
+      }
+      return false;
+    }
+
+    session.cardAudioStatus[cardIndex] = source.status || "ready";
+    session.audioError = null;
+
+    if (!source.url) {
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+      session.isPlaying = false;
+      syncVocationalAudioUi();
+      return false;
+    }
+
+    if (source.objectUrl) {
+      session.objectUrls[cardIndex] = source.objectUrl;
+    }
+    session.audioSources[cardIndex] = source.url;
+    audio.pause();
+    audio.setAttribute("src", source.url);
+    audio.load();
+    syncVocationalAudioUi();
+
+    if (shouldPlay) {
+      audio.play().catch(function () {
+        if (state.vocationalAudioSession === session && session.currentCardIndex === cardIndex) {
+          session.isPlaying = false;
+          session.audioError = "Player din yana bukatar ka danna play daga browser ko ka duba fayil din audio.";
+          syncVocationalAudioUi();
+        }
+      });
+    }
+
+    return true;
+  }
+
+  function toggleVocationalAudio() {
+    var session = state.vocationalAudioSession;
+    var audio = document.querySelector("[data-vocational-audio]");
+
+    if (
+      !session ||
+      !audio ||
+      session.cardAudioStatus[session.currentCardIndex] !== "ready" ||
+      !audio.getAttribute("src")
+    ) {
+      return;
+    }
+
+    if (audio.paused) {
+      audio.play().catch(function () {
+        session.isPlaying = false;
+        session.audioError = "Player din yana bukatar ka danna play daga browser ko ka duba fayil din audio.";
+        syncVocationalAudioUi();
+      });
+      return;
+    }
+
+    audio.pause();
+  }
+
+  async function advanceVocationalAudioAfterEnd(moduleId) {
+    var session = state.vocationalAudioSession;
+    var module = session ? getModuleById(session.moduleId) : null;
+
+    if (!session || !module || session.moduleId !== moduleId) {
+      return;
+    }
+
+    // selectVocationalAudioCard commits currentCardIndex before it knows
+    // whether that card's clip resolves, so a run of unavailable trailing
+    // cards would otherwise drag the active highlight to the last card even
+    // though playback actually stopped earlier. Remember where playback
+    // genuinely ended and restore it if nothing further can play.
+    var lastPlayedIndex = session.currentCardIndex;
+    var firstNextIndex = session.currentCardIndex + 1;
+    for (var cardIndex = firstNextIndex; cardIndex < module.lessons.length; cardIndex += 1) {
+      var sourceWasAvailable = await selectVocationalAudioCard(cardIndex, true);
+      if (!state.vocationalAudioSession || state.vocationalAudioSession !== session) {
+        return;
+      }
+      if (sourceWasAvailable) {
+        return;
+      }
+    }
+
+    session.currentCardIndex = lastPlayedIndex;
+    session.isPlaying = false;
+    syncVocationalAudioUi();
+  }
+
+  function handleVocationalAudioError(moduleId) {
+    var session = state.vocationalAudioSession;
+    if (!session || session.moduleId !== moduleId) {
+      return;
+    }
+
+    session.cardAudioStatus[session.currentCardIndex] = "missing";
+    session.isPlaying = false;
+    session.audioError = null;
+    syncVocationalAudioUi();
+  }
+
+  function syncVocationalAudioUi() {
+    var session = state.vocationalAudioSession;
+    var module = session ? getModuleById(session.moduleId) : null;
+
+    if (!session || !module || state.route.name !== "lesson" || !isVocationalModule(module)) {
+      return;
+    }
+
+    var totalCards = Array.isArray(module.lessons) ? module.lessons.length : 0;
+    var activeIndex = Math.max(0, Math.min(totalCards - 1, session.currentCardIndex));
+    var audioStatus = session.cardAudioStatus[activeIndex] || "missing";
+    var audioUnavailable = audioStatus !== "ready";
+    var audio = document.querySelector("[data-vocational-audio]");
+    var playerUi = document.querySelector("[data-voc-audio-player-ui]");
+    var comingSoon = document.querySelector("[data-voc-audio-coming-soon]");
+    var previousButton = document.querySelector("[data-voc-audio-previous]");
+    var nextButton = document.querySelector("[data-voc-audio-next]");
+    var cardCount = document.querySelector("[data-voc-audio-card-count]");
+    var playIcon = document.querySelector("[data-voc-audio-play-icon]");
+    var playLabel = document.querySelector("[data-voc-audio-play-label]");
+    var notice = document.querySelector("[data-voc-audio-notice]");
+
+    if (audio) {
+      audio.hidden = audioUnavailable;
+    }
+    if (playerUi) {
+      playerUi.hidden = audioUnavailable;
+    }
+    if (comingSoon) {
+      comingSoon.hidden = !audioUnavailable;
+      if (audioUnavailable) {
+        comingSoon.innerHTML = renderLessonAudioComingSoonBanner();
+      }
+    }
+    if (previousButton) {
+      previousButton.disabled = activeIndex <= 0;
+      previousButton.dataset.vocSection = String(activeIndex + 1);
+    }
+    if (nextButton) {
+      nextButton.disabled = activeIndex >= totalCards - 1;
+      nextButton.dataset.vocSection = String(activeIndex + 1);
+    }
+    if (cardCount) {
+      cardCount.textContent = "Sashe " + String(activeIndex + 1) + " / " + String(totalCards);
+    }
+    if (playIcon) {
+      playIcon.textContent = session.isPlaying ? "❚❚" : "▶";
+    }
+    if (playLabel) {
+      playLabel.innerHTML = session.isPlaying ? ha("Dakatar") : ha("Fara sauraro");
+    }
+    if (notice && !audioUnavailable) {
+      notice.innerHTML = ha(session.audioError || "Sauti yana bin sashin da kake gani a kasa.");
+    }
+
+    var activeCard = null;
+    // Scope to actual lesson-card <article> elements only. The prev/next nav
+    // buttons also carry data-voc-section (for the click-handler's index
+    // math) — without this scoping, this loop spuriously toggles the
+    // active-card highlight class onto those buttons too whenever their
+    // dataset value happens to match the current position.
+    document.querySelectorAll("article[data-voc-section]").forEach(function (card) {
+      var isActive = Number(card.dataset.vocSection) === activeIndex + 1;
+      card.classList.toggle("voc-lesson-section--active", isActive);
+      if (isActive) {
+        activeCard = card;
+      }
+    });
+
+    if (activeCard && session.lastSyncedCardIndex !== activeIndex) {
+      session.lastSyncedCardIndex = activeIndex;
+      activeCard.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   }
 
   async function handleLessonTimeUpdate(audio, moduleId) {
@@ -5770,6 +6308,22 @@
     return Boolean(module && String(module.track || "").toLowerCase() === "vocational");
   }
 
+  function getAudioUrlsForModule(module) {
+    if (!module) {
+      return [];
+    }
+    if (isVocationalModule(module)) {
+      return (Array.isArray(module.lessons) ? module.lessons : [])
+        .filter(function (lesson) {
+          return lesson && typeof lesson.audioFile === "string" && lesson.audioFile.trim();
+        })
+        .map(function (lesson) {
+          return lesson.audioFile;
+        });
+    }
+    return module.audioFile ? [module.audioFile] : [];
+  }
+
   function getActivityById(activityId) {
     return (state.activities || []).find(function (activity) {
       return activity.activityId === activityId;
@@ -6005,6 +6559,7 @@
 
   async function loadContentBundle(options) {
     var loadOptions = Object.assign({ forceNetwork: false }, options || {});
+    contentBundleLoadStarted = true;
     var cachedModules = await getAllRecords("modules");
     var cachedActivities = await getAllRecords("activities");
     var cachedGlossary = await getAllRecords("glossary");
@@ -6053,15 +6608,93 @@
   }
 
   async function fetchContentBundleFromNetwork() {
-    var response = await fetch("./content.json", { cache: "no-store" });
+    if (!contentBundleNetworkPromise) {
+      contentBundleNetworkPromise = (async function () {
+        var lastError = null;
+        var attempt;
+
+        for (attempt = 0; attempt < 3; attempt += 1) {
+          try {
+            return await fetchAndParseContentBundle(attempt);
+          } catch (error) {
+            lastError = error;
+            if (!error || error.code !== "CONTENT_JSON_PARSE_FAILED") {
+              throw error;
+            }
+          }
+        }
+
+        throw lastError || new Error("Could not parse content.json");
+      })().finally(function () {
+        contentBundleNetworkPromise = null;
+      });
+    }
+
+    return contentBundleNetworkPromise;
+  }
+
+  async function fetchAndParseContentBundle(attempt) {
+    var contentUrl = attempt
+      ? "./content.json?content-retry=" + Date.now() + "-" + attempt
+      : "./content.json";
+    var response = await fetch(contentUrl, { cache: "no-store" });
+    var contentText;
+    var parseError;
+
     if (!response.ok) {
       throw new Error("Could not load content.json");
     }
 
-    return {
-      bundle: await response.json(),
-      lastModified: response.headers.get("Last-Modified") || "",
-    };
+    contentText = await response.text();
+
+    try {
+      var bundle = JSON.parse(contentText);
+      await cacheVerifiedContentResponse(contentText, response);
+      return {
+        bundle: bundle,
+        lastModified: response.headers.get("Last-Modified") || "",
+      };
+    } catch (error) {
+      parseError = new Error(
+        "Could not parse content.json (" +
+          contentText.length +
+          " characters received): " +
+          (error instanceof Error ? error.message : String(error))
+      );
+      parseError.code = "CONTENT_JSON_PARSE_FAILED";
+      throw parseError;
+    }
+  }
+
+  async function cacheVerifiedContentResponse(contentText, response) {
+    var headers;
+
+    if (!("caches" in window)) {
+      return;
+    }
+
+    try {
+      headers = new Headers(response.headers);
+      if (!headers.has("Content-Type")) {
+        headers.set("Content-Type", "application/json; charset=utf-8");
+      }
+      await caches.open("ajamix-content-ajamix-v23").then(function (cache) {
+        return cache.put(
+          new Request(new URL("./content.json", location.href).toString(), {
+            method: "GET",
+            cache: "default",
+            credentials: "same-origin",
+          }),
+          new Response(contentText, {
+            status: 200,
+            statusText: "OK",
+            headers: headers,
+          })
+        );
+      });
+    } catch (error) {
+      console.warn("Could not cache verified content.json:", error);
+    }
   }
 
   function applyBundleToState(bundle) {
@@ -6130,6 +6763,10 @@
       return;
     }
 
+    if (!contentBundleLoadStarted || contentBundleNetworkPromise) {
+      return;
+    }
+
     try {
       var nextLastModified = await fetchContentLastModified();
       var currentLastModified = state.settings.lastContentLastModified || "";
@@ -6167,19 +6804,7 @@
     }
 
     var lastModified = response.headers.get("Last-Modified") || "";
-    if (lastModified) {
-      return lastModified;
-    }
-
-    response = await fetch("./content.json", {
-      cache: "no-store",
-    });
-
-    if (!response.ok) {
-      throw new Error("Could not re-check content metadata.");
-    }
-
-    return response.headers.get("Last-Modified") || "";
+    return lastModified;
   }
 
   async function applyContentUpdate() {
@@ -6758,7 +7383,7 @@
     next.gradeBand = ALLOWED_GRADE_BANDS.indexOf(next.gradeBand) >= 0 ? next.gradeBand : state.settings.gradeBand || "nursery1";
     next.totalFiles = Math.max(0, Number(next.totalFiles || 0));
     next.completedUrls = Array.isArray(next.completedUrls) ? next.completedUrls.slice() : [];
-    next.status = ["pending", "downloading", "complete", "partial"].indexOf(next.status) >= 0 ? next.status : "pending";
+    next.status = ["pending", "downloading", "complete", "partial", "empty"].indexOf(next.status) >= 0 ? next.status : "pending";
     next.lastUpdatedAt = next.lastUpdatedAt || null;
     return next;
   }
@@ -6788,23 +7413,35 @@
       status: "pending",
       active: false,
       readyForOffline: false,
+      missingCount: 0,
+      failedCount: 0,
       error: null,
     };
   }
 
   function getAudioEntriesForGradeBand(gradeBand) {
     var seen = {};
+    var isVocationalTrack = state.settings.trackPreference === "vocational";
     return state.modules
       .filter(function (module) {
-        return module.gradeband === gradeBand && module.audioFile;
+        if (!getAudioUrlsForModule(module).length) {
+          return false;
+        }
+        return isVocationalTrack
+          ? isVocationalModule(module)
+          : module.gradeband === gradeBand;
       })
-      .map(function (module) {
-        return {
-          moduleId: module.id,
-          titleHa: module.titleHa,
-          url: module.audioFile,
-        };
-      })
+      .reduce(function (entries, module) {
+        return entries.concat(getAudioUrlsForModule(module).map(function (url, index) {
+          return {
+            moduleId: isVocationalModule(module)
+              ? module.id + "-" + String(index + 1).padStart(2, "0")
+              : module.id,
+            titleHa: module.titleHa,
+            url: url,
+          };
+        }));
+      }, [])
       .filter(function (item) {
         if (seen[item.url]) {
           return false;
@@ -6864,6 +7501,8 @@
           : savedState.status,
       active: false,
       readyForOffline: items.length > 0 && items.every(function (item) { return item.status === "completed"; }),
+      missingCount: 0,
+      failedCount: 0,
       error: null,
     };
 
@@ -6936,132 +7575,268 @@
       lastUpdatedAt: new Date().toISOString(),
     });
 
-    try {
-      for (var index = 0; index < session.items.length; index += 1) {
-        if (session.items[index].status === "completed") {
-          continue;
-        }
-
-        await downloadAudioItem(session.items[index], session);
+    for (var index = 0; index < session.items.length; index += 1) {
+      if (session.items[index].status === "completed") {
+        continue;
       }
 
-      session.active = false;
-      session.status = "complete";
-      session.readyForOffline = true;
-      await saveAudioDownloadState({
-        gradeBand: session.gradeBand,
-        totalFiles: session.items.length,
-        completedUrls: session.items.map(function (item) { return item.url; }),
-        status: "complete",
-        lastUpdatedAt: new Date().toISOString(),
-      });
-      await refreshStorageEstimate();
-      render();
-    } catch (error) {
-      session.active = false;
-      session.status = "partial";
-      session.error = error instanceof Error ? error.message : "An kasa kammala download din audio.";
-      await saveAudioDownloadState({
-        gradeBand: session.gradeBand,
-        totalFiles: session.items.length,
-        completedUrls: session.items.filter(function (item) { return item.status === "completed"; }).map(function (item) { return item.url; }),
-        status: "partial",
-        lastUpdatedAt: new Date().toISOString(),
-      });
-      render();
-    }
-  }
-
-  async function downloadAudioItem(item, session) {
-    item.status = "downloading";
-    item.progressPct = 0;
-    render();
-
-    var response = await fetch(item.url, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error("Ba a samu fayil din audio ba: " + item.titleHa);
+      await downloadAudioItem(session.items[index], session);
     }
 
-    var contentLength = Number(response.headers.get("Content-Length") || item.sizeBytes || 0);
-    var blob;
-
-    if (response.body && response.body.getReader) {
-      var reader = response.body.getReader();
-      var chunks = [];
-      var received = 0;
-      var lastRenderTime = Date.now();
-      var RENDER_THROTTLE_MS = 400;
-
-      while (true) {
-        var chunkResult = await reader.read();
-        if (chunkResult.done) {
-          break;
-        }
-
-        chunks.push(chunkResult.value);
-        received += chunkResult.value.length;
-        item.sizeBytes = contentLength || received;
-        item.progressPct = contentLength ? Math.min(100, Math.round((received / contentLength) * 100)) : 0;
-
-        var now = Date.now();
-        if (now - lastRenderTime >= RENDER_THROTTLE_MS) {
-          lastRenderTime = now;
-          render();
-        }
-      }
-
-      blob = new Blob(chunks, {
-        type: response.headers.get("Content-Type") || "audio/mpeg",
-      });
-    } else {
-      blob = await response.blob();
-    }
-
-    item.sizeBytes = blob.size || item.sizeBytes || contentLength || DEFAULT_AUDIO_SIZE_ESTIMATE_BYTES;
-    item.sizeKnown = true;
-    item.progressPct = 100;
-    item.status = "completed";
-
-    await putRecord("audioCache", {
-      url: item.url,
-      moduleId: item.moduleId,
-      gradeBand: session.gradeBand,
-      titleHa: item.titleHa,
-      blob: blob,
-      sizeBytes: item.sizeBytes,
-      downloadedAt: new Date().toISOString(),
-      contentVersion: state.settings.contentVersion,
-    });
-
-    session.downloadedBytes = session.items.reduce(function (total, entry) {
-      return total + Number(entry.status === "completed" ? entry.sizeBytes || 0 : 0);
-    }, 0);
+    var downloadSummary = getAudioDownloadSummary(session);
+    session.active = false;
+    session.status = downloadSummary.status;
+    session.readyForOffline = downloadSummary.readyForOffline;
+    session.missingCount = downloadSummary.missingCount;
+    session.failedCount = downloadSummary.failedCount;
+    session.error = downloadSummary.message;
 
     await saveAudioDownloadState({
       gradeBand: session.gradeBand,
       totalFiles: session.items.length,
-      completedUrls: session.items.filter(function (entry) { return entry.status === "completed"; }).map(function (entry) { return entry.url; }),
-      status: session.items.every(function (entry) { return entry.status === "completed"; }) ? "complete" : "downloading",
+      completedUrls: session.items.filter(function (item) { return item.status === "completed"; }).map(function (item) { return item.url; }),
+      status: session.status,
       lastUpdatedAt: new Date().toISOString(),
     });
-
+    await refreshStorageEstimate();
     render();
+  }
+
+  function getAudioDownloadSummary(session) {
+    var completedCount = session.items.filter(function (item) { return item.status === "completed"; }).length;
+    var missingCount = session.items.filter(function (item) { return item.status === "missing"; }).length;
+    var failedCount = session.items.filter(function (item) { return item.status === "failed"; }).length;
+    var remainingCount = session.items.length - completedCount - missingCount - failedCount;
+
+    if (session.items.length > 0 && completedCount === session.items.length) {
+      return {
+        status: "complete",
+        readyForOffline: true,
+        missingCount: missingCount,
+        failedCount: failedCount,
+        message: null,
+      };
+    }
+
+    if (completedCount === 0 && missingCount > 0 && failedCount === 0 && remainingCount === 0) {
+      return {
+        status: "empty",
+        readyForOffline: false,
+        missingCount: missingCount,
+        failedCount: failedCount,
+        message: missingCount + " audio ba su shigo ba tukuna. Sauti yana zuwa, kuma babu download da ya fadi.",
+      };
+    }
+
+    return {
+      status: "partial",
+      readyForOffline: false,
+      missingCount: missingCount,
+      failedCount: failedCount,
+      message: buildAudioDownloadSummaryMessage(completedCount, missingCount, failedCount),
+    };
+  }
+
+  function buildAudioDownloadSummaryMessage(completedCount, missingCount, failedCount) {
+    var parts = [];
+
+    if (completedCount > 0) {
+      parts.push(completedCount + " audio sun sauka");
+    }
+
+    if (missingCount > 0) {
+      parts.push(missingCount + " ba su shigo ba tukuna");
+    }
+
+    if (failedCount > 0) {
+      parts.push(failedCount + " sun samu matsalar saukewa");
+    }
+
+    if (!parts.length) {
+      return "Ba a samu audio da za a sauke ba tukuna.";
+    }
+
+    return parts.join("; ") + ". Za ka iya ci gaba da darasi; inda audio bai zo ba, za a nuna Sauti yana zuwa.";
+  }
+
+  async function saveAudioDownloadProgress(session) {
+    var summary = getAudioDownloadSummary(session);
+    await saveAudioDownloadState({
+      gradeBand: session.gradeBand,
+      totalFiles: session.items.length,
+      completedUrls: session.items.filter(function (entry) { return entry.status === "completed"; }).map(function (entry) { return entry.url; }),
+      status: summary.status === "complete" ? "complete" : session.active ? "downloading" : summary.status,
+      lastUpdatedAt: new Date().toISOString(),
+    });
+  }
+
+  function markAudioDownloadItemUnavailable(item, status, message) {
+    item.status = status;
+    item.progressPct = 0;
+    item.sizeKnown = false;
+    item.error = message;
+    return {
+      status: status,
+      message: message,
+    };
+  }
+
+  async function downloadAudioItem(item, session) {
+    item.status = "downloading";
+    item.error = null;
+    item.progressPct = 0;
+    render();
+
+    var response;
+    try {
+      response = await fetch(item.url, { cache: "no-store" });
+    } catch (error) {
+      var fetchMessage = "An kasa sauke audio din nan yanzu: " + item.titleHa;
+      markAudioDownloadItemUnavailable(item, "failed", fetchMessage);
+      await saveAudioDownloadProgress(session);
+      render();
+      return {
+        status: "failed",
+        error: error,
+      };
+    }
+
+    if (!response.ok) {
+      var unavailableStatus = response.status === 404 ? "missing" : "failed";
+      var unavailableMessage = response.status === 404
+        ? "Ba a saka audio din ba tukuna: " + item.titleHa
+        : "An samu matsalar sauke audio din nan: " + item.titleHa;
+      markAudioDownloadItemUnavailable(item, unavailableStatus, unavailableMessage);
+      await saveAudioDownloadProgress(session);
+      render();
+      return {
+        status: unavailableStatus,
+        httpStatus: response.status,
+      };
+    }
+
+    try {
+      var contentLength = Number(response.headers.get("Content-Length") || item.sizeBytes || 0);
+      var blob;
+
+      if (response.body && response.body.getReader) {
+        var reader = response.body.getReader();
+        var chunks = [];
+        var received = 0;
+        var lastRenderTime = Date.now();
+        var RENDER_THROTTLE_MS = 400;
+
+        while (true) {
+          var chunkResult = await reader.read();
+          if (chunkResult.done) {
+            break;
+          }
+
+          chunks.push(chunkResult.value);
+          received += chunkResult.value.length;
+          item.sizeBytes = contentLength || received;
+          item.progressPct = contentLength ? Math.min(100, Math.round((received / contentLength) * 100)) : 0;
+
+          var now = Date.now();
+          if (now - lastRenderTime >= RENDER_THROTTLE_MS) {
+            lastRenderTime = now;
+            render();
+          }
+        }
+
+        blob = new Blob(chunks, {
+          type: response.headers.get("Content-Type") || "audio/mpeg",
+        });
+      } else {
+        blob = await response.blob();
+      }
+
+      item.sizeBytes = blob.size || item.sizeBytes || contentLength || DEFAULT_AUDIO_SIZE_ESTIMATE_BYTES;
+      item.sizeKnown = true;
+      item.progressPct = 100;
+      item.status = "completed";
+
+      await putRecord("audioCache", {
+        url: item.url,
+        moduleId: item.moduleId,
+        gradeBand: session.gradeBand,
+        titleHa: item.titleHa,
+        blob: blob,
+        sizeBytes: item.sizeBytes,
+        downloadedAt: new Date().toISOString(),
+        contentVersion: state.settings.contentVersion,
+      });
+
+      session.downloadedBytes = session.items.reduce(function (total, entry) {
+        return total + Number(entry.status === "completed" ? entry.sizeBytes || 0 : 0);
+      }, 0);
+
+      await saveAudioDownloadProgress(session);
+
+      render();
+      return {
+        status: "downloaded",
+      };
+    } catch (error) {
+      var saveMessage = "An kasa adana audio din nan yanzu: " + item.titleHa;
+      markAudioDownloadItemUnavailable(item, "failed", saveMessage);
+      await saveAudioDownloadProgress(session);
+      render();
+
+      return {
+        status: "failed",
+        error: error,
+      };
+    }
   }
 
   async function deleteAudioForCompletedModules() {
     var completedModules = state.modules.filter(function (module) {
       return hasPassedModule(getProgressRecord(module.id));
     });
+    var completedAudioUrls = completedModules.reduce(function (accumulator, module) {
+      getAudioUrlsForModule(module).forEach(function (url) {
+        accumulator[url] = true;
+      });
+      return accumulator;
+    }, {});
+    var cachedAudio = await getAllRecords("audioCache").catch(function () {
+      return [];
+    });
+    var recordsToDelete = cachedAudio.filter(function (record) {
+      return record && completedAudioUrls[record.url];
+    });
+    var deletedBytes = recordsToDelete.reduce(function (total, record) {
+      return total + Number(record.sizeBytes || (record.blob ? record.blob.size : 0) || 0);
+    }, 0);
 
     for (var index = 0; index < completedModules.length; index += 1) {
-      await deleteRecord("audioCache", completedModules[index].audioFile).catch(function () {
-        return null;
-      });
+      var audioUrls = getAudioUrlsForModule(completedModules[index]);
+      for (var urlIndex = 0; urlIndex < audioUrls.length; urlIndex += 1) {
+        await deleteRecord("audioCache", audioUrls[urlIndex]).catch(function () {
+          return null;
+        });
+      }
     }
 
     await prepareDownloadSession(true);
     await refreshStorageEstimate();
-    render();
+    return {
+      count: recordsToDelete.length,
+      bytes: deletedBytes,
+    };
+  }
+
+  function buildDeleteAudioMessage(summary) {
+    var deleteSummary = summary || { count: 0, bytes: 0 };
+    if (!deleteSummary.count) {
+      return "Babu audio na modules da aka gama da za a goge yanzu.";
+    }
+    return "An goge audio " +
+      deleteSummary.count +
+      " na modules da aka gama. An saki kusan " +
+      formatBytes(deleteSummary.bytes || 0) +
+      ".";
   }
 
   async function refreshStorageEstimate() {
@@ -7454,7 +8229,7 @@
     }
 
     if (connectionChip) {
-      connectionChip.innerHTML = state.connectivity ? ha("Kan layi") : "Offline";
+      connectionChip.innerHTML = state.connectivity ? ha("Kan layi") : ha("Ba a kan layi");
       connectionChip.classList.toggle("is-online", state.connectivity);
       connectionChip.classList.toggle("is-offline", !state.connectivity);
     }
@@ -7506,7 +8281,19 @@
       return ha("An tsaya a tsakiya");
     }
 
+    if (status === "empty") {
+      return ha("Sauti yana zuwa");
+    }
+
+    if (status === "missing") {
+      return ha("Bai zo ba");
+    }
+
     if (status === "error") {
+      return ha("An samu matsala");
+    }
+
+    if (status === "failed") {
       return ha("An samu matsala");
     }
 
@@ -7524,6 +8311,14 @@
 
     if (status === "partial") {
       return "status-badge path-badge is-dim";
+    }
+
+    if (status === "missing" || status === "empty") {
+      return "status-badge path-badge is-dim";
+    }
+
+    if (status === "failed") {
+      return "status-badge";
     }
 
     return "status-badge";

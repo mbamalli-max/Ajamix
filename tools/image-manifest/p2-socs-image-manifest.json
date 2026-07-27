@@ -1,0 +1,206 @@
+[
+  {
+    "id": "p2-socs-01",
+    "imagePath": "images/p2-socs-01.png",
+    "titleEn": "The Family",
+    "titleHa": "Iyali",
+    "type": "illustration",
+    "depictEn": "A warm multi-generation Northern Nigerian family scene at home — mother, father, children, and a grandparent gathered together — conveying love, care, feeding, upbringing, and protection through calm, ordinary body language rather than any single dramatic action.",
+    "labelsHa": [
+      "Iyali",
+      "Ƙauna"
+    ],
+    "safetyNote": "Show a calm, cooperative family scene only; no depiction of conflict, and no single family member shown as dominant over the others."
+  },
+  {
+    "id": "p2-socs-02",
+    "imagePath": "images/p2-socs-02.png",
+    "titleEn": "Members of the Family",
+    "titleHa": "Membobin Iyali",
+    "type": "illustration",
+    "depictEn": "A family group portrait-style scene showing a mother caring for a young child, a father nearby, grandparents seated and sharing a story, an older sibling helping a younger one, and an aunt or uncle visiting — each member doing something distinct within one warm household scene.",
+    "labelsHa": [
+      "Uwa",
+      "Uba",
+      "Kakanni",
+      "Yayye"
+    ],
+    "safetyNote": "Depict every family member with equal warmth and dignity; no depiction of favouritism, conflict, or a child being reprimanded."
+  },
+  {
+    "id": "p2-socs-03",
+    "imagePath": "images/p2-socs-03.png",
+    "titleEn": "Duties at Home",
+    "titleHa": "Ayyuka a Gida",
+    "type": "illustration",
+    "depictEn": "A child doing only light, age-appropriate household tasks in one calm scene: gathering a few books together, placing a drinking cup away after use, and arranging shoes neatly by the door.",
+    "labelsHa": [
+      "Aiki",
+      "Alhaki"
+    ],
+    "safetyNote": "No child shown near fire, a knife, or any hazardous item — the module explicitly restricts a P2 child's duties to light, safe tasks only, never anything dangerous."
+  },
+  {
+    "id": "p2-socs-04",
+    "imagePath": "images/p2-socs-04.png",
+    "titleEn": "The Community",
+    "titleHa": "Al'umma",
+    "type": "illustration",
+    "depictEn": "A cooperative Northern Nigerian community scene with houses, a school, a market stall, a neutral place of worship, and a clinic visible together, with a teacher, doctor, farmer, and trader each shown doing their distinct role and residents greeting one another calmly.",
+    "labelsHa": [
+      "Al'umma",
+      "Haɗin kai"
+    ],
+    "safetyNote": "No political, religious-hierarchy, or ethnic symbol; show men and women in varied community roles without gender stereotyping, and no litter or damaged public property."
+  },
+  {
+    "id": "p2-socs-05",
+    "imagePath": "images/p2-socs-05.png",
+    "titleEn": "Places in the Community",
+    "titleHa": "Wurare a Cikin Al'umma",
+    "type": "diagram",
+    "depictEn": "A simple, non-geographic layout of five community places clearly separated — a school, a health centre, a market, a neutral place of worship, and a playground — with a small road connecting them and a couple of residents calmly using each place appropriately.",
+    "labelsHa": [
+      "Makaranta",
+      "Asibiti",
+      "Kasuwa",
+      "Filin wasa"
+    ],
+    "safetyNote": "Show the place of worship as a plain, neutral structure representing worship in general, with people calm and quiet there; no litter shown on the road."
+  },
+  {
+    "id": "p2-socs-06",
+    "imagePath": "images/p2-socs-06.png",
+    "titleEn": "Occupations",
+    "titleHa": "Sana'o'i",
+    "type": "illustration",
+    "depictEn": "A row of local workers each shown doing their occupation with calm dignity: a teacher at a chalkboard, a doctor with a patient, a farmer with produce, a fisherman with a net, a tailor sewing, a driver at a vehicle, a shoe-repairer at a stall, and a trader arranging goods.",
+    "labelsHa": [
+      "Malami",
+      "Likita",
+      "Manomi",
+      "Tela"
+    ],
+    "safetyNote": "Give every occupation equal visual dignity — no worker shown as more or less important than another, and no depiction of a vehicle in motion, sharp tools in use, or any hazardous action."
+  },
+  {
+    "id": "p2-socs-07",
+    "imagePath": "images/p2-socs-07.png",
+    "titleEn": "The Market",
+    "titleHa": "Kasuwa",
+    "type": "illustration",
+    "depictEn": "A calm, orderly market scene with a seller arranging grains, tomatoes, onions, and spices, an adult buyer asking the price, and a child standing close beside the accompanying adult rather than moving through the market alone.",
+    "labelsHa": [
+      "Kasuwa",
+      "Mai sayarwa",
+      "Mai saya",
+      "Farashi"
+    ],
+    "safetyNote": "The child must stay beside the adult at all times, not handling money or moving through the crowd alone; no real currency detail, brand, or aggressive bargaining, and no crowding or danger."
+  },
+  {
+    "id": "p2-socs-08",
+    "imagePath": "images/p2-socs-08.png",
+    "titleEn": "Rules at Home and School",
+    "titleHa": "Dokoki a Gida da Makaranta",
+    "type": "diagram",
+    "depictEn": "Two equal, clearly separated panels: a home-rules panel showing a child washing hands before eating and speaking politely to a parent, and a school-rules panel showing a pupil raising a hand before speaking and returning a book to its place.",
+    "labelsHa": [
+      "Doka",
+      "Gida",
+      "Makaranta"
+    ],
+    "safetyNote": "Keep the tone calm and instructive, not punitive — no depiction of punishment, scolding, or a child breaking a rule; show only the correct, positive behaviour."
+  },
+  {
+    "id": "p2-socs-09",
+    "imagePath": "images/p2-socs-09.png",
+    "titleEn": "Leaders in the Community",
+    "titleHa": "Shugabanni a Cikin Al'umma",
+    "type": "illustration",
+    "depictEn": "Three neutral leadership settings in one scene: a parent gently guiding children at home, a headteacher addressing pupils at school, and a respected community elder listening calmly to residents in a courtyard.",
+    "labelsHa": [
+      "Shugaba",
+      "Girmamawa"
+    ],
+    "safetyNote": "No real political party, politician, campaign symbol, party colour, or seal of office; this module explicitly frames leadership in general terms, not partisan politics."
+  },
+  {
+    "id": "p2-socs-10",
+    "imagePath": "images/p2-socs-10.png",
+    "titleEn": "Cooperation",
+    "titleHa": "Haɗin Kai",
+    "type": "illustration",
+    "depictEn": "Children working together calmly to tidy a shared classroom — one arranging books, one sweeping, one helping a classmate who does not understand a task — showing patience, listening, and shared effort rather than one child giving orders.",
+    "labelsHa": [
+      "Haɗin kai"
+    ],
+    "safetyNote": "No child shown commanding or excluding another; every child contributes calmly and is shown as an equal participant."
+  },
+  {
+    "id": "p2-socs-11",
+    "imagePath": "images/p2-socs-11.png",
+    "titleEn": "Nigerian Symbols",
+    "titleHa": "Alamomin Nijeriya",
+    "type": "diagram",
+    "depictEn": "A simple, accurate study panel showing the Nigerian green-white-green flag, a verified coat of arms, a small naira/kobo coin-and-note icon, and a generic musical-note panel representing the national anthem, presented neutrally with equal size for each symbol.",
+    "labelsHa": [
+      "Tutar Nijeriya",
+      "Tambarin Nijeriya",
+      "Naira"
+    ],
+    "safetyNote": "Verify current official symbol designs before rendering; no party colour, party logo, politician, campaign material, or alteration of the coat of arms — this module is explicitly non-political."
+  },
+  {
+    "id": "p2-socs-12",
+    "imagePath": "images/p2-socs-12.png",
+    "titleEn": "Respect and Good Behaviour",
+    "titleHa": "Girmamawa da Kyawawan Halaye",
+    "type": "illustration",
+    "depictEn": "A child greeting parents respectfully at home, then a second small scene of the same child listening attentively to a teacher in class with a raised hand — showing honesty, politeness, patience, and cleanliness through calm, ordinary behaviour.",
+    "labelsHa": [
+      "Ladabi",
+      "Godiya"
+    ],
+    "safetyNote": "Show only positive, exemplary behaviour — no depiction of rudeness, pushing, or a child being corrected harshly."
+  },
+  {
+    "id": "p2-socs-13",
+    "imagePath": "images/p2-socs-13.png",
+    "titleEn": "Festivals and Celebrations",
+    "titleHa": "Bukukuwa da Murna",
+    "type": "illustration",
+    "depictEn": "A family and community gathering scene for a special occasion — clean, modest clothing, people greeting each other warmly, sharing a simple meal, and visiting relatives — conveying joy, unity, and orderly celebration without naming a specific festival.",
+    "labelsHa": [
+      "Biki",
+      "Murna"
+    ],
+    "safetyNote": "No open flame, fireworks, or loud/dangerous celebration element; no litter shown, and no depiction of a specific religious ritual — keep the scene generic and warm."
+  },
+  {
+    "id": "p2-socs-14",
+    "imagePath": "images/p2-socs-14.png",
+    "titleEn": "Our Environment",
+    "titleHa": "Muhallinmu",
+    "type": "illustration",
+    "depictEn": "A broad, everyday environment scene showing a home, a school, a road, trees, a small water source, and people and animals coexisting calmly, with one child shown placing litter into a bin as an example of caring for the environment.",
+    "labelsHa": [
+      "Muhalli",
+      "Tsabta"
+    ],
+    "safetyNote": "No depiction of pollution, waste burning, or a hazardous water source; the child's only environmental action shown is placing litter in a bin, matching the module's own examples."
+  },
+  {
+    "id": "p2-socs-15",
+    "imagePath": "images/p2-socs-15.png",
+    "titleEn": "Keeping the Community Clean",
+    "titleHa": "Tsaftace Al'umma",
+    "type": "illustration",
+    "depictEn": "A community clean-up scene: a child calmly placing litter into a bin, while adults nearby sweep a road and clear a drain safely, showing that a clean community requires cooperation from everyone, not one person alone.",
+    "labelsHa": [
+      "Tsaftace muhalli",
+      "Kwandon shara"
+    ],
+    "safetyNote": "No child near an open drain, burning waste, or a well; only adults are shown doing the heavier cleanup tasks, matching the module's explicit restriction on children handling hazardous cleanup."
+  }
+]

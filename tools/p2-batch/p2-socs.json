@@ -1,0 +1,2117 @@
+[
+  {
+    "id": "p2-socs-01",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 1,
+    "titleEn": "The Family",
+    "titleHa": "Iyali",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Iyali shi ne mutanen da suke zaune tare ko suke da dangantaka ta jini, aure, ko kulawa. A cikin iyali, kana iya samun uwa, uba, yara, kakanni, yayye, ƙanne, ko wasu dangi. Iyali yana ba ka ƙauna, kulawa, abinci, tarbiyya, da kariya. A gida, kowa yana da rawar da zai taka domin zaman lafiya. Yaro na iya taimaka wa iyaye da ƙananan ayyuka kamar gyara tabarma, ɗaukar ruwa, ko tattara littafi. Ya kamata ka girmama iyaye da manya, ka saurari nasiha, kuma ka yi magana cikin ladabi. Idan akwai matsala, iyali na tattaunawa cikin natsuwa. Ka tuna cewa iyali ba wai wuri kawai ba ne; mutane ne da suke kula da juna kullum. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Iyali. [MAIN] Iyali shi ne mutanen da suke zaune tare ko suke da dangantaka ta jini, aure, ko kulawa. A cikin iyali, kana iya samun uwa, uba, yara, kakanni, yayye, ƙanne, ko wasu dangi. Iyali yana ba ka ƙauna, kulawa, abinci, tarbiyya, da kariya. A gida, kowa yana da rawar da zai taka domin zaman lafiya. [PAUSE 1] Me ake kira mutanen da suke zaune tare da kulawa da juna? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me ya kamata ka nuna wa iyaye? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-01.mp3",
+    "imageCard": "images/p2-socs-01.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me ake kira mutanen da suke zaune tare da kulawa da juna?",
+        "correctAnswer": "iyali",
+        "options": [
+          "iyali",
+          "kasuwa",
+          "filin wasa"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka nuna wa iyaye?",
+        "correctAnswer": "girmamawa",
+        "options": [
+          "girmamawa",
+          "hayaniya",
+          "ƙin magana"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me ake kira mutanen da suke zaune tare da kulawa da juna?",
+        "answerFormula": "iyali",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "kasuwa",
+          "makaranta",
+          "hanya"
+        ]
+      },
+      {
+        "templateHa": "Wane abu iyali yake ba yaro?",
+        "answerFormula": "kulawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hayaniya",
+          "ƙura",
+          "tsoro"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka nuna wa iyaye?",
+        "answerFormula": "girmamawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "raini",
+          "ƙin ji",
+          "gardama"
+        ]
+      },
+      {
+        "templateHa": "Wane ƙaramin aiki yaro zai iya yi a gida?",
+        "answerFormula": "tattara littafi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "lalata kaya",
+          "jefa shara",
+          "ɓoye takalmi"
+        ]
+      },
+      {
+        "templateHa": "Me iyali yake yi idan akwai matsala?",
+        "answerFormula": "tattaunawa cikin natsuwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "faɗa kullum",
+          "barin gida",
+          "ƙin sauraro"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-02",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 2,
+    "titleEn": "Members of the Family",
+    "titleHa": "Membobin Iyali",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Membobin iyali su ne mutane daban-daban da suke cikin gida ko dangi. Uwa tana kula da yara, uba yana taimaka wajen jagoranci da bukatun gida, kakanni suna ba da shawara da labari, yayye suna taimaka wa ƙanne, ƙanne kuma suna koyo daga manya. A wasu gidaje, za ka iya zama da kawu, inna, ko ɗan uwa. Kowane gida yana iya bambanta, amma muhimmanci shi ne kulawa da juna. Ka san sunayen mutanen gidanku, ka kuma san yadda za ka gaishe su da ladabi. Idan babba ya kira ka, ka amsa cikin natsuwa. Idan ƙani ya bukaci taimako, ka taimaka idan za ka iya. Sanin membobin iyali yana taimaka maka ka fahimci dangantaka, alhaki, da zaman lafiya a gida. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Membobin Iyali. [MAIN] Membobin iyali su ne mutane daban-daban da suke cikin gida ko dangi. Uwa tana kula da yara, uba yana taimaka wajen jagoranci da bukatun gida, kakanni suna ba da shawara da labari, yayye suna taimaka wa ƙanne, ƙanne kuma suna koyo daga manya. A wasu gidaje, za ka iya zama da kawu, inna, ko ɗan uwa. Kowane gida yana iya bambanta, amma muhimmanci shi ne kulawa da juna. [PAUSE 1] Wace ce mace mai kula da yara a gida? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Wa ke iya ba da shawara da labari a iyali? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-02.mp3",
+    "imageCard": "images/p2-socs-02.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wace ce mace mai kula da yara a gida?",
+        "correctAnswer": "uwa",
+        "options": [
+          "uwa",
+          "kasuwa",
+          "allo"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wa ke iya ba da shawara da labari a iyali?",
+        "correctAnswer": "kakanni",
+        "options": [
+          "kakanni",
+          "ƙwallo",
+          "bargo"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wace ce mace mai kula da yara a gida?",
+        "answerFormula": "uwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "allo",
+          "hanya",
+          "kujera"
+        ]
+      },
+      {
+        "templateHa": "Wane ne zai iya zama shugaban gida tare da uwa?",
+        "answerFormula": "uba",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙwallo",
+          "littafi",
+          "kwano"
+        ]
+      },
+      {
+        "templateHa": "Wa ke iya ba da shawara da labari a iyali?",
+        "answerFormula": "kakanni",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yashi",
+          "takalmi",
+          "ƙofa"
+        ]
+      },
+      {
+        "templateHa": "Me yayye suke iya yi wa ƙanne?",
+        "answerFormula": "taimako",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "tsoratarwa",
+          "ɓoye abinci",
+          "lalata kaya"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi idan babba ya kira ka?",
+        "answerFormula": "amsa cikin ladabi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gudu ba amsa",
+          "yin ihu",
+          "rufe kunne"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-03",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 3,
+    "titleEn": "Duties at Home",
+    "titleHa": "Ayyuka a Gida",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ayyuka a gida su ne ƙananan abubuwan da kowa zai iya yi domin gida ya kasance da tsari da tsafta. Yaro na P2 ba ya ɗaukar aiki mai nauyi, amma zai iya taimakawa da abin da ya dace da shekarunsa. Za ka iya tattara littattafai, share ƙaramin wuri idan an ce ka yi, ɗaukar kofinka bayan ka sha ruwa, ko ajiye takalma a wurinsu. Kada ka taɓa wuta, wuƙa, ko abu mai haɗari ba tare da babba ba. Yin aiki a gida yana koya maka alhaki, haɗin kai, da kula da kaya. Idan kowa ya yi nasa ɓangare, gida zai fi kyau. Ka yi aiki cikin fara’a, ka tambayi babba idan ba ka fahimci abin da za ka yi ba.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Ayyuka a Gida. [MAIN] Ayyuka a gida su ne ƙananan abubuwan da kowa zai iya yi domin gida ya kasance da tsari da tsafta. Yaro na P2 ba ya ɗaukar aiki mai nauyi, amma zai iya taimakawa da abin da ya dace da shekarunsa. Za ka iya tattara littattafai, share ƙaramin wuri idan an ce ka yi, ɗaukar kofinka bayan ka sha ruwa, ko ajiye takalma a wurinsu. Kada ka taɓa wuta, wuƙa, ko abu mai haɗari ba tare da babba ba. [PAUSE 1] Wane aiki yaro zai iya yi a gida? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me aiki a gida yake koya maka? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-03.mp3",
+    "imageCard": "images/p2-socs-03.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane aiki yaro zai iya yi a gida?",
+        "correctAnswer": "tattara littattafai",
+        "options": [
+          "tattara littattafai",
+          "taɓa wuta",
+          "wasa da wuƙa"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me aiki a gida yake koya maka?",
+        "correctAnswer": "alhaki",
+        "options": [
+          "alhaki",
+          "rashin ladabi",
+          "ɓata kaya"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane aiki yaro zai iya yi a gida?",
+        "answerFormula": "tattara littattafai",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "taɓa wuta",
+          "wasa da wuƙa",
+          "zubar da ruwa"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace yaro ya taɓa ba tare da babba ba?",
+        "answerFormula": "wuta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "littafi",
+          "takalmi",
+          "tabarma"
+        ]
+      },
+      {
+        "templateHa": "Me aiki a gida yake koya maka?",
+        "answerFormula": "alhaki",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "rashin ladabi",
+          "tsoro",
+          "kasala"
+        ]
+      },
+      {
+        "templateHa": "Me zai faru idan kowa ya yi nasa ɓangare?",
+        "answerFormula": "gida zai fi kyau",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gida zai lalace",
+          "kowa zai yi faɗa",
+          "abu zai ɓace"
+        ]
+      },
+      {
+        "templateHa": "Yaya ya kamata ka yi aiki a gida?",
+        "answerFormula": "cikin fara’a",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "cikin fushi",
+          "da hayaniya",
+          "ba tare da ji ba"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-04",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 4,
+    "titleEn": "The Community",
+    "titleHa": "Al’umma",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Al’umma ita ce tarin mutane da suke zaune ko aiki a wuri ɗaya, kamar unguwa, gari, ko ƙauye. A cikin al’umma akwai gidaje, makaranta, kasuwa, wurin ibada, asibiti, hanya, da wuraren wasa. Mutane a al’umma suna taimakon juna. Malami yana koyarwa, likita yana kula da marasa lafiya, manomi yana noma, ɗan kasuwa yana sayar da kaya, shugabanni kuma suna taimaka wa mutane su bi tsari. Kai ma kana cikin al’umma, don haka halinka yana da muhimmanci. Ka gaisa da mutane cikin ladabi, ka kiyaye hanya da muhalli, ka kuma guji ɓata kayan jama’a. Idan kowa ya nuna girmamawa da haɗin kai, al’umma za ta fi zaman lafiya. Ka lura da mutanen da suke taimaka wa unguwarku kullum. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Al’umma. [MAIN] Al’umma ita ce tarin mutane da suke zaune ko aiki a wuri ɗaya, kamar unguwa, gari, ko ƙauye. A cikin al’umma akwai gidaje, makaranta, kasuwa, wurin ibada, asibiti, hanya, da wuraren wasa. Mutane a al’umma suna taimakon juna. Malami yana koyarwa, likita yana kula da marasa lafiya, manomi yana noma, ɗan kasuwa yana sayar da kaya, shugabanni kuma suna taimaka wa mutane su bi tsari. [PAUSE 1] Me ake kira tarin mutane da suke zaune a wuri ɗaya? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me mutane a al’umma suke yi wa juna? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-04.mp3",
+    "imageCard": "images/p2-socs-04.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me ake kira tarin mutane da suke zaune a wuri ɗaya?",
+        "correctAnswer": "al’umma",
+        "options": [
+          "al’umma",
+          "littafi",
+          "ƙwallo"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me mutane a al’umma suke yi wa juna?",
+        "correctAnswer": "taimako",
+        "options": [
+          "taimako",
+          "ɓoye kaya",
+          "ƙin magana"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me ake kira tarin mutane da suke zaune a wuri ɗaya?",
+        "answerFormula": "al’umma",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "littafi",
+          "ƙwallo",
+          "tabarma"
+        ]
+      },
+      {
+        "templateHa": "Wane wuri yana cikin al’umma?",
+        "answerFormula": "makaranta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "cikin jaka",
+          "ƙasan gado",
+          "bayan kofa"
+        ]
+      },
+      {
+        "templateHa": "Me mutane a al’umma suke yi wa juna?",
+        "answerFormula": "taimako",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɓoye kaya",
+          "ƙin magana",
+          "lalata hanya"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi da kayan jama’a?",
+        "answerFormula": "kiyaye su",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɓata su",
+          "jefa su",
+          "ƙone su"
+        ]
+      },
+      {
+        "templateHa": "Wane hali ne ke taimaka wa al’umma?",
+        "answerFormula": "haɗin kai",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "faɗa",
+          "rashin ladabi",
+          "zargi"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-05",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 5,
+    "titleEn": "Places in the Community",
+    "titleHa": "Wurare a Cikin Al’umma",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "A cikin al’umma akwai wurare da yawa da suke taimaka wa mutane. Makaranta wuri ne na karatu. Asibiti ko wurin lafiya wuri ne da ake neman taimako idan mutum ba shi da lafiya. Kasuwa wuri ne da ake saye da sayarwa. Wurin ibada wuri ne da mutane suke yin addu’a cikin natsuwa. Filin wasa yana taimaka wa yara su motsa jiki cikin tsari. Hanya tana taimaka wa mutane su je daga gida zuwa makaranta ko kasuwa. Ya kamata ka san aikin kowane wuri, ka kuma nuna ladabi idan ka je wurin jama’a. Kada ka yi hayaniya a wurin da ake bukatar natsuwa. Kada ka zubar da shara a hanya. Sanin wurare a al’umma yana taimaka maka ka nemi abu a inda ya dace.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Wurare a Cikin Al’umma. [MAIN] A cikin al’umma akwai wurare da yawa da suke taimaka wa mutane. Makaranta wuri ne na karatu. Asibiti ko wurin lafiya wuri ne da ake neman taimako idan mutum ba shi da lafiya. Kasuwa wuri ne da ake saye da sayarwa. [PAUSE 1] Ina ake karatu a cikin al’umma? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Ina ake saye da sayarwa? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-05.mp3",
+    "imageCard": "images/p2-socs-05.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Ina ake karatu a cikin al’umma?",
+        "correctAnswer": "makaranta",
+        "options": [
+          "makaranta",
+          "kasuwa",
+          "filin wasa"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Ina ake saye da sayarwa?",
+        "correctAnswer": "kasuwa",
+        "options": [
+          "asibiti",
+          "kasuwa",
+          "ɗaki"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Ina ake karatu a cikin al’umma?",
+        "answerFormula": "makaranta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "kasuwa",
+          "filin wasa",
+          "hanya"
+        ]
+      },
+      {
+        "templateHa": "Ina ake saye da sayarwa?",
+        "answerFormula": "kasuwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "asibiti",
+          "ɗaki",
+          "allo"
+        ]
+      },
+      {
+        "templateHa": "Ina ake neman taimako idan mutum ba shi da lafiya?",
+        "answerFormula": "asibiti",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "kasuwa",
+          "filin wasa",
+          "madubi"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka nuna a wurin jama’a?",
+        "answerFormula": "ladabi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hayaniya",
+          "tsokana",
+          "ƙin tsari"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace ka zubar a hanya ba?",
+        "answerFormula": "shara",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gaisuwa",
+          "ladabi",
+          "taimako"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-06",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 6,
+    "titleEn": "Occupations",
+    "titleHa": "Sana’o’i",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Sana’a ita ce aikin da mutum yake yi domin ya taimaki kansa, iyali, da al’umma. A unguwa za ka iya ganin malami, likita, manomi, masunci, tela, direba, mai gyaran takalma, ko ɗan kasuwa. Kowane aiki yana da amfani. Malami yana koyar da yara. Likita yana taimaka wa marasa lafiya. Manomi yana noma abinci. Tela yana ɗinka tufafi. Direba yana kai mutane wurare cikin kulawa. Ya kamata ka girmama masu sana’a saboda aikinsu yana taimaka wa rayuwa ta gudana. Kada ka raina aikin mutum. Idan ka girma, kai ma za ka iya koyon sana’a mai kyau. Ka lura da mutanen da ke aiki a kusa da kai, ka tambayi babba sunan aikinsu cikin ladabi. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Sana’o’i. [MAIN] Sana’a ita ce aikin da mutum yake yi domin ya taimaki kansa, iyali, da al’umma. A unguwa za ka iya ganin malami, likita, manomi, masunci, tela, direba, mai gyaran takalma, ko ɗan kasuwa. Kowane aiki yana da amfani. Malami yana koyar da yara. [PAUSE 1] Wane ne yake koyar da yara? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me manomi yake yi? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-06.mp3",
+    "imageCard": "images/p2-socs-06.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane ne yake koyar da yara?",
+        "correctAnswer": "malami",
+        "options": [
+          "malami",
+          "direba",
+          "tela"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me manomi yake yi?",
+        "correctAnswer": "noma abinci",
+        "options": [
+          "noma abinci",
+          "ɗinka tufafi",
+          "gyara mota"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane ne yake koyar da yara?",
+        "answerFormula": "malami",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "direba",
+          "tela",
+          "masunci"
+        ]
+      },
+      {
+        "templateHa": "Wane ne yake taimaka wa marasa lafiya?",
+        "answerFormula": "likita",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "manomi",
+          "ɗan kasuwa",
+          "mai gashi"
+        ]
+      },
+      {
+        "templateHa": "Me manomi yake yi?",
+        "answerFormula": "noma abinci",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɗinka tufafi",
+          "gyara takalma",
+          "tuki"
+        ]
+      },
+      {
+        "templateHa": "Wane ne yake ɗinka tufafi?",
+        "answerFormula": "tela",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "likita",
+          "malami",
+          "direba"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi wa masu sana’a?",
+        "answerFormula": "girmama su",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "raina su",
+          "tsokane su",
+          "ɓata musu kaya"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-07",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 7,
+    "titleEn": "The Market",
+    "titleHa": "Kasuwa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Kasuwa wuri ne da mutane suke saye da sayarwa. A kasuwa za ka iya ganin kayan abinci kamar shinkafa, wake, tumatir, albasa, da kayan miya. Za ka iya ganin tufafi, takalma, littattafai, ko kayan gida. Masu sayarwa suna nuna kaya, masu saya kuma suna tambayar farashi. Idan ka je kasuwa da babba, ka tsaya kusa da shi, ka saurara, kada ka yi gudu a cikin cunkoso. Kuɗi yana da muhimmanci a kasuwa, don haka a kula da shi. Ka yi magana cikin ladabi idan kana tambayar farashi. Kada ka taɓa kayan mutum ba tare da izini ba. Kasuwa tana taimaka wa al’umma saboda mutane suna samun abin da suke bukata, kuma masu sana’a suna samun kuɗin shiga. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Kasuwa. [MAIN] Kasuwa wuri ne da mutane suke saye da sayarwa. A kasuwa za ka iya ganin kayan abinci kamar shinkafa, wake, tumatir, albasa, da kayan miya. Za ka iya ganin tufafi, takalma, littattafai, ko kayan gida. Masu sayarwa suna nuna kaya, masu saya kuma suna tambayar farashi. [PAUSE 1] Ina ake saye da sayarwa? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me ake tambaya kafin saye? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-07.mp3",
+    "imageCard": "images/p2-socs-07.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Ina ake saye da sayarwa?",
+        "correctAnswer": "kasuwa",
+        "options": [
+          "kasuwa",
+          "asibiti",
+          "ƙofar gida"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ake tambaya kafin saye?",
+        "correctAnswer": "farashi",
+        "options": [
+          "farashi",
+          "launin sama",
+          "sunan kogi"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Ina ake saye da sayarwa?",
+        "answerFormula": "kasuwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "asibiti",
+          "ƙofar gida",
+          "filin wasa"
+        ]
+      },
+      {
+        "templateHa": "Me ake tambaya kafin saye?",
+        "answerFormula": "farashi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "launin sama",
+          "sunan kogi",
+          "adadin taurari"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi idan ka je kasuwa da babba?",
+        "answerFormula": "tsaya kusa da shi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gudu cikin cunkoso",
+          "ɓacewa",
+          "taɓa kaya ba izini"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ake amfani da shi wajen saye?",
+        "answerFormula": "kuɗi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙura",
+          "ganye",
+          "toka"
+        ]
+      },
+      {
+        "templateHa": "Me kasuwa take taimaka wa mutane su samu?",
+        "answerFormula": "abin da suke bukata",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hayaniya kawai",
+          "faɗa",
+          "rashin tsari"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-08",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 8,
+    "titleEn": "Rules at Home and School",
+    "titleHa": "Dokoki a Gida da Makaranta",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Dokoki su ne ƙa’idoji da suke taimaka wa mutane su zauna lafiya cikin tsari. A gida, iyaye na iya cewa ka wanke hannu kafin cin abinci, ka dawo da kaya wurinsu, ko ka yi magana cikin ladabi. A makaranta, malamai na iya cewa ka zo da wuri, ka saurara a aji, ka ɗaga hannu kafin magana, kuma ka kula da littafi. Dokoki ba don tsoro kawai ba ne; suna kare ka da sauran mutane. Idan babu doka, mutane za su yi abin da suka ga dama, sai hayaniya da matsala su ƙaru. Ka bi doka cikin natsuwa, ka tambayi babba idan ba ka gane ba. Yaro mai bin doka yana samun aminci, ilimi, da girmamawa daga mutane. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Dokoki a Gida da Makaranta. [MAIN] Dokoki su ne ƙa’idoji da suke taimaka wa mutane su zauna lafiya cikin tsari. A gida, iyaye na iya cewa ka wanke hannu kafin cin abinci, ka dawo da kaya wurinsu, ko ka yi magana cikin ladabi. A makaranta, malamai na iya cewa ka zo da wuri, ka saurara a aji, ka ɗaga hannu kafin magana, kuma ka kula da littafi. Dokoki ba don tsoro kawai ba ne; suna kare ka da sauran mutane. [PAUSE 1] Me dokoki suke taimakawa a gida da makaranta? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me ya kamata ka yi kafin magana a aji? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-08.mp3",
+    "imageCard": "images/p2-socs-08.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me dokoki suke taimakawa a gida da makaranta?",
+        "correctAnswer": "tsari",
+        "options": [
+          "tsari",
+          "hayaniya",
+          "rashin ladabi"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi kafin magana a aji?",
+        "correctAnswer": "ɗaga hannu",
+        "options": [
+          "ɗaga hannu",
+          "yin ihu",
+          "barin aji"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me dokoki suke taimakawa a gida da makaranta?",
+        "answerFormula": "tsari",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hayaniya",
+          "rashin ladabi",
+          "faɗa"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi kafin magana a aji?",
+        "answerFormula": "ɗaga hannu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yin ihu",
+          "barin aji",
+          "buga teburi"
+        ]
+      },
+      {
+        "templateHa": "Wane doka ce ta gida?",
+        "answerFormula": "wanke hannu kafin abinci",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "jefa shara",
+          "ɓoye littafi",
+          "gudu da wuƙa"
+        ]
+      },
+      {
+        "templateHa": "Me doka take yi wa mutane?",
+        "answerFormula": "kare su",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɓata su",
+          "tsoratar da su kawai",
+          "raba su"
+        ]
+      },
+      {
+        "templateHa": "Yaro mai bin doka yana samun me?",
+        "answerFormula": "girmamawa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "rashin aminci",
+          "faɗa",
+          "tsokana"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-09",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 9,
+    "titleEn": "Leaders in the Community",
+    "titleHa": "Shugabanni a Cikin Al’umma",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Shugabanni a cikin al’umma mutane ne da suke taimaka wa jama’a su bi tsari. A gida, iyaye suna jagorantar yara. A makaranta, shugaban makaranta da malamai suna taimaka wa ɗalibai. A unguwa, ana iya samun mai unguwa ko dattijo da mutane suke saurara saboda kwarewa da ladabi. Shugaba mai kyau yana sauraren mutane, yana ƙarfafa zaman lafiya, kuma yana taimaka wa jama’a su kiyaye doka. Wannan darasi ba batun jam’iyya ba ne; yana koya maka ma’anar jagoranci cikin sauƙi. Ya kamata ka girmama shugabanni masu kyau, ka bi umarni na aminci, kuma ka faɗa wa babba idan wani umarni ya sa ka cikin haɗari. Kai ma za ka iya nuna jagoranci ta hanyar gaskiya, taimako, da ladabi. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Shugabanni a Cikin Al’umma. [MAIN] Shugabanni a cikin al’umma mutane ne da suke taimaka wa jama’a su bi tsari. A gida, iyaye suna jagorantar yara. A makaranta, shugaban makaranta da malamai suna taimaka wa ɗalibai. A unguwa, ana iya samun mai unguwa ko dattijo da mutane suke saurara saboda kwarewa da ladabi. [PAUSE 1] Wa ke jagorantar yara a gida? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Wane hali shugaba mai kyau yake nunawa? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-09.mp3",
+    "imageCard": "images/p2-socs-09.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wa ke jagorantar yara a gida?",
+        "correctAnswer": "iyaye",
+        "options": [
+          "iyaye",
+          "ƙwallo",
+          "hanya"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane hali shugaba mai kyau yake nunawa?",
+        "correctAnswer": "sauraro",
+        "options": [
+          "sauraro",
+          "tsokana",
+          "rashin gaskiya"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wa ke jagorantar yara a gida?",
+        "answerFormula": "iyaye",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙwallo",
+          "hanya",
+          "kujera"
+        ]
+      },
+      {
+        "templateHa": "Wa ke taimaka wa ɗalibai a makaranta?",
+        "answerFormula": "malamai",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "direbobi kawai",
+          "masu wasa",
+          "ƙananan yara"
+        ]
+      },
+      {
+        "templateHa": "Wane hali shugaba mai kyau yake nunawa?",
+        "answerFormula": "sauraro",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "tsokana",
+          "rashin gaskiya",
+          "faɗa kullum"
+        ]
+      },
+      {
+        "templateHa": "Me shugaba mai kyau yake ƙarfafawa?",
+        "answerFormula": "zaman lafiya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hayaniya",
+          "ƙin doka",
+          "ɓata hanya"
+        ]
+      },
+      {
+        "templateHa": "Ta yaya yaro zai nuna jagoranci?",
+        "answerFormula": "taimako da ladabi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "tsokana",
+          "ɓoye gaskiya",
+          "ƙin sauraro"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-10",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 10,
+    "titleEn": "Cooperation",
+    "titleHa": "Haɗin Kai",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Haɗin kai yana nufin mutane su yi aiki tare domin cimma abu mai kyau. A gida, yara za su iya haɗa kai wajen gyara ɗaki ko tattara kayan wasa. A makaranta, ɗalibai za su iya haɗa kai wajen share aji, raba littattafai, ko taimaka wa wanda bai fahimta ba. A unguwa, mutane na iya haɗa kai wajen tsaftace hanya ko kula da wurin ruwa. Haɗin kai yana rage wahala saboda aiki yana rabuwa tsakanin mutane. Hakanan yana koya maka sauraro, hakuri, da girmama ra’ayin wasu. Idan kana aiki tare da abokai, kada ka yi umarni da fushi. Ka saurari kowa, ka yi naka ɓangare, ka kuma gode wa wanda ya taimaka. Al’umma mai haɗin kai tana samun zaman lafiya da ci gaba.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Haɗin Kai. [MAIN] Haɗin kai yana nufin mutane su yi aiki tare domin cimma abu mai kyau. A gida, yara za su iya haɗa kai wajen gyara ɗaki ko tattara kayan wasa. A makaranta, ɗalibai za su iya haɗa kai wajen share aji, raba littattafai, ko taimaka wa wanda bai fahimta ba. A unguwa, mutane na iya haɗa kai wajen tsaftace hanya ko kula da wurin ruwa. [PAUSE 1] Me haɗin kai yake nufi? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me haɗin kai yake ragewa? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-10.mp3",
+    "imageCard": "images/p2-socs-10.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me haɗin kai yake nufi?",
+        "correctAnswer": "aiki tare",
+        "options": [
+          "aiki tare",
+          "yin faɗa",
+          "ɓoye kaya"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me haɗin kai yake ragewa?",
+        "correctAnswer": "wahala",
+        "options": [
+          "wahala",
+          "taimako",
+          "zaman lafiya"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me haɗin kai yake nufi?",
+        "answerFormula": "aiki tare",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yin faɗa",
+          "ɓoye kaya",
+          "ƙin magana"
+        ]
+      },
+      {
+        "templateHa": "Wane aiki ɗalibai za su iya yi tare?",
+        "answerFormula": "share aji",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "lalata aji",
+          "jefa littafi",
+          "tsokana"
+        ]
+      },
+      {
+        "templateHa": "Me haɗin kai yake ragewa?",
+        "answerFormula": "wahala",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "taimako",
+          "zaman lafiya",
+          "farin ciki"
+        ]
+      },
+      {
+        "templateHa": "Wane hali ake bukata wajen haɗin kai?",
+        "answerFormula": "sauraro",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "fushi",
+          "rashin hakuri",
+          "raini"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi wa wanda ya taimaka?",
+        "answerFormula": "gode masa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "tsokane shi",
+          "mantawa da shi",
+          "ɓoye masa kaya"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-11",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 11,
+    "titleEn": "Nigerian Symbols",
+    "titleHa": "Alamomin Nijeriya",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Alamomin Nijeriya abubuwa ne da suke tunatar da mu ƙasarmu. Misalai masu sauƙi su ne tutar Nijeriya, tambarin Nijeriya, taken ƙasa, kuɗin Nijeriya, da launukan kore da fari. Tuta tana da kore, fari, kore. Launin kore yana iya tunatar da mu noma da albarkatun ƙasa, fari kuma yana iya nuni da zaman lafiya. Kuɗin Nijeriya shi ne naira da kobo. Taken ƙasa waƙa ce da ake yi cikin girmamawa a wasu lokuta na makaranta ko taro. Ya kamata ka girmama alamomin ƙasa, kada ka lalata tuta ko wasa da kuɗi. Wannan darasi yana koya maka ka san abubuwan da ke nuna Nijeriya cikin sauƙi, ba tare da shiga siyasa ba. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Alamomin Nijeriya. [MAIN] Alamomin Nijeriya abubuwa ne da suke tunatar da mu ƙasarmu. Misalai masu sauƙi su ne tutar Nijeriya, tambarin Nijeriya, taken ƙasa, kuɗin Nijeriya, da launukan kore da fari. Tuta tana da kore, fari, kore. Launin kore yana iya tunatar da mu noma da albarkatun ƙasa, fari kuma yana iya nuni da zaman lafiya. [PAUSE 1] Wane launi ne yake cikin tutar Nijeriya? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Menene kuɗin Nijeriya? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-11.mp3",
+    "imageCard": "images/p2-socs-11.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane launi ne yake cikin tutar Nijeriya?",
+        "correctAnswer": "kore",
+        "options": [
+          "kore",
+          "ruwan hoda",
+          "baki"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Menene kuɗin Nijeriya?",
+        "correctAnswer": "naira",
+        "options": [
+          "naira",
+          "dutse",
+          "ganye"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane launi ne yake cikin tutar Nijeriya?",
+        "answerFormula": "kore",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ruwan hoda",
+          "baki",
+          "shunayya"
+        ]
+      },
+      {
+        "templateHa": "Menene kuɗin Nijeriya?",
+        "answerFormula": "naira",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "dutse",
+          "ganye",
+          "ƙwallo"
+        ]
+      },
+      {
+        "templateHa": "Tutar Nijeriya tana da launuka nawa?",
+        "answerFormula": "biyu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "uku",
+          "huɗu",
+          "biyar"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi wa alamomin ƙasa?",
+        "answerFormula": "girmama su",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "lalata su",
+          "wasa da su",
+          "ɓoye su"
+        ]
+      },
+      {
+        "templateHa": "Wane abu ne alamar Nijeriya?",
+        "answerFormula": "tambarin Nijeriya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "takalmi",
+          "tabarma",
+          "kwando"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-12",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 12,
+    "titleEn": "Respect and Good Behaviour",
+    "titleHa": "Girmamawa da Kyawawan Halaye",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Girmamawa tana nufin nuna mutunci ga mutane ta magana da aiki. Kyawawan halaye su ne abubuwan da ke sa mutane su amince da kai, kamar gaskiya, ladabi, taimako, hakuri, da tsabta. A gida, ka gaishe iyaye da manya. A makaranta, ka saurari malami, ka jira lokacinka kafin magana, ka kuma kula da littattafai. A kasuwa ko hanya, ka yi magana cikin natsuwa, kada ka ture mutane. Idan ka yi kuskure, ka ce ka yi hakuri. Idan wani ya taimaka maka, ka ce na gode. Girmamawa ba ta sa ka zama rauni; tana nuna tarbiyya. Yaro mai kyawawan halaye yana samun abokai, amincewa, da zaman lafiya. Ka riƙa zaɓar kalmomi masu kyau kullum. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Girmamawa da Kyawawan Halaye. [MAIN] Girmamawa tana nufin nuna mutunci ga mutane ta magana da aiki. Kyawawan halaye su ne abubuwan da ke sa mutane su amince da kai, kamar gaskiya, ladabi, taimako, hakuri, da tsabta. A gida, ka gaishe iyaye da manya. A makaranta, ka saurari malami, ka jira lokacinka kafin magana, ka kuma kula da littattafai. [PAUSE 1] Me girmamawa take nufi? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me za ka ce idan wani ya taimaka maka? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-12.mp3",
+    "imageCard": "images/p2-socs-12.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me girmamawa take nufi?",
+        "correctAnswer": "nuna mutunci",
+        "options": [
+          "nuna mutunci",
+          "yin hayaniya",
+          "ƙin magana"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me za ka ce idan wani ya taimaka maka?",
+        "correctAnswer": "na gode",
+        "options": [
+          "na gode",
+          "ka tafi",
+          "ba komai ba"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me girmamawa take nufi?",
+        "answerFormula": "nuna mutunci",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yin hayaniya",
+          "ƙin magana",
+          "tsokana"
+        ]
+      },
+      {
+        "templateHa": "Wane hali ne mai kyau?",
+        "answerFormula": "gaskiya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙarya",
+          "rashin ladabi",
+          "ture mutane"
+        ]
+      },
+      {
+        "templateHa": "Me za ka ce idan ka yi kuskure?",
+        "answerFormula": "yi hakuri",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "yi ihu",
+          "gudu",
+          "ɓoye kai"
+        ]
+      },
+      {
+        "templateHa": "Me za ka ce idan wani ya taimaka maka?",
+        "answerFormula": "na gode",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ka tafi",
+          "ba na so",
+          "yi shiru"
+        ]
+      },
+      {
+        "templateHa": "Yaro mai kyawawan halaye yana samun me?",
+        "answerFormula": "amincewa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "faɗa",
+          "tsoro",
+          "rashin aboki"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-13",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 13,
+    "titleEn": "Festivals and Celebrations",
+    "titleHa": "Bukukuwa da Murna",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Bukukuwa da murna lokuta ne da mutane suke taruwa cikin farin ciki da girmamawa. A gida ko al’umma, mutane na iya yin biki saboda rana ta musamman, aure, suna, nasara a makaranta, ko wata al’ada mai kyau. A lokacin biki, mutane na iya sa tufafi masu tsabta, gaishe da juna, cin abinci, raba alheri, da ziyartar dangi ko maƙwabta. Biki mai kyau yana bukatar tsari, tsafta, da ladabi. Kada a yi hayaniya da za ta cutar da wasu. Kada a zubar da shara ko a yi wasa da wuta. Ya kamata ka girmama mutanen da suke yin biki daban da naka. Bukukuwa suna koya mana farin ciki, zumunci, taimako, da zaman lafiya. Ka yi murna cikin natsuwa da kulawa. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Bukukuwa da Murna. [MAIN] Bukukuwa da murna lokuta ne da mutane suke taruwa cikin farin ciki da girmamawa. A gida ko al’umma, mutane na iya yin biki saboda rana ta musamman, aure, suna, nasara a makaranta, ko wata al’ada mai kyau. A lokacin biki, mutane na iya sa tufafi masu tsabta, gaishe da juna, cin abinci, raba alheri, da ziyartar dangi ko maƙwabta. Biki mai kyau yana bukatar tsari, tsafta, da ladabi. [PAUSE 1] Me mutane suke yi a lokacin biki? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Wane hali ake bukata a biki? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-13.mp3",
+    "imageCard": "images/p2-socs-13.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me mutane suke yi a lokacin biki?",
+        "correctAnswer": "murna",
+        "options": [
+          "murna",
+          "faɗa",
+          "ɓoye juna"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane hali ake bukata a biki?",
+        "correctAnswer": "ladabi",
+        "options": [
+          "ladabi",
+          "hayaniya mai cutarwa",
+          "rashin tsari"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me mutane suke yi a lokacin biki?",
+        "answerFormula": "murna",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "faɗa",
+          "ɓoye juna",
+          "rashin gaisuwa"
+        ]
+      },
+      {
+        "templateHa": "Wane abu mutane na iya sa a biki?",
+        "answerFormula": "tufafi masu tsabta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "tufafi masu datti",
+          "takarda kawai",
+          "ƙura"
+        ]
+      },
+      {
+        "templateHa": "Wane hali ake bukata a biki?",
+        "answerFormula": "ladabi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "hayaniya mai cutarwa",
+          "rashin tsari",
+          "tsokana"
+        ]
+      },
+      {
+        "templateHa": "Me bai dace a zubar bayan biki ba?",
+        "answerFormula": "shara",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "gaisuwa",
+          "farin ciki",
+          "taimako"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi wa bikin wani?",
+        "answerFormula": "girmama shi",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "raina shi",
+          "lalata shi",
+          "tsoratar da mutane"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-14",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 14,
+    "titleEn": "Our Environment",
+    "titleHa": "Muhallinmu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Muhallinmu shi ne wurin da muke rayuwa da abubuwan da ke kewaye da mu. Ya haɗa da gida, makaranta, hanya, kasuwa, itatuwa, ruwa, iska, mutane, da dabbobi. Muhalli mai kyau yana taimaka mana mu zauna lafiya. Idan muhalli ya yi datti, ƙwari da cuta na iya yawaita. Ka kula da muhallinka ta hanyar zuba shara a kwandon shara, wanke hannu bayan taɓa datti, da guje wa lalata itatuwa. A makaranta, ka kula da aji da filin wasa. A gida, ka taimaka wajen tsafta idan babba ya ba ka dama. Kada ka zubar da ruwa mai datti a hanyar da mutane suke bi. Sanin muhallinmu yana koya maka cewa wurin da kake rayuwa yana bukatar kulawa daga kowa. Ka sake duba misali a gida ko makaranta, sannan ka faɗa wa babba abin da ka koya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Muhallinmu. [MAIN] Muhallinmu shi ne wurin da muke rayuwa da abubuwan da ke kewaye da mu. Ya haɗa da gida, makaranta, hanya, kasuwa, itatuwa, ruwa, iska, mutane, da dabbobi. Muhalli mai kyau yana taimaka mana mu zauna lafiya. Idan muhalli ya yi datti, ƙwari da cuta na iya yawaita. [PAUSE 1] Me ake kira wurin da muke rayuwa? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me ya kamata ka yi da shara? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-14.mp3",
+    "imageCard": "images/p2-socs-14.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me ake kira wurin da muke rayuwa?",
+        "correctAnswer": "muhalli",
+        "options": [
+          "muhalli",
+          "littafi",
+          "ƙwallo"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi da shara?",
+        "correctAnswer": "zuba a kwandon shara",
+        "options": [
+          "zuba a kwandon shara",
+          "jefa a hanya",
+          "ɓoye a ɗaki"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me ake kira wurin da muke rayuwa?",
+        "answerFormula": "muhalli",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "littafi",
+          "ƙwallo",
+          "takalmi"
+        ]
+      },
+      {
+        "templateHa": "Wane abu yana cikin muhalli?",
+        "answerFormula": "itatuwa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "alli kawai",
+          "hula kawai",
+          "biro kawai"
+        ]
+      },
+      {
+        "templateHa": "Me datti zai iya jawo?",
+        "answerFormula": "cuta",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ƙarin lafiya",
+          "haske",
+          "sabuwar tufa"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi da shara?",
+        "answerFormula": "zuba a kwandon shara",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "jefa a hanya",
+          "ɓoye a ɗaki",
+          "bar a ƙofa"
+        ]
+      },
+      {
+        "templateHa": "Wa ya kamata ya kula da muhalli?",
+        "answerFormula": "kowa",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "malami kaɗai",
+          "yara kaɗai",
+          "ba kowa ba"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p2-socs-15",
+    "gradeband": "p2",
+    "subject": "Social Studies",
+    "subjectHa": "Nazarin Zamantakewa",
+    "moduleNumber": 15,
+    "titleEn": "Keeping the Community Clean",
+    "titleHa": "Tsaftace Al’umma",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tsaftace al’umma yana nufin kula da wuraren da jama’a suke amfani da su, kamar hanya, makaranta, kasuwa, filin wasa, da wurin ruwa. Idan al’umma ta kasance da tsafta, mutane za su fi samun lafiya da jin daɗi. Yaro zai iya taimakawa ta hanyar zuba shara a kwandon shara, ɗaukar nasa takarda bayan cin abu, da tunatar da ƙani cikin ladabi. Manyan mutane na iya tsara ranar tsafta, share hanya, ko gyara magudanar ruwa. Kada ka zubar da shara a rijiya, hanya, ko gaban gida. Kada ka ƙone shara kusa da yara. Ka wanke hannu bayan aikin tsafta. Tsaftace al’umma yana bukatar haɗin kai, ba mutum ɗaya kaɗai ba. Idan kowa ya yi nasa ɓangare, unguwa za ta fi kyau da lafiya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Sannu da zuwa darasin Zamantakewa. Yau za mu koyi Tsaftace Al’umma. [MAIN] Tsaftace al’umma yana nufin kula da wuraren da jama’a suke amfani da su, kamar hanya, makaranta, kasuwa, filin wasa, da wurin ruwa. Idan al’umma ta kasance da tsafta, mutane za su fi samun lafiya da jin daɗi. Yaro zai iya taimakawa ta hanyar zuba shara a kwandon shara, ɗaukar nasa takarda bayan cin abu, da tunatar da ƙani cikin ladabi. Manyan mutane na iya tsara ranar tsafta, share hanya, ko gyara magudanar ruwa. [PAUSE 1] Me tsaftace al’umma yake nufi? [MAIN] Ka haɗa darasin da abin da kake gani a gida, makaranta, kasuwa, ko unguwa. Ka yi tunani a hankali, ka nuna ladabi, sannan ka tambayi babba idan kana bukatar ƙarin bayani. [PAUSE 2] Me ya kamata ka yi bayan aikin tsafta? [OUTRO] Ka ci gaba da lura da rayuwar al’umma. Kyakkyawan hali yana taimaka maka ka zauna lafiya da mutane.",
+    "audioFile": "audio/p2-socs-15.mp3",
+    "imageCard": "images/p2-socs-15.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me tsaftace al’umma yake nufi?",
+        "correctAnswer": "kula da wuraren jama’a",
+        "options": [
+          "kula da wuraren jama’a",
+          "ɓoye shara",
+          "lalata hanya"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi bayan aikin tsafta?",
+        "correctAnswer": "wanke hannu",
+        "options": [
+          "wanke hannu",
+          "ci abinci nan da nan",
+          "taɓa fuska"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me tsaftace al’umma yake nufi?",
+        "answerFormula": "kula da wuraren jama’a",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ɓoye shara",
+          "lalata hanya",
+          "ƙin taimako"
+        ]
+      },
+      {
+        "templateHa": "Ina ya kamata a zuba shara?",
+        "answerFormula": "kwandon shara",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "rijiya",
+          "hanya",
+          "gaban gida"
+        ]
+      },
+      {
+        "templateHa": "Me ya kamata ka yi bayan aikin tsafta?",
+        "answerFormula": "wanke hannu",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "ci abinci nan da nan",
+          "taɓa fuska",
+          "ɓoye hannu"
+        ]
+      },
+      {
+        "templateHa": "Wane hali ake bukata wajen tsaftace al’umma?",
+        "answerFormula": "haɗin kai",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "faɗa",
+          "rashin tsari",
+          "ƙin aiki"
+        ]
+      },
+      {
+        "templateHa": "Me zai faru idan kowa ya yi nasa ɓangare?",
+        "answerFormula": "unguwa za ta fi lafiya",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          },
+          "b": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "unguwa za ta lalace",
+          "shara za ta ƙaru",
+          "mutane za su gudu"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

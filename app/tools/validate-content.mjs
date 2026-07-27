@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Almajirix content validator
 //
-// Usage:   node app/tools/validate-content.mjs
+// Usage:   node app/tools/validate-content.mjs [--content path/to/content.json]
 // Purpose: enforce the v3.0 dual-track schema on app/content.json before commit.
 // Exits 0 on success, 1 on any validation failure.
 //
@@ -10,26 +10,131 @@
 //   2. Every module has a `targetAudience` of "adult", "youth", or "all".
 //   3. Every module has either `chainNext` set to a valid sibling module id
 //      OR `isChainLeaf === true`.
-//   4. When `chainNext` is set, `gapTeaser.ha` and `gapTeaser.ajami` are both
-//      non-empty strings. Without the teaser, the chain surfaces nothing to
-//      the learner.
-//   5. `useTodayPrompt`, when non-null, is an object with non-empty `ha` and
-//      `ajami` strings.
-//   6. `gapTeaserInline`, when present, is optional and should be an object
-//      with non-empty `ha` and `ajami` strings.
+//   4. Latin learner-content fields are always required. Ajami fields are
+//      required when `ajami_validated === true`; otherwise they may be null,
+//      but any non-null Ajami value must still be a non-empty string.
+//   5. Adult vocational modules retain their complete lesson and quiz schema.
+//   6. When `chainNext` is set, `gapTeaser` is required; `useTodayPrompt` and
+//      `gapTeaserInline`, when present, must retain valid bilingual shapes.
 
 import { readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const contentPath = resolve(here, "..", "content.json");
+const contentFlagIndex = process.argv.indexOf("--content");
+const contentPath = contentFlagIndex >= 0 && process.argv[contentFlagIndex + 1]
+  ? resolve(process.argv[contentFlagIndex + 1])
+  : resolve(here, "..", "content.json");
 
 const ALLOWED_TRACKS = new Set(["vocational", "formal"]);
 const ALLOWED_AUDIENCES = new Set(["adult", "youth", "all"]);
 
 function isNonEmptyString(v) {
   return typeof v === "string" && v.trim().length > 0;
+}
+
+function validateAjamiValue(errors, where, value, ajamiValidated) {
+  if (ajamiValidated) {
+    if (!isNonEmptyString(value)) errors.push(`${where}: must be a non-empty string when ajami_validated is true.`);
+    return;
+  }
+  if (value !== null && !isNonEmptyString(value)) {
+    errors.push(`${where}: must be null or a non-empty string when ajami_validated is false.`);
+  }
+}
+
+function validateBilingualObject(errors, where, value, ajamiValidated, required) {
+  if (value == null) {
+    if (required) errors.push(`${where}: required object with ha + ajami fields is missing.`);
+    return;
+  }
+  if (typeof value !== "object" || Array.isArray(value)) {
+    errors.push(`${where}: must be an object with ha + ajami fields.`);
+    return;
+  }
+  if (!isNonEmptyString(value.ha)) errors.push(`${where}.ha: must be a non-empty string.`);
+  if (!Object.hasOwn(value, "ajami")) {
+    errors.push(`${where}.ajami: required field is missing.`);
+    return;
+  }
+  validateAjamiValue(errors, `${where}.ajami`, value.ajami, ajamiValidated);
+}
+
+function validateRootBilingualPair(errors, where, latin, ajami, ajamiValidated, hasAjamiField) {
+  if (!isNonEmptyString(latin)) errors.push(`${where}: must be a non-empty string.`);
+  if (!hasAjamiField) {
+    if (ajamiValidated) errors.push(`${where.replace(/Ha$/, "Ajami")}: required field is missing when ajami_validated is true.`);
+    return;
+  }
+  validateAjamiValue(errors, `${where.replace(/Ha$/, "Ajami")}`, ajami, ajamiValidated);
+}
+
+function validateQuizArray(errors, where, quiz) {
+  if (!Array.isArray(quiz) || quiz.length !== 5) {
+    errors.push(`${where}: must contain exactly five quiz items.`);
+    return;
+  }
+  for (const [index, question] of quiz.entries()) {
+    const questionWhere = `${where}[${index}]`;
+    if (!question || typeof question !== "object" || Array.isArray(question)) {
+      errors.push(`${questionWhere}: must be an object.`);
+      continue;
+    }
+    if (!isNonEmptyString(question.templateHa)) errors.push(`${questionWhere}.templateHa: must be a non-empty string.`);
+    if (!isNonEmptyString(question.answerFormula)) errors.push(`${questionWhere}.answerFormula: must be a non-empty string.`);
+    if (!Array.isArray(question.distractorFormulas) || question.distractorFormulas.length !== 3 || !question.distractorFormulas.every(isNonEmptyString)) {
+      errors.push(`${questionWhere}.distractorFormulas: must contain exactly three non-empty strings.`);
+    }
+    if (Array.isArray(question.distractorFormulas) && question.distractorFormulas.includes(question.answerFormula)) {
+      errors.push(`${questionWhere}: answerFormula must not appear among distractorFormulas.`);
+    }
+    const ranges = question.variableRanges;
+    if (!ranges || typeof ranges !== "object" || !ranges.a || !ranges.b || !Number.isFinite(ranges.a.min) || !Number.isFinite(ranges.a.max) || !Number.isFinite(ranges.b.min) || !Number.isFinite(ranges.b.max)) {
+      errors.push(`${questionWhere}.variableRanges: must contain numeric a and b min/max ranges.`);
+    }
+  }
+}
+
+function validateAdultVocationalModule(errors, m, where) {
+  const requiredFields = [
+    "id", "gradeband", "subject", "subjectHa", "moduleNumber", "titleEn", "titleHa", "titleAjami", "title",
+    "ajami_validated", "summary", "textExplanationHa", "textExplanationAjami", "audioScript", "audioFile",
+    "imageCard", "lessons", "microPauses", "passingScore", "quiz", "quizQuestions", "track", "targetAudience",
+    "gapTeaser", "chainNext", "isChainLeaf", "useTodayPrompt",
+  ];
+  for (const field of requiredFields) {
+    if (!Object.hasOwn(m, field)) errors.push(`${where}.${field}: required adult vocational field is missing.`);
+  }
+  if (m.gradeband !== "adult") errors.push(`${where}.gradeband: adult vocational modules must use "adult".`);
+  if (!isNonEmptyString(m.subject) || !isNonEmptyString(m.subjectHa) || !isNonEmptyString(m.titleEn)) {
+    errors.push(`${where}: subject, subjectHa, and titleEn must be non-empty strings.`);
+  }
+  if (!Number.isInteger(m.moduleNumber) || m.moduleNumber < 1) errors.push(`${where}.moduleNumber: must be a positive integer.`);
+  if (!Array.isArray(m.lessons) || m.lessons.length !== 5) {
+    errors.push(`${where}.lessons: must contain exactly five lessons.`);
+  } else {
+    for (const [index, lesson] of m.lessons.entries()) {
+      const lessonWhere = `${where}.lessons[${index}]`;
+      if (!lesson || typeof lesson !== "object" || Array.isArray(lesson) || !isNonEmptyString(lesson.type)) {
+        errors.push(`${lessonWhere}: must be a typed lesson object.`);
+        continue;
+      }
+      for (const [key, value] of Object.entries(lesson)) {
+        if (key === "type") continue;
+        if (key === "audioFile" || key === "audioScript") {
+          if (!isNonEmptyString(value)) errors.push(`${lessonWhere}.${key}: must be a non-empty string.`);
+          continue;
+        }
+        validateBilingualObject(errors, `${lessonWhere}.${key}`, value, m.ajami_validated, true);
+      }
+    }
+  }
+  if (!Array.isArray(m.microPauses)) errors.push(`${where}.microPauses: must be an array.`);
+  if (!Number.isFinite(m.passingScore)) errors.push(`${where}.passingScore: must be numeric.`);
+  validateQuizArray(errors, `${where}.quiz`, m.quiz);
+  validateQuizArray(errors, `${where}.quizQuestions`, m.quizQuestions);
+  if (JSON.stringify(m.quiz) !== JSON.stringify(m.quizQuestions)) errors.push(`${where}: quiz and quizQuestions must be identical.`);
 }
 
 function main() {
@@ -73,6 +178,20 @@ function main() {
       errors.push(`${where}: targetAudience must be one of ${[...ALLOWED_AUDIENCES].join(", ")} (got ${JSON.stringify(m.targetAudience)})`);
     }
 
+    if (typeof m.ajami_validated !== "boolean") {
+      errors.push(`${where}.ajami_validated: must be a boolean.`);
+    }
+    const ajamiValidated = m.ajami_validated === true;
+
+    validateRootBilingualPair(errors, `${where}.titleHa`, m.titleHa, m.titleAjami, ajamiValidated, Object.hasOwn(m, "titleAjami"));
+    if (m.title != null) validateBilingualObject(errors, `${where}.title`, m.title, ajamiValidated, true);
+    if (m.summary != null) validateBilingualObject(errors, `${where}.summary`, m.summary, ajamiValidated, true);
+    validateRootBilingualPair(errors, `${where}.textExplanationHa`, m.textExplanationHa, m.textExplanationAjami, ajamiValidated, Object.hasOwn(m, "textExplanationAjami"));
+
+    if (m.track === "vocational" && m.targetAudience === "adult") {
+      validateAdultVocationalModule(errors, m, where);
+    }
+
     const hasChainNext = m.chainNext != null && m.chainNext !== "";
     const isLeaf = m.isChainLeaf === true;
 
@@ -93,42 +212,17 @@ function main() {
     }
 
     if (hasChainNext) {
-      if (!m.gapTeaser || typeof m.gapTeaser !== "object") {
-        errors.push(`${where}: has chainNext but no gapTeaser object. Learner would see no bridge.`);
-      } else {
-        if (!isNonEmptyString(m.gapTeaser.ha)) {
-          errors.push(`${where}: gapTeaser.ha must be a non-empty string when chainNext is set.`);
-        }
-        if (!isNonEmptyString(m.gapTeaser.ajami)) {
-          errors.push(`${where}: gapTeaser.ajami must be a non-empty string when chainNext is set.`);
-        }
-      }
+      validateBilingualObject(errors, `${where}.gapTeaser`, m.gapTeaser, ajamiValidated, true);
+    } else if (m.gapTeaser != null) {
+      validateBilingualObject(errors, `${where}.gapTeaser`, m.gapTeaser, ajamiValidated, false);
     }
 
     if (m.useTodayPrompt != null) {
-      if (typeof m.useTodayPrompt !== "object") {
-        errors.push(`${where}: useTodayPrompt must be null or an object with ha + ajami strings.`);
-      } else {
-        if (!isNonEmptyString(m.useTodayPrompt.ha)) {
-          errors.push(`${where}: useTodayPrompt.ha must be a non-empty string when useTodayPrompt is set.`);
-        }
-        if (!isNonEmptyString(m.useTodayPrompt.ajami)) {
-          errors.push(`${where}: useTodayPrompt.ajami must be a non-empty string when useTodayPrompt is set.`);
-        }
-      }
+      validateBilingualObject(errors, `${where}.useTodayPrompt`, m.useTodayPrompt, ajamiValidated, false);
     }
 
     if (m.gapTeaserInline != null) {
-      if (typeof m.gapTeaserInline !== "object") {
-        errors.push(`${where}: gapTeaserInline must be null/undefined or an object with ha + ajami strings.`);
-      } else {
-        if (!isNonEmptyString(m.gapTeaserInline.ha)) {
-          errors.push(`${where}: gapTeaserInline.ha must be a non-empty string when gapTeaserInline is set.`);
-        }
-        if (!isNonEmptyString(m.gapTeaserInline.ajami)) {
-          errors.push(`${where}: gapTeaserInline.ajami must be a non-empty string when gapTeaserInline is set.`);
-        }
-      }
+      validateBilingualObject(errors, `${where}.gapTeaserInline`, m.gapTeaserInline, ajamiValidated, false);
     }
   }
 

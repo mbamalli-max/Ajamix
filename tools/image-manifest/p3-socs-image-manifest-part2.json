@@ -1,0 +1,92 @@
+[
+  {
+    "id": "p3-socs-07",
+    "imagePath": "images/p3-socs-07.png",
+    "titleEn": "Communication — Modern Methods",
+    "titleHa": "Sadarwa ta Hanyoyin Zamani",
+    "type": "comparison",
+    "depictEn": "Four clear panels in a Northern Nigerian home-and-school setting: a family listening to radio news, pupils watching an educational television programme with a teacher, an adult making a telephone call, and a child using a mobile phone beside a trusted adult; a small signal icon shows that access varies by place.",
+    "labelsHa": ["Rediyo", "Talabijin", "Waya", "Wayar hannu", "Bayanin sirri"],
+    "safetyNote": "Show supervised, purposeful device use; no brand logos, social-media interfaces, phone numbers, personal data, harmful messages, political broadcasts, or implication that every household has electricity, signal, or a device."
+  },
+  {
+    "id": "p3-socs-08",
+    "imagePath": "images/p3-socs-08.png",
+    "titleEn": "Our Natural Environment",
+    "titleHa": "Muhallin Halitta Namu",
+    "type": "diagram",
+    "depictEn": "A labeled Northern Nigerian natural landscape with broad land, grasses, scattered trees, low rocks, a modest river or pond, open air, birds, livestock, and wild animals at a safe distance; a small seasonal inset contrasts greener rainy-season vegetation with dry-season ground.",
+    "labelsHa": ["Ƙasa", "Ruwa", "Iska", "Itatuwa", "Dabbobi"],
+    "safetyNote": "Use a realistic but non-alarming dryland landscape; do not depict drought victims, dead animals, disaster, ethnic costume markers, political boundaries, unsafe water collection, or a claim that all Northern Nigerian environments look identical."
+  },
+  {
+    "id": "p3-socs-09",
+    "imagePath": "images/p3-socs-09.png",
+    "titleEn": "Caring for Our Environment",
+    "titleHa": "Kula da Muhallinmu",
+    "type": "comparison",
+    "depictEn": "A before-and-after community scene: one side shows litter near a blocked drain, smoke from waste burning far from people, and a cut tree; the improved side shows adults safely clearing the drain, covered waste collection, newly planted trees, and children placing light litter in a bin under adult supervision.",
+    "labelsHa": ["Kwandon shara", "Magudanar ruwa", "Dasa wasu itatuwa", "Kula da muhalli"],
+    "safetyNote": "Children must not enter drains, burn waste, handle sharp refuse, use cutting tools, or perform hazardous cleanup; keep smoke non-graphic and do not blame any social group for environmental damage."
+  },
+  {
+    "id": "p3-socs-10",
+    "imagePath": "images/p3-socs-10.png",
+    "titleEn": "Food and Farming in Our Community",
+    "titleHa": "Abinci da Noma a Al’ummarmu",
+    "type": "diagram",
+    "depictEn": "A simple farm-to-market sequence in Northern Nigeria: adult farmers tend millet, guinea corn, beans, and groundnuts; cattle, goats, and poultry have water, feed, and shade; harvested grain is safely dried and stored, then transported to a local market.",
+    "labelsHa": ["Gero", "Dawa", "Wake", "Gyada", "Shanu", "Awaki", "Kaji"],
+    "safetyNote": "Show women and men in varied farming and trading roles; children may observe or do only light supervised tasks, with no machinery, pesticides, blades, heavy loads, animal distress, overcrowding, or unsafe handling."
+  },
+  {
+    "id": "p3-socs-11",
+    "imagePath": "images/p3-socs-11.png",
+    "titleEn": "Market and Trade",
+    "titleHa": "Kasuwa da Ciniki",
+    "type": "comparison",
+    "depictEn": "A calm local market comparison: one panel shows a seller weighing grain accurately while an adult buyer asks the price and pays money; another shows two adults mutually agreeing to exchange grain for another useful good, with clear arrows indicating goods moving both ways.",
+    "labelsHa": ["Mai sayarwa", "Mai saya", "Farashi", "Kuɗi", "Musayar kaya da kaya"],
+    "safetyNote": "No real currency detail, brand, price claim, deceptive scale, aggressive bargaining, crowd danger, child handling money alone, gendered market roles, or portrayal of barter as belonging to a backward group."
+  },
+  {
+    "id": "p3-socs-12",
+    "imagePath": "images/p3-socs-12.png",
+    "titleEn": "Nigerian Citizenship",
+    "titleHa": "Zama Ɗan Ƙasar Nijeriya",
+    "type": "illustration",
+    "depictEn": "A diverse group of Nigerian primary pupils in an ordinary school courtyard: one learns with books, one speaks while others listen, two protect shared school property, and children with varied regional clothing details cooperate beneath a small neutral outline of Nigeria.",
+    "labelsHa": ["Ɗan ƙasa", "Haƙƙoƙi", "Alhaki", "Kula da kayan jama’a"],
+    "safetyNote": "Balance gender, region, language, faith-neutral presentation, and disability inclusion; no party colours, politician, campaign sign, government seal, military imagery, citizenship document, ethnic ranking, or suggestion that one appearance defines a Nigerian citizen."
+  },
+  {
+    "id": "p3-socs-13",
+    "imagePath": "images/p3-socs-13.png",
+    "titleEn": "Our Cultural Heritage — Food, Dress, and Language",
+    "titleHa": "Abinci, Tufafi, da Harshe a Al’adunmu",
+    "type": "illustration",
+    "depictEn": "A respectful Nigerian cultural-learning circle with Northern examples foregrounded: elders and younger people discuss tuwo and soup, a flowing robe and wrapper, and several written language-name cards; additional foods, dress styles, and language cards indicate diversity from other Nigerian regions without turning the scene into a costume display.",
+    "labelsHa": ["Abinci", "Tufafi", "Harshe", "Al’ada", "Tuwo da miya"],
+    "safetyNote": "No sacred objects, masquerade imagery, caricature, exoticising pose, ethnic hierarchy, or claim that every member of a community eats, dresses, or speaks identically; present all examples with equal visual dignity."
+  },
+  {
+    "id": "p3-socs-14",
+    "imagePath": "images/p3-socs-14.png",
+    "titleEn": "Festivals and Special Occasions in Nigeria",
+    "titleHa": "Bukukuwa da Ranaku na Musamman a Nijeriya",
+    "type": "comparison",
+    "depictEn": "Four equal, clearly separated, neutral panels labeled Eid al-Fitr, Eid al-Adha, Christmas, and New Yam: families greeting after a communal gathering, a meal shared with others, a modest Christmas family gathering, and a community presenting newly harvested yams; every panel receives equal size and visual warmth.",
+    "labelsHa": ["Eid al-Fitr", "Eid al-Adha", "Christmas", "New Yam", "Ladabi"],
+    "safetyNote": "Keep the panels factual and equal; no worship reenactment, sacred figure, sacrificial act, blood, denominational symbol hierarchy, ethnic caricature, ranking, 'our versus their' framing, politician, party colour, or implication that New Yam is a nationwide federal public holiday."
+  },
+  {
+    "id": "p3-socs-15",
+    "imagePath": "images/p3-socs-15.png",
+    "titleEn": "Revision and Assessment — P3 Social and Citizenship Studies",
+    "titleHa": "Bita da Tantancewa — Nazarin Zamantakewa na Aji Uku",
+    "type": "diagram",
+    "depictEn": "A child-friendly revision wheel with eight balanced spokes leading from a central learner to local government and public services, transport safety, traditional and modern communication, natural environment and care, farming and food, market trade, citizenship, and cultural festivals.",
+    "labelsHa": ["Ƙaramar hukuma", "Sufuri", "Sadarwa", "Muhalli", "Noma", "Ciniki", "Ɗan ƙasa", "Al’ada"],
+    "safetyNote": "Keep every topic equally weighted and use neutral generic symbols; no political insignia, religious ranking, dangerous transport scene, child labor, environmental hazard handling, exam score, or depiction implying one culture represents all Nigeria."
+  }
+]

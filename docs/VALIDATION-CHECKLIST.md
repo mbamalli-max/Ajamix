@@ -146,7 +146,7 @@ Expected: …
 **Goal:** The loops that drive Day-2 / Day-7 / Share KPIs read cleanly.
 
 - [ ] Finish a module → **Use-Today sheet** appears. Headline, Yes/No buttons, explanatory copy in Hausa.
-- [ ] Simulate 12h later: DevTools → IndexedDB → `ajamix-db` → `progress` → edit `lastAccessedAt` back 13 hours, reload. **Tomorrow-Check sheet** appears with correct Hausa copy.
+- [ ] Simulate 12h later: after completing the Use-Today sheet, DevTools → IndexedDB → `ajamix-db` → `progress` → edit the relevant record's `useTodayCommitment.committedAt` back 13 hours, reload. **Tomorrow-Check sheet** appears with correct Hausa copy.
 - [ ] Complete 5 modules (or set `referralBadgeState = "unlocked"` in IndexedDB) → **Kawowa Ɗaya** referral modal copy is correct Hausa; Share / Copy link / Export buttons labelled in Hausa.
 - [ ] Export `.ajamix` package from settings → success toast copy in Hausa.
 
@@ -164,7 +164,7 @@ What's wrong: …
 
 **Goal:** The "long tail" surfaces — glossary entries, settings copy, error dialogs — are all correct.
 
-- [ ] Glossary: scroll all 70 entries. Each `termHa` + `definitionHa` reads as valid Hausa. Cross-check against the **Glossary** table in `docs/HAUSA-TERMS.md`.
+- [ ] Glossary: scroll all 62 entries. Each `termHa` + `definitionHa` reads as valid Hausa. Cross-check against the **Glossary** table in `docs/HAUSA-TERMS.md`.
 - [ ] Settings screen: every label, pill, and button label in Hausa. Confirm **no** Ajami/Latin script selector is visible.
 - [ ] Error states: force each one and verify copy:
   - Offline content-fetch fail — "An samu matsala" banner.

@@ -1,0 +1,215 @@
+[
+  {
+    "id": "p1-socs-01",
+    "imagePath": "images/p1-socs-01.png",
+    "titleEn": "Meaning of Social Studies",
+    "titleHa": "Ma'anar Social Studies",
+    "type": "illustration",
+    "depictEn": "A child standing in a simple Northern Nigerian village scene pointing calmly at different parts of their environment — people, a house, a school, a tree, a river — with a small three-step inset showing a hungry child receiving food, a cold child receiving a wrapper, and an unwell child being taken to a health worker by an adult.",
+    "labelsHa": [
+      "Muhalli",
+      "Al'umma"
+    ],
+    "safetyNote": "No depiction of a child alone at the health worker without an adult, no illness symptoms shown, and no real hazard (fire, deep water, busy road) in the environment scene."
+  },
+  {
+    "id": "p1-socs-02",
+    "imagePath": "images/p1-socs-02.png",
+    "titleEn": "How Man Solved His Problems",
+    "titleHa": "Yadda Mutum Ya Magance Matasalolinsa",
+    "type": "diagram",
+    "depictEn": "Four small paired panels showing a need and its calm solution: an empty water jug beside a child and adult fetching clean water together; a hungry child beside a bowl of food being shared; a cold child beside someone being given a wrapper/cloth; a child pointing out that they feel unwell beside an adult walking them toward a health worker.",
+    "labelsHa": [
+      "Ruwa",
+      "Abinci",
+      "Sutura",
+      "Asibiti"
+    ],
+    "safetyNote": "Every solution panel shows a child accompanied by a trusted adult, not solving the problem alone; no depiction of illness symptoms, injury, or a child fetching water from an unsafe or deep water source."
+  },
+  {
+    "id": "p1-socs-03",
+    "imagePath": "images/p1-socs-03.png",
+    "titleEn": "The Family – Members and Roles",
+    "titleHa": "Iyali – Membobi da Ayyukansu",
+    "type": "illustration",
+    "depictEn": "A warm Northern Nigerian family scene at home: a father, mother, a few children, and a grandparent, each shown doing a distinct calm household activity together — the father speaking gently with the children, the mother preparing a simple meal, the children tidying a small shared space.",
+    "labelsHa": [
+      "Uba",
+      "Uwa",
+      "Yara"
+    ],
+    "safetyNote": "Show a harmonious, cooperative scene only — no depiction of conflict, punishment, or one family member appearing dominant over another; children shown doing only light, age-appropriate tasks."
+  },
+  {
+    "id": "p1-socs-04",
+    "imagePath": "images/p1-socs-04.png",
+    "titleEn": "Qualities of a Good Family",
+    "titleHa": "Halayen Iyali Nagari",
+    "type": "illustration",
+    "depictEn": "A calm household scene showing children sharing chores together — one tidying a room, one gathering items — while a parent looks on warmly, with the whole family seated together afterward sharing a simple meal, conveying love, cooperation, and mutual care.",
+    "labelsHa": [
+      "Soyayya",
+      "Taimakon juna"
+    ],
+    "safetyNote": "Show only the positive, cooperative scene — do not depict conflict, jealousy, or neglect, which the module explicitly frames as things to avoid rather than illustrate."
+  },
+  {
+    "id": "p1-socs-05",
+    "imagePath": "images/p1-socs-05.png",
+    "titleEn": "Good Moral Values in the Family",
+    "titleHa": "Kyawawan Halaye a Iyali",
+    "type": "illustration",
+    "depictEn": "A child calmly telling a parent about a small mistake, with the parent listening gently; beside this, a second small scene shows an older child helping a younger sibling with a task, illustrating honesty, obedience, and mutual help within the family.",
+    "labelsHa": [
+      "Gaskiya",
+      "Biyayya",
+      "Taimako"
+    ],
+    "safetyNote": "Depict the parent as warm and listening, not scolding or punishing; no depiction of lying, disobedience, or conflict, which the module frames only as things to avoid."
+  },
+  {
+    "id": "p1-socs-06",
+    "imagePath": "images/p1-socs-06.png",
+    "titleEn": "My School – Environment and Facilities",
+    "titleHa": "Makaranta ta – Yanayi da Kayayyaki",
+    "type": "illustration",
+    "depictEn": "A clean, orderly Northern Nigerian primary-school compound showing a classroom with a chalkboard and desks, a small library corner with books, an open playground, and a school office, with a couple of pupils calmly moving between the areas.",
+    "labelsHa": [
+      "Aji",
+      "Ɗakin karatu",
+      "Filin wasa"
+    ],
+    "safetyNote": "Show only generic, non-graphic school facilities; no depiction of toilet interiors, no unsupervised pupils on the playground, and no litter or damaged property."
+  },
+  {
+    "id": "p1-socs-07",
+    "imagePath": "images/p1-socs-07.png",
+    "titleEn": "People in My School – Roles",
+    "titleHa": "Mutane a Makaranta ta – Ayyukansu",
+    "type": "illustration",
+    "depictEn": "Four school staff shown doing their distinct roles in one school-compound scene: a teacher instructing pupils at a chalkboard, a headmaster addressing a small assembly, a cleaner sweeping a walkway, and a gateman standing calmly at the school entrance.",
+    "labelsHa": [
+      "Malami",
+      "Shugaban makaranta",
+      "Mai tsabta",
+      "Mai tsaro"
+    ],
+    "safetyNote": "Show every school worker with equal dignity and calm, ordinary posture; no depiction of a weapon, confrontation, or any worker treated as less important than another."
+  },
+  {
+    "id": "p1-socs-08",
+    "imagePath": "images/p1-socs-08.png",
+    "titleEn": "My Community – Meaning and People",
+    "titleHa": "Al'umma ta – Ma'ana da Mutane",
+    "type": "illustration",
+    "depictEn": "A lively but orderly Northern Nigerian community scene where a farmer brings produce, a trader sells goods at a small stall, a teacher walks toward a school, and a doctor stands near a clinic — each person doing a distinct, recognisable occupation within the same shared community setting.",
+    "labelsHa": [
+      "Manomi",
+      "Ɗan kasuwa",
+      "Malami",
+      "Likita"
+    ],
+    "safetyNote": "Show men and women in varied occupational roles without gender stereotyping; no political, religious, or ethnic symbols, and no crowding or unsafe market conditions."
+  },
+  {
+    "id": "p1-socs-09",
+    "imagePath": "images/p1-socs-09.png",
+    "titleEn": "Places in My Community",
+    "titleHa": "Wurare a Al'umma ta",
+    "type": "diagram",
+    "depictEn": "A simple, non-geographic community layout showing a police post, a market, a hospital, a neutral place of worship, and a school as distinct, clearly separated buildings within one community scene, with a few residents calmly moving between them.",
+    "labelsHa": [
+      "Ofishin 'yan sanda",
+      "Kasuwa",
+      "Asibiti",
+      "Makaranta"
+    ],
+    "safetyNote": "Use no real signage, seal, religious iconography specific to one faith over another, or political symbol; depict the place of worship as a plain, neutral structure representing worship in general."
+  },
+  {
+    "id": "p1-socs-10",
+    "imagePath": "images/p1-socs-10.png",
+    "titleEn": "Community Helpers",
+    "titleHa": "Masu Taimako a Al'umma",
+    "type": "illustration",
+    "depictEn": "A group of community helpers shown each doing their distinct job with calm dignity in one scene: a doctor attending to a seated patient, a police officer assisting a resident, a farmer with a basket of produce, and a tailor sewing at a simple table.",
+    "labelsHa": [
+      "Likita",
+      "Ɗan sanda",
+      "Manomi",
+      "Mai dinki"
+    ],
+    "safetyNote": "No depiction of illness symptoms, injury, weapon, or arrest; every helper is shown performing an ordinary, calm task with equal visual dignity."
+  },
+  {
+    "id": "p1-socs-11",
+    "imagePath": "images/p1-socs-11.png",
+    "titleEn": "Meaning of Culture",
+    "titleHa": "Ma'anar Al'ada",
+    "type": "illustration",
+    "depictEn": "A respectful family scene showing everyday culture: an elder and a child greeting each other warmly, a simple shared meal of tuwo and soup on a mat, and modest everyday Northern Nigerian clothing — presented as ordinary daily life, not costume display.",
+    "labelsHa": [
+      "Al'ada",
+      "Tufafi",
+      "Abinci"
+    ],
+    "safetyNote": "No caricature, exoticising pose, sacred object, or masquerade imagery; depict culture as ordinary daily life shown with dignity, not performance."
+  },
+  {
+    "id": "p1-socs-12",
+    "imagePath": "images/p1-socs-12.png",
+    "titleEn": "Types of Culture",
+    "titleHa": "Nau'ukan Al'ada",
+    "type": "diagram",
+    "depictEn": "Two clearly separated panels: one labeled side shows visible material culture — a house, everyday tools, clothing, and a food bowl; the other side represents non-material culture symbolically through two people listening respectfully to an elder, with no religious symbol or text, showing values and manners rather than physical objects.",
+    "labelsHa": [
+      "Al'ada ta zahiri",
+      "Al'ada ta ruhaniya"
+    ],
+    "safetyNote": "Represent non-material culture only through a neutral listening/respect scene — no religious symbol, sacred object, or belief-specific iconography of any single faith."
+  },
+  {
+    "id": "p1-socs-13",
+    "imagePath": "images/p1-socs-13.png",
+    "titleEn": "Festivals and Celebrations",
+    "titleHa": "Bukukuwa da Biki",
+    "type": "diagram",
+    "depictEn": "Three equal, clearly separated, neutral panels labeled Sallah, Kirsimati, and Durbar: families greeting each other after a communal gathering, a modest family meal shared together, and a community procession scene shown from a respectful distance — each panel receiving equal size and visual warmth.",
+    "labelsHa": [
+      "Sallah",
+      "Kirsimati",
+      "Durbar"
+    ],
+    "safetyNote": "Keep the panels factual and equal in visual weight; no worship reenactment, sacred figure, denominational symbol hierarchy, ranking, 'our versus their' framing, or open flame/fireworks."
+  },
+  {
+    "id": "p1-socs-14",
+    "imagePath": "images/p1-socs-14.png",
+    "titleEn": "Respect for People and Places",
+    "titleHa": "Girmama Mutane da Wurare",
+    "type": "illustration",
+    "depictEn": "A child greeting an elder with a respectful gesture in a school courtyard, while nearby another child calmly places litter into a bin — showing respect for people and for shared public places in one scene.",
+    "labelsHa": [
+      "Girmamawa",
+      "Kula da wurin jama'a"
+    ],
+    "safetyNote": "Show only calm, respectful behaviour — no depiction of disrespect, damage to property, or a child being scolded, which the module frames only as things to avoid, not illustrate."
+  },
+  {
+    "id": "p1-socs-15",
+    "imagePath": "images/p1-socs-15.png",
+    "titleEn": "Revision and Assessment",
+    "titleHa": "Maimaitawa da jarrabawa",
+    "type": "diagram",
+    "depictEn": "A child-friendly revision wheel with five balanced spokes leading from a central learner to family, school, community, culture, and respect for people and places.",
+    "labelsHa": [
+      "Iyali",
+      "Makaranta",
+      "Al'umma",
+      "Al'ada",
+      "Girmamawa"
+    ],
+    "safetyNote": "Keep every topic equally weighted with neutral generic imagery; no religious, political, or ethnic symbol, and no exam score or ranking of pupils."
+  }
+]

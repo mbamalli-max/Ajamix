@@ -1,0 +1,337 @@
+[
+  {
+    "id": "p5-bsci-01",
+    "labels": [
+      {
+        "text": "Muhalli Mai Kyau",
+        "targetPoint": {
+          "x": 0.22,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Muhalli da Ya Lalace",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.55
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-02",
+    "labels": [
+      {
+        "text": "Abin da ke Ruɓewa",
+        "targetPoint": {
+          "x": 0.13,
+          "y": 0.68
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Takarda da Roba",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.65
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Ƙarfe",
+        "targetPoint": {
+          "x": 0.79,
+          "y": 0.68
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-03",
+    "labels": [
+      {
+        "text": "Gwiwar Hannu",
+        "targetPoint": {
+          "x": 0.59,
+          "y": 0.45
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Gwiwa",
+        "targetPoint": {
+          "x": 0.46,
+          "y": 0.71
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kafada",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.28
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-04",
+    "labels": [
+      {
+        "text": "Ganyen Fure",
+        "targetPoint": {
+          "x": 0.21,
+          "y": 0.37
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Sashin Tsakiya",
+        "targetPoint": {
+          "x": 0.31,
+          "y": 0.47
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙurar Fure",
+        "targetPoint": {
+          "x": 0.44,
+          "y": 0.4
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-07",
+    "labels": [
+      {
+        "text": "Fensir",
+        "targetPoint": {
+          "x": 0.18,
+          "y": 0.52
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Magogi",
+        "targetPoint": {
+          "x": 0.3,
+          "y": 0.51
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ma'auni",
+        "targetPoint": {
+          "x": 0.4,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kusurwar Awo",
+        "targetPoint": {
+          "x": 0.57,
+          "y": 0.59
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-08",
+    "labels": [
+      {
+        "text": "Taya",
+        "targetPoint": {
+          "x": 0.51,
+          "y": 0.74
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Fitila",
+        "targetPoint": {
+          "x": 0.31,
+          "y": 0.6
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Madubi",
+        "targetPoint": {
+          "x": 0.48,
+          "y": 0.38
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Gilashin Gaba",
+        "targetPoint": {
+          "x": 0.31,
+          "y": 0.3
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Bel ɗin Zama",
+        "targetPoint": {
+          "x": 0.71,
+          "y": 0.33
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-09",
+    "labels": [
+      {
+        "text": "Batiri",
+        "targetPoint": {
+          "x": 0.08,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Haske",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.68
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.25
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Zafi",
+        "targetPoint": {
+          "x": 0.44,
+          "y": 0.44
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Abinci",
+        "targetPoint": {
+          "x": 0.69,
+          "y": 0.68
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Motsi",
+        "targetPoint": {
+          "x": 0.9,
+          "y": 0.55
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-10",
+    "labels": [
+      {
+        "text": "Na'urar Auna Zafi",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.45
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-11",
+    "labels": [
+      {
+        "text": "Batiri",
+        "targetPoint": {
+          "x": 0.29,
+          "y": 0.53
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Waya",
+        "targetPoint": {
+          "x": 0.35,
+          "y": 0.78
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Fitila",
+        "targetPoint": {
+          "x": 0.43,
+          "y": 0.62
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-12",
+    "labels": [
+      {
+        "text": "Maganadisu",
+        "targetPoint": {
+          "x": 0.44,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙusa ta Baƙin Ƙarfe",
+        "targetPoint": {
+          "x": 0.51,
+          "y": 0.51
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-bsci-15",
+    "labels": [
+      {
+        "text": "Ka Ce A'a",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ka Matsa",
+        "targetPoint": {
+          "x": 0.47,
+          "y": 0.5
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ka Sanar da Babba",
+        "targetPoint": {
+          "x": 0.75,
+          "y": 0.5
+        },
+        "confidence": "high"
+      }
+    ]
+  }
+]

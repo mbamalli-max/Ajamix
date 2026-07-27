@@ -1,0 +1,1409 @@
+[
+  {
+    "id": "p1-bsci-01",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p1-bsci-02",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p1-bsci-04",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p1-bsci-05",
+    "placed": 5,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p1-bsci-07",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p1-bsci-08",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p1-bsci-11",
+    "placed": 4,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p1-bsci-12",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p1-bsci-13",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p1-bsci-14",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p1-maths-06",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p1-maths-16",
+    "placed": 0,
+    "pinPlaced": 0,
+    "legendOnly": 2,
+    "total": 2
+  },
+  {
+    "id": "p1-maths-19",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p1-maths-20",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p1-maths-21",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p1-maths-23",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p1-socs-01",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p1-socs-02",
+    "placed": 4,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p1-socs-03",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p1-socs-04",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p1-socs-05",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p1-socs-06",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p1-socs-07",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 2,
+    "total": 4
+  },
+  {
+    "id": "p1-socs-08",
+    "placed": 4,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p1-socs-09",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p1-socs-10",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p1-socs-11",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p1-socs-12",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p1-socs-13",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p1-socs-14",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p1-socs-15",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p2-bsci-01",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p2-bsci-02",
+    "placed": 4,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p2-bsci-03",
+    "placed": 5,
+    "pinPlaced": 2,
+    "legendOnly": 2,
+    "total": 7
+  },
+  {
+    "id": "p2-bsci-04",
+    "placed": 4,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p2-bsci-05",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p2-bsci-08",
+    "placed": 5,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p2-bsci-11",
+    "placed": 4,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p2-bsci-12",
+    "placed": 2,
+    "pinPlaced": 2,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p2-bsci-13",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p2-bsci-15",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p2-bsci-16",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p2-bsci-18",
+    "placed": 5,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p2-bsci-19",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p2-maths-03",
+    "placed": 2,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p2-maths-23",
+    "placed": 3,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p2-socs-01",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p2-socs-02",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p2-socs-03",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p2-socs-04",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p2-socs-05",
+    "placed": 4,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p2-socs-06",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p2-socs-07",
+    "placed": 4,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p2-socs-08",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p2-socs-09",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p2-socs-10",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p2-socs-11",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p2-socs-12",
+    "placed": 2,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p2-socs-13",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p2-socs-14",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p2-socs-15",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p3-bsci-01",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p3-bsci-02",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 2,
+    "total": 6
+  },
+  {
+    "id": "p3-bsci-03",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p3-bsci-04",
+    "placed": 0,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 1
+  },
+  {
+    "id": "p3-bsci-05",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p3-bsci-06",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p3-bsci-07",
+    "placed": 4,
+    "pinPlaced": 4,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p3-bsci-08",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p3-bsci-09",
+    "placed": 2,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p3-bsci-11",
+    "placed": 6,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p3-bsci-12",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p3-bsci-14",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p3-bsci-16",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p3-maths-01",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p3-maths-06",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p3-maths-13",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p3-maths-14",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p3-maths-15",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p3-maths-16",
+    "placed": 2,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p3-maths-18",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p3-maths-19",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p3-maths-20",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p3-socs-01",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p3-socs-02",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p3-socs-03",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p3-socs-04",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p3-socs-05",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p3-socs-06",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p3-socs-07",
+    "placed": 0,
+    "pinPlaced": 0,
+    "legendOnly": 5,
+    "total": 5
+  },
+  {
+    "id": "p3-socs-08",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p3-socs-09",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 3,
+    "total": 4
+  },
+  {
+    "id": "p3-socs-10",
+    "placed": 4,
+    "pinPlaced": 2,
+    "legendOnly": 3,
+    "total": 7
+  },
+  {
+    "id": "p3-socs-11",
+    "placed": 5,
+    "pinPlaced": 5,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p3-socs-12",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p3-socs-13",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 4,
+    "total": 5
+  },
+  {
+    "id": "p3-socs-14",
+    "placed": 4,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p3-socs-15",
+    "placed": 5,
+    "pinPlaced": 2,
+    "legendOnly": 3,
+    "total": 8
+  },
+  {
+    "id": "p4-bsci-01",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p4-bsci-02",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p4-bsci-03",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p4-bsci-05",
+    "placed": 4,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p4-bsci-06",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p4-bsci-07",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p4-bsci-08",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-bsci-11",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-bsci-13",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p4-bsci-15",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-bsci-16",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-bsci-17",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p4-bsci-18",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p4-bsci-19",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-bsci-20",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p4-maths-09",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-maths-11",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p4-maths-12",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-maths-13",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-maths-14",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-maths-15",
+    "placed": 0,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 1
+  },
+  {
+    "id": "p4-maths-18",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p4-socs-01",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 3,
+    "total": 6
+  },
+  {
+    "id": "p4-socs-02",
+    "placed": 6,
+    "pinPlaced": 4,
+    "legendOnly": 3,
+    "total": 9
+  },
+  {
+    "id": "p4-socs-03",
+    "placed": 4,
+    "pinPlaced": 3,
+    "legendOnly": 3,
+    "total": 7
+  },
+  {
+    "id": "p4-socs-04",
+    "placed": 6,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p4-socs-05",
+    "placed": 4,
+    "pinPlaced": 4,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p4-socs-06",
+    "placed": 5,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p4-socs-07",
+    "placed": 5,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p4-socs-08",
+    "placed": 5,
+    "pinPlaced": 4,
+    "legendOnly": 2,
+    "total": 7
+  },
+  {
+    "id": "p4-socs-09",
+    "placed": 6,
+    "pinPlaced": 5,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p4-socs-10",
+    "placed": 6,
+    "pinPlaced": 5,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p4-socs-11",
+    "placed": 6,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p4-socs-12",
+    "placed": 6,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p4-socs-13",
+    "placed": 6,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p4-socs-14",
+    "placed": 5,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p4-socs-15",
+    "placed": 8,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 8
+  },
+  {
+    "id": "p5-bsci-01",
+    "placed": 2,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p5-bsci-02",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p5-bsci-03",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p5-bsci-04",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p5-bsci-07",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p5-bsci-08",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 2,
+    "total": 5
+  },
+  {
+    "id": "p5-bsci-09",
+    "placed": 6,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p5-bsci-10",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p5-bsci-11",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p5-bsci-12",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p5-bsci-15",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p5-maths-07",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p5-maths-10",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p5-maths-19",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p5-maths-21",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p5-maths-22",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p5-socs-01",
+    "placed": 4,
+    "pinPlaced": 4,
+    "legendOnly": 2,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-02",
+    "placed": 4,
+    "pinPlaced": 4,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p5-socs-03",
+    "placed": 4,
+    "pinPlaced": 4,
+    "legendOnly": 2,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-04",
+    "placed": 5,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p5-socs-05",
+    "placed": 6,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-06",
+    "placed": 6,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-07",
+    "placed": 5,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p5-socs-08",
+    "placed": 5,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p5-socs-09",
+    "placed": 5,
+    "pinPlaced": 2,
+    "legendOnly": 1,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-10",
+    "placed": 6,
+    "pinPlaced": 4,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-11",
+    "placed": 6,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-12",
+    "placed": 5,
+    "pinPlaced": 3,
+    "legendOnly": 1,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-13",
+    "placed": 4,
+    "pinPlaced": 3,
+    "legendOnly": 2,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-14",
+    "placed": 6,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p5-socs-15",
+    "placed": 8,
+    "pinPlaced": 5,
+    "legendOnly": 1,
+    "total": 9
+  },
+  {
+    "id": "p6-bsci-01",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p6-bsci-02",
+    "placed": 4,
+    "pinPlaced": 2,
+    "legendOnly": 0,
+    "total": 4
+  },
+  {
+    "id": "p6-bsci-03",
+    "placed": 4,
+    "pinPlaced": 0,
+    "legendOnly": 2,
+    "total": 6
+  },
+  {
+    "id": "p6-bsci-04",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p6-bsci-05",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p6-bsci-06",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p6-bsci-07",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p6-bsci-08",
+    "placed": 1,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p6-bsci-09",
+    "placed": 5,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p6-bsci-10",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p6-bsci-11",
+    "placed": 3,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 4
+  },
+  {
+    "id": "p6-bsci-12",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p6-bsci-13",
+    "placed": 0,
+    "pinPlaced": 0,
+    "legendOnly": 2,
+    "total": 2
+  },
+  {
+    "id": "p6-bsci-14",
+    "placed": 3,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 3
+  },
+  {
+    "id": "p6-bsci-15",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p6-maths-13",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p6-maths-15",
+    "placed": 2,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 3
+  },
+  {
+    "id": "p6-maths-17",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 1,
+    "total": 2
+  },
+  {
+    "id": "p6-maths-18",
+    "placed": 2,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 2
+  },
+  {
+    "id": "p6-maths-19",
+    "placed": 1,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 1
+  },
+  {
+    "id": "p6-socs-01",
+    "placed": 5,
+    "pinPlaced": 3,
+    "legendOnly": 1,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-02",
+    "placed": 4,
+    "pinPlaced": 4,
+    "legendOnly": 2,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-03",
+    "placed": 4,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p6-socs-04",
+    "placed": 5,
+    "pinPlaced": 4,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p6-socs-05",
+    "placed": 6,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-06",
+    "placed": 5,
+    "pinPlaced": 2,
+    "legendOnly": 1,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-07",
+    "placed": 4,
+    "pinPlaced": 4,
+    "legendOnly": 1,
+    "total": 5
+  },
+  {
+    "id": "p6-socs-08",
+    "placed": 5,
+    "pinPlaced": 1,
+    "legendOnly": 1,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-09",
+    "placed": 5,
+    "pinPlaced": 0,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p6-socs-10",
+    "placed": 5,
+    "pinPlaced": 3,
+    "legendOnly": 0,
+    "total": 5
+  },
+  {
+    "id": "p6-socs-11",
+    "placed": 6,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-12",
+    "placed": 6,
+    "pinPlaced": 1,
+    "legendOnly": 0,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-13",
+    "placed": 4,
+    "pinPlaced": 2,
+    "legendOnly": 2,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-14",
+    "placed": 5,
+    "pinPlaced": 5,
+    "legendOnly": 1,
+    "total": 6
+  },
+  {
+    "id": "p6-socs-15",
+    "placed": 5,
+    "pinPlaced": 5,
+    "legendOnly": 1,
+    "total": 6
+  }
+]

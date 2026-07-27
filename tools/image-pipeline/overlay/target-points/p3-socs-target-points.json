@@ -1,0 +1,145 @@
+[
+  {
+    "id": "p3-socs-01",
+    "labels": [
+      { "text": "Haɗin kai", "targetPoint": { "x": 0.19, "y": 0.60 }, "confidence": "medium" },
+      { "text": "Kayan jama’a", "targetPoint": { "x": 0.44, "y": 0.73 }, "confidence": "medium" }
+    ]
+  },
+  {
+    "id": "p3-socs-02",
+    "labels": [
+      { "text": "Ofishin Ƙaramar Hukuma", "targetPoint": { "x": 0.50, "y": 0.20 }, "confidence": "high" },
+      { "text": "Kasuwa", "targetPoint": { "x": 0.13, "y": 0.20 }, "confidence": "high" },
+      { "text": "Wurin ruwa", "targetPoint": { "x": 0.87, "y": 0.20 }, "confidence": "high" },
+      { "text": "Makaranta", "targetPoint": { "x": 0.13, "y": 0.70 }, "confidence": "high" },
+      { "text": "Cibiyar lafiya", "targetPoint": { "x": 0.87, "y": 0.72 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-socs-03",
+    "labels": [
+      { "text": "Ruwa mai tsabta", "targetPoint": { "x": 0.19, "y": 0.35 }, "confidence": "high" },
+      { "text": "Hidimar jama’a", "targetPoint": { "x": 0.48, "y": 0.32 }, "confidence": "medium" },
+      { "text": "Magudanar ruwa", "targetPoint": { "x": 0.87, "y": 0.72 }, "confidence": "high" },
+      { "text": "Cibiyar lafiya", "targetPoint": { "x": 0.83, "y": 0.32 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-socs-04",
+    "labels": [
+      { "text": "Hanya", "targetPoint": { "x": 0.22, "y": 0.50 }, "confidence": "high" },
+      { "text": "Jirgin ƙasa", "targetPoint": { "x": 0.75, "y": 0.35 }, "confidence": "high" },
+      { "text": "Layin dogo", "targetPoint": { "x": 0.68, "y": 0.78 }, "confidence": "medium" }
+    ]
+  },
+  {
+    "id": "p3-socs-05",
+    "labels": [
+      { "text": "Filin jirgin sama", "targetPoint": { "x": 0.22, "y": 0.45 }, "confidence": "high" },
+      { "text": "Jirgin ruwa", "targetPoint": { "x": 0.72, "y": 0.65 }, "confidence": "high" },
+      { "text": "Rigar kariya ta ruwa", "targetPoint": { "x": 0.70, "y": 0.60 }, "confidence": "medium" }
+    ]
+  },
+  {
+    "id": "p3-socs-06",
+    "labels": [
+      { "text": "Mai shela", "targetPoint": { "x": 0.28, "y": 0.35 }, "confidence": "high" },
+      { "text": "Ganga ko kalangu", "targetPoint": { "x": 0.53, "y": 0.55 }, "confidence": "high" },
+      { "text": "Saƙo", "targetPoint": { "x": 0.46, "y": 0.27 }, "confidence": "medium" }
+    ]
+  },
+  {
+    "id": "p3-socs-07",
+    "labels": [
+      { "text": "Rediyo", "targetPoint": { "x": 0.19, "y": 0.42 }, "confidence": "high" },
+      { "text": "Talabijin", "targetPoint": { "x": 0.70, "y": 0.30 }, "confidence": "high" },
+      { "text": "Waya", "targetPoint": { "x": 0.19, "y": 0.75 }, "confidence": "high" },
+      { "text": "Wayar hannu", "targetPoint": { "x": 0.65, "y": 0.80 }, "confidence": "high" },
+      { "text": "Bayanin sirri", "targetPoint": { "x": 0.62, "y": 0.78 }, "confidence": "low" }
+    ]
+  },
+  {
+    "id": "p3-socs-08",
+    "labels": [
+      { "text": "Ƙasa", "targetPoint": { "x": 0.50, "y": 0.60 }, "confidence": "medium" },
+      { "text": "Ruwa", "targetPoint": { "x": 0.28, "y": 0.78 }, "confidence": "high" },
+      { "text": "Iska", "targetPoint": { "x": 0.78, "y": 0.20 }, "confidence": "medium" },
+      { "text": "Itatuwa", "targetPoint": { "x": 0.20, "y": 0.30 }, "confidence": "high" },
+      { "text": "Dabbobi", "targetPoint": { "x": 0.65, "y": 0.60 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-socs-09",
+    "labels": [
+      { "text": "Kwandon shara", "targetPoint": { "x": 0.68, "y": 0.75 }, "confidence": "high" },
+      { "text": "Magudanar ruwa", "targetPoint": { "x": 0.52, "y": 0.65 }, "confidence": "high" },
+      { "text": "Dasa wasu itatuwa", "targetPoint": { "x": 0.90, "y": 0.75 }, "confidence": "medium" },
+      { "text": "Kula da muhalli", "targetPoint": { "x": 0.70, "y": 0.55 }, "confidence": "medium" }
+    ]
+  },
+  {
+    "id": "p3-socs-10",
+    "labels": [
+      { "text": "Gero", "targetPoint": { "x": 0.09, "y": 0.28 }, "confidence": "medium" },
+      { "text": "Dawa", "targetPoint": { "x": 0.30, "y": 0.35 }, "confidence": "medium" },
+      { "text": "Wake", "targetPoint": { "x": 0.52, "y": 0.35 }, "confidence": "medium" },
+      { "text": "Gyada", "targetPoint": { "x": 0.75, "y": 0.35 }, "confidence": "medium" },
+      { "text": "Shanu", "targetPoint": { "x": 0.20, "y": 0.62 }, "confidence": "high" },
+      { "text": "Awaki", "targetPoint": { "x": 0.06, "y": 0.82 }, "confidence": "medium" },
+      { "text": "Kaji", "targetPoint": { "x": 0.14, "y": 0.85 }, "confidence": "medium" }
+    ]
+  },
+  {
+    "id": "p3-socs-11",
+    "labels": [
+      { "text": "Mai sayarwa", "targetPoint": { "x": 0.19, "y": 0.42 }, "confidence": "high" },
+      { "text": "Mai saya", "targetPoint": { "x": 0.32, "y": 0.45 }, "confidence": "high" },
+      { "text": "Farashi", "targetPoint": { "x": 0.24, "y": 0.35 }, "confidence": "medium" },
+      { "text": "Kuɗi", "targetPoint": { "x": 0.33, "y": 0.48 }, "confidence": "high" },
+      { "text": "Musayar kaya da kaya", "targetPoint": { "x": 0.72, "y": 0.48 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-socs-12",
+    "labels": [
+      { "text": "Ɗan ƙasa", "targetPoint": { "x": 0.50, "y": 0.20 }, "confidence": "medium" },
+      { "text": "Haƙƙoƙi", "targetPoint": { "x": 0.10, "y": 0.62 }, "confidence": "medium" },
+      { "text": "Alhaki", "targetPoint": { "x": 0.47, "y": 0.55 }, "confidence": "medium" },
+      { "text": "Kula da kayan jama’a", "targetPoint": { "x": 0.80, "y": 0.55 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-socs-13",
+    "labels": [
+      { "text": "Abinci", "targetPoint": { "x": 0.45, "y": 0.85 }, "confidence": "high" },
+      { "text": "Tufafi", "targetPoint": { "x": 0.68, "y": 0.78 }, "confidence": "medium" },
+      { "text": "Harshe", "targetPoint": { "x": 0.48, "y": 0.58 }, "confidence": "high" },
+      { "text": "Al’ada", "targetPoint": { "x": 0.50, "y": 0.30 }, "confidence": "low" },
+      { "text": "Tuwo da miya", "targetPoint": { "x": 0.44, "y": 0.68 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p3-socs-14",
+    "labels": [
+      { "text": "Eid al-Fitr", "targetPoint": { "x": 0.11, "y": 0.55 }, "confidence": "high" },
+      { "text": "Eid al-Adha", "targetPoint": { "x": 0.36, "y": 0.60 }, "confidence": "high" },
+      { "text": "Christmas", "targetPoint": { "x": 0.62, "y": 0.55 }, "confidence": "high" },
+      { "text": "New Yam", "targetPoint": { "x": 0.87, "y": 0.55 }, "confidence": "high" },
+      { "text": "Ladabi", "targetPoint": { "x": 0.10, "y": 0.42 }, "confidence": "low" }
+    ]
+  },
+  {
+    "id": "p3-socs-15",
+    "labels": [
+      { "text": "Ƙaramar hukuma", "targetPoint": { "x": 0.38, "y": 0.18 }, "confidence": "high" },
+      { "text": "Sufuri", "targetPoint": { "x": 0.68, "y": 0.25 }, "confidence": "high" },
+      { "text": "Sadarwa", "targetPoint": { "x": 0.85, "y": 0.48 }, "confidence": "high" },
+      { "text": "Muhalli", "targetPoint": { "x": 0.72, "y": 0.78 }, "confidence": "high" },
+      { "text": "Noma", "targetPoint": { "x": 0.45, "y": 0.85 }, "confidence": "high" },
+      { "text": "Ciniki", "targetPoint": { "x": 0.15, "y": 0.78 }, "confidence": "high" },
+      { "text": "Ɗan ƙasa", "targetPoint": { "x": 0.10, "y": 0.52 }, "confidence": "medium" },
+      { "text": "Al’ada", "targetPoint": { "x": 0.10, "y": 0.25 }, "confidence": "high" }
+    ]
+  }
+]

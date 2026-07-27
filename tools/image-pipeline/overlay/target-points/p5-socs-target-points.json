@@ -1,0 +1,789 @@
+[
+  {
+    "id": "p5-socs-01",
+    "labels": [
+      {
+        "text": "Ƙasa",
+        "targetPoint": {
+          "x": 0.1,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ruwa",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Dazuzzuka",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ma’adanai",
+        "targetPoint": {
+          "x": 0.435,
+          "y": 0.32
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Man fetur",
+        "targetPoint": {
+          "x": 0.865,
+          "y": 0.3
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Iskar gas",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.47
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-02",
+    "labels": [
+      {
+        "text": "Dasa itatuwa",
+        "targetPoint": {
+          "x": 0.145,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Rufe famfo",
+        "targetPoint": {
+          "x": 0.3,
+          "y": 0.6
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kiyaye ciyayi",
+        "targetPoint": {
+          "x": 0.28,
+          "y": 0.42
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Makamashin rana",
+        "targetPoint": {
+          "x": 0.345,
+          "y": 0.75
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Makamashin iska",
+        "targetPoint": {
+          "x": 0.325,
+          "y": 0.24
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-03",
+    "labels": [
+      {
+        "text": "Iska",
+        "targetPoint": {
+          "x": 0.17,
+          "y": 0.2
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ruwa",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.25
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙasa",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.25
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kwandon shara",
+        "targetPoint": {
+          "x": 0.8,
+          "y": 0.72
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kiyaye magudana",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.88
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Dasa itatuwa",
+        "targetPoint": {
+          "x": 0.2,
+          "y": 0.68
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-04",
+    "labels": [
+      {
+        "text": "Hanyar fita",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.75
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Wurin taruwa",
+        "targetPoint": {
+          "x": 0.135,
+          "y": 0.75
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Wuri mai aminci",
+        "targetPoint": {
+          "x": 0.2,
+          "y": 0.5
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Gargadi",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.2
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Masu horo",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.28
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-05",
+    "labels": [
+      {
+        "text": "Kundin tsarin mulki",
+        "targetPoint": {
+          "x": 0.5,
+          "y": 0.62
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Bin doka",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.65
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Haƙƙoƙi",
+        "targetPoint": {
+          "x": 0.135,
+          "y": 0.88
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Nauyi",
+        "targetPoint": {
+          "x": 0.29,
+          "y": 0.88
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Hujja da doka",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.88
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Dimokuradiyya",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.62
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-06",
+    "labels": [
+      {
+        "text": "Haƙƙoƙi",
+        "targetPoint": {
+          "x": 0.09,
+          "y": 0.52
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Nauyi",
+        "targetPoint": {
+          "x": 0.37,
+          "y": 0.72
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Ilimi",
+        "targetPoint": {
+          "x": 0.37,
+          "y": 0.28
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mutunci",
+        "targetPoint": {
+          "x": 0.63,
+          "y": 0.28
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kula da kayan jama’a",
+        "targetPoint": {
+          "x": 0.85,
+          "y": 0.55
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Amintaccen babba",
+        "targetPoint": {
+          "x": 0.63,
+          "y": 0.72
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-07",
+    "labels": [
+      {
+        "text": "A’a",
+        "targetPoint": {
+          "x": 0.19,
+          "y": 0.65
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Barin wurin",
+        "targetPoint": {
+          "x": 0.49,
+          "y": 0.63
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Neman taimako",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.58
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Babban da na yarda da shi",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mutunci",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.78
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-08",
+    "labels": [
+      {
+        "text": "Natsuwa",
+        "targetPoint": {
+          "x": 0.13,
+          "y": 0.65
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Faɗin gaskiya",
+        "targetPoint": {
+          "x": 0.3,
+          "y": 0.6
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Sauraro",
+        "targetPoint": {
+          "x": 0.45,
+          "y": 0.65
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mafita mai adalci",
+        "targetPoint": {
+          "x": 0.87,
+          "y": 0.7
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mai shiga tsakani",
+        "targetPoint": {
+          "x": 0.65,
+          "y": 0.55
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-09",
+    "labels": [
+      {
+        "text": "Kulawa",
+        "targetPoint": {
+          "x": 0.163,
+          "y": 0.342
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Tarbiyya",
+        "targetPoint": {
+          "x": 0.228,
+          "y": 0.684
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Raba alhaki",
+        "targetPoint": {
+          "x": 0.684,
+          "y": 0.635
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Girmama juna",
+        "targetPoint": {
+          "x": 0.67,
+          "y": 0.566
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Sauraro",
+        "targetPoint": {
+          "x": 0.638,
+          "y": 0.684
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Zumunci",
+        "targetPoint": {
+          "x": 0.749,
+          "y": 0.469
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-10",
+    "labels": [
+      {
+        "text": "Makaranta",
+        "targetPoint": {
+          "x": 0.182,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Horaswa",
+        "targetPoint": {
+          "x": 0.488,
+          "y": 0.459
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Rayuwar yau da kullum",
+        "targetPoint": {
+          "x": 0.814,
+          "y": 0.459
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Sani",
+        "targetPoint": {
+          "x": 0.26,
+          "y": 0.781
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Basira",
+        "targetPoint": {
+          "x": 0.586,
+          "y": 0.781
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ilimin asali",
+        "targetPoint": {
+          "x": 0.098,
+          "y": 0.781
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-11",
+    "labels": [
+      {
+        "text": "Yammacin Afirka",
+        "targetPoint": {
+          "x": 0.228,
+          "y": 0.439
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "ECOWAS",
+        "targetPoint": {
+          "x": 0.228,
+          "y": 0.391
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Tarayyar Afirka",
+        "targetPoint": {
+          "x": 0.703,
+          "y": 0.391
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ciniki",
+        "targetPoint": {
+          "x": 0.085,
+          "y": 0.762
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Sufuri",
+        "targetPoint": {
+          "x": 0.293,
+          "y": 0.859
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Haɗin kai",
+        "targetPoint": {
+          "x": 0.879,
+          "y": 0.898
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-12",
+    "labels": [
+      {
+        "text": "Majalisar Ɗinkin Duniya",
+        "targetPoint": {
+          "x": 0.54,
+          "y": 0.371
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Babban Taro",
+        "targetPoint": {
+          "x": 0.163,
+          "y": 0.41
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Kwamitin Tsaro",
+        "targetPoint": {
+          "x": 0.814,
+          "y": 0.439
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "UNICEF",
+        "targetPoint": {
+          "x": 0.488,
+          "y": 0.762
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Yara",
+        "targetPoint": {
+          "x": 0.736,
+          "y": 0.762
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Zaman lafiya",
+        "targetPoint": {
+          "x": 0.801,
+          "y": 0.459
+        },
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-13",
+    "labels": [
+      {
+        "text": "Bambancin al’adu",
+        "targetPoint": {
+          "x": 0.488,
+          "y": 0.439
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Girmama bambanci",
+        "targetPoint": {
+          "x": 0.163,
+          "y": 0.488
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Haɗin kai",
+        "targetPoint": {
+          "x": 0.573,
+          "y": 0.732
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Aiki tare",
+        "targetPoint": {
+          "x": 0.553,
+          "y": 0.781
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "NYSC",
+        "targetPoint": {
+          "x": 0.508,
+          "y": 0.684
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Mutunci",
+        "targetPoint": {
+          "x": 0.911,
+          "y": 0.537
+        },
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-14",
+    "labels": [
+      {
+        "text": "Gaskiya",
+        "targetPoint": {
+          "x": 0.313,
+          "y": 0.469
+        },
+        "confidence": "low"
+      },
+      {
+        "text": "Bin doka",
+        "targetPoint": {
+          "x": 0.866,
+          "y": 0.449
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Alhaki",
+        "targetPoint": {
+          "x": 0.684,
+          "y": 0.459
+        },
+        "confidence": "low"
+      },
+      {
+        "text": "Kayan jama’a",
+        "targetPoint": {
+          "x": 0.475,
+          "y": 0.459
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "ICPC",
+        "targetPoint": {
+          "x": 0.866,
+          "y": 0.41
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "EFCC",
+        "targetPoint": {
+          "x": 0.866,
+          "y": 0.518
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p5-socs-15",
+    "labels": [
+      {
+        "text": "Albarkatu",
+        "targetPoint": {
+          "x": 0.365,
+          "y": 0.264
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Muhalli",
+        "targetPoint": {
+          "x": 0.501,
+          "y": 0.215
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Bin doka",
+        "targetPoint": {
+          "x": 0.664,
+          "y": 0.459
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Haƙƙoƙi",
+        "targetPoint": {
+          "x": 0.638,
+          "y": 0.41
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Neman taimako",
+        "targetPoint": {
+          "x": 0.645,
+          "y": 0.264
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Sauraro",
+        "targetPoint": {
+          "x": 0.618,
+          "y": 0.664
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Ilimi",
+        "targetPoint": {
+          "x": 0.358,
+          "y": 0.664
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Haɗin kai",
+        "targetPoint": {
+          "x": 0.293,
+          "y": 0.459
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Alhaki",
+        "targetPoint": {
+          "x": 0.501,
+          "y": 0.703
+        },
+        "confidence": "low"
+      }
+    ]
+  }
+]

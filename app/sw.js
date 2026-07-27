@@ -69,12 +69,12 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
 
   if (isShellFile(url)) {
-    event.respondWith(cacheFirst(request, SHELL_CACHE));
+    event.respondWith(cacheFirst(request, SHELL_CACHE, canonicalShellRequest(request)));
     return;
   }
 
   if (url.pathname.endsWith("/content.json")) {
-    event.respondWith(networkFirst(request, CONTENT_CACHE));
+    event.respondWith(contentNetworkFirst(request));
     return;
   }
 
@@ -99,6 +99,26 @@ function isShellFile(url) {
   );
 }
 
+function canonicalShellRequest(request) {
+  const url = new URL(request.url);
+
+  if (url.pathname === "/app") {
+    url.pathname = "/app/";
+  }
+
+  url.search = "";
+  url.hash = "";
+  return new Request(url.toString(), {
+    method: "GET",
+    headers: request.headers,
+    credentials: request.credentials,
+    cache: "default",
+    redirect: request.redirect,
+    referrer: request.referrer,
+    integrity: request.integrity,
+  });
+}
+
 async function networkFirst(request, cacheName) {
   const cache = await caches.open(cacheName);
 
@@ -106,7 +126,7 @@ async function networkFirst(request, cacheName) {
     const response = await fetch(request);
 
     if (response && response.ok) {
-      cache.put(request, response.clone());
+      await cache.put(request, response.clone());
     }
 
     return response;
@@ -120,9 +140,71 @@ async function networkFirst(request, cacheName) {
   }
 }
 
-async function cacheFirst(request, cacheName) {
+async function contentNetworkFirst(request) {
+  const cache = await caches.open(CONTENT_CACHE);
+  const cacheRequest = canonicalContentRequest(request);
+
+  try {
+    const response = await fetch(request);
+
+    if (!response || !response.ok) {
+      throw new Error("Could not load content.json");
+    }
+
+    const contentText = await response.text();
+
+    try {
+      JSON.parse(contentText);
+    } catch (error) {
+      throw new Error(
+        "Refusing to cache invalid content.json (" +
+          contentText.length +
+          " bytes received): " +
+          (error instanceof Error ? error.message : String(error))
+      );
+    }
+
+    const headers = new Headers(response.headers);
+    if (!headers.has("Content-Type")) {
+      headers.set("Content-Type", "application/json; charset=utf-8");
+    }
+
+    const cacheResponse = new Response(contentText, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    });
+
+    await cache.put(cacheRequest, cacheResponse.clone());
+    return cacheResponse;
+  } catch (error) {
+    const cached = await cache.match(cacheRequest);
+    if (cached) {
+      return cached;
+    }
+
+    throw error;
+  }
+}
+
+function canonicalContentRequest(request) {
+  const url = new URL(request.url);
+  url.search = "";
+  url.hash = "";
+  return new Request(url.toString(), {
+    method: "GET",
+    credentials: request.credentials,
+    cache: "default",
+    redirect: request.redirect,
+    referrer: request.referrer,
+    integrity: request.integrity,
+  });
+}
+
+async function cacheFirst(request, cacheName, cacheRequest) {
   const cache = await caches.open(cacheName);
-  const cached = await cache.match(request);
+  const key = cacheRequest || request;
+  const cached = await cache.match(key);
 
   if (cached) {
     return cached;
@@ -131,7 +213,7 @@ async function cacheFirst(request, cacheName) {
   const response = await fetch(request);
 
   if (response && response.ok) {
-    cache.put(request, response.clone());
+    await cache.put(key, response.clone());
   }
 
   return response;

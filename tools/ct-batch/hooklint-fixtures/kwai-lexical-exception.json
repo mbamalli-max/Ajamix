@@ -1,0 +1,28 @@
+{
+  "name": "kwai egg forms remain flagged while the explicit imitation-word forms are allowed",
+  "expectedWords": [
+    "kwai",
+    "kwai",
+    "kwai"
+  ],
+  "value": {
+    "lessons": [
+      {
+        "body": {
+          "ha": "kwai na kaza; ƙwai na kaza; kwaikwayo; kwaikwayi; kwaikwayon; kwaikwaya; Kwaikwayo"
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "templateHa": "Wace kalma ce?",
+        "answerFormula": "kwai na kaza",
+        "distractorFormulas": [
+          "kwai na kaza",
+          "ƙwai na kaza",
+          "Kwaikwayi"
+        ]
+      }
+    ]
+  }
+}

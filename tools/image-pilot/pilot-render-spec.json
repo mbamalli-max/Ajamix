@@ -1,0 +1,537 @@
+[
+  {
+    "moduleId": "p1-bsci-01",
+    "title": "Hankali – Gani",
+    "outputPath": "app/images/p1-bsci-01.png",
+    "imagePurpose": "simple object identification",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "illustration",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "simple object identification",
+    "hausaLabels": [
+      "Idanu"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 1 (approximately 6–7 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p2-bsci-16",
+    "title": "Abubuwan da Tsiro Ke Bukata Domin Girma",
+    "outputPath": "app/images/p2-bsci-16.png",
+    "imagePurpose": "plant needs",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "labelled diagram",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "plant needs",
+    "hausaLabels": [
+      "Ruwa",
+      "Iska",
+      "Hasken Rana",
+      "Ƙasa"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 2 (approximately 7–8 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p3-bsci-12",
+    "title": "Haske da Madubi",
+    "outputPath": "app/images/p3-bsci-12.png",
+    "imagePurpose": "reflection and shadow",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "comparison panel",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "reflection and shadow",
+    "hausaLabels": [
+      "Madubi",
+      "Inuwa"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 3 (approximately 8–9 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p4-bsci-18",
+    "title": "Yadda Jiki Ke Sarrafa Abinci da Ayyukan Haƙora",
+    "outputPath": "app/images/p4-bsci-18.png",
+    "imagePurpose": "food pathway and tooth functions",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "labelled diagram",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "food pathway and tooth functions",
+    "hausaLabels": [
+      "Baki",
+      "Bututun abinci",
+      "Haƙora"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 4 (approximately 9–10 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p5-bsci-03",
+    "title": "Tsarin Ƙasusuwan Jiki da Motsi",
+    "outputPath": "app/images/p5-bsci-03.png",
+    "imagePurpose": "skeleton and joints",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "labelled diagram",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "skeleton and joints",
+    "hausaLabels": [
+      "Gwiwar Hannu",
+      "Gwiwa",
+      "Kafada"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 5 (approximately 10–11 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p5-bsci-11",
+    "title": "Batiri, Waya Mai Lulluɓi, da Ƙaramar Fitila",
+    "outputPath": "app/images/p5-bsci-11.png",
+    "imagePurpose": "closed and open classroom circuits",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "comparison panel",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "closed and open classroom circuits",
+    "hausaLabels": [
+      "Batiri",
+      "Waya",
+      "Fitila"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 5 (approximately 10–11 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p1-maths-01",
+    "title": "Kirgawa 1–10",
+    "outputPath": "app/images/p1-maths-01.png",
+    "imagePurpose": "counting 1 through 10",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "number visual",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "counting 1 through 10",
+    "hausaLabels": [],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 1 (approximately 6–7 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p2-maths-08",
+    "title": "Ragi Ba Tare da Aro ba",
+    "outputPath": "app/images/p2-maths-08.png",
+    "imagePurpose": "subtraction 30 minus 4",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "process sequence",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "subtraction 30 minus 4",
+    "hausaLabels": [],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 2 (approximately 7–8 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p3-maths-12",
+    "title": "Lokaci: Sa’a, Rabin Sa’a, da Kwata Sa’a",
+    "outputPath": "app/images/p3-maths-12.png",
+    "imagePurpose": "three exact analog clocks",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "measurement diagram",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "three exact analog clocks",
+    "hausaLabels": [],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 3 (approximately 8–9 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p4-maths-16",
+    "title": "Karanta Sauƙaƙan Teburi",
+    "outputPath": "app/images/p4-maths-16.png",
+    "imagePurpose": "reading and comparing table values",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "table diagram",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "reading and comparing table values",
+    "hausaLabels": [
+      "Suna",
+      "Adadi",
+      "Bambanci"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 4 (approximately 9–10 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p5-maths-13",
+    "title": "Darajar Matsayin Desimal",
+    "outputPath": "app/images/p5-maths-13.png",
+    "imagePurpose": "decimal place value and hundred grid",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "place-value diagram",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "decimal place value and hundred grid",
+    "hausaLabels": [
+      "Cikakkiya",
+      "Alamar desimal",
+      "Goma-goma",
+      "Ɗari-ɗari"
+    ],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 5 (approximately 10–11 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  },
+  {
+    "moduleId": "p6-maths-11",
+    "title": "Haɗa Kashi, Desimal, da Percent",
+    "outputPath": "app/images/p6-maths-11.png",
+    "imagePurpose": "fraction decimal percent equivalence",
+    "renderingMethod": "C — fully programmatic SVG rendered deterministically to PNG",
+    "visualType": "comparison panel",
+    "composition": "Single landscape classroom card with large central visual, generous padding, and only lesson-supported Hausa labels",
+    "objectsOrConcepts": "fraction decimal percent equivalence",
+    "hausaLabels": [],
+    "labelPlacement": "Adjacent to the referenced object or in a clearly separated heading/caption region; minimum 26 px at source resolution",
+    "learnerAge": "Primary 6 (approximately 11–12 years)",
+    "style": "Friendly flat educational illustration with dark outlines and restrained colors",
+    "background": "Warm near-white, high contrast, no texture, branding, or decorative text",
+    "aspectRatio": "3:2 landscape",
+    "minimumResolution": "1536 × 1024",
+    "accessibility": [
+      "Strong figure/background contrast",
+      "Do not rely on color alone",
+      "Large labels",
+      "Simple reading order",
+      "Meaningful lesson title remains available as HTML alt text"
+    ],
+    "prohibitedContent": [
+      "English words",
+      "watermark",
+      "branding",
+      "unrelated decoration",
+      "unsafe or graphic imagery"
+    ],
+    "negativePrompt": "No photorealism, no watermark, no logo, no English text, no clipped labels, no visual clutter, no unsafe action, no scientifically or mathematically invented detail",
+    "postGenerationValidation": [
+      "Correct module and filename",
+      "Exact 1536×1024 PNG",
+      "All Hausa labels match specification",
+      "No clipped text",
+      "No English leakage",
+      "Scientific or mathematical relationships recomputed",
+      "Legible at 375 px CSS width",
+      "No prohibited or unsafe imagery"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p3-socs-01",
+    "imagePath": "images/p3-socs-01.png",
+    "titleEn": "The Meaning and Importance of Social and Citizenship Studies",
+    "titleHa": "Ma’ana da Muhimmancin Nazarin Zamantakewa",
+    "type": "illustration",
+    "depictEn": "A Northern Nigerian primary-school courtyard where girls and boys work together: two pupils place litter in a bin, two care for shared books, and two calmly discuss a simple classroom matter with a teacher nearby, showing observation, cooperation, rules, and care for public property.",
+    "labelsHa": ["Haɗin kai", "Kayan jama’a"],
+    "safetyNote": "Show equal participation by girls and boys; no religious, ethnic, political-party, or status symbols; do not portray any child as naturally obedient, disruptive, or dominant because of gender or background."
+  },
+  {
+    "id": "p3-socs-02",
+    "imagePath": "images/p3-socs-02.png",
+    "titleEn": "Our Local Government Area",
+    "titleHa": "Yankin Ƙaramar Hukumarmu",
+    "type": "diagram",
+    "depictEn": "A simple, non-geographic community map connecting a neutral local government (LGA) office to a market, a water point, a school, a health centre, and a clean local road; small diverse groups of residents give information to an office worker and use the services.",
+    "labelsHa": ["Ofishin Ƙaramar Hukuma", "Kasuwa", "Wurin ruwa", "Makaranta", "Cibiyar lafiya"],
+    "safetyNote": "Use no real seal, party colour, candidate portrait, campaign sign, named office-holder, or claim that one authority alone provides every service; depict women and men as residents and workers."
+  },
+  {
+    "id": "p3-socs-03",
+    "imagePath": "images/p3-socs-03.png",
+    "titleEn": "Community Needs and Services",
+    "titleHa": "Bukatun Al’umma da Ayyukan Jama’a",
+    "type": "diagram",
+    "depictEn": "A child-friendly community-needs map with paired need-and-service examples: clean water and a repaired pump, learning and a school, health and a health centre, safe passage and a drained road, plus pupils reporting a problem to an adult rather than repairing hazards themselves.",
+    "labelsHa": ["Ruwa mai tsabta", "Hidimar jama’a", "Magudanar ruwa", "Cibiyar lafiya"],
+    "safetyNote": "Children must only observe and report; do not show them entering drains, handling tools, repairing pumps, directing traffic, or doing hazardous sanitation work."
+  },
+  {
+    "id": "p3-socs-04",
+    "imagePath": "images/p3-socs-04.png",
+    "titleEn": "Transportation — Road and Rail",
+    "titleHa": "Sufuri ta Hanya da Jirgin Ƙasa",
+    "type": "comparison",
+    "depictEn": "Two side-by-side transport scenes: a calm paved road with a car, bicycle, and produce truck, and a passenger train moving on a fenced rail line; a separate safe-crossing inset shows a child with an adult stopping and looking both ways away from the tracks.",
+    "labelsHa": ["Hanya", "Jirgin ƙasa", "Layin dogo"],
+    "safetyNote": "No child on the carriageway or rail line, no vehicle collision, no hanging from vehicles, and no crossing in front of a moving train; keep the rail line physically separated from the pedestrian scene."
+  },
+  {
+    "id": "p3-socs-05",
+    "imagePath": "images/p3-socs-05.png",
+    "titleEn": "Transportation — Air and Water",
+    "titleHa": "Sufuri ta Sama da Ruwa",
+    "type": "comparison",
+    "depictEn": "Two balanced panels: a passenger aircraft at a generic airport with luggage being loaded, and a stable passenger boat on calm water carrying people and sacks of goods within capacity; every boat passenger wears a life jacket and a child sits beside an adult.",
+    "labelsHa": ["Filin jirgin sama", "Jirgin ruwa", "Rigar kariya ta ruwa"],
+    "safetyNote": "No airline logo, national flag, military aircraft, overcrowding, rough water, standing passengers, unaccompanied child, or person without a life jacket; no one should be shown entering water."
+  },
+  {
+    "id": "p3-socs-06",
+    "imagePath": "images/p3-socs-06.png",
+    "titleEn": "Communication — Traditional Methods",
+    "titleHa": "Sadarwa ta Hanyoyin Gargajiya",
+    "type": "illustration",
+    "depictEn": "A respectful Northern Nigerian market-square scene showing a town announcer delivering a community message while a second adult uses a drum or kalangu; nearby women, men, and children listen calmly, with subtle sound lines indicating that the message reaches people nearby.",
+    "labelsHa": ["Mai shela", "Ganga ko kalangu", "Saƙo"],
+    "safetyNote": "Avoid caricature, costume-as-spectacle, royal or political insignia, religious hierarchy, alarm or panic, and claims that one drum pattern has a universal meaning; depict the methods as locally agreed communication."
+  }
+]

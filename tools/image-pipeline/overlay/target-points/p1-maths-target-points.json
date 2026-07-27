@@ -1,0 +1,42 @@
+[
+  {
+    "id": "p1-maths-06",
+    "labels": [
+      { "text": "Goma", "targetPoint": { "x": 0.1855, "y": 0.669 }, "confidence": "high" },
+      { "text": "Guda", "targetPoint": { "x": 0.371, "y": 0.669 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p1-maths-16",
+    "labels": [
+      { "text": "Rabi", "targetPoint": { "x": 0.317, "y": 0.783 }, "confidence": "high" },
+      { "text": "Rubu'i", "targetPoint": { "x": 0.667, "y": 0.783 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p1-maths-19",
+    "labels": [
+      { "text": "Mita", "targetPoint": { "x": 0.275, "y": 0.607 }, "confidence": "medium" },
+      { "text": "Santimita", "targetPoint": { "x": 0.749, "y": 0.776 }, "confidence": "low" }
+    ]
+  },
+  {
+    "id": "p1-maths-20",
+    "labels": [
+      { "text": "Lita", "targetPoint": { "x": 0.378, "y": 0.537 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p1-maths-21",
+    "labels": [
+      { "text": "Kilogiram", "targetPoint": { "x": 0.472, "y": 0.566 }, "confidence": "high" }
+    ]
+  },
+  {
+    "id": "p1-maths-23",
+    "labels": [
+      { "text": "Alwatika", "targetPoint": { "x": 0.122, "y": 0.684 }, "confidence": "high" },
+      { "text": "Murabba'i", "targetPoint": { "x": 0.296, "y": 0.684 }, "confidence": "high" }
+    ]
+  }
+]

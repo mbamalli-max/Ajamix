@@ -1,0 +1,142 @@
+[
+  {
+    "id": "CT01",
+    "imagePath": "images/CT01.png",
+    "titleEn": "Is This True? Checking a Message Before Sharing It",
+    "titleHa": "Shin An Tabbatar da Wannan? Tantance Saƙo Kafin A Yaɗa Shi",
+    "type": "illustration",
+    "depictEn": "An adult learner in a calm home setting pauses before forwarding an unsourced phone message. A simple three-part visual flow beside the phone shows: identify the statement in the message, look for a named source, then contact the meeting organiser to confirm it. Use a generic phone interface with no brand, platform name, logo, URL, or social-media styling.",
+    "labelsHa": [
+      "Iƙirari",
+      "Tushen bayani",
+      "Tabbatarwa"
+    ],
+    "safetyNote": "Show an ordinary, non-alarming message and a calm verification action; do not depict fraud, a warning alert, a real messaging platform, personal data, or a claim about health, government, religion, or elections."
+  },
+  {
+    "id": "CT02",
+    "imagePath": "images/CT02.png",
+    "titleEn": "Claim, Reason and Conclusion — Taking a Message Apart",
+    "titleHa": "Iƙirari, Dalili da Kammalawa — Rarrabe Saƙo",
+    "type": "diagram",
+    "depictEn": "A clean three-column diagram built around a generic phone message about a family meeting. The first column isolates the claim that the time changed, the second isolates the weak reason that someone heard it from a friend, and the third isolates the requested action to call everyone immediately. A final small callout shows the learner checking with the meeting organiser before acting. No brand interface or personal contact details.",
+    "labelsHa": [
+      "Iƙirari",
+      "Dalili",
+      "Kammalawa"
+    ],
+    "safetyNote": "Keep the message neutral and family-event based; do not use political, commercial, religious, emergency, scam, or fear-inducing content. Do not present the diagram as formal symbolic logic."
+  },
+  {
+    "id": "CT03",
+    "imagePath": "images/CT03.png",
+    "titleEn": "Fact, Opinion and Guess",
+    "titleHa": "Tabbataccen Bayani, Ra'ayi da Zato",
+    "type": "diagram",
+    "depictEn": "Three clear everyday panels: a radio weather report paired with a simple measured-rain icon for a checkable statement; a household member calmly expressing a preference for cool weather; and neighbours looking at a dark sky while one person guesses that it will rain later. Use neutral adult community and household scenes with no text-heavy radio interface.",
+    "labelsHa": [
+      "Tabbataccen bayani",
+      "Ra'ayi",
+      "Zato"
+    ],
+    "safetyNote": "Use only radio, weather, household, community-conversation, and everyday-preference contexts. Do not depict business, market prices, government, elections, religion, hazards, or a weather warning."
+  },
+  {
+    "id": "CT04",
+    "imagePath": "images/CT04.png",
+    "titleEn": "Who Said It, and How Would They Know?",
+    "titleHa": "Wa Ya Faɗa, Kuma Ta Yaya Ya Sani?",
+    "type": "comparison panel",
+    "depictEn": "Two equal, calm panels about the same community-meeting time. In one, an adult says they heard it from a neighbour; in the other, an adult speaks directly with the meeting organiser holding a simple schedule. A modest confirmation arrow points to a separate reliable source, without treating any person as infallible.",
+    "labelsHa": [
+      "Abin da mutum ya gani ko ya ji da kansa",
+      "Tushen bayani abin dogaro",
+      "Ƙarfin gwiwa bai isa ba"
+    ],
+    "safetyNote": "Use an ordinary community meeting only. Do not show authority as always correct, a political meeting, official insignia, business, religious gathering, emergency, fraud, personal data, or a branded messaging interface."
+  },
+  {
+    "id": "CT05",
+    "imagePath": "images/CT05.png",
+    "titleEn": "Numbers Used to Persuade",
+    "titleHa": "Lambobi Masu Neman Sa Ka Yarda",
+    "type": "evidence board",
+    "depictEn": "A neutral community-notice evidence board with a large ‘8 out of 10’ statement, a simple incomplete bar chart, and four visible question cards asking who was counted, what was compared, and when it was collected. The chart must intentionally lack its baseline or comparison and be presented as incomplete, not as data to calculate.",
+    "labelsHa": [
+      "Cikakken bayani da ke kewaye da lamba",
+      "Jadawali",
+      "Tambayi mahallin lamba"
+    ],
+    "safetyNote": "Do not depict market prices, discounts, profit, taxes, loans, sales, elections, medical statistics, brand logos, or a chart-reading lesson. The visual teaches missing context, not calculation."
+  },
+  {
+    "id": "CT06",
+    "imagePath": "images/CT06.png",
+    "titleEn": "Cause, or Merely What Happened Next?",
+    "titleHa": "Dalili ne, Ko Abin da Ya Biyo Baya Kawai?",
+    "type": "comparison panel",
+    "depictEn": "A two-panel comparison. The first shows a hand pressing a wall switch and a connected bulb lighting, with a simple visual cue (such as matching colors or a dashed connector) showing the switch and bulb belong to the same circuit, without depicting exposed wiring. The second shows a person in new shoes under later rainfall with a question mark between the shoes and rain, showing sequence without a causal link. Include a small neutral calendar/timetable note as an alternative-explanation cue.",
+    "labelsHa": [
+      "Abin da ya jawo wani abu",
+      "Wani bayani mai yiwuwa",
+      "Ka nemi abin da ya canja"
+    ],
+    "safetyNote": "Keep this to a household bulb, shoes, rain, and timetable. Do not depict experiments, medical treatment, herbal remedies, religion, politics, conflict, accidents, or unsafe electrical handling."
+  },
+  {
+    "id": "CT07",
+    "imagePath": "images/CT07.png",
+    "titleEn": "When You Already Want It to Be True",
+    "titleHa": "Idan Kana Son Ya Zama Gaskiya",
+    "type": "evidence board",
+    "depictEn": "An adult preparing for a journey pauses before two neutral weather reports: one favourable and one showing possible rain. An evidence board has two balanced columns, supporting information and information that challenges it, with no report presented as certain or morally preferred.",
+    "labelsHa": [
+      "Son wani sakamako ya sa mutum ya karkata",
+      "Hujjar da ta saba",
+      "Tambayi abin da zai canja tunani"
+    ],
+    "safetyNote": "Use only an everyday journey and neutral weather information. Do not use political, religious, ethnic, commercial, medical, branded, or fear-inducing imagery; do not portray bias as a flaw of one group."
+  },
+  {
+    "id": "CT08",
+    "imagePath": "images/CT08.png",
+    "titleEn": "Deciding When You Cannot Be Certain",
+    "titleHa": "Yanke Shawara Idan Ba Ka da Cikakken Tabbaci",
+    "type": "contextual illustration",
+    "depictEn": "A calm adult traveller considers two ordinary routes under uncertain, non-severe weather: one route has a visible alternate path and a small rain cover in a bag. A separate small farming vignette shows starting a modest, reversible section of outdoor work while checking a neutral weather notice. The image should make backup and reversibility visible.",
+    "labelsHa": [
+      "Rashin tabbaci",
+      "Matakin da za a iya juyawa baya",
+      "Daidaita mataki da haɗari"
+    ],
+    "safetyNote": "No storms, danger, medical decisions, medicine, financial decisions, insurance, business management, government, personal data, or emergency scenes. Show cautious planning, not certainty."
+  },
+  {
+    "id": "CT09",
+    "imagePath": "images/CT09.png",
+    "titleEn": "What Was Left Out?",
+    "titleHa": "Me Aka Bari a Waje?",
+    "type": "evidence board",
+    "depictEn": "A neutral household/community conversation board with one speech card visible and several clearly marked missing-information slots: another account, what happened before, what happened after, and the needed comparison. Include a clipped quotation shown beside its surrounding context, without depicting a heated dispute.",
+    "labelsHa": [
+      "Bayanin da ya ɓace",
+      "Bayani daga gefe ɗaya",
+      "Nemi kwatance mai dacewa"
+    ],
+    "safetyNote": "Do not portray conflict escalation, civic rights, investigation, journalism, courtrooms, government, politics, religion, business, personal data, or accusations. Keep all people calm and non-identifiable. Do not use facial expression, clothing, or apparent social role to suggest which account is more truthful."
+  },
+  {
+    "id": "CT10",
+    "imagePath": "images/CT10.png",
+    "titleEn": "A Checklist for Evaluating Any Claim",
+    "titleHa": "Jerin Dubawa Domin Tantance Kowane Iƙirari",
+    "type": "checklist diagram",
+    "depictEn": "A clear, non-branded checklist diagram around a generic community-cleanup scheduling message. The sequence visually moves from identifying the claim and source, through evidence, number context, cause check, personal preference, and missing information, to a prudent next action such as contacting the organiser and preparing a backup plan. Keep text short and use the listed Hausa labels only. Present this as a numbered step sequence or a layered overlay rather than a single dense composite scene, so no more than a few concepts appear per visual unit.",
+    "labelsHa": [
+      "Jerin dubawa",
+      "Mataki mai hankali",
+      "Tantance saƙon tsaftace unguwa"
+    ],
+    "safetyNote": "Use a benign community-cleanup schedule only. Do not use an acronym, branded phone UI, fraud, political or religious content, health advice, business, government insignia, personal data, or a visual claim that certainty has been reached."
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "id": "p4-bsci-01",
+    "labels": [
+      {
+        "text": "Bishiya",
+        "targetPoint": {
+          "x": 0.16,
+          "y": 0.35
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙaramar bishiya",
+        "targetPoint": {
+          "x": 0.49,
+          "y": 0.54
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ganyayyaki",
+        "targetPoint": {
+          "x": 0.83,
+          "y": 0.57
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-02",
+    "labels": [
+      {
+        "text": "Masu Ƙashin Baya",
+        "targetPoint": {
+          "x": 0.3,
+          "y": 0.4
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Marasa Ƙashin Baya",
+        "targetPoint": {
+          "x": 0.78,
+          "y": 0.58
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-03",
+    "labels": [
+      {
+        "text": "Ƙasa mai yashi",
+        "targetPoint": {
+          "x": 0.18,
+          "y": 0.8
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ƙasa mai laka",
+        "targetPoint": {
+          "x": 0.44,
+          "y": 0.8
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-05",
+    "labels": [
+      {
+        "text": "Rana",
+        "targetPoint": {
+          "x": 0.15,
+          "y": 0.32
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Wuta",
+        "targetPoint": {
+          "x": 0.41,
+          "y": 0.76
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Iska",
+        "targetPoint": {
+          "x": 0.62,
+          "y": 0.32
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Baturi",
+        "targetPoint": {
+          "x": 0.59,
+          "y": 0.85
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-06",
+    "labels": [
+      {
+        "text": "soket",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.38
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "waya",
+        "targetPoint": {
+          "x": 0.59,
+          "y": 0.71
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "fitilar hannu",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.63
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-07",
+    "labels": [
+      {
+        "text": "Tura",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.44
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ja",
+        "targetPoint": {
+          "x": 0.68,
+          "y": 0.37
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-08",
+    "labels": [
+      {
+        "text": "Guga",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.78
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-11",
+    "labels": [
+      {
+        "text": "gidan sauro",
+        "targetPoint": {
+          "x": 0.21,
+          "y": 0.32
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-13",
+    "labels": [
+      {
+        "text": "Ma'aunin zafi",
+        "targetPoint": {
+          "x": 0.31,
+          "y": 0.52
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Ma'aunin ruwan sama",
+        "targetPoint": {
+          "x": 0.42,
+          "y": 0.68
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Alamar iska",
+        "targetPoint": {
+          "x": 0.65,
+          "y": 0.32
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-15",
+    "labels": [
+      {
+        "text": "Wuta",
+        "targetPoint": {
+          "x": 0.21,
+          "y": 0.85
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-16",
+    "labels": [
+      {
+        "text": "Ƙanƙara",
+        "targetPoint": {
+          "x": 0.33,
+          "y": 0.41
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-17",
+    "labels": [
+      {
+        "text": "Wake",
+        "targetPoint": {
+          "x": 0.23,
+          "y": 0.34
+        },
+        "confidence": "medium"
+      },
+      {
+        "text": "Kaza",
+        "targetPoint": {
+          "x": 0.74,
+          "y": 0.31
+        },
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-18",
+    "labels": [
+      {
+        "text": "Baki",
+        "targetPoint": {
+          "x": 0.43,
+          "y": 0.28
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Bututun abinci",
+        "targetPoint": {
+          "x": 0.48,
+          "y": 0.44
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Haƙora",
+        "targetPoint": {
+          "x": 0.29,
+          "y": 0.46
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-19",
+    "labels": [
+      {
+        "text": "Sauti",
+        "targetPoint": {
+          "x": 0.41,
+          "y": 0.52
+        },
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "p4-bsci-20",
+    "labels": [
+      {
+        "text": "Fitilu",
+        "targetPoint": {
+          "x": 0.12,
+          "y": 0.56
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "Madubai",
+        "targetPoint": {
+          "x": 0.51,
+          "y": 0.42
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "gilashin gaba",
+        "targetPoint": {
+          "x": 0.37,
+          "y": 0.34
+        },
+        "confidence": "high"
+      },
+      {
+        "text": "sandar da ke tsakiya",
+        "targetPoint": {
+          "x": 0.53,
+          "y": 0.62
+        },
+        "confidence": "high"
+      }
+    ]
+  }
+]

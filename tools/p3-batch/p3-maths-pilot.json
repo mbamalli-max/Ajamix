@@ -1,0 +1,784 @@
+[
+  {
+    "id": "p3-maths-01",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 1,
+    "titleEn": "Numbers to 1,000 and Place Value",
+    "titleHa": "Lambobi Har Zuwa 1,000 da Matsayin Lamba",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "A wannan darasi za ka ƙara sanin lambobi har zuwa 1,000. Kowace lamba a cikin adadi tana da matsayi. A lamba 342, 3 yana nufin ɗari uku, 4 yana nufin arba’in, 2 kuma yana nufin biyu. Idan ka fahimci daruruwa, gommai, da ɗaya-ɗaya, karatun lamba zai yi sauƙi. Ka yi tunanin jakar gero a kasuwa: ana iya ƙirga ta cikin ɗari, sai goma-goma, sai guda ɗaya. Haka lissafi yake tsara abubuwa. Idan aka ce ɗari 5, gommai 6, da ɗaya-ɗaya 7, lambar ita ce 567. Kada ka duba lamba a matsayin rubutu kawai; ka tambayi kanka, wane matsayi kowace lamba take nunawa? Wannan zai taimaka maka wajen ƙara, ragewa, da warware tambayoyin kuɗi ko kayan gida. Ka maimaita da murya, domin kunne da ido su riƙa aiki tare.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi lambobi har zuwa dubu ɗaya da matsayin kowace lamba. [MAIN] Lamba tana da wurare. A 342, 3 tana wurin ɗari, 4 tana wurin gommai, 2 tana wurin ɗaya-ɗaya. Idan ka ga 567, ka san akwai ɗari biyar, gommai shida, da ɗaya-ɗaya bakwai. [PAUSE 1] A lamba 342, wace lamba ce a wurin ɗari? [MAIN] Ka iya haɗa lamba daga sassa. Idan aka ce 4 ɗari, 5 goma, da 6 ɗaya, lambar ita ce 456. [PAUSE 2] Idan aka haɗa 4 ɗari, 5 goma, da 6 ɗaya, wace lamba ce? [OUTRO] Ka tuna: daruruwa, gommai, da ɗaya-ɗaya suna gaya maka ƙimar lamba.",
+    "audioFile": "audio/p3-maths-01.mp3",
+    "imageCard": "images/p3-maths-01.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "A lamba 342, wace lamba ce a wurin ɗari?",
+        "correctAnswer": "3",
+        "options": [
+          "3",
+          "4",
+          "2"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan aka haɗa 4 ɗari, 5 goma, da 6 ɗaya, wace lamba ce?",
+        "correctAnswer": "456",
+        "options": [
+          "456",
+          "465",
+          "546"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Idan an haɗa {a} ɗari, {b} goma, da {c} ɗaya, wace lamba ce?",
+        "answerFormula": "100 * a + 10 * b + c",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 8
+          },
+          "b": {
+            "min": 0,
+            "max": 9
+          },
+          "c": {
+            "min": 0,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "100 * a + 10 * b + c + 1",
+          "100 * a + 10 * b + c + 10",
+          "100 * a + 10 * b + c + 100"
+        ]
+      },
+      {
+        "templateHa": "{a} ɗari suna nufin lamba nawa?",
+        "answerFormula": "100 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "100 * a + 10",
+          "100 * a + 100",
+          "100 * a - 10"
+        ]
+      },
+      {
+        "templateHa": "Idan ka fara daga {a} ka ƙara goma, wace lamba za ka samu?",
+        "answerFormula": "a + 10",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 890
+          }
+        },
+        "distractorFormulas": [
+          "a + 1",
+          "a + 20",
+          "a + 100"
+        ]
+      },
+      {
+        "templateHa": "Idan ka fara daga {a} ka ƙara ɗari, wace lamba za ka samu?",
+        "answerFormula": "a + 100",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 800
+          }
+        },
+        "distractorFormulas": [
+          "a + 10",
+          "a + 1",
+          "a + 200"
+        ]
+      },
+      {
+        "templateHa": "Wace lamba ce take bayan {a}?",
+        "answerFormula": "a + 1",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 998
+          }
+        },
+        "distractorFormulas": [
+          "a - 1",
+          "a + 10",
+          "a + 2"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-02",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 2,
+    "titleEn": "Addition with Regrouping",
+    "titleHa": "Ƙari da Sake Haɗawa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ƙari yana nufin haɗa abubuwa domin a sami jimla. A P3, za ka fara ganin tambayoyi inda ɗaya-ɗaya suka kai goma ko suka wuce goma. Idan hakan ya faru, sai mu sake haɗawa: goma ɗaya ta koma wurin gommai. Misali, 27 + 15. Ka fara da ɗaya-ɗaya: 7 + 5 = 12. Rubuta 2, ka ɗauki goma ɗaya zuwa wurin gommai. Sai gommai biyu daga 27, da goma ɗaya daga 15, da goma ɗaya da aka ɗauka, su zama gommai huɗu. Don haka amsar ita ce 42. Wannan hanya tana aiki a kasuwa, gida, ko makaranta. Idan kana da littattafai 38, abokinka ya kawo 24, sai ka haɗa su a hankali. Kada ka yi sauri ka ruɗe. Ka fara daga ɗaya-ɗaya, ka sake haɗawa idan jimlar ta kai goma ko fiye, sannan ka koma gommai da daruruwa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] A yau za mu yi ƙari da sake haɗawa. [MAIN] Idan ɗaya-ɗaya suka kai goma ko suka wuce goma, sai mu ɗauki goma ɗaya zuwa wurin gommai. Misali, 27 da 15. Bakwai da biyar sun zama goma sha biyu. Rubuta biyu a wurin ɗaya-ɗaya, sannan ka ɗauki goma ɗaya zuwa wurin gommai. Sai gommai su zama huɗu. Amsa ita ce 42. [PAUSE 1] Nawa ne 27 + 15? [MAIN] Ka riƙa farawa daga dama, wato ɗaya-ɗaya. Idan jimlar ta kai goma ko fiye, ka sake haɗawa. Wannan yana sa ƙari ya zama mai tsari. [PAUSE 2] Idan 8 + 7 ya zama 15, me za ka rubuta a wurin ɗaya-ɗaya? [OUTRO] Ka tuna: fara daga ɗaya-ɗaya, ɗauki goma idan ya cancanta.",
+    "audioFile": "audio/p3-maths-02.mp3",
+    "imageCard": "images/p3-maths-02.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Nawa ne 27 + 15?",
+        "correctAnswer": "42",
+        "options": [
+          "42",
+          "32",
+          "52"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan 8 + 7 ya zama 15, me za ka rubuta a wurin ɗaya-ɗaya?",
+        "correctAnswer": "5",
+        "options": [
+          "5",
+          "1",
+          "15"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Nawa ne {a} + {b}?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 20,
+            "max": 499
+          },
+          "b": {
+            "min": 20,
+            "max": 499
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b - 1",
+          "a + b + 10"
+        ]
+      },
+      {
+        "templateHa": "Amina tana da {a} ƙwallo, Saiɗa ta ƙara mata {b}. Jimla nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 30,
+            "max": 450
+          },
+          "b": {
+            "min": 10,
+            "max": 400
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 2",
+          "a + b - 2",
+          "a + b + 20"
+        ]
+      },
+      {
+        "templateHa": "Idan aka ƙara {b} zuwa {a}, amsar nawa ce?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 600
+          },
+          "b": {
+            "min": 50,
+            "max": 350
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 5",
+          "a + b - 5",
+          "a + b + 50"
+        ]
+      },
+      {
+        "templateHa": "Nawa ne {a} + {b} + {c}?",
+        "answerFormula": "a + b + c",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 300
+          },
+          "b": {
+            "min": 10,
+            "max": 300
+          },
+          "c": {
+            "min": 10,
+            "max": 300
+          }
+        },
+        "distractorFormulas": [
+          "a + b + c + 1",
+          "a + b + c - 1",
+          "a + b + c + 10"
+        ]
+      },
+      {
+        "templateHa": "A aji akwai yara {a}, sai yara {b} suka shigo. Yara nawa ne yanzu?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 15,
+            "max": 80
+          },
+          "b": {
+            "min": 5,
+            "max": 60
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 5",
+          "a + b - 1"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-03",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 3,
+    "titleEn": "Subtraction with Regrouping",
+    "titleHa": "Ragi da Ɗaukar Aro",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ragi yana nufin cire wani adadi daga wani adadi. Wani lokaci, lambar ɗaya-ɗaya da ke sama ba ta isa a cire lambar da ke ƙasa ba. Sai mu ɗauki aro daga wurin gommai. Misali, 52 − 18. Ba za ka iya cire 8 daga 2 ba, saboda 2 ya yi kaɗan. Sai ka ɗauki goma ɗaya daga gommai biyar, wurin ɗaya-ɗaya ya zama 12. Yanzu 12 − 8 = 4. Gommai da suka rage sun zama huɗu, sai 4 − 1 = 3. Amsa ita ce 34. Wannan ba ruɗani ba ne; tsari ne. Ka yi tunanin kana da kuɗi ₦52, ka kashe ₦18. Idan ɗaya-ɗaya ba su isa ba, sai ka canja goma ɗaya zuwa ɗaya-ɗaya goma. Haka ɗaukar aro yake taimaka maka ka rage daidai.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi ragi da ɗaukar aro. [MAIN] Idan ɗaya-ɗaya da ke sama sun yi kaɗan, sai mu ɗauki aro daga gommai. A 52 rage 18, 2 ba ta isa a cire 8 ba. Sai wurin ɗaya-ɗaya ya zama 12, kuma gommai biyar su koma gommai huɗu. [PAUSE 1] Nawa ne 52 - 18? [MAIN] Bayan ɗaukar aro, 12 rage 8 ya zama 4. Sai gommai huɗu rage goma ɗaya ya zama gommai uku. Amsa ita ce 34. [PAUSE 2] Idan ɗaya-ɗaya a sama sun yi kaɗan, daga ina ake ɗaukar aro? [OUTRO] Ka tuna: ɗaukar aro yana canja goma ɗaya zuwa ɗaya-ɗaya goma.",
+    "audioFile": "audio/p3-maths-03.mp3",
+    "imageCard": "images/p3-maths-03.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Nawa ne 52 - 18?",
+        "correctAnswer": "34",
+        "options": [
+          "34",
+          "44",
+          "24"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan ɗaya-ɗaya a sama sun yi kaɗan, daga ina ake ɗaukar aro?",
+        "correctAnswer": "gommai",
+        "options": [
+          "gommai",
+          "daruruwa",
+          "sifili"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Nawa ne {a} - {b}?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 300,
+            "max": 999
+          },
+          "b": {
+            "min": 1,
+            "max": 199
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 10",
+          "a - b - 1"
+        ]
+      },
+      {
+        "templateHa": "Musa yana da ₦{a}, ya kashe ₦{b}. Nawa ya rage?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 200,
+            "max": 900
+          },
+          "b": {
+            "min": 20,
+            "max": 150
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 5",
+          "a - b - 5",
+          "a - b + 50"
+        ]
+      },
+      {
+        "templateHa": "Akwai mangwaro {a}, an sayar da {b}. Nawa ya rage?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 250,
+            "max": 800
+          },
+          "b": {
+            "min": 30,
+            "max": 180
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 2",
+          "a - b - 2",
+          "a - b + 20"
+        ]
+      },
+      {
+        "templateHa": "Idan ka rage {b} daga {a}, amsar nawa ce?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 400,
+            "max": 950
+          },
+          "b": {
+            "min": 50,
+            "max": 250
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 100",
+          "a - b - 1"
+        ]
+      },
+      {
+        "templateHa": "A cikin littattafai {a}, an raba {b} ga yara. Nawa ya rage?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 150,
+            "max": 600
+          },
+          "b": {
+            "min": 10,
+            "max": 120
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 3",
+          "a - b - 3",
+          "a - b + 30"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-04",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 4,
+    "titleEn": "Multiplication Tables 2, 3, 4, 5, and 10",
+    "titleHa": "Teburin Ninkawa na 2, 3, 4, 5, da 10",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ninkawa hanya ce ta haɗa adadi iri ɗaya sau da yawa. Idan ka ce 4 × 3, kana nufin rukuni 3 na 4: 4 + 4 + 4 = 12. A P3, yana da muhimmanci ka fara ƙwarewa a teburin 2, 3, 4, 5, da 10. Wannan zai taimaka maka a rarrabawa, kuɗi, lokaci, da auna kaya. Misali, idan kwalbar ruwa ɗaya tana ₦10, kwalabe 5 za su zama ₦50. Idan kujera ɗaya tana da ƙafa 4, kujeru 3 suna da ƙafa 12. Kada ka haddace kawai ba tare da fahimta ba. Ka ga ninkawa a matsayin rukuni-rukuni. Rukuni 5 na abubuwa 2 yana nufin 2 + 2 + 2 + 2 + 2. Idan ka iya ganin rukuni, amsar ninkawa za ta fi fitowa da sauri.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] A yau za mu koyi teburin ninkawa na 2, 3, 4, 5, da 10. [MAIN] Ninkawa yana nufin haɗa adadi iri ɗaya sau da yawa. Idan muka ce 4 sau 3, muna nufin rukuni 3 na 4: 4 + 4 + 4. [PAUSE 1] Nawa ne 4 × 3? [MAIN] Ka tuna da misalai daga gida. Kujeru 3, kowace tana da ƙafa 4, za su ba da ƙafa 12. Kwalabe 5 na ₦10 za su zama ₦50. [PAUSE 2] Idan kwalba ɗaya tana ₦10, kwalabe 5 nawa ne? [OUTRO] Ka riƙa ganin ninkawa a matsayin rukuni-rukuni.",
+    "audioFile": "audio/p3-maths-04.mp3",
+    "imageCard": "images/p3-maths-04.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Nawa ne 4 × 3?",
+        "correctAnswer": "12",
+        "options": [
+          "12",
+          "7",
+          "16"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan kwalba ɗaya tana ₦10, kwalabe 5 nawa ne?",
+        "correctAnswer": "50",
+        "options": [
+          "50",
+          "15",
+          "40"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Nawa ne {a} × {b}?",
+        "answerFormula": "a * b",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 5
+          },
+          "b": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a * b + a",
+          "a * b + 1",
+          "a * b + 10"
+        ]
+      },
+      {
+        "templateHa": "Nawa ne 10 × {a}?",
+        "answerFormula": "10 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "10 * a + 10",
+          "10 * a - 10",
+          "10 * a + 1"
+        ]
+      },
+      {
+        "templateHa": "{a} + {a} + {a} daidai yake da nawa?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "4 * a",
+          "3 * a + 1"
+        ]
+      },
+      {
+        "templateHa": "Kujera {a}, kowace tana da ƙafa 4. Jimlar ƙafa nawa?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "4 * a + 4",
+          "4 * a - 4",
+          "4 * a + 1"
+        ]
+      },
+      {
+        "templateHa": "Rukuni {a}, kowanne yana da abubuwa 5. Jimla nawa?",
+        "answerFormula": "5 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "5 * a + 5",
+          "5 * a - 5",
+          "5 * a + 1"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-05",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 5,
+    "titleEn": "Introduction to Division",
+    "titleHa": "Gabatarwa ga Rarrabawa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Rarrabawa tana nufin rabon abubuwa daidai ko sanya su cikin rukuni daidai. Idan kana da alewa 20, ka raba ga yara 10, kowane yaro zai samu 2. Rarrabawa tana da alaƙa da ninkawa. Idan 10 × 2 = 20, to 20 ÷ 10 = 2. Wannan yana nuna cewa ninkawa da rarrabawa suna taimakon juna. A rayuwa, ana amfani da rarrabawa wajen rabon abinci, kuɗi, littattafai, ko kujeru. Muhimmin abu shi ne adalci: kowane rukuni ya samu adadi iri ɗaya. Idan wani abu ya rage, za ka iya ajiye shi; daga baya za ka koyi yadda ake rubuta saura. A wannan mataki, za mu fara da rabo mai sauƙi wanda ba ya da saura, domin ka fara ganin tsarin da kyau.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu fara koyon rarrabawa. [MAIN] Rarrabawa tana nufin raba abu daidai. Idan akwai alewa 20 ga yara 10, kowane yaro zai samu 2. Wannan yana da alaƙa da ninkawa, saboda 10 sau 2 ya zama 20. [PAUSE 1] Idan an raba alewa 20 ga yara 10 daidai, kowane yaro zai samu nawa? [MAIN] Ka kuma iya tunanin rukuni. Idan abubuwa 30 sun shiga rukuni 5 daidai, kowane rukuni zai samu 6. [PAUSE 2] Idan an raba abubuwa 30 zuwa rukuni 5 daidai, kowane rukuni nawa zai samu? [OUTRO] Ka tuna: rarrabawa na neman rabo daidai.",
+    "audioFile": "audio/p3-maths-05.mp3",
+    "imageCard": "images/p3-maths-05.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Idan an raba alewa 20 ga yara 10 daidai, kowane yaro zai samu nawa?",
+        "correctAnswer": "2",
+        "options": [
+          "2",
+          "10",
+          "20"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan an raba abubuwa 30 zuwa rukuni 5 daidai, kowane rukuni nawa zai samu?",
+        "correctAnswer": "6",
+        "options": [
+          "6",
+          "5",
+          "10"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Idan an raba {a}0 lemo ga yara 10 daidai, kowane yaro zai samu nawa?",
+        "answerFormula": "a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "a + 1",
+          "a + 2",
+          "a + 3"
+        ]
+      },
+      {
+        "templateHa": "Idan an raba {a}5 littafi ga yara 5 daidai, kowane yaro zai samu nawa?",
+        "answerFormula": "2 * a + 1",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 8
+          }
+        },
+        "distractorFormulas": [
+          "2 * a + 2",
+          "2 * a + 3",
+          "2 * a + 4"
+        ]
+      },
+      {
+        "templateHa": "Idan an raba {a}4 wake zuwa rukuni 2 daidai, kowane rukuni zai samu nawa?",
+        "answerFormula": "5 * a + 2",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 8
+          }
+        },
+        "distractorFormulas": [
+          "5 * a + 3",
+          "5 * a + 4",
+          "5 * a + 5"
+        ]
+      },
+      {
+        "templateHa": "Idan an raba {a}0 kobo zuwa rukuni 5 daidai, kowane rukuni zai samu nawa?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "2 * a + 1",
+          "2 * a + 2",
+          "2 * a + 3"
+        ]
+      },
+      {
+        "templateHa": "Idan an raba {a}0 wake zuwa rukuni 2 daidai, kowane rukuni zai samu nawa?",
+        "answerFormula": "5 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "5 * a + 1",
+          "5 * a + 2",
+          "5 * a + 3"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-06",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 6,
+    "titleEn": "Simple Fractions: Half and Quarter",
+    "titleHa": "Sauƙaƙan Kaso: Rabi da Kwata",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Kaso yana nuna wani ɓangare na abu cikakke. Idan ka raba gurasa gida biyu daidai, kowane ɓangare rabi ne. Idan ka raba abu gida huɗu daidai, kowane ɓangare kwata ne. Muhimmin kalma ita ce daidai. Idan rabon bai yi daidai ba, ba za mu kira shi rabi ko kwata daidai ba. A gida, za ka iya ganin kaso lokacin rabon tuwo, lemo, ko takarda. Idan yara biyu sun raba lemo 10 daidai, kowane yaro ya samu 5, wato rabin 10. Idan rukuni huɗu suna da abu iri ɗaya, kowanne rukuni yana wakiltar kwata ɗaya na jimla. Kaso yana taimaka mana mu fahimci rabon adalci. Ka fara da zane ko abubuwa na gaske, sannan ka koma lamba. Idan ka zana da'ira ko murabba'i, rabi da kwata za su fi bayyana.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] A yau za mu koyi rabi da kwata. [MAIN] Rabi yana nufin raba abu gida biyu daidai. Idan lemo 10 ya kasu gida biyu daidai, kowane gida ya samu 5. [PAUSE 1] Rabin 10 nawa ne? [MAIN] Kwata yana nufin raba abu gida huɗu daidai. Idan akwai rukuni huɗu, kowanne rukuni yana wakiltar kwata ɗaya na jimla. [PAUSE 2] Idan abu ya kasu gida huɗu daidai, kowane ɓangare ana kiransa me? [OUTRO] Ka tuna: rabi yana nufin gida biyu daidai; kwata yana nufin gida huɗu daidai.",
+    "audioFile": "audio/p3-maths-06.mp3",
+    "imageCard": "images/p3-maths-06.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Rabin 10 nawa ne?",
+        "correctAnswer": "5",
+        "options": [
+          "5",
+          "2",
+          "10"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan abu ya kasu gida huɗu daidai, kowane ɓangare ana kiransa me?",
+        "correctAnswer": "kwata",
+        "options": [
+          "kwata",
+          "rabi",
+          "jimla"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Rabin {a}0 nawa ne?",
+        "answerFormula": "5 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "5 * a + 1",
+          "5 * a - 1",
+          "5 * a + 5"
+        ]
+      },
+      {
+        "templateHa": "Akwai rukuni 4, kowanne yana da abubuwa {a}. Kwata ɗaya na jimlar abubuwa nawa ne?",
+        "answerFormula": "a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "a + 1",
+          "a + 2",
+          "a + 3"
+        ]
+      },
+      {
+        "templateHa": "Akwai rukuni 4, kowanne yana da abubuwa {a}. Kwata biyu na jimlar abubuwa nawa ne?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "2 * a + 1",
+          "3 * a"
+        ]
+      },
+      {
+        "templateHa": "Idan rabin lemo ya zama {a}, jimlar lemo nawa ce?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "2 * a + 1",
+          "2 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Idan kwata ɗaya na gero ya zama mudu {a}, jimlar mudu nawa ce?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 25
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a",
+          "4 * a + 1"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

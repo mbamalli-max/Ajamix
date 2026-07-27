@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "p6-bsci-01",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 1,
+    "titleEn": "The Solar System and Gravity",
+    "titleHa": "Tsarin Rana da Ƙarfin Jan Ƙasa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tsarin Rana ya ƙunshi Rana da duniyoyi takwas da suke kewaye da ita. Rana tauraro ce, kuma ita ce babban tushen haske da zafi ga duniyoyin tsarinmu. Ƙasa ita ce duniyar da muke rayuwa a kanta. Wata yana kewaye da Ƙasa, amma ba ya samar da haskensa; yana nuna hasken Rana ne. Duniyoyi suna da girma da nisa dabam, saboda haka ƙaramin samfurin aji ba zai nuna dukkan nisan gaskiya ba. Ƙarfin jan Ƙasa yana jawo abubuwa zuwa gare ta. Idan ƙwallo mai laushi ta kubuce daga hannu, tana komawa ƙasa saboda wannan jan. Tare da malami, ku tsara ƙwallaye masu girma dabam domin nuna jerin duniyoyi, ku rubuta abin da samfurin yake nunawa da abin da bai nuna daidai ba. Kada a jefa duwatsu ko abubuwa masu nauyi. Hujja mai kyau tana fitowa daga lura da abin da ya faru sau da yawa, ba daga zato kawai ba.",
+    "audioScript": "[INTRO] Sannu da zuwa. Yau za mu koyi Tsarin Rana da ƙarfin jan Ƙasa. [MAIN] Tsarin Rana ya ƙunshi Rana da duniyoyi takwas da suke kewaye da ita. Rana tauraro ce kuma babban tushen haske da zafi ga tsarinmu. Ƙasa ita ce duniyarmu, Wata kuma yana kewaye da Ƙasa. Wata ba ya samar da haskensa; yana nuna hasken Rana ne. [PAUSE 1] Wace duniyar ce muke rayuwa a kanta? [MAIN] Ƙarfin jan Ƙasa yana jawo abubuwa zuwa gare ta. Idan ƙwallo mai laushi ta kubuce, tana komawa ƙasa. Samfurin ƙwallaye zai iya nuna jerin duniyoyi, amma ba zai nuna dukkan nisan gaskiya ba. A lura sau da yawa, a rubuta sakamako, kuma kada a jefa dutse ko abu mai nauyi. [PAUSE 2] Me ke jawo ƙwallo ta koma ƙasa? [OUTRO] Ka bambanta abin da samfurin yake nunawa da abin da hujjar lura take tabbatarwa.",
+    "audioFile": "audio/p6-bsci-01.mp3",
+    "imageCard": "images/p6-bsci-01.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wace duniyar ce muke rayuwa a kanta?",
+        "correctAnswer": "Ƙasa",
+        "options": ["Ƙasa", "Rana", "Wata"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ke jawo ƙwallo ta koma ƙasa?",
+        "correctAnswer": "ƙarfin jan Ƙasa",
+        "options": ["ƙarfin jan Ƙasa", "hasken Wata", "launin ƙwallo"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne Rana a Tsarin Rana?",
+        "answerFormula": "tauraro",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["duniya", "wata", "gajimare"]
+      },
+      {
+        "templateHa": "Duniyoyi nawa ne suke kewaye da Rana a tsarinmu?",
+        "answerFormula": "takwas",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["biyu", "huɗu", "goma sha biyu"]
+      },
+      {
+        "templateHa": "Daga ina Wata yake samun hasken da muke gani?",
+        "answerFormula": "yana nuna hasken Rana",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["yana ƙona mai", "yana samar da wutarsa", "yana karɓa daga gajimare"]
+      },
+      {
+        "templateHa": "Wane iyaka ƙaramin samfurin duniyoyi yake da shi?",
+        "answerFormula": "ba ya nuna dukkan nisan gaskiya",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["shi ne tsarin gaskiya", "yana sa duniyoyi su tsaya", "yana canza Rana zuwa Wata"]
+      },
+      {
+        "templateHa": "Wace lura ce take ba da hujjar ƙarfin jan Ƙasa?",
+        "answerFormula": "ƙwallo mai laushi tana komawa ƙasa idan ta kubuce",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["ƙwallo tana canza launi", "ƙwallo tana zama tauraro", "ƙwallo tana haskaka ɗaki"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-02",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 2,
+    "titleEn": "Earth's Movements, Day and Night",
+    "titleHa": "Juyawar Ƙasa da Samuwar Rana da Dare",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ƙasa tana motsi ta hanyoyi biyu masu muhimmanci. Tana juyawa a kanta, kuma cikakkiyar juyawa tana ɗaukar kusan sa'o'i ashirin da huɗu. Gefen Ƙasa da yake fuskantar Rana yana samun hasken rana, ɗayan gefen kuma yana cikin dare. Ƙasa kuma tana kewaye da Rana; cikakken kewaye yana ɗaukar kusan shekara guda. Ana iya amfani da ƙwallo da fitila domin yin samfurin rana da dare, amma fitilar ba ita ce Rana ta gaske ba, kuma girma da nisan samfurin ba daidai suke da gaskiya ba. Kusufin Rana yana faruwa idan Wata ya toshe wani hasken Rana da yake isa Ƙasa. Husufin Wata yana faruwa idan inuwar Ƙasa ta faɗa kan Wata. Kada ka taɓa kallon Rana kai tsaye, ko da lokacin kusufin Rana, domin hakan yana iya cutar da ido. Ka zana inda haske ya faɗa a samfurin, ka kwatanta sakamakon, sannan ka bayyana hujjarka daga abin da ka lura.",
+    "audioScript": "[INTRO] Yau za mu koyi juyawar Ƙasa da samuwar rana da dare. [MAIN] Ƙasa tana juyawa a kanta cikin kusan sa'o'i ashirin da huɗu. Gefen da yake fuskantar Rana yana cikin hasken rana, ɗayan gefen kuma yana cikin dare. Ƙasa tana kuma kewaye da Rana cikin kusan shekara guda. [PAUSE 1] Me ke jawo sauyin rana zuwa dare? [MAIN] Ƙwallo da fitila suna iya zama samfurin Ƙasa da Rana, amma ba su nuna girma da nisan gaskiya ba. A kusufin Rana, Wata yana toshe wani hasken Rana; a husufin Wata, inuwar Ƙasa tana faɗa kan Wata. Kada ka kalli Rana kai tsaye ko da lokacin kusufin Rana. [PAUSE 2] Me ya sa ba za a kalli Rana kai tsaye ba? [OUTRO] Ka yi amfani da samfurin domin bayani, amma ka tuna iyakarsa da tsaron ido.",
+    "audioFile": "audio/p6-bsci-02.mp3",
+    "imageCard": "images/p6-bsci-02.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me ke jawo sauyin rana zuwa dare?",
+        "correctAnswer": "juyawar Ƙasa a kanta",
+        "options": ["juyawar Ƙasa a kanta", "ruwan sama", "girgizar iska"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya sa ba za a kalli Rana kai tsaye ba?",
+        "correctAnswer": "tana iya cutar da ido",
+        "options": ["tana iya cutar da ido", "tana hana ruwa gudu", "tana canza sa'a"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Kusan tsawon nawa Ƙasa take yi wajen juyawa sau ɗaya a kanta?",
+        "answerFormula": "sa'o'i ashirin da huɗu",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["sa'a ɗaya", "kwana bakwai", "wata ɗaya"]
+      },
+      {
+        "templateHa": "Me gefen Ƙasa da yake fuskantar Rana yake samu?",
+        "answerFormula": "hasken rana",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["dare kawai", "ƙanƙara kullum", "babu haske"]
+      },
+      {
+        "templateHa": "Kusan tsawon nawa Ƙasa take yi wajen kewaye Rana sau ɗaya?",
+        "answerFormula": "shekara guda",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["sa'o'i biyu", "kwana ɗaya", "mako guda"]
+      },
+      {
+        "templateHa": "Me samfurin ƙwallo da fitila ba ya nuna daidai?",
+        "answerFormula": "ainihin girma da nisa",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["inda haske ya faɗa", "inda inuwa take", "juyawar ƙwallo"]
+      },
+      {
+        "templateHa": "Wane matakin tsaro ya fi muhimmanci lokacin koyon kusufin Rana?",
+        "answerFormula": "kada a kalli Rana kai tsaye",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a kalli Rana ba tare da kariya ba", "a yi amfani da madubi domin kallo", "a tsaya ana kallonta na dogon lokaci"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-03",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 3,
+    "titleEn": "Weather Symbols, Climate Records, and Change",
+    "titleHa": "Alamomin Yanayi da Rubuta Sauye-sauyensa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Yanayin rana yana iya zama mai zafi, sanyi, iska, gajimare, ko ruwan sama. Alamomi masu sauƙi suna taimaka mana mu rubuta waɗannan bayanai a jadawali. Amma yanayin da aka saba gani na dogon lokaci ba a gane shi daga rana ɗaya kawai; ana buƙatar bayanai na makonni, watanni, da shekaru. A Najeriya, damina, rani, da hunturu, wanda ake kuma kira harmattan, suna shafar noma, ruwa, tafiya, da lafiya. Sauyin dogon yanayi na iya ƙara tsananin zafi, fari, ambaliya, ko sauyin lokacin ruwan sama, amma ba za mu ce rana guda mai zafi ita kaɗai ta tabbatar da wannan ba. Ku lura da gajimare, iska, da ruwan sama a lokaci ɗaya kowace rana na mako guda, ku yi amfani da alama ɗaya ga kowane yanayi, sannan ku kwatanta ranaku. Kada a fita cikin tsawa, ambaliya, ko zafi mai tsanani domin tattara bayani. Hujja tana ƙarfafa idan an maimaita lura kuma an rubuta ta daidai.",
+    "audioScript": "[INTRO] Yau za mu koyi alamomin yanayi da yadda ake rubuta sauye-sauye. [MAIN] Yanayin rana yana iya zama mai zafi, sanyi, iska, gajimare, ko ruwan sama. Alamomi suna taimaka mana mu rubuta bayanai a jadawali. Yanayin da aka saba gani na dogon lokaci yana bukatar bayanai masu yawa, ba rana ɗaya kawai ba. [PAUSE 1] Me ya sa rana guda ba ta isa a yanke hukunci kan sauyin dogon yanayi ba? [MAIN] A Najeriya damina, rani, da hunturu ko harmattan suna shafar noma, ruwa, da tafiya. Ku lura a lokaci ɗaya kowace rana, ku rubuta alama, ku kwatanta sakamako. Kada a fita cikin tsawa, ambaliya, ko zafi mai tsanani. [PAUSE 2] Wace hanya ce take ƙarfafa hujjar lura da yanayi? [OUTRO] Bayanai masu maimaituwa suna taimaka mana mu bambanta sauyin rana da sauyin dogon lokaci.",
+    "audioFile": "audio/p6-bsci-03.mp3",
+    "imageCard": "images/p6-bsci-03.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me ya sa rana guda ba ta isa a yanke hukunci kan sauyin dogon yanayi ba?",
+        "correctAnswer": "ana buƙatar bayanai na dogon lokaci",
+        "options": ["ana buƙatar bayanai na dogon lokaci", "alama ba ta da amfani", "ruwan sama ba yanayi ba ne"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wace hanya ce take ƙarfafa hujjar lura da yanayi?",
+        "correctAnswer": "maimaita lura a rubuta sakamako",
+        "options": ["maimaita lura a rubuta sakamako", "yin zato ba tare da lura ba", "canza lokacin lura kullum"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me alamomin yanayi suke taimaka mana mu yi?",
+        "answerFormula": "rubuta bayanan yanayi",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["dakatar da iska", "hana Rana fitowa", "samar da gajimare"]
+      },
+      {
+        "templateHa": "Wane lokaci a Najeriya yake yawan kawo ƙura da busasshiyar iska?",
+        "answerFormula": "hunturu ko harmattan",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["damina", "tsakiyar dare", "lokacin girbi kawai"]
+      },
+      {
+        "templateHa": "Wane abu ne zai iya zama sakamakon sauyin dogon yanayi?",
+        "answerFormula": "ƙarin tsananin fari ko ambaliya",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["duk rana ta zama iri ɗaya", "iska ta daina wanzuwa", "Rana ta daina haskawa"]
+      },
+      {
+        "templateHa": "Yaushe ya fi dacewa a yi lura domin kwatantawa ta zama mai kyau?",
+        "answerFormula": "a lokaci ɗaya kowace rana",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a lokaci dabam ba tare da rubutu ba", "sau ɗaya kawai", "lokacin tsawa a fili"]
+      },
+      {
+        "templateHa": "Wane mataki ne ya haɗa binciken yanayi da tsaro?",
+        "answerFormula": "a lura daga wuri mai aminci a guji tsawa da ambaliya",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a shiga ambaliya domin auna ruwa", "a tsaya a fili lokacin tsawa", "a yi tafiya cikin zafi mai tsanani"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-04",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 4,
+    "titleEn": "Forces and Friction",
+    "titleHa": "Ƙarfi da Guga Tsakanin Abubuwa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ƙarfi na iya zama tura ko ja, kuma yana iya fara motsi, dakatar da shi, sauya saurinsa, alkiblarsa, ko siffar abu. Ƙarfin jan Ƙasa yana jawo abubuwa ƙasa, maganadisu kuma yana iya jan wasu kayan ƙarfe ba tare da taɓawa ba. Guga yana faruwa idan saman abubuwa biyu suna shafar juna suna hana zamewa cikin sauƙi. Guga yana taimaka mana mu yi tafiya, takalmin mota ya kama hanya, birki kuma ya rage motsi. Amma guga mai yawa yana iya sa zafi ko goge saman abu. Domin yin kwatanci mai adalci, a tura abu ɗaya a kan saman biyu, a fara daga wuri ɗaya, a yi amfani da tura iri ɗaya, sannan a canza saman kawai. A auna nisan da abin ya yi, a maimaita gwajin, a kwatanta sakamako. Yi amfani da ƙaramin abin wasa ko kwalba marar kaifi; kada a yi amfani da mota, wuƙa, kayan nauyi, ko gangara mai haɗari.",
+    "audioScript": "[INTRO] Yau za mu koyi ƙarfi da guga tsakanin abubuwa. [MAIN] Ƙarfi na iya zama tura ko ja. Yana iya fara motsi, dakatar da shi, ko sauya sauri, alkibla, da siffa. Guga yana hana saman abubuwa biyu zamewa cikin sauƙi. Yana taimaka wa tafiya da birki, amma yana iya haifar da zafi da goge saman abu. [PAUSE 1] Wane amfani guga yake da shi wajen tafiya? [MAIN] A kwatanci mai adalci, a yi amfani da abu ɗaya da tura iri ɗaya, a canza saman kawai. A auna nisa, a maimaita, a rubuta sakamako. Yi amfani da ƙaramin abin wasa, ba mota ko kayan nauyi ba. [PAUSE 2] Me ya kamata a canza kawai yayin kwatanta guga a saman biyu? [OUTRO] Ka sarrafa abin da kake canzawa domin sakamakon ya zama hujja mai kyau.",
+    "audioFile": "audio/p6-bsci-04.mp3",
+    "imageCard": "images/p6-bsci-04.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane amfani guga yake da shi wajen tafiya?",
+        "correctAnswer": "yana hana ƙafa zamewa",
+        "options": ["yana hana ƙafa zamewa", "yana kashe haske", "yana samar da ruwa"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata a canza kawai yayin kwatanta guga a saman biyu?",
+        "correctAnswer": "nau'in saman",
+        "options": ["nau'in saman", "abin da ake turawa", "wurin farawa da tura"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane misali ne na ƙarfi?",
+        "answerFormula": "tura ko ja",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["launi ko wari", "rana ko dare", "sauti ko shiru"]
+      },
+      {
+        "templateHa": "Me guga yake yi tsakanin saman abubuwa?",
+        "answerFormula": "yana rage zamewa cikin sauƙi",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["yana mayar da abu ruwa", "yana samar da hasken Rana", "yana cire nauyin abu"]
+      },
+      {
+        "templateHa": "Wane lahani guga mai yawa zai iya yi?",
+        "answerFormula": "yana iya sa zafi ko goge saman abu",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["yana hana kowane motsi har abada", "yana samar da iska", "yana ƙara girman abu"]
+      },
+      {
+        "templateHa": "Me ya sa ake maimaita gwajin nisan motsi?",
+        "answerFormula": "domin a ƙarfafa amincin sakamako",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["domin a canza dukkan abubuwa", "domin a guji rubuta sakamako", "domin a sa abu ya yi nauyi"]
+      },
+      {
+        "templateHa": "Wane tsari ne ya sa kwatancin saman biyu ya zama mai adalci?",
+        "answerFormula": "a riƙe abu da tura iri ɗaya a canza saman kawai",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a canza abu da tura da saman lokaci guda", "a yi amfani da mota a hanya", "a yi zato ba tare da aunawa ba"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-05",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 5,
+    "titleEn": "The Heart, Blood Vessels, and Circulation",
+    "titleHa": "Zuciya, Jijiyoyin Jini, da Zagayawar Jini",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Zuciya tsoka ce da take tura jini ya zagaya jiki. Manyan jijiyoyin da ke kai jini daga zuciya suna rarraba shi zuwa sassan jiki, waɗanda ke dawo da jini kuma suna mayar da shi zuwa zuciya. Ƙananan jijiyoyi masu matuƙar siriri suna haɗa hanyoyin biyu a cikin sassan jiki. Jini yana taimakawa wajen kai iskar da jiki ke bukata da sinadaran abinci, sannan yana ɗaukar wasu abubuwan da jiki zai fitar. Wannan tsari yana aiki tare da numfashi da narkewar abinci; ba kowane sashe yake aiki shi kaɗai ba. Tare da babba, za ka iya jin bugawar jijiya a wuyan hannu kafin da bayan tafiya a hankali na ɗan lokaci, ka ƙirga na daƙiƙa talatin, ka rubuta sakamako, ka kwatanta. Wannan lura ba gwajin cuta ba ne. Kada ka matsa wuya, kada ka yi motsa jiki mai tsanani, kuma kada ka fassara sakamakon a matsayin ganewar lafiya. Idan kana jin ciwo ko jiri, ka tsaya ka sanar da babba ko ma'aikacin lafiya.",
+    "audioScript": "[INTRO] Yau za mu koyi zuciya, jijiyoyin jini, da zagayawar jini. [MAIN] Zuciya tsoka ce da take tura jini. Wasu manyan jijiyoyi suna kai jini daga zuciya, wasu suna dawo da shi, ƙananan jijiyoyi kuma suna haɗa hanyoyin a sassan jiki. Jini yana kai iskar da jiki ke bukata da sinadaran abinci. [PAUSE 1] Mene ne babban aikin zuciya a wannan tsari? [MAIN] Tare da babba, za a iya jin bugawar jijiya a wuyan hannu kafin da bayan tafiya a hankali, a ƙirga da rubuta sakamako. Wannan lura ba ganewar cuta ba ce. Kada a matsa wuya ko a yi motsi mai tsanani. Idan kana jin ciwo ko jiri, ka tsaya ka sanar da babba. [PAUSE 2] Me za ka yi idan ka ji jiri yayin lura da bugawar jijiya? [OUTRO] Zagayawar jini tsarin haɗin gwiwa ne, kuma lura mai aminci ba ya maye gurbin ma'aikacin lafiya.",
+    "audioFile": "audio/p6-bsci-05.mp3",
+    "imageCard": "images/p6-bsci-05.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Mene ne babban aikin zuciya a wannan tsari?",
+        "correctAnswer": "tura jini ya zagaya jiki",
+        "options": ["tura jini ya zagaya jiki", "narkar da abinci", "samar da ƙashi"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me za ka yi idan ka ji jiri yayin lura da bugawar jijiya?",
+        "correctAnswer": "ka tsaya ka sanar da babba",
+        "options": ["ka tsaya ka sanar da babba", "ka ci gaba da gudu", "ka ɓoye abin da ka ji"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wace hanya ce take kai jini daga zuciya zuwa sassan jiki?",
+        "answerFormula": "manyan jijiyoyin da ke fita daga zuciya",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["bututun abinci", "ƙasusuwan hannu", "haƙoran baki"]
+      },
+      {
+        "templateHa": "Me ƙananan jijiyoyi masu siriri suke yi?",
+        "answerFormula": "suna haɗa hanyoyin jini a sassan jiki",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["suna niƙa abinci", "suna samar da ƙashi", "suna buɗe ƙofa"]
+      },
+      {
+        "templateHa": "Wane abu jini yake kaiwa sassan jiki?",
+        "answerFormula": "iskar da jiki ke bukata da sinadaran abinci",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["yashi da dutse", "fensir da takarda", "hasken fitila da amo"]
+      },
+      {
+        "templateHa": "Me lura da bugawar jijiya a aji ba zai iya yi ba?",
+        "answerFormula": "ba zai iya gano cuta ba",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["zai iya ba da adadin da aka ƙirga", "zai iya ba da kwatanci biyu", "zai iya koyar da rubuta sakamako"]
+      },
+      {
+        "templateHa": "Wane tsari ne ya fi aminci wajen kwatanta bugawar jijiya?",
+        "answerFormula": "a lura tare da babba kafin da bayan tafiya a hankali",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a yi gudu mai tsanani kai kaɗai", "a matsa wuya da ƙarfi", "a ci gaba ko da ana jin jiri"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-06",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 6,
+    "titleEn": "Puberty, Hygiene, and Body Privacy",
+    "titleHa": "Balaga, Tsafta, da Sirrin Jiki",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Balaga mataki ne na girma daga yarinta zuwa samartaka. A wannan lokaci jiki da yadda mutum yake ji suna iya sauyawa. Mutum na iya ƙara tsawo, samun gashin hammata da na sassan jiki da ake rufewa, yawan zufa, ko canjin fata. Muryar wasu samari tana zurfafa; nonon wasu 'yan mata yana girma kuma jinin al'ada yana iya farawa. Lokacin da waɗannan sauye-sauye suke farawa ya bambanta daga mutum zuwa mutum, don haka bai dace a yi wa wani dariya ba. Tsafta tana haɗa wanka, sa tufafi masu tsabta, wanke hannu, da kula da kayan jinin al'ada cikin tsabta. Sassan jiki da ake rufewa na sirri ne. Idan wani ya nemi taɓawa ko nuna maka abin da ya sa ka ji tsoro ko rashin daɗi, ka matsa zuwa wuri mai aminci ka sanar da babban mutum da ka amince da shi. Tambayar lafiya a kai ga iyaye, malami, ko ma'aikacin lafiya da ake amincewa da shi.",
+    "audioScript": "[INTRO] Yau za mu koyi balaga, tsafta, da sirrin jiki. [MAIN] Balaga mataki ne na girma daga yarinta zuwa samartaka. Jiki na iya ƙara tsawo, samun gashi a wasu wurare, yawan zufa, ko canjin fata. Muryar wasu samari tana zurfafa; wasu 'yan mata kuma suna fara jinin al'ada. Lokaci ya bambanta ga kowa, don haka ba a yi wa wani dariya. [PAUSE 1] Me ya sa bai dace a yi wa wani dariya saboda sauyin balaga ba? [MAIN] A kula da wanka, tufafi masu tsabta, wanke hannu, da kayan jinin al'ada. Sassan da ake rufewa na sirri ne. Idan wani abu ya sa ka ji tsoro ko rashin daɗi, ka matsa zuwa wuri mai aminci ka sanar da babban mutum da ka amince da shi. [PAUSE 2] Wa za ka tambaya idan kana da tambayar lafiya game da balaga? [OUTRO] Sauyin balaga na al'ada ne; tsafta, mutunta juna, da neman taimako suna kare lafiya.",
+    "audioFile": "audio/p6-bsci-06.mp3",
+    "imageCard": "images/p6-bsci-06.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Me ya sa bai dace a yi wa wani dariya saboda sauyin balaga ba?",
+        "correctAnswer": "lokacin sauyin ya bambanta ga kowa",
+        "options": ["lokacin sauyin ya bambanta ga kowa", "kowa yana sauyawa rana ɗaya", "sauyin ba na girma ba ne"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wa za ka tambaya idan kana da tambayar lafiya game da balaga?",
+        "correctAnswer": "babban mutum ko ma'aikacin lafiya da na amince da shi",
+        "options": ["babban mutum ko ma'aikacin lafiya da na amince da shi", "duk wani baƙo", "wanda zai yi mini dariya"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne balaga?",
+        "answerFormula": "matakin girma daga yarinta zuwa samartaka",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["cutar da kowa ke kamuwa da ita", "ranar da kowa yake sauyawa tare", "nau'in wasan motsa jiki"]
+      },
+      {
+        "templateHa": "Wane sauyi zai iya faruwa lokacin balaga?",
+        "answerFormula": "ƙara tsawo ko yawan zufa",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["daina girma gaba ɗaya", "rasa dukkan gashi nan take", "canza mutum zuwa dabba"]
+      },
+      {
+        "templateHa": "Wane aiki yana taimaka wa tsafta lokacin balaga?",
+        "answerFormula": "wanka da sa tufafi masu tsabta",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["ɓoye tufafi masu datti", "ƙin wanke hannu", "amfani da kayan wani ba tare da izini ba"]
+      },
+      {
+        "templateHa": "Me za ka yi idan wani ya sa ka ji tsoro game da sirrin jikinka?",
+        "answerFormula": "ka matsa zuwa wuri mai aminci ka sanar da babban mutum da ka amince da shi",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["ka zauna a wurin kai kaɗai", "ka ɓoye tsoron har abada", "ka bi baƙon ba tare da tambaya ba"]
+      },
+      {
+        "templateHa": "Wane hali ne yake nuna mutunta bambancin balaga?",
+        "answerFormula": "kada a yi wa wani dariya saboda lokacin sauyinsa",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a matsa wa kowa ya sauya tare", "a yaɗa sirrin jikin wani", "a kira sauyin al'ada cuta"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-07",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 7,
+    "titleEn": "Human Reproduction, Growth, and Development",
+    "titleHa": "Haihuwar Ɗan Adam, Girma, da Ci Gaba",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Haihuwar ɗan Adam hanya ce ta samuwar sabon rai. Tsarin haihuwar namiji yana da sassan da ke samar da ƙwayoyin halittar namiji da kuma ɗaukar su. Tsarin mace yana da sassan da ke samar da ƙwayar halittar mace, da mahaifa inda jariri yake girma kafin haihuwa. Samuwar ciki tana farawa idan ƙwayar halittar namiji ta haɗu da ƙwayar halittar mace. Ƙwayar da ta samu tana rarrabuwa, ta manne a mahaifa, sannan ta ci gaba da girma a hankali. Uwa tana ba jaririn da ke girma kariya da abubuwan gina jiki ta hanyar jikinta har zuwa haihuwa. Wannan bayani na kimiyya ne, ba umarnin yin wani aiki ba. A yi amfani da zanen da malami ya amince da shi kawai; kada ɗalibai su binciki jikin juna ko su nemi hotunan da ba su dace ba. Idan kana da tambaya ta kanka, ka tambayi iyaye, malami, ko ƙwararren ma'aikacin lafiya da ka amince da shi.",
+    "audioScript": "[INTRO] Yau za mu koyi haihuwar ɗan Adam, girma, da ci gaba. [MAIN] Tsarin haihuwar namiji yana samarwa da ɗaukar ƙwayoyin halittar namiji. Tsarin mace yana samar da ƙwayar halittar mace, kuma mahaifa ita ce inda jariri yake girma kafin haihuwa. [PAUSE 1] Ina jariri yake girma kafin haihuwa? [MAIN] Samuwar ciki tana farawa idan ƙwayoyin halittar namiji da mace sun haɗu. Ƙwayar da ta samu tana rarrabuwa ta girma a mahaifa. Wannan bayani na kimiyya ne, ba umarnin wani aiki ba. A yi amfani da zanen da malami ya amince da shi, kada ɗalibai su binciki jikin juna. [PAUSE 2] Wa ya dace ka tambaya idan kana da tambaya ta kanka? [OUTRO] Ilimin haihuwa yana bayyana yadda sabon rai yake girma, cikin mutunci da tsaron sirrin jiki.",
+    "audioFile": "audio/p6-bsci-07.mp3",
+    "imageCard": "images/p6-bsci-07.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Ina jariri yake girma kafin haihuwa?",
+        "correctAnswer": "a mahaifa",
+        "options": ["a mahaifa", "a zuciya", "a huhu"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wa ya dace ka tambaya idan kana da tambaya ta kanka?",
+        "correctAnswer": "babban mutum ko ma'aikacin lafiya da na amince da shi",
+        "options": ["babban mutum ko ma'aikacin lafiya da na amince da shi", "duk wani baƙo", "wanda zai yaɗa sirrina"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne haihuwar ɗan Adam a wannan darasi?",
+        "answerFormula": "hanyar samuwar sabon rai",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["hanyar narkar da abinci", "hanyar samar da haske", "hanyar auna iska"]
+      },
+      {
+        "templateHa": "Me ake bukata domin samuwar ciki ta fara?",
+        "answerFormula": "haɗuwar ƙwayoyin halittar namiji da mace",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["haɗuwar ƙashi da tsoka", "haɗuwar iska da ruwa", "haɗuwar gashi da fata"]
+      },
+      {
+        "templateHa": "Wane aiki mahaifa take yi?",
+        "answerFormula": "tana ba jariri wurin girma kafin haihuwa",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["tana niƙa abinci", "tana tura jini kamar zuciya", "tana tace iska kamar huhu"]
+      },
+      {
+        "templateHa": "Wane kayan koyo ya dace da wannan darasi?",
+        "answerFormula": "zanen kimiyya da malami ya amince da shi",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["binciken jikin wani ɗalibi", "hoton da ba a san tushensa ba", "tilasta wa wani ya nuna jikinsa"]
+      },
+      {
+        "templateHa": "Wace magana ce take kare sirri yayin koyon haihuwa?",
+        "answerFormula": "ba a binciken jikin ɗalibai kuma ana tambayar amintaccen babba",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a yaɗa tambayar wani a fili", "a tilasta wa kowa ya ba da labarinsa", "a ɗauki bayani a matsayin umarnin aiki"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-08",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 8,
+    "titleEn": "Air Pressure and Its Uses",
+    "titleHa": "Matsin Iska da Amfaninsa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Iska tana ɗaukar wuri kuma tana matsawa a kowane ɓangare, ko da ba ma ganinta. Wannan turawa ake kira matsin iska. Idan ka matse kwalbar filastik marar komai da murfinta a rufe, iskar cikinta tana turawa ta hana kwalbar matsewa cikin sauƙi. Idan aka buɗe murfin, iska tana iya fita. Famfon keke yana matsar da iska zuwa cikin taya, matsin iskar kuma yana sa tayar ta tsaya da ƙarfi. Bututun tsotsa yana aiki ne saboda bambancin matsin iska, ba domin ruwa yana hawa da kansa ba. Iska mai motsi tana taimaka wa jirgin ruwa mai ƙyallen da yake kama iska, jirgin takarda, da injin iska su motsa ko yin aiki. Siffa, nauyi, da saurin iska duka suna da tasiri. A kwatanta takardu biyu masu siffa dabam a ƙarƙashin kulawar malami, a rubuta wadda ta fi daɗe a sama. Kada a hura kwalba mai ƙarfi, a dumama rufaffiyar kwalba, ko a yi gwaji da wuta.",
+    "audioScript": "[INTRO] Yau za mu koyi matsin iska da amfaninsa. [MAIN] Iska tana ɗaukar wuri kuma tana matsawa a kowane ɓangare. Idan kwalbar filastik tana rufe, iskar cikinta tana turawa. Famfon keke yana matsar da iska zuwa cikin taya, matsin iskar kuma yana sa taya ta tsaya. [PAUSE 1] Mene ne matsin iska? [MAIN] Bambancin matsin iska yana taimaka wa bututun tsotsa. Iska mai motsi kuma tana taimaka wa ƙyallen jirgin ruwa, jirgin takarda, ko injin iska. Siffa da nauyi suna canza yadda abu yake motsi a iska. Kada a dumama rufaffiyar kwalba ko a yi gwaji da wuta. [PAUSE 2] Me ya sa ba za a dumama rufaffiyar kwalba ba? [OUTRO] Iska ba komai ba ce; tana ɗaukar wuri, tana matsawa, kuma ana amfani da ita cikin aminci.",
+    "audioFile": "audio/p6-bsci-08.mp3",
+    "imageCard": "images/p6-bsci-08.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Mene ne matsin iska?",
+        "correctAnswer": "turawar da iska take yi a kowane ɓangare",
+        "options": ["turawar da iska take yi a kowane ɓangare", "launin da iska take da shi", "sautin da ruwa yake yi"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya sa ba za a dumama rufaffiyar kwalba ba?",
+        "correctAnswer": "matsi na iya ƙaruwa ya haifar da haɗari",
+        "options": ["matsi na iya ƙaruwa ya haifar da haɗari", "iska za ta zama abinci", "kwalbar za ta zama takarda"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane abu ne gaskiya game da iska?",
+        "answerFormula": "tana ɗaukar wuri kuma tana matsawa",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["ba ta ɗaukar wuri", "ana ganinta koyaushe", "ba ta iya motsa abu"]
+      },
+      {
+        "templateHa": "Me famfon keke yake yi?",
+        "answerFormula": "yana matsar da iska zuwa cikin taya",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["yana mayar da iska ruwa", "yana cire dukkan iska daga duniya", "yana samar da ƙarfe"]
+      },
+      {
+        "templateHa": "Me ke taimaka wa bututun tsotsa ya ɗaga ruwa?",
+        "answerFormula": "bambancin matsin iska",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["launin bututun", "nauyin tebur", "sautin murya"]
+      },
+      {
+        "templateHa": "Wane abu yana shafar motsin takarda a iska?",
+        "answerFormula": "siffarta da nauyinta",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["sunanta kawai", "ranar mako kawai", "launin bango kawai"]
+      },
+      {
+        "templateHa": "Wane gwajin matsin iska ne bai dace da ɗalibi ba?",
+        "answerFormula": "dumama rufaffiyar kwalba ko amfani da wuta",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["lura da kwalbar filastik marar kaifi", "kwatanta takardu tare da malami", "rubuta sakamakon lura"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-09",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 9,
+    "titleEn": "Nigeria's Mineral Resources and Responsible Use",
+    "titleHa": "Albarkatun Ma'adinai na Najeriya da Amfani Mai Alhaki",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ma'adinai abubuwa ne na halitta da ake samu a cikin ƙasa ko duwatsu. Najeriya tana da ma'adinai iri-iri, kamar zinariya, kwal, dutsen ƙarfe, dutsen farar ƙasa, gishiri, da ɗanyen mai. Wasu daskararru ne, ɗanyen mai kuma ruwa ne. Ana iya kwatanta samfurin da malami ya tabbatar ko hotuna ta launi, sheƙi, tauri, da siffa, amma ba kowane abu ake taɓawa ko shaƙa ba. Ma'adinai suna taimaka wa masana'antu, gini, sufuri, samar da aiki, da tattalin arziki. Amma yawancinsu ba sa sabuntawa cikin ɗan lokaci; idan an ƙare su, ba sa dawowa da sauri. Hakar da ba ta da kulawa na iya lalata ƙasa, gurɓata ruwa, ko cutar da al'umma. Amfani mai alhaki yana haɗa rage ɓarna, sake sarrafa ƙarfe, kare ruwa, gyara wurin da aka haƙa, da bin dokokin tsaro. A yi nazari da hotuna ko samfurin da aka rufe; kada ɗalibi ya shiga ma'adana, ya taɓa ɗanyen mai, ya ɗanɗana dutse, ko ya ƙona wani samfurin.",
+    "audioScript": "[INTRO] Yau za mu koyi albarkatun ma'adinai na Najeriya da amfani mai alhaki. [MAIN] Ma'adinai abubuwa ne na halitta da ake samu a ƙasa ko duwatsu. Misalai sun haɗa da zinariya, kwal, dutsen ƙarfe, dutsen farar ƙasa, gishiri, da ɗanyen mai. Wasu daskararru ne, ɗanyen mai kuma ruwa ne. [PAUSE 1] Wane daga cikin ma'adinan nan yake ruwa? [MAIN] Ma'adinai suna taimaka wa masana'antu, gini, sufuri, da tattalin arziki, amma yawancinsu ba sa dawowa da sauri. A rage ɓarna, a sake sarrafa ƙarfe, a kare ruwa, a gyara wurin haƙa. Kada ɗalibi ya shiga ma'adana, ya taɓa ɗanyen mai, ko ya ƙona samfurin. [PAUSE 2] Wane aiki yake nuna amfani mai alhaki? [OUTRO] Albarkatun ƙasa suna da amfani, amma darajarsu tana tare da kare mutane da muhalli.",
+    "audioFile": "audio/p6-bsci-09.mp3",
+    "imageCard": "images/p6-bsci-09.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane daga cikin ma'adinan nan yake ruwa?",
+        "correctAnswer": "ɗanyen mai",
+        "options": ["ɗanyen mai", "dutsen ƙarfe", "gishiri"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane aiki yake nuna amfani mai alhaki?",
+        "correctAnswer": "sake sarrafa ƙarfe da kare ruwa",
+        "options": ["sake sarrafa ƙarfe da kare ruwa", "zubar da mai a kogi", "barin ramin haƙa a buɗe"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne ma'adinai?",
+        "answerFormula": "abubuwan halitta da ake samu a ƙasa ko duwatsu",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["duk abin da aka yi da filastik", "duk abincin da ake dafawa", "duk ruwan da aka tara a gida"]
+      },
+      {
+        "templateHa": "Wane rukuni ne dutsen ƙarfe yake ciki?",
+        "answerFormula": "yana cikin ma'adinai masu tauri",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["ma'adini mai ruwa", "nau'in iska", "nau'in tsiro"]
+      },
+      {
+        "templateHa": "Wane amfani ma'adinai suke da shi ga Najeriya?",
+        "answerFormula": "suna taimaka wa masana'antu da tattalin arziki",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["suna hana duk wani aiki", "suna mayar da duwatsu abinci", "suna cire bukatar kare ruwa"]
+      },
+      {
+        "templateHa": "Me ya sa ake kula da yadda ake amfani da ma'adinai?",
+        "answerFormula": "yawancinsu ba sa sabuntawa da sauri kuma hakarsu na iya lalata muhalli",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["duk suna girma kamar tsiro", "ba su da amfani ga kowa", "ba sa shafar ƙasa ko ruwa"]
+      },
+      {
+        "templateHa": "Wace hanya ce ta fi aminci ga ɗalibi wajen nazarin ma'adinai?",
+        "answerFormula": "amfani da hotuna ko samfurin da malami ya tabbatar",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["shiga ma'adana kai kaɗai", "ɗanɗana dutse da ba a sani ba", "ƙona samfurin domin ganin hayaƙi"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-10",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 10,
+    "titleEn": "White Light, Primary Colours, and Pigments",
+    "titleHa": "Farin Haske, Launukan Asali, da Launin Fenti",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Farin haske ya ƙunshi launuka da dama. Idan ya ratsa gilashi mai siffar musamman da yake karkatar da haske, launukan za su iya rabuwa kamar yadda ake gani a bakan gizo. Wannan samfurin yana nuna cewa farin haske ba launi guda kawai ba ne. Launukan haske na asali su ne ja, kore, da shuɗi. Idan haske ja, kore, da shuɗi suka haɗu daidai, suna iya samar da farin haske. Amma fenti, ruwan launi, da tawada ba sa haɗuwa kamar haske. Launinsu yana fitowa ne saboda suna tsotse wasu launukan haske suna mayar da wasu zuwa idonmu. Sakamakon haɗa fenti ya dogara da kayan da aka yi amfani da su; kada a haɗa dokar haske da ta fenti. Malami zai iya amfani da fitila da gilashin gwaji ko hoton bakan gizo, sannan ɗalibai su rubuta abin da suka lura da shi. Kada a yi amfani da gilashin da ya karye, a kalli Rana kai tsaye, a yi amfani da hasken Rana wajen gwajin ɗalibi, ko a ɗanɗana fenti da tawada.",
+    "audioScript": "[INTRO] Yau za mu koyi farin haske, launukan asali, da launin fenti. [MAIN] Farin haske ya ƙunshi launuka da dama. Gilashi mai siffar musamman da yake karkatar da haske zai iya raba su kamar bakan gizo. Launukan haske na asali su ne ja, kore, da shuɗi. Idan suka haɗu daidai, suna iya samar da farin haske. [PAUSE 1] Waɗanne launuka uku ne na asalin haske? [MAIN] Fenti da tawada ba sa haɗuwa kamar haske. Suna tsotse wasu launuka suna mayar da wasu zuwa ido, saboda haka kada a haɗa dokar haske da ta fenti. A yi gwaji da malami da fitila mai aminci; ba a amfani da gilashin da ya karye ko kallon Rana kai tsaye. [PAUSE 2] Me ya sa ba za mu ɗauki haɗa haske da haɗa fenti a matsayin abu ɗaya ba? [OUTRO] Ka bambanta haske da kayan launi, sannan ka bayyana abin da hujjar gwaji ta nuna.",
+    "audioFile": "audio/p6-bsci-10.mp3",
+    "imageCard": "images/p6-bsci-10.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Waɗanne launuka uku ne na asalin haske?",
+        "correctAnswer": "ja, kore, da shuɗi",
+        "options": ["ja, kore, da shuɗi", "baƙi, fari, da toka", "launin ƙasa, zinariya, da azurfa"]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya sa ba za mu ɗauki haɗa haske da haɗa fenti a matsayin abu ɗaya ba?",
+        "correctAnswer": "haske da fenti suna aiki ta hanyoyi dabam",
+        "options": ["haske da fenti suna aiki ta hanyoyi dabam", "fenti ba shi da launi", "haske abu ne mai tauri"]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne farin haske ya ƙunsa?",
+        "answerFormula": "launuka da dama",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["launi guda kawai", "sauti da ƙamshi", "ruwa da yashi"]
+      },
+      {
+        "templateHa": "Me gilashi mai siffar musamman zai iya yi wa farin haske?",
+        "answerFormula": "ya raba shi zuwa launuka da dama",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["ya mayar da shi dutse", "ya cire dukkan launi", "ya samar da sauti"]
+      },
+      {
+        "templateHa": "Me zai iya samuwa idan haske ja, kore, da shuɗi suka haɗu daidai?",
+        "answerFormula": "farin haske",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["baƙin fenti", "dutsen ƙarfe", "ruwan gishiri"]
+      },
+      {
+        "templateHa": "Me fenti yake yi da wasu launukan haske?",
+        "answerFormula": "yana tsotse wasu yana mayar da wasu zuwa ido",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["yana mayar da duk haske sauti", "yana samar da Rana", "yana cire idon mai kallo"]
+      },
+      {
+        "templateHa": "Wane mataki ne ya fi aminci wajen nazarin rarrabuwar farin haske?",
+        "answerFormula": "a yi amfani da fitila mai aminci tare da malami kuma kada a kalli Rana",
+        "variableRanges": {"a": {"min": 0, "max": 0}, "b": {"min": 0, "max": 0}},
+        "distractorFormulas": ["a kalli Rana kai tsaye", "a ɗanɗana fenti", "a yi gwaji da gilashin da ya karye"]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-11",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 11,
+    "titleEn": "Drawing Instruments and Accurate Technical Lines",
+    "titleHa": "Kayan Zane na Fasaha da Madaidaicin Layi",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Zanen fasaha yana amfani da kayan awo da zane domin layi, kusurwa, da da'ira su fito daidai. Ma'aunin tsayi, wanda ake kira rula, yana auna tazara kuma yana taimaka wa zana madaidaicin layi. Ma'aunin T yana zana layi kwance a kan allon zane. Ma'aunin kusurwa mai siffar alwatika yana taimaka wa zana layi a tsaye ko na digiri 30, 45, da 60. Mai siffar rabin da'ira yana auna wasu kusurwoyi. Komfas na zane yana zana da'ira daga tsakiyarta, mai raba tazara kuma yana ɗaukar tazara daga wuri ɗaya zuwa wani. Daidaito yana bukatar a daure takarda, a fara da alama mai laushi, a daidaita kayan, sannan a sake duba awo. Tare da malami, a auna santimita biyar sau biyu, a zana layukan, sannan a kwatanta ko tsawonsu ɗaya ne. Wannan maimaitawa tana nuna ko awo yana da tabbas. Kada a yi wasa da kan komfas ko mai raba tazara, a caka wa wani, ko a yi amfani da kayan da ya karye. A mayar da kayan cikin akwatinsu bayan aiki.",
+    "audioScript": "[INTRO] Yau za mu koyi kayan zane na fasaha da madaidaicin layi. [MAIN] Ma'aunin tsayi yana auna tazara da zana madaidaicin layi. Ma'aunin T yana taimaka wa zana layi kwance, ma'aunin kusurwa kuma yana taimaka wa layi a tsaye ko kusurwa. Komfas na zane yana zana da'ira, mai raba tazara kuma yana kwatanta tazara. [PAUSE 1] Wane kayan aiki ne yake zana da'ira? [MAIN] Daidaito yana bukatar a daure takarda, a yi alama mai laushi, a daidaita kayan, sannan a sake duba awo. A auna santimita biyar sau biyu a kwatanta layukan. Kada a yi wasa da kayan mai kaifi ko wanda ya karye. [PAUSE 2] Me ya sa ake maimaita awo? [OUTRO] Kayan da ya dace, amfani cikin aminci, da sake duba awo suna samar da zane mai daidaito.",
+    "audioFile": "audio/p6-bsci-11.mp3",
+    "imageCard": "images/p6-bsci-11.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane kayan aiki ne yake zana da'ira?",
+        "correctAnswer": "komfas na zane",
+        "options": [
+          "komfas na zane",
+          "allon zane",
+          "akwatin kayan aiki"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya sa ake maimaita awo?",
+        "correctAnswer": "domin a duba ko awon yana da tabbas",
+        "options": [
+          "domin a duba ko awon yana da tabbas",
+          "domin a ɓata takarda",
+          "domin a lanƙwasa ma'auni"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wane aiki ma'aunin tsayi yake yi?",
+        "answerFormula": "yana auna tazara da zana madaidaicin layi",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "yana yanka katako",
+          "yana ɗaga kaya",
+          "yana nuna launin haske"
+        ]
+      },
+      {
+        "templateHa": "Wane irin layi ma'aunin T yake taimaka wa zana a kan allon zane?",
+        "answerFormula": "layi kwance",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "layin da ya karye ba tare da awo ba",
+          "da'ira ba tare da tsakiya ba",
+          "hanyar mota"
+        ]
+      },
+      {
+        "templateHa": "Mene ne aikin mai raba tazara?",
+        "answerFormula": "ɗaukar ko kwatanta tazara tsakanin wurare",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "shafa fenti a bango",
+          "goge dukkan layuka",
+          "auna nauyin kaya"
+        ]
+      },
+      {
+        "templateHa": "Wane mataki yana taimaka wa samun zane mai daidaito?",
+        "answerFormula": "daidaita kayan sannan a sake duba awo",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "zana cikin gaggawa ba tare da awo ba",
+          "lanƙwasa ma'auni",
+          "bar takarda tana motsi"
+        ]
+      },
+      {
+        "templateHa": "Yaya ake amfani da komfas na zane cikin aminci?",
+        "answerFormula": "a yi amfani da shi tare da malami kuma kada a yi wasa da kansa",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "a caka wa aboki",
+          "a jefa shi cikin aji",
+          "a yi amfani da wanda ya karye"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-12",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 12,
+    "titleEn": "Hand Tools: Identification, Care, and Safety",
+    "titleHa": "Kayan Aikin Hannu: Ganewa, Kulawa, da Tsaro",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Kayan aikin hannu kayan da mutum yake sarrafawa da hannunsa ba tare da injin mai ƙarfi ba. A aikin itace, ana rarraba su bisa aikinsu. Ma'aunin tsayi da tef ɗin awo kayan aunawa ne. Fensir, abin sa alama, da mai raba tazara kayan yin alama ne. Zarto, wato ƙarfe mai haƙora da ake yanka katako da shi, da abin sassaƙa saman katako kayan yanka ko daidaita katako ne. Zaɓen kayan da ya dace yana rage kuskure da haɗari. Kafin aiki, ƙwararren babba yana duba ko hannun kayan ya kafe, ko ƙarfen ya tsage, ko kayan ya yi tsatsa. Bayan aiki, a goge kayan, a busar da shi, sannan a adana shi a wurin da aka tanada. Ɗalibai za su iya rarraba hotunan kayan bisa aunawa, sa alama, ko yanka, su bayyana hujjarsu. Wannan darasi na ganewa ne: kada ɗalibi ya taɓa zarto, abin huda, ko wani kayan mai kaifi. Amfani da kayan yanka da gyaransu aikin malami ko ƙwararren babba ne.",
+    "audioScript": "[INTRO] Yau za mu koyi gane kayan aikin hannu, kulawa, da tsaro. [MAIN] Ma'auni da tef kayan aunawa ne. Fensir da mai raba tazara kayan yin alama ne. Zarto da abin sassaƙa katako kayan yanka ko sassautawa ne. Zaɓen kayan da ya dace yana rage kuskure. [PAUSE 1] Wane rukuni ne tef ɗin awo yake ciki? [MAIN] Kafin aiki, babba yana duba ko kayan ya tsage, ya yi tsatsa, ko hannunsa ya kwance. Bayan aiki, a goge, a busar, a adana. Ɗalibai su rarraba hotuna kawai; kada su taɓa kayan mai kaifi. [PAUSE 2] Wa ya kamata ya yi amfani da zarto? [OUTRO] Ka gane aikin kayan daga hotonsa, ka bar kayan mai kaifi ga malami ko ƙwararren babba.",
+    "audioFile": "audio/p6-bsci-12.mp3",
+    "imageCard": "images/p6-bsci-12.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wane rukuni ne tef ɗin awo yake ciki?",
+        "correctAnswer": "kayan aunawa",
+        "options": [
+          "kayan aunawa",
+          "kayan yanka",
+          "kayan dafa abinci"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wa ya kamata ya yi amfani da zarto?",
+        "correctAnswer": "malami ko ƙwararren babba",
+        "options": [
+          "malami ko ƙwararren babba",
+          "ɗalibi shi kaɗai",
+          "duk wanda yake son wasa"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne kayan aikin hannu?",
+        "answerFormula": "kayan da mutum yake sarrafawa da hannunsa",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "kowane abin da yake cikin ƙasa",
+          "abincin da ake ci da hannu",
+          "alamar da ke kan hanya"
+        ]
+      },
+      {
+        "templateHa": "Wane kayan aiki ne yake yanka katako?",
+        "answerFormula": "zarto",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "tef ɗin awo",
+          "fensir",
+          "allon zane"
+        ]
+      },
+      {
+        "templateHa": "Me ya sa ake zaɓen kayan da ya dace da aiki?",
+        "answerFormula": "domin rage kuskure da haɗari",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "domin a lalata kayan",
+          "domin a ƙara tsatsa",
+          "domin a ɓoye aikin"
+        ]
+      },
+      {
+        "templateHa": "Wane mataki ne na kula da kayan bayan aiki?",
+        "answerFormula": "a goge, a busar, sannan a adana shi daidai",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "a bar shi cikin ruwa",
+          "a jefa shi a hanya",
+          "a karya hannunsa"
+        ]
+      },
+      {
+        "templateHa": "Wane aiki ne ya dace da ɗalibi a wannan darasi?",
+        "answerFormula": "rarraba hotunan kayan da bayyana aikinsu",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "yanka katako da zarto shi kaɗai",
+          "wasa da abin huda",
+          "gyara kayan mai kaifi ba tare da babba ba"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-13",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 13,
+    "titleEn": "Maintenance, Workshop Safety, and Road Safety",
+    "titleHa": "Kulawa, Tsaron Wurin Aiki, da Tsaron Hanya",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Kulawa tana nufin ayyukan da ake yi domin kayan aiki ya zauna lafiya kuma ya daɗe. Kulawar rigakafi ita ce dubawa, tsaftacewa, ko shafawa kafin lalacewa; gyaran bayan lalacewa kuwa aikin ƙwararren mutum ne. A wurin aiki, a ajiye kayan a inda aka tanada, a share abin da ya zube, a karanta alamar gargaɗi, kuma a sa kayan kariya da suka dace. Hular kariya, safar hannu, takalmin aiki, da abin kare ido misalan kayan kariya ne, amma ba sa maye gurbin horo. A hanya, fitilar hanya, alamar tsayawa, wurin tsallakar masu tafiya, bel ɗin mota, da alwatika mai kyalli suna taimaka wa tsaro. Ɗalibi ya tsaya a bakin hanya mai aminci, ya duba ɓangarorin biyu, ya saurara, sannan ya tsallaka tare da babba a wurin da aka tanada. A yi nazarin alamomi da hotuna daga aji; kada a shiga hanya ko wurin aiki domin yin gwaji. Idan kayan ya lalace ko wani haɗari ya faru, a matsa nesa a sanar da babba.",
+    "audioScript": "[INTRO] Yau za mu koyi kulawa, tsaron wurin aiki, da tsaron hanya. [MAIN] Kulawar rigakafi ita ce dubawa da tsaftacewa kafin lalacewa. Gyaran kayan da ya lalace aikin ƙwararren mutum ne. Hular kariya, safar hannu, takalmin aiki, da abin kare ido suna taimaka wa tsaro. [PAUSE 1] Mene ne kulawar rigakafi? [MAIN] Fitilar hanya, alamar tsayawa, wurin tsallakar masu tafiya, bel ɗin mota, da alwatika mai kyalli suna taimaka wa tsaron hanya. Yaro ya tsallaka tare da babba a wurin da aka tanada. A yi nazari da hotuna daga aji, ba shiga hanya ko wurin aiki ba. [PAUSE 2] Me ya kamata ka yi idan ka ga kayan aiki ya lalace? [OUTRO] Kulawa tana hana matsala, amma horo, alamomi, da bin dokar tsaro ne suke kare rai.",
+    "audioFile": "audio/p6-bsci-13.mp3",
+    "imageCard": "images/p6-bsci-13.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Mene ne kulawar rigakafi?",
+        "correctAnswer": "dubawa da tsaftacewa kafin lalacewa",
+        "options": [
+          "dubawa da tsaftacewa kafin lalacewa",
+          "jira kayan ya karye gaba ɗaya",
+          "jefa kayan bayan amfani"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka yi idan ka ga kayan aiki ya lalace?",
+        "correctAnswer": "a matsa nesa a sanar da babba",
+        "options": [
+          "a matsa nesa a sanar da babba",
+          "a gyara shi kai kaɗai",
+          "a ɓoye shi a hanyar tafiya"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Me kulawa take taimaka wa kayan aiki?",
+        "answerFormula": "ya zauna lafiya kuma ya daɗe",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "ya lalace da sauri",
+          "ya zama abin wasa",
+          "ya ɓace daga wurin ajiya"
+        ]
+      },
+      {
+        "templateHa": "Wanne ne kayan kariya a wurin aiki?",
+        "answerFormula": "abin kare ido",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "takardar jarida",
+          "kwanon abinci",
+          "abin wasa"
+        ]
+      },
+      {
+        "templateHa": "Mene ne aikin alwatika mai kyalli a hanya?",
+        "answerFormula": "gargaɗar da masu hanya game da abin hawa da ya tsaya",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "auna tsawon hanya",
+          "zana da'ira",
+          "ɗaga kaya mai nauyi"
+        ]
+      },
+      {
+        "templateHa": "A ina ya kamata mai tafiya ya tsallaka hanya?",
+        "answerFormula": "a wurin tsallakar masu tafiya tare da lura",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "tsakanin motoci masu motsi",
+          "inda ba a iya ganin hanya",
+          "cikin gudu ba tare da dubawa ba"
+        ]
+      },
+      {
+        "templateHa": "Ta yaya ɗalibi zai nazarci tsaron hanya cikin aminci?",
+        "answerFormula": "ta hotuna da alamomi a aji tare da malami",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "ta tsayawa a tsakiyar hanya",
+          "ta bin abin hawa mai motsi",
+          "ta cire alamar gargaɗi"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-14",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 14,
+    "titleEn": "Levers and Pulleys",
+    "titleHa": "Sandar Ɗagawa da Na'urar Dabaran Igiya",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Na'ura mai sauƙi tana canza yadda ake amfani da ƙarfi domin sauƙaƙa aiki. Sandar ɗagawa sanda ce mai tauri da take juyawa a kan wata madogara. Sassanta uku su ne madogarar juyawa, kayan da ake motsawa, da wurin da ake turawa ko ja. Matsar da madogara ko wurin turawa yana canza ƙarfin da ake bukata da nisan da sanda take motsawa. Allon wasan hawa da sauka, mabuɗin kwalba, da amalanke misalai ne. Na'urar dabaran igiya keken juyawa ne da igiya take bi. Na'urar da aka ɗaure a wuri tana iya sauya alkiblar jan igiya; wadda take motsi tare da kaya tana iya rage ƙarfin ɗagawa, amma igiyar tana yin tafiya mai tsawo. Tare da malami, a yi amfani da zane ko samfurin kofin takarda marar nauyi domin gano madogara, kaya, da wurin turawa, ko bambanta na'urar dabaran igiya mai ɗaure da mai motsi. Kada ɗalibi ya ɗaga kaya mai nauyi, ya tsaya ƙarƙashin kaya, ya yi gwaji a rijiya ko rufi, ko ya yi amfani da igiya a jikin mutum.",
+    "audioScript": "[INTRO] Yau za mu koyi sandar ɗagawa da na'urar dabaran igiya. [MAIN] Sandar ɗagawa tana juyawa a kan madogara. Tana da madogarar juyawa, kaya, da wurin turawa ko ja. Matsayin waɗannan sassa yana canza ƙarfin da ake bukata. [PAUSE 1] Waɗanne sassa uku ne na sandar ɗagawa? [MAIN] Na'urar dabaran igiya mai ɗaure tana iya sauya alkiblar jan igiya. Wadda take motsi tare da kaya tana iya rage ƙarfin ɗagawa, amma igiyar tana tafiya mai tsawo. A yi samfurin kaya marar nauyi tare da malami. Kada a ɗaga kaya mai nauyi ko a tsaya ƙarƙashinsa. [PAUSE 2] Mene ne bambanci tsakanin na'urar dabaran igiya mai ɗaure da mai motsi? [OUTRO] Ka gano madogara, kaya, da ƙarfi, sannan ka bayyana abin da na'urar ta canza.",
+    "audioFile": "audio/p6-bsci-14.mp3",
+    "imageCard": "images/p6-bsci-14.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Waɗanne sassa uku ne na sandar ɗagawa?",
+        "correctAnswer": "madogarar juyawa, kaya, da wurin turawa ko ja",
+        "options": [
+          "madogarar juyawa, kaya, da wurin turawa ko ja",
+          "haske, inuwa, da launi",
+          "iska, ruwa, da ƙasa"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Mene ne bambanci tsakanin na'urar dabaran igiya mai ɗaure da mai motsi?",
+        "correctAnswer": "mai ɗaure yana zama a wuri, mai motsi yana tafiya tare da kaya",
+        "options": [
+          "mai ɗaure yana zama a wuri, mai motsi yana tafiya tare da kaya",
+          "dukansu ba sa amfani da igiya",
+          "mai motsi yana samar da lantarki"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne sandar ɗagawa?",
+        "answerFormula": "sanda mai tauri da take juyawa a kan madogara",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "igiya marar dabara",
+          "fitila mai launi",
+          "bututun tsotsa"
+        ]
+      },
+      {
+        "templateHa": "Wanne ne misalin sandar ɗagawa?",
+        "answerFormula": "amalanke",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "bakan gizo",
+          "gilashin gwaji",
+          "tef ɗin awo"
+        ]
+      },
+      {
+        "templateHa": "Me na'urar dabaran igiya mai ɗaure za ta iya canzawa?",
+        "answerFormula": "alkiblar jan igiya",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "launin kayan",
+          "nau'in ma'adini",
+          "zafin Rana"
+        ]
+      },
+      {
+        "templateHa": "Me kan faru idan na'urar dabaran igiya mai motsi ta rage ƙarfin ɗagawa?",
+        "answerFormula": "igiyar tana yin tafiya mai tsawo",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "kayan yana rasa nauyi gaba ɗaya",
+          "igiya tana zama haske",
+          "madogara tana zama ruwa"
+        ]
+      },
+      {
+        "templateHa": "Wane gwaji ne ya fi aminci wajen koyon waɗannan na'urori?",
+        "answerFormula": "samfurin kaya marar nauyi tare da malami",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "ɗaga kaya mai nauyi a rufi",
+          "tsayawa ƙarƙashin kayan da aka ɗaga",
+          "ɗaura igiya a jikin mutum"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p6-bsci-15",
+    "gradeband": "p6",
+    "subject": "Basic Science",
+    "subjectHa": "Kimiyya",
+    "moduleNumber": 15,
+    "titleEn": "Inclined Planes and P6 Science Consolidation",
+    "titleHa": "Shimfiɗar Gangara da Maimaitawar Kimiyya ta P6",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Shimfiɗar gangara fili ne madaidaici da aka karkatar, gefe ɗaya ya fi ɗayan tsawo. Gangarar ɗora kaya, hanyar keken guragu, da matattakala misalai ne. Maimakon ɗaga kaya kai tsaye zuwa sama, gangara tana iya rage ƙarfin da ake bukata ta hanyar ƙara nisan da kayan zai bi. Gangara mai laushi tana bukatar ƙaramin ƙarfi amma tafiyar ta fi tsawo; gangarar da ta fi karkata tana bukatar ƙarfi fiye. Don gwaji mai adalci, malami zai sa kwali biyu a tsawo dabam, a tura abu marar nauyi iri ɗaya, a canza gangarar kawai, sannan a rubuta abin da aka gani a tebur. A fara da hasashe, a lura, a auna idan zai yiwu, sannan a gina ƙarshe daga hujja. Idan sakamako biyu sun bambanta, a sake gwajin kafin a yanke hukunci. Wannan tsari na tambaya, kwatantawa, da hujja yana haɗa darussan P6 da shirye-shiryen JSS1. Kada a hau gangarar gwaji, a yi amfani da kaya mai nauyi, ko a je hanya ko wurin gini. Samfurin aji ya kasance ƙarƙashin kulawar malami.",
+    "audioScript": "[INTRO] Yau za mu koyi shimfiɗar gangara da yadda ake gina ƙarshe daga hujja. [MAIN] Shimfiɗar gangara fili ne da aka karkatar. Tana iya rage ƙarfin motsa kaya ta ƙara nisan tafiya. Gangara mai laushi tana bukatar ƙaramin ƙarfi amma tafiyar ta fi tsawo. [PAUSE 1] Mene ne abin da ake samu da abin da ake bayarwa idan gangara ta rage ƙarfi? [MAIN] A gwaji mai adalci, a yi amfani da abu iri ɗaya, a canza gangarar kawai, a rubuta sakamako, sannan a sake gwaji. Ƙarshe ya fito daga abin da aka gani, ba zato kawai ba. Kada a hau gangara ko a yi amfani da kaya mai nauyi. [PAUSE 2] Me ya sa ake canza abu ɗaya kawai a gwaji? [OUTRO] Ka yi hasashe, ka gwada cikin aminci, ka rubuta hujja, sannan ka faɗi abin da sakamakon ya nuna.",
+    "audioFile": "audio/p6-bsci-15.mp3",
+    "imageCard": "images/p6-bsci-15.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Mene ne abin da ake samu da abin da ake bayarwa idan gangara ta rage ƙarfi?",
+        "correctAnswer": "ana bukatar ƙaramin ƙarfi amma ana yin tafiya mai tsawo",
+        "options": [
+          "ana bukatar ƙaramin ƙarfi amma ana yin tafiya mai tsawo",
+          "kayan yana rasa nauyinsa gaba ɗaya",
+          "ba a bukatar motsi ko kaɗan"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya sa ake canza abu ɗaya kawai a gwaji?",
+        "correctAnswer": "domin a san abin da ya jawo bambancin sakamako",
+        "options": [
+          "domin a san abin da ya jawo bambancin sakamako",
+          "domin a ƙara ruɗani",
+          "domin a guji rubuta sakamako"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mene ne shimfiɗar gangara?",
+        "answerFormula": "fili madaidaici da aka karkatar, gefe ɗaya ya fi ɗayan tsawo",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "na'urar dabaran igiya mai ɗaure",
+          "layi kwance a takarda",
+          "ma'adini mai sheƙi"
+        ]
+      },
+      {
+        "templateHa": "Wanne ne misalin shimfiɗar gangara?",
+        "answerFormula": "hanyar keken guragu",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "komfas na zane",
+          "zarto",
+          "fitilar hanya"
+        ]
+      },
+      {
+        "templateHa": "Yaya gangara mai laushi take taimaka wa motsa kaya?",
+        "answerFormula": "tana rage ƙarfin da ake bukata amma tana ƙara nisan tafiya",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "tana cire nauyin kaya gaba ɗaya",
+          "tana hana kowane motsi",
+          "tana rage nisa da ƙarfi zuwa sifili"
+        ]
+      },
+      {
+        "templateHa": "Wane tsari ne ya dace da binciken kimiyya?",
+        "answerFormula": "hasashe, gwaji, rubuta sakamako, da ƙarshe daga hujja",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "ƙarshe kafin a lura",
+          "canza komai lokaci guda",
+          "ɓoye sakamakon da bai dace da zato ba"
+        ]
+      },
+      {
+        "templateHa": "Wane mataki ne ya fi aminci a gwajin gangara?",
+        "answerFormula": "amfani da abu marar nauyi a aji ƙarƙashin kulawar malami",
+        "variableRanges": {
+          "a": { "min": 0, "max": 0 },
+          "b": { "min": 0, "max": 0 }
+        },
+        "distractorFormulas": [
+          "hawa gangarar gwaji",
+          "ɗaga kaya mai nauyi",
+          "yin gwaji a tsakiyar hanya"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

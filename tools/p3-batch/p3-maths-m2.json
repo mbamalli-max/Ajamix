@@ -1,0 +1,2348 @@
+[
+  {
+    "id": "p3-maths-07",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 7,
+    "titleEn": "Comparing and Ordering Numbers to 1,000",
+    "titleHa": "Kwatanta da Jera Lambobi Har Zuwa 1,000",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Kwatanta lambobi yana nufin duba wacce ta fi girma, wacce ta fi ƙanƙanta, ko sun yi daidai. Idan lambobi suna da daruruwa daban, daruruwa ne za su fara nuna wacce ta fi girma. Misali, 632 ta fi 581, saboda 6 ɗari sun fi 5 ɗari. Idan daruruwa sun yi daidai, sai ka duba gommai. Idan gommai ma sun yi daidai, sai ka duba ɗaya-ɗaya. Jera lambobi yana nufin tsara su daga ƙanana zuwa manya, ko daga manya zuwa ƙanana. Wannan yana taimaka maka wajen lissafin kuɗi, kaya, da sakamakon aji. Kada ka yi gaggawa; fara daga hagu, ka duba daruruwa, sannan gommai, sannan ɗaya-ɗaya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi kwatanta da jera lambobi har zuwa dubu ɗaya. [MAIN] Idan lambobi biyu suna da daruruwa daban, lambar da take da daruruwa mafi yawa ita ce ta fi girma. Idan daruruwa sun yi daidai, sai mu duba gommai. [PAUSE 1] Wacce lamba ta fi girma: 632 ko 581? [MAIN] Don jera lambobi, ka fara da ƙaramar lamba ko babbar lamba, gwargwadon umarni. Ka duba daruruwa, gommai, da ɗaya-ɗaya. [PAUSE 2] Idan an jera 120, 450, 300 daga ƙanana zuwa manya, wace lamba ce ta farko? [OUTRO] Ka tuna: fara kwatantawa daga hagu zuwa dama.",
+    "audioFile": "audio/p3-maths-07.mp3",
+    "imageCard": "images/p3-maths-07.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Wacce lamba ta fi girma: 632 ko 581?",
+        "correctAnswer": "632",
+        "options": [
+          "632",
+          "581",
+          "532"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan an jera 120, 450, 300 daga ƙanana zuwa manya, wace lamba ce ta farko?",
+        "correctAnswer": "120",
+        "options": [
+          "120",
+          "300",
+          "450"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Wace lamba ce ta fi girma?",
+        "answerFormula": "a + 300",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 500
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "a + 100",
+          "a + 200"
+        ]
+      },
+      {
+        "templateHa": "Wace lamba ce ta fi ƙanƙanta?",
+        "answerFormula": "a",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 500
+          }
+        },
+        "distractorFormulas": [
+          "a + 100",
+          "a + 200",
+          "a + 300"
+        ]
+      },
+      {
+        "templateHa": "Idan ana jera lambobi daga ƙanana zuwa manya, wace lamba ce za ta fara?",
+        "answerFormula": "a",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 500
+          }
+        },
+        "distractorFormulas": [
+          "a + 100",
+          "a + 200",
+          "a + 300"
+        ]
+      },
+      {
+        "templateHa": "Idan ana jera lambobi daga manya zuwa ƙanana, wace lamba ce za ta fara?",
+        "answerFormula": "a + 300",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 500
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "a + 100",
+          "a + 200"
+        ]
+      },
+      {
+        "templateHa": "Lamba {a} ta fi {b} da nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 700,
+            "max": 900
+          },
+          "b": {
+            "min": 100,
+            "max": 300
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 10",
+          "a - b - 10",
+          "a - b + 100"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-08",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 8,
+    "titleEn": "Even and Odd Numbers",
+    "titleHa": "Lambobin Biyu-Biyu da Marasa Biyu-Biyu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Lamba biyu-biyu ita ce lamba da za a iya raba gida biyu daidai ba tare da saura ba. Misali, 2, 4, 6, 8, da 10 lambobi ne biyu-biyu. Lamba mara biyu-biyu kuwa tana barin saura ɗaya idan aka raba ta gida biyu. Misali, 1, 3, 5, 7, da 9 marasa biyu-biyu ne. Hanya mai sauƙi ita ce duba lambar ƙarshe. Idan lamba ta ƙare da 0, 2, 4, 6, ko 8, ita biyu-biyu ce. Idan ta ƙare da 1, 3, 5, 7, ko 9, ita mara biyu-biyu ce. Wannan yana taimaka wa rarrabawa, teburin ninkawa, da wasa da lambobi. Ka gwada da lambobin gida ko kuɗi a hankali.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] A yau za mu koyi lambobi biyu-biyu da marasa biyu-biyu. [MAIN] Za a iya raba lamba biyu-biyu gida biyu daidai. Lamba mara biyu-biyu tana barin saura ɗaya. Ka duba lambar ƙarshe don gane hakan da sauri. [PAUSE 1] Lamba 18 biyu-biyu ce ko mara biyu-biyu? [MAIN] Idan lamba ta ƙare da 0, 2, 4, 6, ko 8, biyu-biyu ce. Idan ta ƙare da 1, 3, 5, 7, ko 9, mara biyu-biyu ce. [PAUSE 2] Lamba 25 biyu-biyu ce ko mara biyu-biyu? [OUTRO] Ka tuna: lambar ƙarshe tana taimaka maka gane iri.",
+    "audioFile": "audio/p3-maths-08.mp3",
+    "imageCard": "images/p3-maths-08.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Lamba 18 biyu-biyu ce ko mara biyu-biyu?",
+        "correctAnswer": "biyu-biyu",
+        "options": [
+          "biyu-biyu",
+          "mara biyu-biyu",
+          "ba lamba ba"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Lamba 25 biyu-biyu ce ko mara biyu-biyu?",
+        "correctAnswer": "mara biyu-biyu",
+        "options": [
+          "mara biyu-biyu",
+          "biyu-biyu",
+          "goma"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Lamba ta {a} idan muna ƙirga biyu-biyu daga 2 ita ce?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 40
+          }
+        },
+        "distractorFormulas": [
+          "2 * a + 1",
+          "2 * a + 2",
+          "2 * a - 1"
+        ]
+      },
+      {
+        "templateHa": "Lamba ta {a} idan muna ƙirga marasa biyu-biyu daga 1 ita ce?",
+        "answerFormula": "2 * a - 1",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 40
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "2 * a + 1",
+          "2 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Rukuni biyu, kowanne yana da abubuwa {a}. Jimla nawa?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "2 * a + 1",
+          "2 * a + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Rukuni biyu, kowanne yana da abubuwa {a}, sannan abu 1 ya rage. Jimla nawa?",
+        "answerFormula": "2 * a + 1",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "2 * a + 2",
+          "2 * a + 3"
+        ]
+      },
+      {
+        "templateHa": "Idan ka ƙara 1 zuwa lamba biyu-biyu {a} × 2, wace lamba za ka samu?",
+        "answerFormula": "2 * a + 1",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "2 * a + 2",
+          "2 * a + 3"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-09",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 9,
+    "titleEn": "Counting in 2s, 5s, 10s, and 100s",
+    "titleHa": "Tsallake Ƙirga Biyu-Biyu, Biyar-Biyar, Goma-Goma, da Ɗari-Ɗari",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tsallake ƙirga yana nufin ka ƙara adadi iri ɗaya kowane lokaci. Idan kana ƙirga biyu-biyu, za ka ce 2, 4, 6, 8, 10. Idan kana ƙirga biyar-biyar, za ka ce 5, 10, 15, 20. Idan kana ƙirga goma-goma, za ka ce 10, 20, 30. Idan kana ƙirga ɗari-ɗari, za ka ce 100, 200, 300. Wannan yana taimaka maka wajen ninkawa, rarrabawa, kuɗi, da awo. Ka lura da abin da yake ƙaruwa kowane mataki. Idan ka rasa amsa, koma baya ka tambayi kanka: na ƙara biyu, biyar, goma, ko ɗari? Tsallake ƙirga yana sa lissafi ya fi sauri kuma ya fi sauƙi a kwakwalwa.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi tsallake ƙirga. [MAIN] Tsallake ƙirga yana nufin ƙara adadi iri ɗaya kowane lokaci. Biyu-biyu: 2, 4, 6. Biyar-biyar: 5, 10, 15. [PAUSE 1] Bayan 10 idan muna ƙirga biyar-biyar, wace lamba ce? [MAIN] Goma-goma yana taimaka wa kuɗi da awo. Ɗari-ɗari yana taimaka wa lambobi manya kamar 100, 200, 300. [PAUSE 2] Bayan 300 idan muna ƙirga ɗari-ɗari, wace lamba ce? [OUTRO] Ka tuna: adadin da kake ƙara shi ne matakin ƙirga.",
+    "audioFile": "audio/p3-maths-09.mp3",
+    "imageCard": "images/p3-maths-09.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Bayan 10 idan muna ƙirga biyar-biyar, wace lamba ce?",
+        "correctAnswer": "15",
+        "options": [
+          "15",
+          "12",
+          "20"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Bayan 300 idan muna ƙirga ɗari-ɗari, wace lamba ce?",
+        "correctAnswer": "400",
+        "options": [
+          "400",
+          "310",
+          "500"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Idan muna ƙirga biyu-biyu daga {a}, lamba ta gaba ita ce?",
+        "answerFormula": "a + 2",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 80
+          }
+        },
+        "distractorFormulas": [
+          "a + 1",
+          "a + 4",
+          "a + 6"
+        ]
+      },
+      {
+        "templateHa": "Idan muna ƙirga biyar-biyar daga {a}, lamba ta gaba ita ce?",
+        "answerFormula": "a + 5",
+        "variableRanges": {
+          "a": {
+            "min": 5,
+            "max": 75
+          }
+        },
+        "distractorFormulas": [
+          "a + 2",
+          "a + 10",
+          "a + 15"
+        ]
+      },
+      {
+        "templateHa": "Idan muna ƙirga goma-goma daga {a}, lamba ta gaba ita ce?",
+        "answerFormula": "a + 10",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 800
+          }
+        },
+        "distractorFormulas": [
+          "a + 1",
+          "a + 5",
+          "a + 20"
+        ]
+      },
+      {
+        "templateHa": "Idan muna ƙirga ɗari-ɗari daga {a}, lamba ta gaba ita ce?",
+        "answerFormula": "a + 100",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 800
+          }
+        },
+        "distractorFormulas": [
+          "a + 10",
+          "a + 50",
+          "a + 200"
+        ]
+      },
+      {
+        "templateHa": "Mataki {a} na goma-goma yana kai wa lamba nawa?",
+        "answerFormula": "10 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "10 * a + 10",
+          "10 * a - 10",
+          "10 * a + 20"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-10",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 10,
+    "titleEn": "Money: Naira, Kobo, and Simple Totals",
+    "titleHa": "Kuɗi: Naira da Sauƙaƙan Jimla",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Kuɗi yana taimaka mana mu sayi abu, mu ajiye, mu kuma san jimla. A yawancin sayayya ta yau da kullum, yara suna ganin naira sosai. Idan abu ɗaya yana da farashi ₦20, abubuwa biyu za su zama ₦40. Idan ka haɗa ₦50 da ₦30, jimlar ita ce ₦80. Idan farashi ya ƙunshi abubuwa da yawa, ka haɗa su a hankali daga manyan kuɗi zuwa ƙanana. Ka karanta alamar ₦ a matsayin naira. Kada ka manta cewa jimla tana nuna kuɗin duka. A kasuwa, makaranta, ko gida, sanin jimlar kuɗi yana taimaka maka ka biya daidai kuma ka fahimci abin da ka saya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi naira da jimlar kuɗi. [MAIN] Idan abu ɗaya yana ₦20, abubuwa biyu suna ₦40. Idan ka haɗa ₦50 da ₦30, jimla ta zama ₦80. [PAUSE 1] Nawa ne ₦50 da ₦30 tare? [MAIN] Ka riƙa haɗa farashi a hankali. Ka fara da manyan kuɗi, sannan ka ƙara ƙananan kuɗi. Jimla ita ce kuɗin duka. [PAUSE 2] Idan littafi yana ₦100, littattafai 3 nawa ne? [OUTRO] Ka tuna: alamar ₦ tana nufin naira.",
+    "audioFile": "audio/p3-maths-10.mp3",
+    "imageCard": "images/p3-maths-10.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Nawa ne ₦50 da ₦30 tare?",
+        "correctAnswer": "80",
+        "options": [
+          "80",
+          "20",
+          "100"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan littafi yana ₦100, littattafai 3 nawa ne?",
+        "correctAnswer": "300",
+        "options": [
+          "300",
+          "100",
+          "200"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Idan abu ɗaya yana ₦{a}, abubuwa 2 nawa ne?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 100
+          }
+        },
+        "distractorFormulas": [
+          "2 * a + 10",
+          "a",
+          "2 * a + 20"
+        ]
+      },
+      {
+        "templateHa": "Haɗa ₦{a} da ₦{b}. Jimla nawa ce?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 20,
+            "max": 200
+          },
+          "b": {
+            "min": 10,
+            "max": 100
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 10",
+          "a + b + 20",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Idan kaya 3 kowanne yana ₦{a}, jimla nawa ce?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 90
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a + 5",
+          "3 * a + 10"
+        ]
+      },
+      {
+        "templateHa": "Idan ka biya ₦{a} sau 5, jimla nawa ce?",
+        "answerFormula": "5 * a",
+        "variableRanges": {
+          "a": {
+            "min": 5,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "4 * a",
+          "5 * a + 5",
+          "5 * a + 10"
+        ]
+      },
+      {
+        "templateHa": "Idan ka haɗa ₦{a}, ₦{b}, da ₦{c}, jimla nawa ce?",
+        "answerFormula": "a + b + c",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 100
+          },
+          "b": {
+            "min": 10,
+            "max": 100
+          },
+          "c": {
+            "min": 10,
+            "max": 100
+          }
+        },
+        "distractorFormulas": [
+          "a + b + c + 10",
+          "a + b + c + 20",
+          "a + b + c + 30"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-11",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 11,
+    "titleEn": "Giving Change",
+    "titleHa": "Bayar da Canji",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Canji shi ne kuɗin da ake mayarwa idan ka biya fiye da farashin abu. Idan abu yana ₦70, ka bayar da ₦100, canji shi ne ₦30. Hanya mai sauƙi ita ce ragi: kuɗin da ka bayar rage farashi. Wato 100 − 70 = 30. A kasuwa, canji yana da muhimmanci domin a biya daidai. Ka fara da sanin farashi, sannan ka san kuɗin da aka bayar. Idan kuɗin da aka bayar bai kai farashi ba, ba za a samu canji ba; sai a ƙara kuɗi. Amma a darasin nan, za mu yi misalai inda kuɗin da aka bayar ya fi farashi. Ka yi lissafi a hankali domin ka san ko canjin ya yi daidai.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi bayar da canji. [MAIN] Canji shi ne kuɗin da ake mayarwa idan ka bayar da kuɗi fiye da farashi. Idan abu yana ₦70, ka bayar da ₦100, canji shi ne ₦30. [PAUSE 1] Idan abu yana ₦70, ka bayar da ₦100, canji nawa ne? [MAIN] Hanyar lissafi ita ce ragi: kuɗin da aka bayar rage farashi. Ka tabbata kuɗin da aka bayar ya fi farashi. [PAUSE 2] Idan farashi ₦40 ne, ka bayar da ₦50, canji nawa ne? [OUTRO] Ka tuna: canji = abin da aka bayar − farashi.",
+    "audioFile": "audio/p3-maths-11.mp3",
+    "imageCard": "images/p3-maths-11.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Idan abu yana ₦70, ka bayar da ₦100, canji nawa ne?",
+        "correctAnswer": "30",
+        "options": [
+          "30",
+          "70",
+          "100"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan farashi ₦40 ne, ka bayar da ₦50, canji nawa ne?",
+        "correctAnswer": "10",
+        "options": [
+          "10",
+          "40",
+          "50"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Abu yana ₦{a}. Ka bayar da ₦{b}. Canji nawa ne?",
+        "answerFormula": "b - a",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 80
+          },
+          "b": {
+            "min": 100,
+            "max": 150
+          }
+        },
+        "distractorFormulas": [
+          "b - a + 10",
+          "b - a - 5",
+          "b - a + 20"
+        ]
+      },
+      {
+        "templateHa": "Farashi ₦{a}, kuɗin da aka bayar ₦{b}. Canji nawa ne?",
+        "answerFormula": "b - a",
+        "variableRanges": {
+          "a": {
+            "min": 20,
+            "max": 90
+          },
+          "b": {
+            "min": 100,
+            "max": 200
+          }
+        },
+        "distractorFormulas": [
+          "b - a + 5",
+          "b - a + 10",
+          "b - a + 20"
+        ]
+      },
+      {
+        "templateHa": "Idan ka bayar da ₦{b} don abu na ₦{a}, nawa za a mayar?",
+        "answerFormula": "b - a",
+        "variableRanges": {
+          "a": {
+            "min": 50,
+            "max": 120
+          },
+          "b": {
+            "min": 150,
+            "max": 250
+          }
+        },
+        "distractorFormulas": [
+          "b - a - 10",
+          "b - a + 20",
+          "b - a + 30"
+        ]
+      },
+      {
+        "templateHa": "Idan farashi ₦{a} ne kuma ka bayar da ₦{b}, canji nawa ne?",
+        "answerFormula": "b - a",
+        "variableRanges": {
+          "a": {
+            "min": 25,
+            "max": 75
+          },
+          "b": {
+            "min": 100,
+            "max": 180
+          }
+        },
+        "distractorFormulas": [
+          "b - a + 1",
+          "b - a + 2",
+          "b - a + 3"
+        ]
+      },
+      {
+        "templateHa": "Idan farashi ₦{a} ne kuma canji ₦{c}, kuɗin da aka bayar nawa ne?",
+        "answerFormula": "a + c",
+        "variableRanges": {
+          "a": {
+            "min": 20,
+            "max": 100
+          },
+          "c": {
+            "min": 10,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "a + c - 10",
+          "a + c + 10",
+          "a + c + 20"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-12",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 12,
+    "titleEn": "Time to the Hour, Half-Hour, and Quarter-Hour",
+    "titleHa": "Lokaci: Sa’a, Rabin Sa’a, da Kwata Sa’a",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Agogo yana nuna lokaci. Idan dogon hannu yana kan 12, lokaci yana kan cikakkiyar sa’a. Misali, 3:00 na nufin ƙarfe uku. Idan dogon hannu yana kan 6, lokaci ya kai rabin sa’a, kamar 3:30. Idan dogon hannu yana kan 3, lokaci ya kai kwata bayan sa’a, kamar 3:15. Idan dogon hannu yana kan 9, lokaci ya rage kwata kafin sa’a ta gaba, kamar 3:45. A P3, ka fara da sa’a, rabin sa’a, da kwata sa’a. Ka kalli ƙaramin hannu don sanin sa’a, sannan ka kalli dogon hannu don sanin mintuna. Lokaci yana taimaka maka ka san lokacin makaranta, wasa, cin abinci, da salla.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi karanta lokaci zuwa sa’a, rabin sa’a, da kwata sa’a. [MAIN] Idan dogon hannu yana kan 12, lokaci cikakkiyar sa’a ce. Idan yana kan 6, lokaci rabin sa’a ne. [PAUSE 1] Idan dogon hannu yana kan 6, wannan yana nuna me? [MAIN] Idan dogon hannu yana kan 3, kwata bayan sa’a ne. Idan yana kan 9, kwata ya rage kafin sa’a ta gaba. [PAUSE 2] Idan dogon hannu yana kan 3, mintuna nawa ne bayan sa’a? [OUTRO] Ka tuna: 12 yana nuna cikakkiyar sa’a, 6 yana nuna rabin sa’a, 3 yana nuna kwata bayan sa’a.",
+    "audioFile": "audio/p3-maths-12.mp3",
+    "imageCard": "images/p3-maths-12.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Idan dogon hannu yana kan 6, wannan yana nuna me?",
+        "correctAnswer": "rabin sa’a",
+        "options": [
+          "rabin sa’a",
+          "cikakkiyar sa’a",
+          "kwata"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan dogon hannu yana kan 3, mintuna nawa ne bayan sa’a?",
+        "correctAnswer": "15",
+        "options": [
+          "15",
+          "30",
+          "45"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Rabin sa’a mintuna nawa ne?",
+        "answerFormula": "30",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "15",
+          "45",
+          "60"
+        ]
+      },
+      {
+        "templateHa": "Kwata sa’a mintuna nawa ne?",
+        "answerFormula": "15",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "30",
+          "45",
+          "60"
+        ]
+      },
+      {
+        "templateHa": "Idan sa’a {a}:00 ta wuce mintuna 30, mintuna nawa suka wuce?",
+        "answerFormula": "30",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 11
+          }
+        },
+        "distractorFormulas": [
+          "15",
+          "45",
+          "60"
+        ]
+      },
+      {
+        "templateHa": "Idan sa’a {a}:00 ta wuce kwata, mintuna nawa suka wuce?",
+        "answerFormula": "15",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 11
+          }
+        },
+        "distractorFormulas": [
+          "30",
+          "45",
+          "60"
+        ]
+      },
+      {
+        "templateHa": "Mintuna {a} da mintuna 15 sun zama mintuna nawa?",
+        "answerFormula": "a + 15",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 40
+          }
+        },
+        "distractorFormulas": [
+          "a + 10",
+          "a + 20",
+          "a + 30"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-13",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 13,
+    "titleEn": "Length: Metre and Centimetre",
+    "titleHa": "Tsawo: Mita da Santimita",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tsawo yana nuna yadda abu yake da nisa daga gefe zuwa gefe ko daga ƙasa zuwa sama. Mita da santimita ma’aunai ne na tsawo. Mita ta fi santimita girma. Akwai santimita 100 a cikin mita 1. Za ka iya amfani da santimita wajen auna fensir, littafi, ko ƙaramin abu. Za ka iya amfani da mita wajen auna igiya, teburi, ko nisan ɗaki. Idan abu ya fi tsawo, lambar ma’auninsa za ta fi yawa idan ana amfani da ma’auni ɗaya. Ka tabbata ka san ko ana magana ne da mita ko santimita kafin ka haɗa ko ka kwatanta. Auna tsawo yana taimaka wa dinki, gini, wasa, da aikin gida.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi mita da santimita. [MAIN] Tsawo yana nuna yadda abu yake da nisa. Mita ta fi santimita girma. Mita 1 tana da santimita 100. [PAUSE 1] Mita 1 tana da santimita nawa? [MAIN] Ana amfani da santimita wajen ƙananan abubuwa kamar fensir. Ana amfani da mita wajen manyan abubuwa kamar igiya ko ɗaki. [PAUSE 2] Wane ma’auni ya fi dacewa da fensir: mita ko santimita? [OUTRO] Ka tuna: ma’auni ɗaya kafin kwatantawa.",
+    "audioFile": "audio/p3-maths-13.mp3",
+    "imageCard": "images/p3-maths-13.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Mita 1 tana da santimita nawa?",
+        "correctAnswer": "100",
+        "options": [
+          "100",
+          "10",
+          "1"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane ma’auni ya fi dacewa da fensir: mita ko santimita?",
+        "correctAnswer": "santimita",
+        "options": [
+          "santimita",
+          "mita",
+          "lita"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Mita {a} suna da santimita nawa?",
+        "answerFormula": "100 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "100 * a + 10",
+          "100 * a - 10",
+          "10 * a"
+        ]
+      },
+      {
+        "templateHa": "Santimita {a} da santimita {b} jimla nawa ne?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 80
+          },
+          "b": {
+            "min": 10,
+            "max": 80
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 5",
+          "a + b + 10",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Igiya mita {a} da mita {b} sun zama mita nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 8
+          },
+          "b": {
+            "min": 1,
+            "max": 8
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Tsawo santimita {a} ya fi santimita {b} da nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 60,
+            "max": 100
+          },
+          "b": {
+            "min": 10,
+            "max": 40
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 10",
+          "a - b + 20"
+        ]
+      },
+      {
+        "templateHa": "Idan abu yana da tsawo mita {a}, ninki biyu na tsawon nawa ne?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "2 * a + 1",
+          "2 * a + 2"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-14",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 14,
+    "titleEn": "Weight: Kilogram and Gram",
+    "titleHa": "Nauyi: Kilogiram da Giram",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Nauyi yana nuna yadda abu yake idan aka ɗauka ko aka auna shi. Kilogiram da giram ma’aunai ne na nauyi. Kilogiram ya fi giram girma. Akwai giram 1,000 a cikin kilogiram 1. Ana iya auna shinkafa, gari, wake, ko sukari da kilogiram. Ana iya auna ƙananan abubuwa kamar magani ko kayan miya da giram. Idan abubuwa biyu suna da ma’auni iri ɗaya, wanda lambarsa ta fi yawa shi ne ya fi nauyi. Amma kada ka haɗa kilogiram da giram ba tare da sanin alaƙarsu ba. A kasuwa, sanin nauyi yana taimaka maka ka sayi adadi daidai. Ka karanta ma’auni a hankali kafin ka yanke hukunci.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi kilogiram da giram. [MAIN] Nauyi yana nuna yadda abu yake idan aka ɗauka ko aka auna shi. Kilogiram ya fi giram girma. Kilogiram 1 yana da giram 1,000. [PAUSE 1] Kilogiram 1 yana da giram nawa? [MAIN] Ana amfani da kilogiram wajen shinkafa ko gari. Ana amfani da giram wajen ƙananan abubuwa. [PAUSE 2] Wane ma’auni ya fi dacewa da buhun shinkafa: kilogiram ko giram? [OUTRO] Ka tuna: duba ma’auni kafin kwatanta nauyi.",
+    "audioFile": "audio/p3-maths-14.mp3",
+    "imageCard": "images/p3-maths-14.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Kilogiram 1 yana da giram nawa?",
+        "correctAnswer": "1000",
+        "options": [
+          "1000",
+          "100",
+          "10"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane ma’auni ya fi dacewa da buhun shinkafa: kilogiram ko giram?",
+        "correctAnswer": "kilogiram",
+        "options": [
+          "kilogiram",
+          "giram",
+          "santimita"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Kilogiram {a} suna da giram nawa?",
+        "answerFormula": "1000 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 5
+          }
+        },
+        "distractorFormulas": [
+          "1000 * a + 100",
+          "1000 * a - 100",
+          "100 * a"
+        ]
+      },
+      {
+        "templateHa": "Giram {a} da giram {b} jimla nawa ne?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 500
+          },
+          "b": {
+            "min": 100,
+            "max": 500
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 10",
+          "a + b + 100",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Buhu kilogiram {a} da buhu kilogiram {b} sun zama kilogiram nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          },
+          "b": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Nauyi kilogiram {a} ya fi kilogiram {b} da nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 30
+          },
+          "b": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 2",
+          "a - b + 3"
+        ]
+      },
+      {
+        "templateHa": "Idan abu ɗaya yana da nauyin kilogiram {a}, abubuwa 3 suna da nauyin kilogiram nawa?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a + 1",
+          "3 * a + 2"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-15",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 15,
+    "titleEn": "Capacity: Litre and Millilitre",
+    "titleHa": "Ma’aunin Ruwa: Lita da Mililita",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Ma’aunin ruwa yana nuna yawan abin sha ko ruwa da abu zai iya ɗauka. Lita da mililita ma’aunai ne na ruwa. Lita ta fi mililita girma. Akwai mililita 1,000 a cikin lita 1. Ana amfani da lita wajen ruwa, madara, mai, ko lemo mai yawa. Ana amfani da mililita wajen ƙaramin magani ko ɗan ruwa. Idan kwalba tana lita 2, tana iya ɗaukar ruwa fiye da kwalba lita 1. Idan kana haɗa lita, ka tabbatar duk ma’aunin lita ne. Sanin wannan yana taimaka maka a girki, sayayya, asibiti, da aikin gida. Ka karanta tambaya da kyau: lita ce ko mililita?",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi lita da mililita. [MAIN] Lita da mililita suna auna yawan ruwa ko abin sha. Lita ta fi mililita girma. Lita 1 tana da mililita 1,000. [PAUSE 1] Lita 1 tana da mililita nawa? [MAIN] Ana amfani da lita wajen ruwa mai yawa. Ana amfani da mililita wajen ƙaramin ruwa ko magani. [PAUSE 2] Wane ma’auni ya fi dacewa da bokitin ruwa: lita ko mililita? [OUTRO] Ka tuna: duba ko tambaya tana magana da lita ko mililita.",
+    "audioFile": "audio/p3-maths-15.mp3",
+    "imageCard": "images/p3-maths-15.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Lita 1 tana da mililita nawa?",
+        "correctAnswer": "1000",
+        "options": [
+          "1000",
+          "100",
+          "10"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wane ma’auni ya fi dacewa da bokitin ruwa: lita ko mililita?",
+        "correctAnswer": "lita",
+        "options": [
+          "lita",
+          "mililita",
+          "giram"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Lita {a} suna da mililita nawa?",
+        "answerFormula": "1000 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 5
+          }
+        },
+        "distractorFormulas": [
+          "1000 * a + 100",
+          "1000 * a - 100",
+          "100 * a"
+        ]
+      },
+      {
+        "templateHa": "Lita {a} da lita {b} jimla nawa ce?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          },
+          "b": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Mililita {a} da mililita {b} sun zama nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 100,
+            "max": 500
+          },
+          "b": {
+            "min": 100,
+            "max": 500
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 10",
+          "a + b + 100",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Kwalba lita {a} ta fi lita {b} da nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 20
+          },
+          "b": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 2",
+          "a - b + 3"
+        ]
+      },
+      {
+        "templateHa": "Idan kwalba ɗaya tana lita {a}, kwalabe 4 suna lita nawa?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "3 * a",
+          "4 * a + 1",
+          "4 * a + 2"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-16",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 16,
+    "titleEn": "Simple Shapes and Their Properties",
+    "titleHa": "Sauƙaƙan Siffofi da Halayensu",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Siffa tana nuna yadda abu yake a gani. Murabba’i yana da gefe 4 da kusurwa 4, kuma gefensa duka suna daidai. Murabba’i mai tsawo ma yana da gefe 4 da kusurwa 4, amma gefe biyu sun fi tsawo. Alwatika yana da gefe 3 da kusurwa 3. Da’ira ba ta da kusurwa. A P3, ka koyi gane siffa ta hanyar ƙirga gefe da kusurwa. Ka iya ganin siffofi a taga, allo, kwano, littafi, ko alamar hanya. Idan ka ga abu, tambayi kanka: yana da gefe nawa? Yana da kusurwa nawa? Wannan zai taimaka maka ka bambanta siffofi ba tare da ruɗewa ba.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi sauƙaƙan siffofi. [MAIN] Murabba’i yana da gefe 4 da kusurwa 4. Alwatika yana da gefe 3 da kusurwa 3. Da’ira ba ta da kusurwa. [PAUSE 1] Alwatika tana da gefe nawa? [MAIN] Ka duba abubuwa a gida ko aji. Littafi yana kama da murabba’i mai tsawo. Kwano yana iya kama da da’ira. [PAUSE 2] Wace siffa ba ta da kusurwa? [OUTRO] Ka tuna: ƙirga gefe da kusurwa don gane siffa.",
+    "audioFile": "audio/p3-maths-16.mp3",
+    "imageCard": "images/p3-maths-16.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Alwatika tana da gefe nawa?",
+        "correctAnswer": "3",
+        "options": [
+          "3",
+          "4",
+          "0"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Wace siffa ba ta da kusurwa?",
+        "correctAnswer": "da’ira",
+        "options": [
+          "da’ira",
+          "alwatika",
+          "murabba’i"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Alwatika {a} suna da gefe nawa gaba ɗaya?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a + 1",
+          "3 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Murabba’i {a} suna da kusurwa nawa gaba ɗaya?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "3 * a",
+          "4 * a + 1",
+          "4 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Da’ira {a} suna da kusurwa nawa?",
+        "answerFormula": "0 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "2 * a",
+          "4 * a"
+        ]
+      },
+      {
+        "templateHa": "Siffa mai gefe 4 tana da gefe nawa?",
+        "answerFormula": "4",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "3",
+          "5",
+          "0"
+        ]
+      },
+      {
+        "templateHa": "Siffa mai gefe 3 tana da kusurwa nawa?",
+        "answerFormula": "3",
+        "variableRanges": {
+          "a": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "distractorFormulas": [
+          "4",
+          "2",
+          "0"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-17",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 17,
+    "titleEn": "Lines and Corners",
+    "titleHa": "Layuka da Kusurwa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Layi yana iya zama madaidaici, lanƙwasa, a kwance, a tsaye, ko a karkace. Kusurwa tana faruwa inda layuka biyu suka haɗu. A murabba’i, akwai kusurwa 4. A alwatika, akwai kusurwa 3. Da’ira ba ta da kusurwa saboda layinta yana lanƙwasa ba tare da haɗuwar layuka biyu ba. Idan ka kalli taga, ƙofa, allo, ko littafi, za ka ga layuka da kusurwa. Ƙirga kusurwa yana taimaka maka ka gane siffa. Layin a tsaye yana tashi sama da ƙasa. Layin a kwance yana tafiya gefe zuwa gefe. Layin karkace yana tafiya a gangare. Wannan ilimi yana taimaka wa zane, gini, da karatun siffofi.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi layuka da kusurwa. [MAIN] Layi na iya zama a tsaye, a kwance, ko a karkace. Kusurwa tana fitowa inda layuka biyu suka haɗu. [PAUSE 1] Murabba’i yana da kusurwa nawa? [MAIN] Alwatika tana da kusurwa 3. Da’ira ba ta da kusurwa, saboda ba ta da inda layuka biyu suka haɗu. [PAUSE 2] Da’ira tana da kusurwa nawa? [OUTRO] Ka tuna: kusurwa tana fitowa a haɗuwar layuka biyu.",
+    "audioFile": "audio/p3-maths-17.mp3",
+    "imageCard": "images/p3-maths-17.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Murabba’i yana da kusurwa nawa?",
+        "correctAnswer": "4",
+        "options": [
+          "4",
+          "3",
+          "0"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Da’ira tana da kusurwa nawa?",
+        "correctAnswer": "0",
+        "options": [
+          "0",
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Murabba’i {a} suna da kusurwa nawa gaba ɗaya?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "3 * a",
+          "4 * a + 1",
+          "4 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Alwatika {a} suna da kusurwa nawa gaba ɗaya?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a + 1",
+          "3 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Da’ira {a} suna da kusurwa nawa?",
+        "answerFormula": "0 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "2 * a",
+          "3 * a"
+        ]
+      },
+      {
+        "templateHa": "Idan siffa tana da kusurwa {a}, sannan aka ƙara kusurwa 1, jimla nawa ce?",
+        "answerFormula": "a + 1",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 8
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "a + 2",
+          "a + 3"
+        ]
+      },
+      {
+        "templateHa": "Kusurwa {a} da kusurwa {b} sun zama nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 10
+          },
+          "b": {
+            "min": 1,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-18",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 18,
+    "titleEn": "Simple Perimeter by Counting Sides",
+    "titleHa": "Sauƙaƙan Kewaye ta Ƙirga Gefuna",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Kewaye yana nufin jimlar tsawon gefunan siffa. A P3, za ka iya fara da ƙirga gefuna idan kowanne gefe yana da tsawo ɗaya. Idan murabba’i yana da gefuna 4, kowanne gefe yana da santimita 3, kewayensa shi ne 3 + 3 + 3 + 3 = 12. Wannan yana kama da ninkawa: 4 × 3 = 12. Idan alwatika tana da gefuna 3, kowanne gefe santimita 5, kewayenta shi ne 15. Ka bi gefen siffa a hankali kada ka manta gefe. Kewaye yana taimaka wa gini, shinge, zane, da auna kaya. Ka fara daga gefe ɗaya, ka kewaye har ka dawo inda ka fara.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi kewaye ta ƙirga gefuna. [MAIN] Kewaye yana nufin jimlar tsawon gefunan siffa. Idan murabba’i yana da gefuna 4, kowanne gefe santimita 3, kewayensa ya zama 12. [PAUSE 1] Murabba’i mai gefuna 4, kowanne santimita 3, kewayensa nawa ne? [MAIN] Idan alwatika tana da gefuna 3, kowanne gefe santimita 5, kewayenta ya zama 15. [PAUSE 2] Alwatika mai gefuna 3, kowanne santimita 5, kewayenta nawa ne? [OUTRO] Ka tuna: kewaye shi ne haɗin tsawon gefuna.",
+    "audioFile": "audio/p3-maths-18.mp3",
+    "imageCard": "images/p3-maths-18.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Murabba’i mai gefuna 4, kowanne santimita 3, kewayensa nawa ne?",
+        "correctAnswer": "12",
+        "options": [
+          "12",
+          "7",
+          "9"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Alwatika mai gefuna 3, kowanne santimita 5, kewayenta nawa ne?",
+        "correctAnswer": "15",
+        "options": [
+          "15",
+          "8",
+          "10"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Murabba’i yana da gefe 4, kowanne santimita {a}. Zagaye nawa ne?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "3 * a",
+          "4 * a + 1",
+          "4 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Alwatika tana da gefe 3, kowanne santimita {a}. Zagaye nawa ne?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a + 1",
+          "3 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Siffa tana da gefuna {a}, kowanne santimita 2. Zagaye nawa ne?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 3,
+            "max": 8
+          }
+        },
+        "distractorFormulas": [
+          "a",
+          "2 * a + 1",
+          "3 * a"
+        ]
+      },
+      {
+        "templateHa": "Gefuna biyu santimita {a} da {b} sun haɗu. Jimla nawa ce?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 30
+          },
+          "b": {
+            "min": 1,
+            "max": 30
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Idan zagaye ya ƙunshi gefuna 5, kowanne santimita {a}, jimla nawa ce?",
+        "answerFormula": "5 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "4 * a",
+          "5 * a + 1",
+          "5 * a + 2"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-19",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 19,
+    "titleEn": "Reading Simple Tables",
+    "titleHa": "Karanta Sauƙaƙan Tebur",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Tebur yana shirya bayanai cikin layuka da ginshiƙai. Layuka suna tafiya daga hagu zuwa dama. Ginshiƙai suna tafiya daga sama zuwa ƙasa. Idan tebur ya nuna yawan littattafai, alkaluma, ko yara, za ka iya karanta adadi daga wurin da layi da ginshiƙi suka haɗu. A P3, tebur zai iya nuna abubuwa kamar sunaye da yawan kaya. Ka fara da karanta taken tebur, sannan ka duba taken layi da taken ginshiƙi. Kada ka ɗauki lamba ba tare da sanin abin da take wakilta ba. Tebur yana taimaka maka ka kwatanta bayanai, ka haɗa jimla, ko ka sami bambanci. Wannan yana da amfani a makaranta, kasuwa, da gida.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi karanta sauƙaƙan tebur. [MAIN] Tebur yana da layuka da ginshiƙai. Layi yana tafiya gefe zuwa gefe. Ginshiƙi yana tafiya sama zuwa ƙasa. [PAUSE 1] Ginshiƙi yana tafiya ta wace hanya? [MAIN] Ka karanta taken tebur kafin ka ɗauki lamba. Lamba tana da ma’ana idan ka san abin da take wakilta. [PAUSE 2] Me ya kamata ka fara karantawa a tebur? [OUTRO] Ka tuna: tebur yana shirya bayanai.",
+    "audioFile": "audio/p3-maths-19.mp3",
+    "imageCard": "images/p3-maths-19.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Ginshiƙi yana tafiya ta wace hanya?",
+        "correctAnswer": "sama zuwa ƙasa",
+        "options": [
+          "sama zuwa ƙasa",
+          "gefe zuwa gefe",
+          "zagaye"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Me ya kamata ka fara karantawa a tebur?",
+        "correctAnswer": "taken tebur",
+        "options": [
+          "taken tebur",
+          "launi",
+          "hoto"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "A tebur, Musa yana da littattafai {a}, Aisha tana da {b}. Jimla nawa ne?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          },
+          "b": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "A tebur, aji A yana da yara {a}, aji B yana da {b}. Bambanci nawa ne?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 30,
+            "max": 60
+          },
+          "b": {
+            "min": 1,
+            "max": 29
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 2",
+          "a - b + 3"
+        ]
+      },
+      {
+        "templateHa": "A ginshiƙi ɗaya akwai {a}, {b}, da {c}. Jimla nawa ce?",
+        "answerFormula": "a + b + c",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          },
+          "b": {
+            "min": 1,
+            "max": 20
+          },
+          "c": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "a + b + c + 1",
+          "a + b + c + 2",
+          "a + b + c + 3"
+        ]
+      },
+      {
+        "templateHa": "Idan layi 4 kowanne yana da abubuwa {a}, jimla nawa ce?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "3 * a",
+          "4 * a + 1",
+          "4 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Tebur ya nuna abubuwa {a}; an cire {b}. Sauran nawa ne?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 30,
+            "max": 90
+          },
+          "b": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 10",
+          "a - b + 20"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-20",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 20,
+    "titleEn": "Simple Bar Charts",
+    "titleHa": "Sauƙaƙan Jadawalin Sanduna",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Jadawalin sanduna yana nuna bayanai da sanduna. Tsawon sanda yana nuna yawan abu. Idan sanda ta fi tsawo, tana nuna adadi mafi yawa. Idan sanda ta fi gajarta, tana nuna adadi mafi kaɗan. A P3, za ka iya karanta jadawalin sanduna don sanin yawan littattafai, ƙwallaye, yara, ko ranakun da aka yi aiki. Ka fara da karanta taken jadawali. Sai ka duba abin da kowace sanda take wakilta. Ka kuma duba lambobin gefe don sanin adadi. Jadawalin sanduna yana taimaka maka ka kwatanta bayanai da ido. Ka tambayi kanka: wace sanda ta fi tsawo? Wace ta fi gajarta? Nawa ne bambanci?",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu koyi jadawalin sanduna. [MAIN] Sanda mai tsawo tana nuna adadi mai yawa. Sanda mai gajarta tana nuna adadi kaɗan. Ka karanta taken jadawali kafin amsa. [PAUSE 1] Sanda mafi tsawo tana nuna me? [MAIN] Idan sanda A tana nuna 8, sanda B tana nuna 5, bambanci shi ne 3. [PAUSE 2] Idan sanda A tana 8, sanda B tana 5, bambanci nawa ne? [OUTRO] Ka tuna: tsawon sanda yana nuna yawan abu.",
+    "audioFile": "audio/p3-maths-20.mp3",
+    "imageCard": "images/p3-maths-20.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Sanda mafi tsawo tana nuna me?",
+        "correctAnswer": "adadi mai yawa",
+        "options": [
+          "adadi mai yawa",
+          "adadi kaɗan",
+          "babu abu"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan sanda A tana 8, sanda B tana 5, bambanci nawa ne?",
+        "correctAnswer": "3",
+        "options": [
+          "3",
+          "5",
+          "8"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Sanda A tana {a}, sanda B tana {b}. Jimla nawa ce?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          },
+          "b": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Sanda A tana {a}, sanda B tana {b}. Bambanci nawa ne?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 20,
+            "max": 50
+          },
+          "b": {
+            "min": 1,
+            "max": 19
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 2",
+          "a - b + 3"
+        ]
+      },
+      {
+        "templateHa": "Sanduna 3, kowacce tana nuna {a}. Jimla nawa ce?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a + 1",
+          "3 * a + 2"
+        ]
+      },
+      {
+        "templateHa": "Idan sanda ta ƙaru daga {a} zuwa {b}, ƙaruwa nawa ce?",
+        "answerFormula": "b - a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          },
+          "b": {
+            "min": 30,
+            "max": 60
+          }
+        },
+        "distractorFormulas": [
+          "b - a + 1",
+          "b - a + 2",
+          "b - a + 3"
+        ]
+      },
+      {
+        "templateHa": "Sanduna huɗu, kowacce tana nuna {a}. Jimla nawa ce?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 15
+          }
+        },
+        "distractorFormulas": [
+          "3 * a",
+          "4 * a + 1",
+          "4 * a + 2"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-21",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 21,
+    "titleEn": "Word Problems with Addition and Subtraction",
+    "titleHa": "Matsalolin Labari na Ƙari da Ragi",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Matsalar labari tana ɓoye lissafi cikin magana. Dole ka karanta a hankali ka gane ko ana buƙatar ƙari ko ragi. Idan labarin ya ce an haɗa, an ƙara, ko an kawo wasu, sau da yawa ƙari ne. Idan labarin ya ce an cire, an kashe, an bayar, ko an rage, sau da yawa ragi ne. Misali, idan kana da littattafai 35, aka ƙara 12, jimla ita ce 47. Idan kana da ₦80, ka kashe ₦25, saura shi ne ₦55. Kada ka ɗauki lambobi kawai; ka fahimci abin da labarin yake tambaya. Ka rubuta lissafi a takaice, sannan ka warware shi. A ƙarshe, ka duba ko amsar ta dace da labarin.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu warware matsalolin labari na ƙari da ragi. [MAIN] Idan labari ya ce an haɗa ko an ƙara, ka yi ƙari. Idan ya ce an cire ko an kashe, ka yi ragi. [PAUSE 1] Idan kana da 35, aka ƙara 12, jimla nawa ce? [MAIN] Karanta tambaya a hankali. Ka san abin da ake nema: jimla ce ko saura? Sannan ka rubuta lissafi. [PAUSE 2] Idan kana da 80, ka kashe 25, saura nawa ne? [OUTRO] Ka tuna: kalmomin labari suna gaya maka aikin lissafi.",
+    "audioFile": "audio/p3-maths-21.mp3",
+    "imageCard": "images/p3-maths-21.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Idan kana da 35, aka ƙara 12, jimla nawa ce?",
+        "correctAnswer": "47",
+        "options": [
+          "47",
+          "35",
+          "23"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan kana da 80, ka kashe 25, saura nawa ne?",
+        "correctAnswer": "55",
+        "options": [
+          "55",
+          "105",
+          "25"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Akwai littattafai {a}, aka ƙara {b}. Jimla nawa ce?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 80
+          },
+          "b": {
+            "min": 1,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 10",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Kana da kuɗi {a}, ka kashe {b}. Saura nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 60,
+            "max": 150
+          },
+          "b": {
+            "min": 1,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 10",
+          "a - b + 20"
+        ]
+      },
+      {
+        "templateHa": "Yara {a} sun zo, yara {b} sun ƙara zuwa. Jimla nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 5,
+            "max": 60
+          },
+          "b": {
+            "min": 5,
+            "max": 60
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 2",
+          "a + b - 1",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Akwai ƙwallaye {a}, an bayar da {b}. Sauran nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 40,
+            "max": 100
+          },
+          "b": {
+            "min": 1,
+            "max": 30
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 2",
+          "a - b + 3"
+        ]
+      },
+      {
+        "templateHa": "An sayi kaya {a}, sannan aka sayi {b}. Jimla nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 20,
+            "max": 100
+          },
+          "b": {
+            "min": 10,
+            "max": 80
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 5",
+          "a + b + 10",
+          "a"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-22",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 22,
+    "titleEn": "Word Problems with Multiplication and Division",
+    "titleHa": "Matsalolin Labari na Ninkawa da Rarrabawa",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Matsalolin labari na ninkawa da rarrabawa suna magana game da rukuni. Idan rukuni da yawa suna da adadi iri ɗaya, sau da yawa ninkawa ce. Misali, jakunkuna 4, kowanne yana da lemo 6, jimla ita ce 24. Idan jimla ta kasu cikin rukuni daidai, sau da yawa rarrabawa ce. Misali, idan an raba lemo 24 ga yara 6, kowane yaro zai samu 4. Ka nemi kalmomi kamar kowanne, rukuni, raba, ko daidai. Kada ka ruɗe idan lambobi suna da yawa. Tambayi kanka: ina neman jimla daga rukuni iri ɗaya, ko ina neman rabon da kowa zai samu? Wannan tambaya za ta nuna aikin lissafi.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu warware matsalolin labari na ninkawa da rarrabawa. [MAIN] Idan rukuni da yawa suna da adadi iri ɗaya, ninkawa ce. Jakunkuna 4, kowanne yana da lemo 6, jimla ita ce 24. [PAUSE 1] Jakunkuna 4, kowanne da lemo 6, jimla nawa? [MAIN] Idan jimla ta kasu ga mutane daidai, rarrabawa ce. Idan an raba lemo 24 ga yara 6, kowane yaro zai samu 4. [PAUSE 2] Lemo 24 ga yara 6, kowane yaro nawa? [OUTRO] Ka tuna: rukuni iri ɗaya na iya nufin ninkawa ko rarrabawa.",
+    "audioFile": "audio/p3-maths-22.mp3",
+    "imageCard": "images/p3-maths-22.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Jakunkuna 4, kowanne da lemo 6, jimla nawa?",
+        "correctAnswer": "24",
+        "options": [
+          "24",
+          "10",
+          "12"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Lemo 24 ga yara 6, kowane yaro nawa?",
+        "correctAnswer": "4",
+        "options": [
+          "4",
+          "6",
+          "24"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Rukuni {a}, kowanne yana da {b}. Jimla nawa?",
+        "answerFormula": "a * b",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 10
+          },
+          "b": {
+            "min": 2,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a * b + 1",
+          "a * b + 2",
+          "a * b + 3"
+        ]
+      },
+      {
+        "templateHa": "Abubuwa {a}0 an raba ga rukuni 5 daidai. Kowane rukuni nawa?",
+        "answerFormula": "2 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "2 * a + 1",
+          "2 * a + 2",
+          "2 * a + 3"
+        ]
+      },
+      {
+        "templateHa": "Kujeru {a}, kowacce tana da ƙafa 4. Ƙafa nawa?",
+        "answerFormula": "4 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "3 * a",
+          "4 * a + 1",
+          "5 * a"
+        ]
+      },
+      {
+        "templateHa": "Alewa {a}5 an raba ga yara 5 daidai. Kowane yaro nawa?",
+        "answerFormula": "2 * a + 1",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "2 * a + 2",
+          "2 * a + 3",
+          "2 * a + 4"
+        ]
+      },
+      {
+        "templateHa": "Rukuni 3, kowanne yana da {a}. Jimla nawa?",
+        "answerFormula": "3 * a",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "2 * a",
+          "3 * a + 1",
+          "4 * a"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-23",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 23,
+    "titleEn": "Mixed Review: Numbers, Money, and Measurement",
+    "titleHa": "Bita Mai Haɗi: Lambobi, Kuɗi, da Awo",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "Bita mai haɗi yana taimaka maka ka haɗa abubuwan da ka koya. Za ka iya kwatanta lambobi, haɗa kuɗi, bayar da canji, ko auna tsawo da nauyi. Idan tambaya ta zo, kar ka fara lissafi nan take. Da farko, ka gane abin da ake tambaya. Shin ana neman jimla ce? Saura ce? Bambanci ne? Ko ma’auni ne? Idan tambaya tana da kuɗi, ka lura da naira. Idan tana da tsawo, ka lura da mita ko santimita. Idan tana da nauyi, ka lura da kilogiram ko giram. Ka yi amfani da ƙari, ragi, ninkawa, ko rarrabawa gwargwadon labarin. Wannan bita tana shirya ka don aiki mai haɗa tunani fiye da ɗaya.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu yi bita mai haɗa lambobi, kuɗi, da awo. [MAIN] Ka fara da fahimtar tambaya. Idan ana neman jimla, ka yi ƙari. Idan ana neman saura, ka yi ragi. [PAUSE 1] Idan ka haɗa ₦40 da ₦30, jimla nawa ce? [MAIN] Idan tambaya tana magana da mita ko kilogiram, ka kula da ma’auni. Kada ka haɗa ma’auni daban ba tare da sani ba. [PAUSE 2] Mita 2 suna da santimita nawa? [OUTRO] Ka tuna: fahimtar tambaya tana zuwa kafin lissafi.",
+    "audioFile": "audio/p3-maths-23.mp3",
+    "imageCard": "images/p3-maths-23.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Idan ka haɗa ₦40 da ₦30, jimla nawa ce?",
+        "correctAnswer": "70",
+        "options": [
+          "70",
+          "10",
+          "40"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Mita 2 suna da santimita nawa?",
+        "correctAnswer": "200",
+        "options": [
+          "200",
+          "100",
+          "20"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Haɗa ₦{a} da ₦{b}. Jimla nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 100
+          },
+          "b": {
+            "min": 10,
+            "max": 100
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 10",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Mita {a} suna da santimita nawa?",
+        "answerFormula": "100 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "100 * a + 10",
+          "10 * a",
+          "100 * a - 10"
+        ]
+      },
+      {
+        "templateHa": "Kilogiram {a} da kilogiram {b} sun zama nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 20
+          },
+          "b": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 2",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Kuɗi ₦{a}, an kashe ₦{b}. Saura nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 60,
+            "max": 150
+          },
+          "b": {
+            "min": 1,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 10",
+          "a - b + 20"
+        ]
+      },
+      {
+        "templateHa": "Idan abubuwa {a} kowanne yana ₦{b}, jimla nawa?",
+        "answerFormula": "a * b",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 10
+          },
+          "b": {
+            "min": 5,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "a * b + 1",
+          "a + b",
+          "a * b + 5"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  },
+  {
+    "id": "p3-maths-24",
+    "gradeband": "p3",
+    "subject": "Mathematics",
+    "subjectHa": "Lissafi",
+    "moduleNumber": 24,
+    "titleEn": "P3 Mathematics Revision and Bridge to P4",
+    "titleHa": "Bitar Lissafin P3 da Gada Zuwa P4",
+    "titleAjami": null,
+    "ajami_validated": false,
+    "textExplanationHa": "A wannan bita, za ka tuna manyan abubuwan P3. Ka koyi lambobi har zuwa 1,000, ƙari, ragi, ninkawa, rarrabawa, rabi, kwata, kuɗi, lokaci, awo, siffofi, tebur, da jadawalin sanduna. Abu mafi muhimmanci shi ne fahimta. Idan ka ga tambaya, ka fara da karanta ta a hankali. Ka gano ko ana neman jimla, saura, rukuni, rabon daidai, ko ma’auni. Ka rubuta lissafi cikin tsari, sannan ka duba amsa. P4 zai kawo tambayoyi masu tsawo da sababbin matakai, amma abin da ka koya a P3 shi ne tushe. Idan tushe ya yi ƙarfi, sabon darasi zai fi sauƙi. Ka riƙa maimaitawa da murya da rubutu.",
+    "textExplanationAjami": null,
+    "audioScript": "[INTRO] Yau za mu yi bitar P3 kuma mu shirya zuwa P4. [MAIN] Ka tuna lambobi, ƙari, ragi, ninkawa, rarrabawa, rabi, kwata, kuɗi, lokaci, awo, da siffofi. [PAUSE 1] Idan kana neman jimla, wane aiki kake yi? [MAIN] Idan kana neman saura, ka yi ragi. Idan rukuni iri ɗaya ne, ka duba ninkawa ko rarrabawa. [PAUSE 2] Idan kana neman saura, wane aiki kake yi? [OUTRO] Ka tuna: P3 tushe ne mai ƙarfi don P4.",
+    "audioFile": "audio/p3-maths-24.mp3",
+    "imageCard": "images/p3-maths-24.png",
+    "microPauses": [
+      {
+        "pauseAtMs": 90000,
+        "questionHa": "Idan kana neman jimla, wane aiki kake yi?",
+        "correctAnswer": "ƙari",
+        "options": [
+          "ƙari",
+          "ragi",
+          "kwata"
+        ]
+      },
+      {
+        "pauseAtMs": 150000,
+        "questionHa": "Idan kana neman saura, wane aiki kake yi?",
+        "correctAnswer": "ragi",
+        "options": [
+          "ragi",
+          "ninkawa",
+          "rabi"
+        ]
+      }
+    ],
+    "quizQuestions": [
+      {
+        "templateHa": "Bitar ƙari: {a} + {b} = nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 100
+          },
+          "b": {
+            "min": 10,
+            "max": 100
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 1",
+          "a + b + 10",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Bitar ragi: {a} - {b} = nawa?",
+        "answerFormula": "a - b",
+        "variableRanges": {
+          "a": {
+            "min": 60,
+            "max": 150
+          },
+          "b": {
+            "min": 1,
+            "max": 50
+          }
+        },
+        "distractorFormulas": [
+          "a - b + 1",
+          "a - b + 10",
+          "a - b + 20"
+        ]
+      },
+      {
+        "templateHa": "Bitar ninkawa: {a} × {b} = nawa?",
+        "answerFormula": "a * b",
+        "variableRanges": {
+          "a": {
+            "min": 2,
+            "max": 10
+          },
+          "b": {
+            "min": 2,
+            "max": 10
+          }
+        },
+        "distractorFormulas": [
+          "a * b + 1",
+          "a * b + 2",
+          "a * b + 3"
+        ]
+      },
+      {
+        "templateHa": "Bitar kuɗi: ₦{a} da ₦{b} sun zama nawa?",
+        "answerFormula": "a + b",
+        "variableRanges": {
+          "a": {
+            "min": 10,
+            "max": 100
+          },
+          "b": {
+            "min": 10,
+            "max": 100
+          }
+        },
+        "distractorFormulas": [
+          "a + b + 5",
+          "a + b + 10",
+          "a"
+        ]
+      },
+      {
+        "templateHa": "Bitar awo: mita {a} suna da santimita nawa?",
+        "answerFormula": "100 * a",
+        "variableRanges": {
+          "a": {
+            "min": 1,
+            "max": 9
+          }
+        },
+        "distractorFormulas": [
+          "10 * a",
+          "100 * a + 10",
+          "100 * a - 10"
+        ]
+      }
+    ],
+    "track": "formal",
+    "targetAudience": "youth",
+    "gapTeaser": null,
+    "chainNext": null,
+    "isChainLeaf": true,
+    "useTodayPrompt": null
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "p2-bsci-01",
+    "imagePath": "images/p2-bsci-01.png",
+    "titleEn": "Living and Non-living Things",
+    "titleHa": "Abubuwa Masu Rai da Marasa Rai",
+    "type": "diagram",
+    "depictEn": "Two-group comparison scene: left side shows living things (a goat, a chicken, a tree, a potted bean plant, a person) that grow and need water/food; right side shows non-living things (a stone, a chair, a writing board, a bowl, a gown, a book). Children observe both groups from a distance, not touching the animal.",
+    "labelsHa": ["Masu Rai", "Marasa Rai"],
+    "safetyNote": "Do not depict a child touching, picking up, or handling the goat or chicken — the module explicitly says to sort things without harming or picking up an animal."
+  },
+  {
+    "id": "p2-bsci-02",
+    "imagePath": "images/p2-bsci-02.png",
+    "titleEn": "Parts of a Plant",
+    "titleHa": "Sassan Tsiro",
+    "type": "diagram",
+    "depictEn": "A labeled mango-tree-style plant illustration showing five parts: the root system in the soil, the stem rising up, leaves, a flower, and a fruit (mango), each with a small label line pointing to it.",
+    "labelsHa": ["Tushe", "Kara", "Ganye", "Fure", "'Ya'ya"],
+    "safetyNote": "Do not depict a child pulling off a leaf or breaking the stem — the module tells children to only look and point, not remove leaves or break the stem."
+  },
+  {
+    "id": "p2-bsci-03",
+    "imagePath": "images/p2-bsci-03.png",
+    "titleEn": "Domestic Animals",
+    "titleHa": "Dabbobin Gida",
+    "type": "diagram",
+    "depictEn": "A small compound scene with labeled domestic animals standing calmly: a goat, a sheep, a chicken, a cow, a donkey, a dog, and a cat, each near simple items showing their use (an egg near the chicken, a milk pail near the cow, a small load near the donkey). A child watches from a comfortable distance, not touching any animal.",
+    "labelsHa": ["Akuya", "Tunkiya", "Kaza", "Saniya", "Jaki", "Kare", "Kyanwa"],
+    "safetyNote": "Do not depict a child throwing a stone at, scaring, or closely handling an animal — the module warns against throwing stones or frightening animals and says to ask an adult before touching an unfamiliar one."
+  },
+  {
+    "id": "p2-bsci-04",
+    "imagePath": "images/p2-bsci-04.png",
+    "titleEn": "Weather",
+    "titleHa": "Yanayi",
+    "type": "diagram",
+    "depictEn": "Four small linked weather panels: a bright sun, a gray cloud, wind shown moving leaves and dust, and gentle rain falling. A child with an umbrella (held with an adult nearby) represents the rain-safety tip.",
+    "labelsHa": ["Rana", "Gajimare", "Iska", "Ruwan Sama"],
+    "safetyNote": "Do not depict a storm, lightning, flooding, or a child alone outdoors in heavy rain — keep the weather depiction mild and the umbrella scene shows adult presence, matching the module's 'with adult permission' framing."
+  },
+  {
+    "id": "p2-bsci-05",
+    "imagePath": "images/p2-bsci-05.png",
+    "titleEn": "Uses of Water",
+    "titleHa": "Amfanin Ruwa",
+    "type": "diagram",
+    "depictEn": "A grid of small scenes showing water's everyday uses: a child drinking from a cup, a child washing hands at a tap, cooking pots on a fire (adult tending), a watering can for a plant, and an animal drinking from a bowl. One panel shows a hand turning off a tap.",
+    "labelsHa": ["Famfo"],
+    "safetyNote": "Do not depict a running/wasted tap left open or a child drinking from a dirty source — the module stresses turning off the tap and drinking only clean water."
+  },
+  {
+    "id": "p2-bsci-06",
+    "imagePath": "images/p2-bsci-06.png",
+    "titleEn": "Personal Hygiene",
+    "titleHa": "Tsaftar Jiki",
+    "type": "diagram",
+    "depictEn": "A sequence of small hygiene-habit panels: a child washing hands with soap and water, a child brushing teeth, a child combing hair, a child wearing clean clothes, and a child covering a cough/sneeze with their elbow.",
+    "labelsHa": [],
+    "safetyNote": "Do not depict a sick or symptomatic child, an explicit toilet/bathroom scene, a child cutting their own nails (an adult should be shown trimming them), or two children sharing a toothbrush — the module says not to share a toothbrush and has an adult trim nails."
+  },
+  {
+    "id": "p2-bsci-07",
+    "imagePath": "images/p2-bsci-07.png",
+    "titleEn": "Food Groups",
+    "titleHa": "Rukunan Abinci",
+    "type": "diagram",
+    "depictEn": "A three-section plate illustration grouping foods by role: energy foods (tuwo, rice, cassava, potato, bread), body-building foods (beans, egg, fish, meat, milk), and protective foods (spinach-type leaves, moringa leaves, mango, orange). A cup of water and a child washing hands shown beside the plate.",
+    "labelsHa": [],
+    "safetyNote": "Do not depict food being picked up off the ground or eaten unwashed — the module tells children to wash hands before eating and never eat food that has fallen."
+  },
+  {
+    "id": "p2-bsci-08",
+    "imagePath": "images/p2-bsci-08.png",
+    "titleEn": "The Five Senses",
+    "titleHa": "Gabobin Ji Biyar",
+    "type": "diagram",
+    "depictEn": "A friendly child figure with five simple callouts pointing to each sense organ: eyes (seeing a picture), ears (hearing a bell), nose (smelling food), tongue (tasting a fruit), and skin/hand (feeling a soft cloth).",
+    "labelsHa": ["Idanu", "Kunnuwa", "Hanci", "Harshe", "Fata"],
+    "safetyNote": "Do not depict a child looking directly at the sun, inserting an object into an ear or nose, or eating an unidentified item — these are explicit cautions in the module text."
+  },
+  {
+    "id": "p2-bsci-09",
+    "imagePath": "images/p2-bsci-09.png",
+    "titleEn": "Safety at Home",
+    "titleHa": "Tsaro a Gida",
+    "type": "diagram",
+    "depictEn": "A home safety scene shown from a distance with hazards circled or crossed with a small 'no' icon rather than approached: a stove/fire, an electric socket and wire, a knife/razor/nail and a broken bottle, and a medicine bottle and fuel container on a high shelf. A separate panel shows a child calmly telling an adult about spilled water or smoke.",
+    "labelsHa": [],
+    "safetyNote": "Do not depict a child touching, holding, or standing close to fire, a socket, sharp objects, or a chemical/medicine container — every hazard must be shown as something to avoid, never something the child is interacting with, per the module's own list of things not to touch."
+  },
+  {
+    "id": "p2-bsci-10",
+    "imagePath": "images/p2-bsci-10.png",
+    "titleEn": "Clean Environment",
+    "titleHa": "Muhalli Mai Tsafta",
+    "type": "diagram",
+    "depictEn": "A tidy compound scene: a child dropping a banana peel/wrapper into a covered waste bin, a swept path, and a small separate panel showing a puddle of standing dirty water near a house being pointed out to an adult (not touched).",
+    "labelsHa": [],
+    "safetyNote": "Do not depict a child directly handling loose trash or standing water with bare hands — the module says to wash hands after touching waste and flags standing dirty water as a mosquito-breeding risk to report, not touch."
+  },
+  {
+    "id": "p2-bsci-11",
+    "imagePath": "images/p2-bsci-11.png",
+    "titleEn": "Simple Machines at Home",
+    "titleHa": "Sauƙaƙan Kayan Aiki a Gida",
+    "type": "diagram",
+    "depictEn": "A flat-lay of everyday, non-electric household tools labeled with their names: a spoon, a broom, a bucket, and a key. A knife is shown set apart in an adult's hand, not a child's, to reflect the supervised-use caution.",
+    "labelsHa": ["Cokali", "Tsintsiya", "Guga", "Mabuɗi"],
+    "safetyNote": "Do not depict a child holding the knife or any sharp/heavy tool unsupervised, and do not depict a powered/electric machine — the module explicitly says these simple tools need no electric machine and that a knife is for adult-supervised use only."
+  },
+  {
+    "id": "p2-bsci-12",
+    "imagePath": "images/p2-bsci-12.png",
+    "titleEn": "Sources of Light",
+    "titleHa": "Tushen Haske",
+    "type": "diagram",
+    "depictEn": "The sun shown as the main light source in a daytime sky, with small inset icons of a lamp, a torch, and an electric bulb as other light sources. A separate small panel shows a child's own shadow cast on the ground while the child looks down, not at the sun.",
+    "labelsHa": ["Rana", "Fitila", "Inuwa"],
+    "safetyNote": "Do not depict a child looking directly at the sun or standing close to an open flame — the module explicitly warns against looking straight at the sun."
+  },
+  {
+    "id": "p2-bsci-13",
+    "imagePath": "images/p2-bsci-13.png",
+    "titleEn": "Sound Around Us",
+    "titleHa": "Sauti a Kewaye da Mu",
+    "type": "diagram",
+    "depictEn": "A child gently tapping a small drum, shown with faint motion/vibration lines around the drumhead to indicate it shaking as it makes sound. Small side icons show a bell, a radio at low volume, and a car, as other everyday sound sources.",
+    "labelsHa": ["Ganga"],
+    "safetyNote": "Do not depict loud banging, a child striking an ear, or a radio/device shown at high volume — the module warns against noise that disturbs people or hurts ears and says to keep device volume low."
+  },
+  {
+    "id": "p2-bsci-14",
+    "imagePath": "images/p2-bsci-14.png",
+    "titleEn": "Care of Plants and Animals",
+    "titleHa": "Kula da Tsirrai da Dabbobi",
+    "type": "diagram",
+    "depictEn": "Split scene: on one side a child gently watering a potted plant with a small watering can; on the other side a child placing a bowl of food and water near a goat and a chicken in a clean, shaded spot, without touching the animals.",
+    "labelsHa": [],
+    "safetyNote": "Do not depict a child throwing anything at an animal, pulling its tail, or breaking the plant's branches — the module explicitly forbids both."
+  },
+  {
+    "id": "p2-bsci-15",
+    "imagePath": "images/p2-bsci-15.png",
+    "titleEn": "Keeping Water Safe",
+    "titleHa": "Kiyaye Ruwa Mai Tsabta",
+    "type": "diagram",
+    "depictEn": "A covered water storage container with a lid, a clean cup and ladle resting beside it (not inside the water), and a separate small panel showing an adult boiling or filtering water at a source that looks uncertain, plus a covered well.",
+    "labelsHa": ["Mazubi Mai Murfi"],
+    "safetyNote": "Do not depict a hand placed directly into the drinking water, a child alone at an open well, or muddy/dirty water being consumed — the module warns against dirty hands in the water and unclean sources."
+  },
+  {
+    "id": "p2-bsci-16",
+    "imagePath": "images/p2-bsci-16.png",
+    "titleEn": "What Plants Need to Grow",
+    "titleHa": "Abubuwan da Tsiro Ke Bukata Domin Girma",
+    "type": "diagram",
+    "depictEn": "A potted bean plant illustration with four small arrows/icons pointing to it: a watering can (water), gentle wind lines (air), sun rays (sunlight), and the soil around its roots (suitable soil). A child observes and gently checks the soil without pulling the plant.",
+    "labelsHa": ["Ruwa", "Iska", "Hasken Rana", "Ƙasa"],
+    "safetyNote": "Do not depict a child pulling a leaf or breaking the stem, and do not show excessive water being poured — the module warns that too much water can harm the plant and tells children not to pull leaves or break the stem."
+  },
+  {
+    "id": "p2-bsci-17",
+    "imagePath": "images/p2-bsci-17.png",
+    "titleEn": "Habitats and Their Differences",
+    "titleHa": "Mazaunin Halittu da Bambancinsu",
+    "type": "diagram",
+    "depictEn": "Three small matched scenes, each creature shown in its own local habitat: a fish in a pond/stream, a plant growing in soil, and a bird perched in a tree beside its nest. A fourth small panel shows a farm with crops and small animals near a house with a chicken and goat. Children observe each scene from a distance.",
+    "labelsHa": [],
+    "safetyNote": "Do not depict a child touching a nest, a burrow/hole, or any wild animal — the module explicitly says not to touch a nest, hole, or wild animal and to observe from a distance."
+  },
+  {
+    "id": "p2-bsci-18",
+    "imagePath": "images/p2-bsci-18.png",
+    "titleEn": "Materials, Their Properties and Uses",
+    "titleHa": "Kayan Abu, Halayensu da Amfaninsu",
+    "type": "diagram",
+    "depictEn": "A labeled flat-lay of everyday objects grouped by material: a wooden table/door for wood, a metal spoon and nail for metal, a rubber shoe for rubber, a cloth gown for cloth, and a plastic bucket for plastic.",
+    "labelsHa": ["Itace", "Ƙarfe", "Roba", "Zane", "Filastik"],
+    "safetyNote": "Do not depict broken glass, a sharp/pointed metal edge, or a hot object — the module explicitly warns children not to touch broken glass, sharp metal, or anything hot."
+  },
+  {
+    "id": "p2-bsci-19",
+    "imagePath": "images/p2-bsci-19.png",
+    "titleEn": "Clay and Moulding Shapes",
+    "titleHa": "Laka da Ƙera Siffofi",
+    "type": "illustration",
+    "depictEn": "A pair of hands gently moulding a small lump of moist clay into a simple ball and a small bowl shape on a clean surface, with a hardened, dried clay shape (e.g. a small toy animal) shown finished beside it for comparison. An adult figure present nearby.",
+    "labelsHa": ["Laka"],
+    "safetyNote": "Do not depict a child putting clay in their mouth or throwing clay at someone, and do not depict unclean/muddy ground clay — the module explicitly forbids putting clay in the mouth or throwing it, and specifies clean clay from an approved source."
+  }
+]

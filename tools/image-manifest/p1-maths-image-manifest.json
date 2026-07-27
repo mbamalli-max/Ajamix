@@ -1,0 +1,258 @@
+[
+  {
+    "id": "p1-maths-01",
+    "imagePath": "images/p1-maths-01.png",
+    "titleEn": "Counting 1–10",
+    "titleHa": "Kirgawa 1–10",
+    "type": "diagram",
+    "depictEn": "Ten familiar counters (e.g. small stones or seeds) arranged in one clear row in counting order, with a small blank space left beside each counter for its numeral to be added later; no place-value or comparison symbols, and no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "p1-maths-02",
+    "imagePath": "images/p1-maths-02.png",
+    "titleEn": "Counting 11–20",
+    "titleHa": "Kirgawa 11–20",
+    "type": "diagram",
+    "depictEn": "A number path of ten evenly spaced blank stepping-stones, with a small object (book or chair) beside several of them, and one stepping-stone near the middle marked with a plain circle outline as the module's callout position — no numerals written on the path.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-03",
+    "imagePath": "images/p1-maths-03.png",
+    "titleEn": "Counting 21–30",
+    "titleHa": "Kirgawa 21–30",
+    "type": "diagram",
+    "depictEn": "A single continuous winding dirt pathway crossing a small stream — a smooth, unbroken path rather than discrete countable stepping-stones — with light texture marks like pebbles or grass tufts along its edges purely as decoration, not meant to be individually counted. Mark roughly the last fifth of the path with a small connecting arrow to indicate the module's own callout transition near the end of the path. No numerals written anywhere on the path.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-04",
+    "imagePath": "images/p1-maths-04.png",
+    "titleEn": "Counting 31–40",
+    "titleHa": "Kirgawa 31–40",
+    "type": "diagram",
+    "depictEn": "A number path of ten evenly spaced blank number-tiles laid along a garden path, with the last two tiles visually joined by a small connecting arrow to mark the module's own callout transition; no numerals written on the path.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-05",
+    "imagePath": "images/p1-maths-05.png",
+    "titleEn": "Counting 41–50",
+    "titleHa": "Kirgawa 41–50",
+    "type": "diagram",
+    "depictEn": "A number path of ten evenly spaced blank wooden number-blocks arranged along a low classroom shelf, with the last two blocks visually joined by a small connecting arrow to mark the module's own callout transition; no numerals written on the path.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-06",
+    "imagePath": "images/p1-maths-06.png",
+    "titleEn": "Place Value (Tens & Units)",
+    "titleHa": "Matsayi (Goma da Guda)",
+    "type": "diagram",
+    "depictEn": "Two labelled-but-blank boxes, tens and units, each holding a distinct bundled-stick group — a bundle of ten sticks in the tens box, a few loose single sticks in the units box — beside a second identical pair of boxes with the stick bundles swapped between them, showing that swapping the groups changes the total; no numerals rendered anywhere.",
+    "labelsHa": [
+      "Goma",
+      "Guda"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-07",
+    "imagePath": "images/p1-maths-07.png",
+    "titleEn": "Greater Than & Less Than",
+    "titleHa": "Girma da Ƙanan",
+    "type": "diagram",
+    "depictEn": "Two side-by-side object-count comparisons using matching small counted objects (e.g. seed pods): one pair shows a visibly larger group beside a visibly smaller group, the second pair shows a different size difference, with a blank gap left between each pair for the comparison symbol to be added later; no numerals or comparison symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-08",
+    "imagePath": "images/p1-maths-08.png",
+    "titleEn": "Odd & Even Numbers",
+    "titleHa": "Lambobi marasa daidaituwa da masu daidaituwa",
+    "type": "diagram",
+    "depictEn": "Two object-grouping panels using the same kind of small object (pencils): one panel shows a group splitting into two rows with a single item left over and circled (odd), the other shows a different-sized group splitting evenly into two equal rows with nothing left over (even); no numerals rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-09",
+    "imagePath": "images/p1-maths-09.png",
+    "titleEn": "Addition Without Carrying",
+    "titleHa": "Ƙari ba tare da ja da baya ba",
+    "type": "diagram",
+    "depictEn": "A simple combining scene: one small cluster of dots being pushed together with a second smaller cluster of dots into one larger cluster, shown beside a matching version using pencils being gathered together the same way; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-10",
+    "imagePath": "images/p1-maths-10.png",
+    "titleEn": "Addition With Carrying",
+    "titleHa": "Ƙari tare da ja da baya",
+    "type": "diagram",
+    "depictEn": "A combining-and-regrouping scene: a cluster of loose dots being combined with a second cluster, with ten of the combined dots visibly circled into one bundled group and a few loose dots left beside it, showing the physical regrouping-into-a-bundle action; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-11",
+    "imagePath": "images/p1-maths-11.png",
+    "titleEn": "Subtraction Without Carrying",
+    "titleHa": "Ragewa ba tare da ja da baya ba",
+    "type": "diagram",
+    "depictEn": "A take-away scene: a row of pencils with several of them crossed out or covered by a small cloth, leaving the remaining pencils clearly visible and uncovered; no numerals or equation symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-12",
+    "imagePath": "images/p1-maths-12.png",
+    "titleEn": "Revision and Assessment",
+    "titleHa": "Maimaitawa da jarrabawa",
+    "type": "illustration",
+    "depictEn": "A calm, confident child working through a worksheet that mixes counting, addition, and subtraction questions, with a teacher nearby offering quiet encouragement.",
+    "labelsHa": [],
+    "safetyNote": "Depict the child calm and confident, not anxious or stressed — the module frames this as ordinary review, not a frightening test."
+  },
+  {
+    "id": "p1-maths-13",
+    "imagePath": "images/p1-maths-13.png",
+    "titleEn": "Counting 51–70",
+    "titleHa": "Kirgawa 51–70",
+    "type": "diagram",
+    "depictEn": "A number path of blank stepping-stones, with three consecutive stepping-stones visually joined by a connecting arrow to mark the module's own callout transition; no numerals written on the path.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-14",
+    "imagePath": "images/p1-maths-14.png",
+    "titleEn": "Introduction to Multiplication",
+    "titleHa": "Gabatar da Rinkawa",
+    "type": "diagram",
+    "depictEn": "Three identical small groups of balls arranged side by side, each group holding the same number of balls, with a small blank equation-shaped placeholder box beside them where the matching multiplication sentence will be added later; no numerals or operator symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-15",
+    "imagePath": "images/p1-maths-15.png",
+    "titleEn": "Introduction to Division",
+    "titleHa": "Gabatar da Rarraba",
+    "type": "diagram",
+    "depictEn": "A fair-sharing scene: a small pile of items being distributed one at a time into bowls held by several children, ending with every child holding the same visible amount; no numerals rendered, only the physical fair-sharing action and equal outcome.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-16",
+    "imagePath": "images/p1-maths-16.png",
+    "titleEn": "Fractions (½ and ¼)",
+    "titleHa": "Ƙangare (rabi da rubu'u)",
+    "type": "diagram",
+    "depictEn": "A round plate coloured half one colour and half another to show rabi (half), beside a second identical plate divided into four equal coloured wedges to show rubu'i (quarter); no numerals or fraction symbols rendered.",
+    "labelsHa": [
+      "Rabi",
+      "Rubu'i"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-17",
+    "imagePath": "images/p1-maths-17.png",
+    "titleEn": "Money – Identifying Naira and Kobo",
+    "titleHa": "Kuɗi – Gane Naira da Kobo",
+    "type": "diagram",
+    "depictEn": "Five schematic Nigerian naira notes of visibly different sizes and colours arranged in ascending size order on a flat surface, each note's face left blank for its value to be added later, plus a small separate stack of coins beside them; no printed numerals or currency symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p1-maths-18",
+    "imagePath": "images/p1-maths-18.png",
+    "titleEn": "Money – Addition and Change",
+    "titleHa": "Kuɗi – Ƙari da canji",
+    "type": "diagram",
+    "depictEn": "A market scene: a seller placing two schematic naira notes of different colours together, beside a second panel showing a customer's larger note being exchanged for a small item with a few coins returned as change; notes and coins shown as blank coloured shapes distinguished only by size, no printed value or symbol rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use generic educational currency representations, not photorealistic banknote reproductions."
+  },
+  {
+    "id": "p1-maths-19",
+    "imagePath": "images/p1-maths-19.png",
+    "titleEn": "Length (Metres and Centimetres)",
+    "titleHa": "Tsayi (Mita da Santimita)",
+    "type": "diagram",
+    "depictEn": "A metre tape measuring a table's length, beside a small comparison panel showing two lengths of rope laid side by side, one visibly longer than the other; no numerals or unit labels rendered.",
+    "labelsHa": [
+      "Mita",
+      "Santimita"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-20",
+    "imagePath": "images/p1-maths-20.png",
+    "titleEn": "Capacity (Litres)",
+    "titleHa": "Girmamawa (Lita)",
+    "type": "diagram",
+    "depictEn": "A bottle shown half full beside the same bottle shown completely full, with a small side comparison of two differently sized containers, one visibly larger than the other; no numerals or unit labels rendered.",
+    "labelsHa": [
+      "Lita"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-21",
+    "imagePath": "images/p1-maths-21.png",
+    "titleEn": "Weight (Kilograms)",
+    "titleHa": "Nauyi (Kilogiram)",
+    "type": "diagram",
+    "depictEn": "A simple balance scale comparing two sacks of rice of visibly different sizes, tipping toward the heavier, larger sack; no numerals or unit labels rendered.",
+    "labelsHa": [
+      "Kilogiram"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-22",
+    "imagePath": "images/p1-maths-22.png",
+    "titleEn": "Time – Days, Weeks, and Hours",
+    "titleHa": "Lokaci – Kwanaki, makonni, da sa'o'i",
+    "type": "diagram",
+    "depictEn": "A seven-day week strip shown as seven blank equal segments in a row, beside an analog clock face with blank hour markers (no numerals) and its hour and minute hands positioned to show the module's example time.",
+    "labelsHa": [],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-23",
+    "imagePath": "images/p1-maths-23.png",
+    "titleEn": "2D and 3D Shapes",
+    "titleHa": "Siffofi masu fuska biyu da uku",
+    "type": "diagram",
+    "depictEn": "Flat shapes — a triangle, a square, and a circle — shown beside solid shapes — a cube like a box and a sphere like a ball — to compare two-face and three-face shapes directly.",
+    "labelsHa": [
+      "Alwatika",
+      "Murabba'i"
+    ],
+    "safetyNote": ""
+  },
+  {
+    "id": "p1-maths-24",
+    "imagePath": "images/p1-maths-24.png",
+    "titleEn": "Data Collection and Pictographs",
+    "titleHa": "Tattara bayanai da zane-zane",
+    "type": "diagram",
+    "depictEn": "A simple pictograph with two rows — fish and meat — each showing a count of small icon symbols representing classmates' food preferences collected and tallied.",
+    "labelsHa": [],
+    "safetyNote": ""
+  }
+]

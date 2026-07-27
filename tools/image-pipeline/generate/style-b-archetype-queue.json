@@ -1,0 +1,65 @@
+{
+  "queueVersion": "1.0",
+  "purpose": "Phase 2 Style B three-archetype real-art test — prepared for dry-run only; no rendering authorization",
+  "defaultModel": "gpt-image-1",
+  "maxRetries": 2,
+  "fallbackRule": "if Style B repeatedly fails contrast or consistency on this 3-item test, the next candidate is C. Never A.",
+  "fallbackDecisionOwner": "Muhammad after real-art review; documented decision only, not executable logic.",
+  "jobs": [
+    {
+      "id": "style-b-p2-bsci-16",
+      "archetype": "Contextual illustration",
+      "status": "queued",
+      "style": "B — Clean watercolor editorial",
+      "moduleId": "p2-bsci-16",
+      "output": "tools/image-pipeline/output/raw/style-b-p2-bsci-16.png",
+      "prompt": "Clean watercolor editorial illustration for a premium children’s curriculum, landscape 3:2. A potted bean plant with four visually distinct, high-contrast cues for water, air, sunlight, and suitable soil: a small watering can beside the pot, gentle air movement suggested only by the placement of a light breeze cue (no lines or arrows), warm sunlight as a simple sun shape without rays or symbols, and healthy sienna soil visibly around the roots. Amina, the 6–7-year-old AJAMIX recurring character, gently checks the soil with careful hands without pulling any leaf or stem; use her accurate child proportions, deep-brown skin, and context-appropriate cream-and-indigo school clothing from characters.md. Translucent controlled watercolor with high-contrast focal objects and no pale or muddy washes, bright paper-white negative space, selective indigo/pencil contours around important silhouettes, clear educational visual hierarchy, culturally grounded Northern Nigerian classroom/courtyard details. Keep the upper 22% band and left/right label-safe margins completely unpainted: no wash, texture, line, icon, or incidental detail. Do not include any writing, symbols, numbers, equations, arrows, labels, anatomy-relationship lines, or circuit/wire connections in the illustration; these are added only by the separate overlay compositing step.",
+      "negativePrompt": "No text, letters, numbers, equations, arrows, labels, rendered anatomy-relationship lines, rendered circuit/wire connections, watermark, logo, brand, photorealism, generic flat icon set, pale or muddy wash, dark muddy wash, low-contrast focal objects, over-rendered texture, pseudo-African patterning, caricature, unsafe child behavior, plant damage, distorted anatomy, or rendered callout labels. No leaf-pulling and no excessive water. Numbers, equations, arrows, labels, anatomy relationships, and circuit connections are added by a separate compositing step.",
+      "labelSource": {
+        "manifest": "tools/image-manifest/p2-bsci-image-manifest.json",
+        "id": "p2-bsci-16",
+        "labelsHa": ["Ruwa", "Iska", "Hasken Rana", "Ƙasa"],
+        "overlayOnly": true
+      },
+      "safetyNote": "Do not depict a child pulling a leaf or breaking the stem, and do not show excessive water being poured.",
+      "attempts": 0
+    },
+    {
+      "id": "style-b-p4-bsci-18",
+      "archetype": "Labelled science diagram (anatomy relationships)",
+      "status": "queued",
+      "style": "B — Clean watercolor editorial",
+      "moduleId": "p4-bsci-18",
+      "output": "tools/image-pipeline/output/raw/style-b-p4-bsci-18.png",
+      "prompt": "Clean watercolor editorial illustration for a premium children’s curriculum, landscape 3:2. A non-graphic, simple clothed torso outline in a calm front-facing pose, plus four separate high-contrast tooth-shape reference silhouettes beside the head; preserve generous completely unpainted interior and surrounding zones for the overlay compositor to add the deterministic food-path relationship from mouth to food tube to stomach to intestines and the later labels. No exposed organs, medical procedure, illness, anatomy-relationship line, arrow, or connector is generated. Translucent controlled watercolor with high-contrast focal objects and no pale or muddy washes, bright paper-white negative space, selective indigo/pencil contours around important silhouettes, clear educational visual hierarchy, and a culturally neutral premium primary-school diagram context. Keep the upper 22% band and left/right label-safe margins completely unpainted: no wash, texture, line, icon, or incidental detail. Do not include any writing, symbols, numbers, equations, arrows, labels, anatomy-relationship lines, or circuit/wire connections in the illustration; these are added only by the separate overlay compositing step.",
+      "negativePrompt": "No text, letters, numbers, equations, arrows, labels, rendered anatomy-relationship lines, rendered circuit/wire connections, watermark, logo, brand, photorealism, generic flat icon set, pale or muddy wash, dark muddy wash, low-contrast focal objects, over-rendered texture, pseudo-African patterning, caricature, unsafe child behavior, plant damage, distorted anatomy, rendered callout labels, exposed organs, graphic medical content, procedure, illness, blood, or food-path line. Numbers, equations, arrows, labels, anatomy relationships, and circuit connections are added by a separate compositing step.",
+      "labelSource": {
+        "manifest": "tools/image-manifest/p4-bsci-image-manifest.json",
+        "id": "p4-bsci-18",
+        "labelsHa": ["Baki", "Bututun abinci", "Haƙora"],
+        "overlayOnly": true
+      },
+      "safetyNote": "Non-graphic educational outline only; no exposed organs, procedure, or illness.",
+      "attempts": 0
+    },
+    {
+      "id": "style-b-p3-maths-02",
+      "archetype": "Mathematics asset",
+      "status": "queued",
+      "style": "B — Clean watercolor editorial",
+      "moduleId": "p3-maths-02",
+      "output": "tools/image-pipeline/output/raw/style-b-p3-maths-02.png",
+      "prompt": "Clean watercolor editorial illustration for a premium children’s curriculum, landscape 3:2. Produce only a clean high-contrast background, border/frame, and visual context for a worked-arithmetic diagram: a restrained Northern Nigerian classroom desk or pale notebook-paper setting around a large central completely unpainted rectangular work area. The central work area is reserved for the overlay compositor to place the deterministic vertical addition 27 + 15 = 42 with its exact column alignment and regrouping marker; generate no arithmetic, grids, rules, symbols, characters, objects inside the work area, or instructional marks. Translucent controlled watercolor with high-contrast frame details and no pale or muddy washes, bright paper-white negative space, selective indigo/pencil contours around important frame silhouettes, and clear educational visual hierarchy. Keep the upper 22% band and left/right label-safe margins completely unpainted: no wash, texture, line, icon, or incidental detail. Do not include any writing, symbols, numbers, equations, arrows, labels, anatomy-relationship lines, or circuit/wire connections in the illustration; these are added only by the separate overlay compositing step.",
+      "negativePrompt": "No text, letters, numbers, equations, arithmetic, plus sign, equals sign, regrouping mark, arrows, labels, rendered anatomy-relationship lines, rendered circuit/wire connections, watermark, logo, brand, photorealism, generic flat icon set, pale or muddy wash, dark muddy wash, low-contrast focal objects, over-rendered texture, pseudo-African patterning, caricature, rendered callout labels, notebook ruling, grid, or marks inside the central work area. Numbers, equations, arrows, labels, anatomy relationships, and circuit connections are added by a separate compositing step.",
+      "labelSource": {
+        "manifest": "tools/image-manifest/p3-maths-image-manifest.json",
+        "id": "p3-maths-02",
+        "labelsHa": [],
+        "overlayOnly": true,
+        "deterministicMathOverlay": "27 + 15 = 42; vertical column alignment and regrouping marker"
+      },
+      "safetyNote": "This is a worked-arithmetic diagram background only; all arithmetic content is composited deterministically.",
+      "attempts": 0
+    }
+  ]
+}
