@@ -6917,14 +6917,17 @@
           return lesson.audioFile;
         });
     }
-    if (Array.isArray(module.segments) && module.segments.length) {
-      return module.segments
+    if (hasFormalSegments(module)) {
+      var segmentUrls = module.segments
         .filter(function (segment) {
           return segment && typeof segment.audioFile === "string" && segment.audioFile.trim();
         })
         .map(function (segment) {
           return segment.audioFile;
         });
+      if (segmentUrls.length) {
+        return segmentUrls;
+      }
     }
     return module.audioFile ? [module.audioFile] : [];
   }
@@ -8069,6 +8072,24 @@
 
     var audioEntries = getAudioEntriesForGradeBand(state.settings.gradeBand);
     var cachedAudio = await getAllRecords("audioCache");
+    var legacyFormalAudioUrls = state.modules.reduce(function (accumulator, module) {
+      if (hasFormalSegments(module) && typeof module.audioFile === "string" && module.audioFile.trim()) {
+        accumulator[module.audioFile] = true;
+      }
+      return accumulator;
+    }, Object.create(null));
+    var retainedCachedAudio = [];
+    for (var cachedIndex = 0; cachedIndex < cachedAudio.length; cachedIndex += 1) {
+      var cachedRecord = cachedAudio[cachedIndex];
+      if (cachedRecord && legacyFormalAudioUrls[cachedRecord.url]) {
+        await deleteRecord("audioCache", cachedRecord.url).catch(function () {
+          return null;
+        });
+        continue;
+      }
+      retainedCachedAudio.push(cachedRecord);
+    }
+    cachedAudio = retainedCachedAudio;
     var cachedMap = cachedAudio.reduce(function (accumulator, item) {
       accumulator[item.url] = item;
       return accumulator;
@@ -8400,35 +8421,40 @@
     var completedModules = state.modules.filter(function (module) {
       return hasPassedModule(getProgressRecord(module.id));
     });
-    var completedAudioUrls = completedModules.reduce(function (accumulator, module) {
-      getAudioUrlsForModule(module).forEach(function (url) {
-        accumulator[url] = true;
-      });
-      return accumulator;
-    }, {});
     var cachedAudio = await getAllRecords("audioCache").catch(function () {
       return [];
     });
-    var recordsToDelete = cachedAudio.filter(function (record) {
-      return record && completedAudioUrls[record.url];
-    });
-    var deletedBytes = recordsToDelete.reduce(function (total, record) {
-      return total + Number(record.sizeBytes || (record.blob ? record.blob.size : 0) || 0);
-    }, 0);
+    var cachedAudioByUrl = cachedAudio.reduce(function (accumulator, record) {
+      if (record) {
+        accumulator[record.url] = record;
+      }
+      return accumulator;
+    }, Object.create(null));
+    var deletedCount = 0;
+    var deletedBytes = 0;
 
     for (var index = 0; index < completedModules.length; index += 1) {
       var audioUrls = getAudioUrlsForModule(completedModules[index]);
       for (var urlIndex = 0; urlIndex < audioUrls.length; urlIndex += 1) {
-        await deleteRecord("audioCache", audioUrls[urlIndex]).catch(function () {
-          return null;
-        });
+        var audioUrl = audioUrls[urlIndex];
+        var record = cachedAudioByUrl[audioUrl];
+        try {
+          await deleteRecord("audioCache", audioUrl);
+          if (record) {
+            deletedCount += 1;
+            deletedBytes += Number(record.sizeBytes || (record.blob ? record.blob.size : 0) || 0);
+            delete cachedAudioByUrl[audioUrl];
+          }
+        } catch (error) {
+          // Continue deleting remaining completed-module audio after an individual failure.
+        }
       }
     }
 
     await prepareDownloadSession(true);
     await refreshStorageEstimate();
     return {
-      count: recordsToDelete.length,
+      count: deletedCount,
       bytes: deletedBytes,
     };
   }
