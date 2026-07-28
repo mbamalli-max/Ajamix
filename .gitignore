@@ -6,4 +6,4 @@ node_modules
 *.bak
 tools/image-pipeline/output/
 ajamix-polished/
-app/images/
+app/images/*.png
