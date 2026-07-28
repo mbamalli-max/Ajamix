@@ -1,32 +1,25 @@
 # AJAMIX Audio Recording Packages — index
 
-**Technical spec (applies to every formal-track module):**
+**Technical spec (applies to every formal-track segment):**
 
-**Technical spec:** MP3, 64kbps, mono. Target duration 3–5 minutes per module — no hard
-per-module target beyond this range; let the script's natural spoken length determine it.
+**Technical spec:** MP3, 64kbps, mono, one clip per segment. There is no fixed duration
+target: let each segment's natural spoken length determine it (typically well under one minute).
 
-**Markers:** `[INTRO]`, `[MAIN]`, `[PAUSE N]`, `[OUTRO]` are delivery cues for where to pause
-naturally — they are not spoken aloud. At each `[PAUSE N]` marker, the listed question is where the
-app will pause playback and show an interactive quiz question to the learner; the question/answer
-options below are for the reader's context only (so pacing and tone can anticipate the pause), not
-text to read aloud.
-
-**Pause timing note:** the app triggers each pause based on a timestamp (`pauseAtMs`) that is
-currently a placeholder estimate from content authoring, not measured from real narration. After this
-module is recorded, the actual playback time of each `[PAUSE N]` moment in the final audio must be
-measured and reconciled back into `content.json` — a separate step after recording, not something the
-reader needs to worry about.
+**Segmented-recording model.** Each formal-track module is broken into three clips. Record one clip for
+each labelled segment, using its exact target filename. The app shows the matching text and opens the
+quiz gate when segments 1 and 2 end, so no timestamp measurement or reconciliation is needed. Read only
+the text under "Script to read"; segment labels and gate notes are structural instructions, not spoken text.
 
 ---
 
-- [`nursery1-recording-package.md`](nursery1-recording-package.md) — 12 modules
-- [`nursery2-recording-package.md`](nursery2-recording-package.md) — 12 modules
-- [`p1-recording-package.md`](p1-recording-package.md) — 54 modules
-- [`p2-recording-package.md`](p2-recording-package.md) — 58 modules
-- [`p3-recording-package.md`](p3-recording-package.md) — 55 modules
-- [`p4-recording-package.md`](p4-recording-package.md) — 60 modules
-- [`p5-recording-package.md`](p5-recording-package.md) — 54 modules
-- [`p6-recording-package.md`](p6-recording-package.md) — 54 modules
+- [`nursery1-recording-package.md`](nursery1-recording-package.md) — 12 modules, 36 segment clips
+- [`nursery2-recording-package.md`](nursery2-recording-package.md) — 12 modules, 36 segment clips
+- [`p1-recording-package.md`](p1-recording-package.md) — 54 modules, 162 segment clips
+- [`p2-recording-package.md`](p2-recording-package.md) — 58 modules, 174 segment clips
+- [`p3-recording-package.md`](p3-recording-package.md) — 55 modules, 165 segment clips
+- [`p4-recording-package.md`](p4-recording-package.md) — 60 modules, 180 segment clips
+- [`p5-recording-package.md`](p5-recording-package.md) — 54 modules, 162 segment clips
+- [`p6-recording-package.md`](p6-recording-package.md) — 54 modules, 162 segment clips
 
 **Technical spec (applies to every adult-track module):**
 

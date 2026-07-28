@@ -111,6 +111,7 @@
     activeLessonModuleId: null,
     lessonSession: null,
     vocationalAudioSession: null,
+    formalSegmentSession: null,
     streakData: Object.assign({}, DEFAULT_STREAK_DATA),
     downloadSession: null,
     storageEstimate: null,
@@ -1892,6 +1893,11 @@
       return;
     }
 
+    if (target.dataset.action === "toggle-formal-segment-audio") {
+      toggleFormalSegmentAudio();
+      return;
+    }
+
     if (target.dataset.action === "toggle-vocational-audio") {
       toggleVocationalAudio();
       return;
@@ -2287,6 +2293,7 @@
     if (leavingLesson) {
       teardownLessonSession();
       teardownVocationalAudioSession();
+      teardownFormalSegmentSession();
     }
 
     if (leavingQuiz) {
@@ -3602,8 +3609,14 @@
 
   async function syncActiveScreen() {
     if (state.route.name === "lesson") {
-      if (isVocationalModule(getModuleById(state.route.moduleId))) {
+      var lessonModule = getModuleById(state.route.moduleId);
+      if (isVocationalModule(lessonModule)) {
         await syncVocationalAudioScreen();
+        return;
+      }
+
+      if (hasFormalSegments(lessonModule)) {
+        await syncFormalSegmentAudioScreen();
         return;
       }
 
@@ -3737,7 +3750,21 @@
 
       teardownLessonSession();
       teardownVocationalAudioSession();
+      teardownFormalSegmentSession();
       state.vocationalAudioSession = buildVocationalAudioSession(moduleId);
+      await recordLessonOpen(moduleId);
+      return;
+    }
+
+    if (hasFormalSegments(module)) {
+      if (state.formalSegmentSession && state.formalSegmentSession.moduleId === moduleId) {
+        return;
+      }
+
+      teardownLessonSession();
+      teardownVocationalAudioSession();
+      teardownFormalSegmentSession();
+      state.formalSegmentSession = buildFormalSegmentSession(moduleId);
       await recordLessonOpen(moduleId);
       return;
     }
@@ -3747,6 +3774,7 @@
     }
 
     teardownVocationalAudioSession();
+    teardownFormalSegmentSession();
     teardownLessonSession();
     state.lessonSession = buildLessonSessionSnapshot(moduleId);
     await recordLessonOpen(moduleId);
@@ -3786,6 +3814,26 @@
     state.vocationalAudioSession = null;
   }
 
+  function teardownFormalSegmentSession() {
+    var audio = document.querySelector("[data-formal-segment-audio]");
+    if (audio) {
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+    }
+
+    if (state.formalSegmentSession && state.formalSegmentSession.objectUrls) {
+      Object.keys(state.formalSegmentSession.objectUrls).forEach(function (index) {
+        var objectUrl = state.formalSegmentSession.objectUrls[index];
+        if (objectUrl) {
+          URL.revokeObjectURL(objectUrl);
+        }
+      });
+    }
+
+    state.formalSegmentSession = null;
+  }
+
   function buildVocationalAudioSession(moduleId) {
     var module = getModuleById(moduleId);
     var sections = module && Array.isArray(module.lessons) ? module.lessons : [];
@@ -3802,6 +3850,44 @@
       audioError: null,
       requestId: 0,
       lastSyncedCardIndex: null,
+    };
+  }
+
+  function hasFormalSegments(module) {
+    return Boolean(module && !isVocationalModule(module) && Array.isArray(module.segments) && module.segments.length === 3);
+  }
+
+  function buildFormalSegmentSession(moduleId) {
+    var module = getModuleById(moduleId);
+    var record = getProgressRecord(moduleId);
+    var segments = module && Array.isArray(module.segments) ? module.segments : [];
+    var savedSegmentCount = Math.floor(Number(record.lastAudioPositionSec || 0));
+    var pctCompletedCount = Math.round((Number(record.audioListenedPct || 0) / 100) * segments.length);
+    // Existing formal records stored a continuous-file second count here.
+    // Trust the discrete value only when it agrees with the percentage; new
+    // segmented writes always do, while old records safely fall back to pct.
+    var completedSegmentCount = savedSegmentCount >= 0 && savedSegmentCount <= segments.length && savedSegmentCount === pctCompletedCount
+      ? savedSegmentCount
+      : pctCompletedCount;
+    completedSegmentCount = Math.max(0, Math.min(segments.length, completedSegmentCount));
+    var currentSegmentIndex = Math.max(0, Math.min(segments.length - 1, completedSegmentCount));
+
+    return {
+      moduleId: moduleId,
+      currentSegmentIndex: currentSegmentIndex,
+      completedSegmentCount: completedSegmentCount,
+      isPlaying: false,
+      segmentAudioStatus: segments.map(function (segment) {
+        return segment && segment.audioFile ? "unknown" : "missing";
+      }),
+      audioSources: {},
+      objectUrls: {},
+      audioError: null,
+      requestId: 0,
+      activePauseIndex: null,
+      activePauseStartedAt: 0,
+      activePauseActualMs: 0,
+      lastSyncedSegmentIndex: null,
     };
   }
 
@@ -3883,6 +3969,230 @@
     if (!audio.getAttribute("src")) {
       await loadVocationalAudioCard(module, session.currentCardIndex, false, session.requestId);
     }
+  }
+
+  async function syncFormalSegmentAudioScreen() {
+    var module = getModuleById(state.route.moduleId);
+    var session = state.formalSegmentSession;
+    var audio = document.querySelector("[data-formal-segment-audio]");
+
+    syncLessonImageCards();
+
+    if (!module || !session || !audio || !hasFormalSegments(module)) {
+      return;
+    }
+
+    if (!audio.dataset.bound) {
+      audio.dataset.bound = "true";
+      bindFormalSegmentAudioElement(audio, module.id);
+    }
+
+    syncFormalSegmentAudioUi();
+
+    if (!audio.getAttribute("src")) {
+      await loadFormalSegmentAudio(module, session.currentSegmentIndex, false, session.requestId);
+    }
+  }
+
+  function bindFormalSegmentAudioElement(audio, moduleId) {
+    audio.addEventListener("play", function () {
+      var session = state.formalSegmentSession;
+      if (session && session.moduleId === moduleId) {
+        session.isPlaying = true;
+        session.audioError = null;
+        syncFormalSegmentAudioUi();
+      }
+    });
+    audio.addEventListener("pause", function () {
+      var session = state.formalSegmentSession;
+      if (session && session.moduleId === moduleId) {
+        session.isPlaying = false;
+        syncFormalSegmentAudioUi();
+      }
+    });
+    audio.addEventListener("ended", function () {
+      advanceFormalSegmentAfterEnd(moduleId, audio).catch(logError);
+    });
+    audio.addEventListener("error", function () {
+      handleFormalSegmentAudioError(moduleId);
+    });
+  }
+
+  function getFormalSegmentAudioFile(module, segmentIndex) {
+    var segment = module && Array.isArray(module.segments) ? module.segments[segmentIndex] : null;
+    return segment && segment.audioFile ? segment.audioFile : "";
+  }
+
+  async function loadFormalSegmentAudio(module, segmentIndex, shouldPlay, requestId) {
+    var session = state.formalSegmentSession;
+    var audio = document.querySelector("[data-formal-segment-audio]");
+
+    if (
+      !session ||
+      session.moduleId !== module.id ||
+      !audio ||
+      !Number.isInteger(segmentIndex) ||
+      segmentIndex < 0 ||
+      segmentIndex >= module.segments.length ||
+      session.currentSegmentIndex !== segmentIndex
+    ) {
+      return false;
+    }
+
+    var filePath = getFormalSegmentAudioFile(module, segmentIndex);
+    var source = session.audioSources[segmentIndex]
+      ? {
+          url: session.audioSources[segmentIndex],
+          objectUrl: session.objectUrls[segmentIndex] || null,
+          status: "ready",
+        }
+      : await resolveAudioSourceForPath(
+          filePath,
+          module.id + "-segment-" + String(segmentIndex + 1),
+          session.objectUrls[segmentIndex] || null
+        );
+
+    if (
+      !state.formalSegmentSession ||
+      state.formalSegmentSession !== session ||
+      session.moduleId !== module.id ||
+      session.currentSegmentIndex !== segmentIndex ||
+      session.requestId !== requestId
+    ) {
+      if (source.objectUrl && source.objectUrl !== session.objectUrls[segmentIndex]) {
+        URL.revokeObjectURL(source.objectUrl);
+      }
+      return false;
+    }
+
+    session.segmentAudioStatus[segmentIndex] = source.status || "ready";
+    session.audioError = null;
+
+    if (!source.url) {
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+      session.isPlaying = false;
+      syncFormalSegmentAudioUi();
+      return false;
+    }
+
+    if (source.objectUrl) {
+      session.objectUrls[segmentIndex] = source.objectUrl;
+    }
+    session.audioSources[segmentIndex] = source.url;
+    audio.pause();
+    audio.setAttribute("src", source.url);
+    audio.load();
+    syncFormalSegmentAudioUi();
+
+    if (shouldPlay) {
+      audio.play().catch(function () {
+        if (state.formalSegmentSession === session && session.currentSegmentIndex === segmentIndex) {
+          session.isPlaying = false;
+          session.audioError = "Player din yana bukatar ka danna play daga browser ko ka duba fayil din audio.";
+          syncFormalSegmentAudioUi();
+        }
+      });
+    }
+
+    return true;
+  }
+
+  async function selectFormalSegment(segmentIndex, shouldPlay) {
+    var session = state.formalSegmentSession;
+    var module = session ? getModuleById(session.moduleId) : null;
+    if (!session || !module || !Number.isInteger(segmentIndex) || segmentIndex < 0 || segmentIndex >= module.segments.length) {
+      return false;
+    }
+
+    var audio = document.querySelector("[data-formal-segment-audio]");
+    if (audio) {
+      audio.pause();
+    }
+
+    session.currentSegmentIndex = segmentIndex;
+    session.isPlaying = false;
+    session.audioError = null;
+    session.requestId += 1;
+    syncFormalSegmentAudioUi();
+    return loadFormalSegmentAudio(module, segmentIndex, shouldPlay, session.requestId);
+  }
+
+  async function recordFormalSegmentProgress(moduleId, completedSegmentCount) {
+    var session = state.formalSegmentSession;
+    var module = getModuleById(moduleId);
+    if (!session || !module || session.moduleId !== moduleId) {
+      return;
+    }
+
+    session.completedSegmentCount = Math.max(session.completedSegmentCount, Math.min(module.segments.length, completedSegmentCount));
+    var listenedPct = Math.round((session.completedSegmentCount / module.segments.length) * 100);
+    await updateProgress(
+      moduleId,
+      {
+        status: hasPassedModule(getProgressRecord(moduleId)) ? "completed" : "in-progress",
+        audioListenedPct: listenedPct,
+        lastAudioPositionSec: session.completedSegmentCount,
+        lastAccessedAt: new Date().toISOString(),
+      },
+      { render: false }
+    );
+  }
+
+  async function advanceFormalSegmentAfterEnd(moduleId, audio) {
+    var session = state.formalSegmentSession;
+    var module = session ? getModuleById(session.moduleId) : null;
+    if (!session || !module || session.moduleId !== moduleId || !hasFormalSegments(module)) {
+      return;
+    }
+
+    var endedSegmentIndex = session.currentSegmentIndex;
+    await recordFormalSegmentProgress(moduleId, endedSegmentIndex + 1);
+    if (!state.formalSegmentSession || state.formalSegmentSession !== session || session.currentSegmentIndex !== endedSegmentIndex) {
+      return;
+    }
+
+    session.isPlaying = false;
+    var endedSegment = module.segments[endedSegmentIndex];
+    if (endedSegment && endedSegment.gate === "quiz" && module.microPauses && module.microPauses[endedSegmentIndex]) {
+      queueFormalSegmentMicroPause(endedSegmentIndex, Math.round(Number(audio.currentTime || 0) * 1000));
+      return;
+    }
+
+    if (endedSegmentIndex < module.segments.length - 1) {
+      await selectFormalSegment(endedSegmentIndex + 1, true);
+      return;
+    }
+
+    syncFormalSegmentAudioUi();
+  }
+
+  function queueFormalSegmentMicroPause(pauseIndex, actualPauseMs) {
+    var session = state.formalSegmentSession;
+    var audio = document.querySelector("[data-formal-segment-audio]");
+    if (!session || session.activePauseIndex !== null) {
+      return;
+    }
+
+    session.activePauseIndex = pauseIndex;
+    session.activePauseStartedAt = Date.now();
+    session.activePauseActualMs = actualPauseMs;
+    if (audio) {
+      audio.pause();
+    }
+    syncFormalSegmentAudioUi();
+  }
+
+  function handleFormalSegmentAudioError(moduleId) {
+    var session = state.formalSegmentSession;
+    if (!session || session.moduleId !== moduleId) {
+      return;
+    }
+    session.segmentAudioStatus[session.currentSegmentIndex] = "missing";
+    session.isPlaying = false;
+    session.audioError = null;
+    syncFormalSegmentAudioUi();
   }
 
   function bindVocationalAudioElement(audio, moduleId) {
@@ -4059,6 +4369,14 @@
   }
 
   async function submitMicroPauseAnswer(optionValue) {
+    if (
+      state.formalSegmentSession &&
+      state.formalSegmentSession.activePauseIndex !== null
+    ) {
+      await submitFormalSegmentMicroPauseAnswer(optionValue);
+      return;
+    }
+
     var session = state.lessonSession;
     if (!session || session.activePauseIndex === null) {
       return;
@@ -4113,6 +4431,58 @@
         syncLessonUi();
       });
     }
+  }
+
+  async function submitFormalSegmentMicroPauseAnswer(optionValue) {
+    var session = state.formalSegmentSession;
+    if (!session || session.activePauseIndex === null) {
+      return;
+    }
+
+    var module = getModuleById(session.moduleId);
+    var pauseIndex = session.activePauseIndex;
+    var pause = module && module.microPauses ? module.microPauses[pauseIndex] : null;
+    if (!module || !pause) {
+      return;
+    }
+
+    var responseTimeMs = Date.now() - session.activePauseStartedAt;
+    var pauseRecord = {
+      pauseIndex: pauseIndex + 1,
+      pauseAtMs: pause.pauseAtMs,
+      actualPauseMs: session.activePauseActualMs || pause.pauseAtMs,
+      responseTimeMs: responseTimeMs,
+      selectedAnswer: optionValue,
+      correct: normalizeAnswerValue(optionValue) === normalizeAnswerValue(pause.correctAnswer),
+      timestamp: new Date().toISOString(),
+    };
+    var currentRecord = getProgressRecord(module.id);
+    var microPauseData = mergeMicroPauseData(currentRecord.microPauseData || [], pauseRecord);
+    var patch = {
+      status: hasPassedModule(currentRecord) ? "completed" : "in-progress",
+      microPauseData: microPauseData,
+      lastAccessedAt: new Date().toISOString(),
+    };
+
+    patch["microPause" + (pauseIndex + 1) + "Correct"] = pauseRecord.correct;
+    patch["microPause" + (pauseIndex + 1) + "ResponseTimeMs"] = responseTimeMs;
+
+    await updateProgress(module.id, patch, { render: false });
+
+    if (!state.formalSegmentSession || state.formalSegmentSession !== session) {
+      return;
+    }
+
+    session.activePauseIndex = null;
+    session.activePauseStartedAt = 0;
+    session.activePauseActualMs = 0;
+    var nextSegmentIndex = session.currentSegmentIndex + 1;
+    if (nextSegmentIndex < module.segments.length) {
+      await selectFormalSegment(nextSegmentIndex, true);
+      return;
+    }
+
+    syncFormalSegmentAudioUi();
   }
 
   function resumeLessonAudio(seekSeconds) {
@@ -5355,6 +5725,10 @@
       return renderVocationalLesson(module);
     }
 
+    if (hasFormalSegments(module)) {
+      return renderFormalSegmentedLesson(module);
+    }
+
     var session = state.lessonSession || buildLessonSessionSnapshot(module ? module.id : null);
     var record = getProgressRecord(module ? module.id : null);
     var listenedPct = Math.max(session.listenedPct || 0, record.audioListenedPct || 0);
@@ -5436,6 +5810,108 @@
       '<p class="helper-text" data-quiz-ready-note>' +
         ha(quizReadyText) +
         "</p>",
+      "</section>",
+      module.microPauses && module.microPauses.length && countAnsweredMicroPauses(record) > 0
+        ? [
+            '<section class="screen-panel lesson-micropause-summary">',
+            '<p class="eyebrow">' + ha("Tsayawar fahimta") + "</p>",
+            '<ul class="micro-pause-list">' + renderLessonMicroPauseSummary(module, record, session) + "</ul>",
+            "</section>",
+          ].join("")
+        : "",
+    ].join("");
+  }
+
+  function getFormalSegmentText(segment) {
+    var text = segment && segment.text ? segment.text : {};
+    if (state.settings.scriptMode === "ajami") {
+      return text.ajami || romanToAjami(text.ha || "");
+    }
+    return text.ha || "";
+  }
+
+  function renderFormalSegmentedLesson(module) {
+    var session =
+      state.formalSegmentSession && state.formalSegmentSession.moduleId === module.id
+        ? state.formalSegmentSession
+        : buildFormalSegmentSession(module.id);
+    var record = getProgressRecord(module.id);
+    var totalSegments = module.segments.length;
+    var activeIndex = Math.max(0, Math.min(totalSegments - 1, session.currentSegmentIndex));
+    var audioStatus = session.segmentAudioStatus[activeIndex] || "missing";
+    var audioMissing = audioStatus !== "ready";
+    var listenedPct = Math.max(
+      Math.round((Number(session.completedSegmentCount || 0) / totalSegments) * 100),
+      Number(record.audioListenedPct || 0)
+    );
+    var canQuiz = canStartQuiz(module.id);
+    var quizReadyText = audioMissing
+      ? "Sauti yana zuwa. Za ka samu player da quiz din da zarar an saka MP3 dinsa."
+      : canQuiz
+        ? "Ka saurara isasshe. Yanzu za ka iya shiga quiz."
+        : "Sai ka saurara aƙalla 80% na audio kafin quiz ya bude.";
+    var segmentMarkup = module.segments.map(function (segment, index) {
+      var isActive = index === activeIndex;
+      var segmentText = getFormalSegmentText(segment);
+      return [
+        '<article class="formal-segment-text' + (isActive ? " formal-segment-text--active" : "") + '" data-formal-segment="' +
+          escapeAttribute(String(index + 1)) + '">',
+        '<p class="eyebrow">' + ha("Sashe ") + escapeHtml(String(index + 1)) + "</p>",
+        '<p' + (state.settings.scriptMode === "ajami" ? ' class="ajami"' : "") + ">" +
+          formatLessonBodyText(segmentText) +
+          "</p>",
+        "</article>",
+      ].join("");
+    }).join("");
+
+    return [
+      '<section class="screen-panel lesson-shell">',
+      '<div class="lesson-topbar">',
+      '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="' + ha("Koma baya") + '">←</button>',
+      '<div class="lesson-heading-block">',
+      state.settings.scriptMode === "ajami"
+        ? '<p class="ajami lesson-title-large">' + formatAjamiText(getDisplayTitle(module)) + "</p>"
+        : '<p class="lesson-title-large lesson-title-large--latin">' + escapeHtml(getDisplayTitle(module)) + "</p>",
+      state.settings.scriptMode === "ajami"
+        ? '<p class="lesson-title-small">' + ha(module.titleHa || "") + "</p>"
+        : "",
+      "</div>",
+      "</div>",
+      "</section>",
+      '<section class="screen-panel formal-segment-audio-player" data-formal-segment-player>',
+      '<audio class="formal-segment-audio-element" data-formal-segment-audio preload="metadata"' + (audioMissing ? " hidden" : "") + "></audio>",
+      '<div class="formal-segment-audio-player-controls" data-formal-segment-player-ui' + (audioMissing ? " hidden" : "") + ">",
+      '<button class="formal-segment-audio-play-toggle" type="button" data-action="toggle-formal-segment-audio">',
+      '<span class="formal-segment-audio-play-icon" data-formal-segment-play-icon>▶</span>',
+      '<span data-formal-segment-play-label>' + ha("Fara sauraro") + "</span>",
+      "</button>",
+      '<div class="lesson-audio-progress">',
+      '<div class="lesson-audio-rail"><span class="lesson-audio-fill" data-formal-segment-progress-fill style="width: ' +
+        escapeAttribute(String(listenedPct)) + '%;"></span></div>',
+      '<div class="lesson-audio-meta"><span>' + ha("Ci gaban sauraro") + '</span><span data-formal-segment-progress-label>' +
+        escapeHtml(String(listenedPct)) +
+        "%</span></div>",
+      "</div>",
+      '<p class="formal-segment-audio-status" data-formal-segment-notice></p>',
+      "</div>",
+      '<div class="formal-segment-audio-coming-soon lesson-audio-coming-soon" data-formal-segment-coming-soon' +
+        (audioMissing ? "" : " hidden") + ">" +
+        renderLessonAudioComingSoonBanner() +
+        "</div>",
+      '<div class="micro-pause-overlay" data-formal-segment-micro-pause-overlay></div>',
+      "</section>",
+      '<section class="screen-panel lesson-text-panel formal-segment-text-panel">',
+      '<p class="eyebrow">' + ha("Bayanin Hausa") + "</p>",
+      '<div class="formal-segment-texts scrollable-copy">' + segmentMarkup + "</div>",
+      "</section>",
+      renderLessonImageCard(module),
+      '<section class="screen-panel lesson-footer-panel">',
+      '<button class="btn lesson-quiz-button" type="button" data-action="open-quiz" data-module-id="' +
+        escapeAttribute(module.id) +
+        '"' +
+        (canQuiz ? "" : " disabled") +
+        ">" + ha("Fara Jarrabawa") + "</button>",
+      '<p class="helper-text" data-quiz-ready-note>' + ha(quizReadyText) + "</p>",
       "</section>",
       module.microPauses && module.microPauses.length && countAnsweredMicroPauses(record) > 0
         ? [
@@ -5658,6 +6134,33 @@
           audio.dataset.errorMessage =
             "Player din yana bukatar ka danna play daga browser ko ka duba fayil din audio.";
           syncCaregiverActivityUi();
+        }
+      });
+      return;
+    }
+
+    audio.pause();
+  }
+
+  function toggleFormalSegmentAudio() {
+    var session = state.formalSegmentSession;
+    var audio = document.querySelector("[data-formal-segment-audio]");
+    if (
+      !session ||
+      !audio ||
+      session.activePauseIndex !== null ||
+      session.segmentAudioStatus[session.currentSegmentIndex] !== "ready" ||
+      !audio.getAttribute("src")
+    ) {
+      return;
+    }
+
+    if (audio.paused) {
+      audio.play().catch(function () {
+        if (state.formalSegmentSession === session) {
+          session.isPlaying = false;
+          session.audioError = "Player din yana bukatar ka danna play daga browser ko ka duba fayil din audio.";
+          syncFormalSegmentAudioUi();
         }
       });
       return;
@@ -6031,6 +6534,99 @@
     }
   }
 
+  function syncFormalSegmentAudioUi() {
+    var session = state.formalSegmentSession;
+    var module = session ? getModuleById(session.moduleId) : null;
+    if (!session || !module || state.route.name !== "lesson" || !hasFormalSegments(module)) {
+      return;
+    }
+
+    var totalSegments = module.segments.length;
+    var activeIndex = Math.max(0, Math.min(totalSegments - 1, session.currentSegmentIndex));
+    var audioStatus = session.segmentAudioStatus[activeIndex] || "missing";
+    var audioMissing = audioStatus !== "ready";
+    var record = getProgressRecord(module.id);
+    var listenedPct = Math.max(Math.round((session.completedSegmentCount / totalSegments) * 100), Number(record.audioListenedPct || 0));
+    var audio = document.querySelector("[data-formal-segment-audio]");
+    var playerUi = document.querySelector("[data-formal-segment-player-ui]");
+    var comingSoon = document.querySelector("[data-formal-segment-coming-soon]");
+    var playIcon = document.querySelector("[data-formal-segment-play-icon]");
+    var playLabel = document.querySelector("[data-formal-segment-play-label]");
+    var notice = document.querySelector("[data-formal-segment-notice]");
+    var progressFill = document.querySelector("[data-formal-segment-progress-fill]");
+    var progressLabel = document.querySelector("[data-formal-segment-progress-label]");
+    var overlay = document.querySelector("[data-formal-segment-micro-pause-overlay]");
+    var quizButton = document.querySelector(".lesson-quiz-button");
+    var quizNote = document.querySelector("[data-quiz-ready-note]");
+    var canQuiz = canStartQuiz(module.id);
+
+    if (audio) {
+      audio.hidden = audioMissing;
+    }
+    if (playerUi) {
+      playerUi.hidden = audioMissing;
+    }
+    if (comingSoon) {
+      comingSoon.hidden = !audioMissing;
+      if (audioMissing) {
+        comingSoon.innerHTML = renderLessonAudioComingSoonBanner();
+      }
+    }
+    if (playIcon) {
+      playIcon.textContent = session.isPlaying ? "❚❚" : "▶";
+    }
+    if (playLabel) {
+      playLabel.innerHTML = session.isPlaying ? ha("Dakatar") : ha("Fara sauraro");
+    }
+    if (notice && !audioMissing) {
+      notice.innerHTML = ha(session.audioError || "Sauti yana bin sashin da kake gani a kasa.");
+    }
+    if (progressFill) {
+      progressFill.style.width = listenedPct + "%";
+    }
+    if (progressLabel) {
+      progressLabel.textContent = listenedPct + "%";
+    }
+    if (overlay) {
+      overlay.innerHTML = renderLessonMicroPauseOverlay(module, session);
+      overlay.classList.toggle("is-visible", session.activePauseIndex !== null);
+      if (session.activePauseIndex !== null) {
+        queueMicrotask(function () {
+          var firstOption = document.querySelector("#micro-pause-question ~ * button, .micro-pause-overlay button");
+          if (firstOption) {
+            firstOption.focus();
+          }
+        });
+      }
+    }
+    if (quizButton) {
+      quizButton.disabled = !canQuiz;
+    }
+    if (quizNote) {
+      quizNote.innerHTML = audioMissing
+        ? ha("Sauti yana zuwa. Za ka samu player da quiz din da zarar an saka MP3 dinsa.")
+        : canQuiz
+          ? ha("Ka saurara isasshe. Yanzu za ka iya shiga quiz.")
+          : ha("Sai ka saurara aƙalla 80% na audio kafin quiz ya bude.");
+    }
+
+    // Deliberately scope to text-card articles. This prevents any future
+    // control that shares data-formal-segment from receiving the content-card
+    // active class (the selector-overlap bug previously found in vocational).
+    var activeCard = null;
+    document.querySelectorAll("article[data-formal-segment]").forEach(function (card) {
+      var isActive = Number(card.dataset.formalSegment) === activeIndex + 1;
+      card.classList.toggle("formal-segment-text--active", isActive);
+      if (isActive) {
+        activeCard = card;
+      }
+    });
+    if (activeCard && session.lastSyncedSegmentIndex !== activeIndex) {
+      session.lastSyncedSegmentIndex = activeIndex;
+      activeCard.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
+
   async function handleLessonTimeUpdate(audio, moduleId) {
     var session = state.lessonSession;
     var module = getModuleById(moduleId);
@@ -6319,6 +6915,15 @@
         })
         .map(function (lesson) {
           return lesson.audioFile;
+        });
+    }
+    if (Array.isArray(module.segments) && module.segments.length) {
+      return module.segments
+        .filter(function (segment) {
+          return segment && typeof segment.audioFile === "string" && segment.audioFile.trim();
+        })
+        .map(function (segment) {
+          return segment.audioFile;
         });
     }
     return module.audioFile ? [module.audioFile] : [];
@@ -7432,9 +8037,10 @@
           : module.gradeband === gradeBand;
       })
       .reduce(function (entries, module) {
-        return entries.concat(getAudioUrlsForModule(module).map(function (url, index) {
+        var urls = getAudioUrlsForModule(module);
+        return entries.concat(urls.map(function (url, index) {
           return {
-            moduleId: isVocationalModule(module)
+            moduleId: urls.length > 1
               ? module.id + "-" + String(index + 1).padStart(2, "0")
               : module.id,
             titleHa: module.titleHa,

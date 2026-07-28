@@ -1,0 +1,122 @@
+[
+  {
+    "id": "n2-maths-01",
+    "imagePath": "images/n2-maths-01.png",
+    "titleEn": "Counting 1–15",
+    "titleHa": "Kirgawa 1–15",
+    "type": "diagram",
+    "depictEn": "Exactly fifteen identical smooth counting stones arranged as three widely spaced rows of five, with a clear left-to-right counting direction and ample blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-02",
+    "imagePath": "images/n2-maths-02.png",
+    "titleEn": "Writing 1–15",
+    "titleHa": "Rubuta 1–15",
+    "type": "diagram",
+    "depictEn": "Exactly fifteen identical smooth counting stones arranged as three clear rows of five above five wide, empty tracing spaces, cueing the 1–15 writing activity while leaving room for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-03",
+    "imagePath": "images/n2-maths-03.png",
+    "titleEn": "Heavy & Light",
+    "titleHa": "Nauyi da Sauki",
+    "type": "diagram",
+    "depictEn": "One large plain stone beside one small feather, both isolated on the same simple background with a visibly strong weight contrast and blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-04",
+    "imagePath": "images/n2-maths-04.png",
+    "titleEn": "Position: On/Under",
+    "titleHa": "Kan da Ƙarƙashin",
+    "type": "diagram",
+    "depictEn": "A plain low table with one simple ball clearly on its tabletop and an identical ball clearly under it, both fully visible in the same frame with blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-05",
+    "imagePath": "images/n2-maths-05.png",
+    "titleEn": "Counting 1–20",
+    "titleHa": "Kirgawa 1–20",
+    "type": "diagram",
+    "depictEn": "Exactly twenty identical smooth counting stones arranged as four widely spaced rows of five, with a clear left-to-right counting direction and ample blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-06",
+    "imagePath": "images/n2-maths-06.png",
+    "titleEn": "Addition 1–5 (objects)",
+    "titleHa": "Ƙari 1–5 (abubuwa)",
+    "type": "diagram",
+    "depictEn": "Exactly two kola nuts in one small group and exactly three matching kola nuts in a second small group, visually gathered into one final group of exactly five, with blank space for the overlay layer; no printed numerals, letters, equation signs, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-07",
+    "imagePath": "images/n2-maths-07.png",
+    "titleEn": "Subtraction 1–5 (take away)",
+    "titleHa": "Ragewa 1–5 (cirewa)",
+    "type": "diagram",
+    "depictEn": "Exactly five kola nuts in one clear starting row, with exactly two gently moved aside and exactly three left together as the remainder, making the take-away action visible without a person; no printed numerals, letters, equation signs, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-08",
+    "imagePath": "images/n2-maths-08.png",
+    "titleEn": "Sorting by colour",
+    "titleHa": "Rarraba da launi",
+    "type": "diagram",
+    "depictEn": "Four identical round counters sorted into two clearly separated colour groups: exactly two red counters together and exactly two blue counters together, with blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-09",
+    "imagePath": "images/n2-maths-09.png",
+    "titleEn": "Full & Empty",
+    "titleHa": "Cikawa da Fanko",
+    "type": "diagram",
+    "depictEn": "Two matching transparent plain bowls side by side: one visibly full of water and the other completely empty, with the contrast immediate and blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-10",
+    "imagePath": "images/n2-maths-10.png",
+    "titleEn": "Number patterns (1 more)",
+    "titleHa": "Tsarin lambobi (ƙari 1)",
+    "type": "diagram",
+    "depictEn": "Five clearly separated left-to-right groups of identical small stones containing exactly one, then two, then three, then four, then five stones, showing the module's one-more sequence with blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-11",
+    "imagePath": "images/n2-maths-11.png",
+    "titleEn": "Simple word problems",
+    "titleHa": "Kalmomin ƙari da ragewa",
+    "type": "diagram",
+    "depictEn": "A simple two-part object scene: exactly two plain chairs together with one matching chair added to make three, beside exactly four kola nuts with one moved aside and three remaining, all with ample blank space for the overlay layer; no printed numerals, letters, equation signs, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n2-maths-12",
+    "imagePath": "images/n2-maths-12.png",
+    "titleEn": "Review & celebration",
+    "titleHa": "Maimaitawa da biki",
+    "type": "diagram",
+    "depictEn": "A light, spacious review collage with exactly five counting stones in a row, one large stone beside one feather, and a plain table with one ball on top, keeping the three concepts separate and easy to scan; no printed numerals, letters, equation signs, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  }
+]

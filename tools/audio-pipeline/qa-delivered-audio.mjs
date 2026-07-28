@@ -10,6 +10,7 @@ import { pathToFileURL } from "node:url";
 const execFileAsync = promisify(execFile);
 const REPO = path.resolve(import.meta.dirname, "../..");
 const content = JSON.parse(fs.readFileSync(path.join(REPO, "app/content.json")));
+const FORMAL_MODULE_IDS = new Set(content.modules.filter((module) => module.track === "formal").map((module) => module.id));
 
 const args = process.argv.slice(2);
 const dirFlagIndex = args.indexOf("--dir");
@@ -24,6 +25,8 @@ const SPEC = {
   bitrateKbpsTolerance: 16, // accept 48-80kbps as "close enough to spec"
   formalDurationMinSec: 150, // 2.5 min, a little slack under the 3 min spec floor
   formalDurationMaxSec: 330, // 5.5 min, a little slack over the 5 min spec ceiling
+  formalSegmentDurationMinSec: 3,
+  formalSegmentDurationMaxSec: 90,
   adultDurationMinSec: 3,
   adultDurationMaxSec: 40,
 };
@@ -50,6 +53,18 @@ export function classifyAudioPath(audioFile) {
     };
   }
 
+  // A formal segment uses the registered formal module ID plus -NN. This is
+  // intentionally checked before the legacy direct-child formal path below.
+  const segmentMatch = /^audio\/(.+)-(\d{2})\.mp3$/.exec(normalizedPath);
+  if (segmentMatch && FORMAL_MODULE_IDS.has(segmentMatch[1]) && Number(segmentMatch[2]) >= 1 && Number(segmentMatch[2]) <= 3) {
+    return {
+      normalizedPath,
+      track: "formal segment clips",
+      minSec: SPEC.formalSegmentDurationMinSec,
+      maxSec: SPEC.formalSegmentDurationMaxSec,
+    };
+  }
+
   // Formal recordings are direct children of audio/; adult recordings use a named subfolder.
   if (/^audio\/[^/]+$/.test(normalizedPath)) {
     return {
@@ -68,13 +83,20 @@ export function classifyAudioPath(audioFile) {
 
 export function buildWorklist(sourceContent) {
   const formalTargets = sourceContent.modules
-    .filter((module) => module.audioScript && module.audioFile)
-    .map((module) => ({
-      id: module.id,
-      gradeband: module.gradeband,
-      audioFile: module.audioFile,
-      kind: "formal",
-    }));
+    .filter((module) => module.track === "formal")
+    .flatMap((module) => Array.isArray(module.segments)
+      ? module.segments.map((segment) => ({
+        id: `${module.id}-${String(segment.index).padStart(2, "0")}`,
+        gradeband: module.gradeband,
+        audioFile: segment.audioFile,
+        kind: "formal-segment",
+      }))
+      : (module.audioScript && module.audioFile ? [{
+        id: module.id,
+        gradeband: module.gradeband,
+        audioFile: module.audioFile,
+        kind: "formal",
+      }] : []));
 
   const adultTargets = sourceContent.modules
     .filter((module) => module.track === "vocational" && module.gradeband === "adult")

@@ -137,6 +137,31 @@ function validateAdultVocationalModule(errors, m, where) {
   if (JSON.stringify(m.quiz) !== JSON.stringify(m.quizQuestions)) errors.push(`${where}: quiz and quizQuestions must be identical.`);
 }
 
+function validateSegments(errors, m, where) {
+  if (!Array.isArray(m.segments) || m.segments.length !== 3) {
+    errors.push(`${where}.segments: must contain exactly three segments.`);
+    return;
+  }
+  for (const [offset, segment] of m.segments.entries()) {
+    const segmentWhere = `${where}.segments[${offset}]`;
+    if (!segment || typeof segment !== "object" || Array.isArray(segment)) {
+      errors.push(`${segmentWhere}: must be an object.`);
+      continue;
+    }
+    if (segment.index !== offset + 1) errors.push(`${segmentWhere}.index: must be ${offset + 1}.`);
+    if (!isNonEmptyString(segment.audioScript)) errors.push(`${segmentWhere}.audioScript: must be a non-empty string.`);
+    if (!isNonEmptyString(segment.audioFile)) errors.push(`${segmentWhere}.audioFile: must be a non-empty string.`);
+    const expectedGate = offset < 2 ? "quiz" : null;
+    if (segment.gate !== expectedGate) errors.push(`${segmentWhere}.gate: must be ${JSON.stringify(expectedGate)}.`);
+    if (!segment.text || typeof segment.text !== "object" || Array.isArray(segment.text)) {
+      errors.push(`${segmentWhere}.text: must be a bilingual object.`);
+    } else {
+      if (!isNonEmptyString(segment.text.ha)) errors.push(`${segmentWhere}.text.ha: must be a non-empty string.`);
+      if (!Object.hasOwn(segment.text, "ajami") || segment.text.ajami !== null) errors.push(`${segmentWhere}.text.ajami: must be null.`);
+    }
+  }
+}
+
 function main() {
   let raw;
   try {
@@ -190,6 +215,12 @@ function main() {
 
     if (m.track === "vocational" && m.targetAudience === "adult") {
       validateAdultVocationalModule(errors, m, where);
+    }
+
+    if (m.track === "formal") {
+      validateSegments(errors, m, where);
+    } else if (m.segments != null) {
+      validateSegments(errors, m, where);
     }
 
     const hasChainNext = m.chainNext != null && m.chainNext !== "";

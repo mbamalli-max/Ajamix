@@ -1,0 +1,122 @@
+[
+  {
+    "id": "n1-maths-01",
+    "imagePath": "images/n1-maths-01.png",
+    "titleEn": "Counting 1–5",
+    "titleHa": "Kirgawa 1–5",
+    "type": "diagram",
+    "depictEn": "Exactly five identical smooth counting stones in one spacious left-to-right row, each clearly separated for touching and counting, with ample blank space around the row for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-02",
+    "imagePath": "images/n1-maths-02.png",
+    "titleEn": "Writing 1–5",
+    "titleHa": "Rubuta 1–5",
+    "type": "diagram",
+    "depictEn": "Exactly five identical smooth counting stones in one clear row above five wide, empty tracing spaces, cueing a one-to-one writing activity while leaving room for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-03",
+    "imagePath": "images/n1-maths-03.png",
+    "titleEn": "Circle & Square",
+    "titleHa": "Zobe da Murabba'i",
+    "type": "diagram",
+    "depictEn": "One large solid-colour circle beside one large solid-colour square, each with a thick high-contrast outline and generous blank space between them; show no other shapes and render no printed numerals, letters, or symbols.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-04",
+    "imagePath": "images/n1-maths-04.png",
+    "titleEn": "Big & Small",
+    "titleHa": "Babba da Ƙarami",
+    "type": "diagram",
+    "depictEn": "A very large plain table and a very small plain spoon side by side on a simple background, with the size difference unmistakable and blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-05",
+    "imagePath": "images/n1-maths-05.png",
+    "titleEn": "Counting 6–10",
+    "titleHa": "Kirgawa 6–10",
+    "type": "diagram",
+    "depictEn": "Exactly ten identical smooth counting stones arranged as two widely spaced rows of five, with a clear counting direction and ample blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-06",
+    "imagePath": "images/n1-maths-06.png",
+    "titleEn": "Writing 6–10",
+    "titleHa": "Rubuta 6–10",
+    "type": "diagram",
+    "depictEn": "Exactly ten identical smooth counting stones arranged as two clear rows of five above five wide, empty tracing spaces, cueing the 6–10 writing activity while leaving room for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-07",
+    "imagePath": "images/n1-maths-07.png",
+    "titleEn": "Triangle & Rectangle",
+    "titleHa": "Alwatika da Madaidaici",
+    "type": "diagram",
+    "depictEn": "One large solid-colour triangle beside one large solid-colour rectangle, each with a thick high-contrast outline and generous blank space between them; show no other shapes and render no printed numerals, letters, or symbols.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-08",
+    "imagePath": "images/n1-maths-08.png",
+    "titleEn": "Long & Short",
+    "titleHa": "Doguwa da Gajere",
+    "type": "diagram",
+    "depictEn": "One long straight wooden stick and one much shorter straight wooden stick laid parallel side by side, with their ends aligned so the length contrast is immediate and ample blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-09",
+    "imagePath": "images/n1-maths-09.png",
+    "titleEn": "More & Less (1–5)",
+    "titleHa": "Yawa da Kaɗan (1–5)",
+    "type": "diagram",
+    "depictEn": "Two matching plain bowls side by side: the first holds exactly five kola nuts and the second holds exactly two kola nuts, with clear separation and blank space for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-10",
+    "imagePath": "images/n1-maths-10.png",
+    "titleEn": "Inside & Outside",
+    "titleHa": "Ciki da Waje",
+    "type": "diagram",
+    "depictEn": "A wide open plain box containing one simple toy block, with an identical toy block placed clearly outside beside it, so both positions are visible in one frame; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-11",
+    "imagePath": "images/n1-maths-11.png",
+    "titleEn": "Patterns (ABAB)",
+    "titleHa": "Tsari ABAB",
+    "type": "diagram",
+    "depictEn": "A single left-to-right repeating sequence of four large objects: a red circle, a blue square, a red circle, and a blue square, with generous blank space after the sequence for the overlay layer; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  },
+  {
+    "id": "n1-maths-12",
+    "imagePath": "images/n1-maths-12.png",
+    "titleEn": "Review 1–10",
+    "titleHa": "Maimaitawa 1–10",
+    "type": "diagram",
+    "depictEn": "A light, spacious review collage with exactly five identical counting stones in a row, one large circle, and one long stick beside one short stick, keeping each concept separate and easy to scan; no printed numerals, letters, or symbols rendered.",
+    "labelsHa": [],
+    "safetyNote": "Use uncluttered, age-appropriate classroom objects; avoid branded products and unnecessary text."
+  }
+]

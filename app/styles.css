@@ -1538,6 +1538,89 @@ a {
   width: min(100%, 22rem);
 }
 
+.formal-segment-audio-player {
+  display: grid;
+  gap: 0.9rem;
+  border-color: rgba(45, 106, 79, 0.24);
+  background:
+    linear-gradient(135deg, rgba(45, 106, 79, 0.08), rgba(226, 201, 138, 0.16)),
+    rgba(255, 255, 255, 0.9);
+}
+
+.formal-segment-audio-element {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.formal-segment-audio-player-controls {
+  display: grid;
+  justify-items: center;
+  gap: 0.65rem;
+}
+
+.formal-segment-audio-play-toggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 3rem;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+}
+
+.formal-segment-audio-play-icon {
+  font-size: 0.9rem;
+}
+
+.formal-segment-audio-status {
+  margin: 0;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.formal-segment-audio-coming-soon {
+  box-shadow: none;
+}
+
+.formal-segment-texts {
+  display: grid;
+  gap: 1rem;
+}
+
+.formal-segment-text {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+  border: 1px solid rgba(13, 27, 42, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.formal-segment-text p {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.formal-segment-text--active {
+  border-color: rgba(45, 106, 79, 0.72);
+  background:
+    linear-gradient(135deg, rgba(45, 106, 79, 0.12), rgba(255, 255, 255, 0.94)),
+    rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.1);
+}
+
 .voc-lesson {
   gap: 1.1rem;
 }

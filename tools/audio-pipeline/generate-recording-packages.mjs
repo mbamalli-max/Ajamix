@@ -7,20 +7,13 @@ const content = JSON.parse(fs.readFileSync(path.join(REPO, "app/content.json")))
 const OUT_DIR = path.join(REPO, "tools/audio-pipeline/recording-packages");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
-const SPEC = `**Technical spec:** MP3, 64kbps, mono. Target duration 3–5 minutes per module — no hard
-per-module target beyond this range; let the script's natural spoken length determine it.
+const SPEC = `**Technical spec:** MP3, 64kbps, mono, one clip per segment. There is no fixed duration
+target: let each segment's natural spoken length determine it (typically well under one minute).
 
-**Markers:** \`[INTRO]\`, \`[MAIN]\`, \`[PAUSE N]\`, \`[OUTRO]\` are delivery cues for where to pause
-naturally — they are not spoken aloud. At each \`[PAUSE N]\` marker, the listed question is where the
-app will pause playback and show an interactive quiz question to the learner; the question/answer
-options below are for the reader's context only (so pacing and tone can anticipate the pause), not
-text to read aloud.
-
-**Pause timing note:** the app triggers each pause based on a timestamp (\`pauseAtMs\`) that is
-currently a placeholder estimate from content authoring, not measured from real narration. After this
-module is recorded, the actual playback time of each \`[PAUSE N]\` moment in the final audio must be
-measured and reconciled back into \`content.json\` — a separate step after recording, not something the
-reader needs to worry about.`;
+**Segmented-recording model.** Each formal-track module is broken into three clips. Record one clip for
+each labelled segment, using its exact target filename. The app shows the matching text and opens the
+quiz gate when segments 1 and 2 end, so no timestamp measurement or reconciliation is needed. Read only
+the text under "Script to read"; segment labels and gate notes are structural instructions, not spoken text.`;
 
 const ADULT_SPEC = `**Technical spec:** MP3, 64kbps, mono, one clip per card. No hard duration target per
 clip — most run a few seconds to ~20 seconds; let each card's natural spoken length determine it.
@@ -103,30 +96,24 @@ function formatAdultModuleChopped(m) {
   ].join("\n");
 }
 
-function formatModule(m, { adult = false } = {}) {
-  const pauses = (m.microPauses || [])
-    .map((p, i) => {
-      const opts = (p.options || []).join(", ");
-      return `- **[PAUSE ${i + 1}]** — question shown to the learner: "${p.questionHa}" (correct answer: "${p.correctAnswer}"; options: ${opts})`;
-    })
-    .join("\n");
-
-  const script = adult ? (m.textExplanationHa || "") : (m.audioScript || "");
-
-  return [
-    `### \`${m.id}\` — ${m.titleEn}`,
+function formatFormalModuleChopped(m) {
+  const segments = Array.isArray(m.segments) ? m.segments : [];
+  const segmentBlocks = segments.map((segment) => [
+    `**Segment ${segment.index} of ${segments.length}${segment.gate === "quiz" ? " — quiz gate follows" : " — lesson complete"}**`,
     "",
-    `**Target filename:** \`${m.audioFile}\``,
+    `Target filename: \`${segment.audioFile}\``,
+    "",
+    "Script to read:",
+    "",
+    "> " + segment.audioScript.replace(/\n/g, "\n> "),
+    "",
+  ].join("\n"));
+  return [
+    `### \`${m.id}\` — ${m.titleEn} (${segments.length} segment clips)`,
+    "",
     `**Title (Hausa):** ${m.titleHa}`,
     "",
-    "**Script to read:**",
-    "",
-    "> " + script.replace(/\n/g, "\n> "),
-    "",
-    adult
-      ? "**Pause context:** none — no in-app pauses for this track."
-      : (pauses ? "**Pause context (not read aloud):**\n\n" + pauses : "**Pause context:** none for this module."),
-    "",
+    segmentBlocks.join("\n"),
     "---",
   ].join("\n");
 }
@@ -140,7 +127,7 @@ for (const m of content.modules) {
     bySubjectAdult[m.subject].push(m);
     continue;
   }
-  if (!m.audioScript) continue;
+  if (m.track !== "formal" || !Array.isArray(m.segments)) continue;
   const band = m.gradeband || "unknown";
   byBand[band] = byBand[band] || [];
   byBand[band].push(m);
@@ -155,18 +142,21 @@ const adultSubjectSlugs = {
 const adultSubjectOrder = ["Vocational Skills", "Philosophy", "Critical Thinking"];
 
 let totalModules = 0;
-const indexLines = ["# AJAMIX Audio Recording Packages — index\n", `**Technical spec (applies to every formal-track module):**\n\n${SPEC}\n\n---\n`];
+let totalFormalSegments = 0;
+const indexLines = ["# AJAMIX Audio Recording Packages — index\n", `**Technical spec (applies to every formal-track segment):**\n\n${SPEC}\n\n---\n`];
 
 for (const band of bandOrder) {
   const mods = byBand[band];
   if (!mods) continue;
   mods.sort((a, b) => (a.moduleNumber || 0) - (b.moduleNumber || 0));
-  const header = `# AJAMIX Audio Recording Package — ${band} (${mods.length} modules)\n\n${SPEC}\n\n---\n\n`;
-  const body = mods.map((m) => formatModule(m)).join("\n\n");
+  const segmentCount = mods.reduce((sum, m) => sum + m.segments.length, 0);
+  const header = `# AJAMIX Audio Recording Package — ${band} (${mods.length} modules, ${segmentCount} segment clips)\n\n${SPEC}\n\n---\n\n`;
+  const body = mods.map((m) => formatFormalModuleChopped(m)).join("\n\n");
   const outPath = path.join(OUT_DIR, `${band}-recording-package.md`);
   fs.writeFileSync(outPath, header + body + "\n");
   totalModules += mods.length;
-  indexLines.push(`- [\`${band}-recording-package.md\`](${band}-recording-package.md) — ${mods.length} modules`);
+  totalFormalSegments += segmentCount;
+  indexLines.push(`- [\`${band}-recording-package.md\`](${band}-recording-package.md) — ${mods.length} modules, ${segmentCount} segment clips`);
 }
 
 indexLines.push(`\n**Technical spec (applies to every adult-track module):**\n\n${ADULT_SPEC}\n\n---\n`);
@@ -191,4 +181,5 @@ fs.writeFileSync(path.join(OUT_DIR, "README.md"), indexLines.join("\n") + "\n");
 console.log("bands written:", bandOrder.filter((b) => byBand[b]).length);
 console.log("adult subjects written:", adultSubjectOrder.filter((s) => bySubjectAdult[s]).length);
 console.log("total modules packaged:", totalModules);
+console.log("total formal-track segment clips packaged:", totalFormalSegments);
 console.log("total adult-track card clips packaged:", totalAdultCards);
