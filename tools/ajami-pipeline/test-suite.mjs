@@ -1,0 +1,9 @@
+import "./mapping.test.mjs";
+import "./tokenizer.test.mjs";
+import "./apostrophe-classifier.test.mjs";
+import "./lexicon/schema.test.mjs";
+import "./extract-candidates.test.mjs";
+import "./validate-unicode.test.mjs";
+import "./font-probe.test.mjs";
+import "./font-qualification.test.mjs";
+import "./audit-corpus.test.mjs";

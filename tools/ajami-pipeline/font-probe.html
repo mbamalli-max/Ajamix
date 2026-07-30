@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AJAMIX shipped-font rendering probe</title>
+  <style>
+    @font-face {
+      font-family: "AJAMIX Naskh Probe";
+      src: url("../../app/fonts/NotoNaskhArabic-Regular.woff2") format("woff2");
+      font-display: block;
+    }
+    :root {
+      color-scheme: light;
+      font-family: system-ui, sans-serif;
+      background: #f5f2e9;
+      color: #16140f;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 1500px;
+      padding: 28px;
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .notice {
+      max-width: 1000px;
+      margin: 0 0 24px;
+      line-height: 1.45;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 8px 28px rgb(54 45 22 / 10%);
+    }
+    th, td {
+      border: 1px solid #d8d1c0;
+      padding: 10px;
+      vertical-align: middle;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #2c4935;
+      color: white;
+      font-size: 12px;
+      letter-spacing: .03em;
+    }
+    td.meta { white-space: nowrap; font: 13px ui-monospace, monospace; }
+    .glyph {
+      min-width: 80px;
+      direction: rtl;
+      text-align: center;
+      font-size: 48px;
+      line-height: 1.6;
+      background: #fff;
+    }
+    .shipped { font-family: "AJAMIX Naskh Probe"; }
+    .missing-control {
+      font-family: "AJAMIX Deliberately Missing Font";
+      background: #fff3d8;
+    }
+    .group-label {
+      display: block;
+      direction: ltr;
+      font: 10px system-ui, sans-serif;
+      color: #6d6658;
+    }
+    .status {
+      min-width: 118px;
+      font: 12px system-ui, sans-serif;
+    }
+    select { width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>AJAMIX shipped-font rendering probe</h1>
+  <p class="notice">
+    Left cells request the actual shipped <code>NotoNaskhArabic-Regular.woff2</code>.
+    The amber control requests a deliberately nonexistent font, forcing browser fallback.
+    Compare outlines carefully: matching the control can indicate fallback. A static
+    <code>cmap</code> hit does not verify joining or mark placement. Record visual results
+    without substituting any character.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Target</th>
+        <th colspan="7">Actual shipped font</th>
+        <th rowspan="2">Missing-font fallback control</th>
+        <th rowspan="2">Human visual result</th>
+      </tr>
+      <tr>
+        <th>Isolated</th>
+        <th>Initial<br>target + ب</th>
+        <th>Medial<br>ب + target + ب</th>
+        <th>Final<br>ب + target</th>
+        <th>Sukūn<br>U+0652</th>
+        <th>Shadda<br>U+0651</th>
+        <th>Short-e<br>U+065C</th>
+      </tr>
+    </thead>
+    <tbody id="probe-body"></tbody>
+  </table>
+  <template id="probe-row">
+    <tr>
+      <td class="meta"></td>
+      <td class="glyph shipped isolated"></td>
+      <td class="glyph shipped initial"></td>
+      <td class="glyph shipped medial"></td>
+      <td class="glyph shipped final"></td>
+      <td class="glyph shipped sukun"></td>
+      <td class="glyph shipped shadda"></td>
+      <td class="glyph shipped short-e"></td>
+      <td class="glyph missing-control control"></td>
+      <td class="status">
+        <select aria-label="Human visual result">
+          <option>Unverified</option>
+          <option>Present and shaping acceptable</option>
+          <option>Present; shaping/mark issue</option>
+          <option>Fallback suspected</option>
+          <option>Tofu / .notdef</option>
+        </select>
+      </td>
+    </tr>
+  </template>
+  <div hidden aria-hidden="true">
+    Combining-mark test entities: &#x0652; &#x0651; &#x065C;
+    Exact targets: ݑ ط ث ک ࢼ ࢻ ڟ ࢽ ی ؿ ح ه ݣ ࣃ ࣄ
+  </div>
+  <script>
+    const targets = Array.from("ݑ ط ث ک ࢼ ࢻ ڟ ࢽ ی ؿ ح ه ݣ ࣃ ࣄ".split(" ").join(""));
+    const codePoint = (character) =>
+      `U+${character.codePointAt(0).toString(16).toUpperCase().padStart(4, "0")}`;
+    const body = document.querySelector("#probe-body");
+    const template = document.querySelector("#probe-row");
+    for (const target of targets) {
+      const row = template.content.cloneNode(true);
+      row.querySelector(".meta").textContent = `${target} ${codePoint(target)}`;
+      row.querySelector(".isolated").textContent = target;
+      row.querySelector(".initial").textContent = `${target}ب`;
+      row.querySelector(".medial").textContent = `ب${target}ب`;
+      row.querySelector(".final").textContent = `ب${target}`;
+      row.querySelector(".sukun").textContent = `${target}\u0652`;
+      row.querySelector(".shadda").textContent = `${target}\u0651`;
+      row.querySelector(".short-e").textContent = `${target}\u065C`;
+      row.querySelector(".control").textContent = target;
+      body.append(row);
+    }
+  </script>
+</body>
+</html>

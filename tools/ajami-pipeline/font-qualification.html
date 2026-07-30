@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AJAMIX Harmattan 4.400 — isolated font qualification</title>
+  <style>
+    @font-face {
+      font-family: "AJAMIX Harmattan";
+      src: url("./fonts/harmattan-4.400/Harmattan-Regular.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "AJAMIX Harmattan";
+      src: url("./fonts/harmattan-4.400/Harmattan-Medium.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 500;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "AJAMIX Harmattan";
+      src: url("./fonts/harmattan-4.400/Harmattan-SemiBold.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 600;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "AJAMIX Harmattan";
+      src: url("./fonts/harmattan-4.400/Harmattan-Bold.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 700;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "AJAMIX Shipped Noto";
+      src: url("../../app/fonts/NotoNaskhArabic-Regular.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: block;
+    }
+
+    :root {
+      color-scheme: light;
+      --ink: #152033;
+      --muted: #5f6c7d;
+      --paper: #f7f4ed;
+      --panel: #fff;
+      --line: #d9d4c8;
+      --harmattan: #145b4a;
+      --noto: #8b5a11;
+      --fallback: #6d4777;
+      --pass: #147a4b;
+      --fail: #b42318;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); color: var(--ink); }
+    body {
+      margin: 0;
+      font: 15px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      padding: 18px clamp(16px, 4vw, 44px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(247, 244, 237, 0.96);
+      backdrop-filter: blur(14px);
+    }
+    h1 { margin: 0; font-size: clamp(22px, 4vw, 34px); line-height: 1.15; }
+    header p { max-width: 78ch; margin: 7px 0 0; color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+    nav a {
+      padding: 5px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: inherit;
+      text-decoration: none;
+      background: #fff;
+    }
+    main { width: min(1500px, 100%); margin: auto; padding: 22px clamp(12px, 3vw, 34px) 80px; }
+    .status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 14px;
+      border: 2px solid var(--noto);
+      border-radius: 12px;
+      background: #fff8e8;
+      font-weight: 700;
+    }
+    .status[data-ready="true"] { border-color: var(--pass); background: #ebfff4; }
+    .font-aid {
+      margin-top: 12px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel);
+    }
+    .font-aid h2 { font-size: 18px; }
+    .font-aid p { margin: 6px 0; }
+    .font-aid ul { margin: 8px 0 0; padding-left: 20px; }
+    .font-aid li { overflow-wrap: anywhere; }
+    .font-aid .loaded { color: var(--pass); font-weight: 700; }
+    .font-aid .not-loaded { color: var(--fail); font-weight: 700; }
+    .font-toggle {
+      margin-top: 10px;
+      padding: 8px 10px;
+      border: 2px solid var(--harmattan);
+      border-radius: 8px;
+      color: #fff;
+      background: var(--harmattan);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 800;
+    }
+    body.harmattan-disabled .font-toggle { border-color: var(--fail); background: var(--fail); }
+    .warning {
+      margin: 12px 0 0;
+      padding: 10px 13px;
+      border-left: 4px solid var(--noto);
+      background: #fff8e8;
+    }
+    section { scroll-margin-top: 180px; margin-top: 34px; }
+    h2 { margin: 0 0 4px; font-size: 23px; }
+    .section-note { margin: 0 0 12px; color: var(--muted); }
+    .legend, .specimen-grid {
+      display: grid;
+      grid-template-columns: minmax(210px, 0.8fr) repeat(3, minmax(240px, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--line);
+    }
+    .legend { position: sticky; z-index: 10; top: 132px; margin-bottom: 10px; }
+    .legend > div { padding: 9px 12px; background: var(--panel); font-weight: 800; }
+    .legend .noto-head { color: var(--noto); }
+    .legend .harmattan-head { color: var(--harmattan); }
+    .legend .fallback-head { color: var(--fallback); }
+    .specimen { display: contents; }
+    .label, .render-cell { min-width: 0; padding: 11px 12px; background: var(--panel); }
+    .label { direction: ltr; text-align: left; }
+    .label strong { display: block; }
+    .literal {
+      display: block;
+      overflow-wrap: anywhere;
+      margin-top: 4px;
+      color: #26354b;
+      font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      unicode-bidi: isolate;
+    }
+    .codepoints { color: var(--muted); }
+    .review {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 8px;
+    }
+    .review button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 4px 7px;
+      background: #fff;
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+    }
+    .review button[data-result="pass"].selected { color: #fff; border-color: var(--pass); background: var(--pass); }
+    .review button[data-result="fail"].selected { color: #fff; border-color: var(--fail); background: var(--fail); }
+    .review button[data-result="review"].selected { border-color: var(--noto); background: #ffecbd; }
+    .render-cell {
+      min-height: 94px;
+      overflow: auto;
+      direction: rtl;
+      text-align: right;
+      font-size: var(--specimen-size, 34px);
+      line-height: 2.05;
+      font-weight: var(--specimen-weight, 400);
+      font-synthesis: none;
+    }
+    .hausa-ajami,
+    [lang="ha-Arab"] {
+      font-family: "AJAMIX Harmattan", "AJAMIX Shipped Noto", serif;
+      direction: rtl;
+    }
+    .arabic,
+    [lang="ar"] {
+      font-family: "AJAMIX Shipped Noto", "AJAMIX Harmattan", serif;
+      direction: rtl;
+    }
+    .noto {
+      font-family: "AJAMIX Shipped Noto", serif;
+      text-decoration: underline 2px color-mix(in srgb, var(--noto) 34%, transparent);
+      text-underline-offset: 8px;
+    }
+    .harmattan {
+      text-decoration: underline 2px color-mix(in srgb, var(--harmattan) 34%, transparent);
+      text-underline-offset: 8px;
+    }
+    .fallback {
+      font-family: "Times New Roman", "Geeza Pro", serif;
+      text-decoration: underline 2px color-mix(in srgb, var(--fallback) 34%, transparent);
+      text-underline-offset: 8px;
+    }
+    .arabic-span { unicode-bidi: isolate; }
+    .latin-span { direction: ltr; unicode-bidi: isolate; font: 0.58em/1.3 system-ui, sans-serif; }
+    .size-12 { --specimen-size: 12px; }
+    .size-16 { --specimen-size: 16px; }
+    .size-20 { --specimen-size: 20px; }
+    .size-28 { --specimen-size: 28px; }
+    .size-40 { --specimen-size: 40px; }
+    .bold { --specimen-weight: 700; }
+    .medium { --specimen-weight: 500; }
+    .semibold { --specimen-weight: 600; }
+    .mobile-frame {
+      width: 320px;
+      max-width: 100%;
+      padding: 9px;
+      border: 2px solid #26354b;
+      border-radius: 18px;
+      white-space: normal;
+    }
+    .zoom-frame { width: 50%; zoom: 2; }
+    .bidi-isolate { unicode-bidi: plaintext; }
+    .priority-section {
+      padding: 16px;
+      border: 3px solid var(--harmattan);
+      border-radius: 16px;
+      background: #effaf5;
+    }
+    .dark-section {
+      padding: 16px;
+      border-radius: 16px;
+      color: #f7f4ed;
+      background: #172432;
+    }
+    .dark-section .section-note { color: #d4dce6; }
+    .dark-section .specimen-grid { border-color: #5d6d7d; background: #5d6d7d; }
+    .dark-section .label, .dark-section .render-cell, .dark-section .legend > div { background: #243647; }
+    .dark-section .literal, .dark-section .codepoints { color: #e2e8f0; }
+    .dark-section .review button { color: var(--ink); }
+    body.harmattan-disabled .hausa-ajami.harmattan,
+    body.harmattan-disabled [lang="ha-Arab"].harmattan {
+      font-family: "AJAMIX Shipped Noto", serif;
+    }
+    footer { margin-top: 40px; color: var(--muted); }
+
+    @media (max-width: 900px) {
+      header { position: static; }
+      .legend { position: static; }
+      .legend, .specimen-grid {
+        grid-template-columns: minmax(150px, 0.65fr) repeat(3, minmax(210px, 1fr));
+        overflow-x: auto;
+      }
+      section { scroll-margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmattan 4.400 visual qualification</h1>
+    <p>Isolated Stage 4A review only. This page does not activate Ajami or change production. Compare the shipped Noto build, unmodified stock Harmattan, and browser/system fallback. Underlines identify columns; they are not part of the font.</p>
+    <nav id="nav"></nav>
+  </header>
+  <main>
+    <div class="status" id="font-status" data-ready="false" role="status">
+      <span id="status-copy">Loading the local Noto and Harmattan files before review…</span>
+      <span id="review-count">0 reviewed · 0 failed</span>
+    </div>
+    <aside class="font-aid" aria-labelledby="font-aid-heading">
+      <h2 id="font-aid-heading">DevTools aid — local WOFF2 verification</h2>
+      <p id="font-check-summary">Waiting for <code>document.fonts.ready</code>…</p>
+      <ul id="font-source-status" aria-live="polite"></ul>
+      <button class="font-toggle" id="harmattan-toggle" type="button" aria-pressed="false">Disable Harmattan — force Noto comparison</button>
+      <p><strong>Reviewer instruction:</strong> open DevTools → Network, filter <code>woff2</code>, reload, and confirm the five relative local requests below. Then use the toggle: the Harmattan comparison and Hausa language runs must visibly change before you trust this review.</p>
+    </aside>
+    <p class="warning"><strong>Human gate:</strong> select Pass, Fail, or Needs review on every row. Pay special attention to three-dot size/style, joining strokes, dots that change by context, collisions in stacked marks, clipping, baseline jumps, fallback glyphs, and bidi order. Candidate-corpus word spellings remain provisional; this page qualifies font behavior, not linguistics.</p>
+
+    <div class="legend" aria-hidden="true">
+      <div>Sequence / review</div>
+      <div class="noto-head">(a) shipped Noto Naskh</div>
+      <div class="harmattan-head">(b) stock Harmattan 4.400</div>
+      <div class="fallback-head">(c) browser/system fallback</div>
+    </div>
+    <div id="sections"></div>
+    <footer>Local-only assets. No CDN, remote stylesheet, analytics, or post-install network request. Refresh clears the visual review buttons.</footer>
+  </main>
+
+  <script>
+    const canonical = [
+      ["b", "ب"], ["ɓ", "ݑ"], ["t", "ت"], ["ts", "ڟ"], ["d", "د"],
+      ["ɗ", "ط"], ["c", "ث"], ["j", "ج"], ["k", "ک"], ["ƙ", "ࢼ"],
+      ["g", "غ"], ["f", "ࢻ"], ["s", "س"], ["z", "ز"], ["sh", "ش"],
+      ["h (native)", "ح"], ["h (Arabic lexical)", "ه"], ["m", "م"],
+      ["n", "ࢽ"], ["w", "و"], ["r", "ر"], ["l", "ل"], ["y", "ی"],
+      ["ƴ / apostrophe-y", "ؿ"]
+    ];
+    const targets = [
+      ["ɓ U+0751", "ݑ"], ["ɗ U+0637", "ط"], ["c U+062B", "ث"],
+      ["k U+06A9", "ک"], ["ƙ U+08BC", "ࢼ"], ["f U+08BB", "ࢻ"],
+      ["ts U+069F", "ڟ"], ["n U+08BD", "ࢽ"], ["y U+06CC", "ی"],
+      ["ƴ U+063F", "ؿ"], ["native h U+062D", "ح"],
+      ["Arabic lexical h U+0647", "ه"], ["kw/ky U+0763", "ݣ"],
+      ["gw/gy U+08C3", "ࣃ"], ["ƙw/ƙy U+08C4", "ࣄ"]
+    ];
+    const clusters = [["kw / ky (provisional)", "ݣ"], ["gw / gy (provisional)", "ࣃ"], ["ƙw / ƙy (provisional)", "ࣄ"]];
+    const marks = [
+      ["short a / fatha", "بَ"], ["short i / kasra", "بِ"],
+      ["short u/o / damma", "بُ"], ["short e / dot below", "بٜ"],
+      ["sukūn", "بْ"], ["shadda", "بّ"], ["dagger alif", "بٰ"],
+      ["hamza above", "أ"], ["hamza below", "إ"],
+      ["shadda + fatha stack", "بَّ"], ["shadda + kasra stack", "بِّ"],
+      ["shadda + damma stack", "بُّ"], ["fatha + dagger alif", "بَٰ"],
+      ["adjacent marked letters", "بَࢽٜکْ"]
+    ];
+    const sequences = [
+      ["long a", "بَا"], ["long i", "بِى"], ["long u", "بُو"],
+      ["long e", "بٜىٰ"], ["long o", "بُواْ"], ["diphthong ai", "بَیْ"],
+      ["diphthong au", "بَوْ"], ["initial short-e carrier (provisional rule)", "عٜب"],
+      ["initial fatha carrier probe", "أَب"], ["initial kasra carrier probe", "إِب"]
+    ];
+    const corpusWords = [
+      ["amfani — candidate", "مࢻࢽ"], ["Amina — candidate", "مࢽ"],
+      ["cikin — candidate", "ثِکِࢽ"], ["ɗan'uwa — candidate", "طَࢽُوَ"],
+      ["ɗaya — candidate", "طَیَ"], ["haka — candidate", "حَکَ"],
+      ["ƙasa — candidate", "ࢼَسَ"], ["Lissafi — candidate", "لِسسَࢻِ"],
+      ["shi — candidate", "شِ"], ["tsawo — candidate", "ڟَوُ"],
+      ["yana — candidate", "یَࢽَ"], ["ƴan — candidate", "ؿَࢽ"],
+      ["'ya'ya — candidate", "ؿَؿَ"], ["zaɓi — candidate", "زَݑِ"]
+    ];
+
+    const sectionData = [
+      {
+        id: "canonical",
+        title: "Checklist rows 1–3 — canonical characters and joining",
+        note: "Every Table A character plus the contextually permitted Arabic lexical h. Each is shown in a short connected run, not as a bare cmap sample.",
+        rows: canonical.map(([label, value]) => ({ label, text: `ب${value}ب` }))
+      },
+      {
+        id: "priority-distinguish",
+        title: "Checklist row 4 (priority) — distinguish extended and cluster letters",
+        note: "Compare these six glyphs directly at reading size. They must remain visually distinguishable from each other, not merely present.",
+        priority: true,
+        rows: [
+          ["ɓ U+0751", "ݑ"], ["f U+08BB", "ࢻ"], ["ƙ U+08BC", "ࢼ"],
+          ["n U+08BD", "ࢽ"], ["gw / gy U+08C3", "ࣃ"], ["ƙw / ƙy U+08C4", "ࣄ"]
+        ].map(([label, text]) => ({ label, text: `ب${text}ب` }))
+      },
+      {
+        id: "priority-y",
+        title: "Checklist row 5 (priority) — ؿ (ƴ) legibility",
+        note: "Read ؿ beside the plain y form. It must be readable and not confusable with ی.",
+        priority: true,
+        rows: [
+          { label: "ƴ U+063F beside y U+06CC", text: "ؿَࢽ یَࢽ" },
+          { label: "ƴ U+063F connected context", text: "بؿب" }
+        ]
+      },
+      {
+        id: "clusters",
+        title: "Checklist rows 1–3 — provisional cluster characters",
+        note: "Code points are settled; word-level cluster spelling rules remain provisional.",
+        rows: clusters.flatMap(([label, value]) => [
+          { label: `${label} — isolated`, text: value },
+          { label: `${label} — connected`, text: `ب${value}ب` },
+          { label: `${label} — marked`, text: `بَ${value}ٜبْ` }
+        ])
+      },
+      {
+        id: "contexts",
+        title: "Checklist rows 2, 9–10 — isolated, initial, medial, and final contexts",
+        note: "Four contextual probes for every qualification target. Logical strings are shown in their exact stored order.",
+        rows: targets.flatMap(([label, value]) => [
+          { label: `${label} — isolated`, text: value },
+          { label: `${label} — initial`, text: `${value}ب` },
+          { label: `${label} — medial`, text: `ب${value}ب` },
+          { label: `${label} — final`, text: `ب${value}` }
+        ])
+      },
+      {
+        id: "marks",
+        title: "Checklist rows 6–8, 10 — vowel marks and stacked marks",
+        note: "Inspect base/mark attachment, collision avoidance, above/below stacking, and clipping.",
+        rows: marks.map(([label, text]) => ({ label, text }))
+      },
+      {
+        id: "sequences",
+        title: "Checklist rows 6–10 — long vowels, diphthongs, and carriers",
+        note: "Approved deterministic sequences are rendered literally; carrier probes are clearly distinguished where the orthography remains provisional.",
+        rows: sequences.map(([label, text]) => ({ label, text }))
+      },
+      {
+        id: "words",
+        title: "Checklist rows 1–3, 9–10 — realistic Hausa candidate-corpus words",
+        note: "Real Boko words from candidate-corpus.json using its provisional Ajami review strings. Font-run qualification only; no spelling is approved here.",
+        rows: corpusWords.map(([label, text]) => ({ label, text }))
+      },
+      {
+        id: "mixed",
+        title: "Checklist row 20 (priority), rows 21–22 — language switching, bidi, numerals, punctuation",
+        note: "Every Hausa container is lang=ha-Arab dir=rtl. Arabic/Qur'anic spans are separately lang=ar dir=rtl and route Noto-first through the language-attribute architecture.",
+        priority: true,
+        rows: [
+          { label: "Western digits + punctuation", text: "ࢼَسَ 2026: 45%, 3.14." },
+          { label: "Arabic-Indic digits", text: "ࢼَسَ ٢٠٢٦: ٤٥٪، ٣٫١٤." },
+          { label: "parentheses + comma + period", text: "(ؿَࢽ), حَکَ. (ࢻَࢽ)" },
+          { label: "quotation marks", text: "“ؿَࢽ” «حَکَ» ‘ࢼَسَ’" },
+          { label: "Hausa + English", text: "یَࢽَ API lesson 2 — offline", html: "یَࢽَ <span class=\"latin-span\" lang=\"en\" dir=\"ltr\">API lesson 2 — offline</span>" },
+          { label: "Hausa + quoted Arabic", text: "یَࢽَ “ٱلْحَمْدُ لِلَّٰهِ” حَکَ", html: "یَࢽَ “<span class=\"arabic-span\" lang=\"ar\" dir=\"rtl\">ٱلْحَمْدُ لِلَّٰهِ</span>” حَکَ" },
+          { label: "Arabic/Qur'anic specimen", text: "ٱلْحَمْدُ لِلَّٰهِ", language: "ar", direction: "rtl", html: "<span class=\"arabic-span\" lang=\"ar\" dir=\"rtl\">ٱلْحَمْدُ لِلَّٰهِ</span>" },
+          { label: "Latin acronym in parentheses", text: "حَکَ (VAT) ࢼَسَ", html: "حَکَ (<span class=\"latin-span\" lang=\"en\" dir=\"ltr\">VAT</span>) ࢼَسَ" },
+          { label: "mathematical expression", text: "ࢼَسَ: x + 3 = 12; 25% × 4 = 100", html: "ࢼَسَ: <span class=\"latin-span\" dir=\"ltr\">x + 3 = 12; 25% × 4 = 100</span>" },
+          { label: "mixed-script answer choice A", text: "A. ؿَࢽ 25%", html: "<span class=\"latin-span\" dir=\"ltr\">A.</span> ؿَࢽ <span class=\"latin-span\" dir=\"ltr\">25%</span>" },
+          { label: "mixed-script answer choice B", text: "B. ࢻَࢽ (API)", html: "<span class=\"latin-span\" dir=\"ltr\">B.</span> ࢻَࢽ (<span class=\"latin-span\" dir=\"ltr\">API</span>)" },
+          { label: "apostrophe-y source labels", text: "ƴ / 'y / ’y / ʼy → ؿ", html: "<span class=\"latin-span\" dir=\"ltr\">ƴ / 'y / ’y / ʼy →</span> ؿ" },
+          { label: "glottal apostrophe candidates", text: "murabba'i · jami'a · sa'a · ma'ana", html: "<span class=\"latin-span\" lang=\"ha\" dir=\"ltr\">murabba'i · jami'a · sa'a · ma'ana</span>" }
+        ]
+      },
+      {
+        id: "weights",
+        title: "Checklist rows 11–18 — actual weights and mandatory size ladder",
+        note: "Font synthesis is disabled. The interface-relevant Regular and Bold are accompanied by Medium/SemiBold controls for qualification, not as a shipping recommendation.",
+        rows: [
+          { label: "12px Regular", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "size-12" },
+          { label: "16px Regular", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "size-16" },
+          { label: "20px Regular", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "size-20" },
+          { label: "28px Regular", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "size-28" },
+          { label: "40px Regular", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "size-40" },
+          { label: "500 Medium", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "medium" },
+          { label: "600 SemiBold", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "semibold" },
+          { label: "700 Bold — real file", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", className: "bold" },
+          { label: "700 Bold mark stack", text: "ࢼَّ ࢻِّ ࢽُّ ؿَٰ", className: "bold size-40" }
+        ]
+      },
+      {
+        id: "layout",
+        title: "Checklist rows 19 and 23 — narrow mobile and high-zoom checks",
+        note: "Check wrapping, clipping, mark clearance, and horizontal overflow at constrained width and simulated 200% zoom.",
+        rows: [
+          { label: "320px mobile frame", text: "یَࢽَ ؿَࢽ ࢼَسَ 2026، حَکَ ࢻِࢽ.", wrapperClass: "mobile-frame" },
+          { label: "320px mobile + bold", text: "ࢼَّسَ ؿَࢽ ࢻِࢽ (25%)", className: "bold", wrapperClass: "mobile-frame" },
+          { label: "200% zoom frame", text: "ؿَࢽ ࢻِࢽ ࢼَسَ", wrapperClass: "zoom-frame" }
+        ]
+      },
+      {
+        id: "light",
+        title: "Checklist row 24 — light-background key specimens",
+        note: "Review these key specimens on the default light background before comparing the identical set on dark.",
+        rows: [
+          { label: "extended canonical letters", text: "ݑ ࢻ ࢼ ࢽ ؿ" },
+          { label: "cluster letters", text: "ݣ ࣃ ࣄ" },
+          { label: "marks and stacked marks", text: "بَ بِ بُ بٜ بْ بّ بٰ بَّ بِّ بُّ" },
+          { label: "realistic Hausa word — candidate", text: "لِسسَࢻِ" }
+        ]
+      },
+      {
+        id: "dark",
+        title: "Checklist rows 24–25 — light/dark background comparison",
+        note: "The preceding sections provide the light-background condition. Re-check the same key specimens here against the dark background.",
+        dark: true,
+        rows: [
+          { label: "extended canonical letters", text: "ݑ ࢻ ࢼ ࢽ ؿ" },
+          { label: "cluster letters", text: "ݣ ࣃ ࣄ" },
+          { label: "marks and stacked marks", text: "بَ بِ بُ بٜ بْ بّ بٰ بَّ بِّ بُّ" },
+          { label: "realistic Hausa word — candidate", text: "لِسسَࢻِ" }
+        ]
+      }
+    ];
+
+    const codePoints = (text) => Array.from(text).map((character) => {
+      const value = character.codePointAt(0).toString(16).toUpperCase().padStart(4, "0");
+      return `U+${value}`;
+    }).join(" ");
+
+    const escapeHtml = (text) => text
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll("\"", "&quot;");
+
+    function renderCell(row, familyClass) {
+      const language = row.language || "ha-Arab";
+      const direction = row.direction || "rtl";
+      const languageClass = language === "ar" ? "arabic" : "hausa-ajami";
+      const content = row.html || escapeHtml(row.text);
+      const wrapper = row.wrapperClass
+        ? `<div class="${row.wrapperClass}">${content}</div>`
+        : content;
+      return `<div class="render-cell ${languageClass} ${familyClass} ${row.className || ""}" lang="${language}" dir="${direction}">${wrapper}</div>`;
+    }
+
+    const sections = document.getElementById("sections");
+    const nav = document.getElementById("nav");
+    let rowNumber = 0;
+    for (const section of sectionData) {
+      nav.insertAdjacentHTML("beforeend", `<a href="#${section.id}">${section.title}</a>`);
+      const rows = section.rows.map((row) => {
+        rowNumber += 1;
+        const literal = escapeHtml(row.text).replaceAll(" ", "␠");
+        return `
+          <div class="specimen" data-row="${rowNumber}">
+            <div class="label">
+              <strong>${escapeHtml(row.label)}</strong>
+              <span class="literal">literal: ${literal || "∅"}</span>
+              <span class="literal codepoints">${codePoints(row.text)}</span>
+              <span class="review" aria-label="Visual result">
+                <button type="button" data-result="pass">Pass</button>
+                <button type="button" data-result="fail">Fail</button>
+                <button type="button" data-result="review">Needs review</button>
+              </span>
+            </div>
+            ${renderCell(row, "noto")}
+            ${renderCell(row, "harmattan")}
+            ${renderCell(row, "fallback")}
+          </div>`;
+      }).join("");
+      sections.insertAdjacentHTML("beforeend", `
+        <section id="${section.id}" class="${section.priority ? "priority-section " : ""}${section.dark ? "dark-section" : ""}">
+          <h2>${section.title}</h2>
+          <p class="section-note">${section.note}</p>
+          <div class="specimen-grid">${rows}</div>
+        </section>`);
+    }
+
+    function updateReviewCount() {
+      const selected = document.querySelectorAll(".review .selected");
+      const failed = document.querySelectorAll('.review [data-result="fail"].selected');
+      document.getElementById("review-count").textContent =
+        `${selected.length}/${rowNumber} reviewed · ${failed.length} failed`;
+    }
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest(".review button");
+      if (!button) return;
+      for (const peer of button.parentElement.querySelectorAll("button")) peer.classList.remove("selected");
+      button.classList.add("selected");
+      updateReviewCount();
+    });
+
+    const fontSources = [
+      { family: "AJAMIX Harmattan", weight: 400, sample: "ࢼࢻࢽؿࣃࣄ", source: "./fonts/harmattan-4.400/Harmattan-Regular.woff2" },
+      { family: "AJAMIX Harmattan", weight: 500, sample: "ࢼࢻࢽؿࣃࣄ", source: "./fonts/harmattan-4.400/Harmattan-Medium.woff2" },
+      { family: "AJAMIX Harmattan", weight: 600, sample: "ࢼࢻࢽؿࣃࣄ", source: "./fonts/harmattan-4.400/Harmattan-SemiBold.woff2" },
+      { family: "AJAMIX Harmattan", weight: 700, sample: "ࢼࢻࢽؿࣃࣄ", source: "./fonts/harmattan-4.400/Harmattan-Bold.woff2" },
+      { family: "AJAMIX Shipped Noto", weight: 400, sample: "بثح", source: "../../app/fonts/NotoNaskhArabic-Regular.woff2" }
+    ];
+
+    function showFontSourceStatus() {
+      const target = document.getElementById("font-source-status");
+      const results = fontSources.map((face) => ({
+        ...face,
+        loaded: document.fonts.check(`${face.weight} 34px "${face.family}"`, face.sample)
+      }));
+      target.innerHTML = results.map((face) =>
+        `<li><span class="${face.loaded ? "loaded" : "not-loaded"}">${face.loaded ? "LOADED" : "NOT LOADED"}</span> — ${escapeHtml(face.family)} ${face.weight}: <code>${escapeHtml(face.source)}</code></li>`
+      ).join("");
+      const harmattanLoaded = results.filter((face) => face.family === "AJAMIX Harmattan").every((face) => face.loaded);
+      document.getElementById("font-check-summary").textContent = harmattanLoaded
+        ? "document.fonts.ready resolved; document.fonts.check() reports every AJAMIX Harmattan weight available. Confirm the exact local WOFF2 responses in DevTools Network before sign-off."
+        : "document.fonts.ready resolved, but one or more AJAMIX Harmattan faces failed document.fonts.check(). Do not qualify this rendering.";
+    }
+
+    document.getElementById("harmattan-toggle").addEventListener("click", (event) => {
+      const disabled = document.body.classList.toggle("harmattan-disabled");
+      event.currentTarget.setAttribute("aria-pressed", String(disabled));
+      event.currentTarget.textContent = disabled
+        ? "Restore Harmattan language runs"
+        : "Disable Harmattan — force Noto comparison";
+    });
+
+    Promise.all([
+      document.fonts.load('400 34px "AJAMIX Harmattan"', "ࢼࢻࢽؿࣃࣄ"),
+      document.fonts.load('500 34px "AJAMIX Harmattan"', "ࢼࢻࢽؿࣃࣄ"),
+      document.fonts.load('600 34px "AJAMIX Harmattan"', "ࢼࢻࢽؿࣃࣄ"),
+      document.fonts.load('700 34px "AJAMIX Harmattan"', "ࢼࢻࢽؿࣃࣄ"),
+      document.fonts.load('400 34px "AJAMIX Shipped Noto"', "بثح"),
+      document.fonts.ready
+    ]).then(() => {
+      const status = document.getElementById("font-status");
+      status.dataset.ready = "true";
+      document.getElementById("status-copy").textContent =
+        "Local font files loaded. Begin visual review; browser fallback can still occur per missing glyph.";
+      showFontSourceStatus();
+    }).catch((error) => {
+      document.getElementById("status-copy").textContent =
+        `FONT LOAD FAILURE — do not qualify this rendering: ${error.message}`;
+      document.getElementById("font-check-summary").textContent =
+        "Font loading failed. Do not qualify this rendering; inspect the local WOFF2 requests in DevTools Network.";
+      showFontSourceStatus();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "ajamix-ajami-pipeline-prototype",
+  "private": true,
+  "type": "module",
+  "main": "test-suite.mjs"
+}

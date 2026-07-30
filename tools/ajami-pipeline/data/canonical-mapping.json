@@ -1,0 +1,623 @@
+{
+  "orthography": "warsh_kano_ajamix_v1",
+  "schemaVersion": 1,
+  "normalization": "NFC",
+  "status": "prototype",
+  "authority": "HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md",
+  "canonicalConsonants": [
+    {
+      "boko": ["b"],
+      "token": "B_PLAIN",
+      "glyph": "\u0628",
+      "codePoint": "U+0628",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["\u0253"],
+      "token": "B_GLOTTALIZED",
+      "glyph": "\u0751",
+      "codePoint": "U+0751",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical Warsh form"
+    },
+    {
+      "boko": ["t"],
+      "token": "T_PLAIN",
+      "glyph": "\u062A",
+      "codePoint": "U+062A",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["ts"],
+      "token": "TS_HAUSA",
+      "glyph": "\u069F",
+      "codePoint": "U+069F",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["d"],
+      "token": "D_PLAIN",
+      "glyph": "\u062F",
+      "codePoint": "U+062F",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["\u0257"],
+      "token": "D_GLOTTALIZED",
+      "glyph": "\u0637",
+      "codePoint": "U+0637",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["c"],
+      "token": "C_HAUSA",
+      "glyph": "\u062B",
+      "codePoint": "U+062B",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical; no following-vowel split"
+    },
+    {
+      "boko": ["j"],
+      "token": "J_PLAIN",
+      "glyph": "\u062C",
+      "codePoint": "U+062C",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["k"],
+      "token": "K_PLAIN",
+      "glyph": "\u06A9",
+      "codePoint": "U+06A9",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical Warsh form"
+    },
+    {
+      "boko": ["\u0199"],
+      "token": "K_GLOTTALIZED",
+      "glyph": "\u08BC",
+      "codePoint": "U+08BC",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical Warsh form"
+    },
+    {
+      "boko": ["g"],
+      "token": "G_PLAIN",
+      "glyph": "\u063A",
+      "codePoint": "U+063A",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["f"],
+      "token": "F_HAUSA",
+      "glyph": "\u08BB",
+      "codePoint": "U+08BB",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical Warsh form"
+    },
+    {
+      "boko": ["s"],
+      "token": "S_PLAIN",
+      "glyph": "\u0633",
+      "codePoint": "U+0633",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["z"],
+      "token": "Z_PLAIN",
+      "glyph": "\u0632",
+      "codePoint": "U+0632",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["sh"],
+      "token": "SH_HAUSA",
+      "glyph": "\u0634",
+      "codePoint": "U+0634",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["h"],
+      "token": "H_NATIVE_HAUSA",
+      "glyph": "\u062D",
+      "codePoint": "U+062D",
+      "category": "C",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table C default for ordinary native Hausa; classifier selection required"
+    },
+    {
+      "boko": ["h"],
+      "token": "H_ARABIC_LEXICAL",
+      "glyph": "\u0647",
+      "codePoint": "U+0647",
+      "category": "C",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table C for established Arabic, Quranic, proper-name, or reviewed lexical spelling; classifier selection required"
+    },
+    {
+      "boko": ["m"],
+      "token": "M_PLAIN",
+      "glyph": "\u0645",
+      "codePoint": "U+0645",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["n"],
+      "token": "N_HAUSA",
+      "glyph": "\u08BD",
+      "codePoint": "U+08BD",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A canonical stored Warsh code point"
+    },
+    {
+      "boko": ["w"],
+      "token": "W_PLAIN",
+      "glyph": "\u0648",
+      "codePoint": "U+0648",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical consonant"
+    },
+    {
+      "boko": ["r"],
+      "token": "R_PLAIN",
+      "glyph": "\u0631",
+      "codePoint": "U+0631",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["l"],
+      "token": "L_PLAIN",
+      "glyph": "\u0644",
+      "codePoint": "U+0644",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A canonical"
+    },
+    {
+      "boko": ["y"],
+      "token": "Y_PLAIN",
+      "glyph": "\u06CC",
+      "codePoint": "U+06CC",
+      "category": "B",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Table A and decision record 5.1"
+    },
+    {
+      "boko": ["\u01B4", "\u01B3", "\u0027y", "\u0027Y", "\u2019y", "\u2019Y", "\u02BCy", "\u02BCY"],
+      "token": "HAUSA_GLOTTALIZED_Y",
+      "glyph": "\u063F",
+      "codePoint": "U+063F",
+      "category": "B",
+      "sourceRefs": ["N4959"],
+      "decision": "Table A and final decision record 5.2; all aliases converge before generation"
+    }
+  ],
+  "provisionalVelarClusters": [
+    {
+      "boko": ["kw", "ky"],
+      "token": "K_VELAR_CLUSTER",
+      "glyph": "\u0763",
+      "codePoint": "U+0763",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "status": "provisional",
+      "decision": "Code point settled; per-cluster spelling rules remain provisional"
+    },
+    {
+      "boko": ["gw", "gy"],
+      "token": "G_VELAR_CLUSTER",
+      "glyph": "\u08C3",
+      "codePoint": "U+08C3",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "status": "provisional",
+      "decision": "Code point settled; per-cluster spelling rules remain provisional"
+    },
+    {
+      "boko": ["\u0199w", "\u0199y"],
+      "token": "K_GLOTTALIZED_VELAR_CLUSTER",
+      "glyph": "\u08C4",
+      "codePoint": "U+08C4",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "status": "provisional",
+      "decision": "Code point settled; per-cluster spelling rules remain provisional"
+    }
+  ],
+  "vowelAndMarkInventory": [
+    {
+      "function": "short_a",
+      "token": "VOWEL_SHORT_A",
+      "glyph": "\u064E",
+      "codePoint": "U+064E",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "short_i",
+      "token": "VOWEL_SHORT_I",
+      "glyph": "\u0650",
+      "codePoint": "U+0650",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "short_u_or_o",
+      "token": "VOWEL_SHORT_U_O",
+      "glyph": "\u064F",
+      "codePoint": "U+064F",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "short_e",
+      "token": "VOWEL_SHORT_E",
+      "glyph": "\u065C",
+      "codePoint": "U+065C",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "sukun",
+      "token": "SUKUN",
+      "glyph": "\u0652",
+      "codePoint": "U+0652",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "shadda",
+      "token": "SHADDA",
+      "glyph": "\u0651",
+      "codePoint": "U+0651",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "dagger_alif",
+      "token": "DAGGER_ALIF",
+      "glyph": "\u0670",
+      "codePoint": "U+0670",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "hamza_above",
+      "token": "HAMZA_ABOVE",
+      "glyph": "\u0654",
+      "codePoint": "U+0654",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "hamza_below",
+      "token": "HAMZA_BELOW",
+      "glyph": "\u0655",
+      "codePoint": "U+0655",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "alif",
+      "token": "ALIF",
+      "glyph": "\u0627",
+      "codePoint": "U+0627",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "alif_hamza_above",
+      "token": "ALIF_HAMZA_ABOVE",
+      "glyph": "\u0623",
+      "codePoint": "U+0623",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "alif_hamza_below",
+      "token": "ALIF_HAMZA_BELOW",
+      "glyph": "\u0625",
+      "codePoint": "U+0625",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "waw",
+      "token": "WAW",
+      "glyph": "\u0648",
+      "codePoint": "U+0648",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "alif_maqsura",
+      "token": "ALIF_MAQSURA",
+      "glyph": "\u0649",
+      "codePoint": "U+0649",
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory"
+    },
+    {
+      "function": "farsi_yeh",
+      "token": "FARSI_YEH",
+      "glyph": "\u06CC",
+      "codePoint": "U+06CC",
+      "category": "B",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved inventory and decision record 5.1"
+    }
+  ],
+  "approvedSequences": [
+    {
+      "function": "long_a",
+      "token": "VOWEL_LONG_A",
+      "glyph": "\u064E\u0627",
+      "codePoints": ["U+064E", "U+0627"],
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved sequence"
+    },
+    {
+      "function": "long_i",
+      "token": "VOWEL_LONG_I",
+      "glyph": "\u0650\u0649",
+      "codePoints": ["U+0650", "U+0649"],
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved sequence"
+    },
+    {
+      "function": "long_u",
+      "token": "VOWEL_LONG_U",
+      "glyph": "\u064F\u0648",
+      "codePoints": ["U+064F", "U+0648"],
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved sequence"
+    },
+    {
+      "function": "long_e",
+      "token": "VOWEL_LONG_E",
+      "glyph": "\u065C\u0649\u0670",
+      "codePoints": ["U+065C", "U+0649", "U+0670"],
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Section 7 approved sequence"
+    },
+    {
+      "function": "long_o",
+      "token": "VOWEL_LONG_O",
+      "glyph": "\u064F\u0648\u0627\u0652",
+      "codePoints": ["U+064F", "U+0648", "U+0627", "U+0652"],
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved sequence"
+    },
+    {
+      "function": "diphthong_ai",
+      "token": "DIPHTHONG_AI",
+      "glyph": "\u064E\u06CC\u0652",
+      "codePoints": ["U+064E", "U+06CC", "U+0652"],
+      "category": "B",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved sequence using project-fixed Farsi yeh"
+    },
+    {
+      "function": "diphthong_au",
+      "token": "DIPHTHONG_AU",
+      "glyph": "\u064E\u0648\u0652",
+      "codePoints": ["U+064E", "U+0648", "U+0652"],
+      "category": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Section 7 approved sequence"
+    }
+  ],
+  "noncanonicalVariants": [
+    {
+      "boko": "\u0253",
+      "glyph": "\u067B",
+      "codePoint": "U+067B",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["R12A"],
+      "decision": "Attested Hafs form; AJAMIX does not generate it"
+    },
+    {
+      "boko": "\u0253",
+      "glyph": "\u0628",
+      "codePoint": "U+0628",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Attested Table 1b alternative; AJAMIX does not generate it"
+    },
+    {
+      "boko": "\u0257",
+      "glyph": "\u062F",
+      "codePoint": "U+062F",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Attested alternative; AJAMIX does not generate it"
+    },
+    {
+      "boko": "\u0199",
+      "glyph": "\u0642",
+      "codePoint": "U+0642",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["R12A"],
+      "decision": "Attested Hafs form; AJAMIX does not generate it"
+    },
+    {
+      "boko": "\u0199",
+      "glyph": "\u0643",
+      "codePoint": "U+0643",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Attested Table 1b alternative; AJAMIX does not generate it"
+    },
+    {
+      "boko": "f",
+      "glyph": "\u0641",
+      "codePoint": "U+0641",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["R12A"],
+      "decision": "Attested Hafs form; AJAMIX does not generate it"
+    },
+    {
+      "boko": "f",
+      "glyph": "\u067E",
+      "codePoint": "U+067E",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Attested Table 1b alternative; AJAMIX does not generate it"
+    },
+    {
+      "boko": "n",
+      "glyph": "\u0646",
+      "codePoint": "U+0646",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["R12A"],
+      "decision": "Attested Hafs form; AJAMIX does not generate it"
+    },
+    {
+      "boko": "y",
+      "glyph": "\u064A",
+      "codePoint": "U+064A",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "B",
+      "sourceRefs": ["R12A"],
+      "decision": "Attested alternative; not generated for new native-Hausa AJAMIX text"
+    },
+    {
+      "boko": "\u01B4/\u0027y",
+      "glyph": "\u06D1",
+      "codePoint": "U+06D1",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "B",
+      "sourceRefs": ["N4959", "R12A"],
+      "decision": "Attested naskh/Warsh alternative; recognized during analysis but not generated"
+    },
+    {
+      "boko": "k/\u0199",
+      "glyph": "\u06AA",
+      "codePoint": "U+06AA",
+      "classification": "noncanonical_variant",
+      "canonicalDecisionCategory": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table B"],
+      "decision": "Swash kaf variant; AJAMIX does not generate it"
+    }
+  ],
+  "forbiddenOutput": [
+    {
+      "id": "ARABIC_PRESENTATION_FORMS",
+      "kind": "code_point_range",
+      "ranges": [["U+FB50", "U+FEFF"]],
+      "category": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table D"],
+      "decision": "Malformed storage output; never valid"
+    },
+    {
+      "id": "LATIN_WITH_ARABIC_COMBINING_MARK",
+      "kind": "script_mixing",
+      "category": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table D"],
+      "decision": "Malformed storage output; never valid"
+    },
+    {
+      "id": "PRIVATE_USE_AREA",
+      "kind": "code_point_range",
+      "ranges": [["U+E000", "U+F8FF"], ["U+F0000", "U+FFFFD"], ["U+100000", "U+10FFFD"]],
+      "category": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table D"],
+      "decision": "Private-use output is forbidden"
+    },
+    {
+      "id": "CONSTRUCTED_TRIPLE_DOT_CONSONANT",
+      "kind": "sequence",
+      "containsCodePoint": "U+06DB",
+      "category": "A",
+      "sourceRefs": ["N4959"],
+      "decision": "Use the precomposed Hausa consonants in Table A"
+    },
+    {
+      "id": "MIXED_WARSH_HAFS_NATIVE_WORD",
+      "kind": "cross_reference",
+      "category": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table D"],
+      "decision": "Warsh and Hafs code points must not be mixed in one native-Hausa word"
+    },
+    {
+      "id": "COMBINING_MARK_BEFORE_BASE",
+      "kind": "ordering",
+      "category": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table D"],
+      "decision": "Combining marks must follow their base"
+    },
+    {
+      "id": "NON_NFC",
+      "kind": "normalization",
+      "normalization": "NFC",
+      "category": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table D"],
+      "decision": "Stored output must be NFC"
+    },
+    {
+      "id": "UNDOCUMENTED_ZERO_WIDTH_CONTROL",
+      "kind": "code_point_set",
+      "codePoints": ["U+200B", "U+200C", "U+200D", "U+2060", "U+FEFF"],
+      "category": "A",
+      "sourceRefs": ["HAUSA_AJAMI_ORTHOGRAPHY_STANDARD.md Table D"],
+      "decision": "Zero-width controls require documented bidi or joining justification"
+    }
+  ]
+}

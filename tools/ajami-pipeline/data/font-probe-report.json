@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "taskId": "2026-07-28-slice-36",
+  "font": "app/fonts/NotoNaskhArabic-Regular.woff2",
+  "targets": [
+    {
+      "character": "ݑ",
+      "codePoint": "U+0751"
+    },
+    {
+      "character": "ط",
+      "codePoint": "U+0637"
+    },
+    {
+      "character": "ث",
+      "codePoint": "U+062B"
+    },
+    {
+      "character": "ک",
+      "codePoint": "U+06A9"
+    },
+    {
+      "character": "ࢼ",
+      "codePoint": "U+08BC"
+    },
+    {
+      "character": "ࢻ",
+      "codePoint": "U+08BB"
+    },
+    {
+      "character": "ڟ",
+      "codePoint": "U+069F"
+    },
+    {
+      "character": "ࢽ",
+      "codePoint": "U+08BD"
+    },
+    {
+      "character": "ی",
+      "codePoint": "U+06CC"
+    },
+    {
+      "character": "ؿ",
+      "codePoint": "U+063F"
+    },
+    {
+      "character": "ح",
+      "codePoint": "U+062D"
+    },
+    {
+      "character": "ه",
+      "codePoint": "U+0647"
+    },
+    {
+      "character": "ݣ",
+      "codePoint": "U+0763"
+    },
+    {
+      "character": "ࣃ",
+      "codePoint": "U+08C3"
+    },
+    {
+      "character": "ࣄ",
+      "codePoint": "U+08C4"
+    }
+  ],
+  "staticAnalysis": {
+    "attempted": true,
+    "parser": "dependency-free Node WOFF2 directory + Brotli + untransformed cmap parser",
+    "success": true,
+    "determinable": "If parsing succeeds, cmap can verify only whether each code point maps to a nonzero nominal glyph ID.",
+    "notDeterminable": "cmap alone cannot verify isolated/initial/medial/final shaping, GSUB substitutions, GPOS mark placement, glyph outline quality, tofu visibility, or whether browser fallback is used.",
+    "error": null,
+    "container": {
+      "signature": "wOF2",
+      "flavor": "0x00010000",
+      "tableCount": 17,
+      "totalSfntSize": 255892,
+      "totalCompressedSize": 92601,
+      "decompressedTableStreamSize": 237714,
+      "cmapOriginalLength": 2282,
+      "cmapTransformVersion": 0,
+      "cmapTransformed": false
+    },
+    "coverage": [
+      {
+        "character": "ݑ",
+        "codePoint": "U+0751",
+        "nominalGlyphPresent": true,
+        "glyphId": 257,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ط",
+        "codePoint": "U+0637",
+        "nominalGlyphPresent": true,
+        "glyphId": 55,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ث",
+        "codePoint": "U+062B",
+        "nominalGlyphPresent": true,
+        "glyphId": 43,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ک",
+        "codePoint": "U+06A9",
+        "nominalGlyphPresent": true,
+        "glyphId": 169,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ࢼ",
+        "codePoint": "U+08BC",
+        "nominalGlyphPresent": false,
+        "glyphId": null,
+        "cmapSubtable": null
+      },
+      {
+        "character": "ࢻ",
+        "codePoint": "U+08BB",
+        "nominalGlyphPresent": false,
+        "glyphId": null,
+        "cmapSubtable": null
+      },
+      {
+        "character": "ڟ",
+        "codePoint": "U+069F",
+        "nominalGlyphPresent": true,
+        "glyphId": 159,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ࢽ",
+        "codePoint": "U+08BD",
+        "nominalGlyphPresent": false,
+        "glyphId": null,
+        "cmapSubtable": null
+      },
+      {
+        "character": "ی",
+        "codePoint": "U+06CC",
+        "nominalGlyphPresent": true,
+        "glyphId": 204,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ؿ",
+        "codePoint": "U+063F",
+        "nominalGlyphPresent": true,
+        "glyphId": 63,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ح",
+        "codePoint": "U+062D",
+        "nominalGlyphPresent": true,
+        "glyphId": 45,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ه",
+        "codePoint": "U+0647",
+        "nominalGlyphPresent": true,
+        "glyphId": 71,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ݣ",
+        "codePoint": "U+0763",
+        "nominalGlyphPresent": true,
+        "glyphId": 275,
+        "cmapSubtable": {
+          "format": 4,
+          "platformId": 3,
+          "encodingId": 1
+        }
+      },
+      {
+        "character": "ࣃ",
+        "codePoint": "U+08C3",
+        "nominalGlyphPresent": false,
+        "glyphId": null,
+        "cmapSubtable": null
+      },
+      {
+        "character": "ࣄ",
+        "codePoint": "U+08C4",
+        "nominalGlyphPresent": false,
+        "glyphId": null,
+        "cmapSubtable": null
+      }
+    ],
+    "verifiedNominalGlyphCount": 10,
+    "missingNominalGlyphCount": 5
+  },
+  "visualVerification": {
+    "status": "pending_human_browser_review",
+    "probePage": "tools/ajami-pipeline/font-probe.html",
+    "requiredChecks": [
+      "isolated form",
+      "initial form",
+      "medial form",
+      "final form",
+      "sukun U+0652 placement",
+      "shadda U+0651 placement",
+      "short-e U+065C placement",
+      "comparison against deliberately missing-font fallback control"
+    ]
+  }
+}
