@@ -584,7 +584,7 @@
     "U+062F",
     "U+064E"
    ],
-   "status": "provisional",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -612,7 +612,8 @@
      ],
      "reasoning": "Hausa `da` here is the short-vowel conjunction/preposition (‘and/with’), not distinct long-vowel `dā` (‘formerly’). This selects the short sequence for the 'a' at position 1.",
      "confidence": "high",
-     "evidenceType": "COMMON_FUNCTION_WORD"
+     "evidenceType": "COMMON_FUNCTION_WORD",
+     "reviewerDecision": "short final — U+064E"
     }
    ],
    "category": "native_hausa",
@@ -622,14 +623,62 @@
     "[activity:pn-maths-05 | activities.4.topicHa] Kirgawa 1–5 da yatsu"
    ],
    "reviewerDecision": "deferred_context_dependent",
-   "reviewerNotes": "CONTEXT_DEPENDENT — Muhammad: vowel length genuinely varies by grammatical/phonetic context (short vs long), not a single fixed spelling. Needs a positional/phonological rule, not a lexicon entry. Flagged 2026-07-28, deferred.",
+   "reviewerNotes": "Muhammad ratified 2026-08-03 by grammatical context (see contextRule). Not context-dependent after all: every grammatical context is short.",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "دَ",
    "candidateFullCodepoints": [
     "U+062F",
     "U+064E"
    ],
-   "entryConfidence": "high"
+   "entryConfidence": "high",
+   "contextRule": {
+    "default": "short final — U+064E",
+    "exceptions": [
+     {
+      "match": "boko token is \"dā\" (macron U+0304 in source)",
+      "decision": "long final — U+064E U+0627",
+      "gloss": "formerly / in the past",
+      "occurrences": 3
+     }
+    ],
+    "observedContexts": [
+     {
+      "context": "possessive yana/tana/suna da",
+      "occurrences": 799,
+      "length": "short"
+     },
+     {
+      "context": "da + aspect aka/ake/ke/ya",
+      "occurrences": 777,
+      "length": "short"
+     },
+     {
+      "context": "relativizer abin/wanda da",
+      "occurrences": 595,
+      "length": "short"
+     },
+     {
+      "context": "preposition amfani da",
+      "occurrences": 582,
+      "length": "short"
+     },
+     {
+      "context": "tare da",
+      "occurrences": 357,
+      "length": "short"
+     },
+     {
+      "context": "da yawa",
+      "occurrences": 198,
+      "length": "short"
+     },
+     {
+      "context": "conjunction X da Y",
+      "occurrences": null,
+      "length": "short"
+     }
+    ]
+   }
   },
   {
    "rank": 2,
@@ -646,7 +695,7 @@
     "U+06A9",
     "U+064E"
    ],
-   "status": "provisional",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -674,7 +723,8 @@
      ],
      "reasoning": "In the examples, `ka` is the second-person singular subject/imperative particle with short `a`. This selects the short sequence for the 'a' at position 1.",
      "confidence": "high",
-     "evidenceType": "COMMON_FUNCTION_WORD"
+     "evidenceType": "COMMON_FUNCTION_WORD",
+     "reviewerDecision": "short final — U+064E"
     }
    ],
    "category": "native_hausa",
@@ -684,14 +734,52 @@
     "[n1-maths-01 | modules.0.textExplanationHa] Ka yi amfani da yatsun hannunka."
    ],
    "reviewerDecision": "deferred_context_dependent",
-   "reviewerNotes": "CONTEXT_DEPENDENT — Muhammad: vowel length genuinely varies by grammatical/phonetic context (short vs long), not a single fixed spelling. Needs a positional/phonological rule, not a lexicon entry. Flagged 2026-07-28, deferred.",
+   "reviewerNotes": "Muhammad ratified 2026-08-03 by grammatical context (see contextRule). Short everywhere except after \"idan\" (completive reading).",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "کَ",
    "candidateFullCodepoints": [
     "U+06A9",
     "U+064E"
    ],
-   "entryConfidence": "high"
+   "entryConfidence": "high",
+   "contextRule": {
+    "default": "short final — U+064E",
+    "exceptions": [
+     {
+      "match": "immediately preceded by \"idan\"",
+      "decision": "long final — U+064E U+0627",
+      "gloss": "conditional/completive \"if you have V-ed\"",
+      "occurrences": 395
+     }
+    ],
+    "observedContexts": [
+     {
+      "context": "za ka future",
+      "occurrences": 501,
+      "length": "short"
+     },
+     {
+      "context": "kada ka prohibitive",
+      "occurrences": 353,
+      "length": "short"
+     },
+     {
+      "context": "sannan ka sequential",
+      "occurrences": 249,
+      "length": "short"
+     },
+     {
+      "context": "domin/kafin ka purposive",
+      "occurrences": 246,
+      "length": "short"
+     },
+     {
+      "context": "Ka + verb sentence-initial imperative",
+      "occurrences": 179,
+      "length": "short"
+     }
+    ]
+   }
   },
   {
    "rank": 4,
@@ -708,7 +796,7 @@
     "U+06CC",
     "U+064E"
    ],
-   "status": "provisional",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -737,7 +825,8 @@
      ],
      "reasoning": "In examples such as `ya shigo`, `ya` is the third-person masculine perfect subject marker, proposed as long `yā`. This selects the long sequence for the 'a' at position 1.",
      "confidence": "high",
-     "evidenceType": "COMMON_FUNCTION_WORD"
+     "evidenceType": "COMMON_FUNCTION_WORD",
+     "reviewerDecision": "long final — U+064E U+0627"
     }
    ],
    "category": "native_hausa",
@@ -747,7 +836,7 @@
     "[n1-maths-04 | modules.3.textExplanationHa] Ƙarami yana nufin abin da girmansa ya fi wani ƙanƙani."
    ],
    "reviewerDecision": "deferred_context_dependent",
-   "reviewerNotes": "CONTEXT_DEPENDENT — Muhammad: vowel length genuinely varies by grammatical/phonetic context (short vs long), not a single fixed spelling. Needs a positional/phonological rule, not a lexicon entry. Flagged 2026-07-28, deferred.",
+   "reviewerNotes": "Muhammad ratified 2026-08-03 by grammatical context (see contextRule). Long in completive and modal uses; short in relative, interrogative and negative.",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "یَا",
    "candidateFullCodepoints": [
@@ -755,7 +844,44 @@
     "U+064E",
     "U+0627"
    ],
-   "entryConfidence": "high"
+   "entryConfidence": "high",
+   "contextRule": {
+    "default": "long final — U+064E U+0627",
+    "exceptions": [
+     {
+      "match": "immediately preceded by \"da\" or \"wanda\" (relative)",
+      "decision": "short final — U+064E",
+      "occurrences": 324
+     },
+     {
+      "match": "immediately preceded by \"me\" (interrogative)",
+      "decision": "short final — U+064E",
+      "occurrences": 162
+     },
+     {
+      "match": "immediately preceded by \"ba\" (negative)",
+      "decision": "short final — U+064E",
+      "occurrences": 103
+     }
+    ],
+    "observedContexts": [
+     {
+      "context": "ya + plain verb (completive)",
+      "occurrences": 681,
+      "length": "long"
+     },
+     {
+      "context": "ya fi",
+      "occurrences": 257,
+      "length": "long"
+     },
+     {
+      "context": "ya kamata",
+      "occurrences": 194,
+      "length": "long"
+     }
+    ]
+   }
   },
   {
    "rank": 5,
@@ -772,7 +898,7 @@
     "U+06A9",
     "U+064F"
    ],
-   "status": "provisional",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -805,7 +931,14 @@
      ],
      "reasoning": "The corpus uses Hausa `ko` as the disjunctive particle ‘or’, conventionally read `kō` with long `o`. This selects the long sequence for the 'o' at position 1.",
      "confidence": "high",
-     "evidenceType": "COMMON_FUNCTION_WORD"
+     "evidenceType": "COMMON_FUNCTION_WORD",
+     "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "کُو",
+     "reviewerSuppliedCodepoints": [
+      "U+06A9",
+      "U+064F",
+      "U+0648"
+     ]
     }
    ],
    "category": "native_hausa",
@@ -815,7 +948,7 @@
     "[n1-maths-03 | modules.2.textExplanationHa] Zobe yana da zagaye, kamar ƙwallo ko faranti."
    ],
    "reviewerDecision": "deferred_context_dependent",
-   "reviewerNotes": "CONTEXT_DEPENDENT — Muhammad: vowel length genuinely varies by grammatical/phonetic context (short vs long), not a single fixed spelling. Needs a positional/phonological rule, not a lexicon entry. Flagged 2026-07-28, deferred.",
+   "reviewerNotes": "Muhammad ratified 2026-08-03 by grammatical context (see contextRule). Long in every context; spelled کُو as a lexical exception, NOT the standard long -o کُواْ.",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "کُواْ",
    "candidateFullCodepoints": [
@@ -825,7 +958,33 @@
     "U+0627",
     "U+0652"
    ],
-   "entryConfidence": "high"
+   "entryConfidence": "high",
+   "contextRule": {
+    "default": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
+    "exceptions": [],
+    "observedContexts": [
+     {
+      "context": "X ko Y = or",
+      "occurrences": 1419,
+      "length": "long"
+     },
+     {
+      "context": "ko = whether",
+      "occurrences": 181,
+      "length": "long"
+     },
+     {
+      "context": "ko a / ko a'a",
+      "occurrences": 67,
+      "length": "long"
+     },
+     {
+      "context": "ko da = even if",
+      "occurrences": 35,
+      "length": "long"
+     }
+    ]
+   }
   },
   {
    "rank": 6,
