@@ -10,3 +10,4 @@ import "./audit-corpus.test.mjs";
 import "./build-review-queue.test.mjs";
 import "./propose-candidates.test.mjs";
 import "./materialize-lexicon.test.mjs";
+import "./gates/gates.test.mjs";

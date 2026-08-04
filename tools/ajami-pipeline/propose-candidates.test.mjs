@@ -1,9 +1,7 @@
-import fs from "node:fs";
-import path from "node:path";
 import test from "node:test";
 import assert from "node:assert/strict";
-import { fileURLToPath } from "node:url";
 
+import { buildReviewQueue } from "./build-review-queue.mjs";
 import {
   proposalSummary,
   proposeCandidates,
@@ -11,11 +9,10 @@ import {
 } from "./propose-candidates.mjs";
 import { formatCodePoints } from "./tokenizer.mjs";
 
-const MODULE_DIR = path.dirname(fileURLToPath(import.meta.url));
-const QUEUE_PATH = path.join(MODULE_DIR, "data", "review-queue-top500.json");
+const GENERATED_QUEUE = buildReviewQueue().queue;
 
 function sourceQueue() {
-  return JSON.parse(fs.readFileSync(QUEUE_PATH, "utf8"));
+  return structuredClone(GENERATED_QUEUE);
 }
 
 function proposedQueue() {
