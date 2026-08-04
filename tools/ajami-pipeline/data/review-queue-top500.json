@@ -2773,7 +2773,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -2824,7 +2824,8 @@
      ],
      "reasoning": "The temporal noun `yau` (‘today’) contains the lexical `au` diphthong represented by the approved sequence. Standard §7 supplies the exact approved au sequence selected here.",
      "confidence": "high",
-     "evidenceType": "COMMON_FUNCTION_WORD"
+     "evidenceType": "COMMON_FUNCTION_WORD",
+     "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -2834,7 +2835,7 @@
     "[n1-maths-01 | modules.0.segments.0.audioScript] Sannu da zuwa darasin lissafi na yau."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (final cluster).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "یَوْ",
    "candidateFullCodepoints": [
@@ -2858,7 +2859,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -2909,7 +2910,8 @@
      ],
      "reasoning": "Future masculine `zai` contains the lexical `ai` diphthong, not two separately timed vowels. Standard §7 supplies the exact approved ai sequence selected here.",
      "confidence": "high",
-     "evidenceType": "COMMON_FUNCTION_WORD"
+     "evidenceType": "COMMON_FUNCTION_WORD",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -2919,7 +2921,7 @@
     "[n1-maths-11 | modules.10.microPauses.0.questionHa] A jeri ja shuɗi ja shuɗi me zai biyo baya?"
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (final cluster).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "زَیْ",
    "candidateFullCodepoints": [
@@ -2946,7 +2948,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -2973,7 +2975,8 @@
      ],
      "reasoning": "In `sannan`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -2999,7 +3002,8 @@
      ],
      "reasoning": "In `sannan`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "GEMINATION",
@@ -3018,7 +3022,8 @@
      ],
      "reasoning": "Boko `sannan` writes 'nn' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+08BD U+0651"
     },
     {
      "type": "SUKUN",
@@ -3041,7 +3046,8 @@
      ],
      "reasoning": "In `sannan`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -3051,7 +3057,7 @@
     "[p1-maths-01 | modules.24.audioScript] Ka sake tunani cikin natsuwa sannan ka zaɓi amsa mafi dacewa."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: individually spot-checked and accepted as-is (Tier A verification sample).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "سَࢽَّࢽْ",
    "candidateFullCodepoints": [
@@ -3081,7 +3087,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -3108,7 +3114,8 @@
      ],
      "reasoning": "In `wannan`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -3134,7 +3141,8 @@
      ],
      "reasoning": "In `wannan`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "GEMINATION",
@@ -3153,7 +3161,8 @@
      ],
      "reasoning": "Boko `wannan` writes 'nn' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+08BD U+0651"
     },
     {
      "type": "SUKUN",
@@ -3176,7 +3185,8 @@
      ],
      "reasoning": "In `wannan`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -3186,7 +3196,7 @@
     "[n1-maths-01 | modules.0.quizQuestions.2.templateHa] Wannan lamba nawa?"
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "وَࢽَّࢽْ",
    "candidateFullCodepoints": [
@@ -4916,7 +4926,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -4967,7 +4977,8 @@
      ],
      "reasoning": "In `kai`, adjacent 'ai' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -4977,7 +4988,7 @@
     "[n1-maths-02 | modules.1.textExplanationHa] Biyar – kamar 'S' mai tudun kai."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: individually spot-checked and accepted as-is (Tier A verification sample).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "کَیْ",
    "candidateFullCodepoints": [
@@ -7426,7 +7437,11 @@
      "reasoning": "`al’umma` is the Arabic-derived ‘community’ form; the internal mark corresponds to the lexical hamza at the `al-` boundary, not punctuation. The proposed replacement sequence is U+0623; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence"
+     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "أ",
+     "reviewerSuppliedCodepoints": [
+      "U+0623"
+     ]
     },
     {
      "type": "GEMINATION",
@@ -8094,7 +8109,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -8121,7 +8136,8 @@
      ],
      "reasoning": "In `an`, the 'a' at position 0 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -8140,7 +8156,8 @@
      ],
      "reasoning": "`an` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "SUKUN",
@@ -8163,7 +8180,8 @@
      ],
      "reasoning": "In `an`, 'n' at position 1 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -8173,7 +8191,7 @@
     "[p1-maths-18 | modules.41.segments.0.audioScript] Wannan yana taimaka mana mu san ko kuɗin da muke da shi ya isa, da kuma ko an ba mu canji daidai bayan sayayya."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: individually spot-checked and accepted as-is (Tier A verification sample).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "أَࢽْ",
    "candidateFullCodepoints": [
@@ -8200,7 +8218,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -8251,7 +8269,8 @@
      ],
      "reasoning": "In `daidai`, adjacent 'ai' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -8301,7 +8320,8 @@
      ],
      "reasoning": "In `daidai`, adjacent 'ai' at positions 4-5 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -8311,7 +8331,7 @@
     "[n1-maths-03 | modules.2.microPauses.1.questionHa] Siffa mai gefe huɗu daidai ita ce?"
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 5,
    "candidateFullAjami": "دَیْدَیْ",
    "candidateFullCodepoints": [
@@ -10813,7 +10833,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -10840,7 +10860,8 @@
      ],
      "reasoning": "In `aikin`, the 'i' at position 3 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -10859,7 +10880,8 @@
      ],
      "reasoning": "`aikin` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -10909,7 +10931,8 @@
      ],
      "reasoning": "In `aikin`, adjacent 'ai' at positions 0-1 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     },
     {
      "type": "SUKUN",
@@ -10932,7 +10955,8 @@
      ],
      "reasoning": "In `aikin`, 'n' at position 4 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -10942,7 +10966,7 @@
     "[p1-bsci-01 | modules.48.audioScript] Ka ci gaba da lura da abubuwan da ke kewaye da kai domin ka fi fahimtar aikin hankulan da Allah ya ba mu."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 2,
    "candidateFullAjami": "أَیْکِࢽْ",
    "candidateFullCodepoints": [
@@ -11183,7 +11207,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -11210,7 +11234,8 @@
      ],
      "reasoning": "The queue uses `misalai` in “Idan ka yi atisaye da yatsunka, da kayan aji, da abubuwan cikin gida, ko da misalai daga al'umma, za ka fi gane darasin kuma ba za ka manta da shi da wuri ba.”; I read the 'i' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -11236,7 +11261,8 @@
      ],
      "reasoning": "The queue uses `misalai` in “Idan ka yi atisaye da yatsunka, da kayan aji, da abubuwan cikin gida, ko da misalai daga al'umma, za ka fi gane darasin kuma ba za ka manta da shi da wuri ba.”; I read the 'a' at position 3 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -11286,7 +11312,8 @@
      ],
      "reasoning": "In `misalai`, adjacent 'ai' at positions 5-6 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -11296,7 +11323,7 @@
     "[p1-maths-02 | modules.25.textExplanationHa] Ka maimaita darasin sau da yawa, ka yi amfani da misalai daga gida ko makaranta, kuma ka tambayi malaminka idan kana bukatar karin haske."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: individually spot-checked and accepted as-is (Tier A verification sample).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "مِسَلَیْ",
    "candidateFullCodepoints": [
@@ -11324,7 +11351,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -11347,7 +11374,8 @@
      ],
      "reasoning": "`kyau` contains 'ky' at position 0; I propose the canonical provisional cluster code point. Standard §6 says the per-vowel cluster rules remain unsettled, so confidence cannot exceed medium.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "use canonical provisional cluster — U+0763"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -11397,7 +11425,8 @@
      ],
      "reasoning": "In `kyau`, adjacent 'au' at positions 2-3 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -11407,7 +11436,7 @@
     "[n1-maths-01 | modules.0.segments.0.audioScript] Da kyau."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (final cluster).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "ݣَوْ",
    "candidateFullCodepoints": [
@@ -11431,7 +11460,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -11482,7 +11511,8 @@
      ],
      "reasoning": "In `sau`, adjacent 'au' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -11492,7 +11522,7 @@
     "[p1-maths-01 | modules.24.textExplanationHa] Ka maimaita sau da yawa har sai ka koya."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "سَوْ",
    "candidateFullCodepoints": [
@@ -13268,7 +13298,11 @@
      "reasoning": "`jama’a` is Arabic-derived `jamāʿa`; the Boko apostrophe represents the internal ʿayn/glottal-class boundary and is not typographic punctuation. The proposed replacement sequence is U+0639; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence"
+     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "ع",
+     "reviewerSuppliedCodepoints": [
+      "U+0639"
+     ]
     }
    ],
    "category": "native_hausa",
@@ -13428,7 +13462,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -13455,7 +13489,8 @@
      ],
      "reasoning": "In `hannu`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_FINAL_VOWEL",
@@ -13483,7 +13518,8 @@
      ],
      "reasoning": "The queue uses `hannu` in “Ka sanya hannu cikin akwati – ciki.”; I read the 'u' at position 4 as long. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short final — U+064F"
     },
     {
      "type": "ARABIC_LEXICAL_H",
@@ -13500,7 +13536,8 @@
      ],
      "reasoning": "I judge `hannu` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ka sanya hannu cikin akwati – ciki.”—does not identify it as Qur'anic text or a proper name.",
      "confidence": "medium",
-     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY"
+     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
+     "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
     },
     {
      "type": "GEMINATION",
@@ -13519,7 +13556,8 @@
      ],
      "reasoning": "Boko `hannu` writes 'nn' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+08BD U+0651"
     }
    ],
    "category": "native_hausa",
@@ -13529,7 +13567,7 @@
     "[n1-maths-10 | modules.9.quizQuestions.2.templateHa] Sanya hannu cikin akwati."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: takes ه (Arabic lexical) despite being a native Hausa word — explicitly confirmed on re-ask, overriding both Codex (ح) and the etymology pattern. Final -u corrected to short, consistent with abu/Sannu/uku.",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "حَࢽُّو",
    "candidateFullCodepoints": [
@@ -16233,7 +16271,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -16262,7 +16300,8 @@
      ],
      "reasoning": "The queue uses `sosai` in “Ka zauna lafiya, ka saurara a hankali, sannan ka maimaita bayanin da za ka ji domin ilimi ya zauna sosai a zuciyarka.”; I read the 'o' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -16312,7 +16351,8 @@
      ],
      "reasoning": "In `sosai`, adjacent 'ai' at positions 3-4 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -16322,7 +16362,7 @@
     "[p1-maths-01 | modules.24.segments.0.audioScript] Ka zauna lafiya, ka saurara a hankali, sannan ka maimaita bayanin da za ka ji domin ilimi ya zauna sosai a zuciyarka."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "سُسَیْ",
    "candidateFullCodepoints": [
@@ -16588,7 +16628,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -16639,7 +16679,8 @@
      ],
      "reasoning": "In `sai`, adjacent 'ai' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -16649,7 +16690,7 @@
     "[n1-maths-01 | modules.0.textExplanationHa] Sai 'huɗu'."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "سَیْ",
    "candidateFullCodepoints": [
@@ -16673,7 +16714,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -16724,7 +16765,8 @@
      ],
      "reasoning": "In `bai`, adjacent 'ai' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -16734,7 +16776,7 @@
     "[p1-bsci-04 | modules.51.segments.0.audioScript] Abinci mai dadi yana sa mu gane ɗanɗano mai kyau, sannan wari mara kyau yana iya nuna mana cewa abu bai dace ba."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "بَیْ",
    "candidateFullCodepoints": [
@@ -19095,7 +19137,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -19122,7 +19164,8 @@
      ],
      "reasoning": "The queue uses `abubuwan` in “Idan ka yi atisaye da yatsunka, da kayan aji, da abubuwan cikin gida, ko da misalai daga al'umma, za ka fi gane darasin kuma ba za ka manta da shi da wuri ba.”; I read the 'a' at position 0 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -19148,7 +19191,8 @@
      ],
      "reasoning": "The queue uses `abubuwan` in “Idan ka yi atisaye da yatsunka, da kayan aji, da abubuwan cikin gida, ko da misalai daga al'umma, za ka fi gane darasin kuma ba za ka manta da shi da wuri ba.”; I read the 'u' at position 2 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -19174,7 +19218,8 @@
      ],
      "reasoning": "The queue uses `abubuwan` in “Idan ka yi atisaye da yatsunka, da kayan aji, da abubuwan cikin gida, ko da misalai daga al'umma, za ka fi gane darasin kuma ba za ka manta da shi da wuri ba.”; I read the 'u' at position 4 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -19200,7 +19245,8 @@
      ],
      "reasoning": "In `abubuwan`, the 'a' at position 6 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -19219,7 +19265,8 @@
      ],
      "reasoning": "`abubuwan` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "SUKUN",
@@ -19242,7 +19289,8 @@
      ],
      "reasoning": "In `abubuwan`, 'n' at position 7 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -19252,7 +19300,7 @@
     "[p1-maths-02 | modules.25.audioScript] Idan ka yi atisaye da yatsunka, da kayan aji, da abubuwan cikin gida, ko da misalai daga al'umma, za ka fi gane darasin kuma ba za ka manta da shi da wuri ba."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "أَبُبُوَࢽْ",
    "candidateFullCodepoints": [
@@ -19283,7 +19331,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -19310,7 +19358,8 @@
      ],
      "reasoning": "The queue uses `akwai` in “Rinkawa tana taimaka mana wajen kirga abubuwa cikin sauri idan akwai rukunoni da yawa iri ɗaya.”; I read the 'a' at position 0 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -19329,7 +19378,8 @@
      ],
      "reasoning": "`akwai` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "VELAR_CLUSTER",
@@ -19351,7 +19401,8 @@
      ],
      "reasoning": "`akwai` contains 'kw' at position 1; I propose the canonical provisional cluster code point. Standard §6 says the per-vowel cluster rules remain unsettled, so confidence cannot exceed medium.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "use canonical provisional cluster — U+0763"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -19401,7 +19452,8 @@
      ],
      "reasoning": "In `akwai`, adjacent 'ai' at positions 3-4 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -19411,7 +19463,7 @@
     "[p1-maths-14 | modules.37.segments.1.audioScript] Rinkawa tana taimaka mana wajen kirga abubuwa cikin sauri idan akwai rukunoni da yawa iri ɗaya."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (final cluster).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "أَݣَیْ",
    "candidateFullCodepoints": [
@@ -19440,7 +19492,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -19467,7 +19519,8 @@
      ],
      "reasoning": "In `kullum`, the 'u' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -19493,7 +19546,8 @@
      ],
      "reasoning": "In `kullum`, the 'u' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "GEMINATION",
@@ -19512,7 +19566,8 @@
      ],
      "reasoning": "Boko `kullum` writes 'll' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0644 U+0651"
     },
     {
      "type": "SUKUN",
@@ -19535,7 +19590,8 @@
      ],
      "reasoning": "In `kullum`, 'm' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0645 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -19545,7 +19601,7 @@
     "[p1-maths-02 | modules.25.textExplanationHa] Idan ka maimaita kirgawa kullum, za ka iya gano lambobi cikin sauri kuma ka yi amfani da su cikin tabbaci."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "کُلُّمْ",
    "candidateFullCodepoints": [
@@ -21640,7 +21696,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -21667,7 +21723,8 @@
      ],
      "reasoning": "The queue uses `muhalli` in “Wasu suna ba mu inuwa, wasu abinci, wasu kuma kawata muhalli.”; I read the 'u' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -21693,7 +21750,8 @@
      ],
      "reasoning": "In `muhalli`, the 'a' at position 3 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_FINAL_VOWEL",
@@ -21721,7 +21779,8 @@
      ],
      "reasoning": "The queue uses `muhalli` in “Wasu suna ba mu inuwa, wasu abinci, wasu kuma kawata muhalli.”; I read the 'i' at position 6 as long. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "long final — U+0650 U+0649"
     },
     {
      "type": "ARABIC_LEXICAL_H",
@@ -21738,7 +21797,8 @@
      ],
      "reasoning": "I judge `muhalli` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Wasu suna ba mu inuwa, wasu abinci, wasu kuma kawata muhalli.”—does not identify it as Qur'anic text or a proper name.",
      "confidence": "medium",
-     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY"
+     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
+     "reviewerDecision": "H_NATIVE_HAUSA — U+062D"
     },
     {
      "type": "GEMINATION",
@@ -21757,7 +21817,8 @@
      ],
      "reasoning": "Boko `muhalli` writes 'll' twice at positions 4-5; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0644 U+0651"
     }
    ],
    "category": "arabic_lexical",
@@ -21767,7 +21828,7 @@
     "[p1-bsci-07 | modules.54.audioScript] Wasu suna ba mu inuwa, wasu abinci, wasu kuma kawata muhalli."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source محل (ha). Final -i long.",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "مُحَلِّى",
    "candidateFullCodepoints": [
@@ -22407,7 +22468,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -22434,7 +22495,8 @@
      ],
      "reasoning": "The queue uses `taimako` in “Ka ci gaba da maimaitawa, ka yi tambaya idan kana bukatar taimako, sannan mu haɗu a darasi na gaba.”; I read the 'a' at position 4 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_FINAL_VOWEL",
@@ -22466,7 +22528,8 @@
      ],
      "reasoning": "The queue uses `taimako` in “Ka ci gaba da maimaitawa, ka yi tambaya idan kana bukatar taimako, sannan mu haɗu a darasi na gaba.”; I read the 'o' at position 6 as long. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "long final — U+064F U+0648 U+0627 U+0652"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -22516,7 +22579,8 @@
      ],
      "reasoning": "In `taimako`, adjacent 'ai' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -22526,7 +22590,7 @@
     "[p1-maths-02 | modules.25.audioScript] Ka ci gaba da maimaitawa, ka yi tambaya idan kana bukatar taimako, sannan mu haɗu a darasi na gaba."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is; final -o long.",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "تَیْمَکُواْ",
    "candidateFullCodepoints": [
@@ -22559,7 +22623,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -22586,7 +22650,8 @@
      ],
      "reasoning": "The queue uses `kawai` in “Jarrabawa ba don tsoro ba ce kawai; tana taimaka wa malami da ɗalibi su ga abin da aka fahimta da abin da ake bukatar a ƙara maimaitawa.”; I read the 'a' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -22636,7 +22701,8 @@
      ],
      "reasoning": "In `kawai`, adjacent 'ai' at positions 3-4 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -22646,7 +22712,7 @@
     "[p1-maths-12 | modules.35.segments.1.audioScript] Jarrabawa ba don tsoro ba ce kawai; tana taimaka wa malami da ɗalibi su ga abin da aka fahimta da abin da ake bukatar a ƙara maimaitawa."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "کَوَیْ",
    "candidateFullCodepoints": [
@@ -22672,7 +22738,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -22723,7 +22789,8 @@
      ],
      "reasoning": "In `rai`, adjacent 'ai' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -22733,7 +22800,7 @@
     "[p1-bsci-06 | modules.53.textExplanationHa] Dabbobi suna numfashi, suna cin abinci, suna motsi, kuma suna girma, shi ya sa ake kiransu masu rai."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "رَیْ",
    "candidateFullCodepoints": [
@@ -24577,7 +24644,11 @@
      "reasoning": "`al’ada` is the established Arabic-derived ‘custom’ form from `ʿāda`; the apostrophe corresponds to lexical ʿayn after `al-`. The proposed replacement sequence is U+0639; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence"
+     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "ع",
+     "reviewerSuppliedCodepoints": [
+      "U+0639"
+     ]
     }
    ],
    "category": "native_hausa",
@@ -25029,7 +25100,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -25056,7 +25127,8 @@
      ],
      "reasoning": "The queue uses `taimakon` in “Ka tuna cewa matsala tana da mafita idan an yi tunani a hankali kuma an nemi taimakon da ya dace.”; I read the 'a' at position 4 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -25084,7 +25156,8 @@
      ],
      "reasoning": "In `taimakon`, the 'o' at position 6 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -25134,7 +25207,8 @@
      ],
      "reasoning": "In `taimakon`, adjacent 'ai' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     },
     {
      "type": "SUKUN",
@@ -25157,7 +25231,8 @@
      ],
      "reasoning": "In `taimakon`, 'n' at position 7 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -25167,7 +25242,7 @@
     "[p1-socs-02 | modules.64.segments.0.audioScript] Ka tuna cewa matsala tana da mafita idan an yi tunani a hankali kuma an nemi taimakon da ya dace."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 2,
    "candidateFullAjami": "تَیْمَکُࢽْ",
    "candidateFullCodepoints": [
@@ -25200,7 +25275,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -25227,7 +25302,8 @@
      ],
      "reasoning": "In `sauran`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -25277,7 +25353,8 @@
      ],
      "reasoning": "In `sauran`, adjacent 'au' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652"
     },
     {
      "type": "SUKUN",
@@ -25300,7 +25377,8 @@
      ],
      "reasoning": "In `sauran`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -25310,7 +25388,7 @@
     "[p1-maths-02 | modules.25.textExplanationHa] Sanin yadda ake kirgawa da kyau yana taimaka maka a ƙari, ragewa, da sauran darussan lissafi da za ka koya daga baya."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 2,
    "candidateFullAjami": "سَوْرَࢽْ",
    "candidateFullCodepoints": [
@@ -25341,7 +25419,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -25368,7 +25446,8 @@
      ],
      "reasoning": "In `ɗaukar`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -25418,7 +25497,8 @@
      ],
      "reasoning": "In `ɗaukar`, adjacent 'au' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652"
     },
     {
      "type": "SUKUN",
@@ -25441,7 +25521,8 @@
      ],
      "reasoning": "In `ɗaukar`, 'r' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0631 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -25451,7 +25532,7 @@
     "[n2-maths-03 | modules.14.segments.0.text.ha] Nauyi yana nufin abu mai ɗaukar nauyi."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 2,
    "candidateFullAjami": "طَوْکَرْ",
    "candidateFullCodepoints": [
@@ -27797,7 +27878,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -27824,7 +27905,8 @@
      ],
      "reasoning": "The queue uses `irin` in “A irin wannan darasi, muna haɗa misalai daga darussa daban-daban domin mu tabbatar ilimin ya zauna sosai a zuciya.”; I read the 'i' at position 0 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -27850,7 +27932,8 @@
      ],
      "reasoning": "In `irin`, the 'i' at position 2 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -27869,7 +27952,8 @@
      ],
      "reasoning": "`irin` begins with 'i'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0625 ALIF WITH HAMZA BELOW"
     },
     {
      "type": "SUKUN",
@@ -27892,7 +27976,8 @@
      ],
      "reasoning": "In `irin`, 'n' at position 3 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -27902,7 +27987,7 @@
     "[p1-maths-12 | modules.35.segments.0.audioScript] A irin wannan darasi, muna haɗa misalai daga darussa daban-daban domin mu tabbatar ilimin ya zauna sosai a zuciya."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "إِرِࢽْ",
    "candidateFullCodepoints": [
@@ -28070,7 +28155,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -28097,7 +28182,8 @@
      ],
      "reasoning": "In `sauƙin`, the 'i' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -28147,7 +28233,8 @@
      ],
      "reasoning": "In `sauƙin`, adjacent 'au' at positions 1-2 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652"
     },
     {
      "type": "SUKUN",
@@ -28170,7 +28257,8 @@
      ],
      "reasoning": "In `sauƙin`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -28180,7 +28268,7 @@
     "[p1-maths-02 | modules.25.audioScript] Idan ka yi haka, darasin zai fi maka sauƙin fahimta."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 2,
    "candidateFullAjami": "سَوْࢼِࢽْ",
    "candidateFullCodepoints": [
@@ -28753,7 +28841,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -28780,7 +28868,8 @@
      ],
      "reasoning": "In `babban`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -28806,7 +28895,8 @@
      ],
      "reasoning": "In `babban`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "GEMINATION",
@@ -28825,7 +28915,8 @@
      ],
      "reasoning": "Boko `babban` writes 'bb' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0628 U+0651"
     },
     {
      "type": "SUKUN",
@@ -28848,7 +28939,8 @@
      ],
      "reasoning": "In `babban`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -28858,7 +28950,7 @@
     "[p2-bsci-12 | modules.99.segments.0.audioScript] Wane abu ne babban tushen haske da rana?"
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "بَبَّࢽْ",
    "candidateFullCodepoints": [
@@ -31004,7 +31096,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -31031,7 +31123,8 @@
      ],
      "reasoning": "The queue uses `adadin` in “Za ka iya amfani da kujeru, littattafai, ko adadin yara domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi.”; I read the 'a' at position 0 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -31057,7 +31150,8 @@
      ],
      "reasoning": "The queue uses `adadin` in “Za ka iya amfani da kujeru, littattafai, ko adadin yara domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi.”; I read the 'a' at position 2 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -31083,7 +31177,8 @@
      ],
      "reasoning": "In `adadin`, the 'i' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -31102,7 +31197,8 @@
      ],
      "reasoning": "`adadin` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "SUKUN",
@@ -31125,7 +31221,8 @@
      ],
      "reasoning": "In `adadin`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -31135,7 +31232,7 @@
     "[p1-maths-04 | modules.27.segments.0.audioScript] Za ka iya amfani da kujeru, littattafai, ko adadin yara domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "أَدَدِࢽْ",
    "candidateFullCodepoints": [
@@ -33643,7 +33740,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -33670,7 +33767,8 @@
      ],
      "reasoning": "In `ayyukan`, the 'a' at position 0 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -33696,7 +33794,8 @@
      ],
      "reasoning": "The queue uses `ayyukan` in “Ka tsara ayyukan safiya ta sanin lokacin da agogo ya nuna.”; I read the 'u' at position 3 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -33722,7 +33821,8 @@
      ],
      "reasoning": "In `ayyukan`, the 'a' at position 5 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -33741,7 +33841,8 @@
      ],
      "reasoning": "`ayyukan` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "GEMINATION",
@@ -33760,7 +33861,8 @@
      ],
      "reasoning": "Boko `ayyukan` writes 'yy' twice at positions 1-2; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+06CC U+0651"
     },
     {
      "type": "SUKUN",
@@ -33783,7 +33885,8 @@
      ],
      "reasoning": "In `ayyukan`, 'n' at position 6 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -33793,7 +33896,7 @@
     "[p1-socs-09 | modules.71.textExplanationHa] A kowace al'umma akwai muhimmam wurare da mutane ke amfani da su domin ayyukan rayuwa daban-daban."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "أَیُّکَࢽْ",
    "candidateFullCodepoints": [
@@ -33947,7 +34050,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -33974,7 +34077,8 @@
      ],
      "reasoning": "In `tabbatar`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -34000,7 +34104,8 @@
      ],
      "reasoning": "The queue uses `tabbatar` in “Ka gwada ka faɗi lambobin da babbar murya, sannan ka sake kirgawa a hankali a zuciyarka domin ka tabbatar ka tuna jeren sosai.”; I read the 'a' at position 4 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -34026,7 +34131,8 @@
      ],
      "reasoning": "In `tabbatar`, the 'a' at position 6 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "GEMINATION",
@@ -34045,7 +34151,8 @@
      ],
      "reasoning": "Boko `tabbatar` writes 'bb' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0628 U+0651"
     },
     {
      "type": "SUKUN",
@@ -34068,7 +34175,8 @@
      ],
      "reasoning": "In `tabbatar`, 'r' at position 7 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0631 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -34078,7 +34186,7 @@
     "[p1-maths-02 | modules.25.textExplanationHa] Ka gwada ka faɗi lambobin da babbar murya, sannan ka sake kirgawa a hankali a zuciyarka domin ka tabbatar ka tuna jeren sosai."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "تَبَّتَرْ",
    "candidateFullCodepoints": [
@@ -34110,7 +34218,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -34137,7 +34245,8 @@
      ],
      "reasoning": "In `babbar`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -34163,7 +34272,8 @@
      ],
      "reasoning": "In `babbar`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "GEMINATION",
@@ -34182,7 +34292,8 @@
      ],
      "reasoning": "Boko `babbar` writes 'bb' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0628 U+0651"
     },
     {
      "type": "SUKUN",
@@ -34205,7 +34316,8 @@
      ],
      "reasoning": "In `babbar`, 'r' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0631 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -34215,7 +34327,7 @@
     "[p1-maths-01 | modules.24.textExplanationHa] Yanzu ka gwada da kanka – ka kirga daga ɗaya zuwa goma da babbar murya."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "بَبَّرْ",
    "candidateFullCodepoints": [
@@ -34365,7 +34477,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -34392,7 +34504,8 @@
      ],
      "reasoning": "The queue uses `waɗannan` in “Waɗannan alamomi suna taimaka mana wajen kwatanta lambobi cikin sauri.”; I read the 'a' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -34418,7 +34531,8 @@
      ],
      "reasoning": "In `waɗannan`, the 'a' at position 3 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -34444,7 +34558,8 @@
      ],
      "reasoning": "In `waɗannan`, the 'a' at position 6 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "GEMINATION",
@@ -34463,7 +34578,8 @@
      ],
      "reasoning": "Boko `waɗannan` writes 'nn' twice at positions 4-5; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+08BD U+0651"
     },
     {
      "type": "SUKUN",
@@ -34486,7 +34602,8 @@
      ],
      "reasoning": "In `waɗannan`, 'n' at position 7 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -34496,7 +34613,7 @@
     "[p1-maths-07 | modules.30.segments.0.audioScript] Waɗannan alamomi suna taimaka mana wajen kwatanta lambobi cikin sauri."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "وَطَࢽَّࢽْ",
    "candidateFullCodepoints": [
@@ -36857,7 +36974,11 @@
      "reasoning": "`murabba’i` is Arabic-derived ‘square’; its apostrophe marks the lexical ʿayn before final `i`, not a morpheme break or quotation mark. The proposed replacement sequence is U+0639; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence"
+     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "ع",
+     "reviewerSuppliedCodepoints": [
+      "U+0639"
+     ]
     },
     {
      "type": "GEMINATION",
@@ -36924,7 +37045,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -36951,7 +37072,8 @@
      ],
      "reasoning": "The queue uses `muhimmanci` in “Gani yana da muhimmanci sosai a rayuwa.”; I read the 'u' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -36977,7 +37099,8 @@
      ],
      "reasoning": "In `muhimmanci`, the 'i' at position 3 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -37003,7 +37126,8 @@
      ],
      "reasoning": "In `muhimmanci`, the 'a' at position 6 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_FINAL_VOWEL",
@@ -37031,7 +37155,8 @@
      ],
      "reasoning": "The queue uses `muhimmanci` in “Gani yana da muhimmanci sosai a rayuwa.”; I read the 'i' at position 9 as long. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short final — U+0650"
     },
     {
      "type": "ARABIC_LEXICAL_H",
@@ -37048,7 +37173,8 @@
      ],
      "reasoning": "`muhimmanci` is built on Arabic `muhimm` (مهم), where the lexical consonant is hāʾ (ه). I therefore propose H_ARABIC_LEXICAL rather than the native default.",
      "confidence": "medium",
-     "evidenceType": "COGNATE_OR_LOAN"
+     "evidenceType": "COGNATE_OR_LOAN",
+     "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
     },
     {
      "type": "GEMINATION",
@@ -37067,7 +37193,8 @@
      ],
      "reasoning": "Boko `muhimmanci` writes 'mm' twice at positions 4-5; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0645 U+0651"
     },
     {
      "type": "SUKUN",
@@ -37090,7 +37217,8 @@
      ],
      "reasoning": "In `muhimmanci`, 'n' at position 7 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -37100,7 +37228,7 @@
     "[p1-bsci-01 | modules.48.segments.0.audioScript] Idan ɗaki ya yi duhu, gani yana wahala, shi ya sa haske yake da muhimmanci wajen karatu da tafiya lafiya."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source مهم (ha). Final -i corrected to short.",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "مُهِمَّࢽْثِى",
    "candidateFullCodepoints": [
@@ -37668,7 +37796,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -37695,7 +37823,8 @@
      ],
      "reasoning": "The queue uses `alamar` in “Ka buɗe bakin alamar > zuwa lambar da ta fi girma.”; I read the 'a' at position 0 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -37721,7 +37850,8 @@
      ],
      "reasoning": "The queue uses `alamar` in “Ka buɗe bakin alamar > zuwa lambar da ta fi girma.”; I read the 'a' at position 2 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -37747,7 +37877,8 @@
      ],
      "reasoning": "In `alamar`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -37766,7 +37897,8 @@
      ],
      "reasoning": "`alamar` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "SUKUN",
@@ -37789,7 +37921,8 @@
      ],
      "reasoning": "In `alamar`, 'r' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0631 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -37799,7 +37932,7 @@
     "[p1-maths-07 | modules.30.audioScript] Muna amfani da alamar > don nuna 'ya fi girma', sannan alamar < don nuna 'ya fi ƙanƙani'."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "أَلَمَرْ",
    "candidateFullCodepoints": [
@@ -37835,7 +37968,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -37862,7 +37995,8 @@
      ],
      "reasoning": "In `littattafai`, the 'i' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -37888,7 +38022,8 @@
      ],
      "reasoning": "In `littattafai`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -37914,7 +38049,8 @@
      ],
      "reasoning": "The queue uses `littattafai` in “Za ka iya amfani da kujeru, littattafai, ko adadin yara domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi.”; I read the 'a' at position 7 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -37964,7 +38100,8 @@
      ],
      "reasoning": "In `littattafai`, adjacent 'ai' at positions 9-10 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     },
     {
      "type": "GEMINATION",
@@ -37983,7 +38120,8 @@
      ],
      "reasoning": "Boko `littattafai` writes 'tt' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+062A U+0651"
     },
     {
      "type": "GEMINATION",
@@ -38002,7 +38140,8 @@
      ],
      "reasoning": "Boko `littattafai` writes 'tt' twice at positions 5-6; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+062A U+0651"
     }
    ],
    "category": "native_hausa",
@@ -38012,7 +38151,7 @@
     "[p1-maths-04 | modules.27.segments.0.audioScript] Za ka iya amfani da kujeru, littattafai, ko adadin yara domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "لِتَّتَّࢻَیْ",
    "candidateFullCodepoints": [
@@ -40499,7 +40638,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -40526,7 +40665,8 @@
      ],
      "reasoning": "The queue uses `kaɗai` in “Idan muna amfani da lefe, ƙaramin ƙarfi na iya taimaka mana mu ɗaga abu da zai yi wuya mu ɗaga da hannu kaɗai.”; I read the 'a' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -40576,7 +40716,8 @@
      ],
      "reasoning": "In `kaɗai`, adjacent 'ai' at positions 3-4 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -40586,7 +40727,7 @@
     "[p1-bsci-12 | modules.59.segments.0.audioScript] Idan muna amfani da lefe, ƙaramin ƙarfi na iya taimaka mana mu ɗaga abu da zai yi wuya mu ɗaga da hannu kaɗai."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "کَطَیْ",
    "candidateFullCodepoints": [
@@ -40876,7 +41017,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -40903,7 +41044,8 @@
      ],
      "reasoning": "In `sassan`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -40929,7 +41071,8 @@
      ],
      "reasoning": "In `sassan`, the 'a' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "GEMINATION",
@@ -40948,7 +41091,8 @@
      ],
      "reasoning": "Boko `sassan` writes 'ss' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0633 U+0651"
     },
     {
      "type": "SUKUN",
@@ -40971,7 +41115,8 @@
      ],
      "reasoning": "In `sassan`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -40981,7 +41126,7 @@
     "[p2-bsci-02 | modules.89.textExplanationHa] Sanin sassan tsiro yana taimaka maka ka kula da shuke-shuke a gida da makaranta."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "سَسَّࢽْ",
    "candidateFullCodepoints": [
@@ -42802,7 +42947,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -42829,7 +42974,8 @@
      ],
      "reasoning": "In `haƙƙin`, the 'a' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -42855,7 +43001,8 @@
      ],
      "reasoning": "In `haƙƙin`, the 'i' at position 4 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "ARABIC_LEXICAL_H",
@@ -42872,7 +43019,8 @@
      ],
      "reasoning": "I judge `haƙƙin` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ɗan ƙasa mai sana'a yana da haƙƙin samun bayani, rasit, da kariya daga cin zarafi.”—does not identify it as Qur'anic text or a proper name.",
      "confidence": "medium",
-     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY"
+     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
+     "reviewerDecision": "H_NATIVE_HAUSA — U+062D"
     },
     {
      "type": "GEMINATION",
@@ -42891,7 +43039,8 @@
      ],
      "reasoning": "Boko `haƙƙin` writes 'ƙƙ' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+08BC U+0651"
     },
     {
      "type": "SUKUN",
@@ -42914,7 +43063,8 @@
      ],
      "reasoning": "In `haƙƙin`, 'n' at position 5 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -42924,7 +43074,7 @@
     "[V06 | modules.83.textExplanationHa] Idan ana neman kuɗi ko bayanai daga hukuma ko wani jami'i, kana da haƙƙin tambayar dalili, suna, da takardar shaida."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source حق (ha).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "حَࢼِّࢽْ",
    "candidateFullCodepoints": [
@@ -43329,7 +43479,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -43356,7 +43506,8 @@
      ],
      "reasoning": "The queue uses `bayanai` in “Tattara bayanai da zane-zane”; I read the 'a' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -43382,7 +43533,8 @@
      ],
      "reasoning": "The queue uses `bayanai` in “Tattara bayanai da zane-zane”; I read the 'a' at position 3 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -43432,7 +43584,8 @@
      ],
      "reasoning": "In `bayanai`, adjacent 'ai' at positions 5-6 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -43442,7 +43595,7 @@
     "[p1-maths-24 | modules.47.textExplanationHa] Wannan darasi yana taimaka mana wajen karanta bayanai, kwatanta abin da ya fi yawa, da yanke hukunci bisa abin da muka gani."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "بَیَࢽَیْ",
    "candidateFullCodepoints": [
@@ -45998,7 +46151,11 @@
      "reasoning": "`sana’a` (‘occupation/craft’) is Arabic-derived and the internal apostrophe corresponds to lexical ʿayn. The proposed replacement sequence is U+0639; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence"
+     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "ع",
+     "reviewerSuppliedCodepoints": [
+      "U+0639"
+     ]
     }
    ],
    "category": "native_hausa",
@@ -46040,7 +46197,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -46068,7 +46225,7 @@
      "reasoning": "The queue uses `ma'aunin` in “Ma’aunin Ruwa: Lita da Mililita”; I read the 'a' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
      "evidenceType": "UNCERTAIN_BEST_GUESS",
-     "reviewerDecision": null
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -46095,7 +46252,7 @@
      "reasoning": "In `ma'aunin`, the 'i' at position 6 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
      "evidenceType": "MORPHOLOGICAL_PATTERN",
-     "reviewerDecision": null
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "APOSTROPHE_ROLE",
@@ -46115,7 +46272,11 @@
      "reasoning": "`ma’aunin` transparently contains the instrument noun `ma’auni` from the `ma-` formation plus `auna`; I classify the break as morphological, while proposing a hamza-bearing carrier to keep the adjacent vowels distinct. The proposed replacement sequence is U+0623; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": null
+     "reviewerDecision": "morpheme boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "أ",
+     "reviewerSuppliedCodepoints": [
+      "U+0623"
+     ]
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -46166,7 +46327,7 @@
      "reasoning": "In `ma'aunin`, adjacent 'au' at positions 3-4 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
      "evidenceType": "MORPHOLOGICAL_PATTERN",
-     "reviewerDecision": null
+     "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652"
     },
     {
      "type": "SUKUN",
@@ -46190,7 +46351,7 @@
      "reasoning": "In `ma'aunin`, 'n' at position 7 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
      "evidenceType": "RULE_DEFAULT",
-     "reviewerDecision": null
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -46200,7 +46361,7 @@
     "[p3-maths-15 | modules.156.textExplanationHa] Idan kana haɗa lita, ka tabbatar duk ma’aunin lita ne."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is; apostrophe = أ (native Hausa glottal).",
    "redundantQuestionsRemoved": 2,
    "candidateFullAjami": "مَأَوْࢽِࢽْ",
    "candidateFullCodepoints": [
@@ -46232,7 +46393,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -46259,7 +46420,8 @@
      ],
      "reasoning": "In `hujja`, the 'u' at position 1 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064F"
     },
     {
      "type": "WORD_FINAL_VOWEL",
@@ -46287,7 +46449,8 @@
      ],
      "reasoning": "The queue uses `hujja` in “Ba a maye gurbin asara da sauri sai idan takardu da hujja sun cika.”; I read the 'a' at position 4 as long. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short final — U+064E"
     },
     {
      "type": "ARABIC_LEXICAL_H",
@@ -46304,7 +46467,8 @@
      ],
      "reasoning": "I judge `hujja` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ba a maye gurbin asara da sauri sai idan takardu da hujja sun cika.”—does not identify it as Qur'anic text or a proper name.",
      "confidence": "medium",
-     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY"
+     "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
+     "reviewerDecision": "H_NATIVE_HAUSA — U+062D"
     },
     {
      "type": "GEMINATION",
@@ -46323,7 +46487,8 @@
      ],
      "reasoning": "Boko `hujja` writes 'jj' twice at positions 2-3; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+062C U+0651"
     }
    ],
    "category": "native_hausa",
@@ -46333,7 +46498,7 @@
     "[V02 | modules.79.lessons.3.audioScript] Abin da wannan ya nuna shi ne, ba a maye gurbin asara da sauri sai idan takardu da hujja sun cika."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source حجة (ha). Final -a corrected to short.",
    "redundantQuestionsRemoved": 1,
    "candidateFullAjami": "حُجَّا",
    "candidateFullCodepoints": [
@@ -49149,7 +49314,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -49176,7 +49341,8 @@
      ],
      "reasoning": "In `amsar`, the 'a' at position 0 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -49202,7 +49368,8 @@
      ],
      "reasoning": "In `amsar`, the 'a' at position 3 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -49221,7 +49388,8 @@
      ],
      "reasoning": "`amsar` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "SUKUN",
@@ -49244,7 +49412,8 @@
      ],
      "reasoning": "In `amsar`, 'm' at position 1 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0645 U+0652"
     },
     {
      "type": "SUKUN",
@@ -49267,7 +49436,8 @@
      ],
      "reasoning": "In `amsar`, 'r' at position 4 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0631 U+0652"
     }
    ],
    "category": "native_hausa",
@@ -49277,7 +49447,7 @@
     "[p3-maths-02 | modules.143.textExplanationHa] Don haka amsar ita ce 42."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "أَمْسَرْ",
    "candidateFullCodepoints": [
@@ -49309,7 +49479,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -49336,7 +49506,8 @@
      ],
      "reasoning": "The queue uses `matakai` in “Za ka iya amfani da fensir, faranti, ko matakai domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi.”; I read the 'a' at position 1 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -49362,7 +49533,8 @@
      ],
      "reasoning": "The queue uses `matakai` in “Za ka iya amfani da fensir, faranti, ko matakai domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi.”; I read the 'a' at position 3 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -49412,7 +49584,8 @@
      ],
      "reasoning": "In `matakai`, adjacent 'ai' at positions 5-6 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -49422,7 +49595,7 @@
     "[p1-maths-03 | modules.26.segments.0.audioScript] Za ka iya amfani da fensir, faranti, ko matakai domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "مَتَکَیْ",
    "candidateFullCodepoints": [
@@ -54817,7 +54990,11 @@
      "reasoning": "`ma’auni` is related to `auna` (‘measure’) with the instrument-forming `ma-`; the apostrophe marks that morpheme boundary, with a proposed hamza-bearing carrier for the following vowel. The proposed replacement sequence is U+0623; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": "morpheme boundary — reviewer must supply the exact Unicode replacement sequence"
+     "reviewerDecision": "morpheme boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "أ",
+     "reviewerSuppliedCodepoints": [
+      "U+0623"
+     ]
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -55014,7 +55191,11 @@
      "reasoning": "`ra’ayi` is the Arabic-derived ‘opinion’ form related to `raʾy`; the apostrophe represents lexical hamza, not punctuation. The proposed replacement sequence is U+0621; §9 still requires human lexical review.",
      "confidence": "medium",
      "evidenceType": "COGNATE_OR_LOAN",
-     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence"
+     "reviewerDecision": "glottal boundary — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "أ",
+     "reviewerSuppliedCodepoints": [
+      "U+0623"
+     ]
     }
    ],
    "category": "native_hausa",
@@ -55024,9 +55205,9 @@
     "[p5-maths-06 | modules.195.microPauses.0.questionHa] Idan kararrawa biyu suna bugawa tare bayan wasu mintuna, wane ra'ayi ya fi dacewa?"
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "Muhammad ratified 2026-08-03: corrected final vowel to short (Tier B final-i batch).",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: corrected final vowel to short (Tier B final-i batch). Apostrophe glyph changed ء->أ per Muhammad 2026-08-03.",
    "redundantQuestionsRemoved": 1,
-   "candidateFullAjami": "رَءَیِى",
+   "candidateFullAjami": "رَأَیِى",
    "candidateFullCodepoints": [
     "U+0631",
     "U+064E",
@@ -55295,7 +55476,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -55322,7 +55503,8 @@
      ],
      "reasoning": "In `amfanin`, the 'a' at position 0 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -55348,7 +55530,8 @@
      ],
      "reasoning": "The queue uses `amfanin` in “Wane irin mutum ne yake noman amfanin gona?”; I read the 'a' at position 3 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
      "confidence": "low",
-     "evidenceType": "UNCERTAIN_BEST_GUESS"
+     "evidenceType": "UNCERTAIN_BEST_GUESS",
+     "reviewerDecision": "short — U+064E"
     },
     {
      "type": "VOWEL_LENGTH",
@@ -55374,7 +55557,8 @@
      ],
      "reasoning": "In `amfanin`, the 'i' at position 5 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "WORD_INITIAL_CARRIER",
@@ -55393,7 +55577,8 @@
      ],
      "reasoning": "`amfanin` begins with 'a'; the proposal uses a below-hamza carrier for initial /i/ and an above-hamza carrier for initial /a, u/. The standard leaves general initial-carrier practice provisional, so this conventional polarity still needs ratification.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "U+0623 ALIF WITH HAMZA ABOVE"
     },
     {
      "type": "SUKUN",
@@ -55416,7 +55601,8 @@
      ],
      "reasoning": "In `amfanin`, 'm' at position 1 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+0645 U+0652"
     },
     {
      "type": "SUKUN",
@@ -55439,7 +55625,8 @@
      ],
      "reasoning": "In `amfanin`, 'n' at position 6 has no following vowel; standard §§7–8 therefore require this consonant plus U+0652 SUKUN sequence.",
      "confidence": "high",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652"
     }
    ],
    "category": "native_hausa",
@@ -55449,7 +55636,7 @@
     "[V07 | modules.84.quiz.0.templateHa] Menene amfanin rubuta cinikin yau da kullum?"
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 0,
    "candidateFullAjami": "أَمْࢻَࢽِࢽْ",
    "candidateFullCodepoints": [
@@ -55594,7 +55781,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -55621,7 +55808,8 @@
      ],
      "reasoning": "In `tsirrai`, the 'i' at position 2 is closed by the following consonant sequence. That phonotactic environment supports a short vowel, though Muhammad should still check the lexical pronunciation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "short — U+0650"
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -55671,7 +55859,8 @@
      ],
      "reasoning": "In `tsirrai`, adjacent 'ai' at positions 5-6 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     },
     {
      "type": "GEMINATION",
@@ -55690,7 +55879,8 @@
      ],
      "reasoning": "Boko `tsirrai` writes 'rr' twice at positions 3-4; one consonant plus U+0651 SHADDA preserves that lexical gemination.",
      "confidence": "high",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0631 U+0651"
     }
    ],
    "category": "native_hausa",
@@ -55700,7 +55890,7 @@
     "[p2-bsci-05 | modules.92.textExplanationHa] A gona ruwa yana taimaka wa tsirrai su girma, dabbobin gida kuma suna shan ruwa."
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
    "redundantQuestionsRemoved": 3,
    "candidateFullAjami": "ڟِرَّیْ",
    "candidateFullCodepoints": [
@@ -55727,7 +55917,7 @@
    ],
    "provisionalAjami": null,
    "ajamiCodepoints": [],
-   "status": "blocked",
+   "status": "human_reviewed",
    "confidence": "unreviewed",
    "openQuestions": [
     {
@@ -55750,7 +55940,17 @@
      ],
      "reasoning": "`ƙwai` contains 'ƙw' at position 0; I propose the canonical provisional cluster code point. Standard §6 says the per-vowel cluster rules remain unsettled, so confidence cannot exceed medium.",
      "confidence": "medium",
-     "evidenceType": "RULE_DEFAULT"
+     "evidenceType": "RULE_DEFAULT",
+     "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
+     "reviewerSuppliedSequence": "قْوَیْ",
+     "reviewerSuppliedCodepoints": [
+      "U+0642",
+      "U+0652",
+      "U+0648",
+      "U+064E",
+      "U+06CC",
+      "U+0652"
+     ]
     },
     {
      "type": "VOWEL_SEQUENCE",
@@ -55800,7 +56000,8 @@
      ],
      "reasoning": "In `ƙwai`, adjacent 'ai' at positions 2-3 are read as the lexical diphthong, not as two syllable nuclei. Standard §7 supplies the exact sequence, but the word-level reading still needs human confirmation.",
      "confidence": "medium",
-     "evidenceType": "MORPHOLOGICAL_PATTERN"
+     "evidenceType": "MORPHOLOGICAL_PATTERN",
+     "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652"
     }
    ],
    "category": "native_hausa",
@@ -55810,11 +56011,13 @@
     "[p2-bsci-03 | modules.90.audioScript] Wace dabba ce take ba mu ƙwai?"
    ],
    "reviewerDecision": null,
-   "reviewerNotes": "",
+   "reviewerNotes": "Muhammad ratified 2026-08-03: LEXICAL EXCEPTION. ƙw is spelled out as qaf+sukun+waw rather than the single provisional cluster letter U+08C4; ky/kw retain U+0763. Final ai uses U+06CC per corpus convention (Muhammad supplied U+064A, corrected on confirmation).",
    "redundantQuestionsRemoved": 3,
-   "candidateFullAjami": "ࣄَیْ",
+   "candidateFullAjami": "قْوَیْ",
    "candidateFullCodepoints": [
-    "U+08C4",
+    "U+0642",
+    "U+0652",
+    "U+0648",
     "U+064E",
     "U+06CC",
     "U+0652"
