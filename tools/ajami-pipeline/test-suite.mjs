@@ -7,3 +7,5 @@ import "./validate-unicode.test.mjs";
 import "./font-probe.test.mjs";
 import "./font-qualification.test.mjs";
 import "./audit-corpus.test.mjs";
+import "./build-review-queue.test.mjs";
+import "./propose-candidates.test.mjs";

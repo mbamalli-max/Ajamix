@@ -7,3 +7,9 @@ node_modules
 tools/image-pipeline/output/
 ajamix-polished/
 app/images/*.png
+
+# Large regenerable Ajami pipeline diagnostic reports (13MB combined)
+tools/ajami-pipeline/data/font-qualification-report.json
+tools/ajami-pipeline/data/apostrophe-audit.json
+tools/ajami-pipeline/data/unicode-validation-report.json
+tools/ajami-pipeline/data/font-probe-report.json
