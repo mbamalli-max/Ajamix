@@ -626,20 +626,22 @@ function buildOpenQuestions(boko, tokenized) {
   const hTokens = tokenized.tokens.filter((token) => token.token === "H_CONTEXT_REQUIRED");
   if (hTokens.length) {
     const arabicLoanCandidate = isArabicLoanCandidate(normalized);
-    questions.push({
-      type: "ARABIC_LEXICAL_H",
-      position: characterPosition(boko, hTokens[0].sourceStart),
-      arabicLoanCandidate,
-      question:
-        `Should '${boko}' use H_NATIVE_HAUSA (ح, U+062D) or ` +
-        `H_ARABIC_LEXICAL (ه, U+0647)?${arabicLoanCandidate
-          ? " This word is flagged as a possible Arabic/Islamic lexical form."
-          : ""}`,
-      options: [
-        "H_NATIVE_HAUSA — U+062D",
-        "H_ARABIC_LEXICAL — U+0647",
-      ],
-    });
+    for (const token of hTokens) {
+      questions.push({
+        type: "ARABIC_LEXICAL_H",
+        position: characterPosition(boko, token.sourceStart),
+        arabicLoanCandidate,
+        question:
+          `Should '${boko}' use H_NATIVE_HAUSA (ح, U+062D) or ` +
+          `H_ARABIC_LEXICAL (ه, U+0647)?${arabicLoanCandidate
+            ? " This word is flagged as a possible Arabic/Islamic lexical form."
+            : ""}`,
+        options: [
+          "H_NATIVE_HAUSA — U+062D",
+          "H_ARABIC_LEXICAL — U+0647",
+        ],
+      });
+    }
   }
 
   for (const token of tokenized.tokens.filter((item) => item.type === "UNKNOWN")) {
