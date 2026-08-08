@@ -110,8 +110,12 @@ function consonantSequence(entry, token, position, output) {
     token.token === "H_CONTEXT_REQUIRED"
       ? questionAt(entry, "ARABIC_LEXICAL_H", position)
       : undefined;
+  const kQuestion =
+    token.token === "K_PLAIN"
+      ? questionAt(entry, "K_ARTICULATION", position)
+      : undefined;
   const clusterQuestion = questionAt(entry, "VELAR_CLUSTER", position);
-  const question = hQuestion ?? clusterQuestion;
+  const question = hQuestion ?? kQuestion ?? clusterQuestion;
   if (question) {
     return { supplied: selectedSequence(question, output), question };
   }
@@ -122,6 +126,50 @@ function consonantSequence(entry, token, position, output) {
   }
   output.push(...sequence);
   return { supplied: false, question: null };
+}
+
+function selectedKGeminationSequence(entry, tokens, startIndex, question, output) {
+  if (question.reviewerSuppliedSequence !== undefined) {
+    return selectedSequence(question, output);
+  }
+
+  const canonicalK = consonantCodepoints.get("K_PLAIN");
+  const selectedGemination = decisionCodepoints(question);
+  const isOneBaseWithShadda =
+    selectedGemination.length === canonicalK.length + 1 &&
+    canonicalK.every((codepoint, index) => selectedGemination[index] === codepoint) &&
+    selectedGemination.at(-1) === "U+0651";
+  const isTwoBases =
+    selectedGemination.length === canonicalK.length * 2 &&
+    [...canonicalK, ...canonicalK].every(
+      (codepoint, index) => selectedGemination[index] === codepoint
+    );
+  if (!isOneBaseWithShadda && !isTwoBases) {
+    return selectedSequence(question, output);
+  }
+
+  const articulationSequences = [startIndex, startIndex + 1].map((index) => {
+    const token = tokens[index];
+    const position = characterPosition(entry.boko, token.sourceStart);
+    const articulation = questionAt(entry, "K_ARTICULATION", position);
+    return articulation ? decisionCodepoints(articulation) : canonicalK;
+  });
+  if (isOneBaseWithShadda) {
+    if (
+      articulationSequences[0].length !== articulationSequences[1].length ||
+      articulationSequences[0].some(
+        (codepoint, index) => codepoint !== articulationSequences[1][index]
+      )
+    ) {
+      throw new Error(
+        `${entry.boko}: K_ARTICULATION decisions disagree across one-base gemination at ${question.position}`
+      );
+    }
+    output.push(...articulationSequences[0], "U+0651");
+  } else {
+    output.push(...articulationSequences[0], ...articulationSequences[1]);
+  }
+  return false;
 }
 
 function questionEndTokenIndex(tokens, startIndex, question) {
@@ -197,7 +245,11 @@ export function materializeAjami(entry) {
     let suppressAutomaticSukun = false;
 
     if (gemination) {
-      selectedSequence(gemination, output);
+      if (token.token === "K_PLAIN") {
+        selectedKGeminationSequence(entry, tokens, index, gemination, output);
+      } else {
+        selectedSequence(gemination, output);
+      }
       lastIndex = questionEndTokenIndex(tokens, index, gemination);
     } else if (sukun) {
       selectedSequence(sukun, output);

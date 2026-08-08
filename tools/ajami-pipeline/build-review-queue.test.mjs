@@ -485,7 +485,11 @@ test("Markdown prints every structured option, including exact final-vowel and v
 
   assert.ok(finalVowel.options.includes("short final — U+064E"));
   assert.ok(finalVowel.options.includes("long final — U+064E U+0627"));
-  assert.ok(velar.options.includes("use canonical provisional cluster — U+0763"));
+  assert.deepEqual(velar.options, [
+    "kaf cluster — U+06A9 U+0648",
+    "qaf cluster — U+0642 U+0648",
+    "lexical exception — reviewer must supply the exact Unicode replacement sequence",
+  ]);
   for (const entry of artifacts.queue.entries) {
     for (const question of entry.openQuestions) {
       for (const option of question.options ?? []) {

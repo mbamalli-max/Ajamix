@@ -9,12 +9,24 @@ import { validateLexiconEntry } from "./lexicon/schema.mjs";
 import {
   REVIEW_QUEUE_PATH,
   decisionCodepoints,
+  materializeAjami,
   materializeLexicon,
   writeLexicon,
 } from "./materialize-lexicon.mjs";
 
-function sourceQueue() {
+function storedQueue() {
   return JSON.parse(fs.readFileSync(REVIEW_QUEUE_PATH, "utf8"));
+}
+
+function sourceQueue() {
+  const queue = storedQueue();
+  queue.entries = queue.entries.filter(
+    (entry) =>
+      entry.status === "human_reviewed" &&
+      entry.openQuestions.every((question) => question.reviewerDecision != null)
+  );
+  queue.entryCount = queue.entries.length;
+  return queue;
 }
 
 function entryFor(entries, boko) {
@@ -40,8 +52,8 @@ test("ratified decisions determine materialised spellings", () => {
     entry.openQuestions.some((question) => question.reviewerDecision !== question.candidateAnswer)
   );
 
-  assert.equal(overriddenQuestions.length, 105);
-  assert.equal(overridden.length, 99);
+  assert.equal(overriddenQuestions.length, 80);
+  assert.equal(overridden.length, 75);
   for (const source of queue.entries) {
     const materializedCodepoints = formatCodePoints(byBoko.get(source.boko).ajami);
     for (const question of source.openQuestions) {
@@ -65,10 +77,10 @@ test("ratified decisions determine materialised spellings", () => {
     );
   }
 
-  assert.equal(entryFor(lexicon.entries, "aiki").ajami, "أَیْکِ");
+  assert.equal(entryFor(lexicon.entries, "a").ajami, "أَ");
   assert.equal(entryFor(lexicon.entries, "abu").ajami, "أَبُ");
   assert.equal(entryFor(lexicon.entries, "hannu").ajami, "هَࢽُّ");
-  assert.equal(entryFor(lexicon.entries, "kalli").ajami, "کَلِّ");
+  assert.equal(entryFor(lexicon.entries, "ɗaya").ajami, "طَیَ");
 });
 
 test("accepted candidate spellings do not drift during assembly", () => {
@@ -82,11 +94,18 @@ test("accepted candidate spellings do not drift during assembly", () => {
   }
 });
 
+test("unresolved live kaf/qaf questions block full-queue materialisation", () => {
+  assert.throws(
+    () => materializeLexicon(storedQueue()),
+    /K_ARTICULATION at 0: missing reviewerDecision/u
+  );
+});
+
 test("materialised entries validate and preserve ratified special cases", () => {
   const queue = sourceQueue();
   const lexicon = materializeLexicon(queue);
 
-  assert.equal(lexicon.entries.length, 500);
+  assert.equal(lexicon.entries.length, 377);
   for (const entry of lexicon.entries) {
     assert.equal(validateLexiconEntry(entry, { generated: true }).ok, true, entry.boko);
     assert.deepEqual(formatCodePoints(entry.ajami), entry.ajamiCodepoints, entry.boko);
@@ -99,11 +118,50 @@ test("materialised entries validate and preserve ratified special cases", () => 
     "U+0642", "U+0652", "U+0648", "U+064E", "U+06CC", "U+0652",
   ]);
 
-  for (const boko of ["da", "ka", "ya", "ko"]) {
+  const contextWords = queue.entries
+    .filter((entry) => entry.contextRule)
+    .map((entry) => entry.boko)
+    .sort();
+  assert.deepEqual(contextWords, ["da", "ya"]);
+  for (const boko of contextWords) {
     const entry = entryFor(lexicon.entries, boko);
     assert.ok(entry.contextRule, `${boko} needs contextRule`);
     assert.match(entry.notes, /context-dependent.*contextRule/iu);
   }
+});
+
+test("resolved kaf/qaf articulation and cluster fixtures materialise exact selected sequences", () => {
+  const queue = storedQueue();
+
+  const aiki = structuredClone(entryFor(queue.entries, "aiki"));
+  const articulation = aiki.openQuestions.find(
+    (question) => question.type === "K_ARTICULATION" && question.position === 2
+  );
+  assert.ok(articulation);
+  articulation.reviewerDecision = "qaf — U+0642";
+  assert.deepEqual(formatCodePoints(materializeAjami(aiki)), [
+    "U+0623", "U+064E", "U+06CC", "U+0652", "U+0642", "U+0650",
+  ]);
+
+  const kwatanta = structuredClone(entryFor(queue.entries, "kwatanta"));
+  const wawCluster = kwatanta.openQuestions.find(
+    (question) => question.type === "VELAR_CLUSTER" && question.position === 0
+  );
+  assert.ok(wawCluster);
+  wawCluster.reviewerDecision = "qaf cluster — U+0642 U+0648";
+  assert.deepEqual(formatCodePoints(materializeAjami(kwatanta)).slice(0, 3), [
+    "U+0642", "U+0648", "U+064E",
+  ]);
+
+  const kyau = structuredClone(entryFor(queue.entries, "kyau"));
+  const yehCluster = kyau.openQuestions.find(
+    (question) => question.type === "VELAR_CLUSTER" && question.position === 0
+  );
+  assert.ok(yehCluster);
+  yehCluster.reviewerDecision = "kaf cluster — U+06A9 U+06CC";
+  assert.deepEqual(formatCodePoints(materializeAjami(kyau)).slice(0, 3), [
+    "U+06A9", "U+06CC", "U+064E",
+  ]);
 });
 
 test("writeLexicon writes only to an explicitly supplied temporary path", () => {

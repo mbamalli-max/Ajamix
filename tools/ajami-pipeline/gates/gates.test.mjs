@@ -19,9 +19,14 @@ function lexicon() {
 }
 
 function suppliedQuestion(queue) {
-  const entry = queue.entries.find((candidate) =>
-    candidate.openQuestions.some((question) => /must supply/iu.test(question.reviewerDecision ?? ""))
+  const entry = queue.entries.find(
+    (candidate) =>
+      candidate.status === "human_reviewed" &&
+      candidate.openQuestions.some((question) =>
+        /must supply/iu.test(question.reviewerDecision ?? "")
+      )
   );
+  assert.ok(entry, "missing human-reviewed must-supply fixture entry");
   return entry.openQuestions.find((question) => /must supply/iu.test(question.reviewerDecision ?? ""));
 }
 

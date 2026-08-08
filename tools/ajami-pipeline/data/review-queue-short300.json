@@ -170,21 +170,22 @@
           "token": "K_VELAR_CLUSTER",
           "question": "Confirm the provisional K_VELAR_CLUSTER spelling for 'kw' at position 0 in this vowel environment.",
           "options": [
-            "use canonical provisional cluster — U+0763",
+            "kaf cluster — U+06A9 U+0648",
+            "qaf cluster — U+0642 U+0648",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
           ],
           "candidateCodePointSequences": {
-            "canonicalProvisionalCluster": [
-              "U+0763"
+            "kafCluster": [
+              "U+06A9",
+              "U+0648"
+            ],
+            "qafCluster": [
+              "U+0642",
+              "U+0648"
             ]
           },
-          "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
-          "reviewerNotes": "CORRECTION 2026-08-06: Muhammad ruled kw = kaf+waw (k as in kabeer/kareem), NOT the single U+0763 cluster glyph auto-applied earlier this session.",
-          "reviewerSuppliedSequence": "کو",
-          "reviewerSuppliedCodepoints": [
-            "U+06A9",
-            "U+0648"
-          ]
+          "reviewerDecision": "kaf cluster — U+06A9 U+0648",
+          "reviewerNotes": "CORRECTION 2026-08-06: Muhammad ruled kw = kaf+waw (k as in kabeer/kareem), NOT the single U+0763 cluster glyph auto-applied earlier this session."
         }
       ],
       "category": "native_hausa",
@@ -213,7 +214,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -322,6 +323,15 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+0644 U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "arabic_lexical",
@@ -1183,7 +1193,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -1249,6 +1259,15 @@
           },
           "reviewerDecision": "long final — U+0650 U+0649",
           "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 6,
+          "question": "Is the 'k' at position 6 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -2054,7 +2073,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -2134,6 +2153,15 @@
           ],
           "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0644 U+0651",
           "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 6,
+          "question": "Is the 'k' at position 6 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -2416,7 +2444,7 @@
         "U+0645",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -2504,6 +2532,15 @@
           },
           "reviewerDecision": "short — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -4461,7 +4498,7 @@
         "U+0645",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -4506,6 +4543,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -4628,7 +4674,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -4700,21 +4746,22 @@
           "token": "K_VELAR_CLUSTER",
           "question": "Confirm the provisional K_VELAR_CLUSTER spelling for 'Ky' at position 0 in this vowel environment.",
           "options": [
-            "use canonical provisional cluster — U+0763",
+            "kaf cluster — U+06A9 U+06CC",
+            "qaf cluster — U+0642 U+06CC",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
           ],
           "candidateCodePointSequences": {
-            "canonicalProvisionalCluster": [
-              "U+0763"
+            "kafCluster": [
+              "U+06A9",
+              "U+06CC"
+            ],
+            "qafCluster": [
+              "U+0642",
+              "U+06CC"
             ]
           },
-          "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
-          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
-          "reviewerSuppliedSequence": "کی",
-          "reviewerSuppliedCodepoints": [
-            "U+06A9",
-            "U+06CC"
-          ]
+          "reviewerDecision": "kaf cluster — U+06A9 U+06CC",
+          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
         },
         {
           "type": "VELAR_CLUSTER",
@@ -4722,20 +4769,30 @@
           "token": "K_VELAR_CLUSTER",
           "question": "Confirm the provisional K_VELAR_CLUSTER spelling for 'ky' at position 4 in this vowel environment.",
           "options": [
-            "use canonical provisional cluster — U+0763",
+            "kaf cluster — U+06A9 U+06CC",
+            "qaf cluster — U+0642 U+06CC",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
           ],
           "candidateCodePointSequences": {
-            "canonicalProvisionalCluster": [
-              "U+0763"
+            "kafCluster": [
+              "U+06A9",
+              "U+06CC"
+            ],
+            "qafCluster": [
+              "U+0642",
+              "U+06CC"
             ]
           },
-          "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
-          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
-          "reviewerSuppliedSequence": "کی",
-          "reviewerSuppliedCodepoints": [
-            "U+06A9",
-            "U+06CC"
+          "reviewerDecision": "kaf cluster — U+06A9 U+06CC",
+          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
           ]
         }
       ],
@@ -4883,7 +4940,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -4948,6 +5005,15 @@
           },
           "reviewerDecision": "short — U+064F",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -5236,21 +5302,22 @@
           "token": "K_VELAR_CLUSTER",
           "question": "Confirm the provisional K_VELAR_CLUSTER spelling for 'kw' at position 0 in this vowel environment.",
           "options": [
-            "use canonical provisional cluster — U+0763",
+            "kaf cluster — U+06A9 U+0648",
+            "qaf cluster — U+0642 U+0648",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
           ],
           "candidateCodePointSequences": {
-            "canonicalProvisionalCluster": [
-              "U+0763"
+            "kafCluster": [
+              "U+06A9",
+              "U+0648"
+            ],
+            "qafCluster": [
+              "U+0642",
+              "U+0648"
             ]
           },
-          "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
-          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
-          "reviewerSuppliedSequence": "قو",
-          "reviewerSuppliedCodepoints": [
-            "U+0642",
-            "U+0648"
-          ]
+          "reviewerDecision": "qaf cluster — U+0642 U+0648",
+          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
         }
       ],
       "category": "native_hausa",
@@ -5478,7 +5545,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -5629,6 +5696,15 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 5,
+          "question": "Is the 'k' at position 5 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -6212,7 +6288,7 @@
         "U+0633",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -6257,6 +6333,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -6789,7 +6874,7 @@
         "U+0628",
         "U+064F"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -6838,6 +6923,15 @@
           },
           "reviewerDecision": "short final — U+064F",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -6873,7 +6967,7 @@
         "U+06A9",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -6939,6 +7033,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -7081,7 +7184,7 @@
         "U+08BB",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7126,6 +7229,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -7160,7 +7272,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7205,6 +7317,15 @@
           },
           "reviewerDecision": "short — U+065C",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -7473,7 +7594,7 @@
         "U+0648",
         "U+064F"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7520,6 +7641,15 @@
           },
           "reviewerDecision": "short final — U+064F",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -7748,7 +7878,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7813,6 +7943,15 @@
           },
           "reviewerDecision": "short — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -7908,7 +8047,7 @@
         "U+062B",
         "U+0650"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7995,6 +8134,15 @@
           },
           "reviewerDecision": "short final — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -8377,7 +8525,7 @@
         "U+0648",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -8464,6 +8612,24 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -8765,7 +8931,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -8809,6 +8975,15 @@
           },
           "reviewerDecision": "short — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -8839,7 +9014,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -8935,6 +9110,33 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 5,
+          "question": "Is the 'k' at position 5 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -10500,7 +10702,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -10597,6 +10799,15 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+0631 U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -11026,7 +11237,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -11096,6 +11307,24 @@
           },
           "reviewerDecision": "short final — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -12397,7 +12626,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -12462,6 +12691,15 @@
           },
           "reviewerDecision": "short — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -12496,7 +12734,7 @@
         "U+06A9",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -12541,6 +12779,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -14230,7 +14477,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -14274,6 +14521,15 @@
           },
           "reviewerDecision": "short — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -14518,7 +14774,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -14618,6 +14874,15 @@
           ],
           "reviewerDecision": "one consonant base + U+0651 SHADDA — U+0645 U+0651",
           "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -14649,7 +14914,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -14758,6 +15023,15 @@
           },
           "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: diphthong default per 100% top-500 precedent (47/47 ai/au instances ratified as approved diphthong)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 5,
+          "question": "Is the 'k' at position 5 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -15124,7 +15398,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -15191,6 +15465,15 @@
           },
           "reviewerDecision": "short — U+065C",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -15219,7 +15502,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -15300,6 +15583,15 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+062F U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -15410,21 +15702,22 @@
           "token": "K_VELAR_CLUSTER",
           "question": "Confirm the provisional K_VELAR_CLUSTER spelling for 'ky' at position 0 in this vowel environment.",
           "options": [
-            "use canonical provisional cluster — U+0763",
+            "kaf cluster — U+06A9 U+06CC",
+            "qaf cluster — U+0642 U+06CC",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
           ],
           "candidateCodePointSequences": {
-            "canonicalProvisionalCluster": [
-              "U+0763"
+            "kafCluster": [
+              "U+06A9",
+              "U+06CC"
+            ],
+            "qafCluster": [
+              "U+0642",
+              "U+06CC"
             ]
           },
-          "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
-          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
-          "reviewerSuppliedSequence": "کی",
-          "reviewerSuppliedCodepoints": [
-            "U+06A9",
-            "U+06CC"
-          ]
+          "reviewerDecision": "kaf cluster — U+06A9 U+06CC",
+          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
         }
       ],
       "category": "native_hausa",
@@ -15723,7 +16016,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -15768,6 +16061,15 @@
           },
           "reviewerDecision": "short final — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -16040,7 +16342,7 @@
         "U+06CC",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -16106,6 +16408,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -18126,7 +18437,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -18171,6 +18482,15 @@
           },
           "reviewerDecision": "short final — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -18513,7 +18833,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -18613,6 +18933,24 @@
           ],
           "reviewerDecision": "one consonant base + U+0651 SHADDA — U+06CC U+0651",
           "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 7,
+          "question": "Is the 'k' at position 7 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -18652,7 +18990,7 @@
         "U+0634",
         "U+0650"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -18739,6 +19077,15 @@
           },
           "reviewerDecision": "short final — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -19488,7 +19835,7 @@
         "U+06CC",
         "U+0650"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -19577,6 +19924,15 @@
           },
           "reviewerDecision": "short final — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -20090,7 +20446,7 @@
         "U+06A9",
         "U+064F"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -20156,6 +20512,15 @@
           },
           "reviewerDecision": "short final — U+064F",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -21856,7 +22221,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -21987,6 +22352,15 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -22207,6 +22581,17 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ],
+          "reviewerDecision": "qaf — U+0642",
+          "reviewerNotes": "Migrated from consonantSubstitutions field 2026-08-08; see git history for original note."
         }
       ],
       "category": "native_hausa",
@@ -22217,15 +22602,7 @@
       ],
       "reviewerDecision": "approved_as_proposed",
       "reviewerNotes": "PIPELINE GAP 2026-08-06: Muhammad ruled the initial K is qaf (ق), not the canonical K_PLAIN kaf (ک) mapping every other K in the corpus uses. There is no per-word override question for plain K (only kw/ky clusters have one) — this is recorded as consonantSubstitutions for now. The materializer must apply this manually until a real ARABIC_LEXICAL_K-style question type is added to the pipeline.",
-      "redundantQuestionsRemoved": 1,
-      "consonantSubstitutions": [
-        {
-          "position": 0,
-          "letter": "K",
-          "from": "ک (U+06A9, K_PLAIN canonical)",
-          "to": "ق (U+0642, qaf)"
-        }
-      ]
+      "redundantQuestionsRemoved": 1
     },
     {
       "rank": 1174,
@@ -22865,7 +23242,7 @@
         "U+0631",
         "U+064F"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -22912,6 +23289,15 @@
           },
           "reviewerDecision": "short final — U+064F",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -23308,7 +23694,7 @@
         "U+0648",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -23374,6 +23760,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -23718,7 +24113,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -23835,6 +24230,15 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 8,
+          "question": "Is the 'k' at position 8 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -23944,7 +24348,7 @@
         "U+0631",
         "U+065C"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -24012,6 +24416,15 @@
           },
           "reviewerDecision": "short final — U+065C",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -24170,7 +24583,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -24237,6 +24650,15 @@
           },
           "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: diphthong default per 100% top-500 precedent (47/47 ai/au instances ratified as approved diphthong)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -24783,7 +25205,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -24850,6 +25272,15 @@
           },
           "reviewerDecision": "short — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -26099,7 +26530,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -26185,6 +26616,15 @@
           },
           "reviewerDecision": "short — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -26618,7 +27058,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -26683,6 +27123,15 @@
           },
           "reviewerDecision": "short — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -26870,21 +27319,22 @@
           "token": "K_VELAR_CLUSTER",
           "question": "Confirm the provisional K_VELAR_CLUSTER spelling for 'Kw' at position 0 in this vowel environment.",
           "options": [
-            "use canonical provisional cluster — U+0763",
+            "kaf cluster — U+06A9 U+0648",
+            "qaf cluster — U+0642 U+0648",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
           ],
           "candidateCodePointSequences": {
-            "canonicalProvisionalCluster": [
-              "U+0763"
+            "kafCluster": [
+              "U+06A9",
+              "U+0648"
+            ],
+            "qafCluster": [
+              "U+0642",
+              "U+0648"
             ]
           },
-          "reviewerDecision": "lexical exception — reviewer must supply the exact Unicode replacement sequence",
-          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
-          "reviewerSuppliedSequence": "قو",
-          "reviewerSuppliedCodepoints": [
-            "U+0642",
-            "U+0648"
-          ]
+          "reviewerDecision": "qaf cluster — U+0642 U+0648",
+          "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
         }
       ],
       "category": "native_hausa",
@@ -27675,7 +28125,7 @@
         "U+0631",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -27740,6 +28190,15 @@
           },
           "reviewerDecision": "short — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -27950,7 +28409,7 @@
         "U+0633",
         "U+064F"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -27997,6 +28456,15 @@
           },
           "reviewerDecision": "short final — U+064F",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -28217,7 +28685,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -28282,6 +28750,15 @@
           },
           "reviewerDecision": "short — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -28584,6 +29061,17 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ],
+          "reviewerDecision": "qaf — U+0642",
+          "reviewerNotes": "Migrated from consonantSubstitutions field 2026-08-08; see git history for original note."
         }
       ],
       "category": "native_hausa",
@@ -28594,15 +29082,7 @@
       ],
       "reviewerDecision": "approved_as_proposed",
       "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
-      "redundantQuestionsRemoved": 0,
-      "consonantSubstitutions": [
-        {
-          "position": 4,
-          "letter": "k",
-          "from": "ک (U+06A9, K_PLAIN canonical)",
-          "to": "ق (U+0642, qaf)"
-        }
-      ]
+      "redundantQuestionsRemoved": 0
     },
     {
       "rank": 1915,
@@ -28623,7 +29103,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -28723,6 +29203,15 @@
           ],
           "reviewerDecision": "one consonant base + U+0651 SHADDA — U+062A U+0651",
           "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 7,
+          "question": "Is the 'k' at position 7 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -30616,7 +31105,7 @@
         "U+0645",
         "U+064F"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -30715,6 +31204,15 @@
           ],
           "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
           "reviewerNotes": "CORRECTED CLASSIFICATION 2026-08-07: the original H_NATIVE_HAUSA/H_ARABIC_LEXICAL binary conflated two different things. The glyph decision (ح) stands, but the reasoning is corrected: this is H_ARABIC_HA_PRESERVED, not H_HAUSA_PHONEMIC — the word is an Arabic loan whose Arabic source consonant is itself ح (حُكُومَة (ḥukūma)), so preserving Arabic spelling and writing the Hausa phoneme both converge on ح. Ratified glyph unchanged: ح U+062D."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -31568,7 +32066,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -31612,6 +32110,15 @@
           },
           "reviewerDecision": "short — U+0650",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -31718,7 +32225,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -31840,6 +32347,15 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 5,
+          "question": "Is the 'k' at position 5 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -31873,7 +32389,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -32018,6 +32534,24 @@
           },
           "reviewerDecision": "consonant + U+0652 SUKUN — U+08BD U+0652",
           "reviewerNotes": "Auto-confirmed 2026-08-04: single-option SUKUN question, no alternative to choose between."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 0,
+          "question": "Is the 'k' at position 0 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 9,
+          "question": "Is the 'k' at position 9 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -32192,7 +32726,7 @@
         "U+06A9",
         "U+064E"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -32279,6 +32813,15 @@
           },
           "reviewerDecision": "short final — U+064E",
           "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 8,
+          "question": "Is the 'k' at position 8 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "native_hausa",
@@ -32479,7 +33022,7 @@
         "U+0633",
         "U+064F"
       ],
-      "status": "human_reviewed",
+      "status": "provisional",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -32578,6 +33121,15 @@
           ],
           "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
           "reviewerNotes": "CORRECTED CLASSIFICATION 2026-08-07: the original H_NATIVE_HAUSA/H_ARABIC_LEXICAL binary conflated two different things. The glyph decision (ح) stands, but the reasoning is corrected: H_HAUSA_EPENTHETIC — Arabic source is عَقْل (ʿaql), which has no h-type consonant corresponding to Hausa initial h; this h arose through Hausa phonological adaptation, not Arabic-spelling preservation. Ratified glyph unchanged: ح U+062D."
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
         }
       ],
       "category": "arabic_lexical",

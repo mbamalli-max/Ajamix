@@ -25,15 +25,15 @@ function entryFor(queue, word) {
   );
 }
 
-test("adds proposals to all 1,288 questions without approving or changing the queue", () => {
+test("adds proposals to all 1,412 questions without approving or changing the queue", () => {
   const source = sourceQueue();
   const sourceSnapshot = JSON.stringify(source);
   const proposed = proposeCandidates(source);
   const summary = proposalSummary(proposed);
 
   assert.equal(summary.entries, 500);
-  assert.equal(summary.questions, 1288);
-  assert.equal(summary.candidates + summary.nullCandidates, 1288);
+  assert.equal(summary.questions, 1412);
+  assert.equal(summary.candidates + summary.nullCandidates, 1412);
   assert.equal(summary.approvedEntries, 0);
   assert.equal(JSON.stringify(source), sourceSnapshot);
 
@@ -92,6 +92,11 @@ test("deterministic and provisional special cases are calibrated", () => {
   const clusters = proposed.entries
     .flatMap((entry) => entry.openQuestions)
     .filter((question) => question.type === "VELAR_CLUSTER");
+  const kArticulations = proposed.entries
+    .flatMap((entry) => entry.openQuestions)
+    .filter((question) => question.type === "K_ARTICULATION");
+  const kClusters = clusters.filter((question) => question.token === "K_VELAR_CLUSTER");
+  const legacyClusters = clusters.filter((question) => question.token !== "K_VELAR_CLUSTER");
   const da = entryFor(proposed, "da").openQuestions[0];
   const ya = entryFor(proposed, "ya").openQuestions[0];
   const wa = entryFor(proposed, "wa").openQuestions[0];
@@ -104,7 +109,24 @@ test("deterministic and provisional special cases are calibrated", () => {
   assert.ok(sukun.every((question) => question.evidenceType === "RULE_DEFAULT"));
   assert.equal(clusters.length, 7);
   assert.ok(clusters.every((question) => question.confidence !== "high"));
-  assert.match(clusters[0].reasoning, /unsettled/u);
+  assert.equal(kArticulations.length, 124);
+  assert.ok(kArticulations.every((question) => question.candidateAnswer === null));
+  assert.ok(kArticulations.every((question) => question.confidence === "low"));
+  assert.ok(
+    kArticulations.every((question) => question.evidenceType === "UNCERTAIN_BEST_GUESS")
+  );
+  assert.ok(kArticulations.every((question) => question.candidateAjamiSequence.length === 0));
+  assert.equal(kClusters.length, 3);
+  assert.ok(kClusters.every((question) => question.candidateAnswer === null));
+  assert.ok(kClusters.every((question) => question.confidence === "low"));
+  assert.ok(kClusters.every((question) => question.evidenceType === "UNCERTAIN_BEST_GUESS"));
+  assert.ok(kClusters.every((question) => question.candidateAjamiSequence.length === 0));
+  assert.equal(legacyClusters.length, 4);
+  assert.ok(legacyClusters.every((question) => question.candidateAnswer === question.options[0]));
+  assert.ok(legacyClusters.every((question) => question.confidence === "medium"));
+  assert.ok(legacyClusters.every((question) => question.evidenceType === "RULE_DEFAULT"));
+  assert.ok(legacyClusters.every((question) => question.candidateAjamiSequence.length > 0));
+  assert.match(legacyClusters[0].reasoning, /unsettled/u);
   assert.equal(da.confidence, "high");
   assert.match(da.reasoning, /formerly/u);
   assert.match(ya.candidateAnswer, /^long final/u);

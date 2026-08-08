@@ -108,7 +108,7 @@ export function slice43Failures(queue) {
     }
   }
 
-  failIf(questionCount !== 1288, `expected 1,288 questions, got ${questionCount}`, failures);
+  failIf(questionCount !== 1412, `expected 1,412 questions, got ${questionCount}`, failures);
   failIf(
     seenConfidences.size < 2,
     `confidence is not calibrated: saw only ${[...seenConfidences].join(", ") || "none"}`,

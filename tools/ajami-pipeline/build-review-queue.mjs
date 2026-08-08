@@ -57,6 +57,7 @@ export const OPEN_QUESTION_TYPES = Object.freeze([
   "SHORT_E_CARRIER",
   "APOSTROPHE_ROLE",
   "ARABIC_LEXICAL_H",
+  "K_ARTICULATION",
   "NON_HAUSA_TOKEN",
   "VELAR_CLUSTER",
   "VOWEL_SEQUENCE",
@@ -644,6 +645,20 @@ function buildOpenQuestions(boko, tokenized) {
     }
   }
 
+  const kTokens = tokenized.tokens.filter((token) => token.token === "K_PLAIN");
+  for (const token of kTokens) {
+    const position = characterPosition(boko, token.sourceStart);
+    questions.push({
+      type: "K_ARTICULATION",
+      position,
+      question: `Is the 'k' at position ${position} pronounced with kaf (ک) or qaf (ق)?`,
+      options: [
+        "kaf — U+06A9",
+        "qaf — U+0642",
+      ],
+    });
+  }
+
   for (const token of tokenized.tokens.filter((item) => item.type === "UNKNOWN")) {
     questions.push({
       type: "NON_HAUSA_TOKEN",
@@ -665,13 +680,46 @@ function buildOpenQuestions(boko, tokenized) {
 
   for (const token of tokenized.tokens.filter((item) => item.provisional)) {
     const clusterCodePoints = formatCodePoints(consonantGlyphs.get(token.token));
+    const position = characterPosition(boko, token.sourceStart);
+    if (token.token === "K_VELAR_CLUSTER") {
+      const glide = Array.from(token.normalized.toLocaleLowerCase("ha")).at(-1);
+      const glideToken = glide === "w" ? "W_PLAIN" : glide === "y" ? "Y_PLAIN" : null;
+      const glideCodePoints = glideToken
+        ? formatCodePoints(consonantGlyphs.get(glideToken))
+        : [];
+      if (!glideToken || glideCodePoints.length === 0) {
+        throw new Error(
+          `Cannot derive K_VELAR_CLUSTER glide for '${token.sourceSubstring}' at position ${position}`
+        );
+      }
+      const kafCluster = ["U+06A9", ...glideCodePoints];
+      const qafCluster = ["U+0642", ...glideCodePoints];
+      questions.push({
+        type: "VELAR_CLUSTER",
+        position,
+        token: token.token,
+        question:
+          `Confirm the provisional ${token.token} spelling for '${token.sourceSubstring}' ` +
+          `at position ${position} in this vowel environment.`,
+        options: [
+          sequenceOption("kaf cluster", kafCluster),
+          sequenceOption("qaf cluster", qafCluster),
+          replacementSequenceOption("lexical exception"),
+        ],
+        candidateCodePointSequences: {
+          kafCluster,
+          qafCluster,
+        },
+      });
+      continue;
+    }
     questions.push({
       type: "VELAR_CLUSTER",
-      position: characterPosition(boko, token.sourceStart),
+      position,
       token: token.token,
       question:
         `Confirm the provisional ${token.token} spelling for '${token.sourceSubstring}' ` +
-        `at position ${characterPosition(boko, token.sourceStart)} in this vowel environment.`,
+        `at position ${position} in this vowel environment.`,
       options: [
         sequenceOption("use canonical provisional cluster", clusterCodePoints),
         replacementSequenceOption("lexical exception"),
@@ -891,14 +939,15 @@ const REVIEW_FOCUS_ORDER = new Map([
   ["NON_HAUSA_TOKEN", 0],
   ["APOSTROPHE_ROLE", 1],
   ["ARABIC_LEXICAL_H", 2],
-  ["WORD_INITIAL_CARRIER", 3],
-  ["VOWEL_SEQUENCE", 4],
-  ["GEMINATION", 5],
-  ["VELAR_CLUSTER", 6],
-  ["SUKUN", 7],
-  ["WORD_FINAL_VOWEL", 8],
-  ["VOWEL_LENGTH", 9],
-  ["NONE", 10],
+  ["K_ARTICULATION", 3],
+  ["WORD_INITIAL_CARRIER", 4],
+  ["VOWEL_SEQUENCE", 5],
+  ["GEMINATION", 6],
+  ["VELAR_CLUSTER", 7],
+  ["SUKUN", 8],
+  ["WORD_FINAL_VOWEL", 9],
+  ["VOWEL_LENGTH", 10],
+  ["NONE", 11],
 ]);
 
 function reviewFocus(entry) {

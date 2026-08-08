@@ -320,6 +320,16 @@ function apostropheProposal(entry, question) {
   };
 }
 
+function uncertainProposal(entry, question) {
+  return {
+    answer: null,
+    sequence: [],
+    reasoning: `I cannot answer the ${question.type} question for \`${entry.boko}\` from the available standard and corpus context; Muhammad must resolve it.`,
+    confidence: "low",
+    evidenceType: "UNCERTAIN_BEST_GUESS",
+  };
+}
+
 function proposeQuestion(entry, question) {
   switch (question.type) {
     case "VOWEL_LENGTH":
@@ -357,22 +367,20 @@ function proposeQuestion(entry, question) {
       return hProposal(entry, question);
     case "APOSTROPHE_ROLE":
       return apostropheProposal(entry, question);
-    case "VELAR_CLUSTER":
+    case "VELAR_CLUSTER": {
+      const canonicalProvisionalCluster =
+        question.candidateCodePointSequences?.canonicalProvisionalCluster;
+      if (!canonicalProvisionalCluster) return uncertainProposal(entry, question);
       return {
         answer: question.options[0],
-        sequence: question.candidateCodePointSequences.canonicalProvisionalCluster,
+        sequence: canonicalProvisionalCluster,
         reasoning: `\`${entry.boko}\` contains '${Array.from(entry.boko).slice(question.position, question.position + 2).join("")}' at position ${question.position}; I propose the canonical provisional cluster code point. Standard §6 says the per-vowel cluster rules remain unsettled, so confidence cannot exceed medium.`,
         confidence: "medium",
         evidenceType: "RULE_DEFAULT",
       };
+    }
     default:
-      return {
-        answer: null,
-        sequence: [],
-        reasoning: `I cannot answer the ${question.type} question for \`${entry.boko}\` from the available standard and corpus context; Muhammad must resolve it.`,
-        confidence: "low",
-        evidenceType: "UNCERTAIN_BEST_GUESS",
-      };
+      return uncertainProposal(entry, question);
   }
 }
 
