@@ -214,7 +214,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -331,7 +331,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "arabic_lexical",
@@ -341,7 +343,7 @@
         "[p2-socs-03 | modules.129.textExplanationHa] Yin aiki a gida yana koya maka alhaki, haɗin kai, da kula da kaya."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -1193,7 +1195,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -1267,7 +1269,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -1277,7 +1281,7 @@
         "[V02 | modules.79.textExplanationHa] Wutar lantarki ta kona injin dinkin Musa."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -2073,7 +2077,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -2161,7 +2165,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -2171,7 +2177,7 @@
         "[p1-maths-02 | modules.25.textExplanationHa] Ka fara daga 11, ka bi lambobin ɗaya bayan ɗaya har zuwa 20, kuma ka kula kada ka tsallake wata lamba ko ka maimaita lamba sau biyu."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -2444,7 +2450,7 @@
         "U+0645",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -2540,7 +2546,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -2550,7 +2558,7 @@
         "[p1-maths-21 | modules.44.audioScript] Yau za mu koyi Nauyi (Kilogiram)."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -4498,7 +4506,7 @@
         "U+0645",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -4551,7 +4559,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -4561,7 +4571,7 @@
         "[p4-maths-06 | modules.171.textExplanationHa] A P4, ya kamata ka riƙa tuna teburin ninkawa daga 1 zuwa 10 domin ya taimaka maka a raba, ƙari mai sauri, awo, kuɗi, da matsalolin kalma."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -4674,7 +4684,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -4793,7 +4803,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -4803,7 +4815,7 @@
         "[p1-socs-04 | modules.66.segments.1.audioScript] Wannan darasi yana koya mana cewa kyakkyawan hali yana gina iyali mai ƙarfi da farin ciki."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -4940,7 +4952,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -5013,7 +5025,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "qaf — U+0642",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -5023,7 +5037,7 @@
         "[p2-socs-02 | modules.128.segments.0.audioScript] Uwa tana kula da yara, uba yana taimaka wajen jagoranci da bukatun gida, kakanni suna ba da shawara da labari, yayye suna taimaka wa ƙanne, ƙanne kuma suna koyo daga manya."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -5545,7 +5559,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -5704,7 +5718,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -5714,7 +5730,7 @@
         "[p2-socs-11 | modules.137.segments.0.audioScript] Launin kore yana iya tunatar da mu noma da albarkatun ƙasa, fari kuma yana iya nuni da zaman lafiya."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -6288,7 +6304,7 @@
         "U+0633",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -6341,7 +6357,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -6351,7 +6369,7 @@
         "[p1-bsci-08 | modules.55.segments.0.audioScript] Ka tuna cewa abu mai rai yana iya motsi, girma, ko buƙatar abinci da ruwa, amma mara rai ba ya yin hakan da kansa."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -6874,7 +6892,7 @@
         "U+0628",
         "U+064F"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -6931,7 +6949,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -6941,7 +6961,7 @@
         "[p1-maths-17 | modules.40.textExplanationHa] Ka bambanta alamar Naira (N) da ta kobo."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -6967,7 +6987,7 @@
         "U+06A9",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7041,7 +7061,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -7051,7 +7073,7 @@
         "[p3-maths-17 | modules.158.textExplanationHa] Da’ira ba ta da kusurwa saboda layinta yana lanƙwasa ba tare da haɗuwar layuka biyu ba."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -7184,7 +7206,7 @@
         "U+08BB",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7237,7 +7259,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "qaf — U+0642",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -7247,7 +7271,7 @@
         "[p3-bsci-09 | modules.246.audioScript] Tsirrai suna kafa tushe a cikinta, manomi kuma yana shuka amfanin gona."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -7272,7 +7296,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7325,7 +7349,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -7335,7 +7361,7 @@
         "[p2-socs-11 | modules.137.audioScript] Misalai masu sauƙi su ne tutar Nijeriya, tambarin Nijeriya, taken ƙasa, kuɗin Nijeriya, da launukan kore da fari."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -7594,7 +7620,7 @@
         "U+0648",
         "U+064F"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7649,7 +7675,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -7659,7 +7687,7 @@
         "[p2-bsci-03 | modules.90.segments.0.audioScript] Dabbobin gida su ne dabbobin da mutane ke kiwo ko kula da su kusa da gida."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -7878,7 +7906,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -7951,7 +7979,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -7961,7 +7991,7 @@
         "[p3-bsci-03 | modules.240.audioScript] Ka tuna cewa halittu suna bin matakan rayuwa kuma suna bukatar kulawa domin su girma lafiya."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -8047,7 +8077,7 @@
         "U+062B",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -8142,7 +8172,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -8152,7 +8184,7 @@
         "[V01 | modules.78.textExplanationHa] Darasin nan yana nuna bambanci tsakanin duk kuɗin da kasuwanci ta samu, abin da aka kashe, da riba."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -8525,7 +8557,7 @@
         "U+0648",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -8620,7 +8652,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         },
         {
           "type": "K_ARTICULATION",
@@ -8629,7 +8663,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -8639,7 +8675,7 @@
         "[p1-socs-13 | modules.75.textExplanationHa] Wannan darasi yana koya mana cewa bukukuwa suna haɗa jama'a, suna ƙara farin ciki, kuma suna nuna al'ada ko addini."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -8931,7 +8967,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -8983,7 +9019,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -8993,7 +9031,7 @@
         "[p4-maths-13 | modules.178.segments.0.audioScript] Yau za mu koyi yankin murabba'i da siffar rektangul."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -9014,7 +9052,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -9118,7 +9156,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         },
         {
           "type": "K_ARTICULATION",
@@ -9127,7 +9167,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         },
         {
           "type": "K_ARTICULATION",
@@ -9136,7 +9178,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -9146,7 +9190,7 @@
         "[p1-maths-16 | modules.39.segments.0.audioScript] Ƙangare yana nufin wani yanki na cikakken abu, kamar rabi ko rubu'i."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -10702,7 +10746,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -10807,7 +10851,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -10817,7 +10863,7 @@
         "[p4-socs-01 | modules.324.quizQuestions.0.templateHa] A wane ɓangaren Afirka Nijeriya take?"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -11237,7 +11283,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -11315,7 +11361,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         },
         {
           "type": "K_ARTICULATION",
@@ -11324,7 +11372,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -11334,7 +11384,7 @@
         "[p2-socs-08 | modules.134.titleHa] Dokoki a Gida da Makaranta"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -12626,7 +12676,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -12699,7 +12749,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -12709,7 +12761,7 @@
         "[p1-maths-06 | modules.29.segments.0.audioScript] Ka yi amfani da kwalaye, yatsu, ko ƙananan abubuwa don nuna rukunin goma da sauran guda domin ka ga bambancin sosai."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -12734,7 +12786,7 @@
         "U+06A9",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -12787,7 +12839,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -12797,7 +12851,7 @@
         "[p1-maths-23 | modules.46.textExplanationHa] A siffofi masu fuska uku, cube yana kama da akwati, sphere kuma yana kama da ƙwallo."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -14477,7 +14531,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -14529,7 +14583,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -14539,7 +14595,7 @@
         "[p5-socs-05 | modules.343.textExplanationHa] Kundin tsarin mulki yana da alaƙa da dimokuradiyya domin yana tsara yadda hukumomi suke samun iko da yadda ƴan ƙasa suke shiga zaɓe da jefa ƙuri’a idan doka ta ba su dama."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -14774,7 +14830,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -14882,7 +14938,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -14892,7 +14950,7 @@
         "[CT02 | modules.380.titleHa] Iƙirari, Dalili da Kammalawa — Rarrabe Saƙo"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -14914,7 +14972,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -15031,7 +15089,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -15041,7 +15101,7 @@
         "[p5-maths-22 | modules.211.textExplanationHa] Don samun matsakaici, ka haɗa duk lambobin, sannan ka raba da yawan lambobin."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 3
     },
     {
@@ -15398,7 +15458,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -15473,7 +15533,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1)."
         }
       ],
       "category": "native_hausa",
@@ -15483,7 +15545,7 @@
         "[p4-maths-12 | modules.177.textExplanationHa] Idan gefe ya kai mita 5, kewayen ya zama 20."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 1).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -15502,7 +15564,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -15591,7 +15653,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -15601,7 +15665,7 @@
         "[p6-maths-18 | modules.231.textExplanationHa] Don samun girma na kuboid, ka ninka tsawo × faɗi × tsayi."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 2
     },
     {
@@ -16016,7 +16080,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -16069,7 +16133,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -16079,7 +16145,7 @@
         "[p5-socs-05 | modules.343.audioScript] Yau za mu koyi kundin tsarin mulki da bin doka."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -16342,7 +16408,7 @@
         "U+06CC",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -16416,7 +16482,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -16426,7 +16494,7 @@
         "[p1-bsci-13 | modules.60.textExplanationHa] Daba mai zagaye tana juyawa a kan sandar da ke tsakiya domin mota, keken hannu, da kayan tura kaya su motsa cikin sauƙi."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -18437,7 +18505,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -18490,7 +18558,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -18500,7 +18570,7 @@
         "[p5-maths-04 | modules.193.textExplanationHa] Mafi ƙaramin ninki na gari, wato LCM, ita ce lamba mafi ƙanƙanta da lambobi biyu za su iya shiga cikinta ba tare da saura ba."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -18833,7 +18903,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -18941,7 +19011,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         },
         {
           "type": "K_ARTICULATION",
@@ -18950,7 +19022,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -18960,7 +19034,7 @@
         "[p1-maths-13 | modules.36.segments.0.audioScript] Za ka iya amfani da yawan kujeru, takardu, ko sauran kayayyaki domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -18990,7 +19064,7 @@
         "U+0634",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -19085,7 +19159,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -19095,7 +19171,7 @@
         "[p5-bsci-09 | modules.287.textExplanationHa] Wani lokaci makamashi yana sauyawa daga nau'i ɗaya zuwa wani."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -19835,7 +19911,7 @@
         "U+06CC",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -19932,7 +20008,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -19942,7 +20020,7 @@
         "[p6-maths-19 | modules.232.titleHa] Jimlar Kusurwoyi a Alwatika"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -20446,7 +20524,7 @@
         "U+06A9",
         "U+064F"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -20520,7 +20598,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -20530,7 +20610,7 @@
         "[p1-maths-22 | modules.45.segments.0.audioScript] Lokaci yana taimaka mana mu san ranaku, makonni, da sa'o'i domin mu tsara abin da za mu yi a rayuwa."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -22221,7 +22301,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -22360,7 +22440,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -22370,7 +22452,7 @@
         "[p1-socs-03 | modules.65.audioScript] Yau za mu koyi Iyali – Membobi da Ayyukansu."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -23242,7 +23324,7 @@
         "U+0631",
         "U+064F"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -23297,7 +23379,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -23307,7 +23391,7 @@
         "[FL06 | modules.374.textExplanationHa] Ana kiran wannan karo idan ka'idodi biyu da mutum yake yarda da su sun nemi abubuwa mabambanta a lokaci guda."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -23694,7 +23778,7 @@
         "U+0648",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -23768,7 +23852,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -23778,7 +23864,7 @@
         "[p1-maths-14 | modules.37.textExplanationHa] Rinkawa tana taimaka mana wajen kirga abubuwa cikin sauri idan akwai rukunoni da yawa iri ɗaya."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -24113,7 +24199,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -24238,7 +24324,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -24248,7 +24336,7 @@
         "[p4-bsci-01 | modules.253.textExplanationHa] Ganyayyaki kuma kan zama ƙanana kuma kararsu ba ta da kauri, kamar albasa ko alayyahu."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -24348,7 +24436,7 @@
         "U+0631",
         "U+065C"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -24424,7 +24512,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "qaf — U+0642",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -24434,7 +24524,7 @@
         "[p6-socs-08 | modules.361.titleHa] Sauya Wurin Zama — Cikin Ƙasa da Ketare"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -24583,7 +24673,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -24658,7 +24748,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "qaf — U+0642",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -24668,7 +24760,7 @@
         "[n2-maths-03 | modules.14.textExplanationHa] Ka ɗauki gashin tsuntsu – sauki."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 3
     },
     {
@@ -25205,7 +25297,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -25280,7 +25372,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -25290,7 +25384,7 @@
         "[n2-maths-11 | modules.22.segments.0.text.ha] Yau za mu yi kalmomin ƙari da ragewa."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -26530,7 +26624,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -26624,7 +26718,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -26634,7 +26730,7 @@
         "[V03 | modules.80.title.ha] Kasuwancin Iyali"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -27058,7 +27154,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -27131,7 +27227,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -27141,7 +27239,7 @@
         "[p5-bsci-06 | modules.284.textExplanationHa] Rukunan biyu suna da halaye dabam, kuma ƙarfi ko haɗarinsu ba iri ɗaya ba ne."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -28125,7 +28223,7 @@
         "U+0631",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -28198,7 +28296,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -28208,7 +28308,7 @@
         "[p5-bsci-03 | modules.281.textExplanationHa] Wasu suna kare muhimman sassa: ƙasusuwan kai suna kewaye da ƙwaƙwalwa, ƙasusuwan ƙirji kuma suna taimaka wa kariyar zuciya da huhu."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -28409,7 +28509,7 @@
         "U+0633",
         "U+064F"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -28464,7 +28564,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -28474,7 +28576,7 @@
         "[p3-maths-06 | modules.147.textExplanationHa] A gida, za ka iya ganin kaso lokacin rabon tuwo, lemo, ko takarda."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -28685,7 +28787,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -28758,7 +28860,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -28768,7 +28872,7 @@
         "[p4-socs-03 | modules.326.titleHa] Yanayin Ƙasa da Yankunan Nijeriya"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -29103,7 +29207,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -29211,7 +29315,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -29221,7 +29327,7 @@
         "[p5-bsci-14 | modules.292.audioScript] Wasu cututtuka na iya yaɗuwa; wasu ba sa yaɗuwa tsakanin mutane."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -31105,7 +31211,7 @@
         "U+0645",
         "U+064F"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -31212,7 +31318,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -31222,7 +31330,7 @@
         "[p3-socs-02 | modules.310.segments.0.audioScript] Yau za mu koyi yankin ƙaramar hukumarmu."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -32066,7 +32174,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -32118,7 +32226,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -32128,7 +32238,7 @@
         "[p5-socs-05 | modules.343.titleHa] Kundin Tsarin Mulkin Nijeriya da Bin Doka"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -32225,7 +32335,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -32355,7 +32465,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -32365,7 +32477,7 @@
         "[p1-socs-12 | modules.74.segments.0.audioScript] Yau za mu koyi Nau'ukan Al'ada."
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 2
     },
     {
@@ -32389,7 +32501,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -32542,7 +32654,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "qaf — U+0642",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         },
         {
           "type": "K_ARTICULATION",
@@ -32551,7 +32665,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -32560,7 +32676,7 @@
         "[FL06 | modules.374.title.ha] Lokacin da Ka'idodinka Biyu Suka Yi Karo"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -32726,7 +32842,7 @@
         "U+06A9",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -32821,7 +32937,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "native_hausa",
@@ -32830,7 +32948,7 @@
         "[FL07 | modules.375.title.ha] Adalci a Cikin Shawararka"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -33022,7 +33140,7 @@
         "U+0633",
         "U+064F"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -33129,7 +33247,9 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2)."
         }
       ],
       "category": "arabic_lexical",
@@ -33137,7 +33257,7 @@
         "[p5-bsci-12 | modules.290.titleHa] Maganadisu da Abubuwan da Yake Jan Hankalinsu"
       ],
       "reviewerDecision": "approved_as_proposed",
-      "reviewerNotes": "Muhammad ratified 2026-08-04 (short300 batch).",
+      "reviewerNotes": "Muhammad ratified 2026-08-08 (K_ARTICULATION batch 2).",
       "redundantQuestionsRemoved": 1
     },
     {
