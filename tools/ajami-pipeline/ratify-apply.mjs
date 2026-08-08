@@ -1,10 +1,16 @@
 import fs from "node:fs";
 import { formatCodePoints } from "./tokenizer.mjs";
 
-const PATH = "/Users/muhammadbamalli/code/ajamix/tools/ajami-pipeline/data/review-queue-short300.json";
+const DEFAULT_PATH = "/Users/muhammadbamalli/code/ajamix/tools/ajami-pipeline/data/review-queue-short300.json";
 
-// argv: boko type position decisionOptionString [suppliedSequence]
-const [, , boko, type, positionStr, decision, supplied] = process.argv;
+// argv: [--file <path>] boko type position decisionOptionString [suppliedSequence]
+const rawArgs = process.argv.slice(2);
+let PATH = DEFAULT_PATH;
+if (rawArgs[0] === "--file") {
+  PATH = rawArgs[1];
+  rawArgs.splice(0, 2);
+}
+const [boko, type, positionStr, decision, supplied] = rawArgs;
 const position = Number(positionStr);
 
 const q = JSON.parse(fs.readFileSync(PATH, "utf8"));
@@ -14,8 +20,10 @@ const oq = entry.openQuestions.find((o) => o.type === type && o.position === pos
 if (!oq) throw new Error(`no open question ${type}@${position} for ${boko}`);
 if (!oq.options.includes(decision)) throw new Error(`decision not in options: ${decision}\noptions: ${JSON.stringify(oq.options)}`);
 
+const NOTE = `Muhammad ratified ${new Date().toISOString().slice(0, 10)}.`;
+
 oq.reviewerDecision = decision;
-oq.reviewerNotes = "Muhammad ratified 2026-08-04 (short300 batch).";
+oq.reviewerNotes = NOTE;
 if (supplied !== undefined) {
   oq.reviewerSuppliedSequence = supplied;
   oq.reviewerSuppliedCodepoints = formatCodePoints(supplied);
@@ -26,7 +34,7 @@ const allResolved = (entry.openQuestions ?? []).every((o) => !!o.reviewerDecisio
 if (allResolved && entry.status !== "human_reviewed") {
   entry.status = "human_reviewed";
   entry.reviewerDecision = "approved_as_proposed";
-  entry.reviewerNotes = "Muhammad ratified 2026-08-04 (short300 batch).";
+  entry.reviewerNotes = NOTE;
 }
 
 fs.writeFileSync(PATH, JSON.stringify(q, null, 2) + "\n");

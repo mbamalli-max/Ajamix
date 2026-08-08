@@ -52,8 +52,8 @@ test("ratified decisions determine materialised spellings", () => {
     entry.openQuestions.some((question) => question.reviewerDecision !== question.candidateAnswer)
   );
 
-  assert.equal(overriddenQuestions.length, 80);
-  assert.equal(overridden.length, 75);
+  assert.equal(overriddenQuestions.length, 232);
+  assert.equal(overridden.length, 198);
   for (const source of queue.entries) {
     const materializedCodepoints = formatCodePoints(byBoko.get(source.boko).ajami);
     for (const question of source.openQuestions) {
@@ -66,10 +66,6 @@ test("ratified decisions determine materialised spellings", () => {
     }
   }
   for (const source of overridden) {
-    // The source queue already carries Muhammad's supplied spelling as the
-    // candidateFullAjami for ƙwai, despite its rejected cluster proposal.
-    // It is the sole pre-materialised exception; the literal still has to win.
-    if (source.boko === "ƙwai") continue;
     assert.notEqual(
       byBoko.get(source.boko).ajami,
       source.candidateFullAjami,
@@ -94,9 +90,17 @@ test("accepted candidate spellings do not drift during assembly", () => {
   }
 });
 
-test("unresolved live kaf/qaf questions block full-queue materialisation", () => {
+test("unresolved kaf/qaf question fixtures block materialisation", () => {
+  const queue = storedQueue();
+  const ka = structuredClone(entryFor(queue.entries, "ka"));
+  const articulation = ka.openQuestions.find(
+    (question) => question.type === "K_ARTICULATION" && question.position === 0
+  );
+  assert.ok(articulation);
+  articulation.reviewerDecision = null;
+
   assert.throws(
-    () => materializeLexicon(storedQueue()),
+    () => materializeAjami(ka),
     /K_ARTICULATION at 0: missing reviewerDecision/u
   );
 });
@@ -105,7 +109,7 @@ test("materialised entries validate and preserve ratified special cases", () => 
   const queue = sourceQueue();
   const lexicon = materializeLexicon(queue);
 
-  assert.equal(lexicon.entries.length, 377);
+  assert.equal(lexicon.entries.length, 500);
   for (const entry of lexicon.entries) {
     assert.equal(validateLexiconEntry(entry, { generated: true }).ok, true, entry.boko);
     assert.deepEqual(formatCodePoints(entry.ajami), entry.ajamiCodepoints, entry.boko);
@@ -122,7 +126,7 @@ test("materialised entries validate and preserve ratified special cases", () => 
     .filter((entry) => entry.contextRule)
     .map((entry) => entry.boko)
     .sort();
-  assert.deepEqual(contextWords, ["da", "ya"]);
+  assert.deepEqual(contextWords, ["da", "ka", "ko", "ya"]);
   for (const boko of contextWords) {
     const entry = entryFor(lexicon.entries, boko);
     assert.ok(entry.contextRule, `${boko} needs contextRule`);
