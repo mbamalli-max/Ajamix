@@ -7498,7 +7498,8 @@
         "U+08BB",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "excluded",
+      "exclusionReason": "Muhammad ruled 2026-08-06: HCF is an English acronym embedded in Hausa text and must remain uncovered.",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -9842,7 +9843,8 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "blocked",
+      "status": "excluded",
+      "exclusionReason": "Muhammad ruled 2026-08-06: Social is part of an untranslated English phrase embedded in Hausa text and must remain uncovered.",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -9946,7 +9948,8 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "blocked",
+      "status": "excluded",
+      "exclusionReason": "Muhammad ruled 2026-08-06: Studies is part of an untranslated English phrase embedded in Hausa text and must remain uncovered.",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -11564,8 +11567,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "CORRECTED CLASSIFICATION 2026-08-07: the original H_NATIVE_HAUSA/H_ARABIC_LEXICAL binary conflated two different things. The glyph decision (ح) stands, but the reasoning is corrected: H_HAUSA_PHONEMIC — native Hausa verb root (haɗa). Ratified glyph unchanged: ح U+062D."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -15418,8 +15425,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "PROVISIONAL LOW-CONFIDENCE DEFAULT 2026-08-07: no attested Hausa Ajami spelling found for this word after a real search (r12a orthography reference, Wiktionary Arabic-loan category, archive.org Hausa dictionary — none gave a word-specific attestation). Decision is NOT etymology-based approval — it rests on r12a's documented default: 'the usual form is ح; for Quranic names ه is generally used.' None of muhimmanci/haraji/ainihi/halitta are Quranic names, and no Hausa Ajami source was found preserving خ for kharaj-derived loans, so ح (the unmarked default) is used pending better evidence. Revisit if an attested Hausa Ajami manuscript/dictionary source or native-reader confirmation surfaces for this specific word."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -21614,8 +21625,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "PROVISIONAL LOW-CONFIDENCE DEFAULT 2026-08-07: no attested Hausa Ajami spelling found for this word after a real search (r12a orthography reference, Wiktionary Arabic-loan category, archive.org Hausa dictionary — none gave a word-specific attestation). Decision is NOT etymology-based approval — it rests on r12a's documented default: 'the usual form is ح; for Quranic names ه is generally used.' None of muhimmanci/haraji/ainihi/halitta are Quranic names, and no Hausa Ajami source was found preserving خ for kharaj-derived loans, so ح (the unmarked default) is used pending better evidence. Revisit if an attested Hausa Ajami manuscript/dictionary source or native-reader confirmation surfaces for this specific word."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_SEQUENCE",
@@ -23589,8 +23604,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "PROVISIONAL LOW-CONFIDENCE DEFAULT 2026-08-07: no attested Hausa Ajami spelling found for this word after a real search (r12a orthography reference, Wiktionary Arabic-loan category, archive.org Hausa dictionary — none gave a word-specific attestation). Decision is NOT etymology-based approval — it rests on r12a's documented default: 'the usual form is ح; for Quranic names ه is generally used.' None of muhimmanci/haraji/ainihi/halitta are Quranic names, and no Hausa Ajami source was found preserving خ for kharaj-derived loans, so ح (the unmarked default) is used pending better evidence. Revisit if an attested Hausa Ajami manuscript/dictionary source or native-reader confirmation surfaces for this specific word."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "GEMINATION",
@@ -25096,8 +25115,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "CORRECTED CLASSIFICATION 2026-08-07: the original H_NATIVE_HAUSA/H_ARABIC_LEXICAL binary conflated two different things. The glyph decision (ح) stands, but the reasoning is corrected: H_HAUSA_PHONEMIC — native Hausa verb root (haɗa). Ratified glyph unchanged: ح U+062D."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -30886,8 +30909,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "CORRECTED CLASSIFICATION 2026-08-07: the original H_NATIVE_HAUSA/H_ARABIC_LEXICAL binary conflated two different things. The glyph decision (ح) stands, but the reasoning is corrected: H_HAUSA_PHONEMIC — native Hausa verb root (haɗa). Ratified glyph unchanged: ح U+062D."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "GEMINATION",
@@ -31004,8 +31031,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "CORRECTED CLASSIFICATION 2026-08-07: the original H_NATIVE_HAUSA/H_ARABIC_LEXICAL binary conflated two different things. The glyph decision (ح) stands, but the reasoning is corrected: H_HAUSA_PHONEMIC — native Hausa verb root (haɗa). Ratified glyph unchanged: ح U+062D."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -32088,8 +32119,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "PROVISIONAL LOW-CONFIDENCE DEFAULT 2026-08-07: no attested Hausa Ajami spelling found for this word after a real search (r12a orthography reference, Wiktionary Arabic-loan category, archive.org Hausa dictionary — none gave a word-specific attestation). Decision is NOT etymology-based approval — it rests on r12a's documented default: 'the usual form is ح; for Quranic names ه is generally used.' None of muhimmanci/haraji/ainihi/halitta are Quranic names, and no Hausa Ajami source was found preserving خ for kharaj-derived loans, so ح (the unmarked default) is used pending better evidence. Revisit if an attested Hausa Ajami manuscript/dictionary source or native-reader confirmation surfaces for this specific word."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "GEMINATION",
@@ -33237,8 +33272,12 @@
             "H_NATIVE_HAUSA — U+062D",
             "H_ARABIC_LEXICAL — U+0647"
           ],
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D",
-          "reviewerNotes": "CORRECTED CLASSIFICATION 2026-08-07: the original H_NATIVE_HAUSA/H_ARABIC_LEXICAL binary conflated two different things. The glyph decision (ح) stands, but the reasoning is corrected: H_HAUSA_EPENTHETIC — Arabic source is عَقْل (ʿaql), which has no h-type consonant corresponding to Hausa initial h; this h arose through Hausa phonological adaptation, not Arabic-spelling preservation. Ratified glyph unchanged: ح U+062D."
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "K_ARTICULATION",

@@ -2391,7 +2391,8 @@
           "reasoning": "I judge `haɗa` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ƙari yana nufin haɗa abubuwa wuri ɗaya.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established."
         }
       ],
       "category": "native_hausa",
@@ -7953,7 +7954,8 @@
           "reasoning": "I judge `hankali` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ka zauna lafiya, ka saurara a hankali, sannan ka maimaita bayanin da za ka ji domin ilimi ya zauna sosai a zuciyarka.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established."
         },
         {
           "type": "K_ARTICULATION",
@@ -10703,7 +10705,8 @@
           "reasoning": "I judge `haka` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Nuna yatsa ɗaya don 'ɗaya', yatsu biyu don 'biyu', haka zuwa biyar.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established."
         },
         {
           "type": "K_ARTICULATION",
@@ -13974,7 +13977,8 @@
           "reasoning": "I judge `hannu` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ka sanya hannu cikin akwati – ciki.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established."
         },
         {
           "type": "GEMINATION",
@@ -16616,7 +16620,8 @@
           "reasoning": "I judge `haske` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ka maimaita darasin sau da yawa, ka yi amfani da misalai daga gida ko makaranta, kuma ka tambayi malaminka idan kana bukatar karin haske.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established."
         },
         {
           "type": "K_ARTICULATION",
@@ -22550,7 +22555,12 @@
           "reasoning": "I judge `haɗin` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ka tuna cewa daba mai zagaye tana juyawa ne a kan sandar da ke tsakiya, kuma haɗin su ne ke ba da damar motsi mai sauƙi.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -28513,7 +28523,12 @@
           "reasoning": "I judge `haɗu` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Ka ci gaba da maimaitawa, ka yi tambaya idan kana bukatar taimako, sannan mu haɗu a darasi na gaba.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -38034,7 +38049,8 @@
           "reasoning": "`muhimmanci` is built on Arabic `muhimm` (مهم), where the lexical consonant is hāʾ (ه). I therefore propose H_ARABIC_LEXICAL rather than the native default.",
           "confidence": "medium",
           "evidenceType": "COGNATE_OR_LOAN",
-          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established."
         },
         {
           "type": "GEMINATION",
@@ -38504,7 +38520,12 @@
           "reasoning": "I judge `haɗari` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Sauraron ƙararrawa ko ƙahon mota yana taimaka mana mu kauce wa haɗari a hanya.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -50182,7 +50203,12 @@
           "reasoning": "I judge `hakan` to use native/default Hausa `h` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“Za ka iya amfani da yatsu, litattafai, fensir, ko kujeru domin ka haɗa abin da kake faɗa da abin da kake gani a zahiri, kuma hakan yana sa koyo ya fi daɗi.”—does not identify it as Qur'anic text or a proper name.",
           "confidence": "medium",
           "evidenceType": "CORPUS_INTERNAL_CONSISTENCY",
-          "reviewerDecision": "H_NATIVE_HAUSA — U+062D"
+          "reviewerDecision": "H_ARABIC_LEXICAL — U+0647",
+          "reviewerNotes": "Muhammad explicitly selected the glyph ه (2026-08-17). The legacy H_ARABIC_LEXICAL label is a GLYPH choice, not an etymological classification; provenance remains unresolved unless separately established.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "K_ARTICULATION",
