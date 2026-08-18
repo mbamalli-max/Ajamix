@@ -32,6 +32,8 @@ export const HAUSA_FIELD_NAMES = Object.freeze([
   "audioScript",
   "questionHa",
   "templateHa",
+  "answerFormula",
+  "distractorFormulas",
   "ha",
   "topicHa",
   "termHa",
@@ -57,6 +59,7 @@ export const OPEN_QUESTION_TYPES = Object.freeze([
   "SHORT_E_CARRIER",
   "APOSTROPHE_ROLE",
   "ARABIC_LEXICAL_H",
+  "H_ORTHOGRAPHY_CLASS",
   "K_ARTICULATION",
   "NON_HAUSA_TOKEN",
   "VELAR_CLUSTER",
@@ -64,6 +67,18 @@ export const OPEN_QUESTION_TYPES = Object.freeze([
   "GEMINATION",
   "SUKUN",
   "DERIVATION_BLOCKED",
+]);
+
+// New queues ask why an h-type glyph is selected. `ARABIC_LEXICAL_H` remains
+// supported downstream solely for already-recorded binary decisions; the
+// generator must never create new questions under that rejected model.
+export const H_ORTHOGRAPHY_CLASS_OPTIONS = Object.freeze([
+  "H_HAUSA_PHONEMIC — ح U+062D native Hausa /h/",
+  "H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved",
+  "H_ARABIC_HEH_PRESERVED — ه U+0647 Arabic ه preserved",
+  "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
+  "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
+  "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence",
 ]);
 
 const HAUSA_FIELD_NAME_SET = new Set(HAUSA_FIELD_NAMES);
@@ -194,6 +209,17 @@ function collectHausaFields(content) {
           fieldType: key,
           moduleId: moduleId(content, childParts),
           value: child,
+        });
+      } else if (Array.isArray(child) && HAUSA_FIELD_NAME_SET.has(key)) {
+        child.forEach((item, index) => {
+          if (typeof item !== "string") return;
+          const itemParts = [...childParts, index];
+          fields.push({
+            fieldPath: sourcePath(itemParts),
+            fieldType: key,
+            moduleId: moduleId(content, itemParts),
+            value: item,
+          });
         });
       }
       walk(child, childParts);
@@ -383,6 +409,9 @@ function replacementSequenceOption(label) {
   return `${label} — reviewer must supply the exact Unicode replacement sequence`;
 }
 
+export const VOWEL_LENGTH_LEXICAL_EXCEPTION_OPTION =
+  replacementSequenceOption("lexical exception");
+
 function vowelLengthQuestion(letter, position) {
   const shortEntry = vowelInventory.get(shortVowelTokens.get(letter));
   const longEntry = approvedSequences.get(longVowelTokens.get(letter));
@@ -398,6 +427,7 @@ function vowelLengthQuestion(letter, position) {
     options: [
       sequenceOption("short", shortCodePoints),
       sequenceOption("long", longCodePoints),
+      VOWEL_LENGTH_LEXICAL_EXCEPTION_OPTION,
     ],
     candidateCodePointSequences: {
       short: shortCodePoints,
@@ -629,18 +659,15 @@ function buildOpenQuestions(boko, tokenized) {
     const arabicLoanCandidate = isArabicLoanCandidate(normalized);
     for (const token of hTokens) {
       questions.push({
-        type: "ARABIC_LEXICAL_H",
+        type: "H_ORTHOGRAPHY_CLASS",
         position: characterPosition(boko, token.sourceStart),
         arabicLoanCandidate,
         question:
-          `Should '${boko}' use H_NATIVE_HAUSA (ح, U+062D) or ` +
-          `H_ARABIC_LEXICAL (ه, U+0647)?${arabicLoanCandidate
+          `Classify the 'h' in '${boko}' as Hausa phonemic, preserved Arabic ` +
+          `ḥāʾ/hāʾ/khāʾ, Hausa epenthetic, or lexically unresolved.${arabicLoanCandidate
             ? " This word is flagged as a possible Arabic/Islamic lexical form."
             : ""}`,
-        options: [
-          "H_NATIVE_HAUSA — U+062D",
-          "H_ARABIC_LEXICAL — U+0647",
-        ],
+        options: [...H_ORTHOGRAPHY_CLASS_OPTIONS],
       });
     }
   }
@@ -857,7 +884,9 @@ function entryCategory(openQuestions) {
   }
   if (
     openQuestions.some(
-      (question) => question.type === "ARABIC_LEXICAL_H" && question.arabicLoanCandidate
+      (question) =>
+        ["ARABIC_LEXICAL_H", "H_ORTHOGRAPHY_CLASS"].includes(question.type) &&
+        question.arabicLoanCandidate
     )
   ) {
     return "arabic_lexical";
@@ -938,6 +967,7 @@ function buildEntry(record, rank, cumulativeOccurrences, totalRunningWords) {
 const REVIEW_FOCUS_ORDER = new Map([
   ["NON_HAUSA_TOKEN", 0],
   ["APOSTROPHE_ROLE", 1],
+  ["H_ORTHOGRAPHY_CLASS", 2],
   ["ARABIC_LEXICAL_H", 2],
   ["K_ARTICULATION", 3],
   ["WORD_INITIAL_CARRIER", 4],

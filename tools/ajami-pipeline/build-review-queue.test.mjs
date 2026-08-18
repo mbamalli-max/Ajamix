@@ -7,6 +7,8 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 
 import {
+  H_ORTHOGRAPHY_CLASS_OPTIONS,
+  VOWEL_LENGTH_LEXICAL_EXCEPTION_OPTION,
   buildReviewQueue,
   buildReviewQueueFromContent,
   writeReviewQueueArtifacts,
@@ -120,6 +122,34 @@ test("frequency ranking folds case while preserving a representative corpus form
   assert.equal(coverage.totalRunningWords, 19);
   assert.equal(coverage.totalDistinctWords, 14);
   assert.match(da.exampleSentences[0], /^\[fixture-1 \| modules\.0\.titleHa\]/);
+});
+
+test("quiz answer strings and distractor string arrays are included in the corpus", () => {
+  const artifacts = buildReviewQueueFromContent(
+    {
+      modules: [
+        {
+          id: "fixture-quiz-options",
+          quiz: [
+            {
+              answerFormula: "Sabon sabon",
+              distractorFormulas: ["Sabon da", "Haka"],
+            },
+          ],
+        },
+      ],
+    },
+    { limit: 3 }
+  );
+
+  assert.equal(artifacts.coverage.totalRunningWords, 5);
+  assert.equal(artifacts.queue.totalHausaFieldsScanned, 3);
+  assert.equal(entryFor(artifacts.queue.entries, "sabon").occurrences, 3);
+  assert.ok(
+    entryFor(artifacts.queue.entries, "haka").exampleSentences.some((example) =>
+      example.includes("modules.0.quiz.0.distractorFormulas.1")
+    )
+  );
 });
 
 test("writer refuses to overwrite human-reviewed queues without force and leaves them unchanged", () => {
@@ -257,7 +287,7 @@ test("CLI --force permits a word-list output to replace a ratified temporary que
   assert.equal(fs.existsSync(path.join(directory, "review-queue-short-excluded.json")), false);
 });
 
-test("vowel questions name the position and exact short and long code-point candidates", () => {
+test("vowel questions offer exact short, long, and reviewer-supplied exception options", () => {
   const { queue } = fixtureArtifacts();
   const haka = entryFor(queue.entries, "haka");
   const vowel = haka.openQuestions.find((question) => question.type === "VOWEL_LENGTH");
@@ -266,6 +296,11 @@ test("vowel questions name the position and exact short and long code-point cand
     short: ["U+064E"],
     long: ["U+064E", "U+0627"],
   });
+  assert.deepEqual(vowel.options, [
+    "short — U+064E",
+    "long — U+064E U+0627",
+    VOWEL_LENGTH_LEXICAL_EXCEPTION_OPTION,
+  ]);
   assert.equal(vowel.position, 1);
   assert.equal(haka.provisionalAjami, "حَکَ");
   assert.deepEqual(haka.ajamiCodepoints, ["U+062D", "U+064E", "U+06A9", "U+064E"]);
@@ -289,17 +324,26 @@ test("initial vowels and short e expose carrier questions and block guessed spel
   assert.equal(emu.status, "blocked");
 });
 
-test("lexical h and apostrophes have specific routing questions", () => {
+test("h orthography and apostrophes have specific routing questions", () => {
   const { queue, excluded } = fixtureArtifacts();
   const hankali = entryFor(queue.entries, "hankali");
   const apostrophe = entryFor(queue.entries, "ma'a");
   const apostropheY = entryFor(queue.entries, "ƴaƴa");
 
   const hQuestion = hankali.openQuestions.find(
-    (question) => question.type === "ARABIC_LEXICAL_H"
+    (question) => question.type === "H_ORTHOGRAPHY_CLASS"
   );
   assert.equal(hQuestion.arabicLoanCandidate, true);
-  assert.match(hQuestion.question, /H_NATIVE_HAUSA.*H_ARABIC_LEXICAL/);
+  assert.deepEqual(hQuestion.options, H_ORTHOGRAPHY_CLASS_OPTIONS);
+  assert.equal(
+    hQuestion.options.at(-1),
+    "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
+  );
+  assert.equal(
+    hQuestion.options.at(-1).match(/U\+[0-9A-F]{4,6}/gu),
+    null,
+    "unresolved must not bake in a code point"
+  );
   assert.equal(hankali.category, "arabic_lexical");
 
   assert.equal(entryFor(queue.entries, "p"), undefined);
