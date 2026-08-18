@@ -2,6 +2,17 @@ import { formatCodePoints, tokenize } from "../tokenizer.mjs";
 
 export const LEXICON_ORTHOGRAPHY = "warsh_kano_ajamix_v1";
 
+export const QUESTION_NOT_APPLICABLE_STATE = "not_applicable";
+export const REVIEW_ENTRY_EXCLUDED_STATUS = "excluded";
+
+export function isQuestionNotApplicable(question) {
+  return question?.resolution?.state === QUESTION_NOT_APPLICABLE_STATE;
+}
+
+export function isExcludedReviewEntry(entry) {
+  return entry?.status === REVIEW_ENTRY_EXCLUDED_STATUS;
+}
+
 export const LEXICON_STATUSES = Object.freeze([
   "candidate",
   "provisional",

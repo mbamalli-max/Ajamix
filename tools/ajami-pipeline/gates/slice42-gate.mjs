@@ -1,7 +1,10 @@
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 
-import { buildReviewQueue } from "../build-review-queue.mjs";
+import {
+  H_ORTHOGRAPHY_CLASS_OPTIONS,
+  buildReviewQueue,
+} from "../build-review-queue.mjs";
 import { tokenize } from "../tokenizer.mjs";
 
 const EXCLUDED_PATH = new URL("../data/review-queue-excluded.json", import.meta.url);
@@ -103,6 +106,31 @@ export function slice42Failures(queue, excluded = JSON.parse(fs.readFileSync(EXC
   failIf(
     noQuestions.length,
     `entries without open questions: ${noQuestions.map((entry) => entry.boko).join(", ")}`,
+    failures
+  );
+
+  const legacyHQuestions = entries.flatMap((entry) =>
+    (entry.openQuestions ?? [])
+      .filter((question) => question.type === "ARABIC_LEXICAL_H")
+      .map((question) => `${entry.boko}@${question.position}`)
+  );
+  failIf(
+    legacyHQuestions.length,
+    `generator emitted frozen ARABIC_LEXICAL_H questions: ${legacyHQuestions.join(", ")}`,
+    failures
+  );
+  const malformedHQuestions = entries.flatMap((entry) =>
+    (entry.openQuestions ?? [])
+      .filter(
+        (question) =>
+          question.type === "H_ORTHOGRAPHY_CLASS" &&
+          JSON.stringify(question.options) !== JSON.stringify(H_ORTHOGRAPHY_CLASS_OPTIONS)
+      )
+      .map((question) => `${entry.boko}@${question.position}`)
+  );
+  failIf(
+    malformedHQuestions.length,
+    `six-way h questions have malformed options: ${malformedHQuestions.join(", ")}`,
     failures
   );
 

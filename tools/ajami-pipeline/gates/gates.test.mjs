@@ -51,7 +51,7 @@ test("ratification gate rejects missing must-supply payloads and incomplete deci
   queue.entries[0].openQuestions[0].reviewerDecision = null;
   const failures = ratificationFailures(queue).join("\n");
   assert.match(failures, /must-supply decision needs reviewerSuppliedSequence/u);
-  assert.match(failures, /human-reviewed question is missing reviewerDecision/u);
+  assert.match(failures, /human-reviewed question is neither answered nor explicitly not-applicable/u);
 });
 
 test("ratification gate rejects incorrect must-supply code points", () => {

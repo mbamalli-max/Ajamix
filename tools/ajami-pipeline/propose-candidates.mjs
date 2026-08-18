@@ -142,12 +142,53 @@ const COMMON_WORD_ANALYSES = new Map(
   })
 );
 
-const ARABIC_HEH_WORDS = new Map([
-  ["fahimta", "Arabic `fahm`/`fahima` has hāʾ (ه); this assimilated derivative retains that lexical consonant."],
-  ["fahimtar", "`fahimtar` is the inflected/linked form of Arabic-derived `fahimta`, whose source consonant is hāʾ (ه)."],
-  ["fahimci", "`fahimci` belongs to the Arabic-derived `fahim-` family, whose source consonant is hāʾ (ه)."],
-  ["muhimmanci", "`muhimmanci` is built on Arabic `muhimm` (مهم), where the lexical consonant is hāʾ (ه)."],
-  ["zahiri", "`zahiri` is an established Arabic-derived form related to `ẓāhir` (ظاهر), which contains hāʾ (ه)."],
+const H_CATEGORY_CODEPOINT = new Map([
+  ["H_HAUSA_PHONEMIC", "U+062D"],
+  ["H_ARABIC_HA_PRESERVED", "U+062D"],
+  ["H_ARABIC_HEH_PRESERVED", "U+0647"],
+  ["H_ARABIC_KHA_PRESERVED", "U+062E"],
+  ["H_HAUSA_EPENTHETIC", "U+062D"],
+]);
+
+// These are proposal rules, not approvals.  They identify the source-class
+// question that Muhammad must rule on; an unmatched or genuinely ambiguous
+// word stays H_LEXICAL_UNRESOLVED instead of falling through to a binary
+// Arabic-vs-native guess.
+const H_LEXICAL_ANALYSES = Object.freeze([
+  { pattern: /^fahim/u, category: "H_ARABIC_HEH_PRESERVED", confidence: "high", note: "The fahim- family is related to Arabic fahm/fahima (فهم), whose consonant is hāʾ (ه)." },
+  { pattern: /^(?:muhimm|mahim)/u, category: "H_LEXICAL_UNRESOLVED", confidence: "low", note: "The muhimm-/mahim- family is built on Arabic مهم with hāʾ (ه), but its answered legacy decisions conflict between ه and ح and the project has no word-specific Ajami attestation establishing preservation rather than nativization." },
+  { pattern: /^zahir/u, category: "H_ARABIC_HEH_PRESERVED", confidence: "high", note: "The zahir- family is related to Arabic ظاهر, which contains hāʾ (ه)." },
+  { pattern: /^wahala/u, category: "H_ARABIC_HEH_PRESERVED", confidence: "medium", note: "Wahala is traced to Arabic وَهْلَة, whose consonant is hāʾ (ه); the inflected form retains the same stem." },
+  { pattern: /^ainihi/u, category: "H_LEXICAL_UNRESOLVED", confidence: "low", note: "Ainihi is commonly related to Arabic عينه with hāʾ (ه), but the project has no word-specific Ajami attestation establishing preservation rather than Hausa nativization." },
+
+  { pattern: /^(?:alhaki|haƙƙ|hakki)/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "This family is related to Arabic ḥaqq (حق), whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^(?:muhalli|mahalli)/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "This family is related to Arabic maḥall (محل), whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^(?:hali(?:n)?|halaye(?:nsu)?)$/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "The hali/halaye family is related to Arabic ḥāl (حال), whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^halitt/u, category: "H_LEXICAL_UNRESOLVED", confidence: "low", note: "The halitta family was previously assigned the general ح default only after no word-specific Ajami attestation was found; that evidence does not establish a preserved-source category." },
+  { pattern: /^hukum/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "The hukum- family is related to Arabic ḥukm/ḥukūma (حكم/حكومة), with ḥāʾ (ح)." },
+  { pattern: /^hukunci/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "Hukunci belongs to the Arabic ḥukm (حكم) family, whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^fasaha/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "Fasaha is related to Arabic faṣāḥa (فصاحة), whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^hujja/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "Hujja is related to Arabic ḥujja (حجة), whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^halartar/u, category: "H_ARABIC_HA_PRESERVED", confidence: "medium", note: "Halartar belongs to the halarta/ḥaḍara family, with source ḥāʾ (ح); the suffix does not change the lexical consonant." },
+  { pattern: /^hauwa/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "The proper name Hauwa corresponds to Arabic Ḥawwāʾ (حواء), beginning with ḥāʾ (ح)." },
+  { pattern: /^sihir/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "Sihiri is related to Arabic siḥr (سحر), whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^haruff/u, category: "H_ARABIC_HA_PRESERVED", confidence: "high", note: "Haruffa is related to Arabic ḥurūf (حروف), whose source consonant is ḥāʾ (ح)." },
+  { pattern: /^alhali/u, category: "H_ARABIC_HA_PRESERVED", confidence: "medium", note: "Alhali is built on the Arabic al-ḥāl expression (الحال), with ḥāʾ (ح)." },
+
+  { pattern: /^tarihi/u, category: "H_ARABIC_KHA_PRESERVED", confidence: "low", note: "The tarihi- family is related to Arabic taʾrīkh (تاريخ), whose final source consonant is khāʾ (خ); this provisional preservation proposal still lacks word-specific Hausa Ajami attestation." },
+  { pattern: /^haraji/u, category: "H_LEXICAL_UNRESOLVED", confidence: "low", note: "Haraji is related to Arabic kharāj (خراج), but its answered legacy decision used the general ح default after no word-specific Ajami attestation was found; preservation versus nativization remains unresolved." },
+  { pattern: /^hulɗ/u, category: "H_ARABIC_KHA_PRESERVED", confidence: "low", note: "Hulɗa is commonly related to Arabic khulṭa (خلطة), whose source consonant is khāʾ (خ); word-specific Hausa Ajami attestation is still needed." },
+  { pattern: /^hatsari/u, category: "H_LEXICAL_UNRESOLVED", confidence: "low", note: "Hatsari is commonly related to Arabic khaṭar (خطر) with khāʾ (خ), while its binary legacy decision recorded ه; without word-specific Ajami attestation, preservation versus nativization remains unresolved." },
+
+  { pattern: /^hankal/u, category: "H_HAUSA_EPENTHETIC", confidence: "high", note: "The recorded project analysis traces hankali to Arabic ʿaql (عقل), which has no corresponding h-type consonant; Hausa supplied the initial /h/." },
+
+  { pattern: /^(?:haɗ|hany|hann|hask|huɗ|hana|harshe|hawa|haƙor|haihu|hutu|huta|duhu|tsoho|ihu)/u, category: "H_HAUSA_PHONEMIC", confidence: "high", note: "This is an established Hausa stem whose surface /h/ is handled by the ordinary Hausa phonemic rule (ح)." },
+  { pattern: /^haka(?:n)?$/u, category: "H_HAUSA_PHONEMIC", confidence: "high", note: "Haka/hakan is an ordinary Hausa demonstrative stem with phonemic /h/." },
+  { pattern: /^har$/u, category: "H_HAUSA_PHONEMIC", confidence: "medium", note: "In this corpus use, har is an ordinary Hausa function word with phonemic /h/." },
+  { pattern: /^haɗe/u, category: "H_HAUSA_PHONEMIC", confidence: "high", note: "Haɗe is a member of the Hausa haɗ- verbal family and has phonemic /h/." },
+  { pattern: /^eh$/u, category: "H_HAUSA_PHONEMIC", confidence: "medium", note: "Eh is the Hausa affirmative interjection; its final /h/ is part of the Hausa lexical form." },
+  { pattern: /^hoto/u, category: "H_HAUSA_PHONEMIC", confidence: "medium", note: "Hoto is a fully nativized Hausa form (historically from English photo); the surface consonant is Hausa /h/, not preserved Arabic spelling." },
+  { pattern: /^rahot/u, category: "H_HAUSA_PHONEMIC", confidence: "medium", note: "The rahoto/rahotanni family is fully nativized Hausa vocabulary (historically from English report); its surface /h/ is not an Arabic-spelling preservation decision." },
 ]);
 
 const APOSTROPHE_PROPOSALS = new Map([
@@ -221,11 +262,19 @@ function selectedVowelLength(entry, question) {
 
 function vowelProposal(entry, question) {
   const length = selectedVowelLength(entry, question);
-  const optionIndex = length === "long" ? 1 : 0;
+  const optionLabel = question.type === "WORD_FINAL_VOWEL" ? `${length} final` : length;
+  const answer = question.options.find((option) =>
+    String(option).startsWith(`${optionLabel} — `)
+  );
+  if (!answer || /must supply/iu.test(answer)) {
+    throw new Error(
+      `${entry.boko}/${question.type}@${question.position}: missing canonical ${length} option`
+    );
+  }
   const common = COMMON_WORD_ANALYSES.get(normalizeWord(entry.boko));
   if (common) {
     return {
-      answer: question.options[optionIndex],
+      answer,
       sequence: question.candidateCodePointSequences[length],
       reasoning: `${common.note} This selects the ${length} sequence for the '${question.letter}' at position ${question.position}.`,
       confidence: "high",
@@ -234,7 +283,7 @@ function vowelProposal(entry, question) {
   }
   if (question.type === "VOWEL_LENGTH" && isClosedSyllableVowel(entry, question)) {
     return {
-      answer: question.options[0],
+      answer,
       sequence: question.candidateCodePointSequences.short,
       reasoning:
         `In \`${entry.boko}\`, the '${question.letter}' at position ${question.position} is closed by the following consonant sequence. ` +
@@ -244,7 +293,7 @@ function vowelProposal(entry, question) {
     };
   }
   return {
-    answer: question.options[optionIndex],
+    answer,
     sequence: question.candidateCodePointSequences[length],
     reasoning:
       `The queue uses \`${entry.boko}\` in “${exampleText(entry)}”; I read the '${question.letter}' at position ${question.position} as ${length}. ` +
@@ -287,16 +336,41 @@ function vowelSequenceProposal(entry, question) {
 
 function hProposal(entry, question) {
   const word = normalizeWord(entry.boko);
-  const arabicNote = ARABIC_HEH_WORDS.get(word);
-  const optionIndex = arabicNote ? 1 : 0;
+  const analysis = H_LEXICAL_ANALYSES.find(({ pattern }) => pattern.test(word)) ?? {
+    category: "H_LEXICAL_UNRESOLVED",
+    confidence: "low",
+    note: "The available project evidence does not establish the etymology/spelling treatment for this h occurrence.",
+  };
+  const codepoint = H_CATEGORY_CODEPOINT.get(analysis.category);
+  const categoryOption = question.options.find((option) =>
+    String(option).startsWith(`${analysis.category} — `)
+  );
+  // Already-answered legacy queues must remain byte-identical.  Proposals over
+  // those queues adapt a fixed six-way category to the old glyph option without
+  // rewriting either options or reviewerDecision.
+  const legacyOption = codepoint
+    ? question.options.find((option) => String(option).endsWith(`— ${codepoint}`))
+    : undefined;
+  const answer = analysis.category === "H_LEXICAL_UNRESOLVED"
+    ? null
+    : categoryOption ?? legacyOption ?? null;
   return {
-    answer: question.options[optionIndex],
-    sequence: optionCodepoints(question.options[optionIndex]),
-    reasoning: arabicNote
-      ? `${arabicNote} I therefore propose H_ARABIC_LEXICAL rather than the native default.`
-      : `I judge \`${entry.boko}\` to use native/default Hausa \`h\` (ḥāʾ, ح), not an established spelling with Arabic hāʾ. Its corpus use—“${exampleText(entry)}”—does not identify it as Qur'anic text or a proper name.`,
-    confidence: "medium",
-    evidenceType: arabicNote ? "COGNATE_OR_LOAN" : "CORPUS_INTERNAL_CONSISTENCY",
+    answer,
+    sequence: codepoint && answer ? [codepoint] : [],
+    reasoning:
+      `${analysis.note} Provisional six-way category: ${analysis.category}. ` +
+      (analysis.category === "H_LEXICAL_UNRESOLVED"
+        ? "Muhammad must supply the exact Unicode replacement sequence; the proposer supplies no fallback glyph. "
+        : "") +
+      "This is a machine proposal only and does not ratify the question.",
+    confidence: analysis.confidence,
+    evidenceType:
+      analysis.category === "H_LEXICAL_UNRESOLVED"
+        ? "UNCERTAIN_BEST_GUESS"
+        : analysis.category.startsWith("H_ARABIC_")
+          ? "COGNATE_OR_LOAN"
+          : "MORPHOLOGICAL_PATTERN",
+    hCategory: analysis.category,
   };
 }
 
@@ -330,21 +404,42 @@ function uncertainProposal(entry, question) {
   };
 }
 
+function shortECarrierProposal(entry, question) {
+  const vowelLength = questionAt(entry, "VOWEL_LENGTH", question.position);
+  const declaredShortOption = vowelLength?.options?.find((option) => /^short\s+—/iu.test(option));
+  if (vowelLength?.reviewerDecision !== declaredShortOption) {
+    const state = vowelLength?.reviewerDecision == null
+      ? "has no human vowel-length decision"
+      : `was not human-ratified as short (${vowelLength.reviewerDecision})`;
+    return {
+      answer: null,
+      sequence: [],
+      reasoning: `\`${entry.boko}\` ${state} at position ${question.position}; the short-e carrier rule cannot be proposed unless that same-position vowel is explicitly ratified short.`,
+      confidence: "low",
+      evidenceType: "UNCERTAIN_BEST_GUESS",
+    };
+  }
+  return {
+    answer: question.options[0],
+    sequence: optionCodepoints(question.options[0]),
+    reasoning: `\`${entry.boko}\` has a human-ratified short 'e' at position ${question.position}; standard §7 explicitly requires U+0639 AIN plus U+065C in that environment.`,
+    confidence: "high",
+    evidenceType: "RULE_DEFAULT",
+  };
+}
+
 function proposeQuestion(entry, question) {
   switch (question.type) {
     case "VOWEL_LENGTH":
+      // A proposal is always one of the two concrete canonical guesses. The
+      // lexical-exception option is reserved for a reviewer's exact sequence.
+      return vowelProposal(entry, question);
     case "WORD_FINAL_VOWEL":
       return vowelProposal(entry, question);
     case "WORD_INITIAL_CARRIER":
       return carrierProposal(entry, question);
     case "SHORT_E_CARRIER":
-      return {
-        answer: question.options[0],
-        sequence: optionCodepoints(question.options[0]),
-        reasoning: `\`${entry.boko}\` begins with short 'e'; standard §7 explicitly requires U+0639 AIN plus U+065C in that environment.`,
-        confidence: "high",
-        evidenceType: "RULE_DEFAULT",
-      };
+      return shortECarrierProposal(entry, question);
     case "SUKUN":
       return {
         answer: question.options[0],
@@ -364,6 +459,7 @@ function proposeQuestion(entry, question) {
         evidenceType: "MORPHOLOGICAL_PATTERN",
       };
     case "ARABIC_LEXICAL_H":
+    case "H_ORTHOGRAPHY_CLASS":
       return hProposal(entry, question);
     case "APOSTROPHE_ROLE":
       return apostropheProposal(entry, question);
@@ -392,7 +488,9 @@ function questionAt(entry, type, position) {
 
 function consonantSequence(entry, token) {
   if (token.token === "H_CONTEXT_REQUIRED") {
-    return questionAt(entry, "ARABIC_LEXICAL_H", characterPosition(entry.boko, token.sourceStart))
+    const position = characterPosition(entry.boko, token.sourceStart);
+    return (questionAt(entry, "H_ORTHOGRAPHY_CLASS", position) ??
+      questionAt(entry, "ARABIC_LEXICAL_H", position))
       ?.candidateAjamiSequence ?? ["U+062D"];
   }
   const cluster = questionAt(
@@ -404,7 +502,13 @@ function consonantSequence(entry, token) {
 }
 
 function buildCandidateFullAjami(entry) {
-  if (entry.openQuestions.some((question) => question.candidateAnswer === null)) {
+  if (
+    entry.openQuestions.some(
+      (question) =>
+        question.candidateAnswer === null ||
+        /must supply/iu.test(String(question.candidateAnswer))
+    )
+  ) {
     return null;
   }
   const tokens = tokenize(entry.boko).tokens;
@@ -470,6 +574,9 @@ export function proposeCandidates(queue) {
       question.reasoning = proposal.reasoning;
       question.confidence = proposal.confidence;
       question.evidenceType = proposal.evidenceType;
+      if (["ARABIC_LEXICAL_H", "H_ORTHOGRAPHY_CLASS"].includes(question.type)) {
+        question.proposedHCategory = proposal.hCategory;
+      }
     }
     entry.candidateFullAjami = buildCandidateFullAjami(entry);
     entry.candidateFullCodepoints = entry.candidateFullAjami

@@ -8,6 +8,8 @@ import { CANONICAL_MAPPING } from "./mapping.mjs";
 import { formatCodePoints, tokenize } from "./tokenizer.mjs";
 import {
   LEXICON_ORTHOGRAPHY,
+  isExcludedReviewEntry,
+  isQuestionNotApplicable,
   normalizeBoko,
   validateLexiconEntry,
 } from "./lexicon/schema.mjs";
@@ -57,6 +59,9 @@ function questionAt(entry, type, position) {
  * because they are the reviewer's exact replacement rather than an option.
  */
 export function decisionCodepoints(question) {
+  if (isQuestionNotApplicable(question)) {
+    throw new Error(`${question.type} at ${question.position}: question is not applicable`);
+  }
   if (typeof question.reviewerDecision !== "string") {
     throw new Error(`${question.type} at ${question.position}: missing reviewerDecision`);
   }
@@ -96,6 +101,7 @@ function pushSuppliedSequence(output, sequence) {
 }
 
 function selectedSequence(question, output) {
+  if (isQuestionNotApplicable(question)) return false;
   const sequence = decisionCodepoints(question);
   if (question.reviewerSuppliedSequence !== undefined) {
     pushSuppliedSequence(output, sequence);
@@ -105,11 +111,24 @@ function selectedSequence(question, output) {
   return false;
 }
 
+function contextualHQuestion(entry, token, position) {
+  return token.token === "H_CONTEXT_REQUIRED"
+    ? questionAt(entry, "H_ORTHOGRAPHY_CLASS", position) ??
+      questionAt(entry, "ARABIC_LEXICAL_H", position)
+    : undefined;
+}
+
+function selectedSukunMark(question, output) {
+  if (isQuestionNotApplicable(question)) return;
+  const sequence = decisionCodepoints(question);
+  if (!sequence.includes("U+0652")) {
+    throw new Error(`${question.type} at ${question.position}: decision does not include U+0652`);
+  }
+  output.push("U+0652");
+}
+
 function consonantSequence(entry, token, position, output) {
-  const hQuestion =
-    token.token === "H_CONTEXT_REQUIRED"
-      ? questionAt(entry, "ARABIC_LEXICAL_H", position)
-      : undefined;
+  const hQuestion = contextualHQuestion(entry, token, position);
   const kQuestion =
     token.token === "K_PLAIN"
       ? questionAt(entry, "K_ARTICULATION", position)
@@ -117,7 +136,11 @@ function consonantSequence(entry, token, position, output) {
   const clusterQuestion = questionAt(entry, "VELAR_CLUSTER", position);
   const question = hQuestion ?? kQuestion ?? clusterQuestion;
   if (question) {
-    return { supplied: selectedSequence(question, output), question };
+    return {
+      supplied: selectedSequence(question, output),
+      omitted: isQuestionNotApplicable(question),
+      question,
+    };
   }
 
   const sequence = consonantCodepoints.get(token.token);
@@ -125,10 +148,11 @@ function consonantSequence(entry, token, position, output) {
     throw new Error(`${entry.boko}: cannot place consonant token ${token.token} at ${position}`);
   }
   output.push(...sequence);
-  return { supplied: false, question: null };
+  return { supplied: false, omitted: false, question: null };
 }
 
 function selectedKGeminationSequence(entry, tokens, startIndex, question, output) {
+  if (isQuestionNotApplicable(question)) return false;
   if (question.reviewerSuppliedSequence !== undefined) {
     return selectedSequence(question, output);
   }
@@ -192,6 +216,9 @@ function suppliedCoversQuestion(sequence, question) {
 
 /** Assemble one spelling directly from ratified decisions and token positions. */
 export function materializeAjami(entry) {
+  if (isExcludedReviewEntry(entry)) {
+    throw new Error(`${entry.boko}: excluded review entry cannot be materialised`);
+  }
   const tokens = tokenize(entry.boko).tokens;
   const output = [];
   const skipQuestionPositions = new Set();
@@ -243,6 +270,7 @@ export function materializeAjami(entry) {
     const sukun = questionAt(entry, "SUKUN", position);
     let lastIndex = index;
     let suppressAutomaticSukun = false;
+    let selectedConsonant;
 
     if (gemination) {
       if (token.token === "K_PLAIN") {
@@ -250,22 +278,31 @@ export function materializeAjami(entry) {
       } else {
         selectedSequence(gemination, output);
       }
+      suppressAutomaticSukun = isQuestionNotApplicable(gemination);
       lastIndex = questionEndTokenIndex(tokens, index, gemination);
     } else if (sukun) {
-      selectedSequence(sukun, output);
+      if (contextualHQuestion(entry, token, position)) {
+        selectedConsonant = consonantSequence(entry, token, position, output);
+        selectedSukunMark(sukun, output);
+      } else {
+        selectedSequence(sukun, output);
+      }
       suppressAutomaticSukun = true;
     } else {
-      const selected = consonantSequence(entry, token, position, output);
-      if (selected.supplied) {
-        const supplied = decisionCodepoints(selected.question);
-        for (const question of entry.openQuestions) {
-          if (
-            question.position > position &&
-            (question.type === "VOWEL_SEQUENCE" || question.type === "VOWEL_LENGTH" || question.type === "WORD_FINAL_VOWEL") &&
-            suppliedCoversQuestion(supplied, question)
-          ) {
-            skipQuestionPositions.add(question.position);
-          }
+      selectedConsonant = consonantSequence(entry, token, position, output);
+      suppressAutomaticSukun = selectedConsonant.omitted;
+    }
+
+    if (selectedConsonant?.supplied) {
+      const supplied = decisionCodepoints(selectedConsonant.question);
+      for (const question of entry.openQuestions) {
+        if (
+          question.position > position &&
+          !isQuestionNotApplicable(question) &&
+          (question.type === "VOWEL_SEQUENCE" || question.type === "VOWEL_LENGTH" || question.type === "WORD_FINAL_VOWEL") &&
+          suppliedCoversQuestion(supplied, question)
+        ) {
+          skipQuestionPositions.add(question.position);
         }
       }
     }
@@ -288,6 +325,9 @@ function notesFor(entry) {
 }
 
 export function materializeEntry(entry) {
+  if (isExcludedReviewEntry(entry)) {
+    throw new Error(`${entry.boko}: excluded review entry cannot be materialised`);
+  }
   const ajami = materializeAjami(entry);
   const lexiconEntry = {
     boko: entry.boko,
@@ -322,7 +362,7 @@ export function materializeLexicon(queue) {
     orthography: LEXICON_ORTHOGRAPHY,
     materialType: "ratified_human_reviewed_lexicon",
     notice: "Ajami spellings materialised from ratified native-speaker review decisions.",
-    entries: entries.map(materializeEntry),
+    entries: entries.filter((entry) => !isExcludedReviewEntry(entry)).map(materializeEntry),
   };
 }
 

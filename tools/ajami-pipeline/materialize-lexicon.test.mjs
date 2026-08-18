@@ -10,6 +10,7 @@ import {
   REVIEW_QUEUE_PATH,
   decisionCodepoints,
   materializeAjami,
+  materializeEntry,
   materializeLexicon,
   writeLexicon,
 } from "./materialize-lexicon.mjs";
@@ -52,8 +53,11 @@ test("ratified decisions determine materialised spellings", () => {
     entry.openQuestions.some((question) => question.reviewerDecision !== question.candidateAnswer)
   );
 
-  assert.equal(overriddenQuestions.length, 232);
-  assert.equal(overridden.length, 198);
+  // Counts are deliberately not hardcoded: ratification is ongoing and every
+  // new ruling moves them. Assert the invariant instead (cf. slices 34, 35c, 42).
+  assert.ok(overriddenQuestions.length > 0, "expected at least one overridden question");
+  assert.ok(overridden.length > 0, "expected at least one overridden entry");
+  assert.ok(overridden.length <= overriddenQuestions.length);
   for (const source of queue.entries) {
     const materializedCodepoints = formatCodePoints(byBoko.get(source.boko).ajami);
     for (const question of source.openQuestions) {
@@ -105,11 +109,150 @@ test("unresolved kaf/qaf question fixtures block materialisation", () => {
   );
 });
 
+test("new six-way h questions materialise fixed and reviewer-supplied sequences", () => {
+  const base = {
+    boko: "ha",
+    tokens: ["H_CONTEXT_REQUIRED", "VOWEL_A_UNLENGTHENED"],
+    openQuestions: [
+      {
+        type: "H_ORTHOGRAPHY_CLASS",
+        position: 0,
+        reviewerDecision: "H_ARABIC_HEH_PRESERVED — ه U+0647 Arabic ه preserved",
+      },
+      {
+        type: "WORD_FINAL_VOWEL",
+        position: 1,
+        reviewerDecision: "short final — U+064E",
+      },
+    ],
+  };
+  assert.equal(materializeAjami(base), "هَ");
+
+  const unresolved = structuredClone(base);
+  unresolved.openQuestions[0] = {
+    type: "H_ORTHOGRAPHY_CLASS",
+    position: 0,
+    reviewerDecision:
+      "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence",
+    reviewerSuppliedSequence: "خ",
+    reviewerSuppliedCodepoints: ["U+062E"],
+  };
+  assert.equal(materializeAjami(unresolved), "خَ");
+});
+
+test("contextual h and sukun decisions compose without the sukun answer replacing h", () => {
+  const hChoices = [
+    ["H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved", ["U+062D", "U+0652"]],
+    ["H_ARABIC_HEH_PRESERVED — ه U+0647 Arabic ه preserved", ["U+0647", "U+0652"]],
+    ["H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved", ["U+062E", "U+0652"]],
+  ];
+  const rendered = hChoices.map(([reviewerDecision, expected]) => {
+    const entry = {
+      boko: "h",
+      openQuestions: [
+        { type: "H_ORTHOGRAPHY_CLASS", position: 0, reviewerDecision },
+        {
+          type: "SUKUN",
+          position: 0,
+          reviewerDecision: "consonant + U+0652 SUKUN — U+062D U+0652",
+        },
+      ],
+    };
+    const actual = formatCodePoints(materializeAjami(entry));
+    assert.deepEqual(actual, expected);
+    return actual;
+  });
+  assert.equal(new Set(rendered.map((codepoints) => codepoints.join(" "))).size, 3);
+
+  const legacy = {
+    boko: "h",
+    openQuestions: [
+      {
+        type: "ARABIC_LEXICAL_H",
+        position: 0,
+        reviewerDecision: "Arabic lexical h — U+0647",
+      },
+      {
+        type: "SUKUN",
+        position: 0,
+        reviewerDecision: "consonant + U+0652 SUKUN — U+062D U+0652",
+      },
+    ],
+  };
+  assert.deepEqual(formatCodePoints(materializeAjami(legacy)), ["U+0647", "U+0652"]);
+
+  const standaloneSukun = {
+    boko: "b",
+    openQuestions: [
+      {
+        type: "SUKUN",
+        position: 0,
+        reviewerDecision: "consonant + U+0652 SUKUN — U+0628 U+0652",
+      },
+    ],
+  };
+  assert.deepEqual(formatCodePoints(materializeAjami(standaloneSukun)), ["U+0628", "U+0652"]);
+});
+
+test("not-applicable questions emit nothing and never fall back", () => {
+  const reason = "Synthetic human ruling: these questions do not apply.";
+  const notApplicable = {
+    resolution: { state: "not_applicable", reason },
+    lengthSource: "n/a",
+    ajamiEvidence: "none",
+    encodingRule: "ajamix-standard",
+    reviewStatus: "human-approved",
+  };
+  const entry = {
+    boko: "eh",
+    openQuestions: [
+      {
+        type: "VOWEL_LENGTH",
+        position: 0,
+        reviewerDecision: "long — U+065C U+0649 U+0670",
+      },
+      { type: "WORD_INITIAL_CARRIER", position: 0, reviewerDecision: "U+0627 ALIF" },
+      { type: "SHORT_E_CARRIER", position: 0, ...notApplicable },
+      { type: "H_ORTHOGRAPHY_CLASS", position: 1, ...notApplicable },
+      { type: "SUKUN", position: 1, ...notApplicable },
+    ],
+  };
+
+  assert.equal(materializeAjami(entry), "اٜىٰ");
+  assert.deepEqual(formatCodePoints(materializeAjami(entry)), [
+    "U+0627",
+    "U+065C",
+    "U+0649",
+    "U+0670",
+  ]);
+  assert.throws(
+    () => decisionCodepoints(entry.openQuestions[2]),
+    /question is not applicable/u
+  );
+});
+
+test("answered excluded entries cannot enter a materialised lexicon", () => {
+  const excluded = {
+    boko: "ba",
+    tokens: ["B_PLAIN", "VOWEL_A_UNLENGTHENED"],
+    category: "native_hausa",
+    status: "excluded",
+    exclusionReason: "Synthetic human exclusion ruling.",
+    openQuestions: [
+      { type: "VOWEL_LENGTH", position: 1, reviewerDecision: "short — U+064E" },
+    ],
+  };
+
+  assert.deepEqual(materializeLexicon({ entries: [excluded] }).entries, []);
+  assert.throws(() => materializeAjami(excluded), /excluded review entry cannot be materialised/u);
+  assert.throws(() => materializeEntry(excluded), /excluded review entry cannot be materialised/u);
+});
+
 test("materialised entries validate and preserve ratified special cases", () => {
   const queue = sourceQueue();
   const lexicon = materializeLexicon(queue);
 
-  assert.equal(lexicon.entries.length, 500);
+  assert.equal(lexicon.entries.length, queue.entries.length);
   for (const entry of lexicon.entries) {
     assert.equal(validateLexiconEntry(entry, { generated: true }).ok, true, entry.boko);
     assert.deepEqual(formatCodePoints(entry.ajami), entry.ajamiCodepoints, entry.boko);

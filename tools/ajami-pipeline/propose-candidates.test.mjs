@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { buildReviewQueue } from "./build-review-queue.mjs";
+import { buildReviewQueue, buildReviewQueueFromContent } from "./build-review-queue.mjs";
 import {
   proposalSummary,
   proposeCandidates,
@@ -25,15 +25,15 @@ function entryFor(queue, word) {
   );
 }
 
-test("adds proposals to all 1,412 questions without approving or changing the queue", () => {
+test("adds proposals to all 1,407 questions without approving or changing the queue", () => {
   const source = sourceQueue();
   const sourceSnapshot = JSON.stringify(source);
   const proposed = proposeCandidates(source);
   const summary = proposalSummary(proposed);
 
   assert.equal(summary.entries, 500);
-  assert.equal(summary.questions, 1412);
-  assert.equal(summary.candidates + summary.nullCandidates, 1412);
+  assert.equal(summary.questions, 1407);
+  assert.equal(summary.candidates + summary.nullCandidates, 1407);
   assert.equal(summary.approvedEntries, 0);
   assert.equal(JSON.stringify(source), sourceSnapshot);
 
@@ -73,7 +73,7 @@ test("complete candidates have exact code points and include blocked entries", (
   const proposed = proposedQueue();
   const summary = proposalSummary(proposed);
 
-  assert.equal(summary.blockedEntries, 119);
+  assert.equal(summary.blockedEntries, 120);
   assert.ok(summary.blockedWithFullCandidate > 0);
   for (const entry of proposed.entries) {
     if (entry.candidateFullAjami === null) {
@@ -104,12 +104,12 @@ test("deterministic and provisional special cases are calibrated", () => {
     (question) => question.type === "GEMINATION"
   );
 
-  assert.equal(sukun.length, 38);
+  assert.equal(sukun.length, 36);
   assert.ok(sukun.every((question) => question.confidence === "high"));
   assert.ok(sukun.every((question) => question.evidenceType === "RULE_DEFAULT"));
-  assert.equal(clusters.length, 7);
+  assert.equal(clusters.length, 8);
   assert.ok(clusters.every((question) => question.confidence !== "high"));
-  assert.equal(kArticulations.length, 124);
+  assert.equal(kArticulations.length, 121);
   assert.ok(kArticulations.every((question) => question.candidateAnswer === null));
   assert.ok(kArticulations.every((question) => question.confidence === "low"));
   assert.ok(
@@ -121,7 +121,7 @@ test("deterministic and provisional special cases are calibrated", () => {
   assert.ok(kClusters.every((question) => question.confidence === "low"));
   assert.ok(kClusters.every((question) => question.evidenceType === "UNCERTAIN_BEST_GUESS"));
   assert.ok(kClusters.every((question) => question.candidateAjamiSequence.length === 0));
-  assert.equal(legacyClusters.length, 4);
+  assert.equal(legacyClusters.length, 5);
   assert.ok(legacyClusters.every((question) => question.candidateAnswer === question.options[0]));
   assert.ok(legacyClusters.every((question) => question.confidence === "medium"));
   assert.ok(legacyClusters.every((question) => question.evidenceType === "RULE_DEFAULT"));
@@ -134,13 +134,27 @@ test("deterministic and provisional special cases are calibrated", () => {
   assert.deepEqual(sannanGemination.candidateAjamiSequence, ["U+08BD", "U+0651"]);
 });
 
+test("VOWEL_LENGTH proposals remain canonical after adding the lexical exception option", () => {
+  const questions = proposedQueue().entries
+    .flatMap((entry) => entry.openQuestions)
+    .filter((question) => question.type === "VOWEL_LENGTH");
+
+  assert.ok(questions.length > 0);
+  assert.ok(questions.every((question) => question.options.length === 3));
+  assert.ok(
+    questions.every((question) => question.options.slice(0, 2).includes(question.candidateAnswer))
+  );
+  assert.ok(questions.every((question) => !/must supply/iu.test(question.candidateAnswer)));
+  assert.ok(questions.every((question) => question.candidateAjamiSequence.length > 0));
+});
+
 test("lexical h and apostrophe proposals carry word-specific classifications and sequences", () => {
   const proposed = proposedQueue();
   const fahimta = entryFor(proposed, "fahimta").openQuestions.find(
-    (question) => question.type === "ARABIC_LEXICAL_H"
+    (question) => question.type === "H_ORTHOGRAPHY_CLASS"
   );
   const hada = entryFor(proposed, "haɗa").openQuestions.find(
-    (question) => question.type === "ARABIC_LEXICAL_H"
+    (question) => question.type === "H_ORTHOGRAPHY_CLASS"
   );
   const community = entryFor(proposed, "al'umma").openQuestions.find(
     (question) => question.type === "APOSTROPHE_ROLE"
@@ -149,14 +163,64 @@ test("lexical h and apostrophe proposals carry word-specific classifications and
     (question) => question.type === "APOSTROPHE_ROLE"
   );
 
-  assert.match(fahimta.candidateAnswer, /H_ARABIC_LEXICAL/u);
+  assert.match(fahimta.candidateAnswer, /H_ARABIC_HEH_PRESERVED/u);
+  assert.equal(fahimta.proposedHCategory, "H_ARABIC_HEH_PRESERVED");
   assert.deepEqual(fahimta.candidateAjamiSequence, ["U+0647"]);
-  assert.match(hada.candidateAnswer, /H_NATIVE_HAUSA/u);
+  assert.match(hada.candidateAnswer, /H_HAUSA_PHONEMIC/u);
+  assert.equal(hada.proposedHCategory, "H_HAUSA_PHONEMIC");
   assert.deepEqual(hada.candidateAjamiSequence, ["U+062D"]);
   assert.match(community.candidateAnswer, /^glottal boundary/u);
   assert.deepEqual(community.candidateAjamiSequence, ["U+0623"]);
   assert.match(measure.candidateAnswer, /^morpheme boundary/u);
   assert.deepEqual(measure.candidateAjamiSequence, ["U+0623"]);
+});
+
+test("unresolved h proposals classify without supplying a decision or fallback glyph", () => {
+  const source = buildReviewQueueFromContent(
+    { modules: [{ id: "h-fixture", titleHa: "Hira" }] },
+    { limit: 1 }
+  ).queue;
+  const proposed = proposeCandidates(source);
+  const question = proposed.entries[0].openQuestions.find(
+    (candidate) => candidate.type === "H_ORTHOGRAPHY_CLASS"
+  );
+
+  assert.equal(question.proposedHCategory, "H_LEXICAL_UNRESOLVED");
+  assert.equal(question.candidateAnswer, null);
+  assert.deepEqual(question.candidateAjamiSequence, []);
+  assert.equal(proposed.entries[0].candidateFullAjami, null);
+});
+
+test("short-e carrier is a rule default only after an explicit same-position short decision", () => {
+  const source = buildReviewQueueFromContent(
+    { modules: [{ id: "short-e-fixture", titleHa: "Eh" }] },
+    { limit: 1 }
+  ).queue;
+  const entry = source.entries[0];
+  const vowelLength = entry.openQuestions.find(
+    (question) => question.type === "VOWEL_LENGTH" && question.position === 0
+  );
+  const proposalFor = (decision) => {
+    vowelLength.reviewerDecision = decision;
+    return proposeCandidates(source).entries[0].openQuestions.find(
+      (question) => question.type === "SHORT_E_CARRIER" && question.position === 0
+    );
+  };
+
+  const unanswered = proposalFor(null);
+  assert.equal(unanswered.candidateAnswer, null);
+  assert.equal(unanswered.confidence, "low");
+  assert.equal(unanswered.evidenceType, "UNCERTAIN_BEST_GUESS");
+
+  const long = proposalFor(vowelLength.options.find((option) => /^long —/u.test(option)));
+  assert.equal(long.candidateAnswer, null);
+  assert.equal(long.confidence, "low");
+  assert.equal(long.evidenceType, "UNCERTAIN_BEST_GUESS");
+
+  const short = proposalFor(vowelLength.options.find((option) => /^short —/u.test(option)));
+  assert.equal(short.candidateAnswer, short.options[0]);
+  assert.equal(short.confidence, "high");
+  assert.equal(short.evidenceType, "RULE_DEFAULT");
 });
 
 test("review Markdown exposes full proposals, low-confidence warnings, and blank ratification cells", () => {
