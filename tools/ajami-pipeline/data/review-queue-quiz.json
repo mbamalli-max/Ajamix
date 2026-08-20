@@ -582,7 +582,7 @@
             "long — U+0650 U+0649",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
           ],
-      "candidateCodePointSequences": {
+          "candidateCodePointSequences": {
             "short": [
               "U+0650"
             ],
@@ -1103,7 +1103,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -2068,7 +2074,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -2252,7 +2264,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -3674,7 +3692,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "blocked",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -3742,7 +3760,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -3772,8 +3796,8 @@
         "[p1-maths-24 | modules.47.audioScript] Ka tattara bayani daga abokanka ko 'yan uwanka, kamar launin da suka fi so, sannan ka yi ƙaramar alama ko zane don nuna adadi.",
         "[p1-maths-24 | modules.47.segments.0.text.ha] Ka tattara bayani daga abokanka ko 'yan uwanka, kamar launin da suka fi so, sannan ka yi ƙaramar alama ko zane don nuna adadi."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
       "redundantQuestionsRemoved": 2
     },
     {
@@ -4818,7 +4842,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -5594,7 +5624,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "blocked",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -5662,7 +5692,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -5692,8 +5728,8 @@
         "[V02 | modules.79.quizQuestions.1.distractorFormulas.1] Sauyin yanayi na rana",
         "[p6-maths-12 | modules.225.textExplanationHa] Rubuta sauyin nau'i a gefe, sannan ka yi aiki da lambobi cikin natsuwa."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
       "redundantQuestionsRemoved": 2
     },
     {
@@ -6874,7 +6910,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -7085,7 +7127,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -11320,7 +11368,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -11843,40 +11897,40 @@
           "position": 0,
           "letter": "e",
           "question": "If the word-initial 'e' is short, confirm the required U+0639 AIN carrier before U+065C per standard §7.",
-      "options": [
-        "short-e carrier — U+0639 U+065C",
-        "lexical exception — reviewer must supply the exact Unicode replacement sequence"
-      ],
-      "resolution": {
-        "state": "not_applicable",
-        "reason": "Muhammad ruled 2026-08-17: final Boko h in eh is non-phonemic; eh is an orthographic variant of affirmative e (long e). No consonant, no carrier-shortening, no sukun applies."
-      },
-      "lengthSource": "n/a",
-      "ajamiEvidence": "none",
-      "encodingRule": "ajamix-standard",
-      "reviewStatus": "human-approved"
+          "options": [
+            "short-e carrier — U+0639 U+065C",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "resolution": {
+            "state": "not_applicable",
+            "reason": "Muhammad ruled 2026-08-17: final Boko h in eh is non-phonemic; eh is an orthographic variant of affirmative e (long e). No consonant, no carrier-shortening, no sukun applies."
+          },
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "H_ORTHOGRAPHY_CLASS",
           "position": 1,
           "arabicLoanCandidate": false,
           "question": "Classify the 'h' in 'eh' as Hausa phonemic, preserved Arabic ḥāʾ/hāʾ/khāʾ, Hausa epenthetic, or lexically unresolved.",
-      "options": [
+          "options": [
             "H_HAUSA_PHONEMIC — ح U+062D native Hausa /h/",
             "H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved",
             "H_ARABIC_HEH_PRESERVED — ه U+0647 Arabic ه preserved",
             "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
-        "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
-        "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
-      ],
-      "resolution": {
-        "state": "not_applicable",
-        "reason": "Muhammad ruled 2026-08-17: final Boko h in eh is non-phonemic; eh is an orthographic variant of affirmative e (long e). No consonant, no carrier-shortening, no sukun applies."
-      },
-      "lengthSource": "n/a",
-      "ajamiEvidence": "none",
-      "encodingRule": "ajamix-standard",
-      "reviewStatus": "human-approved"
+            "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
+            "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "resolution": {
+            "state": "not_applicable",
+            "reason": "Muhammad ruled 2026-08-17: final Boko h in eh is non-phonemic; eh is an orthographic variant of affirmative e (long e). No consonant, no carrier-shortening, no sukun applies."
+          },
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -11886,17 +11940,17 @@
           "options": [
             "consonant + U+0652 SUKUN — U+062D U+0652"
           ],
-      "candidateCodePointSequences": {
+          "candidateCodePointSequences": {
             "closedSyllable": [
               "U+062D",
-          "U+0652"
-        ]
-      },
-      "resolution": {
-        "state": "not_applicable",
-        "reason": "Muhammad ruled 2026-08-17: final Boko h in eh is non-phonemic; eh is an orthographic variant of affirmative e (long e). No consonant, no carrier-shortening, no sukun applies."
-      },
-      "lengthSource": "n/a",
+              "U+0652"
+            ]
+          },
+          "resolution": {
+            "state": "not_applicable",
+            "reason": "Muhammad ruled 2026-08-17: final Boko h in eh is non-phonemic; eh is an orthographic variant of affirmative e (long e). No consonant, no carrier-shortening, no sukun applies."
+          },
+          "lengthSource": "n/a",
           "ajamiEvidence": "none",
           "encodingRule": "ajamix-standard",
           "reviewStatus": "human-approved"
@@ -15368,7 +15422,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -17372,7 +17432,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -17463,7 +17529,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "GEMINATION",
@@ -17592,7 +17664,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -18440,7 +18518,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -18530,7 +18614,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -19028,7 +19118,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_SEQUENCE",
@@ -19069,7 +19165,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -21219,7 +21321,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -22243,7 +22351,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -23686,7 +23800,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -23793,7 +23913,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -25632,7 +25758,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -28502,7 +28634,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -30240,7 +30378,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -30500,7 +30644,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -31510,7 +31660,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -32347,7 +32503,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -38725,7 +38887,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -40528,7 +40696,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -40679,7 +40853,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -41109,7 +41289,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "SUKUN",
@@ -41234,7 +41420,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+0648 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -45698,7 +45890,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-19 (VOWEL_SEQUENCE batch).",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
