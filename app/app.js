@@ -482,9 +482,11 @@
   }
 
   function getDisplayTitleMarkup(module) {
-    return state.settings.scriptMode === "ajami"
-      ? formatAjamiText(getDisplayTitle(module))
-      : escapeHtml(getDisplayTitle(module));
+    var title = getDisplayTitle(module);
+    if (state.settings.scriptMode === "ajami") {
+      return title ? formatAjamiText(title) : renderCompactAjamiAudioFallbackState();
+    }
+    return escapeHtml(title);
   }
 
   function getDisplayQuestion(questionText, questionAjami, variables) {
@@ -498,7 +500,10 @@
 
   function getDisplaySubject(module) {
     if (state.settings.scriptMode === "ajami") {
-      return formatAjamiText(getManagedAjamiField(module, "subjectAjami"));
+      var subjectAjami = getManagedAjamiField(module, "subjectAjami");
+      return subjectAjami
+        ? formatAjamiText(subjectAjami)
+        : renderCompactAjamiAudioFallbackState();
     }
     return escapeHtml(module.subjectHa || module.subjectEn || module.subject || "");
   }
@@ -540,6 +545,14 @@
     return state.settings.scriptMode === "ajami"
       ? '<span' + classMarkup + ">" + formatAjamiText(pair.ajami) + "</span>"
       : '<span' + classMarkup + ">" + escapeHtml(pair.ha) + "</span>";
+  }
+
+  function renderLocalizedShortString(copy, className, fallbackHa) {
+    var pair = getLocalizedPair(copy, fallbackHa);
+    if (state.settings.scriptMode === "ajami" && !pair.ajami) {
+      return renderCompactAjamiAudioFallbackState();
+    }
+    return renderLocalizedInline(pair, className);
   }
 
   function getModuleTitlePair(module) {
@@ -2488,12 +2501,23 @@
   }
 
   function renderOnboardingStep4() {
+    var selectedScript = onboardingData.scriptMode || state.settings.scriptMode || "latin";
     return [
       '<div class="ob-step">',
       '<div class="screen-heading">',
       '<p class="eyebrow">' + ha("Matakin 4 na 7") + "</p>",
       "<h2>" + ha("Salon rubutu") + "</h2>",
-      '<p class="screen-copy">' + ha("A wannan lokacin, karatu zai kasance a Hausa (Latin) kawai. Za a kara Ajami bayan an tabbatar da fassarar.") + "</p>",
+      '<p class="screen-copy">' + ha("Zaɓi Ajami ko Latin (Boko). Za ka iya canja salon rubutu daga Settings a kowane lokaci.") + "</p>",
+      "</div>",
+      '<div class="ob-choice-grid">',
+      '<button class="ob-choice' + (selectedScript === "ajami" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-ajami">',
+      "<strong>Ajami</strong>",
+      "<span>" + ha("Rubutun Ajami daga kalmomin da aka tabbatar.") + "</span>",
+      "</button>",
+      '<button class="ob-choice' + (selectedScript === "latin" ? " ob-choice--active" : "") + '" type="button" data-action="ob-set-script-latin">',
+      "<strong>Latin (Boko)</strong>",
+      "<span>" + ha("Rubutun Hausa na Latin (Boko).") + "</span>",
+      "</button>",
       "</div>",
       '<div class="ob-nav">',
       '<button class="ghost-btn" type="button" data-action="onboarding-back">' + ha("← Baya") + "</button>",
@@ -2639,8 +2663,8 @@
         '<p class="eyebrow">Quiz</p>',
         "<h2>" +
           (state.settings.scriptMode === "ajami"
-            ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
-            : escapeHtml(getDisplayTitle(module))) +
+            ? '<span class="ajami">' + getDisplayTitleMarkup(module) + "</span>"
+            : getDisplayTitleMarkup(module)) +
           "</h2>",
         '<p class="helper-text">' + escapeHtml(session.error) + "</p>",
         '<div class="btn-row">',
@@ -2720,8 +2744,8 @@
       '<p class="eyebrow">Quiz</p>',
       "<h2>" +
         (state.settings.scriptMode === "ajami"
-          ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
-          : escapeHtml(getDisplayTitle(module))) +
+          ? '<span class="ajami">' + getDisplayTitleMarkup(module) + "</span>"
+          : getDisplayTitleMarkup(module)) +
         "</h2>",
       '<p class="screen-copy">' + ha("Ka amsa tambaya daya bayan daya. AJAMIX za ta duba sakamakon ta atomatik.") + "</p>",
       "</div>",
@@ -2795,7 +2819,7 @@
           '<div class="screen-stack">',
           "<strong>" + ha(module.titleHa) + "</strong>",
           state.settings.scriptMode === "ajami"
-            ? '<span class="ajami">' + formatAjamiText(module.titleAjami) + "</span>"
+            ? '<span class="ajami">' + getDisplayTitleMarkup(module) + "</span>"
             : "",
           "</div>",
           '<span class="' + getStatusBadgeClass(moduleMetrics.status) + '">' + getStatusCopy(moduleMetrics.status) + "</span>",
@@ -2903,7 +2927,7 @@
               '<li class="glossary-item">',
               "<strong>" + ha(getGlossaryHausa(item)) + "</strong>",
               state.settings.scriptMode === "ajami"
-                ? '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>"
+                ? '<span class="ajami">' + getDisplayGlossaryTermMarkup(item) + "</span>"
                 : "",
               "<span>" + ha(getGlossaryMeaningHa(item)) + "</span>",
               '<span class="muted-copy">' + escapeHtml(getGlossaryMeaningEn(item)) + "</span>",
@@ -3071,6 +3095,17 @@
       "</div>",
       "</article>",
       '<article class="settings-panel">',
+      '<div class="settings-section">',
+      "<h3>Salon rubutu</h3>",
+      '<ul class="settings-list">',
+      '<li><label><input type="radio" name="scriptMode" value="ajami" data-action="settings-set-script-ajami" ' +
+        (state.settings.scriptMode === "ajami" ? "checked" : "") +
+        ' /> Ajami</label></li>',
+      '<li><label><input type="radio" name="scriptMode" value="latin" data-action="settings-set-script-latin" ' +
+        (state.settings.scriptMode === "latin" ? "checked" : "") +
+        ' /> Latin (Boko)</label></li>',
+      "</ul>",
+      "</div>",
       '<div class="settings-section">',
       "<h3>" + ha("Ajiye audio") + "</h3>",
       '<ul class="settings-list">',
@@ -4530,6 +4565,19 @@
       "</div>";
   }
 
+  function renderCompactAjamiAudioFallbackState() {
+    return [
+      '<span class="lesson-audio-coming-soon lesson-audio-coming-soon--compact" role="note">',
+      '<span class="lesson-audio-coming-soon-body">',
+      '<span class="lesson-audio-coming-soon-icon" aria-hidden="true">♪</span>',
+      '<span class="lesson-audio-coming-soon-copy">',
+      '<span class="lesson-audio-coming-soon-title ajami">' + formatAjamiText(AJAMI_AUDIO_COMING_SOON) + "</span>",
+      "</span>",
+      "</span>",
+      "</span>",
+    ].join("");
+  }
+
   function renderLessonImageComingSoon() {
     return [
       '<div class="lesson-audio-coming-soon lesson-image-coming-soon" data-image-coming-soon role="note" aria-label="' +
@@ -4580,7 +4628,7 @@
           '" type="button" data-action="toggle-glossary-term" data-term-key="' +
           escapeAttribute(key) +
           '">' +
-          ha(getGlossaryHausa(item)) +
+          getDisplayGlossaryTermMarkup(item) +
           "</button>"
         );
       })
@@ -4595,7 +4643,11 @@
     return [
       '<div class="screen-stack">',
       "<strong>" + ha(getGlossaryHausa(item)) + "</strong>",
-      getGlossaryAjami(item) ? '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>" : "",
+      getGlossaryAjami(item)
+        ? '<span class="ajami">' + formatAjamiText(getGlossaryAjami(item)) + "</span>"
+        : state.settings.scriptMode === "ajami"
+          ? '<span class="ajami">' + renderCompactAjamiAudioFallbackState() + "</span>"
+          : "",
       getGlossaryMeaningHa(item) ? "<span>" + ha(getGlossaryMeaningHa(item)) + "</span>" : "",
       getGlossaryMeaningEn(item) ? '<span class="muted-copy">' + escapeHtml(getGlossaryMeaningEn(item)) + "</span>" : "",
       "</div>",
@@ -4652,7 +4704,17 @@
   }
 
   function getGlossaryAjami(item) {
-    return item.termAjami || "";
+    return getManagedAjamiField(item, "termAjami");
+  }
+
+  function getDisplayGlossaryTermMarkup(item) {
+    if (state.settings.scriptMode === "latin") {
+      return escapeHtml(getGlossaryHausa(item));
+    }
+    var termAjami = getGlossaryAjami(item);
+    return termAjami
+      ? formatAjamiText(termAjami)
+      : renderCompactAjamiAudioFallbackState();
   }
 
   function getGlossaryMeaningHa(item) {
@@ -5049,7 +5111,7 @@
       '<p class="eyebrow">' + ha("Duba gobe") + "</p>",
       '<h3 id="tomorrow-check-title">' +
         ha("A jiya, kun ce za ku yi amfani da ") +
-        renderLocalizedInline(getModuleTitlePair(module), "retention-inline-title") +
+        renderLocalizedShortString(getModuleTitlePair(module), "retention-inline-title") +
         ha(". Shin kun yi amfani da shi?") +
         "</h3>",
       '<div class="btn-row">',
@@ -5075,7 +5137,7 @@
         '<p class="retention-reward-text">' + renderLocalizedInline(activeCheck.proverb, "retention-proverb") + "</p>",
         '<p class="helper-text">' +
           ha("Saboda ka yi amfani da ") +
-          renderLocalizedInline(getModuleTitlePair(module), "retention-inline-title") +
+          renderLocalizedShortString(getModuleTitlePair(module), "retention-inline-title") +
           ha(", ka samu sabon karin magana.") +
           "</p>",
         "</div>",
@@ -5091,7 +5153,7 @@
       '<p class="eyebrow">' + ha("Karamin tunatarwa") + "</p>",
       '<h3 id="tomorrow-check-result-title">' + ha("Ka sake gwadawa da wannan kalma") + "</h3>",
       '<div class="retention-tip-card">',
-      '<span class="status-badge is-active">' + renderLocalizedInline(activeCheck.tip.term) + "</span>",
+      '<span class="status-badge is-active">' + renderLocalizedShortString(activeCheck.tip.term) + "</span>",
       '<p class="retention-tip-copy">' + renderLocalizedInline(activeCheck.tip.definition, "retention-tip-text") + "</p>",
       "</div>",
       '<button class="btn" type="button" data-action="tomorrow-check-continue">' + ha(continueLabel) + "</button>",
@@ -5229,7 +5291,7 @@
       '<p class="eyebrow">' + ha("Matsalar da ke gaba") + "</p>",
       '<p class="gap-teaser-lead">' +
         ha("Kun koyi yadda ake ") +
-        renderLocalizedInline(getModuleTitlePair(module), "gap-teaser-title") +
+        renderLocalizedShortString(getModuleTitlePair(module), "gap-teaser-title") +
         ha(". Amma wata matsala ta gaba ita ce:") +
         "</p>",
       "</div>",
@@ -5436,7 +5498,7 @@
           '<span class="' + getPathBadgeClass(entry.state) + '">' + getPathStateCopy(entry.state) + "</span>",
           "</div>",
           state.settings.scriptMode === "ajami"
-            ? '<p class="ajami path-title-ajami">' + formatAjamiText(getManagedAjamiField(module, "titleAjami")) + "</p>"
+            ? '<p class="ajami path-title-ajami">' + getDisplayTitleMarkup(module) + "</p>"
             : '<p class="path-title-hausa path-title-primary">' + ha(module.titleHa || "") + "</p>",
           state.settings.scriptMode === "ajami"
             ? '<p class="path-title-hausa">' + ha(module.titleHa || "") + "</p>"
@@ -5514,7 +5576,7 @@
         return [
           '<a class="caregiver-card" href="#/caregiver-activity/' + escapeAttribute(activity.activityId) + '">',
           '<div class="caregiver-card-body">',
-          '<p class="ajami caregiver-ajami">' + formatAjamiText(activity.topicAjami) + "</p>",
+          '<p class="ajami caregiver-ajami">' + getDisplayActivityTopicAjamiMarkup(activity) + "</p>",
           '<p class="caregiver-topic">' + ha(activity.topicHa) + "</p>",
           "</div>",
           '<span class="caregiver-arrow">▶</span>',
@@ -5560,7 +5622,7 @@
       '<div class="lesson-topbar">',
       '<button class="ghost-btn lesson-back-button" type="button" data-route="#/caregiver" aria-label="' + ha("Koma baya") + '">←</button>',
       '<div class="lesson-heading-block">',
-      '<p class="ajami lesson-title-large">' + formatAjamiText(activity.topicAjami) + "</p>",
+      '<p class="ajami lesson-title-large">' + getDisplayActivityTopicAjamiMarkup(activity) + "</p>",
       '<p class="lesson-title-small">' + ha(activity.topicHa) + "</p>",
       "</div>",
       "</div>",
@@ -5587,7 +5649,7 @@
             '<p class="eyebrow">' + ha("Katin Ajami") + "</p>",
             '<div class="placeholder-media lesson-image-card">',
             '<strong>' + ha(activity.topicHa) + "</strong>",
-            '<span class="ajami">' + formatAjamiText(activity.topicAjami) + "</span>",
+            '<span class="ajami">' + getDisplayActivityTopicAjamiMarkup(activity) + "</span>",
             "</div>",
             "</section>",
           ].join("")
@@ -5637,8 +5699,8 @@
       '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="' + ha("Koma baya") + '">←</button>',
       '<div class="lesson-heading-block">',
       state.settings.scriptMode === "ajami"
-        ? '<p class="ajami lesson-title-large">' + formatAjamiText(getDisplayTitle(module)) + "</p>"
-        : '<p class="lesson-title-large lesson-title-large--latin">' + escapeHtml(getDisplayTitle(module)) + "</p>",
+        ? '<p class="ajami lesson-title-large">' + getDisplayTitleMarkup(module) + "</p>"
+        : '<p class="lesson-title-large lesson-title-large--latin">' + getDisplayTitleMarkup(module) + "</p>",
       state.settings.scriptMode === "ajami"
         ? '<p class="lesson-title-small">' + ha(module.titleHa || "") + "</p>"
         : "",
@@ -5760,8 +5822,8 @@
       '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="' + ha("Koma baya") + '">←</button>',
       '<div class="lesson-heading-block">',
       state.settings.scriptMode === "ajami"
-        ? '<p class="ajami lesson-title-large">' + formatAjamiText(getDisplayTitle(module)) + "</p>"
-        : '<p class="lesson-title-large lesson-title-large--latin">' + escapeHtml(getDisplayTitle(module)) + "</p>",
+        ? '<p class="ajami lesson-title-large">' + getDisplayTitleMarkup(module) + "</p>"
+        : '<p class="lesson-title-large lesson-title-large--latin">' + getDisplayTitleMarkup(module) + "</p>",
       state.settings.scriptMode === "ajami"
         ? '<p class="lesson-title-small">' + ha(module.titleHa || "") + "</p>"
         : "",
@@ -5842,8 +5904,8 @@
       '<button class="ghost-btn lesson-back-button" type="button" data-route="#/learning-path" aria-label="' + ha("Koma baya") + '">←</button>',
       '<div class="lesson-heading-block">',
       state.settings.scriptMode === "ajami"
-        ? '<p class="ajami lesson-title-large">' + formatAjamiText(getDisplayTitle(module)) + "</p>"
-        : '<p class="lesson-title-large lesson-title-large--latin">' + escapeHtml(getDisplayTitle(module)) + "</p>",
+        ? '<p class="ajami lesson-title-large">' + getDisplayTitleMarkup(module) + "</p>"
+        : '<p class="lesson-title-large lesson-title-large--latin">' + getDisplayTitleMarkup(module) + "</p>",
       '<p class="lesson-title-small">' + getDisplaySubject(module) + "</p>",
       "</div>",
       "</div>",
@@ -6842,6 +6904,16 @@
     }) || null;
   }
 
+  function getDisplayActivityTopicAjamiMarkup(activity) {
+    var topicAjami = getManagedAjamiField(activity, "topicAjami");
+    if (topicAjami) {
+      return formatAjamiText(topicAjami);
+    }
+    return state.settings.scriptMode === "ajami"
+      ? renderCompactAjamiAudioFallbackState()
+      : "";
+  }
+
   function buildProgressMap() {
     return state.progress.reduce(function (accumulator, record) {
       accumulator[record.id] = record;
@@ -6882,7 +6954,7 @@
       gradeBand: chosenBand,
       displayName: onboardingData.displayName || state.settings.displayName || "Dalibi",
       learnerType: onboardingData.learnerType || state.settings.learnerType || "child",
-      scriptMode: "latin",
+      scriptMode: onboardingData.scriptMode || state.settings.scriptMode || "latin",
       trackPreference: chosenTrack,
       featureFlags: nextFeatureFlags,
       audioDownloadPromptSeen: isFirstOnboarding ? false : state.settings.audioDownloadPromptSeen,
@@ -6983,7 +7055,6 @@
       nextSettings[record.key] = record.value;
     });
 
-    nextSettings.scriptMode = "latin";
     nextSettings.trackPreference = normalizeTrackPreference(nextSettings.trackPreference);
     if (nextSettings.trackPreference === "vocational") {
       nextSettings.gradeBand = ALLOWED_GRADE_BANDS.indexOf(nextSettings.gradeBand) >= 0
@@ -7000,14 +7071,6 @@
     state.settings = nextSettings;
     state.streakData = normalizeStreakData(nextSettings.streakData);
 
-    var storedScriptMode = records.find(function (r) { return r.key === "scriptMode"; });
-    if (storedScriptMode && storedScriptMode.value !== "latin") {
-      try {
-        await putRecord("settings", { key: "scriptMode", value: "latin" });
-      } catch (error) {
-        logError(error);
-      }
-    }
   }
 
   async function loadProgress() {
@@ -8650,8 +8713,8 @@
       '<p class="eyebrow">' + ha("Sakamakon Quiz") + "</p>",
       "<h2>" +
         (state.settings.scriptMode === "ajami"
-          ? '<span class="ajami">' + formatAjamiText(getDisplayTitle(module)) + "</span>"
-          : escapeHtml(getDisplayTitle(module))) +
+          ? '<span class="ajami">' + getDisplayTitleMarkup(module) + "</span>"
+          : getDisplayTitleMarkup(module)) +
         "</h2>",
       vocationalTodayPrompt,
       '<p class="screen-copy">' + ha("Ka samu ") +

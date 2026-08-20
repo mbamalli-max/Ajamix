@@ -14,17 +14,24 @@ function loadRenderer() {
   const exports = `
   globalThis.__ajamixRendererTest = {
     setScriptMode: function (mode) { state.settings.scriptMode = mode; },
+    setOnboardingScriptMode: function (mode) { onboardingData.scriptMode = mode; },
     getManagedAjamiField: getManagedAjamiField,
     getDisplayTitle: getDisplayTitle,
+    getDisplayTitleMarkup: getDisplayTitleMarkup,
     getDisplayQuestion: getDisplayQuestion,
     getDisplaySubject: getDisplaySubject,
+    getDisplayActivityTopicAjamiMarkup: getDisplayActivityTopicAjamiMarkup,
+    getDisplayGlossaryTermMarkup: getDisplayGlossaryTermMarkup,
     getDisplayQuizOption: getDisplayQuizOption,
     getLocalizedPair: getLocalizedPair,
     ha: ha,
     getLessonBodyText: getLessonBodyText,
     renderLessonBodyCopy: renderLessonBodyCopy,
     getFormalSegmentText: getFormalSegmentText,
-    renderLessonAudioComingSoonBanner: renderLessonAudioComingSoonBanner
+    renderLessonAudioComingSoonBanner: renderLessonAudioComingSoonBanner,
+    renderCompactAjamiAudioFallbackState: renderCompactAjamiAudioFallbackState,
+    renderOnboardingStep4: renderOnboardingStep4,
+    renderSettingsScreen: renderSettingsScreen
   };
 `;
   const instrumented = source.slice(0, closeIndex) + exports + source.slice(closeIndex);
@@ -68,10 +75,12 @@ test("Ajami renderer is field-presence gated and never restores the retired gues
   renderer.setScriptMode("ajami");
   assert.equal(renderer.getDisplayTitle(FIXTURE), FIXTURE.titleAjami);
   assert.equal(renderer.getDisplayTitle({ ...FIXTURE, titleAjami: null }), "");
+  assert.match(renderer.getDisplayTitleMarkup({ ...FIXTURE, titleAjami: null }), /lesson-audio-coming-soon--compact/u);
   assert.equal(renderer.getDisplayTitle({ ...FIXTURE, status: "excluded" }), "");
   assert.equal(renderer.getDisplayQuestion(FIXTURE.questionHa, FIXTURE.questionAjami, { a: 4 }), "کِرْغَوَا <span class=\"math-inline\">4</span>");
   assert.equal(renderer.getDisplayQuestion(FIXTURE.questionHa, null, { a: 4 }), "");
   assert.equal(renderer.getDisplaySubject(FIXTURE), FIXTURE.subjectAjami);
+  assert.match(renderer.getDisplaySubject({ ...FIXTURE, subjectAjami: null }), /lesson-audio-coming-soon--compact/u);
   assert.equal(renderer.ha(FIXTURE.titleHa), "");
   assert.equal(renderer.getLocalizedPair({ ha: FIXTURE.titleHa, ajami: null }).ajami, "");
   assert.equal(renderer.getLocalizedPair({ ha: FIXTURE.titleHa, ajami: FIXTURE.titleAjami }).ajami, FIXTURE.titleAjami);
@@ -81,6 +90,72 @@ test("Ajami renderer is field-presence gated and never restores the retired gues
   );
   assert.equal(renderer.getDisplayQuizOption("uncovered", { optionAjamiByText: {} }), "");
   assert.equal(renderer.getDisplayQuizOption("12.5", { optionAjamiByText: {} }), '<span class="math-inline">12</span>.<span class="math-inline">5</span>');
+});
+
+test("compact Ajami fallback covers short managed strings without exposing Boko", () => {
+  const { renderer } = loadRenderer();
+  const uncoveredActivity = { topicHa: "Uncovered activity", topicAjami: null };
+  const uncoveredGlossary = { termHa: "Sphere", termAjami: null };
+
+  renderer.setScriptMode("ajami");
+  const compactFallback = renderer.renderCompactAjamiAudioFallbackState();
+  assert.match(compactFallback, /lesson-audio-coming-soon--compact/u);
+  assert.match(compactFallback, /lesson-audio-coming-soon-icon[^>]*>♪</u);
+  assert.match(compactFallback, new RegExp(FIXTURE.audioComingSoonAjami, "u"));
+  assert.doesNotMatch(compactFallback, /Sauti yana zuwa/u);
+  assert.match(renderer.getDisplayActivityTopicAjamiMarkup(uncoveredActivity), /lesson-audio-coming-soon--compact/u);
+  assert.match(renderer.getDisplayGlossaryTermMarkup(uncoveredGlossary), /lesson-audio-coming-soon--compact/u);
+  assert.doesNotMatch(renderer.getDisplayActivityTopicAjamiMarkup(uncoveredActivity), /Uncovered activity/u);
+  assert.doesNotMatch(renderer.getDisplayGlossaryTermMarkup(uncoveredGlossary), /Sphere/u);
+
+  renderer.setScriptMode("latin");
+  assert.equal(renderer.getDisplayTitleMarkup(FIXTURE), FIXTURE.titleHa);
+  assert.equal(renderer.getDisplaySubject(FIXTURE), FIXTURE.subjectHa);
+  assert.equal(renderer.getDisplayActivityTopicAjamiMarkup(uncoveredActivity), "");
+  assert.equal(renderer.getDisplayGlossaryTermMarkup(uncoveredGlossary), "Sphere");
+});
+
+test("script choice is reachable and no load or onboarding completion lock remains", () => {
+  const { renderer, source } = loadRenderer();
+  const loadSettingsSource = source.slice(
+    source.indexOf("async function loadSettings"),
+    source.indexOf("async function loadProgress")
+  );
+  const completeOnboardingSource = source.slice(
+    source.indexOf("async function completeOnboarding"),
+    source.indexOf("async function saveSettings")
+  );
+
+  assert.match(source, /var DEFAULT_SETTINGS = \{[\s\S]*?scriptMode: "latin"/u);
+  assert.doesNotMatch(loadSettingsSource, /nextSettings\.scriptMode\s*=\s*"latin"/u);
+  assert.doesNotMatch(loadSettingsSource, /storedScriptMode/u);
+  assert.match(
+    completeOnboardingSource,
+    /scriptMode: onboardingData\.scriptMode \|\| state\.settings\.scriptMode \|\| "latin"/u
+  );
+  assert.match(source, /settings-set-script-ajami"\) \{\s*await saveSettings\(\{ scriptMode: "ajami" \}\)/u);
+  assert.match(source, /settings-set-script-latin"\) \{\s*await saveSettings\(\{ scriptMode: "latin" \}\)/u);
+
+  const initialOnboarding = renderer.renderOnboardingStep4();
+  assert.match(initialOnboarding, /data-action="ob-set-script-ajami"/u);
+  assert.match(initialOnboarding, /ob-choice ob-choice--active"[^>]*data-action="ob-set-script-latin"/u);
+  assert.doesNotMatch(initialOnboarding, /kawai\. Za a kara Ajami/u);
+
+  renderer.setOnboardingScriptMode("ajami");
+  assert.match(
+    renderer.renderOnboardingStep4(),
+    /ob-choice ob-choice--active"[^>]*data-action="ob-set-script-ajami"/u
+  );
+
+  renderer.setScriptMode("latin");
+  const latinSettings = renderer.renderSettingsScreen();
+  assert.match(latinSettings, /data-action="settings-set-script-ajami"/u);
+  assert.match(latinSettings, /data-action="settings-set-script-latin" checked/u);
+
+  renderer.setScriptMode("ajami");
+  const ajamiSettings = renderer.renderSettingsScreen();
+  assert.match(ajamiSettings, /data-action="settings-set-script-ajami" checked/u);
+  assert.match(ajamiSettings, /Latin \(Boko\)/u);
 });
 
 test("uncovered Ajami prose uses the existing audio-coming fallback while Latin prose is unchanged", () => {
