@@ -2,15 +2,15 @@
   "schemaVersion": 1,
   "materialType": "lexicon_composed_content_ajami_coverage",
   "source": "app/content.json",
-  "lexiconEntryCount": 797,
+  "lexiconEntryCount": 1228,
   "invariant": "A managed Ajami field holds a non-null value if and only if its entire Boko source string was composed from ratified lexicon entries. null (or an absent key, where the schema never had one) means no lexicon coverage, which the renderer resolves to audio playback. ajami_validated stays false on every entry and is never set true.",
   "fields": {
     "titleAjami": {
       "source": "modules[].titleHa",
       "total": 389,
-      "covered": 343,
-      "uncovered": 46,
-      "coveragePercent": 88.17
+      "covered": 344,
+      "uncovered": 45,
+      "coveragePercent": 88.43
     },
     "subjectAjami": {
       "source": "modules[].subjectHa",
@@ -80,10 +80,6 @@
       "occurrences": 1
     },
     {
-      "word": "alkawarin",
-      "occurrences": 1
-    },
-    {
       "word": "asali",
       "occurrences": 1
     },
@@ -96,19 +92,11 @@
       "occurrences": 1
     },
     {
-      "word": "bankin",
-      "occurrences": 1
-    },
-    {
       "word": "cikawa",
       "occurrences": 1
     },
     {
       "word": "cizon",
-      "occurrences": 1
-    },
-    {
-      "word": "dijital",
       "occurrences": 1
     },
     {
@@ -133,14 +121,6 @@
     },
     {
       "word": "gajeru",
-      "occurrences": 1
-    },
-    {
-      "word": "gizo",
-      "occurrences": 1
-    },
-    {
-      "word": "haƙuri",
       "occurrences": 1
     },
     {
@@ -185,10 +165,6 @@
     },
     {
       "word": "lafiyayyen",
-      "occurrences": 1
-    },
-    {
-      "word": "launin",
       "occurrences": 1
     },
     {
@@ -309,10 +285,6 @@
     },
     {
       "word": "vat",
-      "occurrences": 1
-    },
-    {
-      "word": "yanar",
       "occurrences": 1
     },
     {

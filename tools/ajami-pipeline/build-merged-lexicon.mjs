@@ -11,8 +11,10 @@ const MODULE_DIR = path.dirname(fileURLToPath(import.meta.url));
 
 export const TOP500_LEXICON_PATH = path.join(MODULE_DIR, "data", "ajami-lexicon.json");
 export const SHORT300_QUEUE_PATH = path.join(MODULE_DIR, "data", "review-queue-short300.json");
+export const QUIZ_QUEUE_PATH = path.join(MODULE_DIR, "data", "review-queue-quiz.json");
 export const MERGED_LEXICON_PATH = path.join(MODULE_DIR, "data", "ajami-lexicon-merged.json");
 export const SHORT300_SOURCE = "tools/ajami-pipeline/data/review-queue-short300.json";
+export const QUIZ_SOURCE = "tools/ajami-pipeline/data/review-queue-quiz.json";
 
 export function ratifiedEntries(queue) {
   if (!Array.isArray(queue?.entries)) {
@@ -22,7 +24,11 @@ export function ratifiedEntries(queue) {
     (entry) =>
       entry.status === "human_reviewed" &&
       Array.isArray(entry.openQuestions) &&
-      entry.openQuestions.every((question) => question.reviewerDecision != null)
+      entry.openQuestions.every(
+        (question) =>
+          question.reviewerDecision != null ||
+          question.resolution?.state === "not_applicable"
+      )
   );
 }
 
@@ -44,6 +50,7 @@ function addEntries(entries, sourceName, mergedEntries, mergedMap) {
 export function buildMergedLexicon({
   top500Path = TOP500_LEXICON_PATH,
   short300Path = SHORT300_QUEUE_PATH,
+  quizPath = QUIZ_QUEUE_PATH,
 } = {}) {
   const top500 = JSON.parse(fs.readFileSync(top500Path, "utf8"));
   if (!Array.isArray(top500.entries)) {
@@ -62,16 +69,25 @@ export function buildMergedLexicon({
     source: [SHORT300_SOURCE],
   }));
 
+  const quizQueue = JSON.parse(fs.readFileSync(quizPath, "utf8"));
+  const quizRatified = ratifiedEntries(quizQueue);
+  const quiz = materializeLexicon(quizRatified);
+  const quizEntries = quiz.entries.map((entry) => ({
+    ...entry,
+    source: [QUIZ_SOURCE],
+  }));
+
   const entries = [];
   const map = new Map();
   addEntries(top500.entries, top500Path, entries, map);
   addEntries(short300Entries, short300Path, entries, map);
+  addEntries(quizEntries, quizPath, entries, map);
 
   const lexicon = {
     schemaVersion: top500.schemaVersion,
     orthography: top500.orthography,
     materialType: top500.materialType,
-    notice: "Ajami spellings merged from the ratified top500 lexicon and ratified short300 review decisions.",
+    notice: "Ajami spellings merged from the ratified top500 lexicon, ratified short300 review decisions, and ratified quiz review decisions.",
     entries,
   };
 
@@ -81,6 +97,7 @@ export function buildMergedLexicon({
     counts: {
       top500: top500.entries.length,
       short300Ratified: short300Entries.length,
+      quizRatified: quizEntries.length,
       merged: entries.length,
     },
   };
@@ -100,7 +117,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const { lexicon, counts } = buildMergedLexicon();
   writeMergedLexicon(lexicon, outputPath);
   process.stdout.write(
-    `Merged ${counts.top500} top500 + ${counts.short300Ratified} short300 entries ` +
+    `Merged ${counts.top500} top500 + ${counts.short300Ratified} short300 + ` +
+    `${counts.quizRatified} quiz entries ` +
     `into ${counts.merged} entries at ${outputPath}\n`
   );
 }

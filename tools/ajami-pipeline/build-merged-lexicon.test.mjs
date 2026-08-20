@@ -5,31 +5,48 @@ import path from "node:path";
 import test from "node:test";
 
 import {
+  QUIZ_SOURCE,
   SHORT300_SOURCE,
   buildMergedLexicon,
   ratifiedEntries,
   writeMergedLexicon,
 } from "./build-merged-lexicon.mjs";
 
-test("merged lexicon contains exactly the 797 ratified, collision-free entries", () => {
+test("merged lexicon appends both ratified queues with source provenance", () => {
   const { lexicon, map, counts } = buildMergedLexicon();
-  assert.deepEqual(counts, { top500: 500, short300Ratified: 297, merged: 797 });
-  assert.equal(lexicon.entries.length, 797);
-  assert.equal(map.size, 797);
-  assert.deepEqual(lexicon.entries[500].source, [SHORT300_SOURCE]);
+  assert.equal(
+    counts.merged,
+    counts.top500 + counts.short300Ratified + counts.quizRatified
+  );
+  assert.equal(lexicon.entries.length, counts.merged);
+  assert.equal(map.size, counts.merged);
+  assert.deepEqual(lexicon.entries[counts.top500].source, [SHORT300_SOURCE]);
+  assert.deepEqual(
+    lexicon.entries[counts.top500 + counts.short300Ratified].source,
+    [QUIZ_SOURCE]
+  );
   assert.ok(map.has("idan"));
   assert.ok(map.has("jera"));
+  assert.ok(map.has("eh"));
 });
 
-test("ratifiedEntries excludes any entry with an unresolved question", () => {
+test("ratifiedEntries accepts answered or not-applicable questions only", () => {
   const queue = {
     entries: [
       { status: "human_reviewed", openQuestions: [{ reviewerDecision: "chosen" }] },
+      {
+        status: "human_reviewed",
+        openQuestions: [{
+          reviewerDecision: null,
+          resolution: { state: "not_applicable", reason: "human ruling" },
+        }],
+      },
       { status: "human_reviewed", openQuestions: [{ reviewerDecision: null }] },
       { status: "candidate", openQuestions: [{ reviewerDecision: "chosen" }] },
+      { status: "excluded", openQuestions: [{ reviewerDecision: "chosen" }] },
     ],
   };
-  assert.equal(ratifiedEntries(queue).length, 1);
+  assert.deepEqual(ratifiedEntries(queue), queue.entries.slice(0, 2));
 });
 
 test("merged lexicon builder throws instead of resolving a key collision", () => {
@@ -38,6 +55,7 @@ test("merged lexicon builder throws instead of resolving a key collision", () =>
     const original = buildMergedLexicon().lexicon;
     const topPath = path.join(temporaryDirectory, "top.json");
     const shortPath = path.join(temporaryDirectory, "short.json");
+    const quizPath = path.join(temporaryDirectory, "quiz.json");
     fs.writeFileSync(topPath, JSON.stringify({ ...original, entries: [original.entries[0]] }));
     fs.writeFileSync(shortPath, JSON.stringify({
       entries: [{
@@ -57,8 +75,9 @@ test("merged lexicon builder throws instead of resolving a key collision", () =>
         }],
       }],
     }));
+    fs.writeFileSync(quizPath, JSON.stringify({ entries: [] }));
     assert.throws(
-      () => buildMergedLexicon({ top500Path: topPath, short300Path: shortPath }),
+      () => buildMergedLexicon({ top500Path: topPath, short300Path: shortPath, quizPath }),
       /key collision.*"a"/iu
     );
   } finally {
