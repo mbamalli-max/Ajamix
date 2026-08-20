@@ -18,3 +18,4 @@ import "./regenerate-content-ajami.test.mjs";
 import "./mfa-proposals.test.mjs";
 import "./gates/gates.test.mjs";
 import "./gates/ratification-gate.test.mjs";
+import "../../app/app.renderer.test.mjs";

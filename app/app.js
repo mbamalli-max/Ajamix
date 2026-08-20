@@ -16,6 +16,9 @@
   var DEV = location.hostname === "localhost" || location.hostname === "127.0.0.1";
   var ALLOWED_AD_ROUTES = ["home", "track-select"];
   var PRODUCTION_URL = "https://ajamix.ng/app/";
+  // Composed mechanically from the ratified lexicon entries for Sauti/yana/zuwa.
+  // All content copy must arrive through a non-null managed Ajami field.
+  var AJAMI_AUDIO_COMING_SOON = "سَوْتِ یَࢽَ زُوَ";
   var IMPORTED_CONTENT_KEY = "imported-content";
   var SHARE_SCHEMA_VERSION = "v3-dual-track";
   var REFERRAL_UNLOCK_THRESHOLD = 5;
@@ -252,7 +255,7 @@
 
     return {
       ha: haText,
-      ajami: String(proverb.ajami || romanToAjami(haText)).trim(),
+      ajami: proverb.ajami == null ? "" : String(proverb.ajami).trim(),
       unlockedAt: Number(proverb.unlockedAt || Date.now()),
     };
   }
@@ -415,195 +418,56 @@
     render();
   }
 
-  // ─── Hausa Ajami transliteration engine ──────────────────────────────────
-  // Converts Hausa written in Roman/Latin script to Hausa Ajami (Arabic script).
-  // Uses the deterministic consonant + diacritic-vowel mapping defined in the
-  // AJAMIX alphabet guide.  Template placeholders like {a} and {b} are preserved
-  // verbatim so the quiz engine can still substitute numbers.
-  function romanToAjami(text) {
-    if (!text) { return ""; }
-
-    var LOANWORD = {
-      "settings": "settings", "browser": "browser", "progress": "progress",
-      "offline": "offline", "online": "online", "audio": "audio",
-      "download": "download", "app": "app", "wifi": "WiFi",
-      "cache": "cache", "reset": "reset", "quiz": "quiz"
-    };
-
-    // Consonant mapping (multi-char entries must be checked first)
-    var MULTI = {
-      "sh": "ش",
-      "ts": "\u069F",  // ڟ  ejective alveolar affricate (tah with three dots below)
-      "ng": "ڭ",
-      "kh": "خ"
-    };
-    var SINGLE = {
-      // Note: 'c' and 'x' handled by dedicated steps above (4.6 / 4.7)
-      "b": "ب", "t": "ت", "j": "ج", "h": "ه",
-      "d": "د", "r": "ر", "z": "ز", "s": "س",
-      "f": "ف", "k": "ك", "g": "\u063A", "l": "ل",  // g = غ (ghain, NOT گ gaf)
-      "m": "م", "n": "ن", "w": "و", "y": "ي",
-      "p": "پ",
-      // Hausa implosives / ejective
-      "\u0253": "\u067B",  // ɓ → ٻ
-      "\u0257": "\u0688",  // ɗ → ڈ
-      "\u0199": "\u06AA"   // ƙ → ڪ (swash kaf)
-    };
-    // Short vowels → Arabic diacritics (harakat)
-    var VOWEL = {
-      "a": "\u064E",  // fatha  َ
-      "i": "\u0650",  // kasra  ِ
-      "u": "\u064F",  // damma  ُ
-      "e": "\u0650",  // treated as i
-      "o": "\u064F"   // treated as u
-    };
-    var ALEF = "ا";  // vowel carrier at word start
-
-    function _translitSegment(seg) {
-
-      var result = "";
-      var i = 0;
-      var atWordStart = true;
-
-      while (i < seg.length) {
-        // 1 — Preserve {placeholder} patterns intact
-        if (seg[i] === "{") {
-          var close = seg.indexOf("}", i);
-          if (close !== -1) {
-            result += seg.slice(i, close + 1);
-            i = close + 1;
-            atWordStart = false;
-            continue;
-          }
-        }
-
-        // 2 — Whitespace → pass through, reset word-start flag
-        var ch = seg[i];
-        var lc = ch.toLowerCase();
-        if (ch === " " || ch === "\n" || ch === "\r" || ch === "\t") {
-          result += ch;
-          atWordStart = true;
-          i += 1;
-          continue;
-        }
-
-        // 3 — Arabic question / exclamation mark
-        if (ch === "?") { result += "\u061F"; atWordStart = true; i += 1; continue; }
-        if (ch === "!") { result += "!"; atWordStart = true; i += 1; continue; }
-        if (ch === ".") { result += "."; atWordStart = true; i += 1; continue; }
-        if (ch === ",") { result += "\u060C"; i += 1; continue; }
-
-        // 4 — Digits pass through (numbers like {a} substitutions are numerals)
-        if (ch >= "0" && ch <= "9") { result += ch; atWordStart = false; i += 1; continue; }
-
-        // 4.5 — Apostrophe / glottal-stop marker → ع (ain)
-        if (ch === "'" || ch === "\u2019" || ch === "\u02BC") {
-          result += "\u0639"; atWordStart = false; i += 1; continue;
-        }
-
-        // 4.6 — 'x' → كس (represents /ks/ in Hausa loanwords)
-        if (lc === "x") {
-          result += "\u0643\u0633"; atWordStart = false; i += 1; continue;
-        }
-
-        // 4.7 — 'c' disambiguation: Hausa ejective palatal چ before i/e/y;
-        //        English /k/ sound → ك before a/o/u or consonants (loanword heuristic)
-        if (lc === "c") {
-          var cNext = (seg[i + 1] || "").toLowerCase();
-          if (cNext === "i" || cNext === "e" || cNext === "y") {
-            result += "\u0686"; // چ  Hausa ejective palatal
-          } else {
-            result += "\u0643"; // ك  English /k/ before back vowels / consonants
-          }
-          atWordStart = false; i += 1; continue;
-        }
-
-        // 5 — Multi-char consonant sequences (case-insensitive)
-        var two = seg.slice(i, i + 2).toLowerCase();
-        if (MULTI[two]) {
-          result += MULTI[two];
-          atWordStart = false;
-          i += 2;
-          continue;
-        }
-
-        // 6 — Short vowel: add alef carrier at word start, then diacritic.
-        // Diphthongs: ai/ae → fatha+ya; au/ao → fatha+waw (consume both chars).
-        // Long vowels: aa → fatha+alef; ii → kasra+ya; uu → damma+waw.
-        // Word-final vowels get a mater lectionis per Hausa Ajami convention.
-        if (VOWEL[lc]) {
-          var carrierJustAdded = false;
-          if (atWordStart) { result += ALEF; carrierJustAdded = true; }
-          result += VOWEL[lc];
-          var nextCh = seg[i + 1] || "";
-          var nextLc = nextCh.toLowerCase();
-          // Diphthongs: a + i/e → ya mater; a + u/o → waw mater
-          if (lc === "a" && (nextLc === "i" || nextLc === "e")) {
-            result += "\u064A"; atWordStart = false; i += 2; continue; // ي
-          }
-          if (lc === "a" && (nextLc === "u" || nextLc === "o")) {
-            result += "\u0648"; atWordStart = false; i += 2; continue; // و
-          }
-          // Long vowels: aa → +alef, ii → +ya, uu → +waw
-          if (lc === "a" && nextLc === "a") { result += ALEF; atWordStart = false; i += 2; continue; }
-          if (lc === "i" && nextLc === "i") { result += "\u064A"; atWordStart = false; i += 2; continue; }
-          if (lc === "u" && nextLc === "u") { result += "\u0648"; atWordStart = false; i += 2; continue; }
-          // Look-ahead: is this vowel at word end?
-          var isWordEnd = (nextCh === "" || nextCh === " " || nextCh === "\n" ||
-                           nextCh === "?" || nextCh === "!" || nextCh === "." ||
-                           nextCh === "," || nextCh === "{");
-          if (isWordEnd && !carrierJustAdded) {
-            if (lc === "a") { result += ALEF; }              // fatha + alef
-            else if (lc === "u" || lc === "o") { result += "\u0648"; }  // damma + waw
-            else if (lc === "i" || lc === "e") { result += "\u064A"; }  // kasra + ya
-          }
-          atWordStart = false;
-          i += 1;
-          continue;
-        }
-
-        // 7 — Single consonant (including Hausa special chars)
-        if (SINGLE[lc] || SINGLE[ch]) {
-          result += SINGLE[lc] || SINGLE[ch];
-          // Gemination: doubled consonant → shadda ّ (consumes both occurrences).
-          // Guard: next char must be lowercase — uppercase signals a morpheme boundary
-          // (e.g. 'dD' in "IndexedDB") and must NOT trigger shadda.
-          var nextCh3 = seg[i + 1] || "";
-          if (SINGLE[lc] && nextCh3.toLowerCase() === lc && nextCh3 === nextCh3.toLowerCase()) {
-            result += "\u0651"; // shadda ّ
-            i += 2;
-          } else {
-            i += 1;
-          }
-          atWordStart = false;
-          continue;
-        }
-
-        // 8 — Unknown character: pass through unchanged
-        result += ch;
-        atWordStart = false;
-        i += 1;
-      }
-
-      return result;
+  function getManagedAjamiField(owner, fieldName) {
+    if (!owner || owner.status === "excluded" || owner[fieldName] == null) {
+      return "";
     }
+    return String(owner[fieldName]);
+  }
 
-    var parts = text.split(/(\s+)/);
-    var result = "";
-    for (var pi = 0; pi < parts.length; pi++) {
-      var part = parts[pi];
-      if (/^\s+$/.test(part)) { result += part; continue; }
-      // Strip trailing punctuation for lookup
-      var match = part.match(/^(.+?)([?.!,]*)$/);
-      var word = match ? match[1] : part;
-      var punct = match ? match[2] : "";
-      if (LOANWORD.hasOwnProperty(word.toLowerCase())) {
-        result += LOANWORD[word.toLowerCase()] + (punct ? _translitSegment(punct) : "");
-      } else {
-        result += _translitSegment(part);
-      }
+  function substituteAjamiTemplate(template, variables) {
+    return String(template || "").replace(/\{([a-z_][a-z0-9_]*)\}/gi, function (_, key) {
+      return Object.prototype.hasOwnProperty.call(variables || {}, key)
+        ? String(variables[key])
+        : "";
+    });
+  }
+
+  function isNumericQuizValue(value) {
+    return /^[0-9\s.,%+−\-*/()=–—]+$/.test(String(value || ""));
+  }
+
+  function buildQuizOptionAjamiMap(template) {
+    var optionMap = Object.create(null);
+    var distractors = Array.isArray(template && template.distractorFormulas)
+      ? template.distractorFormulas
+      : [];
+    var distractorsAjami = Array.isArray(template && template.distractorFormulasAjami)
+      ? template.distractorFormulasAjami
+      : [];
+
+    if (template && template.answerFormulaAjami != null) {
+      optionMap[String(template.answerFormula)] = String(template.answerFormulaAjami);
     }
-    return result;
+    distractors.forEach(function (option, index) {
+      if (distractorsAjami[index] != null) {
+        optionMap[String(option)] = String(distractorsAjami[index]);
+      }
+    });
+    return optionMap;
+  }
+
+  function getDisplayQuizOption(option, question) {
+    if (state.settings.scriptMode === "latin") {
+      return escapeHtml(option);
+    }
+    if (isNumericQuizValue(option)) {
+      return formatAjamiText(option);
+    }
+    var optionAjami = question && question.optionAjamiByText
+      ? question.optionAjamiByText[String(option)]
+      : null;
+    return optionAjami == null ? "" : formatAjamiText(optionAjami);
   }
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -614,21 +478,27 @@
     if (state.settings.scriptMode === "latin") {
       return module.titleHa || module.titleEn || "";
     }
-    return module.titleAjami || romanToAjami(module.titleHa || module.titleEn || "");
+    return getManagedAjamiField(module, "titleAjami");
   }
 
-  function getDisplayQuestion(questionText, questionAjami) {
+  function getDisplayTitleMarkup(module) {
+    return state.settings.scriptMode === "ajami"
+      ? formatAjamiText(getDisplayTitle(module))
+      : escapeHtml(getDisplayTitle(module));
+  }
+
+  function getDisplayQuestion(questionText, questionAjami, variables) {
     if (state.settings.scriptMode === "latin") {
       return escapeHtml(questionText || "");
     }
-    // Use pre-validated Ajami if available, otherwise auto-transliterate from Hausa Latin
-    var ajami = questionAjami || romanToAjami(questionText || "");
-    return formatAjamiText(ajami);
+    return questionAjami == null
+      ? ""
+      : formatAjamiText(substituteAjamiTemplate(questionAjami, variables));
   }
 
   function getDisplaySubject(module) {
     if (state.settings.scriptMode === "ajami") {
-      return formatAjamiText(romanToAjami(module.subjectHa || module.subjectEn || module.subject || ""));
+      return formatAjamiText(getManagedAjamiField(module, "subjectAjami"));
     }
     return escapeHtml(module.subjectHa || module.subjectEn || module.subject || "");
   }
@@ -636,7 +506,7 @@
   function ha(text) {
     if (!text) { return ""; }
     if (state.settings.scriptMode === "ajami") {
-      return formatAjamiText(romanToAjami(text));
+      return "";
     }
     return escapeHtml(text);
   }
@@ -649,7 +519,9 @@
 
     return {
       ha: haText,
-      ajami: String(pair.ajami || romanToAjami(haText)).trim(),
+      ajami: pair.status === "excluded" || pair.ajami == null
+        ? ""
+        : String(pair.ajami).trim(),
     };
   }
 
@@ -671,10 +543,11 @@
   }
 
   function getModuleTitlePair(module) {
-    return getLocalizedPair(
-      module && module.title ? module.title : null,
-      module ? module.titleHa || module.titleEn || "" : ""
-    );
+    return getLocalizedPair({
+      ha: module ? module.titleHa || module.titleEn || "" : "",
+      ajami: getManagedAjamiField(module, "titleAjami"),
+      status: module && module.status,
+    });
   }
 
   function isUseTodayLoopEnabled() {
@@ -731,16 +604,17 @@
       return "";
     }
 
-    return [
-      '<div class="' + escapeAttribute(classes) + '">',
-      pair.ha
-        ? '<p class="bilingual-copy-ha">' + escapeHtml(pair.ha) + "</p>"
-        : "",
-      pair.ajami && state.settings.scriptMode === "ajami"
-        ? '<p class="bilingual-copy-ajami ajami">' + formatAjamiText(pair.ajami) + "</p>"
-        : "",
-      "</div>",
-    ].join("");
+    return state.settings.scriptMode === "ajami"
+      ? pair.ajami
+        ? '<div class="' + escapeAttribute(classes) + '"><p class="bilingual-copy-ajami ajami">' +
+          formatAjamiText(pair.ajami) +
+          "</p></div>"
+        : ""
+      : pair.ha
+        ? '<div class="' + escapeAttribute(classes) + '"><p class="bilingual-copy-ha">' +
+          escapeHtml(pair.ha) +
+          "</p></div>"
+        : "";
   }
 
   function hasImportIntentQuery() {
@@ -772,7 +646,7 @@
       ? {
           kind: kind || "info",
           ha: haText,
-          ajami: romanToAjami(haText),
+          ajami: "",
         }
       : null;
   }
@@ -848,7 +722,7 @@
       ? {
           kind: kind || "info",
           ha: haText,
-          ajami: romanToAjami(haText),
+          ajami: "",
         }
       : null;
   }
@@ -994,7 +868,9 @@
 
   function renderAdTitle(ad) {
     if (state.settings.scriptMode === "ajami") {
-      return '<span class="ad-slot-title ajami">' + formatAjamiText(ad.title_ajami || romanToAjami(ad.title_ha || "")) + "</span>";
+      return '<span class="ad-slot-title ajami">' +
+        formatAjamiText(getManagedAjamiField(ad, "title_ajami")) +
+        "</span>";
     }
 
     return '<span class="ad-slot-title">' + escapeHtml(ad.title_ha || "") + "</span>";
@@ -1508,7 +1384,7 @@
 
     return {
       ha: proverbHa,
-      ajami: romanToAjami(proverbHa),
+      ajami: "",
       unlockedAt: Date.now(),
     };
   }
@@ -1522,7 +1398,7 @@
       return {
         heading: {
           ha: "Karamin tunatarwa",
-          ajami: romanToAjami("Karamin tunatarwa"),
+          ajami: "",
         },
         term: getLocalizedPair(glossaryCard.term),
         definition: getLocalizedPair(glossaryCard.definition),
@@ -1532,11 +1408,11 @@
     return {
       heading: {
         ha: "Karamin tunatarwa",
-        ajami: romanToAjami("Karamin tunatarwa"),
+        ajami: "",
       },
       term: {
         ha: module.titleHa || "Darasi",
-        ajami: module.titleAjami || romanToAjami(module.titleHa || "Darasi"),
+        ajami: getManagedAjamiField(module, "titleAjami"),
       },
       definition: getLocalizedPair(module.summary || null, module.textExplanationHa || ""),
     };
@@ -2821,7 +2697,7 @@
             '"' +
             (session.feedbackState ? " disabled" : "") +
             ">",
-          '<span class="math-value">' + escapeHtml(option) + "</span>",
+          '<span class="math-value">' + getDisplayQuizOption(option, question) + "</span>",
           "</button>",
         ].join("");
       })
@@ -2834,7 +2710,7 @@
     } else if (session.feedbackState === "incorrect") {
       feedbackMarkup =
         '<p class="quiz-feedback is-wrong">' + ha("Ba daidai ba. Amsa ita ce ") +
-        escapeHtml(question.correctAnswer) +
+        getDisplayQuizOption(question.correctAnswer, question) +
         ".</p>";
     }
 
@@ -2855,7 +2731,7 @@
       "</div>",
       '<article class="quiz-question-card">',
       '<p class="quiz-question-text' + (state.settings.scriptMode === "ajami" ? ' ajami' : "") + '">' +
-        getDisplayQuestion(question.questionText, question.templateAjami) +
+        getDisplayQuestion(question.questionText, question.templateAjami, question.variables) +
         "</p>",
       '<div class="quiz-options">' + optionMarkup + "</div>",
       feedbackMarkup,
@@ -4632,15 +4508,26 @@
   }
 
   function renderLessonAudioComingSoonBanner() {
+    var isAjami = state.settings.scriptMode === "ajami";
     return [
       '<div class="lesson-audio-coming-soon-body">',
       '<span class="lesson-audio-coming-soon-icon" aria-hidden="true">♪</span>',
       '<div class="lesson-audio-coming-soon-copy">',
-      '<strong class="lesson-audio-coming-soon-title">' + ha("Sauti yana zuwa") + "</strong>",
-      '<p class="lesson-audio-coming-soon-text">' + ha(getLessonAudioComingSoonMessage()) + "</p>",
+      '<strong class="lesson-audio-coming-soon-title' + (isAjami ? " ajami" : "") + '">' +
+        (isAjami ? formatAjamiText(AJAMI_AUDIO_COMING_SOON) : ha("Sauti yana zuwa")) +
+        "</strong>",
+      isAjami
+        ? ""
+        : '<p class="lesson-audio-coming-soon-text">' + ha(getLessonAudioComingSoonMessage()) + "</p>",
       "</div>",
       "</div>",
     ].join("");
+  }
+
+  function renderAjamiAudioFallbackState() {
+    return '<div class="lesson-audio-coming-soon lesson-copy-audio-fallback" role="note">' +
+      renderLessonAudioComingSoonBanner() +
+      "</div>";
   }
 
   function renderLessonImageComingSoon() {
@@ -5070,6 +4957,9 @@
   }
 
   function renderExportGuidanceMessage() {
+    if (state.settings.scriptMode === "ajami") {
+      return "";
+    }
     var intro = "Fayil din .ajamix an adana. Mai karba ya fara bude Chrome ya zuwa ";
     var outro = " kafin a bude wannan fayil din.";
 
@@ -5084,15 +4974,7 @@
         "</a>" +
         escapeHtml(outro) +
         "</p>",
-      state.settings.scriptMode === "ajami"
-        ? '<p class="bilingual-copy-ajami ajami">' +
-          formatAjamiText(romanToAjami(intro)) +
-          '<span class="share-production-link lamba-ltr">' +
-          escapeHtml(PRODUCTION_URL) +
-          "</span>" +
-          formatAjamiText(romanToAjami(outro)) +
-          "</p>"
-        : "",
+      "",
       "</div>",
     ].join("");
   }
@@ -5244,7 +5126,7 @@
     }
 
     if (state.settings.scriptMode === "ajami") {
-      return module.textExplanationAjami || romanToAjami(module.textExplanationHa || "");
+      return getManagedAjamiField(module, "textExplanationAjami");
     }
 
     return module.textExplanationHa || "";
@@ -5316,7 +5198,9 @@
     var bodyText = getLessonBodyText(module);
 
     if (!bodyText) {
-      return "<p></p>";
+      return state.settings.scriptMode === "ajami"
+        ? renderAjamiAudioFallbackState()
+        : "<p></p>";
     }
 
     if (!hasLocalizedCopy(module && module.gapTeaserInline)) {
@@ -5477,7 +5361,9 @@
             '<span class="voc-card-id">' + escapeHtml(module.id) + "</span>",
             '<span class="' + getPathBadgeClass(entry.state) + '">' + getPathStateCopy(entry.state) + "</span>",
             "</div>",
-            '<p class="voc-card-title">' + ha(module.titleHa || module.titleEn || "") + "</p>",
+            '<p class="voc-card-title' + (state.settings.scriptMode === "ajami" ? " ajami" : "") + '">' +
+              getDisplayTitleMarkup(module) +
+              "</p>",
             module.summary && module.summary.ha
               ? '<p class="voc-card-summary muted">' + ha(module.summary.ha) + "</p>"
               : "",
@@ -5510,7 +5396,7 @@
         "</div>",
         nextModule
           ? '<div class="path-next-callout"><span class="pill">' + ha("Na gaba") + "</span><strong>" +
-            ha(nextModule.module.titleHa) +
+            getDisplayTitleMarkup(nextModule.module) +
             '</strong><span class="muted-copy">' +
             getPathStateCopy(nextModule.state) +
             "</span></div>"
@@ -5550,7 +5436,7 @@
           '<span class="' + getPathBadgeClass(entry.state) + '">' + getPathStateCopy(entry.state) + "</span>",
           "</div>",
           state.settings.scriptMode === "ajami"
-            ? '<p class="ajami path-title-ajami">' + formatAjamiText(module.titleAjami || romanToAjami(module.titleHa || "")) + "</p>"
+            ? '<p class="ajami path-title-ajami">' + formatAjamiText(getManagedAjamiField(module, "titleAjami")) + "</p>"
             : '<p class="path-title-hausa path-title-primary">' + ha(module.titleHa || "") + "</p>",
           state.settings.scriptMode === "ajami"
             ? '<p class="path-title-hausa">' + ha(module.titleHa || "") + "</p>"
@@ -5591,7 +5477,7 @@
       "</div>",
       nextModule
         ? '<div class="path-next-callout"><span class="pill">' + ha("Na gaba") + "</span><strong>" +
-          ha(nextModule.module.titleHa) +
+          getDisplayTitleMarkup(nextModule.module) +
           '</strong><span class="muted-copy">' +
           getPathStateCopy(nextModule.state) +
           "</span></div>"
@@ -5825,7 +5711,7 @@
   function getFormalSegmentText(segment) {
     var text = segment && segment.text ? segment.text : {};
     if (state.settings.scriptMode === "ajami") {
-      return text.ajami || romanToAjami(text.ha || "");
+      return text.status === "excluded" || text.ajami == null ? "" : String(text.ajami);
     }
     return text.ha || "";
   }
@@ -5857,9 +5743,13 @@
         '<article class="formal-segment-text' + (isActive ? " formal-segment-text--active" : "") + '" data-formal-segment="' +
           escapeAttribute(String(index + 1)) + '">',
         '<p class="eyebrow">' + ha("Sashe ") + escapeHtml(String(index + 1)) + "</p>",
-        '<p' + (state.settings.scriptMode === "ajami" ? ' class="ajami"' : "") + ">" +
-          formatLessonBodyText(segmentText) +
-          "</p>",
+        segmentText
+          ? '<p' + (state.settings.scriptMode === "ajami" ? ' class="ajami"' : "") + ">" +
+            formatLessonBodyText(segmentText) +
+            "</p>"
+          : state.settings.scriptMode === "ajami"
+            ? renderAjamiAudioFallbackState()
+            : "<p></p>",
         "</article>",
       ].join("");
     }).join("");
@@ -5938,9 +5828,12 @@
       .join("");
 
     if (!lessonMarkup) {
-      lessonMarkup = '<article class="voc-lesson-section voc-lesson-prose"><p>' +
-        renderLocalizedInline(module.summary || module.textExplanationHa || "", "voc-lesson-body") +
-        "</p></article>";
+      var summaryCopy = module.summary || module.textExplanationHa || "";
+      lessonMarkup = '<article class="voc-lesson-section voc-lesson-prose">' +
+        (state.settings.scriptMode === "ajami" && !getLocalizedPair(summaryCopy, "").ajami
+          ? renderAjamiAudioFallbackState()
+          : "<p>" + renderLocalizedInline(summaryCopy, "voc-lesson-body") + "</p>") +
+        "</article>";
     }
 
     return [
@@ -6020,12 +5913,20 @@
     section = section || {};
     var sectionType = String(section && section.type ? section.type : "").toLowerCase();
 
+    function lessonField(copy, before, after, className) {
+      var pair = getLocalizedPair(copy, "");
+      if (state.settings.scriptMode === "ajami" && !pair.ajami) {
+        return renderAjamiAudioFallbackState();
+      }
+      return before + renderLocalizedInline(copy, className) + after;
+    }
+
     if (sectionType === "glossary-card") {
       return [
         '<article class="voc-glossary" data-voc-section="' + escapeAttribute(String(index + 1)) + '">',
         '<p class="eyebrow">' + ha("Kalma") + "</p>",
-        "<h3>" + renderLocalizedInline(section.term, "voc-glossary-term") + "</h3>",
-        '<p class="voc-glossary-definition">' + renderLocalizedInline(section.definition, "voc-glossary-copy") + "</p>",
+        lessonField(section.term, "<h3>", "</h3>", "voc-glossary-term"),
+        lessonField(section.definition, '<p class="voc-glossary-definition">', "</p>", "voc-glossary-copy"),
         "</article>",
       ].join("");
     }
@@ -6034,12 +5935,15 @@
       return [
         '<article class="voc-example" data-voc-section="' + escapeAttribute(String(index + 1)) + '">',
         '<p class="eyebrow">' + ha("Misali") + "</p>",
-        "<h3>" + renderLocalizedInline(section.title, "voc-example-title") + "</h3>",
-        '<p class="voc-example-scenario">' + renderLocalizedInline(section.scenario, "voc-example-copy") + "</p>",
+        lessonField(section.title, "<h3>", "</h3>", "voc-example-title"),
+        lessonField(section.scenario, '<p class="voc-example-scenario">', "</p>", "voc-example-copy"),
         section.takeaway
-          ? '<p class="voc-example-takeaway"><strong>' + ha("Abin dauka: ") + "</strong>" +
-            renderLocalizedInline(section.takeaway, "voc-example-copy") +
-            "</p>"
+          ? lessonField(
+              section.takeaway,
+              '<p class="voc-example-takeaway"><strong>' + ha("Abin dauka: ") + "</strong>",
+              "</p>",
+              "voc-example-copy"
+            )
           : "",
         "</article>",
       ].join("");
@@ -6048,8 +5952,8 @@
     if (sectionType === "prose" || section.heading || section.body) {
       return [
         '<article class="voc-lesson-section voc-lesson-prose" data-voc-section="' + escapeAttribute(String(index + 1)) + '">',
-        section.heading ? "<h3>" + renderLocalizedInline(section.heading, "voc-lesson-heading") + "</h3>" : "",
-        section.body ? '<p class="voc-lesson-body">' + renderLocalizedInline(section.body, "voc-lesson-copy") + "</p>" : "",
+        section.heading ? lessonField(section.heading, "<h3>", "</h3>", "voc-lesson-heading") : "",
+        section.body ? lessonField(section.body, '<p class="voc-lesson-body">', "</p>", "voc-lesson-copy") : "",
         "</article>",
       ].join("");
     }
@@ -7844,9 +7748,7 @@
         fileName: "",
         message: {
           ha: error instanceof Error ? error.message : "An kasa fitar da fayil din .ajamix.",
-          ajami: romanToAjami(
-            error instanceof Error ? error.message : "An kasa fitar da fayil din .ajamix."
-          ),
+          ajami: "",
         },
       };
     } finally {
@@ -7879,9 +7781,7 @@
         fileName: "",
         message: {
           ha: error instanceof Error ? error.message : "An kasa fitar da kunshin canjin abun ciki.",
-          ajami: romanToAjami(
-            error instanceof Error ? error.message : "An kasa fitar da kunshin canjin abun ciki."
-          ),
+          ajami: "",
         },
       };
     } finally {
@@ -8541,7 +8441,8 @@
           var template = quizTemplates[index] || {};
           return Object.assign({}, question, {
             templateHa: template.templateHa || question.questionText || "",
-            templateAjami: template.templateAjami || "",
+            templateAjami: template.templateAjami == null ? null : String(template.templateAjami),
+            optionAjamiByText: buildQuizOptionAjamiMap(template),
           });
         }),
         currentIndex: 0,

@@ -27,7 +27,7 @@
       "boko": "ɓoye",
       "normalizedBoko": "ɓoye",
       "occurrences": 136,
-      "cumulativeCoveragePercent": 76.7155,
+      "cumulativeCoveragePercent": 76.7158,
       "tokens": [
         "B_GLOTTALIZED",
         "VOWEL_O_UNLENGTHENED",
@@ -103,7 +103,7 @@
       "boko": "babu",
       "normalizedBoko": "babu",
       "occurrences": 93,
-      "cumulativeCoveragePercent": 81.0313,
+      "cumulativeCoveragePercent": 81.0315,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -181,7 +181,7 @@
       "boko": "saƙon",
       "normalizedBoko": "saƙon",
       "occurrences": 89,
-      "cumulativeCoveragePercent": 81.6278,
+      "cumulativeCoveragePercent": 81.6281,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -259,7 +259,7 @@
       "boko": "sunan",
       "normalizedBoko": "sunan",
       "occurrences": 89,
-      "cumulativeCoveragePercent": 81.6621,
+      "cumulativeCoveragePercent": 81.6624,
       "tokens": [
         "S_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -340,7 +340,7 @@
       "boko": "hoto",
       "normalizedBoko": "hoto",
       "occurrences": 78,
-      "cumulativeCoveragePercent": 83.1362,
+      "cumulativeCoveragePercent": 83.1364,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_O_UNLENGTHENED",
@@ -446,7 +446,7 @@
       "boko": "rubutu",
       "normalizedBoko": "rubutu",
       "occurrences": 77,
-      "cumulativeCoveragePercent": 83.2256,
+      "cumulativeCoveragePercent": 83.2258,
       "tokens": [
         "R_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -561,7 +561,7 @@
       "boko": "isa",
       "normalizedBoko": "isa",
       "occurrences": 74,
-      "cumulativeCoveragePercent": 83.7497,
+      "cumulativeCoveragePercent": 83.7499,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "S_PLAIN",
@@ -651,7 +651,7 @@
       "boko": "jefa",
       "normalizedBoko": "jefa",
       "occurrences": 74,
-      "cumulativeCoveragePercent": 83.8067,
+      "cumulativeCoveragePercent": 83.8069,
       "tokens": [
         "J_PLAIN",
         "VOWEL_E_UNLENGTHENED",
@@ -730,7 +730,7 @@
       "boko": "kashe",
       "normalizedBoko": "kashe",
       "occurrences": 71,
-      "cumulativeCoveragePercent": 84.115,
+      "cumulativeCoveragePercent": 84.1152,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -831,7 +831,7 @@
       "boko": "riga",
       "normalizedBoko": "riga",
       "occurrences": 70,
-      "cumulativeCoveragePercent": 84.2772,
+      "cumulativeCoveragePercent": 84.2775,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -904,7 +904,7 @@
       "boko": "dalilin",
       "normalizedBoko": "dalilin",
       "occurrences": 67,
-      "cumulativeCoveragePercent": 84.5393,
+      "cumulativeCoveragePercent": 84.5395,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -1015,7 +1015,7 @@
       "boko": "ɗauka",
       "normalizedBoko": "ɗauka",
       "occurrences": 66,
-      "cumulativeCoveragePercent": 84.5902,
+      "cumulativeCoveragePercent": 84.5904,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -1125,7 +1125,7 @@
       "boko": "lalata",
       "normalizedBoko": "lalata",
       "occurrences": 64,
-      "cumulativeCoveragePercent": 84.8923,
+      "cumulativeCoveragePercent": 84.8925,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -1223,7 +1223,7 @@
       "boko": "misalin",
       "normalizedBoko": "misalin",
       "occurrences": 64,
-      "cumulativeCoveragePercent": 84.9416,
+      "cumulativeCoveragePercent": 84.9418,
       "tokens": [
         "M_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -1341,7 +1341,7 @@
       "boko": "sakamakon",
       "normalizedBoko": "sakamakon",
       "occurrences": 64,
-      "cumulativeCoveragePercent": 84.9663,
+      "cumulativeCoveragePercent": 84.9665,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -1504,7 +1504,7 @@
       "boko": "dogon",
       "normalizedBoko": "dogon",
       "occurrences": 63,
-      "cumulativeCoveragePercent": 85.0892,
+      "cumulativeCoveragePercent": 85.0894,
       "tokens": [
         "D_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -1584,7 +1584,7 @@
       "boko": "farawa",
       "normalizedBoko": "farawa",
       "occurrences": 63,
-      "cumulativeCoveragePercent": 85.1135,
+      "cumulativeCoveragePercent": 85.1137,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -1687,7 +1687,7 @@
       "boko": "saye",
       "normalizedBoko": "saye",
       "occurrences": 63,
-      "cumulativeCoveragePercent": 85.2106,
+      "cumulativeCoveragePercent": 85.2108,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -1761,7 +1761,7 @@
       "boko": "daɗi",
       "normalizedBoko": "daɗi",
       "occurrences": 62,
-      "cumulativeCoveragePercent": 85.2588,
+      "cumulativeCoveragePercent": 85.259,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -1839,7 +1839,7 @@
       "boko": "fita",
       "normalizedBoko": "fita",
       "occurrences": 62,
-      "cumulativeCoveragePercent": 85.2827,
+      "cumulativeCoveragePercent": 85.2829,
       "tokens": [
         "F_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -1917,7 +1917,7 @@
       "boko": "ma'aikacin",
       "normalizedBoko": "ma'aikacin",
       "occurrences": 62,
-      "cumulativeCoveragePercent": 85.426,
+      "cumulativeCoveragePercent": 85.4263,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -2117,7 +2117,7 @@
       "boko": "bar",
       "normalizedBoko": "bar",
       "occurrences": 61,
-      "cumulativeCoveragePercent": 85.569,
+      "cumulativeCoveragePercent": 85.5692,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -2175,7 +2175,7 @@
       "boko": "ɗauke",
       "normalizedBoko": "ɗauke",
       "occurrences": 61,
-      "cumulativeCoveragePercent": 85.5925,
+      "cumulativeCoveragePercent": 85.5927,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -2286,7 +2286,7 @@
       "boko": "saba",
       "normalizedBoko": "saba",
       "occurrences": 61,
-      "cumulativeCoveragePercent": 85.6865,
+      "cumulativeCoveragePercent": 85.6868,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -2364,7 +2364,7 @@
       "boko": "fito",
       "normalizedBoko": "fito",
       "occurrences": 60,
-      "cumulativeCoveragePercent": 85.8264,
+      "cumulativeCoveragePercent": 85.8266,
       "tokens": [
         "F_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -2451,7 +2451,7 @@
       "boko": "gwiwa",
       "normalizedBoko": "gwiwa",
       "occurrences": 60,
-      "cumulativeCoveragePercent": 85.8496,
+      "cumulativeCoveragePercent": 85.8498,
       "tokens": [
         "G_VELAR_CLUSTER",
         "VOWEL_I_UNLENGTHENED",
@@ -2539,7 +2539,7 @@
       "boko": "hoton",
       "normalizedBoko": "hoton",
       "occurrences": 60,
-      "cumulativeCoveragePercent": 85.8958,
+      "cumulativeCoveragePercent": 85.896,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_O_UNLENGTHENED",
@@ -2655,7 +2655,7 @@
       "boko": "hukunci",
       "normalizedBoko": "hukunci",
       "occurrences": 60,
-      "cumulativeCoveragePercent": 85.9189,
+      "cumulativeCoveragePercent": 85.9191,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_U_UNLENGTHENED",
@@ -2800,7 +2800,7 @@
       "boko": "sassa",
       "normalizedBoko": "sassa",
       "occurrences": 60,
-      "cumulativeCoveragePercent": 85.9652,
+      "cumulativeCoveragePercent": 85.9654,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -2898,7 +2898,7 @@
       "boko": "ɗaki",
       "normalizedBoko": "ɗaki",
       "occurrences": 59,
-      "cumulativeCoveragePercent": 86.0341,
+      "cumulativeCoveragePercent": 86.0344,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -2986,7 +2986,7 @@
       "boko": "yamma",
       "normalizedBoko": "yamma",
       "occurrences": 59,
-      "cumulativeCoveragePercent": 86.1478,
+      "cumulativeCoveragePercent": 86.148,
       "tokens": [
         "Y_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -3084,7 +3084,7 @@
       "boko": "gaggawa",
       "normalizedBoko": "gaggawa",
       "occurrences": 58,
-      "cumulativeCoveragePercent": 86.2376,
+      "cumulativeCoveragePercent": 86.2378,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -3198,7 +3198,7 @@
       "boko": "gwaji",
       "normalizedBoko": "gwaji",
       "occurrences": 58,
-      "cumulativeCoveragePercent": 86.26,
+      "cumulativeCoveragePercent": 86.2602,
       "tokens": [
         "G_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -3291,7 +3291,7 @@
       "boko": "share",
       "normalizedBoko": "share",
       "occurrences": 58,
-      "cumulativeCoveragePercent": 86.3047,
+      "cumulativeCoveragePercent": 86.3049,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -3370,7 +3370,7 @@
       "boko": "tsawon",
       "normalizedBoko": "tsawon",
       "occurrences": 58,
-      "cumulativeCoveragePercent": 86.3494,
+      "cumulativeCoveragePercent": 86.3496,
       "tokens": [
         "TS_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -3460,7 +3460,7 @@
       "boko": "Menene",
       "normalizedBoko": "menene",
       "occurrences": 57,
-      "cumulativeCoveragePercent": 86.4157,
+      "cumulativeCoveragePercent": 86.4159,
       "tokens": [
         "M_PLAIN",
         "VOWEL_E_UNLENGTHENED",
@@ -3578,7 +3578,7 @@
       "boko": "ɗalibi",
       "normalizedBoko": "ɗalibi",
       "occurrences": 56,
-      "cumulativeCoveragePercent": 86.5028,
+      "cumulativeCoveragePercent": 86.503,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -3681,7 +3681,7 @@
       "boko": "launin",
       "normalizedBoko": "launin",
       "occurrences": 56,
-      "cumulativeCoveragePercent": 86.5459,
+      "cumulativeCoveragePercent": 86.5461,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -3805,7 +3805,7 @@
       "boko": "dabam",
       "normalizedBoko": "dabam",
       "occurrences": 55,
-      "cumulativeCoveragePercent": 86.6099,
+      "cumulativeCoveragePercent": 86.6101,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -3893,7 +3893,7 @@
       "boko": "murya",
       "normalizedBoko": "murya",
       "occurrences": 54,
-      "cumulativeCoveragePercent": 86.8191,
+      "cumulativeCoveragePercent": 86.8193,
       "tokens": [
         "M_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -3974,7 +3974,7 @@
       "boko": "sayar",
       "normalizedBoko": "sayar",
       "occurrences": 54,
-      "cumulativeCoveragePercent": 86.84,
+      "cumulativeCoveragePercent": 86.8402,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -4062,7 +4062,7 @@
       "boko": "taro",
       "normalizedBoko": "taro",
       "occurrences": 52,
-      "cumulativeCoveragePercent": 87.2053,
+      "cumulativeCoveragePercent": 87.2055,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -4137,7 +4137,7 @@
       "boko": "tambayoyi",
       "normalizedBoko": "tambayoyi",
       "occurrences": 51,
-      "cumulativeCoveragePercent": 87.3629,
+      "cumulativeCoveragePercent": 87.3631,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -4287,7 +4287,7 @@
       "boko": "labarin",
       "normalizedBoko": "labarin",
       "occurrences": 50,
-      "cumulativeCoveragePercent": 87.4982,
+      "cumulativeCoveragePercent": 87.4984,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -4393,7 +4393,7 @@
       "boko": "taron",
       "normalizedBoko": "taron",
       "occurrences": 50,
-      "cumulativeCoveragePercent": 87.5367,
+      "cumulativeCoveragePercent": 87.5369,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -4471,7 +4471,7 @@
       "boko": "umarnin",
       "normalizedBoko": "umarnin",
       "occurrences": 50,
-      "cumulativeCoveragePercent": 87.556,
+      "cumulativeCoveragePercent": 87.5562,
       "tokens": [
         "VOWEL_U_UNLENGTHENED",
         "M_PLAIN",
@@ -4640,7 +4640,7 @@
       "boko": "a'a",
       "normalizedBoko": "a'a",
       "occurrences": 49,
-      "cumulativeCoveragePercent": 87.6134,
+      "cumulativeCoveragePercent": 87.6136,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "APOSTROPHE_UNRESOLVED",
@@ -4752,7 +4752,7 @@
       "boko": "komai",
       "normalizedBoko": "komai",
       "occurrences": 49,
-      "cumulativeCoveragePercent": 87.6512,
+      "cumulativeCoveragePercent": 87.6514,
       "tokens": [
         "K_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -4864,7 +4864,7 @@
       "boko": "rasit",
       "normalizedBoko": "rasit",
       "occurrences": 49,
-      "cumulativeCoveragePercent": 87.7267,
+      "cumulativeCoveragePercent": 87.7269,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -4952,7 +4952,7 @@
       "boko": "maganar",
       "normalizedBoko": "maganar",
       "occurrences": 48,
-      "cumulativeCoveragePercent": 87.8192,
+      "cumulativeCoveragePercent": 87.8194,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -5070,7 +5070,7 @@
       "boko": "takalma",
       "normalizedBoko": "takalma",
       "occurrences": 48,
-      "cumulativeCoveragePercent": 87.8932,
+      "cumulativeCoveragePercent": 87.8934,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -5191,7 +5191,7 @@
       "boko": "gajimare",
       "normalizedBoko": "gajimare",
       "occurrences": 47,
-      "cumulativeCoveragePercent": 87.9837,
+      "cumulativeCoveragePercent": 87.9839,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -5325,7 +5325,7 @@
       "boko": "fitilar",
       "normalizedBoko": "fitilar",
       "occurrences": 46,
-      "cumulativeCoveragePercent": 88.1641,
+      "cumulativeCoveragePercent": 88.1643,
       "tokens": [
         "F_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -5436,7 +5436,7 @@
       "boko": "ido",
       "normalizedBoko": "ido",
       "occurrences": 46,
-      "cumulativeCoveragePercent": 88.1818,
+      "cumulativeCoveragePercent": 88.182,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "D_PLAIN",
@@ -5540,7 +5540,7 @@
       "boko": "matsa",
       "normalizedBoko": "matsa",
       "occurrences": 46,
-      "cumulativeCoveragePercent": 88.2705,
+      "cumulativeCoveragePercent": 88.2706,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -5613,7 +5613,7 @@
       "boko": "sauyin",
       "normalizedBoko": "sauyin",
       "occurrences": 46,
-      "cumulativeCoveragePercent": 88.2882,
+      "cumulativeCoveragePercent": 88.2884,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -5737,7 +5737,7 @@
       "boko": "gefen",
       "normalizedBoko": "gefen",
       "occurrences": 45,
-      "cumulativeCoveragePercent": 88.3232,
+      "cumulativeCoveragePercent": 88.3234,
       "tokens": [
         "G_PLAIN",
         "VOWEL_E_UNLENGTHENED",
@@ -5820,7 +5820,7 @@
       "boko": "masa",
       "normalizedBoko": "masa",
       "occurrences": 45,
-      "cumulativeCoveragePercent": 88.4793,
+      "cumulativeCoveragePercent": 88.4795,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -5898,7 +5898,7 @@
       "boko": "sami",
       "normalizedBoko": "sami",
       "occurrences": 45,
-      "cumulativeCoveragePercent": 88.4967,
+      "cumulativeCoveragePercent": 88.4968,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -5971,7 +5971,7 @@
       "boko": "lalace",
       "normalizedBoko": "lalace",
       "occurrences": 44,
-      "cumulativeCoveragePercent": 88.5984,
+      "cumulativeCoveragePercent": 88.5986,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -6075,7 +6075,7 @@
       "boko": "daraja",
       "normalizedBoko": "daraja",
       "occurrences": 43,
-      "cumulativeCoveragePercent": 88.6994,
+      "cumulativeCoveragePercent": 88.6995,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -6183,7 +6183,7 @@
       "boko": "ku",
       "normalizedBoko": "ku",
       "occurrences": 43,
-      "cumulativeCoveragePercent": 88.7657,
+      "cumulativeCoveragePercent": 88.7658,
       "tokens": [
         "K_PLAIN",
         "VOWEL_U_UNLENGTHENED"
@@ -6253,7 +6253,7 @@
       "boko": "alama",
       "normalizedBoko": "alama",
       "occurrences": 42,
-      "cumulativeCoveragePercent": 88.8312,
+      "cumulativeCoveragePercent": 88.8313,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -6382,7 +6382,7 @@
       "boko": "kiran",
       "normalizedBoko": "kiran",
       "occurrences": 42,
-      "cumulativeCoveragePercent": 88.8635,
+      "cumulativeCoveragePercent": 88.8637,
       "tokens": [
         "K_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -6485,7 +6485,7 @@
       "boko": "koyar",
       "normalizedBoko": "koyar",
       "occurrences": 42,
-      "cumulativeCoveragePercent": 88.8797,
+      "cumulativeCoveragePercent": 88.8799,
       "tokens": [
         "K_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -6590,7 +6590,7 @@
       "boko": "rediyo",
       "normalizedBoko": "rediyo",
       "occurrences": 42,
-      "cumulativeCoveragePercent": 88.9121,
+      "cumulativeCoveragePercent": 88.9123,
       "tokens": [
         "R_PLAIN",
         "VOWEL_E_UNLENGTHENED",
@@ -6696,7 +6696,7 @@
       "boko": "Amina",
       "normalizedBoko": "amina",
       "occurrences": 41,
-      "cumulativeCoveragePercent": 88.9437,
+      "cumulativeCoveragePercent": 88.9439,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "M_PLAIN",
@@ -6814,7 +6814,7 @@
       "boko": "sauyawa",
       "normalizedBoko": "sauyawa",
       "occurrences": 41,
-      "cumulativeCoveragePercent": 89.0701,
+      "cumulativeCoveragePercent": 89.0703,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -6932,7 +6932,7 @@
       "boko": "ƙarya",
       "normalizedBoko": "ƙarya",
       "occurrences": 40,
-      "cumulativeCoveragePercent": 89.1784,
+      "cumulativeCoveragePercent": 89.1786,
       "tokens": [
         "K_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -7013,7 +7013,7 @@
       "boko": "maimakon",
       "normalizedBoko": "maimakon",
       "occurrences": 40,
-      "cumulativeCoveragePercent": 89.2092,
+      "cumulativeCoveragePercent": 89.2094,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -7170,7 +7170,7 @@
       "boko": "sabbin",
       "normalizedBoko": "sabbin",
       "occurrences": 40,
-      "cumulativeCoveragePercent": 89.2555,
+      "cumulativeCoveragePercent": 89.2556,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -7283,7 +7283,7 @@
       "boko": "tanada",
       "normalizedBoko": "tanada",
       "occurrences": 40,
-      "cumulativeCoveragePercent": 89.2709,
+      "cumulativeCoveragePercent": 89.271,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -7391,7 +7391,7 @@
       "boko": "fayyace",
       "normalizedBoko": "fayyace",
       "occurrences": 39,
-      "cumulativeCoveragePercent": 89.4219,
+      "cumulativeCoveragePercent": 89.4221,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -7518,7 +7518,7 @@
       "boko": "mutumin",
       "normalizedBoko": "mutumin",
       "occurrences": 39,
-      "cumulativeCoveragePercent": 89.4971,
+      "cumulativeCoveragePercent": 89.4973,
       "tokens": [
         "M_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -7636,7 +7636,7 @@
       "boko": "riba",
       "normalizedBoko": "riba",
       "occurrences": 39,
-      "cumulativeCoveragePercent": 89.5121,
+      "cumulativeCoveragePercent": 89.5123,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -7709,7 +7709,7 @@
       "boko": "wuce",
       "normalizedBoko": "wuce",
       "occurrences": 39,
-      "cumulativeCoveragePercent": 89.5873,
+      "cumulativeCoveragePercent": 89.5874,
       "tokens": [
         "W_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -7788,7 +7788,7 @@
       "boko": "zo",
       "normalizedBoko": "zo",
       "occurrences": 39,
-      "cumulativeCoveragePercent": 89.6324,
+      "cumulativeCoveragePercent": 89.6325,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_O_UNLENGTHENED"
@@ -7850,7 +7850,7 @@
       "boko": "buƙata",
       "normalizedBoko": "buƙata",
       "occurrences": 38,
-      "cumulativeCoveragePercent": 89.6616,
+      "cumulativeCoveragePercent": 89.6618,
       "tokens": [
         "B_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -7965,7 +7965,7 @@
       "boko": "ɗalibai",
       "normalizedBoko": "ɗalibai",
       "occurrences": 38,
-      "cumulativeCoveragePercent": 89.6909,
+      "cumulativeCoveragePercent": 89.6911,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -8095,7 +8095,7 @@
       "boko": "juyawa",
       "normalizedBoko": "juyawa",
       "occurrences": 38,
-      "cumulativeCoveragePercent": 89.7642,
+      "cumulativeCoveragePercent": 89.7643,
       "tokens": [
         "J_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -8210,7 +8210,7 @@
       "boko": "aboki",
       "normalizedBoko": "aboki",
       "occurrences": 37,
-      "cumulativeCoveragePercent": 89.8805,
+      "cumulativeCoveragePercent": 89.8807,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "B_PLAIN",
@@ -8357,7 +8357,7 @@
       "boko": "takwas",
       "normalizedBoko": "takwas",
       "occurrences": 37,
-      "cumulativeCoveragePercent": 90.0089,
+      "cumulativeCoveragePercent": 90.009,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -8472,7 +8472,7 @@
       "boko": "wahala",
       "normalizedBoko": "wahala",
       "occurrences": 36,
-      "cumulativeCoveragePercent": 90.217,
+      "cumulativeCoveragePercent": 90.2171,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -8603,7 +8603,7 @@
       "boko": "jadawali",
       "normalizedBoko": "jadawali",
       "occurrences": 35,
-      "cumulativeCoveragePercent": 90.2709,
+      "cumulativeCoveragePercent": 90.2711,
       "tokens": [
         "J_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -8748,7 +8748,7 @@
       "boko": "kwastoma",
       "normalizedBoko": "kwastoma",
       "occurrences": 35,
-      "cumulativeCoveragePercent": 90.2979,
+      "cumulativeCoveragePercent": 90.298,
       "tokens": [
         "K_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -8883,7 +8883,7 @@
       "category": "native_hausa",
       "exampleSentences": [
         "[V01 | modules.78.quiz.0.distractorFormulas.0] Kuɗin da kwastoma ke kashewa",
-        "[V01 | modules.78.quiz.2.distractorFormulas.1] Eh, idan kwastoma ta biya cash",
+        "[V01 | modules.78.quiz.2.distractorFormulas.1] Eh, idan kwastoma ta biya da tsabar kuɗi",
         "[V01 | modules.78.quiz.3.distractorFormulas.0] Jerin sunayen kwastoma kawai"
       ],
       "reviewerDecision": "approved_as_proposed",
@@ -8895,7 +8895,7 @@
       "boko": "ƙwararren",
       "normalizedBoko": "ƙwararren",
       "occurrences": 35,
-      "cumulativeCoveragePercent": 90.3114,
+      "cumulativeCoveragePercent": 90.3115,
       "tokens": [
         "K_GLOTTALIZED_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -9041,7 +9041,7 @@
       "boko": "ɗakin",
       "normalizedBoko": "ɗakin",
       "occurrences": 34,
-      "cumulativeCoveragePercent": 90.4447,
+      "cumulativeCoveragePercent": 90.4449,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -9144,7 +9144,7 @@
       "boko": "gidan",
       "normalizedBoko": "gidan",
       "occurrences": 34,
-      "cumulativeCoveragePercent": 90.4578,
+      "cumulativeCoveragePercent": 90.458,
       "tokens": [
         "G_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -9232,7 +9232,7 @@
       "boko": "hatsari",
       "normalizedBoko": "hatsari",
       "occurrences": 34,
-      "cumulativeCoveragePercent": 90.4709,
+      "cumulativeCoveragePercent": 90.4711,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -9363,7 +9363,7 @@
       "boko": "ranar",
       "normalizedBoko": "ranar",
       "occurrences": 34,
-      "cumulativeCoveragePercent": 90.5233,
+      "cumulativeCoveragePercent": 90.5235,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -9451,7 +9451,7 @@
       "boko": "rasa",
       "normalizedBoko": "rasa",
       "occurrences": 34,
-      "cumulativeCoveragePercent": 90.5364,
+      "cumulativeCoveragePercent": 90.5366,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -9536,7 +9536,7 @@
       "boko": "safe",
       "normalizedBoko": "safe",
       "occurrences": 34,
-      "cumulativeCoveragePercent": 90.5495,
+      "cumulativeCoveragePercent": 90.5497,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -9622,7 +9622,7 @@
       "boko": "arziki",
       "normalizedBoko": "arziki",
       "occurrences": 33,
-      "cumulativeCoveragePercent": 90.6278,
+      "cumulativeCoveragePercent": 90.6279,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "R_PLAIN",
@@ -9784,7 +9784,7 @@
       "boko": "hujjar",
       "normalizedBoko": "hujjar",
       "occurrences": 33,
-      "cumulativeCoveragePercent": 90.6532,
+      "cumulativeCoveragePercent": 90.6533,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_U_UNLENGTHENED",
@@ -9920,7 +9920,7 @@
       "boko": "Musa",
       "normalizedBoko": "musa",
       "occurrences": 33,
-      "cumulativeCoveragePercent": 90.6914,
+      "cumulativeCoveragePercent": 90.6915,
       "tokens": [
         "M_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -10005,7 +10005,7 @@
       "boko": "saya",
       "normalizedBoko": "saya",
       "occurrences": 33,
-      "cumulativeCoveragePercent": 90.7168,
+      "cumulativeCoveragePercent": 90.7169,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10083,7 +10083,7 @@
       "boko": "wayar",
       "normalizedBoko": "wayar",
       "occurrences": 33,
-      "cumulativeCoveragePercent": 90.7549,
+      "cumulativeCoveragePercent": 90.7551,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10171,7 +10171,7 @@
       "boko": "sayi",
       "normalizedBoko": "sayi",
       "occurrences": 32,
-      "cumulativeCoveragePercent": 90.9029,
+      "cumulativeCoveragePercent": 90.9031,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10244,7 +10244,7 @@
       "boko": "shugaba",
       "normalizedBoko": "shugaba",
       "occurrences": 32,
-      "cumulativeCoveragePercent": 90.9153,
+      "cumulativeCoveragePercent": 90.9154,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_U_UNLENGTHENED",
@@ -10352,7 +10352,7 @@
       "boko": "tabbatarwa",
       "normalizedBoko": "tabbatarwa",
       "occurrences": 32,
-      "cumulativeCoveragePercent": 90.9276,
+      "cumulativeCoveragePercent": 90.9277,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10528,7 +10528,7 @@
       "boko": "ware",
       "normalizedBoko": "ware",
       "occurrences": 32,
-      "cumulativeCoveragePercent": 90.9523,
+      "cumulativeCoveragePercent": 90.9524,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10619,7 +10619,7 @@
       "boko": "yawaita",
       "normalizedBoko": "yawaita",
       "occurrences": 32,
-      "cumulativeCoveragePercent": 90.9769,
+      "cumulativeCoveragePercent": 90.9771,
       "tokens": [
         "Y_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10749,7 +10749,7 @@
       "boko": "daina",
       "normalizedBoko": "daina",
       "occurrences": 31,
-      "cumulativeCoveragePercent": 91.0366,
+      "cumulativeCoveragePercent": 91.0368,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10851,7 +10851,7 @@
       "boko": "gama",
       "normalizedBoko": "gama",
       "occurrences": 31,
-      "cumulativeCoveragePercent": 91.0725,
+      "cumulativeCoveragePercent": 91.0726,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -10936,7 +10936,7 @@
       "boko": "karɓi",
       "normalizedBoko": "karɓi",
       "occurrences": 31,
-      "cumulativeCoveragePercent": 91.0844,
+      "cumulativeCoveragePercent": 91.0846,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -11039,7 +11039,7 @@
       "boko": "karye",
       "normalizedBoko": "karye",
       "occurrences": 31,
-      "cumulativeCoveragePercent": 91.0964,
+      "cumulativeCoveragePercent": 91.0965,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -11136,7 +11136,7 @@
       "boko": "ƙi",
       "normalizedBoko": "ƙi",
       "occurrences": 31,
-      "cumulativeCoveragePercent": 91.1203,
+      "cumulativeCoveragePercent": 91.1204,
       "tokens": [
         "K_GLOTTALIZED",
         "VOWEL_I_UNLENGTHENED"
@@ -11191,7 +11191,7 @@
       "boko": "mizani",
       "normalizedBoko": "mizani",
       "occurrences": 31,
-      "cumulativeCoveragePercent": 91.1322,
+      "cumulativeCoveragePercent": 91.1324,
       "tokens": [
         "M_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -11294,7 +11294,7 @@
       "boko": "Yaushe",
       "normalizedBoko": "yaushe",
       "occurrences": 31,
-      "cumulativeCoveragePercent": 91.18,
+      "cumulativeCoveragePercent": 91.1801,
       "tokens": [
         "Y_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -11390,7 +11390,7 @@
       "boko": "dogara",
       "normalizedBoko": "dogara",
       "occurrences": 30,
-      "cumulativeCoveragePercent": 91.2147,
+      "cumulativeCoveragePercent": 91.2148,
       "tokens": [
         "D_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -11495,7 +11495,7 @@
       "boko": "goyon",
       "normalizedBoko": "goyon",
       "occurrences": 30,
-      "cumulativeCoveragePercent": 91.2263,
+      "cumulativeCoveragePercent": 91.2264,
       "tokens": [
         "G_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -11580,7 +11580,7 @@
       "boko": "guje",
       "normalizedBoko": "guje",
       "occurrences": 30,
-      "cumulativeCoveragePercent": 91.2378,
+      "cumulativeCoveragePercent": 91.2379,
       "tokens": [
         "G_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -11666,7 +11666,7 @@
       "boko": "naka",
       "normalizedBoko": "naka",
       "occurrences": 30,
-      "cumulativeCoveragePercent": 91.3419,
+      "cumulativeCoveragePercent": 91.342,
       "tokens": [
         "N_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -11759,7 +11759,7 @@
       "boko": "ɓata",
       "normalizedBoko": "ɓata",
       "occurrences": 29,
-      "cumulativeCoveragePercent": 91.4448,
+      "cumulativeCoveragePercent": 91.4449,
       "tokens": [
         "B_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -11837,7 +11837,7 @@
       "boko": "eh",
       "normalizedBoko": "eh",
       "occurrences": 29,
-      "cumulativeCoveragePercent": 91.4895,
+      "cumulativeCoveragePercent": 91.4896,
       "tokens": [
         "VOWEL_E_UNLENGTHENED",
         "H_CONTEXT_REQUIRED"
@@ -11959,7 +11959,7 @@
       "category": "native_hausa",
       "exampleSentences": [
         "[V01 | modules.78.quiz.2.distractorFormulas.0] Eh, duk shiga riba ce",
-        "[V01 | modules.78.quiz.2.distractorFormulas.1] Eh, idan kwastoma ta biya cash",
+        "[V01 | modules.78.quiz.2.distractorFormulas.1] Eh, idan kwastoma ta biya da tsabar kuɗi",
         "[V01 | modules.78.quizQuestions.2.distractorFormulas.0] Eh, duk shiga riba ce"
       ],
       "reviewerDecision": null,
@@ -11971,7 +11971,7 @@
       "boko": "izini",
       "normalizedBoko": "izini",
       "occurrences": 29,
-      "cumulativeCoveragePercent": 91.5789,
+      "cumulativeCoveragePercent": 91.579,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "Z_PLAIN",
@@ -12089,7 +12089,7 @@
       "boko": "hutu",
       "normalizedBoko": "hutu",
       "occurrences": 28,
-      "cumulativeCoveragePercent": 91.7769,
+      "cumulativeCoveragePercent": 91.7771,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_U_UNLENGTHENED",
@@ -12190,7 +12190,7 @@
       "boko": "taru",
       "normalizedBoko": "taru",
       "occurrences": 28,
-      "cumulativeCoveragePercent": 91.8417,
+      "cumulativeCoveragePercent": 91.8418,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -12268,7 +12268,7 @@
       "boko": "farashin",
       "normalizedBoko": "farashin",
       "occurrences": 27,
-      "cumulativeCoveragePercent": 91.9149,
+      "cumulativeCoveragePercent": 91.915,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -12386,7 +12386,7 @@
       "boko": "zaɓar",
       "normalizedBoko": "zaɓar",
       "occurrences": 27,
-      "cumulativeCoveragePercent": 92.1022,
+      "cumulativeCoveragePercent": 92.1023,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -12474,7 +12474,7 @@
       "boko": "alaƙa",
       "normalizedBoko": "alaƙa",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.1222,
+      "cumulativeCoveragePercent": 92.1224,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -12593,7 +12593,7 @@
       "boko": "alkawari",
       "normalizedBoko": "alkawari",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.1323,
+      "cumulativeCoveragePercent": 92.1324,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -12777,7 +12777,7 @@
       "boko": "bada",
       "normalizedBoko": "bada",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.1423,
+      "cumulativeCoveragePercent": 92.1424,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -12856,7 +12856,7 @@
       "boko": "banki",
       "normalizedBoko": "banki",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.1523,
+      "cumulativeCoveragePercent": 92.1524,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -12947,7 +12947,7 @@
       "boko": "batun",
       "normalizedBoko": "batun",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.1623,
+      "cumulativeCoveragePercent": 92.1624,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -13023,7 +13023,7 @@
       "boko": "bincika",
       "normalizedBoko": "bincika",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.1723,
+      "cumulativeCoveragePercent": 92.1725,
       "tokens": [
         "B_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -13150,7 +13150,7 @@
       "boko": "ɓace",
       "normalizedBoko": "ɓace",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.1824,
+      "cumulativeCoveragePercent": 92.1825,
       "tokens": [
         "B_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -13230,7 +13230,7 @@
       "boko": "kunna",
       "normalizedBoko": "kunna",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.2826,
+      "cumulativeCoveragePercent": 92.2827,
       "tokens": [
         "K_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -13337,7 +13337,7 @@
       "boko": "sabuwar",
       "normalizedBoko": "sabuwar",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.3126,
+      "cumulativeCoveragePercent": 92.3127,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -13437,7 +13437,7 @@
       "boko": "toshe",
       "normalizedBoko": "toshe",
       "occurrences": 26,
-      "cumulativeCoveragePercent": 92.3627,
+      "cumulativeCoveragePercent": 92.3628,
       "tokens": [
         "T_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -13519,7 +13519,7 @@
       "boko": "duhu",
       "normalizedBoko": "duhu",
       "occurrences": 25,
-      "cumulativeCoveragePercent": 92.4594,
+      "cumulativeCoveragePercent": 92.4596,
       "tokens": [
         "D_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -13622,7 +13622,7 @@
       "boko": "imani",
       "normalizedBoko": "imani",
       "occurrences": 25,
-      "cumulativeCoveragePercent": 92.498,
+      "cumulativeCoveragePercent": 92.4981,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "M_PLAIN",
@@ -13741,7 +13741,7 @@
       "boko": "jira",
       "normalizedBoko": "jira",
       "occurrences": 25,
-      "cumulativeCoveragePercent": 92.5172,
+      "cumulativeCoveragePercent": 92.5174,
       "tokens": [
         "J_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -13820,7 +13820,7 @@
       "boko": "shigo",
       "normalizedBoko": "shigo",
       "occurrences": 25,
-      "cumulativeCoveragePercent": 92.5943,
+      "cumulativeCoveragePercent": 92.5944,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -13901,7 +13901,7 @@
       "boko": "tsoro",
       "normalizedBoko": "tsoro",
       "occurrences": 25,
-      "cumulativeCoveragePercent": 92.604,
+      "cumulativeCoveragePercent": 92.6041,
       "tokens": [
         "TS_HAUSA",
         "VOWEL_O_UNLENGTHENED",
@@ -13984,7 +13984,7 @@
       "boko": "bayarwa",
       "normalizedBoko": "bayarwa",
       "occurrences": 24,
-      "cumulativeCoveragePercent": 92.6413,
+      "cumulativeCoveragePercent": 92.6414,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -14096,7 +14096,7 @@
       "boko": "kanta",
       "normalizedBoko": "kanta",
       "occurrences": 24,
-      "cumulativeCoveragePercent": 92.7061,
+      "cumulativeCoveragePercent": 92.7062,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -14193,7 +14193,7 @@
       "boko": "kwatantawa",
       "normalizedBoko": "kwatantawa",
       "occurrences": 24,
-      "cumulativeCoveragePercent": 92.7246,
+      "cumulativeCoveragePercent": 92.7247,
       "tokens": [
         "K_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -14356,7 +14356,7 @@
       "boko": "matsaya",
       "normalizedBoko": "matsaya",
       "occurrences": 24,
-      "cumulativeCoveragePercent": 92.7708,
+      "cumulativeCoveragePercent": 92.7709,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -14453,7 +14453,7 @@
       "boko": "shekara",
       "normalizedBoko": "shekara",
       "occurrences": 24,
-      "cumulativeCoveragePercent": 92.8078,
+      "cumulativeCoveragePercent": 92.8079,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_E_UNLENGTHENED",
@@ -14578,7 +14578,7 @@
       "boko": "amincewa",
       "normalizedBoko": "amincewa",
       "occurrences": 23,
-      "cumulativeCoveragePercent": 92.8444,
+      "cumulativeCoveragePercent": 92.8445,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "M_PLAIN",
@@ -14748,7 +14748,7 @@
       "boko": "kallon",
       "normalizedBoko": "kallon",
       "occurrences": 23,
-      "cumulativeCoveragePercent": 92.9065,
+      "cumulativeCoveragePercent": 92.9066,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -14873,7 +14873,7 @@
       "boko": "nasara",
       "normalizedBoko": "nasara",
       "occurrences": 23,
-      "cumulativeCoveragePercent": 92.9862,
+      "cumulativeCoveragePercent": 92.9864,
       "tokens": [
         "N_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -14982,7 +14982,7 @@
       "boko": "rahoto",
       "normalizedBoko": "rahoto",
       "occurrences": 23,
-      "cumulativeCoveragePercent": 92.9951,
+      "cumulativeCoveragePercent": 92.9952,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -15119,7 +15119,7 @@
       "boko": "taso",
       "normalizedBoko": "taso",
       "occurrences": 23,
-      "cumulativeCoveragePercent": 93.0217,
+      "cumulativeCoveragePercent": 93.0218,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -15200,7 +15200,7 @@
       "boko": "wakiltar",
       "normalizedBoko": "wakiltar",
       "occurrences": 23,
-      "cumulativeCoveragePercent": 93.0394,
+      "cumulativeCoveragePercent": 93.0395,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -15318,7 +15318,7 @@
       "boko": "aika",
       "normalizedBoko": "aika",
       "occurrences": 22,
-      "cumulativeCoveragePercent": 93.0656,
+      "cumulativeCoveragePercent": 93.0657,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "VOWEL_I_UNLENGTHENED",
@@ -15446,7 +15446,7 @@
       "boko": "asara",
       "normalizedBoko": "asara",
       "occurrences": 22,
-      "cumulativeCoveragePercent": 93.0826,
+      "cumulativeCoveragePercent": 93.0827,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "S_PLAIN",
@@ -15565,7 +15565,7 @@
       "boko": "haska",
       "normalizedBoko": "haska",
       "occurrences": 22,
-      "cumulativeCoveragePercent": 93.125,
+      "cumulativeCoveragePercent": 93.1251,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -15686,7 +15686,7 @@
       "boko": "jikin",
       "normalizedBoko": "jikin",
       "occurrences": 22,
-      "cumulativeCoveragePercent": 93.1504,
+      "cumulativeCoveragePercent": 93.1505,
       "tokens": [
         "J_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -15777,7 +15777,7 @@
       "boko": "maye",
       "normalizedBoko": "maye",
       "occurrences": 22,
-      "cumulativeCoveragePercent": 93.2098,
+      "cumulativeCoveragePercent": 93.2099,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -15857,7 +15857,7 @@
       "boko": "sunayen",
       "normalizedBoko": "sunayen",
       "occurrences": 22,
-      "cumulativeCoveragePercent": 93.2437,
+      "cumulativeCoveragePercent": 93.2438,
       "tokens": [
         "S_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -15958,7 +15958,7 @@
       "boko": "baƙo",
       "normalizedBoko": "baƙo",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.2942,
+      "cumulativeCoveragePercent": 93.2943,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -16039,7 +16039,7 @@
       "boko": "gurbin",
       "normalizedBoko": "gurbin",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.3427,
+      "cumulativeCoveragePercent": 93.3428,
       "tokens": [
         "G_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -16118,7 +16118,7 @@
       "boko": "kammala",
       "normalizedBoko": "kammala",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.3913,
+      "cumulativeCoveragePercent": 93.3914,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -16253,7 +16253,7 @@
       "boko": "kwana",
       "normalizedBoko": "kwana",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.4075,
+      "cumulativeCoveragePercent": 93.4076,
       "tokens": [
         "K_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -16353,7 +16353,7 @@
       "boko": "ruɗani",
       "normalizedBoko": "ruɗani",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.4884,
+      "cumulativeCoveragePercent": 93.4885,
       "tokens": [
         "R_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -16450,7 +16450,7 @@
       "boko": "sashe",
       "normalizedBoko": "sashe",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.4965,
+      "cumulativeCoveragePercent": 93.4966,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -16530,7 +16530,7 @@
       "boko": "shafi",
       "normalizedBoko": "shafi",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.5046,
+      "cumulativeCoveragePercent": 93.5047,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -16609,7 +16609,7 @@
       "boko": "wadda",
       "normalizedBoko": "wadda",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.5531,
+      "cumulativeCoveragePercent": 93.5532,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -16695,7 +16695,7 @@
       "boko": "zan",
       "normalizedBoko": "zan",
       "occurrences": 21,
-      "cumulativeCoveragePercent": 93.5612,
+      "cumulativeCoveragePercent": 93.5613,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -16753,7 +16753,7 @@
       "boko": "dokokin",
       "normalizedBoko": "dokokin",
       "occurrences": 20,
-      "cumulativeCoveragePercent": 93.592,
+      "cumulativeCoveragePercent": 93.5921,
       "tokens": [
         "D_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -16887,7 +16887,7 @@
       "boko": "rahoton",
       "normalizedBoko": "rahoton",
       "occurrences": 20,
-      "cumulativeCoveragePercent": 93.7077,
+      "cumulativeCoveragePercent": 93.7078,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -17015,7 +17015,7 @@
       "boko": "umarni",
       "normalizedBoko": "umarni",
       "occurrences": 20,
-      "cumulativeCoveragePercent": 93.777,
+      "cumulativeCoveragePercent": 93.7771,
       "tokens": [
         "VOWEL_U_UNLENGTHENED",
         "M_PLAIN",
@@ -17344,7 +17344,7 @@
       "boko": "kauce",
       "normalizedBoko": "kauce",
       "occurrences": 19,
-      "cumulativeCoveragePercent": 93.8653,
+      "cumulativeCoveragePercent": 93.8654,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -17456,7 +17456,7 @@
       "boko": "lallai",
       "normalizedBoko": "lallai",
       "occurrences": 19,
-      "cumulativeCoveragePercent": 93.9165,
+      "cumulativeCoveragePercent": 93.9166,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -17570,7 +17570,7 @@
       "boko": "sauƙaƙa",
       "normalizedBoko": "sauƙaƙa",
       "occurrences": 19,
-      "cumulativeCoveragePercent": 93.9531,
+      "cumulativeCoveragePercent": 93.9532,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -17688,7 +17688,7 @@
       "boko": "zance",
       "normalizedBoko": "zance",
       "occurrences": 19,
-      "cumulativeCoveragePercent": 94.0117,
+      "cumulativeCoveragePercent": 94.0118,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -17771,7 +17771,7 @@
       "boko": "bango",
       "normalizedBoko": "bango",
       "occurrences": 18,
-      "cumulativeCoveragePercent": 94.0325,
+      "cumulativeCoveragePercent": 94.0326,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -17855,7 +17855,7 @@
       "boko": "fuskantar",
       "normalizedBoko": "fuskantar",
       "occurrences": 18,
-      "cumulativeCoveragePercent": 94.0603,
+      "cumulativeCoveragePercent": 94.0604,
       "tokens": [
         "F_HAUSA",
         "VOWEL_U_UNLENGTHENED",
@@ -17976,7 +17976,7 @@
       "boko": "harshen",
       "normalizedBoko": "harshen",
       "occurrences": 18,
-      "cumulativeCoveragePercent": 94.088,
+      "cumulativeCoveragePercent": 94.0881,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -18080,7 +18080,7 @@
       "boko": "takardu",
       "normalizedBoko": "takardu",
       "occurrences": 18,
-      "cumulativeCoveragePercent": 94.2337,
+      "cumulativeCoveragePercent": 94.2338,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -18253,7 +18253,7 @@
       "boko": "bashi",
       "normalizedBoko": "bashi",
       "occurrences": 17,
-      "cumulativeCoveragePercent": 94.2938,
+      "cumulativeCoveragePercent": 94.2939,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -18424,7 +18424,7 @@
       "boko": "gaisuwa",
       "normalizedBoko": "gaisuwa",
       "occurrences": 17,
-      "cumulativeCoveragePercent": 94.3266,
+      "cumulativeCoveragePercent": 94.3267,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -18542,7 +18542,7 @@
       "boko": "laifi",
       "normalizedBoko": "laifi",
       "occurrences": 17,
-      "cumulativeCoveragePercent": 94.4248,
+      "cumulativeCoveragePercent": 94.4249,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -18638,7 +18638,7 @@
       "boko": "ragu",
       "normalizedBoko": "ragu",
       "occurrences": 17,
-      "cumulativeCoveragePercent": 94.4445,
+      "cumulativeCoveragePercent": 94.4446,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -18717,7 +18717,7 @@
       "boko": "rufi",
       "normalizedBoko": "rufi",
       "occurrences": 17,
-      "cumulativeCoveragePercent": 94.4576,
+      "cumulativeCoveragePercent": 94.4577,
       "tokens": [
         "R_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -18796,7 +18796,7 @@
       "boko": "tambarin",
       "normalizedBoko": "tambarin",
       "occurrences": 17,
-      "cumulativeCoveragePercent": 94.4903,
+      "cumulativeCoveragePercent": 94.4904,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -18899,7 +18899,7 @@
       "boko": "al'adar",
       "normalizedBoko": "al'adar",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.5416,
+      "cumulativeCoveragePercent": 94.5417,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -19041,7 +19041,7 @@
       "boko": "daidaito",
       "normalizedBoko": "daidaito",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.5724,
+      "cumulativeCoveragePercent": 94.5725,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -19189,7 +19189,7 @@
       "boko": "ka'ida",
       "normalizedBoko": "ka'ida",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.6341,
+      "cumulativeCoveragePercent": 94.6342,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -19318,7 +19318,7 @@
       "boko": "littafin",
       "normalizedBoko": "littafin",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.6711,
+      "cumulativeCoveragePercent": 94.6712,
       "tokens": [
         "L_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -19448,7 +19448,7 @@
       "boko": "matsayar",
       "normalizedBoko": "matsayar",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.6834,
+      "cumulativeCoveragePercent": 94.6835,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -19548,7 +19548,7 @@
       "boko": "ra’ayin",
       "normalizedBoko": "ra'ayin",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.7142,
+      "cumulativeCoveragePercent": 94.7143,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -19672,7 +19672,7 @@
       "boko": "tushensa",
       "normalizedBoko": "tushensa",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.7944,
+      "cumulativeCoveragePercent": 94.7945,
       "tokens": [
         "T_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -19773,7 +19773,7 @@
       "boko": "yiwu",
       "normalizedBoko": "yiwu",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.8129,
+      "cumulativeCoveragePercent": 94.813,
       "tokens": [
         "Y_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -19852,7 +19852,7 @@
       "boko": "zargi",
       "normalizedBoko": "zargi",
       "occurrences": 16,
-      "cumulativeCoveragePercent": 94.8314,
+      "cumulativeCoveragePercent": 94.8315,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -19934,7 +19934,7 @@
       "boko": "dariya",
       "normalizedBoko": "dariya",
       "occurrences": 15,
-      "cumulativeCoveragePercent": 94.8487,
+      "cumulativeCoveragePercent": 94.8488,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -20154,7 +20154,7 @@
       "boko": "manufa",
       "normalizedBoko": "manufa",
       "occurrences": 15,
-      "cumulativeCoveragePercent": 94.9181,
+      "cumulativeCoveragePercent": 94.9182,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -20472,7 +20472,7 @@
       "boko": "gizo",
       "normalizedBoko": "gizo",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.0576,
+      "cumulativeCoveragePercent": 95.0577,
       "tokens": [
         "G_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -20553,7 +20553,7 @@
       "boko": "isasshen",
       "normalizedBoko": "isasshen",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.09,
+      "cumulativeCoveragePercent": 95.0901,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "S_PLAIN",
@@ -20847,7 +20847,7 @@
       "boko": "maballi",
       "normalizedBoko": "maballi",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.1439,
+      "cumulativeCoveragePercent": 95.144,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -20967,7 +20967,7 @@
       "boko": "mun",
       "normalizedBoko": "mun",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.1547,
+      "cumulativeCoveragePercent": 95.1548,
       "tokens": [
         "M_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -21025,7 +21025,7 @@
       "boko": "rikici",
       "normalizedBoko": "rikici",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.1817,
+      "cumulativeCoveragePercent": 95.1818,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -21149,7 +21149,7 @@
       "boko": "rubutun",
       "normalizedBoko": "rubutun",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.1925,
+      "cumulativeCoveragePercent": 95.1926,
       "tokens": [
         "R_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -21249,7 +21249,7 @@
       "boko": "shaida",
       "normalizedBoko": "shaida",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.2033,
+      "cumulativeCoveragePercent": 95.2034,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -21345,7 +21345,7 @@
       "boko": "shawarar",
       "normalizedBoko": "shawarar",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.2087,
+      "cumulativeCoveragePercent": 95.2088,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -21503,7 +21503,7 @@
       "boko": "zaɓin",
       "normalizedBoko": "zaɓin",
       "occurrences": 14,
-      "cumulativeCoveragePercent": 95.2626,
+      "cumulativeCoveragePercent": 95.2627,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -21849,7 +21849,7 @@
       "boko": "daya",
       "normalizedBoko": "daya",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.2977,
+      "cumulativeCoveragePercent": 95.2978,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -22025,7 +22025,7 @@
       "boko": "jari",
       "normalizedBoko": "jari",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.3929,
+      "cumulativeCoveragePercent": 95.393,
       "tokens": [
         "J_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -22104,7 +22104,7 @@
       "boko": "jiya",
       "normalizedBoko": "jiya",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.3979,
+      "cumulativeCoveragePercent": 95.398,
       "tokens": [
         "J_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -22183,7 +22183,7 @@
       "boko": "katse",
       "normalizedBoko": "katse",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.4079,
+      "cumulativeCoveragePercent": 95.408,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -22278,7 +22278,7 @@
       "boko": "saurin",
       "normalizedBoko": "saurin",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.5231,
+      "cumulativeCoveragePercent": 95.5232,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -22553,7 +22553,7 @@
       "boko": "tsada",
       "normalizedBoko": "tsada",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.5582,
+      "cumulativeCoveragePercent": 95.5583,
       "tokens": [
         "TS_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -22632,7 +22632,7 @@
       "boko": "tsohon",
       "normalizedBoko": "tsohon",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.5632,
+      "cumulativeCoveragePercent": 95.5633,
       "tokens": [
         "TS_HAUSA",
         "VOWEL_O_UNLENGTHENED",
@@ -22736,7 +22736,7 @@
       "boko": "wayarka",
       "normalizedBoko": "wayarka",
       "occurrences": 13,
-      "cumulativeCoveragePercent": 95.5782,
+      "cumulativeCoveragePercent": 95.5783,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -22931,7 +22931,7 @@
       "boko": "asusu",
       "normalizedBoko": "asusu",
       "occurrences": 12,
-      "cumulativeCoveragePercent": 95.6168,
+      "cumulativeCoveragePercent": 95.6169,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "S_PLAIN",
@@ -23050,7 +23050,7 @@
       "boko": "iyakar",
       "normalizedBoko": "iyakar",
       "occurrences": 12,
-      "cumulativeCoveragePercent": 95.7324,
+      "cumulativeCoveragePercent": 95.7325,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "Y_PLAIN",
@@ -23243,7 +23243,7 @@
       "boko": "rufewa",
       "normalizedBoko": "rufewa",
       "occurrences": 12,
-      "cumulativeCoveragePercent": 95.8526,
+      "cumulativeCoveragePercent": 95.8527,
       "tokens": [
         "R_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -23432,7 +23432,7 @@
       "boko": "tunawa",
       "normalizedBoko": "tunawa",
       "occurrences": 12,
-      "cumulativeCoveragePercent": 95.8896,
+      "cumulativeCoveragePercent": 95.8897,
       "tokens": [
         "T_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -23541,7 +23541,7 @@
       "boko": "watsi",
       "normalizedBoko": "watsi",
       "occurrences": 12,
-      "cumulativeCoveragePercent": 95.9081,
+      "cumulativeCoveragePercent": 95.9082,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -23620,7 +23620,7 @@
       "boko": "'yar",
       "normalizedBoko": "ƴar",
       "occurrences": 12,
-      "cumulativeCoveragePercent": 95.9266,
+      "cumulativeCoveragePercent": 95.9267,
       "tokens": [
         "HAUSA_GLOTTALIZED_Y",
         "VOWEL_A_UNLENGTHENED",
@@ -23672,7 +23672,7 @@
       "boko": "abokai",
       "normalizedBoko": "abokai",
       "occurrences": 11,
-      "cumulativeCoveragePercent": 95.9355,
+      "cumulativeCoveragePercent": 95.9356,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "B_PLAIN",
@@ -23824,7 +23824,7 @@
       "boko": "Aisha",
       "normalizedBoko": "aisha",
       "occurrences": 11,
-      "cumulativeCoveragePercent": 95.9397,
+      "cumulativeCoveragePercent": 95.9398,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "VOWEL_I_UNLENGTHENED",
@@ -24031,7 +24031,7 @@
       "boko": "Fatima",
       "normalizedBoko": "fatima",
       "occurrences": 11,
-      "cumulativeCoveragePercent": 96.0245,
+      "cumulativeCoveragePercent": 96.0246,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -24209,7 +24209,7 @@
       "boko": "haƙuri",
       "normalizedBoko": "haƙuri",
       "occurrences": 11,
-      "cumulativeCoveragePercent": 96.0457,
+      "cumulativeCoveragePercent": 96.0458,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -24439,7 +24439,7 @@
       "boko": "sako",
       "normalizedBoko": "sako",
       "occurrences": 11,
-      "cumulativeCoveragePercent": 96.1474,
+      "cumulativeCoveragePercent": 96.1475,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -24535,7 +24535,7 @@
       "boko": "tabbacin",
       "normalizedBoko": "tabbacin",
       "occurrences": 11,
-      "cumulativeCoveragePercent": 96.1644,
+      "cumulativeCoveragePercent": 96.1645,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -24665,7 +24665,7 @@
       "boko": "tafi",
       "normalizedBoko": "tafi",
       "occurrences": 11,
-      "cumulativeCoveragePercent": 96.1686,
+      "cumulativeCoveragePercent": 96.1687,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -25004,7 +25004,7 @@
       "boko": "dukan",
       "normalizedBoko": "dukan",
       "occurrences": 10,
-      "cumulativeCoveragePercent": 96.2484,
+      "cumulativeCoveragePercent": 96.2485,
       "tokens": [
         "D_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -25095,7 +25095,7 @@
       "boko": "gudun",
       "normalizedBoko": "gudun",
       "occurrences": 10,
-      "cumulativeCoveragePercent": 96.2715,
+      "cumulativeCoveragePercent": 96.2716,
       "tokens": [
         "G_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -25171,7 +25171,7 @@
       "boko": "gyarawa",
       "normalizedBoko": "gyarawa",
       "occurrences": 10,
-      "cumulativeCoveragePercent": 96.2792,
+      "cumulativeCoveragePercent": 96.2793,
       "tokens": [
         "G_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -25474,7 +25474,7 @@
       "boko": "Maryam",
       "normalizedBoko": "maryam",
       "occurrences": 10,
-      "cumulativeCoveragePercent": 96.364,
+      "cumulativeCoveragePercent": 96.3641,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -25553,7 +25553,7 @@
       "boko": "shiru",
       "normalizedBoko": "shiru",
       "occurrences": 10,
-      "cumulativeCoveragePercent": 96.3871,
+      "cumulativeCoveragePercent": 96.3872,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -26056,7 +26056,7 @@
       "boko": "uzurin",
       "normalizedBoko": "uzurin",
       "occurrences": 10,
-      "cumulativeCoveragePercent": 96.4372,
+      "cumulativeCoveragePercent": 96.4373,
       "tokens": [
         "VOWEL_U_UNLENGTHENED",
         "Z_PLAIN",
@@ -26294,7 +26294,7 @@
       "boko": "albashi",
       "normalizedBoko": "albashi",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.4819,
+      "cumulativeCoveragePercent": 96.482,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -26562,7 +26562,7 @@
       "boko": "Aminu",
       "normalizedBoko": "aminu",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.4958,
+      "cumulativeCoveragePercent": 96.4959,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "M_PLAIN",
@@ -26798,7 +26798,7 @@
       "boko": "cinikin",
       "normalizedBoko": "cinikin",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.5305,
+      "cumulativeCoveragePercent": 96.5306,
       "tokens": [
         "C_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -26913,7 +26913,7 @@
       "boko": "fushi",
       "normalizedBoko": "fushi",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.5617,
+      "cumulativeCoveragePercent": 96.5618,
       "tokens": [
         "F_HAUSA",
         "VOWEL_U_UNLENGTHENED",
@@ -27246,7 +27246,7 @@
       "boko": "illa",
       "normalizedBoko": "illa",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.6137,
+      "cumulativeCoveragePercent": 96.6138,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "L_PLAIN",
@@ -27763,7 +27763,7 @@
       "boko": "rikita",
       "normalizedBoko": "rikita",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.7039,
+      "cumulativeCoveragePercent": 96.704,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -27980,7 +27980,7 @@
       "boko": "sayen",
       "normalizedBoko": "sayen",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.7247,
+      "cumulativeCoveragePercent": 96.7248,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -28057,7 +28057,7 @@
       "boko": "shafe",
       "normalizedBoko": "shafe",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.7386,
+      "cumulativeCoveragePercent": 96.7387,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -28137,7 +28137,7 @@
       "boko": "tsintsiya",
       "normalizedBoko": "tsintsiya",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.7802,
+      "cumulativeCoveragePercent": 96.7803,
       "tokens": [
         "TS_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -28249,7 +28249,7 @@
       "boko": "ɓoyewa",
       "normalizedBoko": "ɓoyewa",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 96.848,
+      "cumulativeCoveragePercent": 96.8481,
       "tokens": [
         "B_GLOTTALIZED",
         "VOWEL_O_UNLENGTHENED",
@@ -28540,7 +28540,7 @@
       "boko": "gauraya",
       "normalizedBoko": "gauraya",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 96.9035,
+      "cumulativeCoveragePercent": 96.9036,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -28658,7 +28658,7 @@
       "boko": "ka'idodi",
       "normalizedBoko": "ka'idodi",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 96.9436,
+      "cumulativeCoveragePercent": 96.9437,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -28799,7 +28799,7 @@
       "boko": "kirki",
       "normalizedBoko": "kirki",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 96.9621,
+      "cumulativeCoveragePercent": 96.9622,
       "tokens": [
         "K_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -28911,7 +28911,7 @@
       "boko": "kulle",
       "normalizedBoko": "kulle",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 96.9775,
+      "cumulativeCoveragePercent": 96.9776,
       "tokens": [
         "K_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -29158,7 +29158,7 @@
       "boko": "Sule",
       "normalizedBoko": "sule",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 97.0885,
+      "cumulativeCoveragePercent": 97.0886,
       "tokens": [
         "S_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -29316,7 +29316,7 @@
       "boko": "Tallan",
       "normalizedBoko": "tallan",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 97.1039,
+      "cumulativeCoveragePercent": 97.104,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -29424,7 +29424,7 @@
       "boko": "turo",
       "normalizedBoko": "turo",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 97.1255,
+      "cumulativeCoveragePercent": 97.1256,
       "tokens": [
         "T_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -29499,7 +29499,7 @@
       "boko": "Usman",
       "normalizedBoko": "usman",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 97.1409,
+      "cumulativeCoveragePercent": 97.141,
       "tokens": [
         "VOWEL_U_UNLENGTHENED",
         "S_PLAIN",
@@ -29628,7 +29628,7 @@
       "boko": "halartar",
       "normalizedBoko": "halartar",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.2199,
+      "cumulativeCoveragePercent": 97.22,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -29755,7 +29755,7 @@
       "boko": "hulɗar",
       "normalizedBoko": "hulɗar",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.2307,
+      "cumulativeCoveragePercent": 97.2308,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_U_UNLENGTHENED",
@@ -29858,7 +29858,7 @@
       "boko": "huta",
       "normalizedBoko": "huta",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.2334,
+      "cumulativeCoveragePercent": 97.2335,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_U_UNLENGTHENED",
@@ -29961,7 +29961,7 @@
       "boko": "ihu",
       "normalizedBoko": "ihu",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.2361,
+      "cumulativeCoveragePercent": 97.2362,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "H_CONTEXT_REQUIRED",
@@ -30402,7 +30402,7 @@
       "boko": "saki",
       "normalizedBoko": "saki",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.3224,
+      "cumulativeCoveragePercent": 97.3225,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -30496,7 +30496,7 @@
       "boko": "stock",
       "normalizedBoko": "stock",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.3305,
+      "cumulativeCoveragePercent": 97.3306,
       "tokens": [
         "S_PLAIN",
         "T_PLAIN",
@@ -30571,7 +30571,7 @@
       "boko": "shaidar",
       "normalizedBoko": "shaidar",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.3332,
+      "cumulativeCoveragePercent": 97.3333,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -30689,7 +30689,7 @@
       "boko": "shakka",
       "normalizedBoko": "shakka",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.3359,
+      "cumulativeCoveragePercent": 97.336,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -30811,7 +30811,7 @@
       "boko": "tabbatacce",
       "normalizedBoko": "tabbatacce",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.3386,
+      "cumulativeCoveragePercent": 97.3387,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -30978,7 +30978,7 @@
       "boko": "takalman",
       "normalizedBoko": "takalman",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.3413,
+      "cumulativeCoveragePercent": 97.3414,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -31684,7 +31684,7 @@
       "boko": "alamun",
       "normalizedBoko": "alamun",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.4095,
+      "cumulativeCoveragePercent": 97.4096,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -31928,7 +31928,7 @@
       "boko": "damuwa",
       "normalizedBoko": "damuwa",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.4673,
+      "cumulativeCoveragePercent": 97.4674,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -32185,7 +32185,7 @@
       "boko": "gaske",
       "normalizedBoko": "gaske",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.5043,
+      "cumulativeCoveragePercent": 97.5044,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -32283,7 +32283,7 @@
       "boko": "Harajin",
       "normalizedBoko": "harajin",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.5205,
+      "cumulativeCoveragePercent": 97.5206,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -32407,7 +32407,7 @@
       "boko": "Hauwa",
       "normalizedBoko": "hauwa",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.5228,
+      "cumulativeCoveragePercent": 97.5229,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -32527,7 +32527,7 @@
       "boko": "hira",
       "normalizedBoko": "hira",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.5251,
+      "cumulativeCoveragePercent": 97.5252,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_I_UNLENGTHENED",
@@ -32630,7 +32630,7 @@
       "boko": "iso",
       "normalizedBoko": "iso",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.5436,
+      "cumulativeCoveragePercent": 97.5437,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "S_PLAIN",
@@ -32850,7 +32850,7 @@
       "boko": "Ka'idar",
       "normalizedBoko": "ka'idar",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.5621,
+      "cumulativeCoveragePercent": 97.5622,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -32989,7 +32989,7 @@
       "boko": "karba",
       "normalizedBoko": "karba",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.5783,
+      "cumulativeCoveragePercent": 97.5784,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -33589,7 +33589,7 @@
       "boko": "Ribar",
       "normalizedBoko": "ribar",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.6523,
+      "cumulativeCoveragePercent": 97.6524,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -33665,7 +33665,7 @@
       "boko": "tabbas",
       "normalizedBoko": "tabbas",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.6916,
+      "cumulativeCoveragePercent": 97.6917,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -33864,7 +33864,7 @@
       "boko": "asusunka",
       "normalizedBoko": "asusunka",
       "occurrences": 5,
-      "cumulativeCoveragePercent": 97.7833,
+      "cumulativeCoveragePercent": 97.7834,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "S_PLAIN",
@@ -34115,7 +34115,7 @@
       "boko": "karbar",
       "normalizedBoko": "karbar",
       "occurrences": 5,
-      "cumulativeCoveragePercent": 97.8893,
+      "cumulativeCoveragePercent": 97.8894,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -34209,7 +34209,7 @@
       "boko": "katinka",
       "normalizedBoko": "katinka",
       "occurrences": 5,
-      "cumulativeCoveragePercent": 97.8912,
+      "cumulativeCoveragePercent": 97.8913,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -34560,7 +34560,7 @@
       "boko": "kunya",
       "normalizedBoko": "kunya",
       "occurrences": 5,
-      "cumulativeCoveragePercent": 97.9124,
+      "cumulativeCoveragePercent": 97.9125,
       "tokens": [
         "K_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -35139,7 +35139,7 @@
       "boko": "Rijista",
       "normalizedBoko": "rijista",
       "occurrences": 5,
-      "cumulativeCoveragePercent": 97.9972,
+      "cumulativeCoveragePercent": 97.9973,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -35888,7 +35888,7 @@
       "boko": "bude",
       "normalizedBoko": "bude",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.1525,
+      "cumulativeCoveragePercent": 98.1526,
       "tokens": [
         "B_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -36132,7 +36132,7 @@
       "boko": "ɗansa",
       "normalizedBoko": "ɗansa",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.1895,
+      "cumulativeCoveragePercent": 98.1896,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -36288,7 +36288,7 @@
       "boko": "Fayyacewa",
       "normalizedBoko": "fayyacewa",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.208,
+      "cumulativeCoveragePercent": 98.2081,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -36830,7 +36830,7 @@
       "boko": "labarinsa",
       "normalizedBoko": "labarinsa",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.3421,
+      "cumulativeCoveragePercent": 98.3422,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -37482,11 +37482,87 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2590,
+      "rank": 2581,
+      "boko": "tsabar",
+      "normalizedBoko": "tsabar",
+      "occurrences": 4,
+      "cumulativeCoveragePercent": 98.4963,
+      "tokens": [
+        "TS_HAUSA",
+        "VOWEL_A_UNLENGTHENED",
+        "B_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "R_PLAIN"
+      ],
+      "provisionalAjami": "ڟَبَرْ",
+      "ajamiCodepoints": [
+        "U+069F",
+        "U+064E",
+        "U+0628",
+        "U+064E",
+        "U+0631",
+        "U+0652"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 2,
+          "letter": "a",
+          "question": "Is the 'a' at position 2 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 4,
+          "letter": "a",
+          "question": "Is the 'a' at position 4 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V01 | modules.78.quiz.2.distractorFormulas.1] Eh, idan kwastoma ta biya da tsabar kuɗi",
+        "[V01 | modules.78.quizQuestions.2.distractorFormulas.1] Eh, idan kwastoma ta biya da tsabar kuɗi",
+        "[p2-maths-13 | modules.115.textExplanationHa] Haka kuma idan kana da tsabar kuɗi na naira 5, za ka ƙirga 5, 10, 15."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 0
+    },
+    {
+      "rank": 2591,
       "boko": "tsoratarwa",
       "normalizedBoko": "tsoratarwa",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.5102,
+      "cumulativeCoveragePercent": 98.5117,
       "tokens": [
         "TS_HAUSA",
         "VOWEL_O_UNLENGTHENED",
@@ -37626,11 +37702,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2595,
+      "rank": 2596,
       "boko": "wahalar",
       "normalizedBoko": "wahalar",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.5179,
+      "cumulativeCoveragePercent": 98.5194,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -37750,11 +37826,11 @@
       "redundantQuestionsRemoved": 0
     },
     {
-      "rank": 2603,
+      "rank": 2604,
       "boko": "watanni",
       "normalizedBoko": "watanni",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.5302,
+      "cumulativeCoveragePercent": 98.5318,
       "tokens": [
         "W_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -37858,11 +37934,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2611,
+      "rank": 2612,
       "boko": "yasa",
       "normalizedBoko": "yasa",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.5425,
+      "cumulativeCoveragePercent": 98.5441,
       "tokens": [
         "Y_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -37937,11 +38013,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2626,
+      "rank": 2627,
       "boko": "zuciyarsa",
       "normalizedBoko": "zuciyarsa",
       "occurrences": 4,
-      "cumulativeCoveragePercent": 98.5656,
+      "cumulativeCoveragePercent": 98.5672,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -38061,11 +38137,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2629,
+      "rank": 2630,
       "boko": "abota",
       "normalizedBoko": "abota",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.5691,
+      "cumulativeCoveragePercent": 98.5707,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "B_PLAIN",
@@ -38170,11 +38246,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2636,
+      "rank": 2637,
       "boko": "alhali",
       "normalizedBoko": "alhali",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.5772,
+      "cumulativeCoveragePercent": 98.5788,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -38335,11 +38411,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2644,
+      "rank": 2645,
       "boko": "baƙi",
       "normalizedBoko": "baƙi",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.5865,
+      "cumulativeCoveragePercent": 98.588,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -38414,11 +38490,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2650,
+      "rank": 2651,
       "boko": "bayaninka",
       "normalizedBoko": "bayaninka",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.5934,
+      "cumulativeCoveragePercent": 98.595,
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -38553,11 +38629,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2661,
+      "rank": 2662,
       "boko": "ɗan'uwa",
       "normalizedBoko": "ɗan'uwa",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6061,
+      "cumulativeCoveragePercent": 98.6077,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -38668,11 +38744,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2663,
+      "rank": 2664,
       "boko": "fallasa",
       "normalizedBoko": "fallasa",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6084,
+      "cumulativeCoveragePercent": 98.61,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -38788,11 +38864,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2669,
+      "rank": 2670,
       "boko": "gaisuwar",
       "normalizedBoko": "gaisuwar",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6154,
+      "cumulativeCoveragePercent": 98.6169,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -38928,11 +39004,11 @@
       "redundantQuestionsRemoved": 2
     },
     {
-      "rank": 2671,
+      "rank": 2672,
       "boko": "Ganowa",
       "normalizedBoko": "ganowa",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6177,
+      "cumulativeCoveragePercent": 98.6192,
       "tokens": [
         "G_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39027,11 +39103,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2691,
+      "rank": 2692,
       "boko": "jayayya",
       "normalizedBoko": "jayayya",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6408,
+      "cumulativeCoveragePercent": 98.6424,
       "tokens": [
         "J_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39147,11 +39223,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2698,
+      "rank": 2699,
       "boko": "kammalawata",
       "normalizedBoko": "kammalawata",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6489,
+      "cumulativeCoveragePercent": 98.6505,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39314,11 +39390,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2700,
+      "rank": 2701,
       "boko": "kashewa",
       "normalizedBoko": "kashewa",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6512,
+      "cumulativeCoveragePercent": 98.6528,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39439,11 +39515,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2732,
+      "rank": 2733,
       "boko": "Maraba",
       "normalizedBoko": "maraba",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6882,
+      "cumulativeCoveragePercent": 98.6898,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39536,11 +39612,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2735,
+      "rank": 2736,
       "boko": "matsayarta",
       "normalizedBoko": "matsayarta",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.6917,
+      "cumulativeCoveragePercent": 98.6932,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39660,11 +39736,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2748,
+      "rank": 2749,
       "boko": "rahotannin",
       "normalizedBoko": "rahotannin",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.7067,
+      "cumulativeCoveragePercent": 98.7083,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39838,11 +39914,11 @@
       "redundantQuestionsRemoved": 0
     },
     {
-      "rank": 2761,
+      "rank": 2762,
       "boko": "satar",
       "normalizedBoko": "satar",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.7217,
+      "cumulativeCoveragePercent": 98.7233,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -39914,11 +39990,11 @@
       "redundantQuestionsRemoved": 0
     },
     {
-      "rank": 2769,
+      "rank": 2770,
       "boko": "sharadi",
       "normalizedBoko": "sharadi",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.731,
+      "cumulativeCoveragePercent": 98.7325,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -40023,11 +40099,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2780,
+      "rank": 2781,
       "boko": "tuntuɓa",
       "normalizedBoko": "tuntuɓa",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.7437,
+      "cumulativeCoveragePercent": 98.7453,
       "tokens": [
         "T_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -40135,11 +40211,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2783,
+      "rank": 2784,
       "boko": "tsabtace",
       "normalizedBoko": "tsabtace",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.7472,
+      "cumulativeCoveragePercent": 98.7487,
       "tokens": [
         "TS_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -40248,11 +40324,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2792,
+      "rank": 2793,
       "boko": "yini",
       "normalizedBoko": "yini",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.7576,
+      "cumulativeCoveragePercent": 98.7591,
       "tokens": [
         "Y_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -40327,11 +40403,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2796,
+      "rank": 2797,
       "boko": "zubo",
       "normalizedBoko": "zubo",
       "occurrences": 3,
-      "cumulativeCoveragePercent": 98.7622,
+      "cumulativeCoveragePercent": 98.7637,
       "tokens": [
         "Z_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -40408,11 +40484,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2813,
+      "rank": 2814,
       "boko": "Addu'ar",
       "normalizedBoko": "addu'ar",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.7753,
+      "cumulativeCoveragePercent": 98.7769,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "D_PLAIN",
@@ -40566,11 +40642,11 @@
       "redundantQuestionsRemoved": 0
     },
     {
-      "rank": 2816,
+      "rank": 2817,
       "boko": "aikina",
       "normalizedBoko": "aikina",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.7776,
+      "cumulativeCoveragePercent": 98.7792,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "VOWEL_I_UNLENGTHENED",
@@ -40715,11 +40791,11 @@
       "redundantQuestionsRemoved": 3
     },
     {
-      "rank": 2818,
+      "rank": 2819,
       "boko": "aiwatarwa",
       "normalizedBoko": "aiwatarwa",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.7791,
+      "cumulativeCoveragePercent": 98.7807,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "VOWEL_I_UNLENGTHENED",
@@ -40893,11 +40969,11 @@
       "redundantQuestionsRemoved": 3
     },
     {
-      "rank": 2834,
+      "rank": 2835,
       "boko": "amintacce",
       "normalizedBoko": "amintacce",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.7915,
+      "cumulativeCoveragePercent": 98.793,
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "M_PLAIN",
@@ -41080,63 +41156,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2862,
-      "boko": "cash",
-      "normalizedBoko": "cash",
-      "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8131,
-      "tokens": [
-        "C_HAUSA",
-        "VOWEL_A_UNLENGTHENED",
-        "SH_HAUSA"
-      ],
-      "provisionalAjami": "ثَشْ",
-      "ajamiCodepoints": [
-        "U+062B",
-        "U+064E",
-        "U+0634",
-        "U+0652"
-      ],
-      "status": "excluded",
-      "exclusionReason": "Muhammad ruled 2026-08-17: cash is an English token whose initial /k/ is misread by the Hausa tokenizer as c /tʃ/; the provisional ثَشْ must never be materialised.",
-      "confidence": "unreviewed",
-      "openQuestions": [
-        {
-          "type": "VOWEL_LENGTH",
-          "position": 1,
-          "letter": "a",
-          "question": "Is the 'a' at position 1 short (U+064E) or long (U+064E U+0627)?",
-          "options": [
-            "short — U+064E",
-            "long — U+064E U+0627",
-            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
-          ],
-          "candidateCodePointSequences": {
-            "short": [
-              "U+064E"
-            ],
-            "long": [
-              "U+064E",
-              "U+0627"
-            ]
-          }
-        }
-      ],
-      "category": "native_hausa",
-      "exampleSentences": [
-        "[V01 | modules.78.quiz.2.distractorFormulas.1] Eh, idan kwastoma ta biya cash",
-        "[V01 | modules.78.quizQuestions.2.distractorFormulas.1] Eh, idan kwastoma ta biya cash"
-      ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
-      "redundantQuestionsRemoved": 0
-    },
-    {
       "rank": 2863,
       "boko": "chat",
       "normalizedBoko": "chat",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8138,
+      "cumulativeCoveragePercent": 98.8146,
       "tokens": [
         "C_HAUSA",
         "H_CONTEXT_REQUIRED",
@@ -41201,7 +41225,7 @@
       "boko": "Daukar",
       "normalizedBoko": "daukar",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8254,
+      "cumulativeCoveragePercent": 98.8262,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -41333,7 +41357,7 @@
       "boko": "dauki",
       "normalizedBoko": "dauki",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8262,
+      "cumulativeCoveragePercent": 98.8269,
       "tokens": [
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -41443,7 +41467,7 @@
       "boko": "ɗana",
       "normalizedBoko": "ɗana",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8331,
+      "cumulativeCoveragePercent": 98.8339,
       "tokens": [
         "D_GLOTTALIZED",
         "VOWEL_A_UNLENGTHENED",
@@ -41521,7 +41545,7 @@
       "boko": "faranta",
       "normalizedBoko": "faranta",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8408,
+      "cumulativeCoveragePercent": 98.8416,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -41632,7 +41656,7 @@
       "boko": "farfajiya",
       "normalizedBoko": "farfajiya",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8416,
+      "cumulativeCoveragePercent": 98.8424,
       "tokens": [
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -41773,7 +41797,7 @@
       "boko": "Firinta",
       "normalizedBoko": "firinta",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8447,
+      "cumulativeCoveragePercent": 98.8454,
       "tokens": [
         "F_HAUSA",
         "VOWEL_I_UNLENGTHENED",
@@ -41872,7 +41896,7 @@
       "boko": "form",
       "normalizedBoko": "form",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8462,
+      "cumulativeCoveragePercent": 98.847,
       "tokens": [
         "F_HAUSA",
         "VOWEL_O_UNLENGTHENED",
@@ -41928,7 +41952,7 @@
       "boko": "Gobarar",
       "normalizedBoko": "gobarar",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8578,
+      "cumulativeCoveragePercent": 98.8585,
       "tokens": [
         "G_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -42029,7 +42053,7 @@
       "boko": "hakki",
       "normalizedBoko": "hakki",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8685,
+      "cumulativeCoveragePercent": 98.8693,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -42174,7 +42198,7 @@
       "boko": "haya",
       "normalizedBoko": "haya",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8793,
+      "cumulativeCoveragePercent": 98.8801,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -42276,7 +42300,7 @@
       "boko": "ingancin",
       "normalizedBoko": "ingancin",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.8917,
+      "cumulativeCoveragePercent": 98.8925,
       "tokens": [
         "VOWEL_I_UNLENGTHENED",
         "N_HAUSA",
@@ -42448,7 +42472,7 @@
       "boko": "jefar",
       "normalizedBoko": "jefar",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9002,
+      "cumulativeCoveragePercent": 98.9009,
       "tokens": [
         "J_PLAIN",
         "VOWEL_E_UNLENGTHENED",
@@ -42524,7 +42548,7 @@
       "boko": "kamfani",
       "normalizedBoko": "kamfani",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9055,
+      "cumulativeCoveragePercent": 98.9063,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -42650,7 +42674,7 @@
       "boko": "kamfanin",
       "normalizedBoko": "kamfanin",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9063,
+      "cumulativeCoveragePercent": 98.9071,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -42767,7 +42791,7 @@
       "boko": "karshen",
       "normalizedBoko": "karshen",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9109,
+      "cumulativeCoveragePercent": 98.9117,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -42861,7 +42885,7 @@
       "boko": "karu",
       "normalizedBoko": "karu",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9117,
+      "cumulativeCoveragePercent": 98.9125,
       "tokens": [
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -42954,7 +42978,7 @@
       "boko": "kirkiro",
       "normalizedBoko": "kirkiro",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9163,
+      "cumulativeCoveragePercent": 98.9171,
       "tokens": [
         "K_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -43085,7 +43109,7 @@
       "boko": "kuɗinsa",
       "normalizedBoko": "kuɗinsa",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9217,
+      "cumulativeCoveragePercent": 98.9225,
       "tokens": [
         "K_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -43199,7 +43223,7 @@
       "boko": "kwanan",
       "normalizedBoko": "kwanan",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9294,
+      "cumulativeCoveragePercent": 98.9302,
       "tokens": [
         "K_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -43295,7 +43319,7 @@
       "boko": "kwatance",
       "normalizedBoko": "kwatance",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9302,
+      "cumulativeCoveragePercent": 98.931,
       "tokens": [
         "K_VELAR_CLUSTER",
         "VOWEL_A_UNLENGTHENED",
@@ -43428,7 +43452,7 @@
       "boko": "Ladi",
       "normalizedBoko": "ladi",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9472,
+      "cumulativeCoveragePercent": 98.948,
       "tokens": [
         "L_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -43500,7 +43524,7 @@
       "boko": "mahallin",
       "normalizedBoko": "mahallin",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9572,
+      "cumulativeCoveragePercent": 98.958,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -43653,7 +43677,7 @@
       "boko": "makara",
       "normalizedBoko": "makara",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9587,
+      "cumulativeCoveragePercent": 98.9595,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -43776,7 +43800,7 @@
       "boko": "Maƙwabcin",
       "normalizedBoko": "maƙwabcin",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.961,
+      "cumulativeCoveragePercent": 98.9618,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -43893,7 +43917,7 @@
       "boko": "manaja",
       "normalizedBoko": "manaja",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9641,
+      "cumulativeCoveragePercent": 98.9649,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -43989,7 +44013,7 @@
       "boko": "mance",
       "normalizedBoko": "mance",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9649,
+      "cumulativeCoveragePercent": 98.9657,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -44071,7 +44095,7 @@
       "boko": "manna",
       "normalizedBoko": "manna",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9657,
+      "cumulativeCoveragePercent": 98.9665,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -44162,7 +44186,7 @@
       "boko": "manufar",
       "normalizedBoko": "manufar",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9672,
+      "cumulativeCoveragePercent": 98.968,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -44261,7 +44285,7 @@
       "boko": "marabce",
       "normalizedBoko": "marabce",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9687,
+      "cumulativeCoveragePercent": 98.9695,
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -44361,7 +44385,7 @@
       "boko": "mika",
       "normalizedBoko": "mika",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.978,
+      "cumulativeCoveragePercent": 98.9788,
       "tokens": [
         "M_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -44448,7 +44472,7 @@
       "boko": "mizaninta",
       "normalizedBoko": "mizaninta",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9795,
+      "cumulativeCoveragePercent": 98.9803,
       "tokens": [
         "M_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -44571,7 +44595,7 @@
       "boko": "murmushi",
       "normalizedBoko": "murmushi",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9826,
+      "cumulativeCoveragePercent": 98.9834,
       "tokens": [
         "M_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -44682,7 +44706,7 @@
       "boko": "ofishinsa",
       "normalizedBoko": "ofishinsa",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9903,
+      "cumulativeCoveragePercent": 98.9911,
       "tokens": [
         "VOWEL_O_UNLENGTHENED",
         "F_HAUSA",
@@ -44834,7 +44858,7 @@
       "boko": "rahotanni",
       "normalizedBoko": "rahotanni",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9919,
+      "cumulativeCoveragePercent": 98.9927,
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -44989,7 +45013,7 @@
       "boko": "Rijistar",
       "normalizedBoko": "rijistar",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 98.9988,
+      "cumulativeCoveragePercent": 98.9996,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -45091,7 +45115,7 @@
       "boko": "sabo",
       "normalizedBoko": "sabo",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0065,
+      "cumulativeCoveragePercent": 99.0073,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -45171,7 +45195,7 @@
       "boko": "sabunta",
       "normalizedBoko": "sabunta",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0073,
+      "cumulativeCoveragePercent": 99.0081,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -45282,7 +45306,7 @@
       "boko": "sakonnin",
       "normalizedBoko": "sakonnin",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0104,
+      "cumulativeCoveragePercent": 99.0112,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -45428,7 +45452,7 @@
       "boko": "salo",
       "normalizedBoko": "salo",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0119,
+      "cumulativeCoveragePercent": 99.0127,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -45508,7 +45532,7 @@
       "boko": "sandunan",
       "normalizedBoko": "sandunan",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0134,
+      "cumulativeCoveragePercent": 99.0142,
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -45610,7 +45634,7 @@
       "boko": "sonka",
       "normalizedBoko": "sonka",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0258,
+      "cumulativeCoveragePercent": 99.0266,
       "tokens": [
         "S_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -45702,7 +45726,7 @@
       "boko": "shayi",
       "normalizedBoko": "shayi",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0327,
+      "cumulativeCoveragePercent": 99.0335,
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -45780,7 +45804,7 @@
       "boko": "taimake",
       "normalizedBoko": "taimake",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0412,
+      "cumulativeCoveragePercent": 99.042,
       "tokens": [
         "T_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -45913,7 +45937,7 @@
       "boko": "tuntubi",
       "normalizedBoko": "tuntubi",
       "occurrences": 2,
-      "cumulativeCoveragePercent": 99.0504,
+      "cumulativeCoveragePercent": 99.0512,
       "tokens": [
         "T_PLAIN",
         "VOWEL_U_UNLENGTHENED",
@@ -46020,7 +46044,7 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 3173,
+      "rank": 3172,
       "boko": "tsakaninsu",
       "normalizedBoko": "tsakaninsu",
       "occurrences": 2,
@@ -46158,7 +46182,7 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 3185,
+      "rank": 3184,
       "boko": "ukun",
       "normalizedBoko": "ukun",
       "occurrences": 2,
@@ -46279,7 +46303,7 @@
       "redundantQuestionsRemoved": 0
     },
     {
-      "rank": 3195,
+      "rank": 3194,
       "boko": "yanayinsa",
       "normalizedBoko": "yanayinsa",
       "occurrences": 2,
@@ -46402,7 +46426,7 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 3199,
+      "rank": 3198,
       "boko": "yawo",
       "normalizedBoko": "yawo",
       "occurrences": 2,
@@ -46482,7 +46506,7 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 3202,
+      "rank": 3201,
       "boko": "'Yamma",
       "normalizedBoko": "ƴamma",
       "occurrences": 2,
@@ -46573,7 +46597,7 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 3209,
+      "rank": 3208,
       "boko": "zancensu",
       "normalizedBoko": "zancensu",
       "occurrences": 2,
