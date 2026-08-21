@@ -36,15 +36,18 @@ test("audit accounts for apostrophe code points and fields exactly", () => {
 
 test("audit distinguishes no-path, stored-Ajami bypass, eager, and Ajami-session paths", () => {
   const audit = FULL_AUDIT;
+  // STORED_AJAMI_BYPASS dropped to zero (and the key disappears entirely,
+  // not just zeroes out) after slice 49 wiped the nine unvalidated legacy
+  // .ajami values this category existed to detect -- see DECISIONS.md
+  // 2026-08-19. Do not reintroduce a hardcoded expectation of that key.
   assert.deepEqual(audit.summary.byConverterReachability, {
     NO_CALL_PATH: 2021,
     AJAMI_BRANCH: 1011,
-    EAGER_LOCALIZED_PAIR: 41,
-    STORED_AJAMI_BYPASS: 9,
+    EAGER_LOCALIZED_PAIR: 50,
   });
   assert.deepEqual(audit.summary.byCurrentEngineWouldAlter, {
-    false: 2030,
-    true: 1052,
+    false: 2021,
+    true: 1061,
   });
 });
 

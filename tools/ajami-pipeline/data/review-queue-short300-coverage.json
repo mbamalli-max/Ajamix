@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "taskId": "2026-07-28-slice-42",
+  "source": "app/content.json",
+  "totalRunningWords": 237166,
+  "totalDistinctWords": 3235,
+  "eligibleRunningWords": 236479,
+  "eligibleDistinctWords": 3211,
+  "exclusions": {
+    "structuralMarkers": {
+      "distinctConstructs": 7,
+      "occurrences": 2178,
+      "runningWordsRemoved": 2226
+    },
+    "templatePlaceholders": {
+      "distinctConstructs": 5,
+      "occurrences": 1179,
+      "runningWordsRemoved": 1179
+    },
+    "nonHausaTokens": {
+      "distinctTokens": 24,
+      "occurrences": 687
+    },
+    "excludedArtifact": "data/review-queue-excluded.json"
+  },
+  "entriesByOpenQuestionType": {
+    "VOWEL_LENGTH": 290,
+    "WORD_FINAL_VOWEL": 198,
+    "SUKUN": 57,
+    "GEMINATION": 41,
+    "WORD_INITIAL_CARRIER": 34,
+    "VOWEL_SEQUENCE": 30,
+    "ARABIC_LEXICAL_H": 26,
+    "APOSTROPHE_ROLE": 17,
+    "VELAR_CLUSTER": 6,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0,
+    "SHORT_E_CARRIER": 0
+  },
+  "openQuestionTypeCounts": {
+    "VOWEL_LENGTH": 290,
+    "WORD_FINAL_VOWEL": 198,
+    "SUKUN": 57,
+    "GEMINATION": 41,
+    "WORD_INITIAL_CARRIER": 34,
+    "VOWEL_SEQUENCE": 30,
+    "ARABIC_LEXICAL_H": 26,
+    "APOSTROPHE_ROLE": 17,
+    "VELAR_CLUSTER": 6,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0,
+    "SHORT_E_CARRIER": 0
+  },
+  "openDecisionCountsByType": {
+    "VOWEL_LENGTH": 629,
+    "WORD_FINAL_VOWEL": 198,
+    "SUKUN": 69,
+    "GEMINATION": 42,
+    "VOWEL_SEQUENCE": 35,
+    "WORD_INITIAL_CARRIER": 34,
+    "ARABIC_LEXICAL_H": 26,
+    "APOSTROPHE_ROLE": 19,
+    "VELAR_CLUSTER": 7,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0,
+    "SHORT_E_CARRIER": 0
+  },
+  "zeroOpenQuestionEntries": 0,
+  "nonHausaFlaggedEntries": 0,
+  "statusCounts": {
+    "provisional": 190,
+    "blocked": 110
+  },
+  "blockedEntries": 110,
+  "blockedByReason": {
+    "GEMINATION": 41,
+    "WORD_INITIAL_CARRIER": 34,
+    "VOWEL_SEQUENCE": 30,
+    "APOSTROPHE_ROLE": 17
+  },
+  "redundantQuestionsRemoved": 269,
+  "sukunTreatedEntries": 161,
+  "selection": {
+    "mode": "wordList",
+    "entryCount": 300,
+    "occurrencesCovered": 8894,
+    "coveragePercent": 3.7501
+  },
+  "requestedWords": {
+    "requested": 300,
+    "matched": 300,
+    "unmatchedNotInCorpus": [],
+    "unmatchedExcludedNonHausa": []
+  }
+}

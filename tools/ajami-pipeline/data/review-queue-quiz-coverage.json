@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "taskId": "2026-07-28-slice-42",
+  "source": "app/content.json",
+  "totalRunningWords": 259490,
+  "totalDistinctWords": 3449,
+  "eligibleRunningWords": 257317,
+  "eligibleDistinctWords": 3421,
+  "exclusions": {
+    "structuralMarkers": {
+      "distinctConstructs": 7,
+      "occurrences": 2178,
+      "runningWordsRemoved": 2226
+    },
+    "templatePlaceholders": {
+      "distinctConstructs": 5,
+      "occurrences": 1179,
+      "runningWordsRemoved": 1179
+    },
+    "nonHausaTokens": {
+      "distinctTokens": 28,
+      "occurrences": 2173
+    },
+    "excludedArtifact": "data/review-queue-excluded.json"
+  },
+  "entriesByOpenQuestionType": {
+    "VOWEL_LENGTH": 418,
+    "WORD_FINAL_VOWEL": 294,
+    "K_ARTICULATION": 102,
+    "SUKUN": 56,
+    "WORD_INITIAL_CARRIER": 53,
+    "GEMINATION": 43,
+    "ARABIC_LEXICAL_H": 38,
+    "VOWEL_SEQUENCE": 35,
+    "APOSTROPHE_ROLE": 13,
+    "VELAR_CLUSTER": 12,
+    "SHORT_E_CARRIER": 1,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0
+  },
+  "openQuestionTypeCounts": {
+    "VOWEL_LENGTH": 418,
+    "WORD_FINAL_VOWEL": 294,
+    "K_ARTICULATION": 102,
+    "SUKUN": 56,
+    "WORD_INITIAL_CARRIER": 53,
+    "GEMINATION": 43,
+    "ARABIC_LEXICAL_H": 38,
+    "VOWEL_SEQUENCE": 35,
+    "APOSTROPHE_ROLE": 13,
+    "VELAR_CLUSTER": 12,
+    "SHORT_E_CARRIER": 1,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0
+  },
+  "openDecisionCountsByType": {
+    "VOWEL_LENGTH": 775,
+    "WORD_FINAL_VOWEL": 294,
+    "K_ARTICULATION": 113,
+    "SUKUN": 62,
+    "WORD_INITIAL_CARRIER": 53,
+    "GEMINATION": 44,
+    "ARABIC_LEXICAL_H": 38,
+    "VOWEL_SEQUENCE": 36,
+    "APOSTROPHE_ROLE": 13,
+    "VELAR_CLUSTER": 12,
+    "SHORT_E_CARRIER": 1,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0
+  },
+  "zeroOpenQuestionEntries": 0,
+  "nonHausaFlaggedEntries": 0,
+  "statusCounts": {
+    "provisional": 306,
+    "blocked": 128
+  },
+  "blockedEntries": 128,
+  "blockedByReason": {
+    "WORD_INITIAL_CARRIER": 53,
+    "GEMINATION": 43,
+    "VOWEL_SEQUENCE": 35,
+    "APOSTROPHE_ROLE": 13
+  },
+  "redundantQuestionsRemoved": 370,
+  "sukunTreatedEntries": 216,
+  "selection": {
+    "mode": "wordList",
+    "entryCount": 434,
+    "occurrencesCovered": 8776,
+    "coveragePercent": 3.382
+  },
+  "requestedWords": {
+    "requested": 434,
+    "matched": 434,
+    "unmatchedNotInCorpus": [],
+    "unmatchedExcludedNonHausa": []
+  }
+}

@@ -1525,6 +1525,37 @@ a {
   font-size: 1rem;
 }
 
+.lesson-audio-coming-soon--compact {
+  display: inline-grid;
+  max-width: 100%;
+  gap: 0;
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.7rem;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+.lesson-audio-coming-soon--compact .lesson-audio-coming-soon-body {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.lesson-audio-coming-soon--compact .lesson-audio-coming-soon-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  font-size: 0.78rem;
+}
+
+.lesson-audio-coming-soon--compact .lesson-audio-coming-soon-copy {
+  gap: 0;
+}
+
+.lesson-audio-coming-soon--compact .lesson-audio-coming-soon-title {
+  font-size: 0.8rem;
+  line-height: 1.25;
+}
+
 .lesson-footer-panel {
   justify-items: center;
 }

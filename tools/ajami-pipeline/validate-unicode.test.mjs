@@ -1,5 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 
 import {
   validateContentFile,
@@ -41,10 +44,33 @@ test("U+06D1 is not called malformed in imported/stored analysis mode", () => {
   assert.equal(detected.includes("U+06D1_IN_NEW_AJAMIX_OUTPUT"), false);
 });
 
-test("read-only live scan detects both known defects and preserves source bytes", () => {
-  const report = validateContentFile();
-  assert.equal(report.summary.knownDefectSelfTests.passed, true);
-  assert.equal(report.summary.knownDefectSelfTests.pnMaths01PresentationFormsDetected, true);
-  assert.equal(report.summary.knownDefectSelfTests.v08LatinVWithFathaDetected, true);
-  assert.equal(report.summary.sourceIntegrity.sourceUnchanged, true);
+test("read-only fixture scan detects both known defect shapes and preserves source bytes", () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "ajami-unicode-scan-"));
+  try {
+    const contentPath = path.join(temporaryDirectory, "content.json");
+    const fixture = {
+      activities: [{
+        activityId: "pn-maths-01",
+        topicHa: "Kirgawa 1–3",
+        topicAjami: "\uFEDBِرْغَوَا 1–3",
+      }],
+      modules: [{
+        id: "V08",
+        titleHa: "Haraji na VAT",
+        titleAjami: "هَرَجِي نَا Vَت",
+      }],
+    };
+    fs.writeFileSync(contentPath, `${JSON.stringify(fixture, null, 2)}\n`);
+    const before = fs.readFileSync(contentPath);
+
+    const report = validateContentFile(contentPath);
+
+    assert.equal(report.summary.knownDefectSelfTests.passed, true);
+    assert.equal(report.summary.knownDefectSelfTests.pnMaths01PresentationFormsDetected, true);
+    assert.equal(report.summary.knownDefectSelfTests.v08LatinVWithFathaDetected, true);
+    assert.equal(report.summary.sourceIntegrity.sourceUnchanged, true);
+    assert.deepEqual(fs.readFileSync(contentPath), before);
+  } finally {
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
 });
