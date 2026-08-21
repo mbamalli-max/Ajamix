@@ -15,13 +15,17 @@ export const COVERAGE_PATH = path.join(MODULE_DIR, "data", "content-ajami-covera
 export const BACKUP_PATH = "/Users/muhammadbamalli/Documents/New project/ai-system/projects/ajamix/tasks/2026-08-10-pre-slice-35-content.json";
 
 export const EXPECTED_COVERAGE = Object.freeze({
-  titleAjami: { total: 389, covered: 343 },
+  titleAjami: { total: 389, covered: 344 },
   subjectAjami: { total: 389, covered: 389 },
   topicAjami: { total: 6, covered: 6 },
   termAjami: { total: 62, covered: 59 },
+  templateHaAjami: { total: 150, covered: 129 },
+  answerFormulaAjami: { total: 150, covered: 146 },
+  distractorFormulasAjami: { total: 450, covered: 439 },
+  "heading.ajami": { total: 60, covered: 59 },
 });
 
-const MANAGED_AJAMI_FIELDS = Object.freeze([
+const TOP_LEVEL_MANAGED_AJAMI_FIELDS = Object.freeze([
   "titleAjami",
   "subjectAjami",
   "textExplanationAjami",
@@ -34,7 +38,55 @@ const FIELD_SPECS = Object.freeze([
   { group: "modules", source: "subjectHa", target: "subjectAjami" },
   { group: "activities", source: "topicHa", target: "topicAjami" },
   { group: "glossary", source: "termHa", target: "termAjami" },
+  {
+    group: "quiz",
+    source: "templateHa",
+    target: "templateHaAjami",
+    sourcePath: "modules[].quiz[].templateHa",
+  },
+  {
+    group: "quiz",
+    source: "answerFormula",
+    target: "answerFormulaAjami",
+    sourcePath: "modules[].quiz[].answerFormula",
+  },
+  {
+    group: "quiz",
+    source: "distractorFormulas",
+    target: "distractorFormulasAjami",
+    sourcePath: "modules[].quiz[].distractorFormulas[]",
+    arrayItems: true,
+  },
+  {
+    group: "lessonHeadings",
+    source: "ha",
+    target: "ajami",
+    coverageKey: "heading.ajami",
+    sourcePath: "modules[].lessons[].heading.ha",
+  },
 ]);
+
+const QUIZ_AJAMI_FIELDS = Object.freeze([
+  "templateHaAjami",
+  "answerFormulaAjami",
+  "distractorFormulasAjami",
+]);
+
+function assertQuizMirrors(content) {
+  for (const module of content.modules) {
+    if (!Array.isArray(module.quizQuestions)) continue;
+    if (!Array.isArray(module.quiz)) continue;
+    if (JSON.stringify(module.quiz) !== JSON.stringify(module.quizQuestions)) {
+      throw new Error(`Module ${module.id ?? "(unknown)"} quiz and quizQuestions differ`);
+    }
+  }
+}
+
+function wipeQuizEntry(entry) {
+  for (const field of QUIZ_AJAMI_FIELDS) {
+    if (Object.hasOwn(entry, field)) entry[field] = null;
+  }
+}
 
 export function wipeManagedAjami(content) {
   for (const groupName of ["modules", "activities", "glossary"]) {
@@ -42,10 +94,21 @@ export function wipeManagedAjami(content) {
       throw new Error(`content.${groupName} must be an array`);
     }
     for (const entry of content[groupName]) {
-      for (const field of MANAGED_AJAMI_FIELDS) {
+      for (const field of TOP_LEVEL_MANAGED_AJAMI_FIELDS) {
         if (Object.hasOwn(entry, field)) entry[field] = null;
       }
       if (Object.hasOwn(entry, "ajami_validated")) entry.ajami_validated = false;
+    }
+  }
+  for (const module of content.modules) {
+    for (const quiz of module.quiz ?? []) wipeQuizEntry(quiz);
+    if (Array.isArray(module.quiz)) {
+      for (const quiz of module.quizQuestions ?? []) wipeQuizEntry(quiz);
+    }
+    for (const lesson of module.lessons ?? []) {
+      if (lesson.heading && Object.hasOwn(lesson.heading, "ajami")) {
+        lesson.heading.ajami = null;
+      }
     }
   }
   return content;
@@ -59,30 +122,55 @@ function coveragePercent(covered, total) {
   return total === 0 ? 100 : Number(((covered / total) * 100).toFixed(2));
 }
 
+function entriesForGroup(content, group) {
+  if (group === "quiz") {
+    return content.modules.flatMap((module) => module.quiz ?? []);
+  }
+  if (group === "lessonHeadings") {
+    return content.modules.flatMap((module) =>
+      (module.lessons ?? [])
+        .map((lesson) => lesson.heading)
+        .filter((heading) => heading && Object.hasOwn(heading, "ha"))
+    );
+  }
+  return content[group];
+}
+
 function composeFields(content, lexiconMap) {
   const composedByEntry = new Map();
   const uncoveredCounts = new Map();
   const fields = {};
 
   for (const spec of FIELD_SPECS) {
-    const entries = content[spec.group];
+    const entries = entriesForGroup(content, spec.group);
     let covered = 0;
+    let total = 0;
     for (const entry of entries) {
-      const result = analyzeAjamiComposition(entry[spec.source], lexiconMap);
       if (!composedByEntry.has(entry)) composedByEntry.set(entry, {});
-      composedByEntry.get(entry)[spec.target] = result.ajami;
-      if (result.ajami == null) {
-        addUncoveredWords(uncoveredCounts, result.uncoveredWords);
-      } else {
-        covered += 1;
+
+      const sourceValues = spec.arrayItems ? entry[spec.source] : [entry[spec.source]];
+      if (!Array.isArray(sourceValues)) {
+        throw new Error(`${spec.sourcePath} must be an array`);
       }
+      const results = sourceValues.map((source) => analyzeAjamiComposition(source, lexiconMap));
+      total += results.length;
+      for (const result of results) {
+        if (result.ajami == null) {
+          addUncoveredWords(uncoveredCounts, result.uncoveredWords);
+        } else {
+          covered += 1;
+        }
+      }
+      composedByEntry.get(entry)[spec.target] = spec.arrayItems
+        ? results.map((result) => result.ajami)
+        : results[0].ajami;
     }
-    fields[spec.target] = {
-      source: `${spec.group}[].${spec.source}`,
-      total: entries.length,
+    fields[spec.coverageKey ?? spec.target] = {
+      source: spec.sourcePath ?? `${spec.group}[].${spec.source}`,
+      total,
       covered,
-      uncovered: entries.length - covered,
-      coveragePercent: coveragePercent(covered, entries.length),
+      uncovered: total - covered,
+      coveragePercent: coveragePercent(covered, total),
     };
   }
 
@@ -99,15 +187,28 @@ function insertManagedFields(entry, kind, composed) {
     ])
     : kind === "activity"
       ? new Map([["topicHa", ["topicAjami", "ajami_validated"]]])
-      : new Map([["termHa", ["termAjami", "ajami_validated"]]]);
+      : kind === "glossary"
+        ? new Map([["termHa", ["termAjami", "ajami_validated"]]])
+        : kind === "quiz"
+          ? new Map([
+            ["templateHa", ["templateHaAjami"]],
+            ["answerFormula", ["answerFormulaAjami"]],
+            ["distractorFormulas", ["distractorFormulasAjami"]],
+          ])
+          : new Map([["ha", ["ajami"]]]);
+  const managedFields = new Set(
+    [...insertions.values()].flat().filter((field) => field !== "ajami_validated")
+  );
 
-  // A previously absent managed field stays absent when composition is
-  // uncovered. Existing schema keys are retained with null instead.
+  // A previously absent scalar field stays absent when composition is
+  // uncovered. Existing schema keys are retained with null instead. The
+  // distractor target is always an index-aligned array whose individual
+  // elements may be null.
   // ajami_validated is a whole-entry prose contract, so this short-field
   // pipeline must leave it false regardless of managed-field coverage.
 
   for (const [key, value] of Object.entries(entry)) {
-    if (MANAGED_AJAMI_FIELDS.includes(key) || key === "ajami_validated") continue;
+    if (managedFields.has(key) || key === "ajami_validated") continue;
     output[key] = value;
     for (const field of insertions.get(key) ?? []) {
       if (field === "ajami_validated") {
@@ -127,12 +228,35 @@ function insertManagedFields(entry, kind, composed) {
 
 export function regenerateContentData(originalContent, lexiconMap, { lexiconEntryCount } = {}) {
   const content = structuredClone(originalContent);
+  assertQuizMirrors(content);
   wipeManagedAjami(content);
   const { composedByEntry, uncoveredCounts, fields } = composeFields(content, lexiconMap);
 
-  content.modules = content.modules.map((entry) =>
-    insertManagedFields(entry, "module", composedByEntry.get(entry))
-  );
+  content.modules = content.modules.map((entry) => {
+    const output = insertManagedFields(entry, "module", composedByEntry.get(entry));
+    if (Array.isArray(entry.lessons)) {
+      output.lessons = entry.lessons.map((lesson) => {
+        if (!lesson.heading || !Object.hasOwn(lesson.heading, "ha")) return lesson;
+        return {
+          ...lesson,
+          heading: insertManagedFields(
+            lesson.heading,
+            "lessonHeading",
+            composedByEntry.get(lesson.heading)
+          ),
+        };
+      });
+    }
+    if (Array.isArray(entry.quiz)) {
+      output.quiz = entry.quiz.map((quiz) =>
+        insertManagedFields(quiz, "quiz", composedByEntry.get(quiz))
+      );
+      if (Array.isArray(entry.quizQuestions)) {
+        output.quizQuestions = structuredClone(output.quiz);
+      }
+    }
+    return output;
+  });
   content.activities = content.activities.map((entry) =>
     insertManagedFields(entry, "activity", composedByEntry.get(entry))
   );

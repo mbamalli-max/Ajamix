@@ -32,9 +32,45 @@
       "covered": 59,
       "uncovered": 3,
       "coveragePercent": 95.16
+    },
+    "templateHaAjami": {
+      "source": "modules[].quiz[].templateHa",
+      "total": 150,
+      "covered": 129,
+      "uncovered": 21,
+      "coveragePercent": 86
+    },
+    "answerFormulaAjami": {
+      "source": "modules[].quiz[].answerFormula",
+      "total": 150,
+      "covered": 146,
+      "uncovered": 4,
+      "coveragePercent": 97.33
+    },
+    "distractorFormulasAjami": {
+      "source": "modules[].quiz[].distractorFormulas[]",
+      "total": 450,
+      "covered": 439,
+      "uncovered": 11,
+      "coveragePercent": 97.56
+    },
+    "heading.ajami": {
+      "source": "modules[].lessons[].heading.ha",
+      "total": 60,
+      "covered": 59,
+      "uncovered": 1,
+      "coveragePercent": 98.33
     }
   },
   "uncoveredWords": [
+    {
+      "word": "vat",
+      "occurrences": 9
+    },
+    {
+      "word": "b",
+      "occurrences": 6
+    },
     {
       "word": "al'umma",
       "occurrences": 4
@@ -44,12 +80,32 @@
       "occurrences": 4
     },
     {
+      "word": "'mai",
+      "occurrences": 3
+    },
+    {
       "word": "p6",
       "occurrences": 3
     },
     {
       "word": "perimita",
       "occurrences": 3
+    },
+    {
+      "word": "'na",
+      "occurrences": 2
+    },
+    {
+      "word": "mobile",
+      "occurrences": 2
+    },
+    {
+      "word": "money",
+      "occurrences": 2
+    },
+    {
+      "word": "n42",
+      "occurrences": 2
     },
     {
       "word": "p4",
@@ -64,8 +120,40 @@
       "occurrences": 2
     },
     {
+      "word": "stock",
+      "occurrences": 2
+    },
+    {
       "word": "studies",
       "occurrences": 2
+    },
+    {
+      "word": "ussd",
+      "occurrences": 2
+    },
+    {
+      "word": "'haka",
+      "occurrences": 1
+    },
+    {
+      "word": "'idan",
+      "occurrences": 1
+    },
+    {
+      "word": "'ina",
+      "occurrences": 1
+    },
+    {
+      "word": "'ladi",
+      "occurrences": 1
+    },
+    {
+      "word": "'muna",
+      "occurrences": 1
+    },
+    {
+      "word": "'wane",
+      "occurrences": 1
     },
     {
       "word": "addinai",
@@ -80,6 +168,10 @@
       "occurrences": 1
     },
     {
+      "word": "arziki'",
+      "occurrences": 1
+    },
+    {
       "word": "asali",
       "occurrences": 1
     },
@@ -89,6 +181,10 @@
     },
     {
       "word": "bambancinsu",
+      "occurrences": 1
+    },
+    {
+      "word": "chat",
       "occurrences": 1
     },
     {
@@ -120,7 +216,15 @@
       "occurrences": 1
     },
     {
+      "word": "form",
+      "occurrences": 1
+    },
+    {
       "word": "gajeru",
+      "occurrences": 1
+    },
+    {
+      "word": "group",
       "occurrences": 1
     },
     {
@@ -208,11 +312,19 @@
       "occurrences": 1
     },
     {
-      "word": "mobile",
+      "word": "n12",
       "occurrences": 1
     },
     {
-      "word": "money",
+      "word": "n18",
+      "occurrences": 1
+    },
+    {
+      "word": "n24",
+      "occurrences": 1
+    },
+    {
+      "word": "n60",
       "occurrences": 1
     },
     {
@@ -232,6 +344,10 @@
       "occurrences": 1
     },
     {
+      "word": "ra'ayin",
+      "occurrences": 1
+    },
+    {
       "word": "rubu'u",
       "occurrences": 1
     },
@@ -245,6 +361,10 @@
     },
     {
       "word": "samuwar",
+      "occurrences": 1
+    },
+    {
+      "word": "sauƙi'",
       "occurrences": 1
     },
     {
@@ -280,11 +400,15 @@
       "occurrences": 1
     },
     {
-      "word": "ussd",
+      "word": "whatsapp",
       "occurrences": 1
     },
     {
-      "word": "vat",
+      "word": "yamma'",
+      "occurrences": 1
+    },
+    {
+      "word": "yi'",
       "occurrences": 1
     },
     {
