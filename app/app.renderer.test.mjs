@@ -15,6 +15,13 @@ function loadRenderer() {
   globalThis.__ajamixRendererTest = {
     setScriptMode: function (mode) { state.settings.scriptMode = mode; },
     setOnboardingScriptMode: function (mode) { onboardingData.scriptMode = mode; },
+    buildQuizSession: function (module, generatedQuestions) {
+      state.modules = [module];
+      state.quizSession = null;
+      quizEngine = { generateQuiz: function () { return generatedQuestions; } };
+      ensureQuizSession(module.id, { force: true });
+      return state.quizSession;
+    },
     getManagedAjamiField: getManagedAjamiField,
     getDisplayTitle: getDisplayTitle,
     getDisplayTitleMarkup: getDisplayTitleMarkup,
@@ -59,6 +66,107 @@ const FIXTURE = Object.freeze({
   questionHa: "Kirgawa {a}",
   questionAjami: "کِرْغَوَا {a}",
   audioComingSoonAjami: "سَوْتِ یَࢽَ زُوَ",
+});
+
+function buildQuizSession(renderer, template, generatedQuestion) {
+  return renderer.buildQuizSession(
+    { id: "quiz-fixture", quizQuestions: [template] },
+    [generatedQuestion]
+  );
+}
+
+test("quiz session carries templateHaAjami into the displayed Ajami question", () => {
+  const { renderer } = loadRenderer();
+  const template = {
+    templateHa: "Wace amsa ce daidai?",
+    templateHaAjami: "وَاثٜىٰ أَمْسَا ثٜ دَیْدَیْ?",
+  };
+  const session = buildQuizSession(renderer, template, {
+    questionText: template.templateHa,
+    variables: {},
+  });
+
+  renderer.setScriptMode("ajami");
+  assert.equal(session.questions[0].templateAjami, template.templateHaAjami);
+  assert.equal(
+    renderer.getDisplayQuestion(
+      session.questions[0].questionText,
+      session.questions[0].templateAjami,
+      session.questions[0].variables
+    ),
+    template.templateHaAjami
+  );
+});
+
+test("quiz session preserves Ajami placeholder substitution", () => {
+  const { renderer } = loadRenderer();
+  const template = {
+    templateHa: "Kirgawa {a}",
+    templateHaAjami: "کِرْغَوَا {a}",
+  };
+  const session = buildQuizSession(renderer, template, {
+    questionText: "Kirgawa 4",
+    variables: { a: 4 },
+  });
+
+  renderer.setScriptMode("ajami");
+  assert.equal(
+    renderer.getDisplayQuestion(
+      session.questions[0].questionText,
+      session.questions[0].templateAjami,
+      session.questions[0].variables
+    ),
+    'کِرْغَوَا <span class="math-inline">4</span>'
+  );
+});
+
+test("uncovered quiz session question stays blank in Ajami mode without Boko fallback", () => {
+  const { renderer } = loadRenderer();
+  const template = {
+    templateHa: "Wace amsa ce daidai?",
+    templateHaAjami: null,
+  };
+  const session = buildQuizSession(renderer, template, {
+    questionText: template.templateHa,
+    variables: {},
+  });
+
+  renderer.setScriptMode("ajami");
+  const displayedQuestion = renderer.getDisplayQuestion(
+    session.questions[0].questionText,
+    session.questions[0].templateAjami,
+    session.questions[0].variables
+  );
+  assert.equal(session.questions[0].templateAjami, null);
+  assert.equal(displayedQuestion, "");
+  assert.doesNotMatch(displayedQuestion, /Wace amsa ce daidai/u);
+});
+
+test("quiz session construction leaves Latin question output unchanged", () => {
+  const { renderer } = loadRenderer();
+  const template = {
+    templateHa: "Wace <amsa> ce daidai?",
+    templateHaAjami: "وَاثٜىٰ أَمْسَا ثٜ دَیْدَیْ?",
+  };
+  const generatedQuestion = {
+    questionText: template.templateHa,
+    variables: {},
+  };
+
+  renderer.setScriptMode("latin");
+  const beforeSessionConstruction = renderer.getDisplayQuestion(
+    generatedQuestion.questionText,
+    null,
+    generatedQuestion.variables
+  );
+  const session = buildQuizSession(renderer, template, generatedQuestion);
+  const afterSessionConstruction = renderer.getDisplayQuestion(
+    session.questions[0].questionText,
+    session.questions[0].templateAjami,
+    session.questions[0].variables
+  );
+  assert.equal(afterSessionConstruction, beforeSessionConstruction);
+  assert.equal(afterSessionConstruction, "Wace &lt;amsa&gt; ce daidai?");
 });
 
 test("Ajami renderer is field-presence gated and never restores the retired guesser", () => {

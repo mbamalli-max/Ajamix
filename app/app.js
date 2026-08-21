@@ -8504,7 +8504,7 @@
           var template = quizTemplates[index] || {};
           return Object.assign({}, question, {
             templateHa: template.templateHa || question.questionText || "",
-            templateAjami: template.templateAjami == null ? null : String(template.templateAjami),
+            templateAjami: template.templateHaAjami == null ? null : String(template.templateHaAjami),
             optionAjamiByText: buildQuizOptionAjamiMap(template),
           });
         }),
