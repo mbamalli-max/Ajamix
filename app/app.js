@@ -7253,7 +7253,7 @@
       if (!headers.has("Content-Type")) {
         headers.set("Content-Type", "application/json; charset=utf-8");
       }
-      await caches.open("ajamix-content-ajamix-v23").then(function (cache) {
+      await caches.open("ajamix-content-ajamix-v24").then(function (cache) {
         return cache.put(
           new Request(new URL("./content.json", location.href).toString(), {
             method: "GET",

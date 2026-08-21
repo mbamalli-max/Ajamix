@@ -1,4 +1,4 @@
-const CACHE_VERSION = "ajamix-v23";
+const CACHE_VERSION = "ajamix-v24";
 const SHELL_CACHE = `ajamix-shell-${CACHE_VERSION}`;
 const CONTENT_CACHE = `ajamix-content-${CACHE_VERSION}`;
 const ASSET_CACHE = `ajamix-assets-${CACHE_VERSION}`;

@@ -19,3 +19,4 @@ import "./mfa-proposals.test.mjs";
 import "./gates/gates.test.mjs";
 import "./gates/ratification-gate.test.mjs";
 import "../../app/app.renderer.test.mjs";
+import "../../app/sw-cache-version.test.mjs";
