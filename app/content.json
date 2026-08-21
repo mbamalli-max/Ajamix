@@ -13666,11 +13666,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Fahimtar Haraji da Kuɗin Shiga",
-        "ajami": "فَهِمتَر هَرَجِي دَا كُڈِن شِغَا"
+        "ajami": null
       },
       "summary": {
         "ha": "Darasin nan yana nuna bambanci tsakanin duk kuɗin da kasuwanci ta samu, abin da aka kashe, da riba. Haka kuma yana taimaka maka gane irin haraji da ya dace da kai da lokacin neman bayani daga hukuma.",
-        "ajami": "دَرَسِن نَن يَنَا نُنَا بَمبَنچِي ڟَكَنِن دُك كُڈِن دَا كَسُوَنچِي تَا سَمُو، اَبِن دَا اَكَا كَشِي، دَا رِبَا. هَكَا كُمَا يَنَا تَيمَكَا مَكَا غَنِي اِرِن هَرَجِي دَا يَا دَچِي دَا كَي دَا لُكَچِن نِمَن بَيَنِي دَغَا هُكُمَا."
+        "ajami": null
       },
       "textExplanationHa": "Darasin nan yana nuna bambanci tsakanin duk kuɗin da kasuwanci ta samu, abin da aka kashe, da riba. Haka kuma yana taimaka maka gane irin haraji da ya dace da kai da lokacin neman bayani daga hukuma. Ka raba kuɗin shiga da riba. A kasuwa, duk kuɗin da suka shigo ba riba ba ne. Sai an cire kuɗin sayen kaya, sufuri, ma'aikata, da sauran kashe-kashe kafin a san abin da ya rage. Haraji na nufin Kuɗin da gwamnati ke karɓa bisa doka domin gudanar da ayyukan jama'a. Riba na nufin Abin da ya rage bayan an cire duk kashe-kashe daga kuɗin shiga. Misalin Amina mai shinkafa. Amina ta sayar da kaya na naira 60,000 a rana. Ta kashe naira 42,000 wajen saye da sufuri. Sauran naira 18,000 ne suka nuna abin da kasuwarta ta bari kafin ta ware ajiya da duk wani haraji. Idan ta rubuta haka kullum, za ta san ko kasuwarta na ƙaruwa ko a'a. Abin da ya kamata ka yi. Ka riƙa rubuta abin da ya shiga da abin da ya fita a littafi ko waya. Idan wani ya zo da bukatar haraji, ka nemi sunan hukuma, takarda, da rasit kafin ka biya.",
       "textExplanationAjami": null,
@@ -13686,7 +13686,7 @@
           },
           "body": {
             "ha": "A kasuwa, duk kuɗin da suka shigo ba riba ba ne. Sai an cire kuɗin sayen kaya, sufuri, ma'aikata, da sauran kashe-kashe kafin a san abin da ya rage.",
-            "ajami": "اَ كَسُوَا، دُك كُڈِن دَا سُكَا شِغُو بَا رِبَا بَا نِي. سَي اَن چِرِي كُڈِن سَيِن كَيَا، سُفُرِي، مَعَيكَتَا، دَا سَورَن كَشِ-كَشِي كَفِن اَ سَن اَبِن دَا يَا رَغِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V01-01.mp3",
           "audioScript": "Ka raba kuɗin shiga da riba. A kasuwa, duk kuɗin da suka shigo ba riba ba ne. Sai an cire kuɗin sayen kaya, sufuri, ma'aikata, da sauran kashe-kashe kafin a san abin da ya rage."
@@ -13695,11 +13695,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Haraji",
-            "ajami": "هَرَجِي"
+            "ajami": null
           },
           "definition": {
             "ha": "Kuɗin da gwamnati ke karɓa bisa doka domin gudanar da ayyukan jama'a.",
-            "ajami": "كُدِن دَا غوَمنَتِي كِي كَرٻَا بِسَا دُكَا دُمِن غُدَنَر دَا اَيُّكَن جَمَعَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V01-02.mp3",
           "audioScript": "Kalmar \"Haraji\" tana nufin kuɗin da gwamnati ke karɓa bisa doka domin gudanar da ayyukan jama'a."
@@ -13708,11 +13708,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Riba",
-            "ajami": "رِبَا"
+            "ajami": null
           },
           "definition": {
             "ha": "Abin da ya rage bayan an cire duk kashe-kashe daga kuɗin shiga.",
-            "ajami": "اَبِن دَا يَا رَغِي بَيَن اَن چِرِي دُك كَشِ-كَشِي دَغَا كُڈِن شِغَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V01-03.mp3",
           "audioScript": "Kalmar \"Riba\" tana nufin abin da ya rage bayan an cire duk kashe-kashe daga kuɗin shiga."
@@ -13721,15 +13721,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin Amina mai shinkafa",
-            "ajami": "مِسَلِن اَمِنَا مَي شِنكَفَا"
+            "ajami": null
           },
           "scenario": {
             "ha": "Amina ta sayar da kaya na naira 60,000 a rana. Ta kashe naira 42,000 wajen saye da sufuri. Sauran naira 18,000 ne suka nuna abin da kasuwarta ta bari kafin ta ware ajiya da duk wani haraji.",
-            "ajami": "اَمِنَا تَا سَيَر دَا كَيَا نَا نَيرَا 60،000 اَ رَنَا. تَا كَشِي نَيرَا 42،000 وَجِن سَيِي دَا سُفُرِي. سَورَن نَيرَا 18،000 نِي سُكَا نُنَا اَبِن دَا كَسُوَرتَا تَا بَرِي كَفِن تَا وَرِي اَجِيَا دَا دُك وَنِي هَرَجِي."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Idan ta rubuta haka kullum, za ta san ko kasuwarta na ƙaruwa ko a'a.",
-            "ajami": "اِدَن تَا رُبُتَا هَكَا كُلُّم، زَا تَا سَن كُو كَسُوَرتَا نَا ڪَرُوَا كُو اَعَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V01-04.mp3",
           "audioScript": "Ga misalin Amina mai shinkafa. Amina ta sayar da kaya na naira 60,000 a rana. Ta kashe naira 42,000 wajen saye da sufuri. Sauran naira 18,000 ne suka nuna abin da kasuwarta ta bari kafin ta ware ajiya da duk wani haraji. Abin da wannan ya nuna shi ne, idan ta rubuta haka kullum, za ta san ko kasuwarta na ƙaruwa ko a'a."
@@ -13742,7 +13742,7 @@
           },
           "body": {
             "ha": "Ka riƙa rubuta abin da ya shiga da abin da ya fita a littafi ko waya. Idan wani ya zo da bukatar haraji, ka nemi sunan hukuma, takarda, da rasit kafin ka biya.",
-            "ajami": "كَا رِكَا رُبُتَا اَبِن دَا يَا شِغَا دَا اَبِن دَا يَا فِتَا اَ لِتَّفِي كُو وَيَا. اِدَن وَنِي يَا زُو دَا بُكَتَر هَرَجِي، كَا نِمِي سُنَن هُكُمَا، تَكَردَا، دَا رَسِت كَفِن كَا بِيَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V01-05.mp3",
           "audioScript": "Abin da ya kamata ka yi. Ka riƙa rubuta abin da ya shiga da abin da ya fita a littafi ko waya. Idan wani ya zo da bukatar haraji, ka nemi sunan hukuma, takarda, da rasit kafin ka biya."
@@ -14014,13 +14014,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Yanzu da ka gane kuɗin shiga da haraji, tambaya ta gaba ita ce: idan gobara ko sata ta faru, wace kariya ce za ta taimaki kasuwarka?",
-        "ajami": "يَنزُو دَا كَا غَنِي كُڈِن شِغَا دَا هَرَجِي، تَمبَيَا تَا غَبَا اِتَا چِ: اِدَن غُبَرَا كُو سَتَا تَا فَرُو، وَچِي كَرِيَا چِي زَا تَا تَيمَكِي كَسُوَركَا؟"
+        "ajami": null
       },
       "chainNext": "V02",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, rubuta kuɗin shiga da kashe-kashen kasuwarka na rana guda.",
-        "ajami": "يَو، رُبُتَا كُڈِن شِغَا دَا كَشِ-كَشِن كَسُوَركَا نَا رَنَا غُدَا."
+        "ajami": null
       }
     },
     {
@@ -14036,11 +14036,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Inshora ga Ɗan Kasuwa",
-        "ajami": "اِنشُرَا غَا ڈَن كَسُوَا"
+        "ajami": null
       },
       "summary": {
         "ha": "Za ka gane yadda inshora ke rage asarar da hatsari, sata, ko gobara za su jawo wa ƙaramar kasuwa. Za ka kuma koyi bambanta kariya ta gaskiya da alkawarin banza.",
-        "ajami": "زَا كَا غَنِي يَدَّا اِنشُرَا كِي رَغِي اَسَرَر دَا هَڟَرِي، سَتَا، كُو غُبَرَا زَا سُو جَوُو وَا ڪَرَمَر كَسُوَا. زَا كَا كُمَا كُيِي بَمبَنتَا كَرِيَا تَا غَسكِيَا دَا اَلكَوَرِن بَنزَا."
+        "ajami": null
       },
       "textExplanationHa": "Za ka gane yadda inshora ke rage asarar da hatsari, sata, ko gobara za su jawo wa ƙaramar kasuwa. Za ka kuma koyi bambanta kariya ta gaskiya da alkawarin banza. Inshora ba sihiri ba ce. Inshora yarjejeniya ce ta kariya. Kana biya a hankali domin idan abin da aka rufe ya faru, kada asara ta karya jari gaba daya. Inshora na nufin Tsarin kariya da ke biya diyya idan hatsarin da aka amince da shi ya faru. Diyya na nufin Kuɗin taimako da ake nema daga inshora bayan asara. Misalin Musa mai dinki. Wutar lantarki ta kona injin dinkin Musa. Saboda yana da inshora da ta rufe gobara, ya tattara hoto, rasit, da bayanin makwabta sannan ya kai rahoto. Ba a maye gurbin asara da sauri sai idan takardu da hujja sun cika. Kafin ka sayi inshora. Karanta abin da aka rufe da abin da ba a rufe ba. Ka san adadin da za ka riƙa biya da hanyar neman diyya kafin ka sa hannu.",
       "textExplanationAjami": null,
@@ -14056,7 +14056,7 @@
           },
           "body": {
             "ha": "Inshora yarjejeniya ce ta kariya. Kana biya a hankali domin idan abin da aka rufe ya faru, kada asara ta karya jari gaba daya.",
-            "ajami": "اِنشُرَا يَرجِجِنِيَا چِي تَا كَرِيَا. كَنَا بِيَا اَ هَنكَلِي دُمِن اِدَن اَبِن دَا اَكَا رُفِي يَا فَرُو، كَدَا اَسَرَا تَا كَريَا جَرِي غَبَا دَيَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V02-01.mp3",
           "audioScript": "Inshora ba sihiri ba ce. Inshora yarjejeniya ce ta kariya. Kana biya a hankali domin idan abin da aka rufe ya faru, kada asara ta karya jari gaba daya."
@@ -14065,11 +14065,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Inshora",
-            "ajami": "اِنشُرَا"
+            "ajami": null
           },
           "definition": {
             "ha": "Tsarin kariya da ke biya diyya idan hatsarin da aka amince da shi ya faru.",
-            "ajami": "ڟَرِن كَرِيَا دَا كِي بِيَا دِيَّا اِدَن هَڟَرِن دَا اَكَا اَمِنچِي دَا شِي يَا فَرُو."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V02-02.mp3",
           "audioScript": "Kalmar \"Inshora\" tana nufin tsarin kariya da ke biya diyya idan hatsarin da aka amince da shi ya faru."
@@ -14078,11 +14078,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Diyya",
-            "ajami": "دِيَّا"
+            "ajami": null
           },
           "definition": {
             "ha": "Kuɗin taimako da ake nema daga inshora bayan asara.",
-            "ajami": "كُدِن تَيمَكُو دَا اَكِي نِمَا دَغَا اِنشُرَا بَيَن اَسَرَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V02-03.mp3",
           "audioScript": "Kalmar \"Diyya\" tana nufin kuɗin taimako da ake nema daga inshora bayan asara."
@@ -14091,15 +14091,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin Musa mai dinki",
-            "ajami": "مِسَلِن مُسَا مَي دِنكِي"
+            "ajami": null
           },
           "scenario": {
             "ha": "Wutar lantarki ta kona injin dinkin Musa. Saboda yana da inshora da ta rufe gobara, ya tattara hoto, rasit, da bayanin makwabta sannan ya kai rahoto.",
-            "ajami": "وُتَر لَنتَركِي تَا كُنَا اِنجِن دِنكِن مُسَا. سَبُدَا يَنَا دَا اِنشُرَا دَا تَا رُفِي غُبَرَا، يَا تَتَّرَا هُتُو، رَسِت، دَا بَيَنِن مَكوَبتَا سَنَّن يَا كَي رَهُتُو."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Ba a maye gurbin asara da sauri sai idan takardu da hujja sun cika.",
-            "ajami": "بَا اَ مَيِي غُربِن اَسَرَا دَا سَورِي سَي اِدَن تَكَردُو دَا هُجَّا سُن چِكَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V02-04.mp3",
           "audioScript": "Ga misalin Musa mai dinki. Wutar lantarki ta kona injin dinkin Musa. Saboda yana da inshora da ta rufe gobara, ya tattara hoto, rasit, da bayanin makwabta sannan ya kai rahoto. Abin da wannan ya nuna shi ne, ba a maye gurbin asara da sauri sai idan takardu da hujja sun cika."
@@ -14112,7 +14112,7 @@
           },
           "body": {
             "ha": "Karanta abin da aka rufe da abin da ba a rufe ba. Ka san adadin da za ka riƙa biya da hanyar neman diyya kafin ka sa hannu.",
-            "ajami": "كَرَنتَا اَبِن دَا اَكَا رُفِي دَا اَبِن دَا بَا اَ رُفِي بَا. كَا سَن اَدَدِن دَا زَا كَا رِكَا بِيَا دَا هَنيَر نِمَن دِيَّا كَفِن كَا سَا هَنُّو."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V02-05.mp3",
           "audioScript": "Kafin ka sayi inshora. Karanta abin da aka rufe da abin da ba a rufe ba. Ka san adadin da za ka riƙa biya da hanyar neman diyya kafin ka sa hannu."
@@ -14388,13 +14388,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Idan kasuwarka ta samu kariya, mataki na gaba shi ne yadda za ku tafiyar da kasuwancin iyali ba tare da rikici ba.",
-        "ajami": "اِدَن كَسُوَركَا تَا سَمُو كَرِيَا، مَتَكِي نَا غَبَا شِي نِي يَدَّا زَا كُو تَفِيَر دَا كَسُوَنچِن اِيَلِي بَا تَرِي دَا رِكِچِي بَا."
+        "ajami": null
       },
       "chainNext": "V03",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, tambayi kanka wane hatsari ne ya fi damun kasuwarka kuma wace kariya kake bukata?",
-        "ajami": "يَو، تَمبَيِي كَنكَا وَنِي هَڟَرِي نِي يَا فِي دَمُن كَسُوَركَا كُمَا وَچِي كَرِيَا كَكِي بُكَتَا؟"
+        "ajami": null
       }
     },
     {
@@ -14410,11 +14410,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Kasuwancin Iyali",
-        "ajami": "كَسُوَنچِن اِيَلِي"
+        "ajami": null
       },
       "summary": {
         "ha": "Kasuwancin iyali yana bukatar dokoki a fili, rarraba aiki, da rikodin kuɗi mai tsabta. Idan an haɗa kuɗin gida da na kasuwa, rashin jituwa yana ƙaruwa.",
-        "ajami": "كَسُوَنچِن اِيَلِي يَنَا بُكَتَر دُكُكِي اَ فِلِي، رَرَّبَا اَيكِي، دَا رِكُدِن كُڈِي مَي ڟَبتَا. اِدَن اَن هَڈَا كُڈِن غِدَا دَا نَا كَسُوَا، رَشِن جِتُوَا يَنَا ڪَرُوَا."
+        "ajami": null
       },
       "textExplanationHa": "Kasuwancin iyali yana bukatar dokoki a fili, rarraba aiki, da rikodin kuɗi mai tsabta. Idan an haɗa kuɗin gida da na kasuwa, rashin jituwa yana ƙaruwa. A rubuta aikin kowa. Idan uwa, miji, yara, ko yan uwa suna cikin kasuwa, a fayyace wa kowa aikinsa. Wannan yana rage zargi da rikici. Jari na nufin Kuɗin ko kayan da aka fara kasuwa da su. Rijista na nufin Rubutun da ke nuna shiga, fita, da abin da ke hannun kasuwa. Misalin shagon gida. A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki. Sun amince cewa duk wanda ya ɗauki kaya ko kuɗi zai rubuta nan da nan. Da wannan ka'ida, kowa ya san abin da ya rage da abin da aka cire. Ka ware kuɗin gida da na kasuwa. Idan ana cin abinci ko biyan bukatar gida daga cikin jari ba tare da rubutu ba, kasuwa ba za ta nuna riba ta gaskiya ba. Ka sanya doka ta cire albashi ko kashe-kashen gida a fili.",
       "textExplanationAjami": null,
@@ -14430,7 +14430,7 @@
           },
           "body": {
             "ha": "Idan uwa, miji, yara, ko yan uwa suna cikin kasuwa, a fayyace wa kowa aikinsa. Wannan yana rage zargi da rikici.",
-            "ajami": "اِدَن اُوَا، مِجِي، يَرَا، كُو يَن اُوَا سُنَا چِكِن كَسُوَا، اَ فَيَّچِي وَا كُوَا اَيكِنسَا. وَنَّن يَنَا رَغِي زَرغِي دَا رِكِچِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V03-01.mp3",
           "audioScript": "A rubuta aikin kowa. Idan uwa, miji, yara, ko yan uwa suna cikin kasuwa, a fayyace wa kowa aikinsa. Wannan yana rage zargi da rikici."
@@ -14439,11 +14439,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Jari",
-            "ajami": "جَرِي"
+            "ajami": null
           },
           "definition": {
             "ha": "Kuɗin ko kayan da aka fara kasuwa da su.",
-            "ajami": "كُدِن كُو كَيَن دَا اَكَا فَرَا كَسُوَا دَا سُو."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V03-02.mp3",
           "audioScript": "Kalmar \"Jari\" tana nufin kuɗin ko kayan da aka fara kasuwa da su."
@@ -14452,11 +14452,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Rijista",
-            "ajami": "رِجِستَا"
+            "ajami": null
           },
           "definition": {
             "ha": "Rubutun da ke nuna shiga, fita, da abin da ke hannun kasuwa.",
-            "ajami": "رُبُتُن دَا كِي نُنَا شِغَا، فِتَا، دَا اَبِن دَا كِي هَنُّن كَسُوَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V03-03.mp3",
           "audioScript": "Kalmar \"Rijista\" tana nufin rubutun da ke nuna shiga, fita, da abin da ke hannun kasuwa."
@@ -14465,15 +14465,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin shagon gida",
-            "ajami": "مِسَلِن شَغُن غِدَا"
+            "ajami": null
           },
           "scenario": {
             "ha": "A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki. Sun amince cewa duk wanda ya ɗauki kaya ko kuɗi zai rubuta nan da nan.",
-            "ajami": "اَ غِدَن هَلِمَا، مَهَيفِيَا نَا سَيِي، ڈَا نَا ڟَيَوَا اَ شَغُو، كُمَا ڪَنوَا نَا رُبُتَا چِنِكِي. سُن اَمِنچِي چِوَا دُك وَندَا يَا ڈَوكِي كَيَا كُو كُڈِي زَي رُبُتَا نَن دَا نَن."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Da wannan ka'ida, kowa ya san abin da ya rage da abin da aka cire.",
-            "ajami": "دَا وَنَّن كَعِدَا، كُوَا يَا سَن اَبِن دَا يَا رَغِي دَا اَبِن دَا اَكَا چِرِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V03-04.mp3",
           "audioScript": "Ga misalin shagon gida. A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki. Sun amince cewa duk wanda ya ɗauki kaya ko kuɗi zai rubuta nan da nan. Abin da wannan ya nuna shi ne, da wannan ka'ida, kowa ya san abin da ya rage da abin da aka cire."
@@ -14486,7 +14486,7 @@
           },
           "body": {
             "ha": "Idan ana cin abinci ko biyan bukatar gida daga cikin jari ba tare da rubutu ba, kasuwa ba za ta nuna riba ta gaskiya ba. Ka sanya doka ta cire albashi ko kashe-kashen gida a fili.",
-            "ajami": "اِدَن اَنَا چِن اَبِنچِي كُو بِيَن بُكَتَر غِدَا دَغَا چِكِن جَرِي بَا تَرِي دَا رُبُتُو بَا، كَسُوَا بَا زَا تَا نُنَا رِبَا تَا غَسكِيَا بَا. كَا سَنيَا دُكَا تَا چِرِي اَلبَشِي كُو كَشِ-كَشِن غِدَا اَ فِلِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V03-05.mp3",
           "audioScript": "Ka ware kuɗin gida da na kasuwa. Idan ana cin abinci ko biyan bukatar gida daga cikin jari ba tare da rubutu ba, kasuwa ba za ta nuna riba ta gaskiya ba. Ka sanya doka ta cire albashi ko kashe-kashen gida a fili."
@@ -14760,13 +14760,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Da zarar gida ya samu tsari, tambaya ta gaba ita ce yadda za ka kai sakonka ga sabbin kwastomomi ta yanar-gizo.",
-        "ajami": "دَا زَرَر غِدَا يَا سَمُو ڟَرِي، تَمبَيَا تَا غَبَا اِتَا چِي يَدَّا زَا كَا كَي سَكُنكَا غَا سَبِّن كوَستُمُمِي تَا يَنَر-غِزُو."
+        "ajami": null
       },
       "chainNext": "V04",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, rubuta wa kowane dan uwa aikin da yake yi a kasuwar ku.",
-        "ajami": "يَو، رُبُتَا وَا كُوَنِي دَن اُوَا اَيكِن دَا يَكِي يِي اَ كَسُوَر كُو."
+        "ajami": null
       }
     },
     {
@@ -14782,11 +14782,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Talla ta Yanar-gizo",
-        "ajami": "تَلَّا تَا يَنَر-غِزُو"
+        "ajami": null
       },
       "summary": {
         "ha": "Talla ta yanar-gizo tana taimaka wa ƙaramar kasuwa ta isa sabbin kwastomomi ba tare da babbar kuɗi ba. Nasara tana buƙatar saƙo mai sauƙi, farashi a fili, da amsa cikin lokaci.",
-        "ajami": "تَلَّا تَا يَنَر-غِزُو تَنَا تَيمَكَا وَا ڪَرَمَر كَسُوَا تَا اِسَا سَبِّن كوَستُمُمِي بَا تَرِي دَا بَبَّر كُڈِي بَا. نَسَرَا تَنَا بُڪَتَر سَڪُو مَي سَوڪِي، فَرَشِي اَ فِلِي، دَا اَمسَا چِكِن لُكَچِي."
+        "ajami": null
       },
       "textExplanationHa": "Talla ta yanar-gizo tana taimaka wa ƙaramar kasuwa ta isa sabbin kwastomomi ba tare da babbar kuɗi ba. Nasara tana buƙatar saƙo mai sauƙi, farashi a fili, da amsa cikin lokaci. Ka sa sakonka ya zama a fili. Mutane suna son ganin hoto na gaskiya, sunan kaya, farashi, da yadda za su tuntuɓe ka. Saƙo mai rikitarwa yana sa kwastoma ta wuce. Talla na nufin Hanyar sanar da mutane abin da kake sayarwa. Kwastoma na nufin Mutumin da yake sha'awar saya ko ya riga ya saya. Misalin sabulun Halima. Halima ta saka hoton sabulunta a WhatsApp Status tare da farashi, girma, da lambar waya. Ta kuma rubuta ko ana kai kaya ko a'a. Saboda bayanin ya fito a fili, mutanen da suka kira ta sun riga sun san abin da za su samu. Ka amsa cikin lokaci. Idan ka jinkirta amsa, kwastoma na iya komawa wani. Ka tsara lokacin da za ka duba sakonni kuma ka faɗi kuɗin kai ko lokacin isarwa tun farko.",
       "textExplanationAjami": null,
@@ -14802,7 +14802,7 @@
           },
           "body": {
             "ha": "Mutane suna son ganin hoto na gaskiya, sunan kaya, farashi, da yadda za su tuntuɓe ka. Saƙo mai rikitarwa yana sa kwastoma ta wuce.",
-            "ajami": "مُتَنِي سُنَا سُن غَنِن هُتُو نَا غَسكِيَا، سُنَن كَيَا، فَرَشِي، دَا يَدَّا زَا سُو تُنتُٻِي كَا. سَڪُو مَي رِكِتَروَا يَنَا سَا كوَستُمَا تَا وُچِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V04-01.mp3",
           "audioScript": "Ka sa sakonka ya zama a fili. Mutane suna son ganin hoto na gaskiya, sunan kaya, farashi, da yadda za su tuntuɓe ka. Saƙo mai rikitarwa yana sa kwastoma ta wuce."
@@ -14811,11 +14811,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Talla",
-            "ajami": "تَلَّا"
+            "ajami": null
           },
           "definition": {
             "ha": "Hanyar sanar da mutane abin da kake sayarwa.",
-            "ajami": "هَنيَر سَنَر دَا مُتَنِي اَبِن دَا كَكِي سَيَروَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V04-02.mp3",
           "audioScript": "Kalmar \"Talla\" tana nufin hanyar sanar da mutane abin da kake sayarwa."
@@ -14824,11 +14824,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Kwastoma",
-            "ajami": "كوَستُمَا"
+            "ajami": null
           },
           "definition": {
             "ha": "Mutumin da yake sha'awar saya ko ya riga ya saya.",
-            "ajami": "مُتُمِن دَا يَكِي شَعَوَر سَيَا كُو يَا رِغَا يَا سَيَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V04-03.mp3",
           "audioScript": "Kalmar \"Kwastoma\" tana nufin mutumin da yake sha'awar saya ko ya riga ya saya."
@@ -14837,15 +14837,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin sabulun Halima",
-            "ajami": "مِسَلِن سَبُلُن هَلِمَا"
+            "ajami": null
           },
           "scenario": {
             "ha": "Halima ta saka hoton sabulunta a WhatsApp Status tare da farashi, girma, da lambar waya. Ta kuma rubuta ko ana kai kaya ko a'a.",
-            "ajami": "هَلِمَا تَا سَكَا هُتُن سَبُلُنتَا اَ وهَڟَپّ ستَتُس تَرِي دَا فَرَشِي، غِرمَا، دَا لَمبَر وَيَا. تَا كُمَا رُبُتَا كُو اَنَا كَي كَيَا كُو اَعَا."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Saboda bayanin ya fito a fili, mutanen da suka kira ta sun riga sun san abin da za su samu.",
-            "ajami": "سَبُدَا بَيَنِن يَا فِتُو اَ فِلِي، مُتَنِن دَا سُكَا كِرَا تَا سُن رِغَا سُن سَن اَبِن دَا زَا سُو سَمُو."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V04-04.mp3",
           "audioScript": "Ga misalin sabulun Halima. Halima ta saka hoton sabulunta a WhatsApp Status tare da farashi, girma, da lambar waya. Ta kuma rubuta ko ana kai kaya ko a'a. Abin da wannan ya nuna shi ne, saboda bayanin ya fito a fili, mutanen da suka kira ta sun riga sun san abin da za su samu."
@@ -14858,7 +14858,7 @@
           },
           "body": {
             "ha": "Idan ka jinkirta amsa, kwastoma na iya komawa wani. Ka tsara lokacin da za ka duba sakonni kuma ka faɗi kuɗin kai ko lokacin isarwa tun farko.",
-            "ajami": "اِدَن كَا جِنكِرتَا اَمسَا، كوَستُمَا نَا اِيَا كُمَوَا وَنِي. كَا ڟَرَا لُكَچِن دَا زَا كَا دُبَا سَكُنِّي كُمَا كَا فَڈِي كُدِن كَي كُو لُكَچِن اِسَروَا تُن فَركُو."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V04-05.mp3",
           "audioScript": "Ka amsa cikin lokaci. Idan ka jinkirta amsa, kwastoma na iya komawa wani. Ka tsara lokacin da za ka duba sakonni kuma ka faɗi kuɗin kai ko lokacin isarwa tun farko."
@@ -15134,13 +15134,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Amma yayin da kasuwa ta shiga intanet, matsalar da ke tafe ita ce yadda za ka gane zamba kafin ka fada ciki.",
-        "ajami": "اَمَّا يَيِن دَا كَسُوَا تَا شِغَا اِنتَنِت، مَڟَلَر دَا كِي تَفِي اِتَا چِي يَدَّا زَا كَا غَنِي زَمبَا كَفِن كَا فَدَا چِكِي."
+        "ajami": null
       },
       "chainNext": "V05",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, gyara talla guda ɗaya da hoto, farashi, da hanyar tuntuɓa a fili.",
-        "ajami": "يَو، غيَرَا تَلَّا غُدَا ڈَيَا دَا هُتُو، فَرَشِي، دَا هَنيَر تُنتُٻَا اَ فِلِي."
+        "ajami": null
       }
     },
     {
@@ -15156,11 +15156,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Gane Zamba (419/yaudara ta Intanet)",
-        "ajami": "غَنِي زَمبَا (419/يَودَرَا تَا اِنتَنِت)"
+        "ajami": null
       },
       "summary": {
         "ha": "Darasin nan yana koya alamun zamba a sakon waya, asusun banki, da tallan intanet. Ka koyi yadda za ka dakata, ka tantance, sannan ka kare kuɗinka kafin ka amsa.",
-        "ajami": "دَرَسِن نَن يَنَا كُيَا اَلَمُن زَمبَا اَ سَكُن وَيَا، اَسُسُن بَنكِي، دَا تَلَّن اِنتَنِت. كَا كُيِي يَدَّا زَا كَا دَكَتَا، كَا تَنتَنچِي، سَنَّن كَا كَرِي كُڈِنكَا كَفِن كَا اَمسَا."
+        "ajami": null
       },
       "textExplanationHa": "Darasin nan yana koya alamun zamba a sakon waya, asusun banki, da tallan intanet. Ka koyi yadda za ka dakata, ka tantance, sannan ka kare kuɗinka kafin ka amsa. Alamun ja na zamba. Sako da ke matsa maka ka gaggauta, ya ɓoye cikakken bayani, ko ya nemi lambar sirri yana bukatar ka tsaya. Gaskiyar kasuwanci tana yarda a bincika. Zamba na nufin Dabara ta yaudara domin a karɓi kuɗi ko bayanai ba da gaskiya ba. Tabbatarwa na nufin Binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi. Misalin hoton canji na bogi. Wani ya turo wa Bello hoton transfer ya ce ya gama biya, ya nemi a saki kaya nan take. Bello ya duba asusunsa, bai ga kuɗi ba, don haka ya jira tabbacin banki kafin ya bada kaya. Jiran tabbacin gaskiya ya ceci Bello daga asara. Ka duba link da lambobi. Kar ka danna link daga wanda ba ka sani ba kuma kar ka raba lambar sirri. Idan labari ya yi kyau fiye da kima, ka nemi wata hujja daga hanya ta daban.",
       "textExplanationAjami": null,
@@ -15176,7 +15176,7 @@
           },
           "body": {
             "ha": "Sako da ke matsa maka ka gaggauta, ya ɓoye cikakken bayani, ko ya nemi lambar sirri yana bukatar ka tsaya. Gaskiyar kasuwanci tana yarda a bincika.",
-            "ajami": "سَكُو دَا كِي مَڟَا مَكَا كَا غَغَّوتَا، يَا بُيِي چِكَكِّن بَيَنِي، كُو يَا نِمِي لَمبَر سِرِّي يَنَا بُكَتَر كَا ڟَيَا. غَسكِيَر كَسُوَنچِي تَنَا يَردَا اَ بِنچِكَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V05-01.mp3",
           "audioScript": "Alamun ja na zamba. Sako da ke matsa maka ka gaggauta, ya ɓoye cikakken bayani, ko ya nemi lambar sirri yana bukatar ka tsaya. Gaskiyar kasuwanci tana yarda a bincika."
@@ -15185,11 +15185,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Zamba",
-            "ajami": "زَمبَا"
+            "ajami": null
           },
           "definition": {
             "ha": "Dabara ta yaudara domin a karɓi kuɗi ko bayanai ba da gaskiya ba.",
-            "ajami": "دَبَرَا تَا يَودَرَا دُمِن اَ كَرٻِي كُڈِي كُو بَيَنَي بَا دَا غَسكِيَا بَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V05-02.mp3",
           "audioScript": "Kalmar \"Zamba\" tana nufin dabara ta yaudara domin a karɓi kuɗi ko bayanai ba da gaskiya ba."
@@ -15198,11 +15198,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Tabbatarwa",
-            "ajami": "تَبَّتَروَا"
+            "ajami": null
           },
           "definition": {
             "ha": "Binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi.",
-            "ajami": "بِنچِكِن هُجَّا كَفِن اَ يَردَا دَا سَكُو، مُتُم، كُو بِيَن كُڈِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V05-03.mp3",
           "audioScript": "Kalmar \"Tabbatarwa\" tana nufin binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi."
@@ -15211,15 +15211,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin hoton canji na bogi",
-            "ajami": "مِسَلِن هُتُن كَنجِي نَا بُغِي"
+            "ajami": null
           },
           "scenario": {
             "ha": "Wani ya turo wa Bello hoton transfer ya ce ya gama biya, ya nemi a saki kaya nan take. Bello ya duba asusunsa, bai ga kuɗi ba, don haka ya jira tabbacin banki kafin ya bada kaya.",
-            "ajami": "وَنِي يَا تُرُو وَا بِلُّو هُتُن ترَنسفِر يَا چِي يَا غَمَا بِيَا، يَا نِمِي اَ سَكِي كَيَا نَن تَكِي. بِلُّو يَا دُبَا اَسُسُنسَا، بَي غَا كُدِي بَا، دُن هَكَا يَا جِرَا تَبَّچِن بَنكِي كَفِن يَا بَدَا كَيَا."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Jiran tabbacin gaskiya ya ceci Bello daga asara.",
-            "ajami": "جِرَن تَبَّچِن غَسكِيَا يَا چِچِي بِلُّو دَغَا اَسَرَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V05-04.mp3",
           "audioScript": "Ga misalin hoton canji na bogi. Wani ya turo wa Bello hoton transfer ya ce ya gama biya, ya nemi a saki kaya nan take. Bello ya duba asusunsa, bai ga kuɗi ba, don haka ya jira tabbacin banki kafin ya bada kaya. Abin da wannan ya nuna shi ne, jiran tabbacin gaskiya ya ceci Bello daga asara."
@@ -15232,7 +15232,7 @@
           },
           "body": {
             "ha": "Kar ka danna link daga wanda ba ka sani ba kuma kar ka raba lambar sirri. Idan labari ya yi kyau fiye da kima, ka nemi wata hujja daga hanya ta daban.",
-            "ajami": "كَر كَا دَنَّا لِنك دَغَا وَندَا بَا كَا سَنِي بَا كُمَا كَر كَا رَبَا لَمبَر سِرِّي. اِدَن لَبَرِي يَا يِي كيَو فِيِي دَا كِمَا، كَا نِمِي وَتَا هُجَّا دَغَا هَنيَا تَا دَبَن."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V05-05.mp3",
           "audioScript": "Ka duba link da lambobi. Kar ka danna link daga wanda ba ka sani ba kuma kar ka raba lambar sirri. Idan labari ya yi kyau fiye da kima, ka nemi wata hujja daga hanya ta daban."
@@ -15508,13 +15508,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Idan ka gane yaudara, mataki na gaba shi ne ka san yancinka da yadda za ka nemi kariya cikin doka.",
-        "ajami": "اِدَن كَا غَنِي يَودَرَا، مَتَكِي نَا غَبَا شِي نِي كَا سَن يَنچِنكَا دَا يَدَّا زَا كَا نِمِي كَرِيَا چِكِن دُكَا."
+        "ajami": null
       },
       "chainNext": "V06",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, zaɓi sako ko kira guda da ya taba baka shakku ka rubuta alamun zambar da ka gani.",
-        "ajami": "يَو، زَٻِي سَكُو كُو كِرَا غُدَا دَا يَا تَبَا بَكَا شَكُّو كَا رُبُتَا اَلَمُن زَمبَر دَا كَا غَنِي."
+        "ajami": null
       }
     },
     {
@@ -15530,11 +15530,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "'Yancin Ɗan Ƙasa",
-        "ajami": "عيَنچِن ڈَن ڪَسَا"
+        "ajami": null
       },
       "summary": {
         "ha": "Ɗan ƙasa mai sana'a yana da haƙƙin samun bayani, rasit, da kariya daga cin zarafi. Sanin haƙƙinka yana taimaka maka magana da hukuma cikin kwanciyar hankali.",
-        "ajami": "ڈَن ڪَسَا مَي سَنَعَا يَنَا دَا هَڪِّن سَمُن بَيَنِي، رَسِت، دَا كَرِيَا دَغَا چِن زَرَفِي. سَنِن هَڪِّنكَا يَنَا تَيمَكَا مَكَا مَغَنَا دَا هُكُمَا چِكِن كوَنچِيَر هَنكَلِي."
+        "ajami": null
       },
       "textExplanationHa": "Ɗan ƙasa mai sana'a yana da haƙƙin samun bayani, rasit, da kariya daga cin zarafi. Sanin haƙƙinka yana taimaka maka magana da hukuma cikin kwanciyar hankali. Ka san abin da za ka iya tambaya. Idan ana neman kuɗi ko bayanai daga hukuma ko wani jami'i, kana da haƙƙin tambayar dalili, suna, da takardar shaida. Wannan ba rashin kunya ba ne. Yanci na nufin Haƙƙin da doka ta tanadar wa mutum ya nema a girmama shi. Rasit na nufin Takardar shaidar abin da aka biya ko aka karɓa. Misalin kuɗin harabar kasuwa. Wani mai karbar kuɗi ya zo wajen Rabi ya bukaci ta biya nan take ba tare da rasit ba. Rabi ta nemi sunan ofishi da takarda sannan ta ce za ta biya ne kawai idan an ba ta shaida. Sanin haƙƙinta ya hana ta biyan kuɗi ba tare da hujja ba. Ka kai rahoto da hujja. Idan an ci zarafi, ka rubuta rana, lokaci, suna, da abin da ya faru. Rahoto mai hujja yana da ƙarfi fiye da zargi kawai.",
       "textExplanationAjami": null,
@@ -15550,7 +15550,7 @@
           },
           "body": {
             "ha": "Idan ana neman kuɗi ko bayanai daga hukuma ko wani jami'i, kana da haƙƙin tambayar dalili, suna, da takardar shaida. Wannan ba rashin kunya ba ne.",
-            "ajami": "اِدَن اَنَا نِمَن كُڈِي كُو بَيَنَي دَغَا هُكُمَا كُو وَنِي جَمِعِي، كَنَا دَا هَڪِّن تَمبَيَر دَلِلِي، سُنَا، دَا تَكَردَر شَيدَا. وَنَّن بَا رَشِن كُنيَا بَا نِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V06-01.mp3",
           "audioScript": "Ka san abin da za ka iya tambaya. Idan ana neman kuɗi ko bayanai daga hukuma ko wani jami'i, kana da haƙƙin tambayar dalili, suna, da takardar shaida. Wannan ba rashin kunya ba ne."
@@ -15559,11 +15559,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Yanci",
-            "ajami": "يَنچِي"
+            "ajami": null
           },
           "definition": {
             "ha": "Haƙƙin da doka ta tanadar wa mutum ya nema a girmama shi.",
-            "ajami": "هَڪِّن دَا دُكَا تَا تَنَدَر وَا مُتُم يَا نِمَا اَ غِرمَمَا شِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V06-02.mp3",
           "audioScript": "Kalmar \"Yanci\" tana nufin haƙƙin da doka ta tanadar wa mutum ya nema a girmama shi."
@@ -15572,11 +15572,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Rasit",
-            "ajami": "رَسِت"
+            "ajami": null
           },
           "definition": {
             "ha": "Takardar shaidar abin da aka biya ko aka karɓa.",
-            "ajami": "تَكَردَر شَيدَر اَبِن دَا اَكَا بِيَا كُو اَكَا كَرٻَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V06-03.mp3",
           "audioScript": "Kalmar \"Rasit\" tana nufin takardar shaidar abin da aka biya ko aka karɓa."
@@ -15585,15 +15585,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin kuɗin harabar kasuwa",
-            "ajami": "مِسَلِن كُدِن هَرَبَر كَسُوَا"
+            "ajami": null
           },
           "scenario": {
             "ha": "Wani mai karbar kuɗi ya zo wajen Rabi ya bukaci ta biya nan take ba tare da rasit ba. Rabi ta nemi sunan ofishi da takarda sannan ta ce za ta biya ne kawai idan an ba ta shaida.",
-            "ajami": "وَنِي مَي كَربَر كُدِي يَا زُو وَجِن رَبِي يَا بُكَچِي تَا بِيَا نَن تَكِي بَا تَرِي دَا رَسِت بَا. رَبِي تَا نِمِي سُنَن اُفِشِي دَا تَكَردَا سَنَّن تَا چِي زَا تَا بِيَا نِي كَوَي اِدَن اَن بَا تَا شَيدَا."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Sanin haƙƙinta ya hana ta biyan kuɗi ba tare da hujja ba.",
-            "ajami": "سَنِن هَڪِّنتَا يَا هَنَا تَا بِيَن كُڈِي بَا تَرِي دَا هُجَّا بَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V06-04.mp3",
           "audioScript": "Ga misalin kuɗin harabar kasuwa. Wani mai karbar kuɗi ya zo wajen Rabi ya bukaci ta biya nan take ba tare da rasit ba. Rabi ta nemi sunan ofishi da takarda sannan ta ce za ta biya ne kawai idan an ba ta shaida. Abin da wannan ya nuna shi ne, sanin haƙƙinta ya hana ta biyan kuɗi ba tare da hujja ba."
@@ -15606,7 +15606,7 @@
           },
           "body": {
             "ha": "Idan an ci zarafi, ka rubuta rana, lokaci, suna, da abin da ya faru. Rahoto mai hujja yana da ƙarfi fiye da zargi kawai.",
-            "ajami": "اِدَن اَن چِي زَرَفِي، كَا رُبُتَا رَنَا، لُكَچِي، سُنَا، دَا اَبِن دَا يَا فَرُو. رَهُتُو مَي هُجَّا يَنَا دَا ڪَرفِي فِيِي دَا زَرغِي كَوَي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V06-05.mp3",
           "audioScript": "Ka kai rahoto da hujja. Idan an ci zarafi, ka rubuta rana, lokaci, suna, da abin da ya faru. Rahoto mai hujja yana da ƙarfi fiye da zargi kawai."
@@ -15882,13 +15882,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Da zarar ka san yancinka, abin da zai taimaka maka gaba shi ne adana bayanan kasuwanci domin hujja da ci gaba.",
-        "ajami": "دَا زَرَر كَا سَن يَنچِنكَا، اَبِن دَا زَي تَيمَكَا مَكَا غَبَا شِي نِي اَدَنَا بَيَنَن كَسُوَنچِي دُمِن هُجَّا دَا چِي غَبَا."
+        "ajami": null
       },
       "chainNext": "V07",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, tanadi wuri daya da za ka ajiye rasit da takardun kasuwarka.",
-        "ajami": "يَو، تَنَدِي وُرِي دَيَا دَا زَا كَا اَجِيِي رَسِت دَا تَكَردُن كَسُوَركَا."
+        "ajami": null
       }
     },
     {
@@ -15904,11 +15904,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Adana Bayanan Kasuwanci",
-        "ajami": "اَدَنَا بَيَنَن كَسُوَنچِي"
+        "ajami": null
       },
       "summary": {
         "ha": "Adana bayanan kasuwanci yana nuna inda riba ke fitowa da inda asara ke ɓoye. Rubutu mai sauƙi na yau da kullum ya fi dogaro da ƙwaƙwalwa.",
-        "ajami": "اَدَنَا بَيَنَن كَسُوَنچِي يَنَا نُنَا اِندَا رِبَا كِي فِتُوَا دَا اِندَا اَسَرَا كِي ٻُيِي. رُبُتُو مَي سَوڪِي نَا يَو دَا كُلُّم يَا فِي دُغَرُو دَا ڪوَڪوَلوَا."
+        "ajami": null
       },
       "textExplanationHa": "Adana bayanan kasuwanci yana nuna inda riba ke fitowa da inda asara ke ɓoye. Rubutu mai sauƙi na yau da kullum ya fi dogaro da ƙwaƙwalwa. Rubutu kullum ya fi tunani. Idan ka dogara da kwakwalwa kadai, ƙananan kuɗi da kaya suna ɓacewa. Rubutu na yau da kullum yana sa gaskiyar kasuwa ta fito. Rikodi na nufin Adana bayanin ciniki domin a iya dubawa daga baya. Stock na nufin Jimillar kayan da suke hannun kasuwa domin sayarwa. Misalin littafin ciniki. Nasiru yana da shafin sayayya, shafin sayarwa, da shafin bashi a ƙaramin littafi. Duk yamma yana tara abin da ya shiga da abin da ya fita. Da wannan tsari ya gane wane kaya ne ke saurin karewa da inda asara ke faruwa. Me ya kamata ka rubuta. Ka rubuta sayayya, sayarwa, bashi, mayar da kaya, da kuɗin sufuri. Idan ka rasa rasit, ka rubuta bayanin cinikin nan da nan kafin ka manta.",
       "textExplanationAjami": null,
@@ -15924,7 +15924,7 @@
           },
           "body": {
             "ha": "Idan ka dogara da kwakwalwa kadai, ƙananan kuɗi da kaya suna ɓacewa. Rubutu na yau da kullum yana sa gaskiyar kasuwa ta fito.",
-            "ajami": "اِدَن كَا دُغَرَا دَا كوَكوَلوَا كَدَي، ڪَنَنَن كُڈِي دَا كَيَا سُنَا ٻَچِوَا. رُبُتُو نَا يَو دَا كُلُّم يَنَا سَا غَسكِيَر كَسُوَا تَا فِتُو."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V07-01.mp3",
           "audioScript": "Rubutu kullum ya fi tunani. Idan ka dogara da kwakwalwa kadai, ƙananan kuɗi da kaya suna ɓacewa. Rubutu na yau da kullum yana sa gaskiyar kasuwa ta fito."
@@ -15933,11 +15933,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Rikodi",
-            "ajami": "رِكُدِي"
+            "ajami": null
           },
           "definition": {
             "ha": "Adana bayanin ciniki domin a iya dubawa daga baya.",
-            "ajami": "اَدَنَا بَيَنِن چِنِكِي دُمِن اَ اِيَا دُبَوَا دَغَا بَيَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V07-02.mp3",
           "audioScript": "Kalmar \"Rikodi\" tana nufin adana bayanin ciniki domin a iya dubawa daga baya."
@@ -15946,11 +15946,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Stock",
-            "ajami": "ستُكك"
+            "ajami": null
           },
           "definition": {
             "ha": "Jimillar kayan da suke hannun kasuwa domin sayarwa.",
-            "ajami": "جِمِلَّر كَيَن دَا سُكِي هَنُّن كَسُوَا دُمِن سَيَروَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V07-03.mp3",
           "audioScript": "Kalmar \"Stock\" tana nufin jimillar kayan da suke hannun kasuwa domin sayarwa."
@@ -15959,15 +15959,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin littafin ciniki",
-            "ajami": "مِسَلِن لِتَّفِن چِنِكِي"
+            "ajami": null
           },
           "scenario": {
             "ha": "Nasiru yana da shafin sayayya, shafin sayarwa, da shafin bashi a ƙaramin littafi. Duk yamma yana tara abin da ya shiga da abin da ya fita.",
-            "ajami": "نَسِرُو يَنَا دَا شَفِن سَيَيَّا، شَفِن سَيَروَا، دَا شَفِن بَشِي اَ كَرَمِن لِتَّفِي. دُك يَمَّا يَنَا تَرَا اَبِن دَا يَا شِغَا دَا اَبِن دَا يَا فِتَا."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Da wannan tsari ya gane wane kaya ne ke saurin karewa da inda asara ke faruwa.",
-            "ajami": "دَا وَنَّن ڟَرِي يَا غَنِي وَنِي كَيَا نِي كِي سَورِن كَرِوَا دَا اِندَا اَسَرَا كِي فَرُوَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V07-04.mp3",
           "audioScript": "Ga misalin littafin ciniki. Nasiru yana da shafin sayayya, shafin sayarwa, da shafin bashi a ƙaramin littafi. Duk yamma yana tara abin da ya shiga da abin da ya fita. Abin da wannan ya nuna shi ne, da wannan tsari ya gane wane kaya ne ke saurin karewa da inda asara ke faruwa."
@@ -15980,7 +15980,7 @@
           },
           "body": {
             "ha": "Ka rubuta sayayya, sayarwa, bashi, mayar da kaya, da kuɗin sufuri. Idan ka rasa rasit, ka rubuta bayanin cinikin nan da nan kafin ka manta.",
-            "ajami": "كَا رُبُتَا سَيَيَّا، سَيَروَا، بَشِي، مَيَر دَا كَيَا، دَا كُڈِن سُفُرِي. اِدَن كَا رَسَا رَسِت، كَا رُبُتَا بَيَنِن چِنِكِن نَن دَا نَن كَفِن كَا مَنتَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V07-05.mp3",
           "audioScript": "Me ya kamata ka rubuta. Ka rubuta sayayya, sayarwa, bashi, mayar da kaya, da kuɗin sufuri. Idan ka rasa rasit, ka rubuta bayanin cinikin nan da nan kafin ka manta."
@@ -16254,13 +16254,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Bayan ka kware wajen rubutu, mataki na gaba shi ne gane harajin VAT da yadda ake ware shi a rasit.",
-        "ajami": "بَيَن كَا كوَرِي وَجِن رُبُتُو، مَتَكِي نَا غَبَا شِي نِي غَنِي هَرَجِن Vَت دَا يَدَّا اَكِي وَرِي شِي اَ رَسِت."
+        "ajami": null
       },
       "chainNext": "V08",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, fara shafi biyu: abin da ka saya da abin da ka sayar.",
-        "ajami": "يَو، فَرَا شَفِي بِيُ: اَبِن دَا كَا سَيَا دَا اَبِن دَا كَا سَيَر."
+        "ajami": null
       }
     },
     {
@@ -16276,11 +16276,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Haraji na VAT",
-        "ajami": "هَرَجِي نَا Vَت"
+        "ajami": null
       },
       "summary": {
         "ha": "VAT wani haraji ne da ake ɗorawa a kan wasu kaya da ayyuka. Dole ne ka san lokacin da ya shafe ka, yadda za ka nuna shi a rasit, da yadda kada ka rikita shi da kuɗin shiga naka.",
-        "ajami": "Vَت وَنِي هَرَجِي نِي دَا اَكِي ڈُرَوَا اَ كَن وَسُو كَيَا دَا اَيُّكَا. دُلِي نِي كَا سَن لُكَچِن دَا يَا شَفِي كَا، يَدَّا زَا كَا نُنَا شِي اَ رَسِت، دَا يَدَّا كَدَا كَا رِكِتَا شِي دَا كُڈِن شِغَا نَكَا."
+        "ajami": null
       },
       "textExplanationHa": "VAT wani haraji ne da ake ɗorawa a kan wasu kaya da ayyuka. Dole ne ka san lokacin da ya shafe ka, yadda za ka nuna shi a rasit, da yadda kada ka rikita shi da kuɗin shiga naka. Ka bambanta VAT da kuɗinka. VAT ba riba ba ce. Idan ka tara shi a madadin gwamnati, dole ne ka rarrabe shi da kuɗin kasuwarka domin kada ka rikita lissafi. VAT na nufin Harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye. Rasit na nufin Takardar da ke nuna farashi, biya, da duk wani karin haraji a fili. Misalin rasit mai VAT. Shagon Umar ya sayar da kaya, ya nuna farashin kaya daban sannan ya nuna adadin VAT daban a rasit. Wannan ya sauƙaƙa masa gane abin da ya shafi gwamnati da abin da ya rage na kasuwa. Ware VAT a fili yana rage ruɗani da cece-kuce da kwastoma. Idan ka yi shakka. Dokokin VAT suna bukatar a bincika su daga hukuma ko masani. Ka duba kafin ka ɗora haraji ko ka ce bai shafe ka ba.",
       "textExplanationAjami": null,
@@ -16296,7 +16296,7 @@
           },
           "body": {
             "ha": "VAT ba riba ba ce. Idan ka tara shi a madadin gwamnati, dole ne ka rarrabe shi da kuɗin kasuwarka domin kada ka rikita lissafi.",
-            "ajami": "Vَت بَا رِبَا بَا چِي. اِدَن كَا تَرَا شِي اَ مَدَدِن غوَمنَتِي، دُلِي نِي كَا رَرَّبِي شِي دَا كُدِن كَسُوَركَا دُمِن كَدَا كَا رِكِتَا لِسَّفِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V08-01.mp3",
           "audioScript": "Ka bambanta VAT da kuɗinka. VAT ba riba ba ce. Idan ka tara shi a madadin gwamnati, dole ne ka rarrabe shi da kuɗin kasuwarka domin kada ka rikita lissafi."
@@ -16305,11 +16305,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "VAT",
-            "ajami": "Vَت"
+            "ajami": null
           },
           "definition": {
             "ha": "Harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye.",
-            "ajami": "هَرَجِن دَا اَكِي ڪَرَا وَا وَسُو كَيَا دَا اَيُّكَا اَ مَتَكِن سَيِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V08-02.mp3",
           "audioScript": "Kalmar \"VAT\" tana nufin harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye."
@@ -16318,11 +16318,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Rasit",
-            "ajami": "رَسِت"
+            "ajami": null
           },
           "definition": {
             "ha": "Takardar da ke nuna farashi, biya, da duk wani karin haraji a fili.",
-            "ajami": "تَكَردَر دَا كِي نُنَا فَرَشِي، بِيَا، دَا دُك وَنِي كَرِن هَرَجِي اَ فِلِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V08-03.mp3",
           "audioScript": "Kalmar \"Rasit\" tana nufin takardar da ke nuna farashi, biya, da duk wani karin haraji a fili."
@@ -16331,15 +16331,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin rasit mai VAT",
-            "ajami": "مِسَلِن رَسِت مَي Vَت"
+            "ajami": null
           },
           "scenario": {
             "ha": "Shagon Umar ya sayar da kaya, ya nuna farashin kaya daban sannan ya nuna adadin VAT daban a rasit. Wannan ya sauƙaƙa masa gane abin da ya shafi gwamnati da abin da ya rage na kasuwa.",
-            "ajami": "شَغُن اُمَر يَا سَيَر دَا كَيَا، يَا نُنَا فَرَشِن كَيَا دَبَن سَنَّن يَا نُنَا اَدَدِن Vَت دَبَن اَ رَسِت. وَنَّن يَا سَوڪَڪَا مَسَا غَنِي اَبِن دَا يَا شَفِي غوَمنَتِي دَا اَبِن دَا يَا رَغِي نَا كَسُوَا."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Ware VAT a fili yana rage ruɗani da cece-kuce da kwastoma.",
-            "ajami": "وَرِي Vَت اَ فِلِي يَنَا رَغِي رُڈَنِي دَا چِچِ-كُچِي دَا كوَستُمَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V08-04.mp3",
           "audioScript": "Ga misalin rasit mai VAT. Shagon Umar ya sayar da kaya, ya nuna farashin kaya daban sannan ya nuna adadin VAT daban a rasit. Wannan ya sauƙaƙa masa gane abin da ya shafi gwamnati da abin da ya rage na kasuwa. Abin da wannan ya nuna shi ne, ware VAT a fili yana rage ruɗani da cece-kuce da kwastoma."
@@ -16352,7 +16352,7 @@
           },
           "body": {
             "ha": "Dokokin VAT suna bukatar a bincika su daga hukuma ko masani. Ka duba kafin ka ɗora haraji ko ka ce bai shafe ka ba.",
-            "ajami": "دُكُكِن Vَت سُنَا بُكَتَر اَ بِنچِكَا سُو دَغَا هُكُمَا كُو مَسَنِي. كَا دُبَا كَفِن كَا ڈُرَا هَرَجِي كُو كَا چِي بَي شَفِي كَا بَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V08-05.mp3",
           "audioScript": "Idan ka yi shakka. Dokokin VAT suna bukatar a bincika su daga hukuma ko masani. Ka duba kafin ka ɗora haraji ko ka ce bai shafe ka ba."
@@ -16616,13 +16616,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Idan ka iya ware VAT, mataki na gaba shi ne yadda za ka gudanar da biyan kuɗi cikin aminci ta bankin dijital.",
-        "ajami": "اِدَن كَا اِيَا وَرِي Vَت، مَتَكِي نَا غَبَا شِي نِي يَدَّا زَا كَا غُدَنَر دَا بِيَن كُڈِي چِكِن اَمِنچِي تَا بَنكِن دِجِتَل."
+        "ajami": null
       },
       "chainNext": "V09",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, duba ko rasit ɗinka na nuna farashi da kowane ƙarin kuɗi a fili.",
-        "ajami": "يَو، دُبَا كُو رَسِت ڈِنكَا نَا نُنَا فَرَشِي دَا كُوَنِي ڪَرِن كُدِي اَ فِلِي."
+        "ajami": null
       }
     },
     {
@@ -16638,11 +16638,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Bankin Dijital (USSD/Mobile Money)",
-        "ajami": "بَنكِن دِجِتَل (ُسسد/مُبِلِي مُنِي)"
+        "ajami": null
       },
       "summary": {
         "ha": "Bankin dijital yana sa biyan kaya, tara kuɗi, da aika kuɗi su yi sauri. Amma dole ne a tabbatar da suna, sirri, da tarihin ciniki kafin a danna amincewa.",
-        "ajami": "بَنكِن دِجِتَل يَنَا سَا بِيَن كَيَا، تَرَا كُڈِي، دَا اَيكَا كُدِي سُو يِي سَورِي. اَمَّا دُلِي نِي اَ تَبَّتَر دَا سُنَا، سِرِّي، دَا تَرِهِن چِنِكِي كَفِن اَ دَنَّا اَمِنچِوَا."
+        "ajami": null
       },
       "textExplanationHa": "Bankin dijital yana sa biyan kaya, tara kuɗi, da aika kuɗi su yi sauri. Amma dole ne a tabbatar da suna, sirri, da tarihin ciniki kafin a danna amincewa. Ka tsaya kafin ka danna amincewa. A USSD ko manhajar banki, ka duba suna, adadi, da dalilin biyan kuɗi kafin ka tabbatar. Gaggawa ce ke sa mafi yawan kuskure. USSD na nufin Lambar da ake bugawa a waya domin yin ayyukan banki ba tare da intanet ba. Tarihin ciniki na nufin Jerinhin rubuce-rubucen biyan kuɗi da karɓa da aka yi. Misalin biyan kaya ga mai kaya. Zainab ta shirya tura kuɗi ga mai kawo mata leda. Kafin ta tabbatar, ta sake dubawa ta ga harafin suna ya bambanta da wanda ta saba gani, sai ta dakatar ta kira mai kayan. Sake duba suna ya hana ta aikawa ga asusun da ba daidai ba. Ka kare wayarka. Ka ɓoye lambar sirri, ka kulle wayarka, kuma ka duba sakon tabbatarwa bayan kowace mu'amala. Idan waya ta bace, ka kira banki nan da nan.",
       "textExplanationAjami": null,
@@ -16658,7 +16658,7 @@
           },
           "body": {
             "ha": "A USSD ko manhajar banki, ka duba suna, adadi, da dalilin biyan kuɗi kafin ka tabbatar. Gaggawa ce ke sa mafi yawan kuskure.",
-            "ajami": "اَ اُسسد كُو مَنهَجَر بَنكِي، كَا دُبَا سُنَا، اَدَدِي، دَا دَلِلِن بِيَن كُڈِي كَفِن كَا تَبَّتَر. غَغَّوَا چِي كِي سَا مَفِي يَوَن كُسكُرِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V09-01.mp3",
           "audioScript": "Ka tsaya kafin ka danna amincewa. A USSD ko manhajar banki, ka duba suna, adadi, da dalilin biyan kuɗi kafin ka tabbatar. Gaggawa ce ke sa mafi yawan kuskure."
@@ -16667,11 +16667,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "USSD",
-            "ajami": "اُسسد"
+            "ajami": null
           },
           "definition": {
             "ha": "Lambar da ake bugawa a waya domin yin ayyukan banki ba tare da intanet ba.",
-            "ajami": "لَمبَر دَا اَكِي بُغَوَا اَ وَيَا دُمِن يِن اَيُّكَن بَنكِي بَا تَرِي دَا اِنتَنِت بَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V09-02.mp3",
           "audioScript": "Kalmar \"USSD\" tana nufin lambar da ake bugawa a waya domin yin ayyukan banki ba tare da intanet ba."
@@ -16680,11 +16680,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Tarihin ciniki",
-            "ajami": "تَرِهِن چِنِكِي"
+            "ajami": null
           },
           "definition": {
             "ha": "Jerinhin rubuce-rubucen biyan kuɗi da karɓa da aka yi.",
-            "ajami": "جِرِنهِن رُبُچِ-رُبُچِن بِيَن كُڈِي دَا كَرٻَا دَا اَكَا يِي."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V09-03.mp3",
           "audioScript": "Kalmar \"Tarihin ciniki\" tana nufin jerinhin rubuce-rubucen biyan kuɗi da karɓa da aka yi."
@@ -16693,15 +16693,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin biyan kaya ga mai kaya",
-            "ajami": "مِسَلِن بِيَن كَيَا غَا مَي كَيَا"
+            "ajami": null
           },
           "scenario": {
             "ha": "Zainab ta shirya tura kuɗi ga mai kawo mata leda. Kafin ta tabbatar, ta sake dubawa ta ga harafin suna ya bambanta da wanda ta saba gani, sai ta dakatar ta kira mai kayan.",
-            "ajami": "زَينَب تَا شِريَا تُرَا كُدِي غَا مَي كَوُو مَتَا لِدَا. كَفِن تَا تَبَّتَر، تَا سَكِي دُبَوَا تَا غَا هَرَفِن سُنَا يَا بَمبَنتَا دَا وَندَا تَا سَبَا غَنِي، سَي تَا دَكَتَر تَا كِرَا مَي كَيَن."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Sake duba suna ya hana ta aikawa ga asusun da ba daidai ba.",
-            "ajami": "سَكِي دُبَا سُنَا يَا هَنَا تَا اَيكَوَا غَا اَسُسُن دَا بَا دَيدَي بَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V09-04.mp3",
           "audioScript": "Ga misalin biyan kaya ga mai kaya. Zainab ta shirya tura kuɗi ga mai kawo mata leda. Kafin ta tabbatar, ta sake dubawa ta ga harafin suna ya bambanta da wanda ta saba gani, sai ta dakatar ta kira mai kayan. Abin da wannan ya nuna shi ne, sake duba suna ya hana ta aikawa ga asusun da ba daidai ba."
@@ -16714,7 +16714,7 @@
           },
           "body": {
             "ha": "Ka ɓoye lambar sirri, ka kulle wayarka, kuma ka duba sakon tabbatarwa bayan kowace mu'amala. Idan waya ta bace, ka kira banki nan da nan.",
-            "ajami": "كَا بُيِي لَمبَر سِرِّي، كَا كُلِّي وَيَركَا، كُمَا كَا دُبَا سَكُن تَبَّتَروَا بَيَن كُوَچِي مُعَمَلَا. اِدَن وَيَا تَا بَچِي، كَا كِرَا بَنكِي نَن دَا نَن."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V09-05.mp3",
           "audioScript": "Ka kare wayarka. Ka ɓoye lambar sirri, ka kulle wayarka, kuma ka duba sakon tabbatarwa bayan kowace mu'amala. Idan waya ta bace, ka kira banki nan da nan."
@@ -16988,13 +16988,13 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Bayan biyan kuɗi cikin dijital, tambaya ta ƙarshe ita ce yadda za ka kare bayanan sirrinka daga shiga hannun masu zamba.",
-        "ajami": "بَيَن بِيَن كُڈِي چِكِن دِجِتَل، تَمبَيَا تَا ڪَرشِي اِتَا چِي يَدَّا زَا كَا كَرِي بَيَنَن سِرِّنكَا دَغَا شِغَا هَنُّن مَسُو زَمبَا."
+        "ajami": null
       },
       "chainNext": "V10",
       "isChainLeaf": false,
       "useTodayPrompt": {
         "ha": "Yau, duba tarihin cinikinka guda uku na baya ka tabbata ka gane kowanne.",
-        "ajami": "يَو، دُبَا تَرِهِن چِنِكِنكَا غُدَا اُكُو نَا بَيَا كَا تَبَّتَا كَا غَنِي كُوَنِّي."
+        "ajami": null
       }
     },
     {
@@ -17010,11 +17010,11 @@
       "ajami_validated": false,
       "title": {
         "ha": "Kariyar Bayanan Sirri",
-        "ajami": "كَرِيَر بَيَنَن سِرِّي"
+        "ajami": null
       },
       "summary": {
         "ha": "Bayanan sirri kamar lambar asusu, lambobin tabbatarwa, da hoton shaida na iya zama ƙofa ga masu zamba idan ba a kiyaye su ba. Wannan darasi yana koya matakan kariya na yau da kullum ga mai kasuwa.",
-        "ajami": "بَيَنَن سِرِّي كَمَر لَمبَر اَسُسُو، لَمبُبِن تَبَّتَروَا، دَا هُتُن شَيدَا نَا اِيَا زَمَا ڪُفَا غَا مَسُو زَمبَا اِدَن بَا اَ كِيَيِي سُو بَا. وَنَّن دَرَسِي يَنَا كُيَا مَتَكَن كَرِيَا نَا يَو دَا كُلُّم غَا مَي كَسُوَا."
+        "ajami": null
       },
       "textExplanationHa": "Bayanan sirri kamar lambar asusu, lambobin tabbatarwa, da hoton shaida na iya zama ƙofa ga masu zamba idan ba a kiyaye su ba. Wannan darasi yana koya matakan kariya na yau da kullum ga mai kasuwa. Ba kowa ya kamata ya ga bayaninka ba. Lambar sirri, lambobin tabbatarwa, hoton shaida, da bayanin asusu bai kamata su fita ga kowa ba. Ko mai kira ya ce daga banki ne, ka tantance ta wata hanya. Bayanan sirri na nufin Bayanan da za su iya ba wani damar shiga asusunka ko sace sunanka. Kalmar sirri na nufin Lambar ko kalmar da ke kulle waya ko asusu. Misalin kiran bogi. Wata mata ta kira Safiya ta ce akwai matsala a asusunta kuma ta nemi lambar tabbatarwa. Safiya ta ƙi bayarwa, ta kashe kiran, sannan ta kira lambar bankinta da kanta. Tantancewa ta hanya mai zaman kanta ta kare bayananta. Ka rage fallasa bayanai. Ka rufe takardun da ke ɗauke da bayanai, ka fita daga manhajojin banki idan ka gama, kuma kada ka bari wasu su ɗauki hoton katinka ko waya.",
       "textExplanationAjami": null,
@@ -17030,7 +17030,7 @@
           },
           "body": {
             "ha": "Lambar sirri, lambobin tabbatarwa, hoton shaida, da bayanin asusu bai kamata su fita ga kowa ba. Ko mai kira ya ce daga banki ne, ka tantance ta wata hanya.",
-            "ajami": "لَمبَر سِرِّي، لَمبُبِن تَبَّتَروَا، هُتُن شَيدَا، دَا بَيَنِن اَسُسُو بَي كَمَتَا سُو فِتَا غَا كُوَا بَا. كُو مَي كِرَا يَا چِي دَغَا بَنكِي نِي، كَا تَنتَنچِي تَا وَتَا هَنيَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V10-01.mp3",
           "audioScript": "Ba kowa ya kamata ya ga bayaninka ba. Lambar sirri, lambobin tabbatarwa, hoton shaida, da bayanin asusu bai kamata su fita ga kowa ba. Ko mai kira ya ce daga banki ne, ka tantance ta wata hanya."
@@ -17039,11 +17039,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Bayanan sirri",
-            "ajami": "بَيَنَن سِرِّي"
+            "ajami": null
           },
           "definition": {
             "ha": "Bayanan da za su iya ba wani damar shiga asusunka ko sace sunanka.",
-            "ajami": "بَيَنَن دَا زَا سُو اِيَا بَا وَنِي دَمَر شِغَا اَسُسُنكَا كُو سَچِي سُنَنكَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V10-02.mp3",
           "audioScript": "Kalmar \"Bayanan sirri\" tana nufin bayanan da za su iya ba wani damar shiga asusunka ko sace sunanka."
@@ -17052,11 +17052,11 @@
           "type": "glossary-card",
           "term": {
             "ha": "Kalmar sirri",
-            "ajami": "كَلمَر سِرِّي"
+            "ajami": null
           },
           "definition": {
             "ha": "Lambar ko kalmar da ke kulle waya ko asusu.",
-            "ajami": "لَمبَر كُو كَلمَر دَا كِي كُلِّي وَيَا كُو اَسُسُو."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V10-03.mp3",
           "audioScript": "Kalmar \"Kalmar sirri\" tana nufin lambar ko kalmar da ke kulle waya ko asusu."
@@ -17065,15 +17065,15 @@
           "type": "example",
           "title": {
             "ha": "Misalin kiran bogi",
-            "ajami": "مِسَلِن كِرَن بُغِي"
+            "ajami": null
           },
           "scenario": {
             "ha": "Wata mata ta kira Safiya ta ce akwai matsala a asusunta kuma ta nemi lambar tabbatarwa. Safiya ta ƙi bayarwa, ta kashe kiran, sannan ta kira lambar bankinta da kanta.",
-            "ajami": "وَتَا مَتَا تَا كِرَا سَفِيَا تَا چِي اَكوَي مَڟَلَا اَ اَسُسُنتَا كُمَا تَا نِمِي لَمبَر تَبَّتَروَا. سَفِيَا تَا ڪِي بَيَروَا، تَا كَشِي كِرَن، سَنَّن تَا كِرَا لَمبَر بَنكِنتَا دَا كَنتَا."
+            "ajami": null
           },
           "takeaway": {
             "ha": "Tantancewa ta hanya mai zaman kanta ta kare bayananta.",
-            "ajami": "تَنتَنچِوَا تَا هَنيَا مَي زَمَن كَنتَا تَا كَرِي بَيَنَنتَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V10-04.mp3",
           "audioScript": "Ga misalin kiran bogi. Wata mata ta kira Safiya ta ce akwai matsala a asusunta kuma ta nemi lambar tabbatarwa. Safiya ta ƙi bayarwa, ta kashe kiran, sannan ta kira lambar bankinta da kanta. Abin da wannan ya nuna shi ne, tantancewa ta hanya mai zaman kanta ta kare bayananta."
@@ -17086,7 +17086,7 @@
           },
           "body": {
             "ha": "Ka rufe takardun da ke ɗauke da bayanai, ka fita daga manhajojin banki idan ka gama, kuma kada ka bari wasu su ɗauki hoton katinka ko waya.",
-            "ajami": "كَا رُفِي تَكَردُن دَا كِي ڈَوكِي دَا بَيَنَي، كَا فِتَا دَغَا مَنهَجُجِن بَنكِي اِدَن كَا غَمَا، كُمَا كَدَا كَا بَرِي وَسُو سُو ڈَوكِي هُتُن كَتِنكَا كُو وَيَا."
+            "ajami": null
           },
           "audioFile": "audio/vocational/V10-05.mp3",
           "audioScript": "Ka rage fallasa bayanai. Ka rufe takardun da ke ɗauke da bayanai, ka fita daga manhajojin banki idan ka gama, kuma kada ka bari wasu su ɗauki hoton katinka ko waya."
@@ -17363,7 +17363,7 @@
       "isChainLeaf": true,
       "useTodayPrompt": {
         "ha": "Yau, canja tsohuwar kalmar sirri ko ka duba wa wayarka kullewa tana aiki.",
-        "ajami": "يَو، كَنجَا ڟُهُوَر كَلمَر سِرِّي كُو كَا دُبَا وَا وَيَركَا كُلِّوَا تَنَا اَيكِي."
+        "ajami": null
       }
     },
     {
