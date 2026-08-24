@@ -3,9 +3,9 @@
   "taskId": "2026-07-28-slice-42",
   "source": "app/content.json",
   "totalRunningWords": 259493,
-  "totalDistinctWords": 3446,
+  "totalDistinctWords": 3445,
   "eligibleRunningWords": 257320,
-  "eligibleDistinctWords": 3418,
+  "eligibleDistinctWords": 3417,
   "exclusions": {
     "structuralMarkers": {
       "distinctConstructs": 7,

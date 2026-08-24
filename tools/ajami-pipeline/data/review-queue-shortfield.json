@@ -609,11 +609,11 @@
       "redundantQuestionsRemoved": 3
     },
     {
-      "rank": 1713,
+      "rank": 1714,
       "boko": "diyya",
       "normalizedBoko": "diyya",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.549,
+      "cumulativeCoveragePercent": 96.5537,
       "tokens": [
         "D_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -689,11 +689,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 1727,
+      "rank": 1728,
       "boko": "Halima",
       "normalizedBoko": "halima",
       "occurrences": 9,
-      "cumulativeCoveragePercent": 96.5976,
+      "cumulativeCoveragePercent": 96.6022,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -800,11 +800,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 1872,
+      "rank": 1873,
       "boko": "rikodi",
       "normalizedBoko": "rikodi",
       "occurrences": 8,
-      "cumulativeCoveragePercent": 97.0681,
+      "cumulativeCoveragePercent": 97.0728,
       "tokens": [
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED",
@@ -908,11 +908,11 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 1926,
+      "rank": 1927,
       "boko": "harabar",
       "normalizedBoko": "harabar",
       "occurrences": 7,
-      "cumulativeCoveragePercent": 97.2265,
+      "cumulativeCoveragePercent": 97.2311,
       "tokens": [
         "H_CONTEXT_REQUIRED",
         "VOWEL_A_UNLENGTHENED",
@@ -1022,11 +1022,11 @@
       "redundantQuestionsRemoved": 0
     },
     {
-      "rank": 2005,
+      "rank": 2006,
       "boko": "bogi",
       "normalizedBoko": "bogi",
       "occurrences": 6,
-      "cumulativeCoveragePercent": 97.4315,
+      "cumulativeCoveragePercent": 97.4362,
       "tokens": [
         "B_PLAIN",
         "VOWEL_O_UNLENGTHENED",
@@ -1097,7 +1097,7 @@
       "redundantQuestionsRemoved": 1
     },
     {
-      "rank": 2752,
+      "rank": 2751,
       "boko": "sabulun",
       "normalizedBoko": "sabulun",
       "occurrences": 3,
