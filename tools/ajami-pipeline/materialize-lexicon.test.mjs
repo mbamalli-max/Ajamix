@@ -7,6 +7,7 @@ import test from "node:test";
 import { formatCodePoints } from "./tokenizer.mjs";
 import { validateLexiconEntry } from "./lexicon/schema.mjs";
 import {
+  DEFAULT_OUTPUT_PATH,
   REVIEW_QUEUE_PATH,
   decisionCodepoints,
   materializeAjami,
@@ -321,4 +322,30 @@ test("writeLexicon writes only to an explicitly supplied temporary path", () => 
   } finally {
     fs.rmSync(temporaryDirectory, { recursive: true, force: true });
   }
+});
+
+test("stored top-500 lexicon stays in sync with its ratified review queue", () => {
+  // The merged-lexicon builder materialises short300 and quiz live from their
+  // queues, but reads the top500 lexicon from disk as a stored artifact. That
+  // makes ajami-lexicon.json the one source that can silently drift out of
+  // sync with the decisions that produced it -- and it did: four six-way
+  // H_ORTHOGRAPHY_CLASS corrections (haɗin, haɗu, haɗari, hakan, all
+  // ح U+062D -> ه U+0647) were ratified into the queue but never
+  // rematerialised, and the stale ح propagated into 11 composed content
+  // fields that every gate passed. Found by Muhammad, 2026-08-23.
+  //
+  // Deep-equality against a fresh materialisation is the invariant that makes
+  // that class of drift impossible to ship again. This asserts a relationship
+  // between two artifacts, not a live count, so it does not violate the
+  // no-live-counts rule.
+  const stored = JSON.parse(fs.readFileSync(DEFAULT_OUTPUT_PATH, "utf8"));
+  const fresh = materializeLexicon(storedQueue());
+
+  assert.deepEqual(
+    stored,
+    fresh,
+    "tools/ajami-pipeline/data/ajami-lexicon.json is stale relative to " +
+      "review-queue-top500.json. Re-run: node tools/ajami-pipeline/materialize-lexicon.mjs " +
+      "(then rebuild the merged lexicon and regenerate content.json)."
+  );
 });
