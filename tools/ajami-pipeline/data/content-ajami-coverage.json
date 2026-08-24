@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "materialType": "lexicon_composed_content_ajami_coverage",
   "source": "app/content.json",
-  "lexiconEntryCount": 1228,
+  "lexiconEntryCount": 1240,
   "invariant": "A managed Ajami field holds a non-null value if and only if its entire Boko source string was composed from ratified lexicon entries. null (or an absent key, where the schema never had one) means no lexicon coverage, which the renderer resolves to audio playback. ajami_validated stays false on every entry and is never set true.",
   "fields": {
     "titleAjami": {
@@ -71,16 +71,16 @@
     "lessonTerm.ajami": {
       "source": "modules[].lessons[].term.ha",
       "total": 60,
-      "covered": 53,
-      "uncovered": 7,
-      "coveragePercent": 88.33
+      "covered": 57,
+      "uncovered": 3,
+      "coveragePercent": 95
     },
     "lessonTitle.ajami": {
       "source": "modules[].lessons[].title.ha",
       "total": 30,
-      "covered": 21,
-      "uncovered": 9,
-      "coveragePercent": 70
+      "covered": 29,
+      "uncovered": 1,
+      "coveragePercent": 96.67
     }
   },
   "uncoveredWords": [
@@ -130,10 +130,6 @@
     },
     {
       "word": "'na",
-      "occurrences": 2
-    },
-    {
-      "word": "bogi",
       "occurrences": 2
     },
     {
@@ -213,10 +209,6 @@
       "occurrences": 1
     },
     {
-      "word": "binciken",
-      "occurrences": 1
-    },
-    {
       "word": "chat",
       "occurrences": 1
     },
@@ -229,15 +221,7 @@
       "occurrences": 1
     },
     {
-      "word": "diyya",
-      "occurrences": 1
-    },
-    {
       "word": "dogaye",
-      "occurrences": 1
-    },
-    {
-      "word": "ɗinki",
       "occurrences": 1
     },
     {
@@ -269,19 +253,7 @@
       "occurrences": 1
     },
     {
-      "word": "haɗuwa",
-      "occurrences": 1
-    },
-    {
       "word": "halayen",
-      "occurrences": 1
-    },
-    {
-      "word": "halima",
-      "occurrences": 1
-    },
-    {
-      "word": "harabar",
       "occurrences": 1
     },
     {
@@ -361,15 +333,7 @@
       "occurrences": 1
     },
     {
-      "word": "matakin",
-      "occurrences": 1
-    },
-    {
       "word": "mazaunin",
-      "occurrences": 1
-    },
-    {
-      "word": "misalan",
       "occurrences": 1
     },
     {
@@ -409,19 +373,11 @@
       "occurrences": 1
     },
     {
-      "word": "rikodi",
-      "occurrences": 1
-    },
-    {
       "word": "rubu'u",
       "occurrences": 1
     },
     {
       "word": "sa'o'i",
-      "occurrences": 1
-    },
-    {
-      "word": "sabulun",
       "occurrences": 1
     },
     {
@@ -466,10 +422,6 @@
     },
     {
       "word": "tsaronsu",
-      "occurrences": 1
-    },
-    {
-      "word": "wai",
       "occurrences": 1
     },
     {

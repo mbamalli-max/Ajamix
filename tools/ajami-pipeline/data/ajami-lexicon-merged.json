@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "orthography": "warsh_kano_ajamix_v1",
   "materialType": "ratified_human_reviewed_lexicon",
-  "notice": "Ajami spellings merged from the ratified top500 lexicon, ratified short300 review decisions, and ratified quiz review decisions.",
+  "notice": "Ajami spellings merged from the ratified top500 lexicon, ratified short300 review decisions, ratified quiz review decisions, and ratified short-field review decisions.",
   "entries": [
     {
       "boko": "a",
@@ -41707,6 +41707,420 @@
       "confidence": "reviewed",
       "source": [
         "tools/ajami-pipeline/data/review-queue-quiz.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "haɗuwa",
+      "normalizedBoko": "haɗuwa",
+      "tokens": [
+        "H_CONTEXT_REQUIRED",
+        "VOWEL_A_UNLENGTHENED",
+        "D_GLOTTALIZED",
+        "VOWEL_U_UNLENGTHENED",
+        "W_PLAIN",
+        "VOWEL_A_UNLENGTHENED"
+      ],
+      "ajami": "هَطُوَا",
+      "ajamiCodepoints": [
+        "U+0647",
+        "U+064E",
+        "U+0637",
+        "U+064F",
+        "U+0648",
+        "U+064E",
+        "U+0627"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "misalan",
+      "normalizedBoko": "misalan",
+      "tokens": [
+        "M_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "S_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "L_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "ajami": "مِسَالَࢽْ",
+      "ajamiCodepoints": [
+        "U+0645",
+        "U+0650",
+        "U+0633",
+        "U+064E",
+        "U+0627",
+        "U+0644",
+        "U+064E",
+        "U+08BD",
+        "U+0652"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "matakin",
+      "normalizedBoko": "matakin",
+      "tokens": [
+        "M_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "T_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "K_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "ajami": "مَتَاکِࢽْ",
+      "ajamiCodepoints": [
+        "U+0645",
+        "U+064E",
+        "U+062A",
+        "U+064E",
+        "U+0627",
+        "U+06A9",
+        "U+0650",
+        "U+08BD",
+        "U+0652"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "ɗinki",
+      "normalizedBoko": "ɗinki",
+      "tokens": [
+        "D_GLOTTALIZED",
+        "VOWEL_I_UNLENGTHENED",
+        "N_HAUSA",
+        "K_PLAIN",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "ajami": "طِࢽْکِى",
+      "ajamiCodepoints": [
+        "U+0637",
+        "U+0650",
+        "U+08BD",
+        "U+0652",
+        "U+06A9",
+        "U+0650",
+        "U+0649"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "binciken",
+      "normalizedBoko": "binciken",
+      "tokens": [
+        "B_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "N_HAUSA",
+        "C_HAUSA",
+        "VOWEL_I_UNLENGTHENED",
+        "K_PLAIN",
+        "VOWEL_E_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "ajami": "بِࢽْثِکٜࢽْ",
+      "ajamiCodepoints": [
+        "U+0628",
+        "U+0650",
+        "U+08BD",
+        "U+0652",
+        "U+062B",
+        "U+0650",
+        "U+06A9",
+        "U+065C",
+        "U+08BD",
+        "U+0652"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "wai",
+      "normalizedBoko": "wai",
+      "tokens": [
+        "W_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "ajami": "وَیْ",
+      "ajamiCodepoints": [
+        "U+0648",
+        "U+064E",
+        "U+06CC",
+        "U+0652"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "diyya",
+      "normalizedBoko": "diyya",
+      "tokens": [
+        "D_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "Y_PLAIN",
+        "Y_PLAIN",
+        "VOWEL_A_UNLENGTHENED"
+      ],
+      "ajami": "دِیَّا",
+      "ajamiCodepoints": [
+        "U+062F",
+        "U+0650",
+        "U+06CC",
+        "U+0651",
+        "U+064E",
+        "U+0627"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "Halima",
+      "normalizedBoko": "halima",
+      "tokens": [
+        "H_CONTEXT_REQUIRED",
+        "VOWEL_A_UNLENGTHENED",
+        "L_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "M_PLAIN",
+        "VOWEL_A_UNLENGTHENED"
+      ],
+      "ajami": "حَلِىمَ",
+      "ajamiCodepoints": [
+        "U+062D",
+        "U+064E",
+        "U+0644",
+        "U+0650",
+        "U+0649",
+        "U+0645",
+        "U+064E"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "arabic_lexical",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "rikodi",
+      "normalizedBoko": "rikodi",
+      "tokens": [
+        "R_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "K_PLAIN",
+        "VOWEL_O_UNLENGTHENED",
+        "D_PLAIN",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "ajami": "رِکُدِى",
+      "ajamiCodepoints": [
+        "U+0631",
+        "U+0650",
+        "U+06A9",
+        "U+064F",
+        "U+062F",
+        "U+0650",
+        "U+0649"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "harabar",
+      "normalizedBoko": "harabar",
+      "tokens": [
+        "H_CONTEXT_REQUIRED",
+        "VOWEL_A_UNLENGTHENED",
+        "R_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "B_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "R_PLAIN"
+      ],
+      "ajami": "حَرَبَرْ",
+      "ajamiCodepoints": [
+        "U+062D",
+        "U+064E",
+        "U+0631",
+        "U+064E",
+        "U+0628",
+        "U+064E",
+        "U+0631",
+        "U+0652"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "bogi",
+      "normalizedBoko": "bogi",
+      "tokens": [
+        "B_PLAIN",
+        "VOWEL_O_UNLENGTHENED",
+        "G_PLAIN",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "ajami": "بُواْغِى",
+      "ajamiCodepoints": [
+        "U+0628",
+        "U+064F",
+        "U+0648",
+        "U+0627",
+        "U+0652",
+        "U+063A",
+        "U+0650",
+        "U+0649"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
+      ],
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-08-03",
+      "notes": "Materialised from Muhammad's ratified review-queue decisions on 2026-08-03."
+    },
+    {
+      "boko": "sabulun",
+      "normalizedBoko": "sabulun",
+      "tokens": [
+        "S_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "B_PLAIN",
+        "VOWEL_U_UNLENGTHENED",
+        "L_PLAIN",
+        "VOWEL_U_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "ajami": "سَابُلُࢽْ",
+      "ajamiCodepoints": [
+        "U+0633",
+        "U+064E",
+        "U+0627",
+        "U+0628",
+        "U+064F",
+        "U+0644",
+        "U+064F",
+        "U+08BD",
+        "U+0652"
+      ],
+      "pronunciation": null,
+      "vowelLength": null,
+      "category": "native_hausa",
+      "orthography": "warsh_kano_ajamix_v1",
+      "status": "human_reviewed",
+      "confidence": "reviewed",
+      "source": [
+        "tools/ajami-pipeline/data/review-queue-shortfield.json"
       ],
       "reviewer": "Muhammad",
       "reviewDate": "2026-08-03",

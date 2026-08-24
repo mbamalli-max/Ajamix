@@ -7,16 +7,17 @@ import test from "node:test";
 import {
   QUIZ_SOURCE,
   SHORT300_SOURCE,
+  SHORTFIELD_SOURCE,
   buildMergedLexicon,
   ratifiedEntries,
   writeMergedLexicon,
 } from "./build-merged-lexicon.mjs";
 
-test("merged lexicon appends both ratified queues with source provenance", () => {
+test("merged lexicon appends all ratified queues with source provenance", () => {
   const { lexicon, map, counts } = buildMergedLexicon();
   assert.equal(
     counts.merged,
-    counts.top500 + counts.short300Ratified + counts.quizRatified
+    counts.top500 + counts.short300Ratified + counts.quizRatified + counts.shortfieldRatified
   );
   assert.equal(lexicon.entries.length, counts.merged);
   assert.equal(map.size, counts.merged);
@@ -25,9 +26,22 @@ test("merged lexicon appends both ratified queues with source provenance", () =>
     lexicon.entries[counts.top500 + counts.short300Ratified].source,
     [QUIZ_SOURCE]
   );
+  assert.deepEqual(
+    lexicon.entries[counts.top500 + counts.short300Ratified + counts.quizRatified].source,
+    [SHORTFIELD_SOURCE]
+  );
+  const shortfieldEntries = lexicon.entries.slice(
+    counts.top500 + counts.short300Ratified + counts.quizRatified
+  );
+  assert.equal(shortfieldEntries.length, counts.shortfieldRatified);
+  assert.equal(counts.shortfieldRatified, 12);
+  assert.ok(shortfieldEntries.every((entry) =>
+    Array.isArray(entry.source) && entry.source.length === 1 && entry.source[0] === SHORTFIELD_SOURCE
+  ));
   assert.ok(map.has("idan"));
   assert.ok(map.has("jera"));
   assert.ok(map.has("eh"));
+  assert.equal(map.get("halima")?.boko, "Halima");
 });
 
 test("ratifiedEntries accepts answered or not-applicable questions only", () => {
@@ -56,6 +70,7 @@ test("merged lexicon builder throws instead of resolving a key collision", () =>
     const topPath = path.join(temporaryDirectory, "top.json");
     const shortPath = path.join(temporaryDirectory, "short.json");
     const quizPath = path.join(temporaryDirectory, "quiz.json");
+    const shortfieldPath = path.join(temporaryDirectory, "shortfield.json");
     fs.writeFileSync(topPath, JSON.stringify({ ...original, entries: [original.entries[0]] }));
     fs.writeFileSync(shortPath, JSON.stringify({
       entries: [{
@@ -76,9 +91,59 @@ test("merged lexicon builder throws instead of resolving a key collision", () =>
       }],
     }));
     fs.writeFileSync(quizPath, JSON.stringify({ entries: [] }));
+    fs.writeFileSync(shortfieldPath, JSON.stringify({ entries: [] }));
     assert.throws(
-      () => buildMergedLexicon({ top500Path: topPath, short300Path: shortPath, quizPath }),
+      () => buildMergedLexicon({ top500Path: topPath, short300Path: shortPath, quizPath, shortfieldPath }),
       /key collision.*"a"/iu
+    );
+  } finally {
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("merged lexicon excludes incomplete short-field entries through the shared ratification contract", () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "ajami-merged-shortfield-contract-"));
+  try {
+    const shortfieldPath = path.join(temporaryDirectory, "shortfield.json");
+    const shortfieldQueue = JSON.parse(fs.readFileSync(
+      new URL("./data/review-queue-shortfield.json", import.meta.url),
+      "utf8"
+    ));
+    const withheld = shortfieldQueue.entries[0];
+    withheld.openQuestions[0].reviewerDecision = null;
+    delete withheld.openQuestions[0].resolution;
+    fs.writeFileSync(shortfieldPath, JSON.stringify(shortfieldQueue));
+
+    const { map, counts } = buildMergedLexicon({ shortfieldPath });
+    assert.equal(counts.shortfieldRatified, 11);
+    assert.equal(map.has(withheld.boko.toLocaleLowerCase("ha")), false);
+  } finally {
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("merged lexicon fails closed on normalized case-folded collisions", () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "ajami-merged-normalized-collision-"));
+  try {
+    const original = buildMergedLexicon().lexicon;
+    const topPath = path.join(temporaryDirectory, "top.json");
+    const shortPath = path.join(temporaryDirectory, "short.json");
+    const quizPath = path.join(temporaryDirectory, "quiz.json");
+    const shortfieldPath = path.join(temporaryDirectory, "shortfield.json");
+    const quizQueue = JSON.parse(fs.readFileSync(
+      new URL("./data/review-queue-quiz.json", import.meta.url),
+      "utf8"
+    ));
+    const misali = quizQueue.entries.find((entry) => entry.boko === "misalin");
+    assert.ok(misali);
+    fs.writeFileSync(topPath, JSON.stringify({ ...original, entries: [{ ...original.entries[0], boko: "Misali" }] }));
+    fs.writeFileSync(shortPath, JSON.stringify({ entries: [] }));
+    fs.writeFileSync(quizPath, JSON.stringify({ entries: [{ ...misali, boko: "misali" }] }));
+    fs.writeFileSync(shortfieldPath, JSON.stringify({ entries: [] }));
+
+    assert.throws(
+      () => buildMergedLexicon({ top500Path: topPath, short300Path: shortPath, quizPath, shortfieldPath }),
+      /key collision.*"misali"/iu
     );
   } finally {
     fs.rmSync(temporaryDirectory, { recursive: true, force: true });

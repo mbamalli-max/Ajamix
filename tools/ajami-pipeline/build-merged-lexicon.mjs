@@ -12,9 +12,11 @@ const MODULE_DIR = path.dirname(fileURLToPath(import.meta.url));
 export const TOP500_LEXICON_PATH = path.join(MODULE_DIR, "data", "ajami-lexicon.json");
 export const SHORT300_QUEUE_PATH = path.join(MODULE_DIR, "data", "review-queue-short300.json");
 export const QUIZ_QUEUE_PATH = path.join(MODULE_DIR, "data", "review-queue-quiz.json");
+export const SHORTFIELD_QUEUE_PATH = path.join(MODULE_DIR, "data", "review-queue-shortfield.json");
 export const MERGED_LEXICON_PATH = path.join(MODULE_DIR, "data", "ajami-lexicon-merged.json");
 export const SHORT300_SOURCE = "tools/ajami-pipeline/data/review-queue-short300.json";
 export const QUIZ_SOURCE = "tools/ajami-pipeline/data/review-queue-quiz.json";
+export const SHORTFIELD_SOURCE = "tools/ajami-pipeline/data/review-queue-shortfield.json";
 
 export function ratifiedEntries(queue) {
   if (!Array.isArray(queue?.entries)) {
@@ -51,6 +53,7 @@ export function buildMergedLexicon({
   top500Path = TOP500_LEXICON_PATH,
   short300Path = SHORT300_QUEUE_PATH,
   quizPath = QUIZ_QUEUE_PATH,
+  shortfieldPath = SHORTFIELD_QUEUE_PATH,
 } = {}) {
   const top500 = JSON.parse(fs.readFileSync(top500Path, "utf8"));
   if (!Array.isArray(top500.entries)) {
@@ -77,17 +80,26 @@ export function buildMergedLexicon({
     source: [QUIZ_SOURCE],
   }));
 
+  const shortfieldQueue = JSON.parse(fs.readFileSync(shortfieldPath, "utf8"));
+  const shortfieldRatified = ratifiedEntries(shortfieldQueue);
+  const shortfield = materializeLexicon(shortfieldRatified);
+  const shortfieldEntries = shortfield.entries.map((entry) => ({
+    ...entry,
+    source: [SHORTFIELD_SOURCE],
+  }));
+
   const entries = [];
   const map = new Map();
   addEntries(top500.entries, top500Path, entries, map);
   addEntries(short300Entries, short300Path, entries, map);
   addEntries(quizEntries, quizPath, entries, map);
+  addEntries(shortfieldEntries, shortfieldPath, entries, map);
 
   const lexicon = {
     schemaVersion: top500.schemaVersion,
     orthography: top500.orthography,
     materialType: top500.materialType,
-    notice: "Ajami spellings merged from the ratified top500 lexicon, ratified short300 review decisions, and ratified quiz review decisions.",
+    notice: "Ajami spellings merged from the ratified top500 lexicon, ratified short300 review decisions, ratified quiz review decisions, and ratified short-field review decisions.",
     entries,
   };
 
@@ -98,6 +110,7 @@ export function buildMergedLexicon({
       top500: top500.entries.length,
       short300Ratified: short300Entries.length,
       quizRatified: quizEntries.length,
+      shortfieldRatified: shortfieldEntries.length,
       merged: entries.length,
     },
   };
@@ -118,7 +131,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   writeMergedLexicon(lexicon, outputPath);
   process.stdout.write(
     `Merged ${counts.top500} top500 + ${counts.short300Ratified} short300 + ` +
-    `${counts.quizRatified} quiz entries ` +
+    `${counts.quizRatified} quiz + ${counts.shortfieldRatified} shortfield entries ` +
     `into ${counts.merged} entries at ${outputPath}\n`
   );
 }

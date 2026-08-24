@@ -24,8 +24,8 @@ export const EXPECTED_COVERAGE = Object.freeze({
   distractorFormulasAjami: { total: 450, covered: 439 },
   "heading.ajami": { total: 60, covered: 59 },
   "title.ajami": { total: 30, covered: 27 },
-  "lessonTerm.ajami": { total: 60, covered: 53 },
-  "lessonTitle.ajami": { total: 30, covered: 21 },
+  "lessonTerm.ajami": { total: 60, covered: 57 },
+  "lessonTitle.ajami": { total: 30, covered: 29 },
 });
 
 const TOP_LEVEL_MANAGED_AJAMI_FIELDS = Object.freeze([
