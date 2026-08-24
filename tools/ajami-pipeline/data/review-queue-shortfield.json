@@ -1,0 +1,1200 @@
+{
+  "schemaVersion": 1,
+  "taskId": "2026-07-28-slice-42",
+  "materialType": "generated_review_queue_not_approved",
+  "source": "app/content.json",
+  "notice": "Machine-generated review material only. No entry is approved or production-wired; human decisions are required before promotion.",
+  "fieldSelection": [
+    "titleHa",
+    "subjectHa",
+    "textExplanationHa",
+    "audioScript",
+    "questionHa",
+    "templateHa",
+    "answerFormula",
+    "distractorFormulas",
+    "ha",
+    "topicHa",
+    "termHa",
+    "definitionHa"
+  ],
+  "totalHausaFieldsScanned": 15577,
+  "ordering": "Entries are sorted by immutable corpus frequency rank.",
+  "entryCount": 12,
+  "entries": [
+    {
+      "rank": 588,
+      "boko": "haɗuwa",
+      "normalizedBoko": "haɗuwa",
+      "occurrences": 60,
+      "cumulativeCoveragePercent": 85.8725,
+      "tokens": [
+        "H_CONTEXT_REQUIRED",
+        "VOWEL_A_UNLENGTHENED",
+        "D_GLOTTALIZED",
+        "VOWEL_U_UNLENGTHENED",
+        "W_PLAIN",
+        "VOWEL_A_UNLENGTHENED"
+      ],
+      "provisionalAjami": "حَطُوَ",
+      "ajamiCodepoints": [
+        "U+062D",
+        "U+064E",
+        "U+0637",
+        "U+064F",
+        "U+0648",
+        "U+064E"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "a",
+          "question": "Is the 'a' at position 1 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 3,
+          "letter": "u",
+          "question": "Is the 'u' at position 3 short (U+064F) or long (U+064F U+0648)?",
+          "options": [
+            "short — U+064F",
+            "long — U+064F U+0648",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064F"
+            ],
+            "long": [
+              "U+064F",
+              "U+0648"
+            ]
+          }
+        },
+        {
+          "type": "WORD_FINAL_VOWEL",
+          "position": 5,
+          "letter": "a",
+          "question": "Which reviewed final-vowel form is required for 'a' at position 5? Select the exact sequence, or supply a replacement sequence.",
+          "options": [
+            "short final — U+064E",
+            "long final — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "H_ORTHOGRAPHY_CLASS",
+          "position": 0,
+          "arabicLoanCandidate": false,
+          "question": "Classify the 'h' in 'haɗuwa' as Hausa phonemic, preserved Arabic ḥāʾ/hāʾ/khāʾ, Hausa epenthetic, or lexically unresolved.",
+          "options": [
+            "H_HAUSA_PHONEMIC — ح U+062D native Hausa /h/",
+            "H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved",
+            "H_ARABIC_HEH_PRESERVED — ه U+0647 Arabic ه preserved",
+            "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
+            "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
+            "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
+          ]
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[p1-maths-09 | modules.32.textExplanationHa] Ka fara da ƙananan lambobi, ka yi amfani da yatsu, tsakuwa, ko zane domin ka ga yadda lambobi suke haɗuwa su zama yawa ɗaya.",
+        "[p1-maths-09 | modules.32.audioScript] Ka fara da ƙananan lambobi, ka yi amfani da yatsu, tsakuwa, ko zane domin ka ga yadda lambobi suke haɗuwa su zama yawa ɗaya.",
+        "[p1-maths-09 | modules.32.segments.0.text.ha] Ka fara da ƙananan lambobi, ka yi amfani da yatsu, tsakuwa, ko zane domin ka ga yadda lambobi suke haɗuwa su zama yawa ɗaya."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 1
+    },
+    {
+      "rank": 675,
+      "boko": "misalan",
+      "normalizedBoko": "misalan",
+      "occurrences": 49,
+      "cumulativeCoveragePercent": 87.6887,
+      "tokens": [
+        "M_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "S_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "L_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "provisionalAjami": "مِسَلَࢽْ",
+      "ajamiCodepoints": [
+        "U+0645",
+        "U+0650",
+        "U+0633",
+        "U+064E",
+        "U+0644",
+        "U+064E",
+        "U+08BD",
+        "U+0652"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "i",
+          "question": "Is the 'i' at position 1 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 3,
+          "letter": "a",
+          "question": "Is the 'a' at position 3 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 5,
+          "letter": "a",
+          "question": "Is the 'a' at position 5 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[p1-maths-18 | modules.41.textExplanationHa] Ka yi atisaye da misalan kuɗi a takarda ko a zuciya, ka haɗa ko ka cire su cikin natsuwa har sai ka samu amsa.",
+        "[p1-maths-18 | modules.41.textExplanationHa] Ka yi amfani da misalan sayayya kamar alewa, littafi, ko fensir domin ka haɗa darasin da rayuwa ta ainihi.",
+        "[p1-maths-18 | modules.41.audioScript] Ka yi amfani da misalan sayayya kamar alewa, littafi, ko fensir domin ka haɗa darasin da rayuwa ta ainihi."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 0
+    },
+    {
+      "rank": 765,
+      "boko": "matakin",
+      "normalizedBoko": "matakin",
+      "occurrences": 40,
+      "cumulativeCoveragePercent": 89.2244,
+      "tokens": [
+        "M_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "T_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "K_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "provisionalAjami": "مَتَکِࢽْ",
+      "ajamiCodepoints": [
+        "U+0645",
+        "U+064E",
+        "U+062A",
+        "U+064E",
+        "U+06A9",
+        "U+0650",
+        "U+08BD",
+        "U+0652"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "a",
+          "question": "Is the 'a' at position 1 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 3,
+          "letter": "a",
+          "question": "Is the 'a' at position 3 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 5,
+          "letter": "i",
+          "question": "Is the 'i' at position 5 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 4,
+          "question": "Is the 'k' at position 4 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V08 | modules.85.textExplanationHa] VAT na nufin Harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye.",
+        "[V08 | modules.85.lessons.1.definition.ha] Harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye.",
+        "[V08 | modules.85.lessons.1.audioScript] Kalmar \"VAT\" tana nufin harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 0
+    },
+    {
+      "rank": 913,
+      "boko": "ɗinki",
+      "normalizedBoko": "ɗinki",
+      "occurrences": 30,
+      "cumulativeCoveragePercent": 91.226,
+      "tokens": [
+        "D_GLOTTALIZED",
+        "VOWEL_I_UNLENGTHENED",
+        "N_HAUSA",
+        "K_PLAIN",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "provisionalAjami": "طِࢽْکِ",
+      "ajamiCodepoints": [
+        "U+0637",
+        "U+0650",
+        "U+08BD",
+        "U+0652",
+        "U+06A9",
+        "U+0650"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "i",
+          "question": "Is the 'i' at position 1 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "WORD_FINAL_VOWEL",
+          "position": 4,
+          "letter": "i",
+          "question": "Which reviewed final-vowel form is required for 'i' at position 4? Select the exact sequence, or supply a replacement sequence.",
+          "options": [
+            "short final — U+0650",
+            "long final — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 3,
+          "question": "Is the 'k' at position 3 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[p1-maths-19 | modules.42.textExplanationHa] Sanin tsayi yana taimaka mana wajen gini, ɗinki, zane, da kuma sanin ko abu ya fi wani tsawo.",
+        "[p1-maths-19 | modules.42.audioScript] Sanin tsayi yana taimaka mana wajen gini, ɗinki, zane, da kuma sanin ko abu ya fi wani tsawo.",
+        "[p1-maths-19 | modules.42.segments.1.audioScript] Sanin tsayi yana taimaka mana wajen gini, ɗinki, zane, da kuma sanin ko abu ya fi wani tsawo."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 1
+    },
+    {
+      "rank": 1026,
+      "boko": "binciken",
+      "normalizedBoko": "binciken",
+      "occurrences": 25,
+      "cumulativeCoveragePercent": 92.4322,
+      "tokens": [
+        "B_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "N_HAUSA",
+        "C_HAUSA",
+        "VOWEL_I_UNLENGTHENED",
+        "K_PLAIN",
+        "VOWEL_E_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "provisionalAjami": "بِࢽْثِکٜࢽْ",
+      "ajamiCodepoints": [
+        "U+0628",
+        "U+0650",
+        "U+08BD",
+        "U+0652",
+        "U+062B",
+        "U+0650",
+        "U+06A9",
+        "U+065C",
+        "U+08BD",
+        "U+0652"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "i",
+          "question": "Is the 'i' at position 1 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 4,
+          "letter": "i",
+          "question": "Is the 'i' at position 4 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 6,
+          "letter": "e",
+          "question": "Is the 'e' at position 6 short (U+065C) or long (U+065C U+0649 U+0670)?",
+          "options": [
+            "short — U+065C",
+            "long — U+065C U+0649 U+0670",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+065C"
+            ],
+            "long": [
+              "U+065C",
+              "U+0649",
+              "U+0670"
+            ]
+          }
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 5,
+          "question": "Is the 'k' at position 5 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V05 | modules.82.textExplanationHa] Tabbatarwa na nufin Binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi.",
+        "[V05 | modules.82.lessons.2.definition.ha] Binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi.",
+        "[V05 | modules.82.lessons.2.audioScript] Kalmar \"Tabbatarwa\" tana nufin binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 0
+    },
+    {
+      "rank": 1185,
+      "boko": "wai",
+      "normalizedBoko": "wai",
+      "occurrences": 20,
+      "cumulativeCoveragePercent": 93.796,
+      "tokens": [
+        "W_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "provisionalAjami": null,
+      "ajamiCodepoints": [],
+      "status": "blocked",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_SEQUENCE",
+          "position": 1,
+          "letters": "ai",
+          "question": "Which exact sequence represents 'ai' at positions 1-2? This one decision replaces both component length questions and the dependent final-vowel question.",
+          "options": [
+            "approved diphthong — U+064E U+06CC U+0652",
+            "separate vowels (short + short) — U+064E U+0650",
+            "separate vowels (short + long) — U+064E U+0650 U+0649",
+            "separate vowels (long + short) — U+064E U+0627 U+0650",
+            "separate vowels (long + long) — U+064E U+0627 U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "approvedDiphthong": [
+              "U+064E",
+              "U+06CC",
+              "U+0652"
+            ],
+            "short_short": [
+              "U+064E",
+              "U+0650"
+            ],
+            "short_long": [
+              "U+064E",
+              "U+0650",
+              "U+0649"
+            ],
+            "long_short": [
+              "U+064E",
+              "U+0627",
+              "U+0650"
+            ],
+            "long_long": [
+              "U+064E",
+              "U+0627",
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[p2-maths-18 | modules.120.textExplanationHa] Kada ka manta cewa ninkawa da 10 ba wai ƙara 0 kawai ka haddace ba ne; yana nuna rukuni-rukuni na goma.",
+        "[p2-maths-18 | modules.120.segments.1.text.ha] Kada ka manta cewa ninkawa da 10 ba wai ƙara 0 kawai ka haddace ba ne; yana nuna rukuni-rukuni na goma.",
+        "[p2-socs-01 | modules.127.textExplanationHa] Ka tuna cewa iyali ba wai wuri kawai ba ne; mutane ne da suke kula da juna kullum."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 3
+    },
+    {
+      "rank": 1713,
+      "boko": "diyya",
+      "normalizedBoko": "diyya",
+      "occurrences": 9,
+      "cumulativeCoveragePercent": 96.549,
+      "tokens": [
+        "D_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "Y_PLAIN",
+        "Y_PLAIN",
+        "VOWEL_A_UNLENGTHENED"
+      ],
+      "provisionalAjami": null,
+      "ajamiCodepoints": [],
+      "status": "blocked",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "i",
+          "question": "Is the 'i' at position 1 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "WORD_FINAL_VOWEL",
+          "position": 4,
+          "letter": "a",
+          "question": "Which reviewed final-vowel form is required for 'a' at position 4? Select the exact sequence, or supply a replacement sequence.",
+          "options": [
+            "short final — U+064E",
+            "long final — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "GEMINATION",
+          "position": 2,
+          "token": "Y_PLAIN",
+          "question": "Should repeated 'yy' at positions 2-3 be written as one consonant plus U+0651 SHADDA, as two bases, or as a lexical exception?",
+          "options": [
+            "one consonant base + U+0651 SHADDA — U+06CC U+0651",
+            "two consonant bases — U+06CC U+06CC",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ]
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V02 | modules.79.textExplanationHa] Inshora na nufin Tsarin kariya da ke biya diyya idan hatsarin da aka amince da shi ya faru.",
+        "[V02 | modules.79.textExplanationHa] Diyya na nufin Kuɗin taimako da ake nema daga inshora bayan asara.",
+        "[V02 | modules.79.textExplanationHa] Ka san adadin da za ka riƙa biya da hanyar neman diyya kafin ka sa hannu."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 1
+    },
+    {
+      "rank": 1727,
+      "boko": "Halima",
+      "normalizedBoko": "halima",
+      "occurrences": 9,
+      "cumulativeCoveragePercent": 96.5976,
+      "tokens": [
+        "H_CONTEXT_REQUIRED",
+        "VOWEL_A_UNLENGTHENED",
+        "L_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "M_PLAIN",
+        "VOWEL_A_UNLENGTHENED"
+      ],
+      "provisionalAjami": "حَلِمَ",
+      "ajamiCodepoints": [
+        "U+062D",
+        "U+064E",
+        "U+0644",
+        "U+0650",
+        "U+0645",
+        "U+064E"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "a",
+          "question": "Is the 'a' at position 1 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 3,
+          "letter": "i",
+          "question": "Is the 'i' at position 3 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "WORD_FINAL_VOWEL",
+          "position": 5,
+          "letter": "a",
+          "question": "Which reviewed final-vowel form is required for 'a' at position 5? Select the exact sequence, or supply a replacement sequence.",
+          "options": [
+            "short final — U+064E",
+            "long final — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "H_ORTHOGRAPHY_CLASS",
+          "position": 0,
+          "arabicLoanCandidate": true,
+          "question": "Classify the 'h' in 'Halima' as Hausa phonemic, preserved Arabic ḥāʾ/hāʾ/khāʾ, Hausa epenthetic, or lexically unresolved. This word is flagged as a possible Arabic/Islamic lexical form.",
+          "options": [
+            "H_HAUSA_PHONEMIC — ح U+062D native Hausa /h/",
+            "H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved",
+            "H_ARABIC_HEH_PRESERVED — ه U+0647 Arabic ه preserved",
+            "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
+            "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
+            "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
+          ]
+        }
+      ],
+      "category": "arabic_lexical",
+      "exampleSentences": [
+        "[V03 | modules.80.textExplanationHa] A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki.",
+        "[V03 | modules.80.lessons.3.scenario.ha] A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki.",
+        "[V03 | modules.80.lessons.3.audioScript] A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 1
+    },
+    {
+      "rank": 1872,
+      "boko": "rikodi",
+      "normalizedBoko": "rikodi",
+      "occurrences": 8,
+      "cumulativeCoveragePercent": 97.0681,
+      "tokens": [
+        "R_PLAIN",
+        "VOWEL_I_UNLENGTHENED",
+        "K_PLAIN",
+        "VOWEL_O_UNLENGTHENED",
+        "D_PLAIN",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "provisionalAjami": "رِکُدِ",
+      "ajamiCodepoints": [
+        "U+0631",
+        "U+0650",
+        "U+06A9",
+        "U+064F",
+        "U+062F",
+        "U+0650"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "i",
+          "question": "Is the 'i' at position 1 short (U+0650) or long (U+0650 U+0649)?",
+          "options": [
+            "short — U+0650",
+            "long — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 3,
+          "letter": "o",
+          "question": "Is the 'o' at position 3 short (U+064F) or long (U+064F U+0648 U+0627 U+0652)?",
+          "options": [
+            "short — U+064F",
+            "long — U+064F U+0648 U+0627 U+0652",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064F"
+            ],
+            "long": [
+              "U+064F",
+              "U+0648",
+              "U+0627",
+              "U+0652"
+            ]
+          }
+        },
+        {
+          "type": "WORD_FINAL_VOWEL",
+          "position": 5,
+          "letter": "i",
+          "question": "Which reviewed final-vowel form is required for 'i' at position 5? Select the exact sequence, or supply a replacement sequence.",
+          "options": [
+            "short final — U+0650",
+            "long final — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        },
+        {
+          "type": "K_ARTICULATION",
+          "position": 2,
+          "question": "Is the 'k' at position 2 pronounced with kaf (ک) or qaf (ق)?",
+          "options": [
+            "kaf — U+06A9",
+            "qaf — U+0642"
+          ]
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V07 | modules.84.textExplanationHa] Rikodi na nufin Adana bayanin ciniki domin a iya dubawa daga baya.",
+        "[V07 | modules.84.lessons.1.term.ha] Rikodi",
+        "[V07 | modules.84.lessons.1.audioScript] Kalmar \"Rikodi\" tana nufin adana bayanin ciniki domin a iya dubawa daga baya."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 1
+    },
+    {
+      "rank": 1926,
+      "boko": "harabar",
+      "normalizedBoko": "harabar",
+      "occurrences": 7,
+      "cumulativeCoveragePercent": 97.2265,
+      "tokens": [
+        "H_CONTEXT_REQUIRED",
+        "VOWEL_A_UNLENGTHENED",
+        "R_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "B_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "R_PLAIN"
+      ],
+      "provisionalAjami": "حَرَبَرْ",
+      "ajamiCodepoints": [
+        "U+062D",
+        "U+064E",
+        "U+0631",
+        "U+064E",
+        "U+0628",
+        "U+064E",
+        "U+0631",
+        "U+0652"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "a",
+          "question": "Is the 'a' at position 1 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 3,
+          "letter": "a",
+          "question": "Is the 'a' at position 3 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 5,
+          "letter": "a",
+          "question": "Is the 'a' at position 5 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "H_ORTHOGRAPHY_CLASS",
+          "position": 0,
+          "arabicLoanCandidate": false,
+          "question": "Classify the 'h' in 'harabar' as Hausa phonemic, preserved Arabic ḥāʾ/hāʾ/khāʾ, Hausa epenthetic, or lexically unresolved.",
+          "options": [
+            "H_HAUSA_PHONEMIC — ح U+062D native Hausa /h/",
+            "H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved",
+            "H_ARABIC_HEH_PRESERVED — ه U+0647 Arabic ه preserved",
+            "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
+            "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
+            "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
+          ]
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V06 | modules.83.textExplanationHa] Misalin kuɗin harabar kasuwa.",
+        "[V06 | modules.83.lessons.3.title.ha] Misalin kuɗin harabar kasuwa",
+        "[V06 | modules.83.lessons.3.audioScript] Ga misalin kuɗin harabar kasuwa."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 0
+    },
+    {
+      "rank": 2005,
+      "boko": "bogi",
+      "normalizedBoko": "bogi",
+      "occurrences": 6,
+      "cumulativeCoveragePercent": 97.4315,
+      "tokens": [
+        "B_PLAIN",
+        "VOWEL_O_UNLENGTHENED",
+        "G_PLAIN",
+        "VOWEL_I_UNLENGTHENED"
+      ],
+      "provisionalAjami": "بُغِ",
+      "ajamiCodepoints": [
+        "U+0628",
+        "U+064F",
+        "U+063A",
+        "U+0650"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "o",
+          "question": "Is the 'o' at position 1 short (U+064F) or long (U+064F U+0648 U+0627 U+0652)?",
+          "options": [
+            "short — U+064F",
+            "long — U+064F U+0648 U+0627 U+0652",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064F"
+            ],
+            "long": [
+              "U+064F",
+              "U+0648",
+              "U+0627",
+              "U+0652"
+            ]
+          }
+        },
+        {
+          "type": "WORD_FINAL_VOWEL",
+          "position": 3,
+          "letter": "i",
+          "question": "Which reviewed final-vowel form is required for 'i' at position 3? Select the exact sequence, or supply a replacement sequence.",
+          "options": [
+            "short final — U+0650",
+            "long final — U+0650 U+0649",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+0650"
+            ],
+            "long": [
+              "U+0650",
+              "U+0649"
+            ]
+          }
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V05 | modules.82.textExplanationHa] Misalin hoton canji na bogi.",
+        "[V05 | modules.82.lessons.3.title.ha] Misalin hoton canji na bogi",
+        "[V05 | modules.82.lessons.3.audioScript] Ga misalin hoton canji na bogi."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 1
+    },
+    {
+      "rank": 2752,
+      "boko": "sabulun",
+      "normalizedBoko": "sabulun",
+      "occurrences": 3,
+      "cumulativeCoveragePercent": 98.714,
+      "tokens": [
+        "S_PLAIN",
+        "VOWEL_A_UNLENGTHENED",
+        "B_PLAIN",
+        "VOWEL_U_UNLENGTHENED",
+        "L_PLAIN",
+        "VOWEL_U_UNLENGTHENED",
+        "N_HAUSA"
+      ],
+      "provisionalAjami": "سَبُلُࢽْ",
+      "ajamiCodepoints": [
+        "U+0633",
+        "U+064E",
+        "U+0628",
+        "U+064F",
+        "U+0644",
+        "U+064F",
+        "U+08BD",
+        "U+0652"
+      ],
+      "status": "provisional",
+      "confidence": "unreviewed",
+      "openQuestions": [
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 1,
+          "letter": "a",
+          "question": "Is the 'a' at position 1 short (U+064E) or long (U+064E U+0627)?",
+          "options": [
+            "short — U+064E",
+            "long — U+064E U+0627",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064E"
+            ],
+            "long": [
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 3,
+          "letter": "u",
+          "question": "Is the 'u' at position 3 short (U+064F) or long (U+064F U+0648)?",
+          "options": [
+            "short — U+064F",
+            "long — U+064F U+0648",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064F"
+            ],
+            "long": [
+              "U+064F",
+              "U+0648"
+            ]
+          }
+        },
+        {
+          "type": "VOWEL_LENGTH",
+          "position": 5,
+          "letter": "u",
+          "question": "Is the 'u' at position 5 short (U+064F) or long (U+064F U+0648)?",
+          "options": [
+            "short — U+064F",
+            "long — U+064F U+0648",
+            "lexical exception — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "candidateCodePointSequences": {
+            "short": [
+              "U+064F"
+            ],
+            "long": [
+              "U+064F",
+              "U+0648"
+            ]
+          }
+        }
+      ],
+      "category": "native_hausa",
+      "exampleSentences": [
+        "[V04 | modules.81.textExplanationHa] Misalin sabulun Halima.",
+        "[V04 | modules.81.lessons.3.title.ha] Misalin sabulun Halima",
+        "[V04 | modules.81.lessons.3.audioScript] Ga misalin sabulun Halima."
+      ],
+      "reviewerDecision": null,
+      "reviewerNotes": "",
+      "redundantQuestionsRemoved": 0
+    }
+  ]
+}

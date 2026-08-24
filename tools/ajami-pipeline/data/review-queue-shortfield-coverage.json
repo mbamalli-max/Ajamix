@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "taskId": "2026-07-28-slice-42",
+  "source": "app/content.json",
+  "totalRunningWords": 259493,
+  "totalDistinctWords": 3446,
+  "eligibleRunningWords": 257320,
+  "eligibleDistinctWords": 3418,
+  "exclusions": {
+    "structuralMarkers": {
+      "distinctConstructs": 7,
+      "occurrences": 2178,
+      "runningWordsRemoved": 2226
+    },
+    "templatePlaceholders": {
+      "distinctConstructs": 5,
+      "occurrences": 1179,
+      "runningWordsRemoved": 1179
+    },
+    "nonHausaTokens": {
+      "distinctTokens": 28,
+      "occurrences": 2173
+    },
+    "excludedArtifact": "data/review-queue-excluded.json"
+  },
+  "entriesByOpenQuestionType": {
+    "VOWEL_LENGTH": 11,
+    "WORD_FINAL_VOWEL": 6,
+    "K_ARTICULATION": 4,
+    "H_ORTHOGRAPHY_CLASS": 3,
+    "GEMINATION": 1,
+    "VOWEL_SEQUENCE": 1,
+    "APOSTROPHE_ROLE": 0,
+    "ARABIC_LEXICAL_H": 0,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0,
+    "SHORT_E_CARRIER": 0,
+    "SUKUN": 0,
+    "VELAR_CLUSTER": 0,
+    "WORD_INITIAL_CARRIER": 0
+  },
+  "openQuestionTypeCounts": {
+    "VOWEL_LENGTH": 11,
+    "WORD_FINAL_VOWEL": 6,
+    "K_ARTICULATION": 4,
+    "H_ORTHOGRAPHY_CLASS": 3,
+    "GEMINATION": 1,
+    "VOWEL_SEQUENCE": 1,
+    "APOSTROPHE_ROLE": 0,
+    "ARABIC_LEXICAL_H": 0,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0,
+    "SHORT_E_CARRIER": 0,
+    "SUKUN": 0,
+    "VELAR_CLUSTER": 0,
+    "WORD_INITIAL_CARRIER": 0
+  },
+  "openDecisionCountsByType": {
+    "VOWEL_LENGTH": 24,
+    "WORD_FINAL_VOWEL": 6,
+    "K_ARTICULATION": 4,
+    "H_ORTHOGRAPHY_CLASS": 3,
+    "GEMINATION": 1,
+    "VOWEL_SEQUENCE": 1,
+    "APOSTROPHE_ROLE": 0,
+    "ARABIC_LEXICAL_H": 0,
+    "DERIVATION_BLOCKED": 0,
+    "NON_HAUSA_TOKEN": 0,
+    "SHORT_E_CARRIER": 0,
+    "SUKUN": 0,
+    "VELAR_CLUSTER": 0,
+    "WORD_INITIAL_CARRIER": 0
+  },
+  "zeroOpenQuestionEntries": 0,
+  "nonHausaFlaggedEntries": 0,
+  "statusCounts": {
+    "provisional": 10,
+    "blocked": 2
+  },
+  "blockedEntries": 2,
+  "blockedByReason": {
+    "GEMINATION": 1,
+    "VOWEL_SEQUENCE": 1
+  },
+  "redundantQuestionsRemoved": 9,
+  "sukunTreatedEntries": 6,
+  "selection": {
+    "mode": "wordList",
+    "entryCount": 12,
+    "occurrencesCovered": 266,
+    "coveragePercent": 0.1025
+  },
+  "requestedWords": {
+    "requested": 12,
+    "matched": 12,
+    "unmatchedNotInCorpus": [],
+    "unmatchedExcludedNonHausa": []
+  }
+}
