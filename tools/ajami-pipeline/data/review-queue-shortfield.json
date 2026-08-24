@@ -45,7 +45,7 @@
         "U+0648",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -66,7 +66,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -86,7 +92,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064F",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",
@@ -106,7 +118,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "long final — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "H_ORTHOGRAPHY_CLASS",
@@ -120,6 +138,16 @@
             "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
             "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
             "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
+          ],
+          "reviewerDecision": "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved",
+          "reviewerSuppliedSequence": "ه",
+          "reviewerSuppliedCodepoints": [
+            "U+0647"
           ]
         }
       ],
@@ -129,8 +157,8 @@
         "[p1-maths-09 | modules.32.audioScript] Ka fara da ƙananan lambobi, ka yi amfani da yatsu, tsakuwa, ko zane domin ka ga yadda lambobi suke haɗuwa su zama yawa ɗaya.",
         "[p1-maths-09 | modules.32.segments.0.text.ha] Ka fara da ƙananan lambobi, ka yi amfani da yatsu, tsakuwa, ko zane domin ka ga yadda lambobi suke haɗuwa su zama yawa ɗaya."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -159,7 +187,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -180,7 +208,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+0650",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -200,7 +234,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "long — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "bargery-1934",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -220,7 +260,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -229,8 +275,8 @@
         "[p1-maths-18 | modules.41.textExplanationHa] Ka yi amfani da misalan sayayya kamar alewa, littafi, ko fensir domin ka haɗa darasin da rayuwa ta ainihi.",
         "[p1-maths-18 | modules.41.audioScript] Ka yi amfani da misalan sayayya kamar alewa, littafi, ko fensir domin ka haɗa darasin da rayuwa ta ainihi."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -259,7 +305,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -280,7 +326,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -300,7 +352,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "long — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "mfa-v3.0.0",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -320,7 +378,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+0650",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "K_ARTICULATION",
@@ -329,7 +393,13 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -338,8 +408,8 @@
         "[V08 | modules.85.lessons.1.definition.ha] Harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye.",
         "[V08 | modules.85.lessons.1.audioScript] Kalmar \"VAT\" tana nufin harajin da ake ƙara wa wasu kaya da ayyuka a matakin saye."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -364,7 +434,7 @@
         "U+06A9",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -385,7 +455,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+0650",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",
@@ -405,7 +481,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "long final — U+0650 U+0649",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "K_ARTICULATION",
@@ -414,7 +496,13 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -423,8 +511,8 @@
         "[p1-maths-19 | modules.42.audioScript] Sanin tsayi yana taimaka mana wajen gini, ɗinki, zane, da kuma sanin ko abu ya fi wani tsawo.",
         "[p1-maths-19 | modules.42.segments.1.audioScript] Sanin tsayi yana taimaka mana wajen gini, ɗinki, zane, da kuma sanin ko abu ya fi wani tsawo."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -456,7 +544,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -477,7 +565,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+0650",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -497,7 +591,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+0650",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -518,7 +618,13 @@
               "U+0649",
               "U+0670"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+065C",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "K_ARTICULATION",
@@ -527,7 +633,13 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -536,8 +648,8 @@
         "[V05 | modules.82.lessons.2.definition.ha] Binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi.",
         "[V05 | modules.82.lessons.2.audioScript] Kalmar \"Tabbatarwa\" tana nufin binciken hujja kafin a yarda da sako, mutum, ko biyan kuɗi."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -553,7 +665,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "blocked",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -595,7 +707,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "approved diphthong — U+064E U+06CC U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -604,8 +722,8 @@
         "[p2-maths-18 | modules.120.segments.1.text.ha] Kada ka manta cewa ninkawa da 10 ba wai ƙara 0 kawai ka haddace ba ne; yana nuna rukuni-rukuni na goma.",
         "[p2-socs-01 | modules.127.textExplanationHa] Ka tuna cewa iyali ba wai wuri kawai ba ne; mutane ne da suke kula da juna kullum."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 3
     },
     {
@@ -623,7 +741,7 @@
       ],
       "provisionalAjami": null,
       "ajamiCodepoints": [],
-      "status": "blocked",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -644,7 +762,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+0650",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",
@@ -664,7 +788,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "long final — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "GEMINATION",
@@ -675,7 +805,13 @@
             "one consonant base + U+0651 SHADDA — U+06CC U+0651",
             "two consonant bases — U+06CC U+06CC",
             "lexical exception — reviewer must supply the exact Unicode replacement sequence"
-          ]
+          ],
+          "reviewerDecision": "one consonant base + U+0651 SHADDA — U+06CC U+0651",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -684,8 +820,8 @@
         "[V02 | modules.79.textExplanationHa] Diyya na nufin Kuɗin taimako da ake nema daga inshora bayan asara.",
         "[V02 | modules.79.textExplanationHa] Ka san adadin da za ka riƙa biya da hanyar neman diyya kafin ka sa hannu."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -711,7 +847,7 @@
         "U+0645",
         "U+064E"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -732,7 +868,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -752,7 +894,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "long — U+0650 U+0649",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",
@@ -772,7 +920,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short final — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "H_ORTHOGRAPHY_CLASS",
@@ -786,7 +940,13 @@
             "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
             "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
             "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
-          ]
+          ],
+          "reviewerDecision": "H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "arabic_lexical",
@@ -795,8 +955,8 @@
         "[V03 | modules.80.lessons.3.scenario.ha] A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki.",
         "[V03 | modules.80.lessons.3.audioScript] A gidan Halima, mahaifiya na saye, ɗa na tsayawa a shago, kuma ƙanwa na rubuta ciniki."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -822,7 +982,7 @@
         "U+062F",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -843,7 +1003,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+0650",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -865,7 +1031,13 @@
               "U+0627",
               "U+0652"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064F",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",
@@ -885,7 +1057,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "long final — U+0650 U+0649",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "K_ARTICULATION",
@@ -894,7 +1072,13 @@
           "options": [
             "kaf — U+06A9",
             "qaf — U+0642"
-          ]
+          ],
+          "reviewerDecision": "kaf — U+06A9",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -903,8 +1087,8 @@
         "[V07 | modules.84.lessons.1.term.ha] Rikodi",
         "[V07 | modules.84.lessons.1.audioScript] Kalmar \"Rikodi\" tana nufin adana bayanin ciniki domin a iya dubawa daga baya."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -933,7 +1117,7 @@
         "U+0631",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -954,7 +1138,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -974,7 +1164,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "mfa-v3.0.0",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -994,7 +1190,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064E",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "H_ORTHOGRAPHY_CLASS",
@@ -1008,7 +1210,13 @@
             "H_ARABIC_KHA_PRESERVED — خ U+062E Arabic خ preserved",
             "H_HAUSA_EPENTHETIC — ح U+062D epenthetic /h/",
             "H_LEXICAL_UNRESOLVED — reviewer must supply the exact Unicode replacement sequence"
-          ]
+          ],
+          "reviewerDecision": "H_ARABIC_HA_PRESERVED — ح U+062D Arabic ح preserved",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "n/a",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -1017,8 +1225,8 @@
         "[V06 | modules.83.lessons.3.title.ha] Misalin kuɗin harabar kasuwa",
         "[V06 | modules.83.lessons.3.audioScript] Ga misalin kuɗin harabar kasuwa."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 0
     },
     {
@@ -1040,7 +1248,7 @@
         "U+063A",
         "U+0650"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -1063,7 +1271,13 @@
               "U+0627",
               "U+0652"
             ]
-          }
+          },
+          "reviewerDecision": "long — U+064F U+0648 U+0627 U+0652",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",
@@ -1083,7 +1297,13 @@
               "U+0650",
               "U+0649"
             ]
-          }
+          },
+          "reviewerDecision": "long final — U+0650 U+0649",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -1092,8 +1312,8 @@
         "[V05 | modules.82.lessons.3.title.ha] Misalin hoton canji na bogi",
         "[V05 | modules.82.lessons.3.audioScript] Ga misalin hoton canji na bogi."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 1
     },
     {
@@ -1122,7 +1342,7 @@
         "U+08BD",
         "U+0652"
       ],
-      "status": "provisional",
+      "status": "human_reviewed",
       "confidence": "unreviewed",
       "openQuestions": [
         {
@@ -1143,7 +1363,13 @@
               "U+064E",
               "U+0627"
             ]
-          }
+          },
+          "reviewerDecision": "long — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "bargery-1934",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -1163,7 +1389,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064F",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",
@@ -1183,7 +1415,13 @@
               "U+064F",
               "U+0648"
             ]
-          }
+          },
+          "reviewerDecision": "short — U+064F",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "explicit",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         }
       ],
       "category": "native_hausa",
@@ -1192,8 +1430,8 @@
         "[V04 | modules.81.lessons.3.title.ha] Misalin sabulun Halima",
         "[V04 | modules.81.lessons.3.audioScript] Ga misalin sabulun Halima."
       ],
-      "reviewerDecision": null,
-      "reviewerNotes": "",
+      "reviewerDecision": "approved_as_proposed",
+      "reviewerNotes": "Muhammad ratified 2026-08-24.",
       "redundantQuestionsRemoved": 0
     }
   ]

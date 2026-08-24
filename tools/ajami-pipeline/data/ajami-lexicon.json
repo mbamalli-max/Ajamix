@@ -5240,12 +5240,13 @@
         "L_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "مِسَلِى",
+      "ajami": "مِسَالِى",
       "ajamiCodepoints": [
         "U+0645",
         "U+0650",
         "U+0633",
         "U+064E",
+        "U+0627",
         "U+0644",
         "U+0650",
         "U+0649"
@@ -9999,12 +10000,13 @@
         "K_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "مَتَکِى",
+      "ajami": "مَتَاکِى",
       "ajamiCodepoints": [
         "U+0645",
         "U+064E",
         "U+062A",
         "U+064E",
+        "U+0627",
         "U+06A9",
         "U+0650",
         "U+0649"

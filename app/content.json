@@ -14201,7 +14201,7 @@
         },
         {
           "templateHa": "Bayan hatsari, mataki na farko me ya fi dacewa?",
-          "templateHaAjami": "بَیَࢽْ هَڟَرِى, مَتَکِى ࢽَ ࢻَرْکُواْ مٜىٰ یَ ࢻِ دَثٜوَا?",
+          "templateHaAjami": "بَیَࢽْ هَڟَرِى, مَتَاکِى ࢽَ ࢻَرْکُواْ مٜىٰ یَ ࢻِ دَثٜوَا?",
           "answerFormula": "Ka tattara hujja ka sanar da kamfanin inshora",
           "answerFormulaAjami": "کَ تَتتَرَ حُجَّ کَ سَࢽَرْ دَ کَمْࢻَاࢽِࢽْ إِࢽْشُرَ",
           "variableRanges": {
@@ -14333,7 +14333,7 @@
         },
         {
           "templateHa": "Bayan hatsari, mataki na farko me ya fi dacewa?",
-          "templateHaAjami": "بَیَࢽْ هَڟَرِى, مَتَکِى ࢽَ ࢻَرْکُواْ مٜىٰ یَ ࢻِ دَثٜوَا?",
+          "templateHaAjami": "بَیَࢽْ هَڟَرِى, مَتَاکِى ࢽَ ࢻَرْکُواْ مٜىٰ یَ ࢻِ دَثٜوَا?",
           "answerFormula": "Ka tattara hujja ka sanar da kamfanin inshora",
           "answerFormulaAjami": "کَ تَتتَرَ حُجَّ کَ سَࢽَرْ دَ کَمْࢻَاࢽِࢽْ إِࢽْشُرَ",
           "variableRanges": {
@@ -16803,7 +16803,7 @@
         },
         {
           "templateHa": "Idan wayar ka ta ɓace, wane mataki ya fi sauri?",
-          "templateHaAjami": "إِدَࢽْ وَایَرْ کَ تَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ سَوْرِى?",
+          "templateHaAjami": "إِدَࢽْ وَایَرْ کَ تَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ سَوْرِى?",
           "answerFormula": "Ka toshe asusu ko ka kira banki nan da nan",
           "answerFormulaAjami": "کَ تُواْشٜىٰ اَسُسُ کُو کَ کِرَا بَࢽْکِى ࢽَࢽْ دَ ࢽَࢽْ",
           "variableRanges": {
@@ -16934,7 +16934,7 @@
         },
         {
           "templateHa": "Idan wayar ka ta ɓace, wane mataki ya fi sauri?",
-          "templateHaAjami": "إِدَࢽْ وَایَرْ کَ تَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ سَوْرِى?",
+          "templateHaAjami": "إِدَࢽْ وَایَرْ کَ تَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ سَوْرِى?",
           "answerFormula": "Ka toshe asusu ko ka kira banki nan da nan",
           "answerFormulaAjami": "کَ تُواْشٜىٰ اَسُسُ کُو کَ کِرَا بَࢽْکِى ࢽَࢽْ دَ ࢽَࢽْ",
           "variableRanges": {
@@ -49253,7 +49253,7 @@
       "moduleNumber": 17,
       "titleEn": "Plant and Animal Life-Cycle Changes",
       "titleHa": "Matakan Girman Tsiro da Dabba",
-      "titleAjami": "مَتَکَࢽْ غِرْمَࢽْ ڟِرُواْ دَ دَبَّا",
+      "titleAjami": "مَتَاکَࢽْ غِرْمَࢽْ ڟِرُواْ دَ دَبَّا",
       "ajami_validated": false,
       "textExplanationHa": "Halittu suna sauyawa yayin da suke girma. A rayuwar wake, iri yana fara toho, ya zama ƙaramin tsiro, sannan ya girma ya zama cikakken tsiro mai samar da sabbin iri. A rayuwar kaza kuwa, ƙwai yana ƙyanƙyashewa ya fito da ɗan kaza; ɗan kazar yana girma ya zama babbar kaza, babbar kazar kuma tana iya samar da sabbin ƙwai. Dukansu suna da matakai masu jere: farawa, ƙuruciya, da girma. Bambancinsu shi ne tsiro yana farawa daga iri kuma cikakken tsiro yana samar da iri, yayin da kaza take farawa daga ƙwai kuma babbar kaza take samar da ƙwai. Don lura a kan lokaci, a shuka wake tare da babba. A rubuta ranar shuka, sannan kowace rana biyu a zana ko auna tsayinsa da mazubi. Kada a tono shi kullum. Bayan mako guda, a jera bayanan domin a ga sabon ganye, ƙarin tsayi, ko wani sauyi. Wannan rikodi yana nuna cewa girma yana faruwa a hankali.",
       "textExplanationAjami": null,
@@ -58634,7 +58634,7 @@
       "moduleNumber": 5,
       "titleEn": "Nigerian Government — The Three Tiers",
       "titleHa": "Matakan Gwamnati Uku a Nijeriya",
-      "titleAjami": "مَتَکَࢽْ ࣃَمْࢽَتِى أُکُ أَ ࢽِجٜرِیَا",
+      "titleAjami": "مَتَاکَࢽْ ࣃَمْࢽَتِى أُکُ أَ ࢽِجٜرِیَا",
       "ajami_validated": false,
       "textExplanationHa": "Nijeriya tana da matakan gwamnati uku: Gwamnatin Tarayya, gwamnatin jiha, da ƙaramar hukuma. Gwamnatin Tarayya tana aiki ga ƙasa baki ɗaya. Tana kula da abubuwa kamar kuɗin ƙasa, tsaron ƙasa, da manyan ayyukan da suka haɗa jihohi. Gwamnatin jiha tana aiki a cikin jiharta. Tana iya kula da wasu makarantu, asibitoci, hanyoyi, da shirye-shiryen ci gaban jiha. Ƙaramar hukuma (LGA) tana kusa da jama’ar gari da ƙauye. Tana iya taimakawa wajen kasuwanni, tsaftar muhalli, wasu hanyoyin cikin gari, wuraren ruwa, da bayanan haihuwa. Ayyuka da dama suna bukatar matakai biyu ko uku su haɗa hannu; ba kowane aiki ne na hukuma ɗaya kaɗai ba. Misali, kula da lafiya ko ilimi na iya samun gudummawa daga matakai daban-daban. Ƴan ƙasa za su iya sanar da bukata ga ofishin da ya dace cikin ladabi. Sanin matakan yana taimaka maka ka fahimci wace hukuma take kusa da matsala da kuma dalilin haɗin gwiwa tsakanin hukumomi.",
       "textExplanationAjami": null,
@@ -63854,7 +63854,7 @@
       "moduleNumber": 5,
       "titleEn": "Electoral Process — Deeper Study",
       "titleHa": "Matakan Zaɓe — Nazari Mai Zurfi",
-      "titleAjami": "مَتَکَࢽْ زَݑٜ — ࢽَزَرِ مَیْ زُرْࢻِ",
+      "titleAjami": "مَتَاکَࢽْ زَݑٜ — ࢽَزَرِ مَیْ زُرْࢻِ",
       "ajami_validated": false,
       "textExplanationHa": "A dimokuradiyya, zaɓe yana ba ƴan ƙasa da suka cika sharuddan doka damar zaɓar wakilai. Hukumar Zaɓe Mai Zaman Kanta ta Ƙasa, wato INEC, tana shirya zaɓuɓɓukan ƙasa: rajistar masu zaɓe, bayanin yadda zaɓe zai gudana, kayan zaɓe, ma’aikata, wuraren jefa ƙuri’a, ƙirga ƙuri’u, tattara sakamako, da sanarwa bisa doka. Kafin ranar zaɓe, ’yan takara suna yaƙin neman zaɓe domin bayyana shirye-shiryensu; dole su bi doka, kuma darasin nan ba ya goyon bayan wani ɗan takara ko jam’iyya. A ranar zaɓe, wanda ya cancanta yana tantance kansa, ya jefa ƙuri’a sau ɗaya a ɓoye, sannan ya kiyaye zaman lafiya. Ma’aikata suna warewa da ƙirga ƙuri’u, ana tattara sakamako daga matakai, jami’in da doka ta ba iko kuma ya sanar. Idan ɗan takara ko jam’iyya suna da ƙorafin doka kan sakamako, suna iya shigar da ƙarar zaɓe ga kotun ko kwamitin shari’ar zaɓe da ya dace. Hujja da doka ne suke jagorantar hukunci, ba jita-jita ko barazana ba. Matashi yana koyo yanzu domin shiga cikin sani idan ya kai shekarun doka.",
       "textExplanationAjami": null,
@@ -67759,7 +67759,7 @@
         },
         {
           "templateHa": "Wane mataki ya taimaka kafin a yanke zaɓi a yanayin karo?",
-          "templateHaAjami": "وَاࢽٜىٰ مَتَکِى یَا تَیْمَکَا کَࢻِࢽْ أَ یَࢽْکٜىٰ زَݑِ أَ یَࢽَیِࢽْ کَرُ?",
+          "templateHaAjami": "وَاࢽٜىٰ مَتَاکِى یَا تَیْمَکَا کَࢻِࢽْ أَ یَࢽْکٜىٰ زَݑِ أَ یَࢽَیِࢽْ کَرُ?",
           "answerFormula": "A rubuta ka'idodi biyu da abin da kowanne yake nema",
           "answerFormulaAjami": "أَ رُبُتَا کَاعِدُواْدِى بِیُو دَ أَبِࢽْ دَ کُوَࢽّٜىٰ یَکٜىٰ ࢽٜمَا",
           "variableRanges": {
@@ -67891,7 +67891,7 @@
         },
         {
           "templateHa": "Wane mataki ya taimaka kafin a yanke zaɓi a yanayin karo?",
-          "templateHaAjami": "وَاࢽٜىٰ مَتَکِى یَا تَیْمَکَا کَࢻِࢽْ أَ یَࢽْکٜىٰ زَݑِ أَ یَࢽَیِࢽْ کَرُ?",
+          "templateHaAjami": "وَاࢽٜىٰ مَتَاکِى یَا تَیْمَکَا کَࢻِࢽْ أَ یَࢽْکٜىٰ زَݑِ أَ یَࢽَیِࢽْ کَرُ?",
           "answerFormula": "A rubuta ka'idodi biyu da abin da kowanne yake nema",
           "answerFormulaAjami": "أَ رُبُتَا کَاعِدُواْدِى بِیُو دَ أَبِࢽْ دَ کُوَࢽّٜىٰ یَکٜىٰ ࢽٜمَا",
           "variableRanges": {
@@ -68559,7 +68559,7 @@
         },
         {
           "templateHa": "Idan ka gane ka ɓata lokaci saboda ka kauce wa aiki, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ کَا غَࢽٜىٰ کَ ݑَاتَا لُکَثِى سَبُدَا کَ کَوْثٜىٰ وَ أَیْکِ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ کَا غَࢽٜىٰ کَ ݑَاتَا لُکَثِى سَبُدَا کَ کَوْثٜىٰ وَ أَیْکِ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "Ka amince da abin da ya faru ka tsara abin da za ka gyara",
           "answerFormulaAjami": "کَ أَمِࢽْثٜىٰ دَ أَبِࢽْ دَ یَ ࢻَرُو کَ ڟَرَ أَبِࢽْ دَ زَ کَ ࣃَرَ",
           "variableRanges": {
@@ -68691,7 +68691,7 @@
         },
         {
           "templateHa": "Idan ka gane ka ɓata lokaci saboda ka kauce wa aiki, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ کَا غَࢽٜىٰ کَ ݑَاتَا لُکَثِى سَبُدَا کَ کَوْثٜىٰ وَ أَیْکِ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ کَا غَࢽٜىٰ کَ ݑَاتَا لُکَثِى سَبُدَا کَ کَوْثٜىٰ وَ أَیْکِ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "Ka amince da abin da ya faru ka tsara abin da za ka gyara",
           "answerFormulaAjami": "کَ أَمِࢽْثٜىٰ دَ أَبِࢽْ دَ یَ ࢻَرُو کَ ڟَرَ أَبِࢽْ دَ زَ کَ ࣃَرَ",
           "variableRanges": {
@@ -69626,7 +69626,7 @@
         },
         {
           "templateHa": "Idan saƙo bai ambaci tushen bayani ba, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ سَࢼُواْ بَیْ اَمْبَثِى تُشٜࢽْ بَیَࢽِى بَ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ سَࢼُواْ بَیْ اَمْبَثِى تُشٜࢽْ بَیَࢽِى بَ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "A nemi wanda zai iya tabbatar da labarin",
           "answerFormulaAjami": "أَ ࢽٜمِ وَࢽْدَا زَیْ إِیَ تَبَّتَرْ دَ لَابَارِࢽْ",
           "variableRanges": {
@@ -69758,7 +69758,7 @@
         },
         {
           "templateHa": "Idan saƙo bai ambaci tushen bayani ba, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ سَࢼُواْ بَیْ اَمْبَثِى تُشٜࢽْ بَیَࢽِى بَ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ سَࢼُواْ بَیْ اَمْبَثِى تُشٜࢽْ بَیَࢽِى بَ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "A nemi wanda zai iya tabbatar da labarin",
           "answerFormulaAjami": "أَ ࢽٜمِ وَࢽْدَا زَیْ إِیَ تَبَّتَرْ دَ لَابَارِࢽْ",
           "variableRanges": {
@@ -70000,7 +70000,7 @@
         },
         {
           "templateHa": "A matsayin kammalawa, wane mataki ne saƙon yake neman a ɗauka?",
-          "templateHaAjami": "أَ مَڟَیِࢽْ کَمَّلَوَ, وَاࢽٜىٰ مَتَکِى ࢽٜ سَاࢼُواْࢽْ یَکٜىٰ ࢽٜمَࢽْ أَ طَوْکَا?",
+          "templateHaAjami": "أَ مَڟَیِࢽْ کَمَّلَوَ, وَاࢽٜىٰ مَتَاکِى ࢽٜ سَاࢼُواْࢽْ یَکٜىٰ ࢽٜمَࢽْ أَ طَوْکَا?",
           "answerFormula": "A kira kowa nan da nan",
           "answerFormulaAjami": "أَ کِرَا کُوَا ࢽَࢽْ دَ ࢽَࢽْ",
           "variableRanges": {
@@ -70054,7 +70054,7 @@
           "templateHa": "Idan dalilin saƙo bai da ƙarfi amma yana neman a kira kowa, me ya fi dacewa?",
           "templateHaAjami": "إِدَࢽْ دَلِىلِࢽْ سَࢼُواْ بَیْ دَ ࢼَرْࢻِى أَمَّا یَࢽَ ࢽٜمَࢽْ أَ کِرَا کُوَا, مٜىٰ یَ ࢻِ دَثٜوَا?",
           "answerFormula": "A duba mai shirya taron kafin a ɗauki mataki",
-          "answerFormulaAjami": "أَ دُبَا مَیْ شِرْیَا تَارُواْࢽْ کَࢻِࢽْ أَ طَوْکِ مَتَکِى",
+          "answerFormulaAjami": "أَ دُبَا مَیْ شِرْیَا تَارُواْࢽْ کَࢻِࢽْ أَ طَوْکِ مَتَاکِى",
           "variableRanges": {
             "a": {
               "min": 0,
@@ -70132,7 +70132,7 @@
         },
         {
           "templateHa": "A matsayin kammalawa, wane mataki ne saƙon yake neman a ɗauka?",
-          "templateHaAjami": "أَ مَڟَیِࢽْ کَمَّلَوَ, وَاࢽٜىٰ مَتَکِى ࢽٜ سَاࢼُواْࢽْ یَکٜىٰ ࢽٜمَࢽْ أَ طَوْکَا?",
+          "templateHaAjami": "أَ مَڟَیِࢽْ کَمَّلَوَ, وَاࢽٜىٰ مَتَاکِى ࢽٜ سَاࢼُواْࢽْ یَکٜىٰ ࢽٜمَࢽْ أَ طَوْکَا?",
           "answerFormula": "A kira kowa nan da nan",
           "answerFormulaAjami": "أَ کِرَا کُوَا ࢽَࢽْ دَ ࢽَࢽْ",
           "variableRanges": {
@@ -70186,7 +70186,7 @@
           "templateHa": "Idan dalilin saƙo bai da ƙarfi amma yana neman a kira kowa, me ya fi dacewa?",
           "templateHaAjami": "إِدَࢽْ دَلِىلِࢽْ سَࢼُواْ بَیْ دَ ࢼَرْࢻِى أَمَّا یَࢽَ ࢽٜمَࢽْ أَ کِرَا کُوَا, مٜىٰ یَ ࢻِ دَثٜوَا?",
           "answerFormula": "A duba mai shirya taron kafin a ɗauki mataki",
-          "answerFormulaAjami": "أَ دُبَا مَیْ شِرْیَا تَارُواْࢽْ کَࢻِࢽْ أَ طَوْکِ مَتَکِى",
+          "answerFormulaAjami": "أَ دُبَا مَیْ شِرْیَا تَارُواْࢽْ کَࢻِࢽْ أَ طَوْکِ مَتَاکِى",
           "variableRanges": {
             "a": {
               "min": 0,
@@ -70774,7 +70774,7 @@
         },
         {
           "templateHa": "Idan tushen bayani ya ji labari daga wani kawai, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ تُشٜࢽْ بَیَࢽِى یَا جِى لَبَرِى دَغَ وَࢽِى کَوَیْ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ تُشٜࢽْ بَیَࢽِى یَا جِى لَبَرِى دَغَ وَࢽِى کَوَیْ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "A nemi wanda ya fi kusa da abin da ya faru",
           "answerFormulaAjami": "أَ ࢽٜمِ وَࢽْدَا یَ ࢻِ کُسَا دَ أَبِࢽْ دَ یَ ࢻَرُو",
           "variableRanges": {
@@ -70906,7 +70906,7 @@
         },
         {
           "templateHa": "Idan tushen bayani ya ji labari daga wani kawai, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ تُشٜࢽْ بَیَࢽِى یَا جِى لَبَرِى دَغَ وَࢽِى کَوَیْ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ تُشٜࢽْ بَیَࢽِى یَا جِى لَبَرِى دَغَ وَࢽِى کَوَیْ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "A nemi wanda ya fi kusa da abin da ya faru",
           "answerFormulaAjami": "أَ ࢽٜمِ وَࢽْدَا یَ ࢻِ کُسَا دَ أَبِࢽْ دَ یَ ࢻَرُو",
           "variableRanges": {
@@ -71444,7 +71444,7 @@
       "quiz": [
         {
           "templateHa": "Wane misali ya fi nuna dalili da aka bayyana?",
-          "templateHaAjami": "وَاࢽٜىٰ مِسَلِى یَا ࢻِ ࢽُࢽَ دَلِلِى دَ أَکَ بَیَّࢽَا?",
+          "templateHaAjami": "وَاࢽٜىٰ مِسَالِى یَا ࢻِ ࢽُࢽَ دَلِلِى دَ أَکَ بَیَّࢽَا?",
           "answerFormula": "An danna maballi sai fitila ta haska a tsarin wuta",
           "answerFormulaAjami": "أَࢽْ دَࢽَّا مَبَلِّى سَیْ ࢻِتِلَا تَ هَسْکَا أَ ڟَرِࢽْ وُتَا",
           "variableRanges": {
@@ -71576,7 +71576,7 @@
       "quizQuestions": [
         {
           "templateHa": "Wane misali ya fi nuna dalili da aka bayyana?",
-          "templateHaAjami": "وَاࢽٜىٰ مِسَلِى یَا ࢻِ ࢽُࢽَ دَلِلِى دَ أَکَ بَیَّࢽَا?",
+          "templateHaAjami": "وَاࢽٜىٰ مِسَالِى یَا ࢻِ ࢽُࢽَ دَلِلِى دَ أَکَ بَیَّࢽَا?",
           "answerFormula": "An danna maballi sai fitila ta haska a tsarin wuta",
           "answerFormulaAjami": "أَࢽْ دَࢽَّا مَبَلِّى سَیْ ࢻِتِلَا تَ هَسْکَا أَ ڟَرِࢽْ وُتَا",
           "variableRanges": {
@@ -71818,7 +71818,7 @@
       "quiz": [
         {
           "templateHa": "Idan kana son tafiya ta yiwu, wane mataki ya fi dacewa game da rahoton yanayi?",
-          "templateHaAjami": "إِدَࢽْ کَࢽَا سُࢽْ تَࢻِیَا تَ یِوُ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا غَمٜىٰ دَ رَحُواْتُࢽْ یَࢽَیِى?",
+          "templateHaAjami": "إِدَࢽْ کَࢽَا سُࢽْ تَࢻِیَا تَ یِوُ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا غَمٜىٰ دَ رَحُواْتُࢽْ یَࢽَیِى?",
           "answerFormula": "A duba rahotannin da suka dace har da wanda bai dace da burinka ba",
           "answerFormulaAjami": "أَ دُبَا رَحُواْتَࢽِّࢽْ دَ سُکَ دَاثٜ حَرْ دَ وَࢽْدَا بَیْ دَاثٜ دَ بُرِࢽْکَ بَ",
           "variableRanges": {
@@ -71916,7 +71916,7 @@
           ],
           "distractorFormulasAjami": [
             "دُمِࢽْ مِسَلَیْ بَ سُ دَ أَمْࢻَࢽِى",
-            "دُمِࢽْ دُکْ مِسَلِى رَأَیِ ࢽٜ",
+            "دُمِࢽْ دُکْ مِسَالِى رَأَیِ ࢽٜ",
             "دُمِࢽْ بَ أَ إِیَ تُࢽَا کُواْمَیْ"
           ]
         },
@@ -71950,7 +71950,7 @@
       "quizQuestions": [
         {
           "templateHa": "Idan kana son tafiya ta yiwu, wane mataki ya fi dacewa game da rahoton yanayi?",
-          "templateHaAjami": "إِدَࢽْ کَࢽَا سُࢽْ تَࢻِیَا تَ یِوُ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا غَمٜىٰ دَ رَحُواْتُࢽْ یَࢽَیِى?",
+          "templateHaAjami": "إِدَࢽْ کَࢽَا سُࢽْ تَࢻِیَا تَ یِوُ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا غَمٜىٰ دَ رَحُواْتُࢽْ یَࢽَیِى?",
           "answerFormula": "A duba rahotannin da suka dace har da wanda bai dace da burinka ba",
           "answerFormulaAjami": "أَ دُبَا رَحُواْتَࢽِّࢽْ دَ سُکَ دَاثٜ حَرْ دَ وَࢽْدَا بَیْ دَاثٜ دَ بُرِࢽْکَ بَ",
           "variableRanges": {
@@ -72048,7 +72048,7 @@
           ],
           "distractorFormulasAjami": [
             "دُمِࢽْ مِسَلَیْ بَ سُ دَ أَمْࢻَࢽِى",
-            "دُمِࢽْ دُکْ مِسَلِى رَأَیِ ࢽٜ",
+            "دُمِࢽْ دُکْ مِسَالِى رَأَیِ ࢽٜ",
             "دُمِࢽْ بَ أَ إِیَ تُࢽَا کُواْمَیْ"
           ]
         },
@@ -72177,7 +72177,7 @@
           "type": "prose",
           "heading": {
             "ha": "Daidaita mataki da haɗari",
-            "ajami": "دَیْدَیْتَ مَتَکِى دَ هَطَرِى"
+            "ajami": "دَیْدَیْتَ مَتَاکِى دَ هَطَرِى"
           },
           "body": {
             "ha": "Tambayi abin da za ka samu, abin da zai iya lalacewa, ko za ka iya juyawa baya, da ko akwai madadi. Idan akwai batun lafiya, neman ƙwararren ma'aikacin lafiya shi ne matakin hankali.",
@@ -72192,7 +72192,7 @@
       "quiz": [
         {
           "templateHa": "A yanayi mai rashin tabbaci, wane mataki ya fi sauƙin juyawa baya?",
-          "templateHaAjami": "أَ یَࢽَیِى مَیْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ سَوْࢼِࢽْ جُیَاوَا بَیَا?",
+          "templateHaAjami": "أَ یَࢽَیِى مَیْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ سَوْࢼِࢽْ جُیَاوَا بَیَا?",
           "answerFormula": "Zaɓar hanyar da za a iya sauyawa idan buƙata ta taso",
           "answerFormulaAjami": "زَاݑَرْ حَࢽْیَرْ دَ زَ أَ إِیَ سَوْیَاوَا إِدَࢽْ بُࢼَاتَا تَ تَاسُواْ",
           "variableRanges": {
@@ -72237,7 +72237,7 @@
             "A ƙi yin wani shiri"
           ],
           "distractorFormulasAjami": [
-            "أَ طَوْکِ مَتَکِى مَࢻِى غِرْمَا ࢽَࢽْ تَکٜىٰ",
+            "أَ طَوْکِ مَتَاکِى مَࢻِى غِرْمَا ࢽَࢽْ تَکٜىٰ",
             "أَ ثٜ رَشِࢽْ تَبَّثِ یَا ݑَاثٜىٰ",
             "أَ ࢼِ یِࢽْ وَࢽِى شِرِ"
           ]
@@ -72270,7 +72270,7 @@
         },
         {
           "templateHa": "Idan batun lafiya ya taso cikin rashin tabbaci, wane mataki ya dace?",
-          "templateHaAjami": "إِدَࢽْ بَتُࢽْ لَࢻِیَا یَا تَاسُواْ ثِکِࢽْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَکِى یَا دَاثٜ?",
+          "templateHaAjami": "إِدَࢽْ بَتُࢽْ لَࢻِیَا یَا تَاسُواْ ثِکِࢽْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى یَا دَاثٜ?",
           "answerFormula": "A nemi shawarar ƙwararren ma'aikacin lafiya ko babban mutum abin dogaro",
           "answerFormulaAjami": "أَ ࢽٜمِ شَوَارَرْ ࣄَرَرّٜىٰࢽْ مَعَیْکَاثِࢽْ لَࢻِیَا کُو بَبَّࢽْ مُتُمْ أَبِࢽْ دُغَرُ",
           "variableRanges": {
@@ -72324,7 +72324,7 @@
       "quizQuestions": [
         {
           "templateHa": "A yanayi mai rashin tabbaci, wane mataki ya fi sauƙin juyawa baya?",
-          "templateHaAjami": "أَ یَࢽَیِى مَیْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ سَوْࢼِࢽْ جُیَاوَا بَیَا?",
+          "templateHaAjami": "أَ یَࢽَیِى مَیْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ سَوْࢼِࢽْ جُیَاوَا بَیَا?",
           "answerFormula": "Zaɓar hanyar da za a iya sauyawa idan buƙata ta taso",
           "answerFormulaAjami": "زَاݑَرْ حَࢽْیَرْ دَ زَ أَ إِیَ سَوْیَاوَا إِدَࢽْ بُࢼَاتَا تَ تَاسُواْ",
           "variableRanges": {
@@ -72369,7 +72369,7 @@
             "A ƙi yin wani shiri"
           ],
           "distractorFormulasAjami": [
-            "أَ طَوْکِ مَتَکِى مَࢻِى غِرْمَا ࢽَࢽْ تَکٜىٰ",
+            "أَ طَوْکِ مَتَاکِى مَࢻِى غِرْمَا ࢽَࢽْ تَکٜىٰ",
             "أَ ثٜ رَشِࢽْ تَبَّثِ یَا ݑَاثٜىٰ",
             "أَ ࢼِ یِࢽْ وَࢽِى شِرِ"
           ]
@@ -72402,7 +72402,7 @@
         },
         {
           "templateHa": "Idan batun lafiya ya taso cikin rashin tabbaci, wane mataki ya dace?",
-          "templateHaAjami": "إِدَࢽْ بَتُࢽْ لَࢻِیَا یَا تَاسُواْ ثِکِࢽْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَکِى یَا دَاثٜ?",
+          "templateHaAjami": "إِدَࢽْ بَتُࢽْ لَࢻِیَا یَا تَاسُواْ ثِکِࢽْ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى یَا دَاثٜ?",
           "answerFormula": "A nemi shawarar ƙwararren ma'aikacin lafiya ko babban mutum abin dogaro",
           "answerFormulaAjami": "أَ ࢽٜمِ شَوَارَرْ ࣄَرَرّٜىٰࢽْ مَعَیْکَاثِࢽْ لَࢻِیَا کُو بَبَّࢽْ مُتُمْ أَبِࢽْ دُغَرُ",
           "variableRanges": {
@@ -72644,7 +72644,7 @@
         },
         {
           "templateHa": "Wace tambaya ce ke duba ko misali yana wakiltar abin da ake magana a kai?",
-          "templateHaAjami": "وَاثٜىٰ تَمْبَیَا ثٜ کٜ دُبَا کُو مِسَلِى یَࢽَ وَکِىلْتَرْ أَبِࢽْ دَ أَکٜىٰ مَغَࢽَا أَ کَیْ?",
+          "templateHaAjami": "وَاثٜىٰ تَمْبَیَا ثٜ کٜ دُبَا کُو مِسَالِى یَࢽَ وَکِىلْتَرْ أَبِࢽْ دَ أَکٜىٰ مَغَࢽَا أَ کَیْ?",
           "answerFormula": "Shin misalin yana wakiltar sauran al'amuran da ake magana a kai?",
           "answerFormulaAjami": "شِࢽْ مِسَالِࢽْ یَࢽَ وَکِىلْتَرْ سَوْرَࢽْ اَلعَمُرَࢽْ دَ أَکٜىٰ مَغَࢽَا أَ کَیْ?",
           "variableRanges": {
@@ -72670,7 +72670,7 @@
         },
         {
           "templateHa": "Idan akwai mahimmin bayani da ya ɓace, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ أَکوَیْ مَهِمِّࢽْ بَیَࢽِى دَ یَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ أَکوَیْ مَهِمِّࢽْ بَیَࢽِى دَ یَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "A bayyana bayanin da ake buƙata kafin a yanke kammalawa",
           "answerFormulaAjami": "أَ بَیَّࢽَا بَیَࢽِࢽْ دَ أَکٜىٰ بُࢼَاتَا کَࢻِࢽْ أَ یَࢽْکٜىٰ کَمَّلَوَ",
           "variableRanges": {
@@ -72776,7 +72776,7 @@
         },
         {
           "templateHa": "Wace tambaya ce ke duba ko misali yana wakiltar abin da ake magana a kai?",
-          "templateHaAjami": "وَاثٜىٰ تَمْبَیَا ثٜ کٜ دُبَا کُو مِسَلِى یَࢽَ وَکِىلْتَرْ أَبِࢽْ دَ أَکٜىٰ مَغَࢽَا أَ کَیْ?",
+          "templateHaAjami": "وَاثٜىٰ تَمْبَیَا ثٜ کٜ دُبَا کُو مِسَالِى یَࢽَ وَکِىلْتَرْ أَبِࢽْ دَ أَکٜىٰ مَغَࢽَا أَ کَیْ?",
           "answerFormula": "Shin misalin yana wakiltar sauran al'amuran da ake magana a kai?",
           "answerFormulaAjami": "شِࢽْ مِسَالِࢽْ یَࢽَ وَکِىلْتَرْ سَوْرَࢽْ اَلعَمُرَࢽْ دَ أَکٜىٰ مَغَࢽَا أَ کَیْ?",
           "variableRanges": {
@@ -72802,7 +72802,7 @@
         },
         {
           "templateHa": "Idan akwai mahimmin bayani da ya ɓace, wane mataki ya fi dacewa?",
-          "templateHaAjami": "إِدَࢽْ أَکوَیْ مَهِمِّࢽْ بَیَࢽِى دَ یَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ دَثٜوَا?",
+          "templateHaAjami": "إِدَࢽْ أَکوَیْ مَهِمِّࢽْ بَیَࢽِى دَ یَ ݑَاثٜىٰ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ دَثٜوَا?",
           "answerFormula": "A bayyana bayanin da ake buƙata kafin a yanke kammalawa",
           "answerFormulaAjami": "أَ بَیَّࢽَا بَیَࢽِࢽْ دَ أَکٜىٰ بُࢼَاتَا کَࢻِࢽْ أَ یَࢽْکٜىٰ کَمَّلَوَ",
           "variableRanges": {
@@ -72895,7 +72895,7 @@
           "type": "glossary-card",
           "term": {
             "ha": "Mataki mai hankali",
-            "ajami": "مَتَکِى مَیْ هَࢽْکَالِى"
+            "ajami": "مَتَاکِى مَیْ هَࢽْکَالِى"
           },
           "definition": {
             "ha": "Aikin da ya dace da hujjar da ake da ita, rashin tabbaci, da yiwuwar illa.",
@@ -72925,7 +72925,7 @@
           "type": "prose",
           "heading": {
             "ha": "Bi tambayoyi, sannan ka zaɓi mataki",
-            "ajami": "بِى تَمْبَیُیِ, سَࢽَّࢽْ کَ زَݑِ مَتَکِى"
+            "ajami": "بِى تَمْبَیُیِ, سَࢽَّࢽْ کَ زَݑِ مَتَاکِى"
           },
           "body": {
             "ha": "Ka gano iƙirari da tushen bayani; ka duba yadda aka sani, dalili da hujja, da nau'in magana. Ka duba lambobi, dalili da sakamako, kuma ka duba ko son wani sakamako yana sa ka karkata. Ka duba bayanin da ya ɓace. Sannan ka zaɓi mataki mai hankali.",
@@ -73042,7 +73042,7 @@
         },
         {
           "templateHa": "Bayan jerin dubawa ya nuna rashin tabbaci, wane mataki ya fi hankali?",
-          "templateHaAjami": "بَیَࢽْ جٜرِࢽْ دُبَوَا یَا ࢽُࢽَ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ هَࢽْکَالِى?",
+          "templateHaAjami": "بَیَࢽْ جٜرِࢽْ دُبَوَا یَا ࢽُࢽَ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ هَࢽْکَالِى?",
           "answerFormula": "A tuntubi mai shirya aikin domin tabbatar da bayanin, sannan a shirya madadi idan ya dace",
           "answerFormulaAjami": "أَ تُࢽْتُبِى مَیْ شِرْیَا أَیْکِࢽْ دُمِࢽْ تَبَّتَرْ دَ بَیَࢽِࢽْ, سَࢽَّࢽْ أَ شِرْیَا مَدَدِى إِدَࢽْ یَا دَاثٜ",
           "variableRanges": {
@@ -73172,7 +73172,7 @@
         },
         {
           "templateHa": "Bayan jerin dubawa ya nuna rashin tabbaci, wane mataki ya fi hankali?",
-          "templateHaAjami": "بَیَࢽْ جٜرِࢽْ دُبَوَا یَا ࢽُࢽَ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَکِى یَا ࢻِ هَࢽْکَالِى?",
+          "templateHaAjami": "بَیَࢽْ جٜرِࢽْ دُبَوَا یَا ࢽُࢽَ رَشِࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى یَا ࢻِ هَࢽْکَالِى?",
           "answerFormula": "A tuntubi mai shirya aikin domin tabbatar da bayanin, sannan a shirya madadi idan ya dace",
           "answerFormulaAjami": "أَ تُࢽْتُبِى مَیْ شِرْیَا أَیْکِࢽْ دُمِࢽْ تَبَّتَرْ دَ بَیَࢽِࢽْ, سَࢽَّࢽْ أَ شِرْیَا مَدَدِى إِدَࢽْ یَا دَاثٜ",
           "variableRanges": {
