@@ -23,6 +23,9 @@ export const EXPECTED_COVERAGE = Object.freeze({
   answerFormulaAjami: { total: 150, covered: 146 },
   distractorFormulasAjami: { total: 450, covered: 439 },
   "heading.ajami": { total: 60, covered: 59 },
+  "title.ajami": { total: 30, covered: 27 },
+  "lessonTerm.ajami": { total: 60, covered: 53 },
+  "lessonTitle.ajami": { total: 30, covered: 21 },
 });
 
 const TOP_LEVEL_MANAGED_AJAMI_FIELDS = Object.freeze([
@@ -63,6 +66,27 @@ const FIELD_SPECS = Object.freeze([
     target: "ajami",
     coverageKey: "heading.ajami",
     sourcePath: "modules[].lessons[].heading.ha",
+  },
+  {
+    group: "moduleTitles",
+    source: "ha",
+    target: "ajami",
+    coverageKey: "title.ajami",
+    sourcePath: "modules[].title.ha",
+  },
+  {
+    group: "lessonTerms",
+    source: "ha",
+    target: "ajami",
+    coverageKey: "lessonTerm.ajami",
+    sourcePath: "modules[].lessons[].term.ha",
+  },
+  {
+    group: "lessonTitles",
+    source: "ha",
+    target: "ajami",
+    coverageKey: "lessonTitle.ajami",
+    sourcePath: "modules[].lessons[].title.ha",
   },
 ]);
 
@@ -109,7 +133,14 @@ export function wipeManagedAjami(content) {
       if (lesson.heading && Object.hasOwn(lesson.heading, "ajami")) {
         lesson.heading.ajami = null;
       }
+      if (lesson.term && Object.hasOwn(lesson.term, "ajami")) {
+        lesson.term.ajami = null;
+      }
+      if (lesson.title && Object.hasOwn(lesson.title, "ajami")) {
+        lesson.title.ajami = null;
+      }
     }
+    if (module.title && Object.hasOwn(module.title, "ajami")) module.title.ajami = null;
   }
   return content;
 }
@@ -131,6 +162,25 @@ function entriesForGroup(content, group) {
       (module.lessons ?? [])
         .map((lesson) => lesson.heading)
         .filter((heading) => heading && Object.hasOwn(heading, "ha"))
+    );
+  }
+  if (group === "moduleTitles") {
+    return content.modules
+      .map((module) => module.title)
+      .filter((title) => title && Object.hasOwn(title, "ha"));
+  }
+  if (group === "lessonTerms") {
+    return content.modules.flatMap((module) =>
+      (module.lessons ?? [])
+        .map((lesson) => lesson.term)
+        .filter((term) => term && Object.hasOwn(term, "ha"))
+    );
+  }
+  if (group === "lessonTitles") {
+    return content.modules.flatMap((module) =>
+      (module.lessons ?? [])
+        .map((lesson) => lesson.title)
+        .filter((title) => title && Object.hasOwn(title, "ha"))
     );
   }
   return content[group];
@@ -234,17 +284,38 @@ export function regenerateContentData(originalContent, lexiconMap, { lexiconEntr
 
   content.modules = content.modules.map((entry) => {
     const output = insertManagedFields(entry, "module", composedByEntry.get(entry));
+    if (entry.title && Object.hasOwn(entry.title, "ha")) {
+      output.title = insertManagedFields(
+        entry.title,
+        "moduleTitle",
+        composedByEntry.get(entry.title)
+      );
+    }
     if (Array.isArray(entry.lessons)) {
       output.lessons = entry.lessons.map((lesson) => {
-        if (!lesson.heading || !Object.hasOwn(lesson.heading, "ha")) return lesson;
-        return {
-          ...lesson,
-          heading: insertManagedFields(
+        const outputLesson = { ...lesson };
+        if (lesson.heading && Object.hasOwn(lesson.heading, "ha")) {
+          outputLesson.heading = insertManagedFields(
             lesson.heading,
             "lessonHeading",
             composedByEntry.get(lesson.heading)
-          ),
-        };
+          );
+        }
+        if (lesson.term && Object.hasOwn(lesson.term, "ha")) {
+          outputLesson.term = insertManagedFields(
+            lesson.term,
+            "lessonTerm",
+            composedByEntry.get(lesson.term)
+          );
+        }
+        if (lesson.title && Object.hasOwn(lesson.title, "ha")) {
+          outputLesson.title = insertManagedFields(
+            lesson.title,
+            "lessonTitle",
+            composedByEntry.get(lesson.title)
+          );
+        }
+        return outputLesson;
       });
     }
     if (Array.isArray(entry.quiz)) {
