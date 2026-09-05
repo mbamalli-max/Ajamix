@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 
 import {
   createGeneratedEntry,
+  normalizeBoko,
   validateLexicon,
   validateLexiconEntry,
 } from "./schema.mjs";
@@ -68,4 +69,15 @@ test("generated material cannot promote itself even with review-looking metadata
     () => createGeneratedEntry({ boko: "kuma", status: "approved" }),
     /generated lexicon status is not permitted/
   );
+});
+
+test("schema canonicalizes all supported apostrophe forms to the ASCII lookup key", () => {
+  const forms = ["jama'a", "jama’a", "jamaʼa"];
+  for (const form of forms) {
+    assert.equal(normalizeBoko(form), "jama'a");
+  }
+
+  const entry = createGeneratedEntry({ boko: "Jama’a" });
+  assert.equal(entry.normalizedBoko, normalizeBoko(entry.boko));
+  assert.equal(validateLexiconEntry(entry).ok, true);
 });

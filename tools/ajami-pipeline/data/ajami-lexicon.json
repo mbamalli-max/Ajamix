@@ -2354,7 +2354,7 @@
     },
     {
       "boko": "al’umma",
-      "normalizedBoko": "al’umma",
+      "normalizedBoko": "al'umma",
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -3954,7 +3954,7 @@
     },
     {
       "boko": "jama’a",
-      "normalizedBoko": "jama’a",
+      "normalizedBoko": "jama'a",
       "tokens": [
         "J_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -12974,7 +12974,7 @@
     },
     {
       "boko": "sana’a",
-      "normalizedBoko": "sana’a",
+      "normalizedBoko": "sana'a",
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",

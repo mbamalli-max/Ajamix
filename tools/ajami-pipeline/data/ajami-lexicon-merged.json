@@ -2354,7 +2354,7 @@
     },
     {
       "boko": "al’umma",
-      "normalizedBoko": "al’umma",
+      "normalizedBoko": "al'umma",
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -3954,7 +3954,7 @@
     },
     {
       "boko": "jama’a",
-      "normalizedBoko": "jama’a",
+      "normalizedBoko": "jama'a",
       "tokens": [
         "J_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -12974,7 +12974,7 @@
     },
     {
       "boko": "sana’a",
-      "normalizedBoko": "sana’a",
+      "normalizedBoko": "sana'a",
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -17416,7 +17416,7 @@
     },
     {
       "boko": "sa’a",
-      "normalizedBoko": "sa’a",
+      "normalizedBoko": "sa'a",
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -19431,7 +19431,7 @@
     },
     {
       "boko": "al’adu",
-      "normalizedBoko": "al’adu",
+      "normalizedBoko": "al'adu",
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -19792,7 +19792,7 @@
     },
     {
       "boko": "al’ummomi",
-      "normalizedBoko": "al’ummomi",
+      "normalizedBoko": "al'ummomi",
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -20132,7 +20132,7 @@
     },
     {
       "boko": "masana’antu",
-      "normalizedBoko": "masana’antu",
+      "normalizedBoko": "masana'antu",
       "tokens": [
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -21429,7 +21429,7 @@
     },
     {
       "boko": "shari’a",
-      "normalizedBoko": "shari’a",
+      "normalizedBoko": "shari'a",
       "tokens": [
         "SH_HAUSA",
         "VOWEL_A_UNLENGTHENED",
@@ -21533,7 +21533,7 @@
     },
     {
       "boko": "bala’i",
-      "normalizedBoko": "bala’i",
+      "normalizedBoko": "bala'i",
       "tokens": [
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -22440,7 +22440,7 @@
     },
     {
       "boko": "sana’o’i",
-      "normalizedBoko": "sana’o’i",
+      "normalizedBoko": "sana'o'i",
       "tokens": [
         "S_PLAIN",
         "VOWEL_A_UNLENGTHENED",
@@ -25386,7 +25386,7 @@
     },
     {
       "boko": "’yancin",
-      "normalizedBoko": "’yancin",
+      "normalizedBoko": "'yancin",
       "tokens": [
         "HAUSA_GLOTTALIZED_Y",
         "VOWEL_A_UNLENGTHENED",
@@ -25809,7 +25809,7 @@
     },
     {
       "boko": "al’adunmu",
-      "normalizedBoko": "al’adunmu",
+      "normalizedBoko": "al'adunmu",
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -25850,7 +25850,7 @@
     },
     {
       "boko": "al’ummarmu",
-      "normalizedBoko": "al’ummarmu",
+      "normalizedBoko": "al'ummarmu",
       "tokens": [
         "VOWEL_A_UNLENGTHENED",
         "L_PLAIN",
@@ -33062,7 +33062,7 @@
     },
     {
       "boko": "ra’ayin",
-      "normalizedBoko": "ra’ayin",
+      "normalizedBoko": "ra'ayin",
       "tokens": [
         "R_PLAIN",
         "VOWEL_A_UNLENGTHENED",

@@ -2,10 +2,11 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { buildMergedLexicon } from "./build-merged-lexicon.mjs";
-import { analyzeAjamiComposition, composeAjami } from "./compose-ajami.mjs";
+import { analyzeAjamiComposition, compositionSegments, composeAjami } from "./compose-ajami.mjs";
+import { normalizeBoko } from "./lexicon/schema.mjs";
 
 const { map } = buildMergedLexicon();
-const spelling = (word) => map.get(word).ajami;
+const spelling = (word) => map.get(normalizeBoko(word)).ajami;
 
 test("composer uses known lexicon entries and preserves punctuation and spacing", () => {
   assert.equal(composeAjami("Kirgawa,  lissafi!", map), `${spelling("kirgawa")},  ${spelling("lissafi")}!`);
@@ -15,6 +16,20 @@ test("composer treats an apostrophe word as one lexicon lookup", () => {
   assert.equal(composeAjami("Murabba'i", map), spelling("murabba'i"));
   assert.equal(composeAjami("'Ya'ya", map), spelling("'ya'ya"));
   assert.equal(composeAjami("’Yancin", map), spelling("’yancin"));
+});
+
+test("composer canonicalizes apostrophe-y lookup variants without rewriting source boundaries", () => {
+  const expected = spelling("'ya'ya");
+  for (const form of ["'Ya'ya", "’Ya’ya", "ʼYaʼya"]) {
+    assert.equal(composeAjami(form, map), expected);
+  }
+  assert.equal(composeAjami("\"’Yancin\"", map), `"${spelling("'yancin")}"`);
+  assert.equal(composeAjami("Aisha's", map), null);
+  assert.deepEqual(analyzeAjamiComposition("Aisha's", map).uncoveredWords, ["aisha's"]);
+  const displayedSource = "’Yancin";
+  composeAjami(displayedSource, map);
+  assert.equal(compositionSegments(displayedSource)[0].source, displayedSource);
+  assert.equal(map.get(normalizeBoko(displayedSource)).boko, "’yancin");
 });
 
 test("composer passes Latin digits through unchanged", () => {

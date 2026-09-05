@@ -42,6 +42,7 @@ test("merged lexicon appends all ratified queues with source provenance", () => 
   assert.ok(map.has("jera"));
   assert.ok(map.has("eh"));
   assert.equal(map.get("halima")?.boko, "Halima");
+  assert.equal(new Set(lexicon.entries.map((entry) => entry.normalizedBoko)).size, 1240);
 });
 
 test("ratifiedEntries accepts answered or not-applicable questions only", () => {
@@ -144,6 +145,41 @@ test("merged lexicon fails closed on normalized case-folded collisions", () => {
     assert.throws(
       () => buildMergedLexicon({ top500Path: topPath, short300Path: shortPath, quizPath, shortfieldPath }),
       /key collision.*"misali"/iu
+    );
+  } finally {
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("merged lexicon fails closed on apostrophe-normalized collisions", () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "ajami-merged-apostrophe-collision-"));
+  try {
+    const original = buildMergedLexicon().lexicon;
+    const topPath = path.join(temporaryDirectory, "top.json");
+    const shortPath = path.join(temporaryDirectory, "short.json");
+    const quizPath = path.join(temporaryDirectory, "quiz.json");
+    const shortfieldPath = path.join(temporaryDirectory, "shortfield.json");
+    const quizQueue = JSON.parse(fs.readFileSync(
+      new URL("./data/review-queue-quiz.json", import.meta.url),
+      "utf8"
+    ));
+    const ratified = quizQueue.entries.find((entry) =>
+      entry.boko.includes("'") &&
+      entry.status === "human_reviewed" && entry.openQuestions.every((question) =>
+        question.reviewerDecision != null || question.resolution?.state === "not_applicable"
+      )
+    );
+    assert.ok(ratified);
+    const asciiBoko = ratified.boko.replaceAll("’", "'").replaceAll("ʼ", "'");
+    const rightQuoteBoko = asciiBoko.replace("'", "’");
+    fs.writeFileSync(topPath, JSON.stringify({ ...original, entries: [{ ...original.entries[0], boko: asciiBoko }] }));
+    fs.writeFileSync(shortPath, JSON.stringify({ entries: [] }));
+    fs.writeFileSync(quizPath, JSON.stringify({ entries: [{ ...ratified, boko: rightQuoteBoko }] }));
+    fs.writeFileSync(shortfieldPath, JSON.stringify({ entries: [] }));
+
+    assert.throws(
+      () => buildMergedLexicon({ top500Path: topPath, short300Path: shortPath, quizPath, shortfieldPath }),
+      /key collision/iu
     );
   } finally {
     fs.rmSync(temporaryDirectory, { recursive: true, force: true });
