@@ -6,6 +6,11 @@ import { fileURLToPath } from "node:url";
 
 import { buildMergedLexicon } from "./build-merged-lexicon.mjs";
 import { analyzeAjamiComposition } from "./compose-ajami.mjs";
+import {
+  EMPTY_HUMAN_REVIEWED_PROSE_PACKET,
+  loadHumanReviewedProsePacket,
+  validateHumanReviewedProse,
+} from "./gates/human-reviewed-prose-gate.mjs";
 
 const MODULE_DIR = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(MODULE_DIR, "..", "..");
@@ -276,7 +281,53 @@ function insertManagedFields(entry, kind, composed) {
   return output;
 }
 
-export function regenerateContentData(originalContent, lexiconMap, { lexiconEntryCount } = {}) {
+function applyHumanReviewedGapTeasers(content, packet) {
+  const approvedByModuleId = new Map(
+    packet.entries
+      .filter((entry) => entry.fieldPath === "gapTeaser" && entry.status === "approved")
+      .map((entry) => [entry.moduleId, entry])
+  );
+  for (const module of content.modules) {
+    if (!module.gapTeaser || typeof module.gapTeaser !== "object") continue;
+    const approved = approvedByModuleId.get(module.id);
+    module.gapTeaser.ajami = approved ? approved.reviewedAjami : null;
+  }
+}
+
+function gapTeaserCoverage(content, packet) {
+  const gapTeasers = content.modules.filter((module) =>
+    module.gapTeaser && typeof module.gapTeaser === "object" &&
+    typeof module.gapTeaser.ha === "string" && module.gapTeaser.ha.length > 0
+  );
+  const covered = gapTeasers.filter((module) => module.gapTeaser.ajami != null).length;
+  const pilotEntries = packet.entries.filter((entry) => entry.fieldPath === "gapTeaser");
+  const pilotApproved = pilotEntries.filter((entry) => entry.status === "approved").length;
+  const pilotDeferred = pilotEntries.filter((entry) => entry.status === "deferred").length;
+  return {
+    source: "modules[].gapTeaser.ha",
+    total: gapTeasers.length,
+    covered,
+    uncovered: gapTeasers.length - covered,
+    coveragePercent: coveragePercent(covered, gapTeasers.length),
+    provenance: "human_reviewed_prose",
+    pilotEntries: pilotEntries.length,
+    pilotApproved,
+    pilotDeferred,
+  };
+}
+
+export function regenerateContentData(
+  originalContent,
+  lexiconMap,
+  { lexiconEntryCount, humanReviewedProsePacket = EMPTY_HUMAN_REVIEWED_PROSE_PACKET } = {}
+) {
+  const proseValidation = validateHumanReviewedProse(humanReviewedProsePacket, originalContent);
+  if (!proseValidation.ok) {
+    throw new Error(
+      `HUMAN-REVIEWED-PROSE GATE FAILED (${proseValidation.violations.length} issue${proseValidation.violations.length === 1 ? "" : "s"})\n- ` +
+        proseValidation.violations.join("\n- ")
+    );
+  }
   const content = structuredClone(originalContent);
   assertQuizMirrors(content);
   wipeManagedAjami(content);
@@ -334,6 +385,7 @@ export function regenerateContentData(originalContent, lexiconMap, { lexiconEntr
   content.glossary = content.glossary.map((entry) =>
     insertManagedFields(entry, "glossary", composedByEntry.get(entry))
   );
+  applyHumanReviewedGapTeasers(content, humanReviewedProsePacket);
 
   const uncoveredWords = [...uncoveredCounts.entries()]
     .map(([word, occurrences]) => ({ word, occurrences }))
@@ -343,11 +395,16 @@ export function regenerateContentData(originalContent, lexiconMap, { lexiconEntr
 
   const coverage = {
     schemaVersion: 1,
-    materialType: "lexicon_composed_content_ajami_coverage",
+    materialType: "content_ajami_coverage",
     source: "app/content.json",
     lexiconEntryCount: lexiconEntryCount ?? lexiconMap.size,
-    invariant: "A managed Ajami field holds a non-null value if and only if its entire Boko source string was composed from ratified lexicon entries. null (or an absent key, where the schema never had one) means no lexicon coverage, which the renderer resolves to audio playback. ajami_validated stays false on every entry and is never set true.",
-    fields,
+    invariant: "A non-null managed Ajami field is valid iff its provenance is exactly one of: lexicon_composed — produced by the existing composer, unchanged, for every field family this pipeline already manages; or human_reviewed_prose — produced only by regenerating from an approved entry in a dedicated, gated review-source file, for prose fields only, starting with gapTeaser. No third path exists. A field is never valid because it is merely non-null, because it looks well-formed, or because the ordinary content validator (validate-content.mjs) passed — that validator checks structural shape, not linguistic provenance, and must never be treated as establishing either.",
+    fields: {
+      ...Object.fromEntries(
+        Object.entries(fields).map(([key, value]) => [key, { ...value, provenance: "lexicon_composed" }])
+      ),
+      gapTeaser: gapTeaserCoverage(content, humanReviewedProsePacket),
+    },
     uncoveredWords,
   };
 
@@ -395,9 +452,11 @@ export function writeRegeneratedContent({
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const originalContent = JSON.parse(fs.readFileSync(CONTENT_PATH, "utf8"));
+  const humanReviewedProsePacket = loadHumanReviewedProsePacket();
   const { map, counts } = buildMergedLexicon();
   const generated = regenerateContentData(originalContent, map, {
     lexiconEntryCount: counts.merged,
+    humanReviewedProsePacket,
   });
   const deviations = coverageDeviations(generated.coverage);
   writeRegeneratedContent(generated);

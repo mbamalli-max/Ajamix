@@ -119,7 +119,7 @@ function contextSpelling(entry, previousWord) {
   return replaceSuffix(entry.ajami, defaultSuffix, selectedSuffix);
 }
 
-function assertCleanAjami(value) {
+export function assertCleanAjami(value) {
   if (PRESENTATION_FORM_RE.test(value)) {
     throw new Error(`Composed Ajami contains an Arabic presentation form: ${formatCodePoints(value).join(" ")}`);
   }
