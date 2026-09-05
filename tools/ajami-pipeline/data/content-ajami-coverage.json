@@ -1,86 +1,108 @@
 {
   "schemaVersion": 1,
-  "materialType": "lexicon_composed_content_ajami_coverage",
+  "materialType": "content_ajami_coverage",
   "source": "app/content.json",
   "lexiconEntryCount": 1240,
-  "invariant": "A managed Ajami field holds a non-null value if and only if its entire Boko source string was composed from ratified lexicon entries. null (or an absent key, where the schema never had one) means no lexicon coverage, which the renderer resolves to audio playback. ajami_validated stays false on every entry and is never set true.",
+  "invariant": "A non-null managed Ajami field is valid iff its provenance is exactly one of: lexicon_composed — produced by the existing composer, unchanged, for every field family this pipeline already manages; or human_reviewed_prose — produced only by regenerating from an approved entry in a dedicated, gated review-source file, for prose fields only, starting with gapTeaser. No third path exists. A field is never valid because it is merely non-null, because it looks well-formed, or because the ordinary content validator (validate-content.mjs) passed — that validator checks structural shape, not linguistic provenance, and must never be treated as establishing either.",
   "fields": {
     "titleAjami": {
       "source": "modules[].titleHa",
       "total": 389,
       "covered": 352,
       "uncovered": 37,
-      "coveragePercent": 90.49
+      "coveragePercent": 90.49,
+      "provenance": "lexicon_composed"
     },
     "subjectAjami": {
       "source": "modules[].subjectHa",
       "total": 389,
       "covered": 389,
       "uncovered": 0,
-      "coveragePercent": 100
+      "coveragePercent": 100,
+      "provenance": "lexicon_composed"
     },
     "topicAjami": {
       "source": "activities[].topicHa",
       "total": 6,
       "covered": 6,
       "uncovered": 0,
-      "coveragePercent": 100
+      "coveragePercent": 100,
+      "provenance": "lexicon_composed"
     },
     "termAjami": {
       "source": "glossary[].termHa",
       "total": 62,
       "covered": 60,
       "uncovered": 2,
-      "coveragePercent": 96.77
+      "coveragePercent": 96.77,
+      "provenance": "lexicon_composed"
     },
     "templateHaAjami": {
       "source": "modules[].quiz[].templateHa",
       "total": 150,
       "covered": 129,
       "uncovered": 21,
-      "coveragePercent": 86
+      "coveragePercent": 86,
+      "provenance": "lexicon_composed"
     },
     "answerFormulaAjami": {
       "source": "modules[].quiz[].answerFormula",
       "total": 150,
       "covered": 146,
       "uncovered": 4,
-      "coveragePercent": 97.33
+      "coveragePercent": 97.33,
+      "provenance": "lexicon_composed"
     },
     "distractorFormulasAjami": {
       "source": "modules[].quiz[].distractorFormulas[]",
       "total": 450,
       "covered": 440,
       "uncovered": 10,
-      "coveragePercent": 97.78
+      "coveragePercent": 97.78,
+      "provenance": "lexicon_composed"
     },
     "heading.ajami": {
       "source": "modules[].lessons[].heading.ha",
       "total": 60,
       "covered": 59,
       "uncovered": 1,
-      "coveragePercent": 98.33
+      "coveragePercent": 98.33,
+      "provenance": "lexicon_composed"
     },
     "title.ajami": {
       "source": "modules[].title.ha",
       "total": 30,
       "covered": 28,
       "uncovered": 2,
-      "coveragePercent": 93.33
+      "coveragePercent": 93.33,
+      "provenance": "lexicon_composed"
     },
     "lessonTerm.ajami": {
       "source": "modules[].lessons[].term.ha",
       "total": 60,
       "covered": 57,
       "uncovered": 3,
-      "coveragePercent": 95
+      "coveragePercent": 95,
+      "provenance": "lexicon_composed"
     },
     "lessonTitle.ajami": {
       "source": "modules[].lessons[].title.ha",
       "total": 30,
       "covered": 29,
       "uncovered": 1,
-      "coveragePercent": 96.67
+      "coveragePercent": 96.67,
+      "provenance": "lexicon_composed"
+    },
+    "gapTeaser": {
+      "source": "modules[].gapTeaser.ha",
+      "total": 27,
+      "covered": 0,
+      "uncovered": 27,
+      "coveragePercent": 0,
+      "provenance": "human_reviewed_prose",
+      "pilotEntries": 6,
+      "pilotApproved": 0,
+      "pilotDeferred": 6
     }
   },
   "uncoveredWords": [

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "human-reviewed-prose-v1",
+  "entries": [
+    {
+      "moduleId": "CT09",
+      "fieldPath": "gapTeaser",
+      "category": "no_currently_flagged_risk",
+      "sourceHa": "Yaya za ka haɗa duk waɗannan tambayoyi zuwa jerin dubawa guda kafin ka karɓi iƙirari?",
+      "sourceHash": "sha256:eb06dfa09d89b267862de22ec733da0ec7810d9ac7fdfb837d97b22867a2553f",
+      "reviewedAjami": null,
+      "status": "deferred",
+      "reviewer": null,
+      "reviewDate": null,
+      "note": null
+    },
+    {
+      "moduleId": "CT07",
+      "fieldPath": "gapTeaser",
+      "category": "context_sensitive_candidate",
+      "sourceHa": "Idan ba ka da cikakken tabbaci, wane mataki zai iya rage haɗari yayin da kake neman ƙarin bayani?",
+      "sourceHash": "sha256:940f43aa3997421d9417ec790c987e76959e8dea1e65611d418cf349ab16064c",
+      "reviewedAjami": null,
+      "status": "deferred",
+      "reviewer": null,
+      "reviewDate": null,
+      "note": null
+    },
+    {
+      "moduleId": "CT06",
+      "fieldPath": "gapTeaser",
+      "category": "vocabulary_incomplete",
+      "sourceHa": "Idan kana son wani sakamako ya faru, wace hanya za ta taimaka maka kada son naka ya rinjayi dubawarka?",
+      "sourceHash": "sha256:1d25c29dac85426563429d52c625376cebe1facbfc3a54281c58f2581ee89f50",
+      "reviewedAjami": null,
+      "status": "deferred",
+      "reviewer": null,
+      "reviewDate": null,
+      "note": null
+    },
+    {
+      "moduleId": "V07",
+      "fieldPath": "gapTeaser",
+      "category": "english_loanword",
+      "sourceHa": "Bayan ka kware wajen rubutu, mataki na gaba shi ne gane harajin VAT da yadda ake ware shi a rasit.",
+      "sourceHash": "sha256:a0a687d522e54c5f888dec656d4a9faf1e64ff84f6635f0a9e81ef0b1e458baa",
+      "reviewedAjami": null,
+      "status": "deferred",
+      "reviewer": null,
+      "reviewDate": null,
+      "note": null
+    },
+    {
+      "moduleId": "FL04",
+      "fieldPath": "gapTeaser",
+      "category": "punctuation_heavy",
+      "sourceHa": "Idan mutane sun ba da bayanai daban don zaɓi guda, shin suna kallon doka, sakamako, ko halin mutum?",
+      "sourceHash": "sha256:0bb8fd8e7c1e695ca0c2971b6dad0a1f7f567eacc39d7bda01db0b0c21b64b4e",
+      "reviewedAjami": null,
+      "status": "deferred",
+      "reviewer": null,
+      "reviewDate": null,
+      "note": null
+    },
+    {
+      "moduleId": "FL05",
+      "fieldPath": "gapTeaser",
+      "category": "no_currently_flagged_risk",
+      "sourceHa": "Me za ka yi idan ka'ida biyu da ka yarda da su suna neman ka yi abubuwa mabambanta a lokaci guda?",
+      "sourceHash": "sha256:257c6c2c5f92bc2fbbf116cbbdc2774a979144b85ed9f988fe11c6b4cc8f9f5c",
+      "reviewedAjami": null,
+      "status": "deferred",
+      "reviewer": null,
+      "reviewDate": null,
+      "note": null
+    }
+  ]
+}
