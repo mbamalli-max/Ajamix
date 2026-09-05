@@ -7949,8 +7949,12 @@
               "U+0627"
             ]
           },
-          "reviewerDecision": "short — U+064E",
-          "reviewerNotes": "Muhammad ratified 2026-08-06 (short300 batch, bulk-confirmed all-short)."
+          "reviewerDecision": "long — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "mfa-v3.0.0",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "VOWEL_LENGTH",

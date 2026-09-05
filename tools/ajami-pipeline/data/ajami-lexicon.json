@@ -5240,12 +5240,13 @@
         "L_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "مِسَلِى",
+      "ajami": "مِسَالِى",
       "ajamiCodepoints": [
         "U+0645",
         "U+0650",
         "U+0633",
         "U+064E",
+        "U+0627",
         "U+0644",
         "U+0650",
         "U+0649"
@@ -6394,9 +6395,9 @@
         "VOWEL_I_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "حَطِࢽْ",
+      "ajami": "هَطِࢽْ",
       "ajamiCodepoints": [
-        "U+062D",
+        "U+0647",
         "U+064E",
         "U+0637",
         "U+0650",
@@ -8014,9 +8015,9 @@
         "D_GLOTTALIZED",
         "VOWEL_U_UNLENGTHENED"
       ],
-      "ajami": "حَطُ",
+      "ajami": "هَطُ",
       "ajamiCodepoints": [
-        "U+062D",
+        "U+0647",
         "U+064E",
         "U+0637",
         "U+064F"
@@ -9999,12 +10000,13 @@
         "K_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "مَتَکِى",
+      "ajami": "مَتَاکِى",
       "ajamiCodepoints": [
         "U+0645",
         "U+064E",
         "U+062A",
         "U+064E",
+        "U+0627",
         "U+06A9",
         "U+0650",
         "U+0649"
@@ -10644,9 +10646,9 @@
         "R_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "حَطَرِى",
+      "ajami": "هَطَرِى",
       "ajamiCodepoints": [
-        "U+062D",
+        "U+0647",
         "U+064E",
         "U+0637",
         "U+064E",
@@ -13803,9 +13805,9 @@
         "VOWEL_A_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "حَکَࢽْ",
+      "ajami": "هَکَࢽْ",
       "ajamiCodepoints": [
-        "U+062D",
+        "U+0647",
         "U+064E",
         "U+06A9",
         "U+064E",

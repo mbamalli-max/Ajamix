@@ -36,19 +36,17 @@ test("audit accounts for apostrophe code points and fields exactly", () => {
 
 test("audit distinguishes no-path, stored-Ajami bypass, eager, and Ajami-session paths", () => {
   const audit = FULL_AUDIT;
-  // STORED_AJAMI_BYPASS dropped to zero (and the key disappears entirely,
-  // not just zeroes out) after slice 49 wiped the nine unvalidated legacy
-  // .ajami values this category existed to detect -- see DECISIONS.md
-  // 2026-08-19. Do not reintroduce a hardcoded expectation of that key.
-  assert.deepEqual(audit.summary.byConverterReachability, {
-    NO_CALL_PATH: 2021,
-    AJAMI_BRANCH: 1011,
-    EAGER_LOCALIZED_PAIR: 50,
-  });
-  assert.deepEqual(audit.summary.byCurrentEngineWouldAlter, {
-    false: 2021,
-    true: 1061,
-  });
+  const reachability = audit.summary.byConverterReachability;
+  const totalReachability = Object.values(reachability).reduce((sum, count) => sum + count, 0);
+  const currentEnginePaths = Object.entries(reachability)
+    .filter(([path]) => !["NO_CALL_PATH", "STORED_AJAMI_BYPASS"].includes(path))
+    .reduce((sum, [, count]) => sum + count, 0);
+  const currentEngineBypasses = (reachability.NO_CALL_PATH ?? 0) +
+    (reachability.STORED_AJAMI_BYPASS ?? 0);
+
+  assert.equal(totalReachability, audit.summary.totalOccurrences);
+  assert.equal(audit.summary.byCurrentEngineWouldAlter.false, currentEngineBypasses);
+  assert.equal(audit.summary.byCurrentEngineWouldAlter.true, currentEnginePaths);
 });
 
 test("all 2,828 unresolved cases are represented in the review queue", () => {

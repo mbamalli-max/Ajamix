@@ -18381,7 +18381,12 @@
           "reasoning": "The queue uses `Misali` in “Alal misali, idan kana da kujeru uku, ka ce 'ɗaya, biyu, uku'.”; I read the 'a' at position 3 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
           "confidence": "low",
           "evidenceType": "UNCERTAIN_BEST_GUESS",
-          "reviewerDecision": "short — U+064E"
+          "reviewerDecision": "long — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "bargery-1934",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",
@@ -36005,7 +36010,12 @@
           "reasoning": "The queue uses `mataki` in “A wannan mataki, muna ƙara lambobi ba tare da ɗaukar goma zuwa wani wuri ba.”; I read the 'a' at position 3 as short. The repository has no reviewed pronunciation record for this word, so this is a low-confidence proposal for Muhammad to check.",
           "confidence": "low",
           "evidenceType": "UNCERTAIN_BEST_GUESS",
-          "reviewerDecision": "short — U+064E"
+          "reviewerDecision": "long — U+064E U+0627",
+          "reviewerNotes": "Muhammad ratified 2026-08-24.",
+          "lengthSource": "mfa-v3.0.0",
+          "ajamiEvidence": "none",
+          "encodingRule": "ajamix-standard",
+          "reviewStatus": "human-approved"
         },
         {
           "type": "WORD_FINAL_VOWEL",

@@ -206,6 +206,49 @@ test("regeneration leaves quizQuestions-only modules outside the managed quiz pa
   assert.deepEqual(content.modules[1].quizQuestions, quizQuestions);
 });
 
+test("regeneration composes short nested title and term fields and wipes uncovered values", () => {
+  const original = fixture();
+  original.modules[0].title = { ha: "Known", ajami: "stale module title" };
+  original.modules[0].lessons.push(
+    { type: "glossary-card", term: { ha: "Known", ajami: "stale term" } },
+    { type: "example", title: { ha: "Known", ajami: "stale lesson title" } },
+    { type: "glossary-card", term: { ha: "Missing", ajami: "stale uncovered term" } },
+    { type: "example", title: { ha: "Missing", ajami: "stale uncovered lesson title" } }
+  );
+
+  const { content, coverage } = regenerateContentData(original, map);
+  const module = content.modules[0];
+
+  assert.deepEqual(module.title, { ha: "Known", ajami: "ک" });
+  assert.deepEqual(module.lessons[2].term, { ha: "Known", ajami: "ک" });
+  assert.deepEqual(module.lessons[3].title, { ha: "Known", ajami: "ک" });
+  assert.strictEqual(module.lessons[4].term.ajami, null);
+  assert.notStrictEqual(module.lessons[4].term.ajami, module.lessons[4].term.ha);
+  assert.strictEqual(module.lessons[5].title.ajami, null);
+  assert.notStrictEqual(module.lessons[5].title.ajami, module.lessons[5].title.ha);
+  assert.deepEqual(coverage.fields["title.ajami"], {
+    source: "modules[].title.ha",
+    total: 1,
+    covered: 1,
+    uncovered: 0,
+    coveragePercent: 100,
+  });
+  assert.deepEqual(coverage.fields["lessonTerm.ajami"], {
+    source: "modules[].lessons[].term.ha",
+    total: 2,
+    covered: 1,
+    uncovered: 1,
+    coveragePercent: 50,
+  });
+  assert.deepEqual(coverage.fields["lessonTitle.ajami"], {
+    source: "modules[].lessons[].title.ha",
+    total: 2,
+    covered: 1,
+    uncovered: 1,
+    coveragePercent: 50,
+  });
+});
+
 test("writer creates a pre-write backup and deterministic JSON artifacts", () => {
   const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "ajami-content-write-"));
   try {
