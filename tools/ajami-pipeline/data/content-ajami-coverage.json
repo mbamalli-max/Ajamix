@@ -8,9 +8,9 @@
     "titleAjami": {
       "source": "modules[].titleHa",
       "total": 389,
-      "covered": 344,
-      "uncovered": 45,
-      "coveragePercent": 88.43
+      "covered": 352,
+      "uncovered": 37,
+      "coveragePercent": 90.49
     },
     "subjectAjami": {
       "source": "modules[].subjectHa",
@@ -29,9 +29,9 @@
     "termAjami": {
       "source": "glossary[].termHa",
       "total": 62,
-      "covered": 59,
-      "uncovered": 3,
-      "coveragePercent": 95.16
+      "covered": 60,
+      "uncovered": 2,
+      "coveragePercent": 96.77
     },
     "templateHaAjami": {
       "source": "modules[].quiz[].templateHa",
@@ -50,9 +50,9 @@
     "distractorFormulasAjami": {
       "source": "modules[].quiz[].distractorFormulas[]",
       "total": 450,
-      "covered": 439,
-      "uncovered": 11,
-      "coveragePercent": 97.56
+      "covered": 440,
+      "uncovered": 10,
+      "coveragePercent": 97.78
     },
     "heading.ajami": {
       "source": "modules[].lessons[].heading.ha",
@@ -64,9 +64,9 @@
     "title.ajami": {
       "source": "modules[].title.ha",
       "total": 30,
-      "covered": 27,
-      "uncovered": 3,
-      "coveragePercent": 90
+      "covered": 28,
+      "uncovered": 2,
+      "coveragePercent": 93.33
     },
     "lessonTerm.ajami": {
       "source": "modules[].lessons[].term.ha",
@@ -91,10 +91,6 @@
     {
       "word": "b",
       "occurrences": 6
-    },
-    {
-      "word": "al'umma",
-      "occurrences": 4
     },
     {
       "word": "percent",
@@ -153,10 +149,6 @@
       "occurrences": 2
     },
     {
-      "word": "'yancin",
-      "occurrences": 2
-    },
-    {
       "word": "'haka",
       "occurrences": 1
     },
@@ -189,7 +181,7 @@
       "occurrences": 1
     },
     {
-      "word": "al’ummomin",
+      "word": "al'ummomin",
       "occurrences": 1
     },
     {
@@ -281,10 +273,6 @@
       "occurrences": 1
     },
     {
-      "word": "ƙa’ida",
-      "occurrences": 1
-    },
-    {
       "word": "ƙangare",
       "occurrences": 1
     },
@@ -306,14 +294,6 @@
     },
     {
       "word": "ma'adinai",
-      "occurrences": 1
-    },
-    {
-      "word": "ma’ana",
-      "occurrences": 1
-    },
-    {
-      "word": "ma’aunin",
       "occurrences": 1
     },
     {
@@ -353,10 +333,6 @@
       "occurrences": 1
     },
     {
-      "word": "na’urori",
-      "occurrences": 1
-    },
-    {
       "word": "nagari",
       "occurrences": 1
     },
@@ -366,10 +342,6 @@
     },
     {
       "word": "p3",
-      "occurrences": 1
-    },
-    {
-      "word": "ra'ayin",
       "occurrences": 1
     },
     {

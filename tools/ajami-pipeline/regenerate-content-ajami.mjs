@@ -15,15 +15,15 @@ export const COVERAGE_PATH = path.join(MODULE_DIR, "data", "content-ajami-covera
 export const BACKUP_PATH = "/Users/muhammadbamalli/Documents/New project/ai-system/projects/ajamix/tasks/2026-08-10-pre-slice-35-content.json";
 
 export const EXPECTED_COVERAGE = Object.freeze({
-  titleAjami: { total: 389, covered: 344 },
+  titleAjami: { total: 389, covered: 352 },
   subjectAjami: { total: 389, covered: 389 },
   topicAjami: { total: 6, covered: 6 },
-  termAjami: { total: 62, covered: 59 },
+  termAjami: { total: 62, covered: 60 },
   templateHaAjami: { total: 150, covered: 129 },
   answerFormulaAjami: { total: 150, covered: 146 },
-  distractorFormulasAjami: { total: 450, covered: 439 },
+  distractorFormulasAjami: { total: 450, covered: 440 },
   "heading.ajami": { total: 60, covered: 59 },
-  "title.ajami": { total: 30, covered: 27 },
+  "title.ajami": { total: 30, covered: 28 },
   "lessonTerm.ajami": { total: 60, covered: 57 },
   "lessonTitle.ajami": { total: 30, covered: 29 },
 });

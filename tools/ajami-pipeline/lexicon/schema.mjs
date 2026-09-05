@@ -82,7 +82,8 @@ function validateDate(value) {
 export function normalizeBoko(value) {
   return String(value ?? "")
     .normalize("NFC")
-    .toLocaleLowerCase("ha");
+    .toLocaleLowerCase("ha")
+    .replace(/[\u2019\u02BC]/gu, "'");
 }
 
 /**
@@ -111,7 +112,7 @@ export function validateLexiconEntry(entry, { generated = false } = {}) {
   if (!isNonEmptyString(entry.normalizedBoko)) {
     errors.push("normalizedBoko must be a non-empty string");
   } else if (entry.normalizedBoko !== normalizeBoko(entry.boko)) {
-    errors.push("normalizedBoko must equal NFC Hausa-lowercase boko");
+    errors.push("normalizedBoko must equal NFC Hausa-lowercase boko with apostrophes canonicalized");
   }
   if (!Array.isArray(entry.tokens)) {
     errors.push("tokens must be an array");
