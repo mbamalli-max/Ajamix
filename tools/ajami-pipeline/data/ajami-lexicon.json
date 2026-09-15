@@ -1055,13 +1055,13 @@
         "VOWEL_A_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "سَࢽَّࢽْ",
+      "ajami": "سَࢽَّࢽْ",
       "ajamiCodepoints": [
         "U+0633",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -1089,13 +1089,13 @@
         "VOWEL_A_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "وَࢽَّࢽْ",
+      "ajami": "وَࢽَّࢽْ",
       "ajamiCodepoints": [
         "U+0648",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -1676,13 +1676,13 @@
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "بَبَّا",
+      "ajami": "بَبَّا",
       "ajamiCodepoints": [
         "U+0628",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "pronunciation": null,
@@ -2364,7 +2364,7 @@
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "أَلأُمَّا",
+      "ajami": "أَلأُمَّا",
       "ajamiCodepoints": [
         "U+0623",
         "U+064E",
@@ -2372,8 +2372,8 @@
         "U+0623",
         "U+064F",
         "U+0645",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "pronunciation": null,
@@ -2602,13 +2602,13 @@
         "F_HAUSA",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "لِسَّࢻِ",
+      "ajami": "لِسَّࢻِ",
       "ajamiCodepoints": [
         "U+0644",
         "U+0650",
         "U+0633",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BB",
         "U+0650"
       ],
@@ -2635,13 +2635,13 @@
         "D_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "یَدَّ",
+      "ajami": "یَدَّ",
       "ajamiCodepoints": [
         "U+06CC",
         "U+064E",
         "U+062F",
-        "U+0651",
-        "U+064E"
+        "U+064E",
+        "U+0651"
       ],
       "pronunciation": null,
       "vowelLength": null,
@@ -3220,13 +3220,13 @@
         "M_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "أَمَّا",
+      "ajami": "أَمَّا",
       "ajamiCodepoints": [
         "U+0623",
         "U+064E",
         "U+0645",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "pronunciation": null,
@@ -3484,13 +3484,13 @@
         "N_HAUSA",
         "VOWEL_U_UNLENGTHENED"
       ],
-      "ajami": "سَࢽُّ",
+      "ajami": "سَࢽُّ",
       "ajamiCodepoints": [
         "U+0633",
         "U+064E",
         "U+08BD",
-        "U+0651",
-        "U+064F"
+        "U+064F",
+        "U+0651"
       ],
       "pronunciation": null,
       "vowelLength": null,
@@ -4029,13 +4029,13 @@
         "N_HAUSA",
         "VOWEL_U_UNLENGTHENED"
       ],
-      "ajami": "هَࢽُّ",
+      "ajami": "هَࢽُّ",
       "ajamiCodepoints": [
         "U+0647",
         "U+064E",
         "U+08BD",
-        "U+0651",
-        "U+064F"
+        "U+064F",
+        "U+0651"
       ],
       "pronunciation": null,
       "vowelLength": null,
@@ -4973,15 +4973,15 @@
         "Y_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "کِمِیَّا",
+      "ajami": "کِمِیَّا",
       "ajamiCodepoints": [
         "U+06A9",
         "U+0650",
         "U+0645",
         "U+0650",
         "U+06CC",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "pronunciation": null,
@@ -5703,13 +5703,13 @@
         "VOWEL_U_UNLENGTHENED",
         "M_PLAIN"
       ],
-      "ajami": "کُلُّمْ",
+      "ajami": "کُلُّمْ",
       "ajamiCodepoints": [
         "U+06A9",
         "U+064F",
         "U+0644",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+0645",
         "U+0652"
       ],
@@ -6361,15 +6361,15 @@
         "L_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "مُحَلِّى",
+      "ajami": "مُحَلِّى",
       "ajamiCodepoints": [
         "U+0645",
         "U+064F",
         "U+062D",
         "U+064E",
         "U+0644",
-        "U+0651",
         "U+0650",
+        "U+0651",
         "U+0649"
       ],
       "pronunciation": null,
@@ -7399,13 +7399,13 @@
         "N_HAUSA",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "بَیَّࢽَا",
+      "ajami": "بَیَّࢽَا",
       "ajamiCodepoints": [
         "U+0628",
         "U+064E",
         "U+06CC",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+064E",
         "U+0627"
@@ -7433,13 +7433,13 @@
         "F_HAUSA",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "سِࢻَّا",
+      "ajami": "سِࢻَّا",
       "ajamiCodepoints": [
         "U+0633",
         "U+0650",
         "U+08BB",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "pronunciation": null,
@@ -8282,13 +8282,13 @@
         "VOWEL_A_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "بَبَّࢽْ",
+      "ajami": "بَبَّࢽْ",
       "ajamiCodepoints": [
         "U+0628",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -8317,13 +8317,13 @@
         "B_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "دَبُّبِى",
+      "ajami": "دَبُّبِى",
       "ajamiCodepoints": [
         "U+062F",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+0628",
         "U+0650",
         "U+0649"
@@ -9659,13 +9659,13 @@
         "VOWEL_A_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "أَیُّکَࢽْ",
+      "ajami": "أَیُّکَࢽْ",
       "ajamiCodepoints": [
         "U+0623",
         "U+064E",
         "U+06CC",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+06A9",
         "U+064E",
         "U+08BD",
@@ -9730,13 +9730,13 @@
         "VOWEL_A_UNLENGTHENED",
         "R_PLAIN"
       ],
-      "ajami": "تَبَّتَرْ",
+      "ajami": "تَبَّتَرْ",
       "ajamiCodepoints": [
         "U+062A",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+062A",
         "U+064E",
         "U+0631",
@@ -9766,13 +9766,13 @@
         "VOWEL_A_UNLENGTHENED",
         "R_PLAIN"
       ],
-      "ajami": "بَبَّرْ",
+      "ajami": "بَبَّرْ",
       "ajamiCodepoints": [
         "U+0628",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0631",
         "U+0652"
       ],
@@ -9833,15 +9833,15 @@
         "VOWEL_A_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "وَطَࢽَّࢽْ",
+      "ajami": "وَطَࢽَّࢽْ",
       "ajamiCodepoints": [
         "U+0648",
         "U+064E",
         "U+0637",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -10499,15 +10499,15 @@
         "APOSTROPHE_UNRESOLVED",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "مُرَبَّعِى",
+      "ajami": "مُرَبَّعِى",
       "ajamiCodepoints": [
         "U+0645",
         "U+064F",
         "U+0631",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0639",
         "U+0650",
         "U+0649"
@@ -10540,15 +10540,15 @@
         "C_HAUSA",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "مُهِمَّࢽْثِ",
+      "ajami": "مُهِمَّࢽْثِ",
       "ajamiCodepoints": [
         "U+0645",
         "U+064F",
         "U+0647",
         "U+0650",
         "U+0645",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652",
         "U+062B",
@@ -10749,16 +10749,16 @@
         "VOWEL_A_UNLENGTHENED",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "لِتَّتَّࢻَیْ",
+      "ajami": "لِتَّتَّࢻَیْ",
       "ajamiCodepoints": [
         "U+0644",
         "U+0650",
         "U+062A",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+062A",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BB",
         "U+064E",
         "U+06CC",
@@ -11497,13 +11497,13 @@
         "F_HAUSA",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "لِتَّࢻِى",
+      "ajami": "لِتَّࢻِى",
       "ajamiCodepoints": [
         "U+0644",
         "U+0650",
         "U+062A",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BB",
         "U+0650",
         "U+0649"
@@ -11531,13 +11531,13 @@
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "دَبَّا",
+      "ajami": "دَبَّا",
       "ajamiCodepoints": [
         "U+062F",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "pronunciation": null,
@@ -11564,13 +11564,13 @@
         "VOWEL_A_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "سَسَّࢽْ",
+      "ajami": "سَسَّࢽْ",
       "ajamiCodepoints": [
         "U+0633",
         "U+064E",
         "U+0633",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -12154,13 +12154,13 @@
         "VOWEL_I_UNLENGTHENED",
         "N_HAUSA"
       ],
-      "ajami": "حَࢼِّࢽْ",
+      "ajami": "حَࢼِّࢽْ",
       "ajamiCodepoints": [
         "U+062D",
         "U+064E",
         "U+08BC",
-        "U+0651",
         "U+0650",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -12334,13 +12334,13 @@
         "B_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "رَرَّبَا",
+      "ajami": "رَرَّبَا",
       "ajamiCodepoints": [
         "U+0631",
         "U+064E",
         "U+0631",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0628",
         "U+064E",
         "U+0627"
@@ -12370,13 +12370,13 @@
         "F_HAUSA",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "سِࢻُّࢻِى",
+      "ajami": "سِࢻُّࢻِى",
       "ajamiCodepoints": [
         "U+0633",
         "U+0650",
         "U+08BB",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+08BB",
         "U+0650",
         "U+0649"
@@ -12404,13 +12404,13 @@
         "L_PLAIN",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "کَلِّ",
+      "ajami": "کَلِّ",
       "ajamiCodepoints": [
         "U+06A9",
         "U+064E",
         "U+0644",
-        "U+0651",
-        "U+0650"
+        "U+0650",
+        "U+0651"
       ],
       "pronunciation": null,
       "vowelLength": null,
@@ -13055,13 +13055,13 @@
         "J_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "حُجَّ",
+      "ajami": "حُجَّ",
       "ajamiCodepoints": [
         "U+062D",
         "U+064F",
         "U+062C",
-        "U+0651",
-        "U+064E"
+        "U+064E",
+        "U+0651"
       ],
       "pronunciation": null,
       "vowelLength": null,
@@ -14623,13 +14623,13 @@
         "K_PLAIN",
         "VOWEL_A_UNLENGTHENED"
       ],
-      "ajami": "أَیُّکَا",
+      "ajami": "أَیُّکَا",
       "ajamiCodepoints": [
         "U+0623",
         "U+064E",
         "U+06CC",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+06A9",
         "U+064E",
         "U+0627"
@@ -15661,13 +15661,13 @@
         "VOWEL_A_UNLENGTHENED",
         "VOWEL_I_UNLENGTHENED"
       ],
-      "ajami": "ڟِرَّیْ",
+      "ajami": "ڟِرَّیْ",
       "ajamiCodepoints": [
         "U+069F",
         "U+0650",
         "U+0631",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+06CC",
         "U+0652"
       ],

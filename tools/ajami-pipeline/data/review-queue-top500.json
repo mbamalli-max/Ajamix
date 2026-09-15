@@ -3276,13 +3276,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: individually spot-checked and accepted as-is (Tier A verification sample).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "سَࢽَّࢽْ",
+      "candidateFullAjami": "سَࢽَّࢽْ",
       "candidateFullCodepoints": [
         "U+0633",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -3415,13 +3415,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "وَࢽَّࢽْ",
+      "candidateFullAjami": "وَࢽَّࢽْ",
       "candidateFullCodepoints": [
         "U+0648",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -5368,13 +5368,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "بَبَّا",
+      "candidateFullAjami": "بَبَّا",
       "candidateFullCodepoints": [
         "U+0628",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "entryConfidence": "low"
@@ -7812,7 +7812,7 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "أَلأُمَّا",
+      "candidateFullAjami": "أَلأُمَّا",
       "candidateFullCodepoints": [
         "U+0623",
         "U+064E",
@@ -7820,8 +7820,8 @@
         "U+0623",
         "U+064F",
         "U+0645",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "entryConfidence": "low"
@@ -8825,13 +8825,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: corrected final vowel to short (Tier B final-i batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "لِسَّࢻِى",
+      "candidateFullAjami": "لِسَّࢻِى",
       "candidateFullCodepoints": [
         "U+0644",
         "U+0650",
         "U+0633",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BB",
         "U+0650",
         "U+0649"
@@ -8942,13 +8942,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: corrected final vowel to short (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "یَدَّا",
+      "candidateFullAjami": "یَدَّا",
       "candidateFullCodepoints": [
         "U+06CC",
         "U+064E",
         "U+062F",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "entryConfidence": "low"
@@ -10973,13 +10973,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "أَمَّا",
+      "candidateFullAjami": "أَمَّا",
       "candidateFullCodepoints": [
         "U+0623",
         "U+064E",
         "U+0645",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "entryConfidence": "low"
@@ -12069,13 +12069,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: corrected final vowel to short (Tier B final-u batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "سَࢽُّو",
+      "candidateFullAjami": "سَࢽُّو",
       "candidateFullCodepoints": [
         "U+0633",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+0648"
       ],
       "entryConfidence": "low"
@@ -14010,13 +14010,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: takes ه (Arabic lexical) despite being a native Hausa word — explicitly confirmed on re-ask, overriding both Codex (ح) and the etymology pattern. Final -u corrected to short, consistent with abu/Sannu/uku.",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "حَࢽُّو",
+      "candidateFullAjami": "حَࢽُّو",
       "candidateFullCodepoints": [
         "U+062D",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+0648"
       ],
       "entryConfidence": "low"
@@ -22452,15 +22452,15 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source محل (ha). Final -i long.",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "مُحَلِّى",
+      "candidateFullAjami": "مُحَلِّى",
       "candidateFullCodepoints": [
         "U+0645",
         "U+064F",
         "U+062D",
         "U+064E",
         "U+0644",
-        "U+0651",
         "U+0650",
+        "U+0651",
         "U+0649"
       ],
       "entryConfidence": "low"
@@ -26351,13 +26351,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "بَیَّࢽَا",
+      "candidateFullAjami": "بَیَّࢽَا",
       "candidateFullCodepoints": [
         "U+0628",
         "U+064E",
         "U+06CC",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+064E",
         "U+0627"
@@ -26468,13 +26468,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "سِࢻَّا",
+      "candidateFullAjami": "سِࢻَّا",
       "candidateFullCodepoints": [
         "U+0633",
         "U+0650",
         "U+08BB",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "entryConfidence": "low"
@@ -29655,13 +29655,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "بَبَّࢽْ",
+      "candidateFullAjami": "بَبَّࢽْ",
       "candidateFullCodepoints": [
         "U+0628",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -29802,13 +29802,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-i batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "دَبُّبِى",
+      "candidateFullAjami": "دَبُّبِى",
       "candidateFullCodepoints": [
         "U+062F",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+0628",
         "U+0650",
         "U+0649"
@@ -34996,13 +34996,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "تَبَّتَرْ",
+      "candidateFullAjami": "تَبَّتَرْ",
       "candidateFullCodepoints": [
         "U+062A",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+062A",
         "U+064E",
         "U+0631",
@@ -35137,13 +35137,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "بَبَّرْ",
+      "candidateFullAjami": "بَبَّرْ",
       "candidateFullCodepoints": [
         "U+0628",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0631",
         "U+0652"
       ],
@@ -35423,15 +35423,15 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "وَطَࢽَّࢽْ",
+      "candidateFullAjami": "وَطَࢽَّࢽْ",
       "candidateFullCodepoints": [
         "U+0648",
         "U+064E",
         "U+0637",
         "U+064E",
         "U+08BD",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -37895,15 +37895,15 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-i batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "مُرَبَّعِى",
+      "candidateFullAjami": "مُرَبَّعِى",
       "candidateFullCodepoints": [
         "U+0645",
         "U+064F",
         "U+0631",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0639",
         "U+0650",
         "U+0649"
@@ -38116,15 +38116,15 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source مهم (ha). Final -i corrected to short.",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "مُهِمَّࢽْثِى",
+      "candidateFullAjami": "مُهِمَّࢽْثِى",
       "candidateFullCodepoints": [
         "U+0645",
         "U+064F",
         "U+0647",
         "U+0650",
         "U+0645",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652",
         "U+062B",
@@ -39044,16 +39044,16 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 3,
-      "candidateFullAjami": "لِتَّتَّࢻَیْ",
+      "candidateFullAjami": "لِتَّتَّࢻَیْ",
       "candidateFullCodepoints": [
         "U+0644",
         "U+0650",
         "U+062A",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+062A",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BB",
         "U+064E",
         "U+06CC",
@@ -41840,13 +41840,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-i batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "لِتَّࢻِى",
+      "candidateFullAjami": "لِتَّࢻِى",
       "candidateFullCodepoints": [
         "U+0644",
         "U+0650",
         "U+062A",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BB",
         "U+0650",
         "U+0649"
@@ -41957,13 +41957,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "دَبَّا",
+      "candidateFullAjami": "دَبَّا",
       "candidateFullCodepoints": [
         "U+062F",
         "U+064E",
         "U+0628",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "entryConfidence": "low"
@@ -42095,13 +42095,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "سَسَّࢽْ",
+      "candidateFullAjami": "سَسَّࢽْ",
       "candidateFullCodepoints": [
         "U+0633",
         "U+064E",
         "U+0633",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -44068,13 +44068,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source حق (ha).",
       "redundantQuestionsRemoved": 0,
-      "candidateFullAjami": "حَࢼِّࢽْ",
+      "candidateFullAjami": "حَࢼِّࢽْ",
       "candidateFullCodepoints": [
         "U+062D",
         "U+064E",
         "U+08BC",
-        "U+0651",
         "U+0650",
+        "U+0651",
         "U+08BD",
         "U+0652"
       ],
@@ -44859,13 +44859,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-a batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "رَرَّبَا",
+      "candidateFullAjami": "رَرَّبَا",
       "candidateFullCodepoints": [
         "U+0631",
         "U+064E",
         "U+0631",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0628",
         "U+064E",
         "U+0627"
@@ -45007,13 +45007,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Codex candidate accepted as-is (Tier B final-i batch).",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "سِࢻُّࢻِى",
+      "candidateFullAjami": "سِࢻُّࢻِى",
       "candidateFullCodepoints": [
         "U+0633",
         "U+0650",
         "U+08BB",
-        "U+0651",
         "U+064F",
+        "U+0651",
         "U+08BB",
         "U+0650",
         "U+0649"
@@ -47535,13 +47535,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: Arabic-loan h follows the source etymology. Source حجة (ha). Final -a corrected to short.",
       "redundantQuestionsRemoved": 1,
-      "candidateFullAjami": "حُجَّا",
+      "candidateFullAjami": "حُجَّا",
       "candidateFullCodepoints": [
         "U+062D",
         "U+064F",
         "U+062C",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+0627"
       ],
       "entryConfidence": "low"
@@ -57102,13 +57102,13 @@
       "reviewerDecision": null,
       "reviewerNotes": "Muhammad ratified 2026-08-03: accepted as-is via Tier A bulk sweep. Approved as a group after a 4-word spot-check (sannan, kai, an, misalai) all returned accept-as-is. Sweep restricted to entries whose only open questions are VOWEL_LENGTH (97.9%, n=634), VOWEL_SEQUENCE (100%, n=20), GEMINATION (100%, n=20), SUKUN (100%, n=12), WORD_INITIAL_CARRIER (100%, n=36).",
       "redundantQuestionsRemoved": 3,
-      "candidateFullAjami": "ڟِرَّیْ",
+      "candidateFullAjami": "ڟِرَّیْ",
       "candidateFullCodepoints": [
         "U+069F",
         "U+0650",
         "U+0631",
-        "U+0651",
         "U+064E",
+        "U+0651",
         "U+06CC",
         "U+0652"
       ],

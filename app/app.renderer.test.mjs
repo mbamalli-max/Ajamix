@@ -62,7 +62,7 @@ const FIXTURE = Object.freeze({
   titleHa: "Kirgawa 1–5",
   titleAjami: "کِرْغَوَا 1–5",
   subjectHa: "Lissafi",
-  subjectAjami: "لِسَّࢻِ",
+  subjectAjami: "لِسَّࢻِ",
   questionHa: "Kirgawa {a}",
   questionAjami: "کِرْغَوَا {a}",
   audioComingSoonAjami: "سَوْتِ یَࢽَ زُوَ",

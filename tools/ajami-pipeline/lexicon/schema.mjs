@@ -120,6 +120,9 @@ export function validateLexiconEntry(entry, { generated = false } = {}) {
   if (typeof entry.ajami !== "string") {
     errors.push("ajami must be a string");
   }
+  if (typeof entry.ajami === "string" && entry.ajami.length > 0 && entry.ajami !== entry.ajami.normalize("NFC")) {
+    errors.push("ajami must be NFC-normalized");
+  }
   if (!Array.isArray(entry.ajamiCodepoints)) {
     errors.push("ajamiCodepoints must be an array");
   } else if (typeof entry.ajami === "string") {
@@ -213,6 +216,7 @@ export function createGeneratedEntry({
   if (!["candidate", "provisional", "ambiguous", "blocked"].includes(status)) {
     throw new Error(`generated lexicon status is not permitted: ${status}`);
   }
+  ajami = ajami.normalize("NFC");
   const tokenized = tokenize(boko);
   const entry = {
     boko,
