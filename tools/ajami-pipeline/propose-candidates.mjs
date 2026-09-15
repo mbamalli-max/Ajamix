@@ -578,7 +578,7 @@ export function proposeCandidates(queue) {
         question.proposedHCategory = proposal.hCategory;
       }
     }
-    entry.candidateFullAjami = buildCandidateFullAjami(entry);
+    entry.candidateFullAjami = buildCandidateFullAjami(entry)?.normalize("NFC") ?? null;
     entry.candidateFullCodepoints = entry.candidateFullAjami
       ? formatCodePoints(entry.candidateFullAjami)
       : [];

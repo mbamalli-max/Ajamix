@@ -80,7 +80,7 @@ test("ratified decisions determine materialised spellings", () => {
 
   assert.equal(entryFor(lexicon.entries, "a").ajami, "أَ");
   assert.equal(entryFor(lexicon.entries, "abu").ajami, "أَبُ");
-  assert.equal(entryFor(lexicon.entries, "hannu").ajami, "هَࢽُّ");
+  assert.equal(entryFor(lexicon.entries, "hannu").ajami, "هَࢽُّ");
   assert.equal(entryFor(lexicon.entries, "ɗaya").ajami, "طَیَ");
 });
 

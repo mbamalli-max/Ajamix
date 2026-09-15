@@ -65,12 +65,18 @@ test("read-only fixture scan detects both known defect shapes and preserves sour
 
     const report = validateContentFile(contentPath);
 
-    assert.equal(report.summary.knownDefectSelfTests.passed, true);
-    assert.equal(report.summary.knownDefectSelfTests.pnMaths01PresentationFormsDetected, true);
-    assert.equal(report.summary.knownDefectSelfTests.v08LatinVWithFathaDetected, true);
+    assert.equal(report.summary.historicalDefectsDetectedInSource.pnMaths01PresentationFormsDetected, true);
+    assert.equal(report.summary.historicalDefectsDetectedInSource.v08LatinVWithFathaDetected, true);
     assert.equal(report.summary.sourceIntegrity.sourceUnchanged, true);
     assert.deepEqual(fs.readFileSync(contentPath), before);
   } finally {
     fs.rmSync(temporaryDirectory, { recursive: true, force: true });
   }
+});
+
+test("live content has neither historical defect shape", () => {
+  const report = validateContentFile();
+
+  assert.equal(report.summary.historicalDefectsDetectedInSource.pnMaths01PresentationFormsDetected, false);
+  assert.equal(report.summary.historicalDefectsDetectedInSource.v08LatinVWithFathaDetected, false);
 });

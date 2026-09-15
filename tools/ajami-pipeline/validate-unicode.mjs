@@ -389,10 +389,9 @@ export function validateContentFile(contentPath = CONTENT_PATH) {
       findingCount: findings.length,
       fieldsWithFindings: new Set(findings.map((item) => item.field)).size,
       byRule: countBy(findings, (item) => item.rule),
-      knownDefectSelfTests: {
+      historicalDefectsDetectedInSource: {
         pnMaths01PresentationFormsDetected: knownPresentationDetected,
         v08LatinVWithFathaDetected: knownV08Detected,
-        passed: knownPresentationDetected && knownV08Detected,
       },
       sourceIntegrity: {
         sha256Before: beforeHash,

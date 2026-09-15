@@ -328,7 +328,7 @@ export function materializeEntry(entry) {
   if (isExcludedReviewEntry(entry)) {
     throw new Error(`${entry.boko}: excluded review entry cannot be materialised`);
   }
-  const ajami = materializeAjami(entry);
+  const ajami = materializeAjami(entry).normalize("NFC");
   const lexiconEntry = {
     boko: entry.boko,
     normalizedBoko: normalizeBoko(entry.boko),

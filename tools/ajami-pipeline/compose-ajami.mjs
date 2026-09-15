@@ -77,13 +77,13 @@ function replaceSuffix(value, oldSuffix, newSuffix) {
 function contextSpelling(entry, previousWord) {
   const key = normalizeBoko(entry.boko);
   const rule = entry.contextRule;
-  if (!rule) return entry.ajami;
+  if (!rule) return entry.ajami.normalize("NFC");
 
   if (key === "ko") {
     // The stored spelling is Muhammad's exact reviewer-supplied lexical
     // exception. It must pass through verbatim, never be reconstructed.
     return rule.exceptions?.length === 0 && /lexical exception/iu.test(rule.default)
-      ? entry.ajami
+      ? entry.ajami.normalize("NFC")
       : null;
   }
 
@@ -116,7 +116,7 @@ function contextSpelling(entry, previousWord) {
 
   const selectedSuffix = codePointsFromDecision(decision);
   if (!selectedSuffix) return null;
-  return replaceSuffix(entry.ajami, defaultSuffix, selectedSuffix);
+  return replaceSuffix(entry.ajami, defaultSuffix, selectedSuffix)?.normalize("NFC") ?? null;
 }
 
 export function assertCleanAjami(value) {
@@ -165,7 +165,7 @@ export function analyzeAjamiComposition(bokoString, lexiconMap) {
   if (uncoveredWords.length) {
     return { ajami: null, uncoveredWords };
   }
-  const ajami = output.join("");
+  const ajami = output.join("").normalize("NFC");
   assertCleanAjami(ajami);
   return { ajami, uncoveredWords: [] };
 }
