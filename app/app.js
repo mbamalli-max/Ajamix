@@ -106,6 +106,7 @@
     activities: [],
     glossary: [],
     progress: [],
+    learningBrowser: { scope: "", query: "", subject: "", status: "all" },
     route: { name: "loading", moduleId: null },
     quizSession: null,
     quizResults: null,
@@ -1543,6 +1544,17 @@
     document.addEventListener("change", function (event) {
       handleChange(event).catch(logError);
     });
+    document.addEventListener("input", function (event) {
+      if (!event.target.matches("[data-learning-search]")) return;
+      state.learningBrowser.query = event.target.value;
+      var position = event.target.selectionStart;
+      render();
+      var search = document.querySelector("[data-learning-search]");
+      if (search) {
+        search.focus({ preventScroll: true });
+        if (position !== null) search.setSelectionRange(position, position);
+      }
+    });
     document.addEventListener("error", handleImageLoadError, true);
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.addEventListener("message", function (event) {
@@ -1577,6 +1589,26 @@
   async function handleClick(event) {
     var target = event.target.closest("[data-route], [data-action], [data-grade-band]");
     if (!target) {
+      return;
+    }
+
+    if (target.dataset.action === "filter-learning-subject" || target.dataset.action === "filter-learning-status") {
+      var filterKey = target.dataset.action === "filter-learning-subject" ? "subject" : "status";
+      state.learningBrowser[filterKey] = target.dataset.filterValue;
+      var focusId = target.id;
+      render();
+      var filterButton = document.getElementById(focusId);
+      if (filterButton) filterButton.focus({ preventScroll: true });
+      return;
+    }
+
+    if (target.dataset.action === "clear-learning-filters") {
+      state.learningBrowser.query = "";
+      state.learningBrowser.subject = "";
+      state.learningBrowser.status = "all";
+      render();
+      var searchInput = document.querySelector("[data-learning-search]");
+      if (searchInput) searchInput.focus({ preventScroll: true });
       return;
     }
 
@@ -3275,9 +3307,9 @@
 
   function renderTabs() {
     var tabs = [
-      { name: "learning-path", label: ha("Koyo"), route: "#/learning-path" },
-      { name: "progress", label: ha("Ci gaba"), route: "#/progress" },
-      { name: "glossary", label: ha("Kalmomi"), route: "#/glossary" },
+      { name: "learning-path", label: ha("Koyo"), accessibleName: "Koyo", icon: "▤", route: "#/learning-path" },
+      { name: "progress", label: ha("Ci gaba"), accessibleName: "Ci gaba", icon: "↗", route: "#/progress" },
+      { name: "glossary", label: ha("Kalmomi"), accessibleName: "Kalmomi", icon: "≡", route: "#/glossary" },
     ];
 
     return [
@@ -3290,7 +3322,7 @@
               '" type="button" data-route="' +
               escapeAttribute(tab.route) +
               '">',
-            tab.label,
+            '<span aria-hidden="true">' + tab.icon + '</span> ' + (tab.label || '<span class="sr-only">' + tab.accessibleName + '</span>'),
             "</button>",
           ].join("");
         })
@@ -3594,9 +3626,95 @@
   }
 
   function getNextLearningPathEntry(learningPath) {
-    return learningPath.find(function (entry) {
-      return entry.state === "in-progress" || entry.state === "available";
-    }) || null;
+    var started = learningPath.filter(function (entry) { return entry.state === "in-progress"; });
+    started.sort(function (a, b) {
+      return (Date.parse(b.record.lastAccessedAt) || 0) - (Date.parse(a.record.lastAccessedAt) || 0);
+    });
+    return started[0] || learningPath.find(function (entry) { return entry.state === "available"; }) || null;
+  }
+
+  function normalizeLearningSearch(value) {
+    return String(value || "").normalize("NFD").replace(/\p{M}/gu, "")
+      .replace(/\u0640/g, "").replace(/[\u2019\u02BC]/g, "'").toLowerCase().trim();
+  }
+
+  function getLearningSubjectKey(module) {
+    return String(module.subject || module.subjectHa || module.subjectEn || "");
+  }
+
+  function getLearningBrowser() {
+    var scope = state.settings.trackPreference + ":" + state.settings.gradeBand;
+    if (state.learningBrowser.scope !== scope) {
+      state.learningBrowser = { scope: scope, query: "", subject: "", status: "all" };
+    }
+    return state.learningBrowser;
+  }
+
+  function filterLearningPath(learningPath, filters) {
+    var terms = normalizeLearningSearch(filters.query).split(/\s+/).filter(Boolean);
+    return learningPath.filter(function (entry) {
+      if (filters.subject && getLearningSubjectKey(entry.module) !== filters.subject) return false;
+      if (filters.status === "ready" && entry.state !== "available" && entry.state !== "in-progress") return false;
+      if (filters.status === "completed" && entry.state !== "completed") return false;
+      var module = entry.module;
+      var text = normalizeLearningSearch([module.id, module.titleHa, module.titleEn, module.titleAjami,
+        module.subject, module.subjectHa, module.subjectEn, module.subjectAjami].join(" "));
+      return terms.every(function (term) { return text.indexOf(term) >= 0; });
+    });
+  }
+
+  function renderLearningBrowser(learningPath, visiblePath) {
+    var filters = getLearningBrowser();
+    var subjects = [];
+    learningPath.forEach(function (entry) {
+      var key = getLearningSubjectKey(entry.module);
+      if (!subjects.some(function (subject) { return subject.key === key; })) {
+        subjects.push({ key: key, module: entry.module });
+      }
+    });
+    function button(id, action, value, active, label, accessibleName) {
+      return '<button id="' + id + '" class="learning-filter" type="button" data-action="' + action +
+        '" data-filter-value="' + escapeAttribute(value) + '" aria-pressed="' + active +
+        '" aria-label="' + escapeAttribute(accessibleName) + '">' + label + '</button>';
+    }
+    var active = filters.query || filters.subject || filters.status !== "all";
+    return [
+      '<section class="learning-browser" aria-label="Nemo darasi">',
+      '<label class="learning-search-label" for="learning-search">' + ha("Nemo darasi") + '</label>',
+      '<div class="learning-search-row"><span aria-hidden="true">⌕</span>',
+      '<input id="learning-search" data-learning-search type="text" inputmode="search" autocomplete="off" dir="auto"',
+      ' aria-label="Nemo darasi" placeholder="' + escapeAttribute(state.settings.scriptMode === "ajami" ? "" : "Suna, fanni, ko lambar darasi") +
+      '" value="' + escapeAttribute(filters.query) + '">',
+      active ? '<button type="button" class="learning-clear" data-action="clear-learning-filters" aria-label="Share bincike">×</button>' : "",
+      '</div><div class="learning-filter-row" role="group" aria-label="Fanni">',
+      button("learning-subject-all", "filter-learning-subject", "", !filters.subject, '<span aria-hidden="true">▦</span> ' + ha("Duka"), "Dukkan fannoni"),
+      subjects.map(function (subject, index) {
+        return button("learning-subject-" + index, "filter-learning-subject", subject.key, filters.subject === subject.key,
+          getDisplaySubject(subject.module), subject.module.subjectHa || subject.key);
+      }).join(""),
+      '</div><div class="learning-browser-footer"><div class="learning-filter-row" role="group" aria-label="Ci gaban darasi">',
+      button("learning-status-all", "filter-learning-status", "all", filters.status === "all", '<span aria-hidden="true">▦</span> ' + ha("Duka"), "Dukkan darussa"),
+      button("learning-status-ready", "filter-learning-status", "ready", filters.status === "ready", '<span aria-hidden="true">▶</span> ' + ha("A shirye"), "Darussan da za ka iya budewa"),
+      button("learning-status-completed", "filter-learning-status", "completed", filters.status === "completed", '<span aria-hidden="true">✓</span> ' + ha("An kammala"), "Darussan da aka kammala"),
+      '</div><output class="learning-result-count" aria-live="polite" aria-label="Yawan sakamako">' + visiblePath.length + ' / ' + learningPath.length + '</output></div>',
+      '</section>'
+    ].join("");
+  }
+
+  function renderLearningContinue(entry) {
+    if (!entry) return "";
+    return '<button class="learning-continue" type="button" data-action="open-lesson" data-module-id="' +
+      escapeAttribute(entry.module.id) + '"><span class="learning-continue-copy"><span class="learning-continue-label">' +
+      ha(entry.state === "in-progress" ? "Ci gaba da koyo" : "Fara darasi") + '</span><strong>' +
+      getDisplayTitleMarkup(entry.module) + '</strong><span class="learning-continue-meta">' +
+      escapeHtml(entry.module.id) + ' · ' + getDisplaySubject(entry.module) +
+      '</span></span><span class="learning-continue-arrow" aria-hidden="true">▶</span></button>';
+  }
+
+  function renderLearningEmptyState() {
+    return '<section class="learning-empty"><span aria-hidden="true">⌕</span><p>' +
+      ha("Ba a sami darasi ba.") + '</p><button class="secondary-btn" type="button" data-action="clear-learning-filters" aria-label="Nuna duk darussa">' +
+      '<span aria-hidden="true">↺</span> ' + ha("Nuna duk darussa") + '</button></section>';
   }
 
   function getModuleAccessState(moduleId) {
@@ -5356,16 +5474,15 @@
     }
 
     return [
-      '<div class="helper-row"><span class="pill">' + ha("Hanya yanzu: ") + ha(getTrackLabel(currentTrack)) + "</span></div>",
-      '<div class="btn-row"><button class="ghost-btn" type="button" data-action="track-set-' + escapeAttribute(alternateTrack) + '">' +
-        ha("Wuce zuwa " + getTrackLabel(alternateTrack)) +
-        "</button></div>",
+      '<button class="ghost-btn learning-track-switch" type="button" aria-label="' + escapeAttribute("Wuce zuwa " + getTrackLabel(alternateTrack)) + '" data-action="track-set-' + escapeAttribute(alternateTrack) + '">' +
+        '<span aria-hidden="true">⇄</span> ' + ha("Canja hanya") + "</button>",
     ].join("");
   }
 
   function renderHomeScreen() {
     var adSlot = renderAdSlot();
     var learningPath = buildLearningPath();
+    var visiblePath = filterLearningPath(learningPath, getLearningBrowser());
     var trackSwitchControls = renderTrackSwitchControls();
     var isVocational = state.settings.trackPreference === "vocational";
     var caregiverEntryMarkup = [
@@ -5401,7 +5518,7 @@
     var progressPct = Math.round((completedCount / learningPath.length) * 100);
 
     if (isVocational) {
-      var vocationalCards = learningPath
+      var vocationalCards = visiblePath
         .map(function (entry) {
           var module = entry.module;
           var record = entry.record;
@@ -5440,14 +5557,11 @@
 
       return [
         adSlot,
-        caregiverEntryMarkup,
         '<section class="screen-panel path-overview">',
-        '<div class="screen-heading">',
-        '<p class="eyebrow">' + ha("Hanyar koyo") + "</p>",
-        "<h2>" + ha("Hanyar Kasuwanci") + "</h2>",
-        '<p class="screen-copy">' + ha("Darussan kasuwanci. Wasu suna buƙatar a kammala wani kafin a bude su.") + "</p>",
-        "</div>",
+        '<div class="learning-overview-heading">',
+        state.settings.scriptMode === "ajami" ? "" : "<h2>" + ha("Darussan manya") + "</h2>",
         trackSwitchControls,
+        "</div>",
         '<div class="path-progress-shell">',
         '<div class="path-progress-copy"><strong>' +
           completedCount +
@@ -5457,18 +5571,16 @@
         '<div class="path-progress-rail"><span class="path-progress-fill" style="width: ' + progressPct + '%;"></span></div>',
         "</div>",
         nextModule
-          ? '<div class="path-next-callout"><span class="pill">' + ha("Na gaba") + "</span><strong>" +
-            getDisplayTitleMarkup(nextModule.module) +
-            '</strong><span class="muted-copy">' +
-            getPathStateCopy(nextModule.state) +
-            "</span></div>"
+          ? renderLearningContinue(nextModule)
           : '<div class="path-next-callout"><span class="pill">' + ha("Madalla") + "</span><strong>" + ha("Ka kammala duk darussan kasuwanci.") + "</strong></div>",
         "</section>",
-        '<section class="voc-grid" aria-label="Vocational courses">' + vocationalCards + "</section>",
+        renderLearningBrowser(learningPath, visiblePath),
+        visiblePath.length ? '<section class="voc-grid" aria-label="Vocational courses">' + vocationalCards + "</section>" : renderLearningEmptyState(),
+        caregiverEntryMarkup,
       ].join("");
     }
 
-    var moduleCards = learningPath
+    var moduleCards = visiblePath
       .map(function (entry, index) {
         var module = entry.module;
         var record = entry.record;
@@ -5490,7 +5602,7 @@
             '>',
           '<div class="path-track" aria-hidden="true">',
           renderPathMarker(entry, module, record),
-          index < learningPath.length - 1 ? '<span class="path-line"></span>' : "",
+          index < visiblePath.length - 1 ? '<span class="path-line"></span>' : "",
           "</div>",
           '<div class="module-item path-card">',
           '<div class="path-card-header">',
@@ -5521,14 +5633,11 @@
 
     return [
       adSlot,
-      caregiverEntryMarkup,
       '<section class="screen-panel path-overview">',
-      '<div class="screen-heading">',
-      '<p class="eyebrow">' + ha("Hanyar koyo") + "</p>",
-      "<h2>" + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + " — " + ha("Hanyar koyo") + "</h2>",
-      '<p class="screen-copy">' + ha("Modules suna bude daya bayan daya. Ka ci quiz da aƙalla 3/5 domin bude darasi na gaba.") + "</p>",
-      "</div>",
+      '<div class="learning-overview-heading">',
+      "<h2>" + escapeHtml(getGradeBandLabel(state.settings.gradeBand)) + "</h2>",
       trackSwitchControls,
+      "</div>",
       '<div class="path-progress-shell">',
       '<div class="path-progress-copy"><strong>' +
         completedCount +
@@ -5538,14 +5647,12 @@
       '<div class="path-progress-rail"><span class="path-progress-fill" style="width: ' + progressPct + '%;"></span></div>',
       "</div>",
       nextModule
-        ? '<div class="path-next-callout"><span class="pill">' + ha("Na gaba") + "</span><strong>" +
-          getDisplayTitleMarkup(nextModule.module) +
-          '</strong><span class="muted-copy">' +
-          getPathStateCopy(nextModule.state) +
-          "</span></div>"
+        ? renderLearningContinue(nextModule)
         : '<div class="path-next-callout"><span class="pill">' + ha("Madalla") + "</span><strong>" + ha("Ka kammala duk modules na wannan mataki.") + "</strong></div>",
       "</section>",
-      '<section class="path-rail" aria-label="Learning path modules">' + moduleCards + "</section>",
+      renderLearningBrowser(learningPath, visiblePath),
+      visiblePath.length ? '<section class="path-rail" aria-label="Learning path modules">' + moduleCards + "</section>" : renderLearningEmptyState(),
+      caregiverEntryMarkup,
     ].join("");
   }
 
@@ -7253,7 +7360,7 @@
       if (!headers.has("Content-Type")) {
         headers.set("Content-Type", "application/json; charset=utf-8");
       }
-      await caches.open("ajamix-content-ajamix-v24").then(function (cache) {
+      await caches.open("ajamix-content-ajamix-v25").then(function (cache) {
         return cache.put(
           new Request(new URL("./content.json", location.href).toString(), {
             method: "GET",

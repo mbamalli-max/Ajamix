@@ -5,6 +5,73 @@ import vm from "node:vm";
 
 const APP_PATH = new URL("./app.js", import.meta.url);
 
+test("lesson discovery filters existing path states without unlocking a matching lesson", () => {
+  const { renderer } = loadRenderer();
+  const content = JSON.parse(fs.readFileSync(new URL("./content.json", import.meta.url), "utf8"));
+  renderer.setLearningState(content.modules, [], { trackPreference: "formal", gradeBand: "p3", scriptMode: "latin" });
+  const path = renderer.buildLearningPath();
+  const locked = path.find((entry) => entry.state === "locked");
+  const filtered = renderer.filterLearningPath(path, { query: locked.module.id, status: "all", subject: "" });
+  assert.equal(filtered.length, 1);
+  assert.equal(filtered[0].state, "locked");
+  renderer.setLearningFilters({ query: locked.module.id });
+  const html = renderer.renderHomeScreen();
+  assert.match(html, /is-locked[^>]+disabled/);
+  assert.doesNotMatch(html, new RegExp('data-action="open-lesson" data-module-id="' + locked.module.id + '"'));
+  assert.equal(renderer.filterLearningPath(path, { query: locked.module.id, status: "ready" }).length, 0);
+});
+
+test("lesson search accepts unvowelled Ajami, apostrophe variants, IDs and combined subject/status filters", () => {
+  const { renderer } = loadRenderer();
+  const entries = [
+    { module: { id: "CT01", subject: "critical-thinking", titleHa: "Ra'ayi", titleAjami: "رَأْیِ" }, record: {}, state: "completed" },
+    { module: { id: "V01", subject: "vocational", titleHa: "Haraji", titleAjami: "هَرَجِ" }, record: {}, state: "available" }
+  ];
+  assert.equal(renderer.filterLearningPath(entries, { query: "\u0631\u0623\u06CC" })[0].module.id, "CT01");
+  assert.equal(renderer.filterLearningPath(entries, { query: "RA’AYI", status: "completed", subject: "critical-thinking" }).length, 1);
+  assert.equal(renderer.filterLearningPath(entries, { query: "ct01", status: "ready" }).length, 0);
+  assert.equal(renderer.filterLearningPath(entries, { query: "haraji v01" }).length, 1);
+});
+
+test("continue learning prioritizes most recent unfinished lesson and falls back to an available one", () => {
+  const { renderer } = loadRenderer();
+  const entries = [
+    { module: { id: "new" }, record: {}, state: "available" },
+    { module: { id: "old" }, record: { lastAccessedAt: "2026-09-01T00:00:00Z" }, state: "in-progress" },
+    { module: { id: "recent" }, record: { lastAccessedAt: "2026-09-18T00:00:00Z" }, state: "in-progress" }
+  ];
+  assert.equal(renderer.getNextLearningPathEntry(entries).module.id, "recent");
+  assert.equal(renderer.getNextLearningPathEntry(entries.slice(0, 1)).module.id, "new");
+  assert.equal(renderer.getNextLearningPathEntry([{ state: "completed", record: {} }]), null);
+  assert.equal(entries[0].module.id, "new", "recommendation must not reorder the curriculum");
+});
+
+test("learning filters survive rerenders, reset on track/grade change, and escape search input", () => {
+  const { renderer } = loadRenderer();
+  const content = JSON.parse(fs.readFileSync(new URL("./content.json", import.meta.url), "utf8"));
+  renderer.setLearningState(content.modules, [], { trackPreference: "vocational", gradeBand: "p3", scriptMode: "latin" });
+  renderer.setLearningFilters({ query: '\"><img src=x onerror=alert(1)>', status: "completed" });
+  assert.match(renderer.renderHomeScreen(), /learning-empty/);
+  assert.doesNotMatch(renderer.renderHomeScreen(), /<img src=x/);
+  assert.equal(renderer.getLearningBrowser().status, "completed");
+  renderer.setLearningSettings({ trackPreference: "formal" });
+  assert.equal(renderer.getLearningBrowser().query, "");
+  renderer.setLearningFilters({ subject: "maths" });
+  renderer.setLearningSettings({ gradeBand: "p4" });
+  assert.equal(renderer.getLearningBrowser().subject, "");
+});
+
+test("Ajami discovery uses managed subject/title fields without synthesizing new Ajami", () => {
+  const { renderer } = loadRenderer();
+  const content = JSON.parse(fs.readFileSync(new URL("./content.json", import.meta.url), "utf8"));
+  renderer.setLearningState(content.modules, [], { trackPreference: "vocational", gradeBand: "p3", scriptMode: "ajami" });
+  const html = renderer.renderHomeScreen();
+  assert.match(html, /learning-browser/);
+  assert.match(html, /learning-continue/);
+  assert.match(html, /aria-label="Nemo darasi"/);
+  assert.doesNotMatch(html, />Fara darasi</);
+});
+
 function loadRenderer() {
   const source = fs.readFileSync(APP_PATH, "utf8");
   const closeMarker = "\n})();";
@@ -15,6 +82,19 @@ function loadRenderer() {
   globalThis.__ajamixRendererTest = {
     setScriptMode: function (mode) { state.settings.scriptMode = mode; },
     setOnboardingScriptMode: function (mode) { onboardingData.scriptMode = mode; },
+    setLearningState: function (modules, progress, settings) {
+      state.modules = modules;
+      state.progress = progress;
+      Object.assign(state.settings, settings);
+      state.learningBrowser = { scope: "", query: "", subject: "", status: "all" };
+    },
+    setLearningFilters: function (filters) { Object.assign(getLearningBrowser(), filters); },
+    setLearningSettings: function (settings) { Object.assign(state.settings, settings); },
+    getLearningBrowser: getLearningBrowser,
+    filterLearningPath: filterLearningPath,
+    buildLearningPath: buildLearningPath,
+    getNextLearningPathEntry: getNextLearningPathEntry,
+    renderHomeScreen: renderHomeScreen,
     buildQuizSession: function (module, generatedQuestions) {
       state.modules = [module];
       state.quizSession = null;
