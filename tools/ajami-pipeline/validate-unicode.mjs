@@ -325,9 +325,37 @@ export function validateContentFile(contentPath = CONTENT_PATH) {
   let stringsScanned = 0;
   let ajamiFieldsScanned = 0;
 
-  function walk(value, parts = [], entityId = "_root") {
+  function scanString(value, parts, entityId, { nativeHausa, sourceObject, sourceKey }) {
+    stringsScanned += 1;
+    if (nativeHausa) ajamiFieldsScanned += 1;
+    const stringFindings = validateUnicodeString(value, {
+      nativeHausa,
+      newlyGenerated: false,
+      sourceBoko: nativeHausa ? sourceBokoFor(sourceObject, sourceKey) : null,
+    });
+    for (const item of stringFindings) {
+      findings.push({
+        file: path.relative(REPO_ROOT, contentPath),
+        field: parts.join("."),
+        entityId,
+        string: value,
+        codePointSequence: formatCodePoints(value),
+        ...item,
+      });
+    }
+  }
+
+  function walk(value, parts = [], entityId = "_root", arrayStringContext = null) {
     if (Array.isArray(value)) {
-      value.forEach((child, index) => walk(child, [...parts, index], entityId));
+      value.forEach((child, index) =>
+        walk(child, [...parts, index], entityId, arrayStringContext)
+      );
+      return;
+    }
+    if (typeof value === "string") {
+      if (arrayStringContext) {
+        scanString(value, parts, entityId, arrayStringContext);
+      }
       return;
     }
     if (!value || typeof value !== "object") return;
@@ -335,26 +363,19 @@ export function validateContentFile(contentPath = CONTENT_PATH) {
     for (const [key, child] of Object.entries(value)) {
       const childParts = [...parts, key];
       if (typeof child === "string") {
-        stringsScanned += 1;
         const nativeHausa = isAjamiField(key);
-        if (nativeHausa) ajamiFieldsScanned += 1;
-        const stringFindings = validateUnicodeString(child, {
+        scanString(child, childParts, currentEntity, {
           nativeHausa,
-          newlyGenerated: false,
-          sourceBoko: nativeHausa ? sourceBokoFor(value, key) : null,
+          sourceObject: value,
+          sourceKey: key,
         });
-        for (const item of stringFindings) {
-          findings.push({
-            file: path.relative(REPO_ROOT, contentPath),
-            field: childParts.join("."),
-            entityId: currentEntity,
-            string: child,
-            codePointSequence: formatCodePoints(child),
-            ...item,
-          });
-        }
       } else {
-        walk(child, childParts, currentEntity);
+        const nativeHausa = isAjamiField(key);
+        walk(child, childParts, currentEntity, {
+          nativeHausa,
+          sourceObject: value,
+          sourceKey: key,
+        });
       }
     }
   }

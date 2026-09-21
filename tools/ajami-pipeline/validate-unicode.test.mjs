@@ -74,6 +74,58 @@ test("read-only fixture scan detects both known defect shapes and preserves sour
   }
 });
 
+test("array-valued Ajami fields scan each element with the owning key and entity", () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "ajami-unicode-array-"));
+  try {
+    const contentPath = path.join(temporaryDirectory, "content.json");
+    const fixture = {
+      modules: [{
+        id: "array-module-01",
+        quiz: [{
+          distractorFormulasAjami: ["ب", "بَّ"],
+        }],
+      }],
+    };
+    fs.writeFileSync(contentPath, `${JSON.stringify(fixture, null, 2)}\n`);
+
+    const report = validateContentFile(contentPath);
+    const finding = report.findings.find(
+      (item) => item.rule === "NORMALIZATION_INSTABILITY_NFC"
+    );
+
+    assert.ok(finding);
+    assert.equal(finding.field, "modules.0.quiz.0.distractorFormulasAjami.1");
+    assert.equal(finding.entityId, "array-module-01");
+    assert.equal(report.summary.sourceIntegrity.sourceUnchanged, true);
+  } finally {
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("array string elements contribute to overall and Ajami scan counts", () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "ajami-unicode-array-counts-"));
+  try {
+    const contentPath = path.join(temporaryDirectory, "content.json");
+    const fixture = {
+      modules: [{
+        id: "array-count-module",
+        titleAjami: "ب",
+        quiz: [{
+          distractorFormulasAjami: ["ت", "ث"],
+        }],
+      }],
+    };
+    fs.writeFileSync(contentPath, `${JSON.stringify(fixture, null, 2)}\n`);
+
+    const report = validateContentFile(contentPath);
+
+    assert.equal(report.summary.stringsScanned, 4);
+    assert.equal(report.summary.ajamiFieldsScanned, 3);
+  } finally {
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
 test("live content has neither historical defect shape", () => {
   const report = validateContentFile();
 
