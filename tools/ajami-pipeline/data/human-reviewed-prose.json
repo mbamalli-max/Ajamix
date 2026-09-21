@@ -7,11 +7,11 @@
       "category": "no_currently_flagged_risk",
       "sourceHa": "Yaya za ka haɗa duk waɗannan tambayoyi zuwa jerin dubawa guda kafin ka karɓi iƙirari?",
       "sourceHash": "sha256:eb06dfa09d89b267862de22ec733da0ec7810d9ac7fdfb837d97b22867a2553f",
-      "reviewedAjami": null,
-      "status": "deferred",
-      "reviewer": null,
-      "reviewDate": null,
-      "note": null
+      "reviewedAjami": "یَیَ زَ کَ هَطَ دُکْ وَطَࢽَّࢽْ تَمْبَیُیِ زُوَ جٜرِࢽْ دُبَوَا غُدَا کَࢻِࢽْ کَ کَرْݑِ إِࢼِرَرِ?",
+      "status": "approved",
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-09-14",
+      "note": "Approved exactly as drafted from the ratified-lexicon composer output, including the trailing Latin U+003F as drafted."
     },
     {
       "moduleId": "CT07",
@@ -19,11 +19,11 @@
       "category": "context_sensitive_candidate",
       "sourceHa": "Idan ba ka da cikakken tabbaci, wane mataki zai iya rage haɗari yayin da kake neman ƙarin bayani?",
       "sourceHash": "sha256:940f43aa3997421d9417ec790c987e76959e8dea1e65611d418cf349ab16064c",
-      "reviewedAjami": null,
-      "status": "deferred",
-      "reviewer": null,
-      "reviewDate": null,
-      "note": null
+      "reviewedAjami": "إِدَࢽْ بَ کَ دَ ثِکَکّٜࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى زَیْ إِیَ رَغٜ هَطَرِى یَیِࢽْ دَ کَکٜىٰ ࢽٜمَࢽْ ࢼَرِࢽْ بَیَࢽِى?",
+      "status": "approved",
+      "reviewer": "Muhammad",
+      "reviewDate": "2026-09-14",
+      "note": "Approved exactly as drafted from the ratified-lexicon composer output."
     },
     {
       "moduleId": "CT06",
@@ -35,7 +35,7 @@
       "status": "deferred",
       "reviewer": null,
       "reviewDate": null,
-      "note": null
+      "note": "Deferred 2026-09-14. Cannot compose: rinjayi and dubawarka are not in the ratified lexicon. A hand-supplied Ajami string was offered but used standard Arabic letterforms (U+0646 noon, U+0643 kaf, U+0641 feh, U+064A yeh, U+064C dammatan) where the ratified lexicon uses Hausa Ajami forms (U+08BD, U+06A9, U+08BB, U+06CC, U+064F); Muhammad confirmed this was a keyboard artifact, not an orthography decision. Blocked pending lexicon ratification of the two missing words."
     },
     {
       "moduleId": "V07",
@@ -47,7 +47,7 @@
       "status": "deferred",
       "reviewer": null,
       "reviewDate": null,
-      "note": null
+      "note": "Deferred 2026-09-14. Cannot compose: kware is not in the ratified lexicon, and VAT is an English loanword excluded at word level (precedent: chat/stock/form/Mobile/Money). A hand-supplied string was offered but carried the same standard-Arabic keyboard artifact as CT06 (14 occurrences of U+0646/U+0643/U+064A) plus U+06AF gaf where the lexicon uses U+063A ghain, and U+06A4 veh as a first-of-its-kind manual transliteration of an English acronym. Deferred by Muhammad on the same grounds as CT06; the veh/loanword transliteration question is unresolved and needs its own decision."
     },
     {
       "moduleId": "FL04",
@@ -59,7 +59,7 @@
       "status": "deferred",
       "reviewer": null,
       "reviewDate": null,
-      "note": null
+      "note": "Deferred 2026-09-14. Review surfaced a LEXICON defect, not a prose issue: Muhammad corrected the ratified spelling of doka (ratified by him 2026-08-03, status human_reviewed). Proposed respelling uses correct Hausa Ajami letterforms (U+06A9 keheh, no keyboard artifact). The correction affects 10 content.json strings and 1 lexicon entry, so it must be applied by re-ratifying the lexicon entry and regenerating, NOT by a single-sentence prose override, which would leave the same word spelled two ways. FL04 re-enters review after doka is re-ratified. See tasks/2026-09-14-doka-reratification-note.md."
     },
     {
       "moduleId": "FL05",
@@ -71,7 +71,7 @@
       "status": "deferred",
       "reviewer": null,
       "reviewDate": null,
-      "note": null
+      "note": "Deferred 2026-09-14. Review surfaced a BOKO SOURCE-TEXT defect, upstream of both the prose packet and the lexicon: Muhammad ruled the source word should be the hooked-k form (ƙa/qa-ida), not ka-ida. FL05 gapTeaser.ha is the only occurrence in content.json. Correcting it changes this entry sourceHa and sourceHash, so the packet entry must be regenerated after the source fix. Also surfaced: the merged lexicon carries BOTH ka-ida (U+06A9 keheh) and ƙa-ida (U+08BC) as separately ratified entries (both Muhammad, 2026-08-03), and apostrophe rendering is inconsistent within the ƙ forms (ƙa-ida uses U+0623 alef-hamza, ƙa-idar uses U+0639 ain). See tasks/2026-09-14-qaida-source-and-doublet-note.md."
     }
   ]
 }
