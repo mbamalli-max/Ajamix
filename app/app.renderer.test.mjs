@@ -5,6 +5,46 @@ import vm from "node:vm";
 
 const APP_PATH = new URL("./app.js", import.meta.url);
 
+test("flow labels retain a visible icon and accessible text in Ajami without visible Boko", () => {
+  const { renderer } = loadRenderer();
+  renderer.setScriptMode("ajami");
+  assert.equal(renderer.renderFlowLabel("Sake quiz", "↺"), '<span aria-hidden="true">↺</span> <span class="sr-only">Sake quiz</span>');
+  renderer.setScriptMode("latin");
+  assert.equal(renderer.renderFlowLabel("Sake quiz", "↺"), '<span aria-hidden="true">↺</span> <span>Sake quiz</span>');
+  assert.doesNotMatch(renderer.renderFlowLabel("<img>", "<svg>"), /<img>|<svg>/);
+});
+
+test("Ajami quiz results separate score digits and expose next, home and retry actions", () => {
+  const { renderer } = loadRenderer();
+  const content = JSON.parse(fs.readFileSync(new URL("./content.json", import.meta.url), "utf8"));
+  renderer.setLearningState(content.modules, [], { trackPreference: "vocational", gradeBand: "p3", scriptMode: "ajami" });
+  const module = content.modules.find(m => m.id === "CT03");
+  const passed = renderer.renderResults(module, { score: 5, total: 5, passed: true, progressPassed: true, nextModuleId: "CT04" });
+  assert.match(passed, /5 \/ 5/);
+  assert.match(passed, /data-route="#\/lesson\/CT04"/);
+  assert.match(passed, /aria-hidden="true">→/);
+  assert.match(passed, /class="sr-only">Bude na gaba/);
+  const failed = renderer.renderResults(module, { score: 1, total: 5, passed: false, progressPassed: false, nextModuleId: "CT04" });
+  assert.match(failed, /data-action="retake-quiz"/);
+  assert.doesNotMatch(failed, /data-route="#\/lesson\/CT04"/);
+  assert.match(failed, /class="sr-only">Sake quiz/);
+  renderer.setScriptMode("latin");
+  assert.match(renderer.renderResults(module, { score: 5, total: 5, passed: true, progressPassed: true }), /Ka samu 5 daga cikin 5/);
+});
+
+test("Ajami post-quiz reminder keeps its defer and note controls accessible", () => {
+  const { renderer } = loadRenderer();
+  renderer.setLearningState([{ id: "CT01", useTodayPrompt: { ha: "Me za ka gwada yau?", ajami: null } }], [], { scriptMode: "ajami" });
+  const html = renderer.renderReminder("CT01");
+  for (const label of ["Wata rana", "Zan yi amfani da shi yau", "Ko ka rubuta abin da za ka gwada", "Ajiye bayanin ka"]) {
+    assert.ok(html.includes('class="sr-only">' + label + "</span>"));
+  }
+  assert.match(html, /data-action="use-today-deferred"/);
+  assert.match(html, /aria-hidden="true">→/);
+  renderer.setScriptMode("latin");
+  assert.match(renderer.renderReminder("CT01"), /<span>Wata rana<\/span>/);
+});
+
 test("lesson discovery filters existing path states without unlocking a matching lesson", () => {
   const { renderer } = loadRenderer();
   const content = JSON.parse(fs.readFileSync(new URL("./content.json", import.meta.url), "utf8"));
@@ -81,6 +121,9 @@ function loadRenderer() {
   const exports = `
   globalThis.__ajamixRendererTest = {
     setScriptMode: function (mode) { state.settings.scriptMode = mode; },
+    renderFlowLabel: renderFlowLabel,
+    renderReminder: function (moduleId) { state.retention.useTodaySheet = { moduleId: moduleId }; return renderUseTodaySheet(); },
+    renderResults: function (module, results) { state.quizResults = results; return renderQuizResultsScreen(module, {score: results.score, questions: Array(results.total)}); },
     setOnboardingScriptMode: function (mode) { onboardingData.scriptMode = mode; },
     setLearningState: function (modules, progress, settings) {
       state.modules = modules;

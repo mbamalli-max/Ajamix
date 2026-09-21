@@ -2762,10 +2762,10 @@
     var feedbackMarkup = "";
 
     if (session.feedbackState === "correct") {
-      feedbackMarkup = '<p class="quiz-feedback is-correct">' + ha("Daidai ne. Mu je tambaya ta gaba.") + "</p>";
+      feedbackMarkup = '<p class="quiz-feedback is-correct" role="status">' + renderFlowLabel("Daidai ne. Mu je tambaya ta gaba.", "✓") + "</p>";
     } else if (session.feedbackState === "incorrect") {
       feedbackMarkup =
-        '<p class="quiz-feedback is-wrong">' + ha("Ba daidai ba. Amsa ita ce ") +
+        '<p class="quiz-feedback is-wrong" role="status">' + renderFlowLabel("Ba daidai ba. Amsa ita ce ", "×") +
         getDisplayQuizOption(question.correctAnswer, question) +
         ".</p>";
     }
@@ -2793,7 +2793,7 @@
       feedbackMarkup,
       "</article>",
       '<div class="btn-row">',
-      '<button class="ghost-btn" data-route="#/learning-path" type="button">' + ha("Koma baya") + "</button>",
+      '<button class="ghost-btn" data-route="#/learning-path" type="button">' + renderFlowLabel("Koma baya", "←") + "</button>",
       "</div>",
       "</section>",
     ].join("");
@@ -5183,28 +5183,28 @@
     return [
       '<div class="retention-overlay">',
       '<section class="retention-sheet" role="dialog" aria-modal="true" aria-labelledby="use-today-title">',
-      '<p class="eyebrow">' + ha("Abin yau") + "</p>",
+      '<p class="eyebrow">' + renderFlowLabel("Abin yau", "☀") + "</p>",
       '<h3 id="use-today-title">' + renderLocalizedInline(prompt, "retention-sheet-title") + "</h3>",
       '<p class="helper-text">' + ha("Zaɓi ɗaya ko ka rubuta naka domin manhajar ta tuna maka gobe.") + "</p>",
       '<div class="btn-row">',
       '<button class="btn" type="button" data-action="use-today-yes" data-module-id="' +
         escapeAttribute(module.id) +
-        '">' + ha("Zan yi amfani da shi yau") + "</button>",
+        '">' + renderFlowLabel("Zan yi amfani da shi yau", "✓") + "</button>",
       '<button class="secondary-btn" type="button" data-action="use-today-deferred" data-module-id="' +
         escapeAttribute(module.id) +
-        '">' + ha("Wata rana") + "</button>",
+        '">' + renderFlowLabel("Wata rana", "→") + "</button>",
       "</div>",
       '<form class="ob-field retention-note-form" data-use-today-note-form data-module-id="' +
         escapeAttribute(module.id) +
         '">',
-      '<label class="ob-label" for="use-today-note-input">' + ha("Ko ka rubuta abin da za ka gwada") + "</label>",
+      '<label class="ob-label" for="use-today-note-input">' + renderFlowLabel("Ko ka rubuta abin da za ka gwada", "✎") + "</label>",
       '<textarea class="text-input retention-note-input" id="use-today-note-input" name="useTodayNote" rows="3" placeholder="' +
         escapeAttribute(getLocalizedPlainText("Misali: Zan rubuta kudin shiga na yau kafin dare")) +
         '"></textarea>',
       sheet.message
         ? '<p class="muted">' + ha(sheet.message) + "</p>"
         : "",
-      '<button class="ghost-btn" type="submit">' + ha("Ajiye bayanin ka") + "</button>",
+      '<button class="ghost-btn" type="submit">' + renderFlowLabel("Ajiye bayanin ka", "✓") + "</button>",
       "</form>",
       "</section>",
       "</div>",
@@ -5861,7 +5861,7 @@
         escapeAttribute(module.id) +
         '"' +
         (canQuiz ? "" : " disabled") +
-        ">" + ha("Fara Jarrabawa") + "</button>",
+        ">" + renderFlowLabel("Fara Jarrabawa", "▶") + "</button>",
       '<p class="helper-text" data-quiz-ready-note>' +
         ha(quizReadyText) +
         "</p>",
@@ -5969,7 +5969,7 @@
         escapeAttribute(module.id) +
         '"' +
         (canQuiz ? "" : " disabled") +
-        ">" + ha("Fara Jarrabawa") + "</button>",
+        ">" + renderFlowLabel("Fara Jarrabawa", "▶") + "</button>",
       '<p class="helper-text" data-quiz-ready-note>' + ha(quizReadyText) + "</p>",
       "</section>",
       module.microPauses && module.microPauses.length && countAnsweredMicroPauses(record) > 0
@@ -6026,7 +6026,7 @@
       '<section class="screen-panel lesson-footer-panel voc-lesson-footer">',
       '<button class="btn lesson-quiz-button" type="button" data-action="open-quiz" data-module-id="' +
         escapeAttribute(module.id) +
-        '">' + ha("Ci gaba zuwa tambayoyi") + "</button>",
+        '">' + renderFlowLabel("Ci gaba zuwa tambayoyi", "▶") + "</button>",
       '<p class="helper-text">' + ha("Ka gama karatun sassan nan. Yanzu ka gwada abin da ka fahimta.") + "</p>",
       "</section>",
     ].join("");
@@ -7360,7 +7360,7 @@
       if (!headers.has("Content-Type")) {
         headers.set("Content-Type", "application/json; charset=utf-8");
       }
-      await caches.open("ajamix-content-ajamix-v25").then(function (cache) {
+      await caches.open("ajamix-content-ajamix-v26").then(function (cache) {
         return cache.put(
           new Request(new URL("./content.json", location.href).toString(), {
             method: "GET",
@@ -8793,6 +8793,12 @@
     render();
   }
 
+  function renderFlowLabel(label, icon) {
+    return '<span aria-hidden="true">' + escapeHtml(icon) + '</span> ' +
+      '<span' + (state.settings.scriptMode === "ajami" ? ' class="sr-only"' : '') + '>' +
+      escapeHtml(label) + '</span>';
+  }
+
   function renderQuizResultsScreen(module, session) {
     var results = state.quizResults || {
       moduleId: module.id,
@@ -8814,7 +8820,7 @@
     return [
       '<section class="screen-panel quiz-shell quiz-result-screen">',
       '<div class="screen-back-row">',
-      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">' + ha("← Komawa") + "</button>",
+      '<button class="btn-back ghost-btn" type="button" data-route="#/learning-path">' + renderFlowLabel("Komawa", "←") + "</button>",
       '</div>',
       '<div class="screen-heading">',
       '<p class="eyebrow">' + ha("Sakamakon Quiz") + "</p>",
@@ -8824,9 +8830,9 @@
           : getDisplayTitleMarkup(module)) +
         "</h2>",
       vocationalTodayPrompt,
-      '<p class="screen-copy">' + ha("Ka samu ") +
+      '<p class="screen-copy" dir="ltr">' + ha("Ka samu ") +
         escapeHtml(String(results.score)) +
-        ha(" daga cikin ") +
+        (state.settings.scriptMode === "ajami" ? " / " : ha(" daga cikin ")) +
         escapeHtml(String(results.total)) +
         ".</p>",
       "</div>",
@@ -8835,7 +8841,7 @@
       '<p class="quiz-result-copy ' +
         (results.passed ? "is-success" : "is-fail") +
         '">' +
-        ha(results.passed ? "An yi nasara!" : "Sake gwadawa") +
+        renderFlowLabel(results.passed ? "An yi nasara!" : "Sake gwadawa", results.passed ? "✓" : "↺") +
         "</p>",
       '<p class="helper-text">' +
         ha(
@@ -8854,15 +8860,15 @@
       nextModule && results.progressPassed
         ? '<button class="btn" type="button" data-route="#/lesson/' +
           escapeAttribute(nextModule.id) +
-          '">' + ha("Bude na gaba") + "</button>"
-        : '<button class="btn" type="button" data-route="#/learning-path">' + ha("Koma hanyar koyo") + "</button>",
+          '">' + renderFlowLabel("Bude na gaba", "→") + "</button>"
+        : '<button class="btn" type="button" data-route="#/learning-path">' + renderFlowLabel("Koma hanyar koyo", "⌂") + "</button>",
       !results.passed
         ? '<button class="secondary-btn" type="button" data-action="retake-quiz" data-module-id="' +
           escapeAttribute(module.id) +
-          '">' + ha("Sake quiz") + "</button>"
+          '">' + renderFlowLabel("Sake quiz", "↺") + "</button>"
         : "",
       nextModule && results.progressPassed
-        ? '<button class="ghost-btn" type="button" data-route="#/learning-path">' + ha("Koma hanyar koyo") + "</button>"
+        ? '<button class="ghost-btn" type="button" data-route="#/learning-path">' + renderFlowLabel("Koma hanyar koyo", "⌂") + "</button>"
         : "",
       "</div>",
       "</section>",
