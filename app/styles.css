@@ -2715,3 +2715,31 @@ a {
 }
 
 /* ─── End Caregiver Mode ─────────────────────── */
+/* Shared-device learner selection uses the existing quiet green palette. */
+.learners-screen { max-width: 44rem; margin: 0 auto; }
+.learners-heading { margin-bottom: 1.5rem; }
+.learners-heading h2 { margin-bottom: .5rem; }
+.learner-list { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+.learner-row { display: flex; align-items: center; gap: .8rem; padding: 1rem 0; border-bottom: 1px solid #dce5df; }
+.learner-avatar { display: grid; place-items: center; flex: 0 0 2.75rem; height: 2.75rem; border-radius: 50%; background: #edf3ed; color: #1b4332; font-weight: 700; }
+.learner-row.is-current .learner-avatar { background: #1b4332; color: #fff; }
+.learner-name { flex: 1; min-width: 0; overflow-wrap: anywhere; font-weight: 600; }
+.learner-row button { flex: 0 0 auto; width: auto; max-width: 50%; min-height: 44px; }
+.learner-form { display: grid; gap: .65rem; margin-top: 1.2rem; }
+.learner-form label { font-weight: 600; }
+.learner-form-row { display: flex; gap: .65rem; }
+.learner-form input { min-width: 0; max-width: 100%; min-height: 44px; }
+.learner-form-row input { flex: 1; }
+.learner-form-row button { width: auto; flex: 0 0 auto; }
+.learner-backup > button, .learner-form > button { width: auto; justify-self: start; }
+#learners-btn { color: #fff; }
+.learner-backup { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #dce5df; }
+.learner-backup p, .learners-heading p { line-height: 1.5; }
+.learner-message { padding: .85rem; background: #edf3ed; border-radius: .5rem; overflow-wrap: anywhere; }
+@media (max-width: 420px) {
+  .learner-row { gap: .5rem; }
+  .learner-row button { padding: .65rem; }
+  .learner-form-row { flex-wrap: wrap; }
+  .learner-form-row input { flex-basis: 65%; }
+  .header-meta { flex-wrap: wrap; }
+}

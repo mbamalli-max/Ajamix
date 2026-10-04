@@ -2,7 +2,9 @@
   "use strict";
 
   var DB_NAME = "ajamix-db";
-  var DB_VERSION = 4;
+  var DB_VERSION = 4; // Keep the exact older release's database compatible.
+  var LEARNER_DB_NAME = "ajamix-learners-db";
+  var LEARNER_DB_VERSION = 5;
   var CONTENT_VERSION = "v3.0-dual-track";
   var PASSING_SCORE = 3;
   var LESSON_DEFAULT_DURATION_MS = 180000;
@@ -35,6 +37,8 @@
   var quizEngine = null;
   var contentBundleNetworkPromise = null;
   var contentBundleLoadStarted = false;
+  var learnerStore = window.AjamixLearnerStore;
+  var learnerTasks = new Set();
   var DEFAULT_STREAK_DATA = {
     lastActivityDate: null,
     streakDays: 0,
@@ -101,6 +105,14 @@
   };
   var state = {
     db: null,
+    learnerDb: null,
+    learnerEpoch: 0,
+    profileId: null,
+    profiles: [],
+    profileSwitching: false,
+    profileBusy: false,
+    profileMessage: "",
+    pendingLearnerBackup: null,
     settings: Object.assign({}, DEFAULT_SETTINGS),
     modules: [],
     activities: [],
@@ -1491,9 +1503,41 @@
 
   document.addEventListener("DOMContentLoaded", init);
 
+  // A profile switch waits for every active learner operation to settle. This
+  // includes callbacks that finish a quiz or save listening progress after await.
+  function trackLearnerTask(fn) {
+    return function () {
+      var task;
+      try { task = Promise.resolve(fn.apply(this, arguments)); }
+      catch (error) { task = Promise.reject(error); }
+      learnerTasks.add(task);
+      task.then(function () { learnerTasks.delete(task); }, function () { learnerTasks.delete(task); });
+      return task;
+    };
+  }
+  handleClick = trackLearnerTask(handleClick);
+  handleSubmit = trackLearnerTask(handleSubmit);
+  handleChange = trackLearnerTask(handleChange);
+  handleRouteChange = trackLearnerTask(handleRouteChange);
+  syncActiveScreen = trackLearnerTask(syncActiveScreen);
+  syncEventsToServer = trackLearnerTask(syncEventsToServer);
+  refreshLocalKPIs = trackLearnerTask(refreshLocalKPIs);
+  handleLessonTimeUpdate = trackLearnerTask(handleLessonTimeUpdate);
+  handleLessonEnded = trackLearnerTask(handleLessonEnded);
+  advanceFormalSegmentAfterEnd = trackLearnerTask(advanceFormalSegmentAfterEnd);
+  advanceVocationalAudioAfterEnd = trackLearnerTask(advanceVocationalAudioAfterEnd);
+  advanceQuizSession = trackLearnerTask(advanceQuizSession);
+  selectVocationalAudioCard = trackLearnerTask(selectVocationalAudioCard);
+  prepareDownloadSession = trackLearnerTask(prepareDownloadSession);
+  checkForContentUpdate = trackLearnerTask(checkForContentUpdate);
+
   async function init() {
     try {
       state.db = await openDatabase();
+      state.learnerDb = await openLearnerDatabase();
+      var learners = await learnerStore.load(state.learnerDb);
+      state.profileId = learners.activeProfileId;
+      state.profiles = learners.profiles;
       await loadQuizEngine();
       await loadSettings();
       setupImportLaunchHandler();
@@ -1531,17 +1575,32 @@
 
     state.listenersBound = true;
     window.addEventListener("hashchange", function () {
+      if (state.profileSwitching) return;
       handleRouteChange().catch(logError);
     });
     window.addEventListener("online", handleConnectivityChange);
     window.addEventListener("offline", handleConnectivityChange);
     document.addEventListener("click", function (event) {
+      if (state.profileSwitching || state.profileBusy) { event.preventDefault(); return; }
+      var profileAction = event.target.closest("[data-learner-action]");
+      if (profileAction) {
+        event.preventDefault();
+        handleLearnerAction(profileAction).catch(showLearnerError);
+        return;
+      }
       handleClick(event).catch(logError);
     });
     document.addEventListener("submit", function (event) {
+      if (state.profileSwitching || state.profileBusy) { event.preventDefault(); return; }
+      if (event.target.matches("[data-learner-create], [data-learner-restore]")) {
+        event.preventDefault();
+        handleLearnerForm(event.target).catch(showLearnerError);
+        return;
+      }
       handleSubmit(event).catch(logError);
     });
     document.addEventListener("change", function (event) {
+      if (state.profileSwitching || state.profileBusy) return;
       handleChange(event).catch(logError);
     });
     document.addEventListener("input", function (event) {
@@ -1924,7 +1983,8 @@
 
     if (target.dataset.action === "ob-skip-privacy-pin") {
       state.onboardingPinMessage = "";
-      await clearPrivacyPin({ render: false });
+      // A new learner must not remove the existing device's PIN.
+      if (!state.settings.privacyMode.enabled) await clearPrivacyPin({ render: false });
       await completeOnboarding();
       return;
     }
@@ -2162,6 +2222,7 @@
   function handleConnectivityChange() {
     state.connectivity = navigator.onLine;
     updateShellChrome();
+    if (state.profileSwitching) return;
     if (state.connectivity) {
       checkForContentUpdate().catch(logError);
       prepareDownloadSession(true).catch(logError);
@@ -2203,6 +2264,7 @@
   }
 
   async function handleRouteChange() {
+    if (state.profileSwitching) return;
     var nextRoute = parseRoute(window.location.hash);
     var leavingLesson =
       state.route.name === "lesson" &&
@@ -2244,13 +2306,14 @@
       state.settings.onboarded &&
       !state.settings.trackPreference &&
       state.route.name !== "track-select" &&
+      state.route.name !== "learners" &&
       state.route.name !== "settings"
     ) {
       navigate("#/track-select");
       return;
     }
 
-    if (state.settings.onboarded && shouldPromptAudioDownload() && state.route.name !== "download") {
+    if (state.settings.onboarded && shouldPromptAudioDownload() && state.route.name !== "download" && state.route.name !== "learners") {
       navigate("#/download");
       return;
     }
@@ -2337,6 +2400,7 @@
       "progress",
       "glossary",
       "settings",
+      "learners",
     ];
 
     if (validRoutes.indexOf(name) === -1) {
@@ -2350,10 +2414,11 @@
   }
 
   function isPublicRoute(name) {
-    return name === "onboarding";
+    return name === "onboarding" || name === "learners";
   }
 
   function render() {
+    if (state.profileSwitching) return;
     var root = document.getElementById("app-root");
     if (!root) {
       return;
@@ -2414,6 +2479,9 @@
         break;
       case "settings":
         screenMarkup = renderSettingsScreen();
+        break;
+      case "learners":
+        screenMarkup = renderLearnersScreen();
         break;
       default:
         screenMarkup = renderHomeScreen();
@@ -4024,7 +4092,8 @@
   }
 
   function bindFormalSegmentAudioElement(audio, moduleId) {
-    audio.addEventListener("play", function () {
+    var listen = learnerAudioListener(audio);
+    listen("play", function () {
       var session = state.formalSegmentSession;
       if (session && session.moduleId === moduleId) {
         session.isPlaying = true;
@@ -4032,17 +4101,17 @@
         syncFormalSegmentAudioUi();
       }
     });
-    audio.addEventListener("pause", function () {
+    listen("pause", function () {
       var session = state.formalSegmentSession;
       if (session && session.moduleId === moduleId) {
         session.isPlaying = false;
         syncFormalSegmentAudioUi();
       }
     });
-    audio.addEventListener("ended", function () {
+    listen("ended", function () {
       advanceFormalSegmentAfterEnd(moduleId, audio).catch(logError);
     });
-    audio.addEventListener("error", function () {
+    listen("error", function () {
       handleFormalSegmentAudioError(moduleId);
     });
   }
@@ -4225,23 +4294,24 @@
   }
 
   function bindVocationalAudioElement(audio, moduleId) {
-    audio.addEventListener("play", function () {
+    var listen = learnerAudioListener(audio);
+    listen("play", function () {
       if (state.vocationalAudioSession && state.vocationalAudioSession.moduleId === moduleId) {
         state.vocationalAudioSession.isPlaying = true;
         state.vocationalAudioSession.audioError = null;
         syncVocationalAudioUi();
       }
     });
-    audio.addEventListener("pause", function () {
+    listen("pause", function () {
       if (state.vocationalAudioSession && state.vocationalAudioSession.moduleId === moduleId) {
         state.vocationalAudioSession.isPlaying = false;
         syncVocationalAudioUi();
       }
     });
-    audio.addEventListener("ended", function () {
+    listen("ended", function () {
       advanceVocationalAudioAfterEnd(moduleId).catch(logError);
     });
-    audio.addEventListener("error", function () {
+    listen("error", function () {
       handleVocationalAudioError(moduleId);
     });
   }
@@ -4269,51 +4339,53 @@
   }
 
   function bindLessonAudioElement(audio, moduleId) {
-    audio.addEventListener("loadedmetadata", function () {
+    var listen = learnerAudioListener(audio);
+    listen("loadedmetadata", function () {
       handleLessonMetadataLoaded(audio, moduleId);
     });
-    audio.addEventListener("timeupdate", function () {
+    listen("timeupdate", function () {
       handleLessonTimeUpdate(audio, moduleId).catch(logError);
     });
-    audio.addEventListener("seeked", function () {
+    listen("seeked", function () {
       handleLessonSeeked(audio, moduleId);
     });
-    audio.addEventListener("ended", function () {
+    listen("ended", function () {
       handleLessonEnded(audio, moduleId).catch(logError);
     });
-    audio.addEventListener("error", function () {
+    listen("error", function () {
       handleLessonAudioError();
     });
-    audio.addEventListener("play", function () {
+    listen("play", function () {
       if (state.lessonSession && state.lessonSession.moduleId === moduleId) {
         state.lessonSession.audioError = null;
       }
       syncLessonUi();
     });
-    audio.addEventListener("pause", function () {
+    listen("pause", function () {
       syncLessonUi();
     });
   }
 
   function bindCaregiverAudioElement(audio) {
-    audio.addEventListener("loadedmetadata", function () {
+    var listen = learnerAudioListener(audio);
+    listen("loadedmetadata", function () {
       audio.dataset.errorMessage = "";
       syncCaregiverActivityUi();
     });
-    audio.addEventListener("timeupdate", function () {
+    listen("timeupdate", function () {
       syncCaregiverActivityUi();
     });
-    audio.addEventListener("ended", function () {
+    listen("ended", function () {
       syncCaregiverActivityUi();
     });
-    audio.addEventListener("play", function () {
+    listen("play", function () {
       audio.dataset.errorMessage = "";
       syncCaregiverActivityUi();
     });
-    audio.addEventListener("pause", function () {
+    listen("pause", function () {
       syncCaregiverActivityUi();
     });
-    audio.addEventListener("error", function () {
+    listen("error", function () {
       audio.dataset.errorMessage =
         "Ba a samu fayil din audio ba tukuna. Da zarar an saka MP3 dinsa, player din zai yi aiki nan.";
       syncCaregiverActivityUi();
@@ -7117,6 +7189,9 @@
     }
 
     state.settings = Object.assign({}, state.settings, nextPatch);
+    if (Object.prototype.hasOwnProperty.call(nextPatch, 'displayName')) {
+      state.profiles.forEach(function (profile) { if (profile.id === state.profileId) profile.name = nextPatch.displayName; });
+    }
     state.settings.audioDownloadState = normalizeAudioDownloadState(state.settings.audioDownloadState);
     state.settings.privacyMode = normalizePrivacyMode(state.settings.privacyMode);
     state.settings.featureFlags = normalizeFeatureFlags(state.settings.featureFlags);
@@ -7360,7 +7435,7 @@
       if (!headers.has("Content-Type")) {
         headers.set("Content-Type", "application/json; charset=utf-8");
       }
-      await caches.open("ajamix-content-ajamix-v26").then(function (cache) {
+      await caches.open("ajamix-content-ajamix-v28").then(function (cache) {
         return cache.put(
           new Request(new URL("./content.json", location.href).toString(), {
             method: "GET",
@@ -9086,6 +9161,169 @@
     console.error(error);
   }
 
+  function renderLearnersScreen() {
+    var rows = state.profiles.slice().sort(function (a, b) { return String(a.createdAt || '').localeCompare(String(b.createdAt || '')) || a.id.localeCompare(b.id); }).map(function (profile, index) {
+      var active = profile.id === state.profileId;
+      var name = state.settings.scriptMode === "ajami"
+        ? '<span aria-hidden="true">' + (index + 1) + '</span><span class="sr-only">' + escapeHtml(profile.name) + '</span>'
+        : escapeHtml(profile.name);
+      return '<li class="learner-row' + (active ? ' is-current' : '') + '"><span class="learner-avatar" aria-hidden="true">' + (index + 1) + '</span>' +
+        '<span class="learner-name">' + name + '</span><button class="secondary-btn" type="button" data-learner-action="switch" data-profile-id="' + escapeAttribute(profile.id) + '"' + (active ? ' disabled' : '') + '>' + renderFlowLabel(active ? 'Current learner' : 'Choose learner', active ? '✓' : '→') + '</button></li>';
+    }).join('');
+    var pending = state.pendingLearnerBackup;
+    return '<div class="learners-screen"><div class="learners-heading"><h2>' + renderFlowLabel('Learners on this phone', '♟') + '</h2><p>' + renderFlowLabel('Each learner has their own lessons and progress.', '◎') + '</p></div>' +
+      (state.profileMessage ? '<p class="learner-message" role="status">' + renderFlowLabel(state.profileMessage, 'ⓘ') + '</p>' : '') +
+      '<ul class="learner-list">' + rows + '</ul>' +
+      '<form data-learner-create class="learner-form"><label for="learner-name">' + renderFlowLabel('New learner name', '+') + '</label><div class="learner-form-row"><input id="learner-name" name="learnerName" maxlength="80" required autocomplete="off" aria-label="New learner name"><button class="primary-btn" type="submit">' + renderFlowLabel('Add learner', '+') + '</button></div></form>' +
+      '<section class="learner-backup"><h3>' + renderFlowLabel('Keep a copy of your progress', '↓') + '</h3><p>' + renderFlowLabel('Backup includes every learner’s name, settings and progress. Keep this file private.', 'ⓘ') + '</p><button class="secondary-btn" type="button" data-learner-action="export">' + renderFlowLabel('Save learner backup', '↓') + '</button>' +
+      '<form data-learner-restore class="learner-form"><label for="learner-backup-file">' + renderFlowLabel('Restore a learner backup', '↑') + '</label><input id="learner-backup-file" name="backup" type="file" accept="application/json,.json" required aria-label="Choose learner backup"><button class="secondary-btn" type="submit">' + renderFlowLabel('Check backup', '✓') + '</button></form>' +
+      (pending ? '<div class="learner-message"><p>' + renderFlowLabel('Restore ' + pending.profiles.length + ' learners as new profiles? Existing progress is kept.', '↑ ' + pending.profiles.length) + '</p><button class="primary-btn" type="button" data-learner-action="restore">' + renderFlowLabel('Restore learners', '↑') + '</button> <button class="secondary-btn" type="button" data-learner-action="cancel">' + renderFlowLabel('Cancel', '×') + '</button></div>' : '') + '</section></div>';
+  }
+
+  function showLearnerError(error) {
+    state.profileMessage = error && error.message ? error.message : 'Could not save learner changes.';
+    render();
+  }
+
+  function learnerAudioListener(audio) {
+    var epoch = state.learnerEpoch;
+    return function (type, callback) {
+      audio.addEventListener(type, function (event) {
+        if (!state.profileSwitching && epoch === state.learnerEpoch) callback(event);
+      });
+    };
+  }
+
+  function stopLearnerSessions() {
+    document.querySelectorAll('audio').forEach(function (audio) { audio.pause(); });
+    teardownLessonSession();
+    teardownVocationalAudioSession();
+    teardownFormalSegmentSession();
+    teardownQuizSession();
+    clearRetentionUi({ resetBootScan: true });
+  }
+
+  async function switchLearner(profileId) {
+    if (state.profileSwitching) return;
+    if (state.downloadSession && state.downloadSession.active) throw new Error('Let the download finish before changing learner.');
+    state.profileSwitching = true;
+    var previous = state.profileId;
+    try {
+      stopLearnerSessions();
+      while (learnerTasks.size) await Promise.allSettled(Array.from(learnerTasks));
+      stopLearnerSessions();
+      await learnerStore.setActive(state.learnerDb, profileId);
+      state.profileId = profileId;
+      state.learnerEpoch += 1;
+      await loadSettings();
+      await loadProgress();
+      state.profiles = await learnerStore.list(state.learnerDb);
+      state.quizResults = null;
+      state.activeLessonModuleId = null;
+      state.downloadSession = null;
+      state.learningBrowser = { scope: '', query: '', subject: '', status: 'all' };
+      state.analytics.localKpis = null;
+      state.analytics.localKpisLoading = false;
+      state.pendingLearnerBackup = null;
+      state.profileMessage = '';
+      onboardingStep = 1;
+      onboardingData = createOnboardingData();
+      onboardingData.displayName = state.settings.displayName;
+      onboardingData.scriptMode = state.settings.scriptMode;
+      applyMotionMode(state.settings.motionMode);
+    } catch (error) {
+      state.profileId = previous;
+      await learnerStore.setActive(state.learnerDb, previous);
+      await loadSettings();
+      await loadProgress();
+      throw error;
+    } finally { state.profileSwitching = false; }
+    updateShellChrome();
+    navigate(state.settings.onboarded ? '#/learning-path' : '#/onboarding');
+    render();
+  }
+
+  async function handleLearnerAction(target) {
+    if (isPrivacyGateActive()) return;
+    var action = target.dataset.learnerAction;
+    if (action === 'switch') return switchLearner(target.dataset.profileId);
+    if (action === 'cancel') { state.pendingLearnerBackup = null; render(); return; }
+    target.disabled = true;
+    state.profileBusy = true;
+    try {
+      if (action === 'export') {
+        var backup = await learnerStore.exportBackup(state.learnerDb);
+        triggerBlobDownload(new Blob([JSON.stringify(backup)], { type: 'application/json' }), 'ajamix-learners-' + new Date().toISOString().slice(0, 10) + '.json');
+        state.profileMessage = 'Backup prepared. Keep the downloaded file in a safe place.';
+      } else if (action === 'restore' && state.pendingLearnerBackup) {
+        await learnerStore.importBackup(state.learnerDb, state.pendingLearnerBackup);
+        var loaded = await learnerStore.load(state.learnerDb);
+        state.profiles = loaded.profiles;
+        state.pendingLearnerBackup = null;
+        if (!state.profiles.some(function (p) { return p.id === state.profileId; })) {
+          await switchLearner(loaded.activeProfileId);
+          return;
+        }
+        state.profileMessage = 'Learners restored. Choose one to continue.';
+      }
+      render();
+    } finally { target.disabled = false; state.profileBusy = false; }
+  }
+
+  async function handleLearnerForm(form) {
+    if (isPrivacyGateActive()) return;
+    var submit = form.querySelector('button[type="submit"]');
+    submit.disabled = true;
+    state.profileBusy = true;
+    try {
+      if (form.matches('[data-learner-create]')) {
+        if (state.downloadSession && state.downloadSession.active) throw new Error('Let the download finish before adding a learner.');
+        var profile = await learnerStore.create(state.learnerDb, { name: form.elements.learnerName.value, settings: { scriptMode: state.settings.scriptMode, motionMode: state.settings.motionMode } });
+        state.profiles = await learnerStore.list(state.learnerDb);
+        await switchLearner(profile.id);
+      } else {
+        var file = form.elements.backup.files[0];
+        if (!file || file.size > 5 * 1024 * 1024) throw new Error('Choose a learner backup smaller than 5 MB.');
+        state.pendingLearnerBackup = learnerStore.validateBackup(await file.text());
+        state.profileMessage = '';
+        render();
+      }
+    } finally { submit.disabled = false; state.profileBusy = false; }
+  }
+
+  async function openLearnerDatabase() {
+    // A single readonly transaction gives a consistent legacy learner snapshot.
+    var snapshot = await new Promise(function (resolve, reject) {
+      var result = {};
+      var tx = state.db.transaction(['settings', 'progress', 'events'], 'readonly');
+      ['settings', 'progress', 'events'].forEach(function (name) {
+        var req = tx.objectStore(name).getAll();
+        req.onsuccess = function () { result[name] = req.result; };
+      });
+      tx.oncomplete = function () { resolve(result); };
+      tx.onabort = tx.onerror = function () { reject(tx.error || new Error('Could not read existing learner')); };
+    });
+    return new Promise(function (resolve, reject) {
+      var req = indexedDB.open(LEARNER_DB_NAME, LEARNER_DB_VERSION);
+      req.onupgradeneeded = function () {
+        var db = req.result;
+        var tx = req.transaction;
+        if (!db.objectStoreNames.contains('settings')) {
+          db.createObjectStore('settings', { keyPath: 'key' });
+          db.createObjectStore('progress', { keyPath: 'id' });
+          db.createObjectStore('events', { keyPath: 'id', autoIncrement: true });
+          ['settings', 'progress', 'events'].forEach(function (name) {
+            snapshot[name].forEach(function (row) { tx.objectStore(name).put(row); });
+          });
+        }
+        learnerStore.upgrade(db, tx);
+      };
+      req.onsuccess = function () { req.result.onversionchange = function () { req.result.close(); }; resolve(req.result); };
+      req.onerror = function () { reject(req.error || new Error('Could not initialise learners')); };
+      req.onblocked = function () { reject(new Error('Close other Ajamix tabs and reopen this page to update.')); };
+    });
+  }
+
   function openDatabase() {
     return new Promise(function (resolve, reject) {
       var request = indexedDB.open(DB_NAME, DB_VERSION);
@@ -9108,10 +9346,10 @@
         if (!db.objectStoreNames.contains("progress")) {
           db.createObjectStore("progress", { keyPath: "id" });
         }
-        if (db.objectStoreNames.contains("glossary")) {
+        if (event.oldVersion < 4 && db.objectStoreNames.contains("glossary")) {
           db.deleteObjectStore("glossary");
         }
-        db.createObjectStore("glossary", { keyPath: "id" });
+        if (!db.objectStoreNames.contains("glossary")) db.createObjectStore("glossary", { keyPath: "id" });
         // v4: offline-first analytics queue (opt-in sync, see plan §4.4, §6.8)
         if (!db.objectStoreNames.contains("events")) {
           var eventsStore = db.createObjectStore("events", { keyPath: "id", autoIncrement: true });
@@ -9131,6 +9369,18 @@
   }
 
   function getAllRecords(storeName) {
+    var profileId = state.profileId;
+    if (storeName === 'progress') return learnerStore.getProgress(state.learnerDb, profileId);
+    if (storeName === 'events') return learnerStore.getEvents(state.learnerDb, profileId);
+    if (storeName === 'settings') return Promise.all([getAllDeviceRecords(), learnerStore.getSettings(state.learnerDb, profileId)]).then(function (parts) {
+      return parts[0].filter(function (row) { return learnerStore.DEVICE_KEYS.indexOf(row.key) >= 0; }).concat(Object.keys(parts[1]).map(function (key) { return { key: key, value: parts[1][key] }; }));
+    });
+    return readAllRecords(storeName);
+  }
+
+  function getAllDeviceRecords() { return readAllRecords('settings'); }
+
+  function readAllRecords(storeName) {
     return new Promise(function (resolve, reject) {
       var transaction = state.db.transaction(storeName, "readonly");
       var request = transaction.objectStore(storeName).getAll();
@@ -9145,6 +9395,9 @@
   }
 
   function getRecord(storeName, key) {
+    if (storeName === 'settings' || storeName === 'progress' || storeName === 'events') return getAllRecords(storeName).then(function (rows) {
+      return rows.find(function (row) { return (storeName === 'settings' ? row.key : row.id) === key; }) || null;
+    });
     return new Promise(function (resolve, reject) {
       var transaction = state.db.transaction(storeName, "readonly");
       var request = transaction.objectStore(storeName).get(key);
@@ -9159,6 +9412,12 @@
   }
 
   function putRecord(storeName, value) {
+    if (storeName === 'progress') return learnerStore.saveProgress(state.learnerDb, state.profileId, value);
+    if (storeName === 'events') return value.id ? learnerStore.putEvent(state.learnerDb, state.profileId, value) : learnerStore.addEvent(state.learnerDb, state.profileId, value);
+    if (storeName === 'settings' && learnerStore.DEVICE_KEYS.indexOf(value.key) < 0) {
+      var patch = {}; patch[value.key] = value.value;
+      return learnerStore.saveSettings(state.learnerDb, state.profileId, patch);
+    }
     return new Promise(function (resolve, reject) {
       var transaction = state.db.transaction(storeName, "readwrite");
       var request = transaction.objectStore(storeName).put(value);
@@ -9176,6 +9435,7 @@
   }
 
   function deleteRecord(storeName, key) {
+    if (storeName === 'progress') return learnerStore.deleteProgress(state.learnerDb, state.profileId, key);
     return new Promise(function (resolve, reject) {
       var transaction = state.db.transaction(storeName, "readwrite");
       var request = transaction.objectStore(storeName).delete(key);
@@ -9193,6 +9453,8 @@
   }
 
   function clearStore(storeName) {
+    if (storeName === 'progress') return learnerStore.clearProgress(state.learnerDb, state.profileId);
+    if (storeName === 'events') return learnerStore.clearEvents(state.learnerDb, state.profileId);
     return new Promise(function (resolve, reject) {
       var transaction = state.db.transaction(storeName, "readwrite");
       var request = transaction.objectStore(storeName).clear();
