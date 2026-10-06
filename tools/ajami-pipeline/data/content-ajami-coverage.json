@@ -96,13 +96,13 @@
     "gapTeaser": {
       "source": "modules[].gapTeaser.ha",
       "total": 27,
-      "covered": 0,
-      "uncovered": 27,
-      "coveragePercent": 0,
+      "covered": 2,
+      "uncovered": 25,
+      "coveragePercent": 7.41,
       "provenance": "human_reviewed_prose",
       "pilotEntries": 6,
-      "pilotApproved": 0,
-      "pilotDeferred": 6
+      "pilotApproved": 2,
+      "pilotDeferred": 4
     }
   },
   "uncoveredWords": [
