@@ -126,7 +126,7 @@ test("NFC invariant walker reports non-NFC Ajami values inside arrays", () => {
   assert.deepEqual(findNonNfcAjami(fixture), ["distractorFormulasAjami.0"]);
 });
 
-test("real-content NFC regression preserves the 741-versus-597 array walker delta", () => {
+test("real-content NFC regression preserves the 743-versus-599 array walker delta", () => {
   const currentContent = readJson(CONTENT_PATH);
   const preMigrationContent = mapAjamiStrings(currentContent, reconstructPreMigrationAjami);
 
@@ -136,12 +136,12 @@ test("real-content NFC regression preserves the 741-versus-597 array walker delt
     "the reconstructed fixture must NFC-round-trip to current content"
   );
 
-  // Deliberate regression constants: update only through a human content-change decision.
+  // Deliberate regression constants: +2 on 2026-09-28 from applying approved gapTeaser prose.
   const fullPaths = findNonNfcAjami(preMigrationContent);
   const scalarPaths = findNonNfcAjamiInObjectStrings(preMigrationContent);
   const arrayOnlyPaths = fullPaths.filter((path) => !scalarPaths.includes(path));
-  assert.equal(fullPaths.length, 741);
-  assert.equal(scalarPaths.length, 597);
+  assert.equal(fullPaths.length, 743);
+  assert.equal(scalarPaths.length, 599);
   assert.equal(arrayOnlyPaths.length, 144);
   assert.ok(
     arrayOnlyPaths.every((path) => /\.distractorFormulasAjami\.\d+$/.test(path)),

@@ -72083,7 +72083,7 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Idan ba ka da cikakken tabbaci, wane mataki zai iya rage haɗari yayin da kake neman ƙarin bayani?",
-        "ajami": null
+        "ajami": "إِدَࢽْ بَ کَ دَ ثِکَکّٜࢽْ تَبَّثِ, وَاࢽٜىٰ مَتَاکِى زَیْ إِیَ رَغٜ هَطَرِى یَیِࢽْ دَ کَکٜىٰ ࢽٜمَࢽْ ࢼَرِࢽْ بَیَࢽِى?"
       },
       "chainNext": "CT08",
       "isChainLeaf": false,
@@ -72831,7 +72831,7 @@
       "targetAudience": "adult",
       "gapTeaser": {
         "ha": "Yaya za ka haɗa duk waɗannan tambayoyi zuwa jerin dubawa guda kafin ka karɓi iƙirari?",
-        "ajami": null
+        "ajami": "یَیَ زَ کَ هَطَ دُکْ وَطَࢽَّࢽْ تَمْبَیُیِ زُوَ جٜرِࢽْ دُبَوَا غُدَا کَࢻِࢽْ کَ کَرْݑِ إِࢼِرَرِ?"
       },
       "chainNext": "CT10",
       "isChainLeaf": false,
