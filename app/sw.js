@@ -1,4 +1,4 @@
-const CACHE_VERSION = "ajamix-v28";
+const CACHE_VERSION = "ajamix-v29";
 const SHELL_CACHE = `ajamix-shell-${CACHE_VERSION}`;
 const CONTENT_CACHE = `ajamix-content-${CACHE_VERSION}`;
 const ASSET_CACHE = `ajamix-assets-${CACHE_VERSION}`;
@@ -16,6 +16,8 @@ const SHELL_FILES = [
   "/app/quiz-engine.js",
   "/app/manifest.json",
   "/app/fonts/NotoNaskhArabic-Regular.woff2",
+  "/app/fonts/Harmattan-Regular.woff2",
+  "/app/fonts/Harmattan-Bold.woff2",
   "/app/icons/icon-192.png",
   "/app/icons/icon-512.png",
 ];
@@ -24,8 +26,9 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(SHELL_CACHE);
-      const requiredShellFiles = SHELL_FILES.filter((filePath) => !/\.woff2$/i.test(filePath));
-      const optionalShellFiles = SHELL_FILES.filter((filePath) => /\.woff2$/i.test(filePath));
+      // Ajami fonts are required: an offline install must retain Hausa letters.
+      const optionalShellFiles = ["/app/fonts/NotoNaskhArabic-Regular.woff2"];
+      const requiredShellFiles = SHELL_FILES.filter((filePath) => !optionalShellFiles.includes(filePath));
 
       await cache.addAll(requiredShellFiles);
       await Promise.allSettled(optionalShellFiles.map((filePath) => cache.add(filePath)));

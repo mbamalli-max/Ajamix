@@ -23,5 +23,6 @@ import "./gates/ratification-gate.test.mjs";
 import "./gates/human-reviewed-prose-gate.test.mjs";
 import "../../app/app.renderer.test.mjs";
 import "../../app/sw-cache-version.test.mjs";
+import "../../app/ajami-font.test.mjs";
 import "../../app/learner-store.test.mjs";
 import "../../app/learner-integration.test.mjs";

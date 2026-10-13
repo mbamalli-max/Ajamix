@@ -12,6 +12,22 @@ body.motion-reduced *::after {
 }
 
 @font-face {
+  font-family: "Harmattan";
+  src: url("./fonts/Harmattan-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: url("./fonts/Harmattan-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
   font-family: "Noto Naskh Arabic";
   src:
     url("./fonts/NotoNaskhArabic-Regular.woff2") format("woff2"),
@@ -63,7 +79,7 @@ body.motion-reduced *::after {
 
   /* Typography */
   --font-hausa:              'Inter', system-ui, -apple-system, sans-serif;
-  --font-ajami:              'Noto Naskh Arabic', 'Scheherazade New', serif;
+  --font-ajami:              'Harmattan', 'Noto Naskh Arabic', serif;
   --ajami-body:              1.25rem;
   --ajami-title:             1.75rem;
   --ajami-line-height:       1.8;
@@ -1192,10 +1208,22 @@ a {
   gap: 0.45rem;
 }
 
+.ajami, .ajami-title, [lang="ha-Arab"],
+.screen h2.ajami, .screen h3.ajami,
+.screen h2.ajami-title, .screen h3.ajami-title {
+  font-family: var(--font-ajami);
+  font-synthesis: none;
+  letter-spacing: normal;
+}
+
+[lang="ar"] {
+  font-family: "Noto Naskh Arabic", serif;
+}
+
 .ajami {
   font-family: var(--font-ajami);
   direction: rtl;
-  unicode-bidi: bidi-override;
+  unicode-bidi: isolate;
   text-align: right;
   font-size: 1.5rem;
   line-height: 2;
@@ -1204,6 +1232,7 @@ a {
 .ajami-title {
   font-family: var(--font-ajami);
   direction: rtl;
+  unicode-bidi: isolate;
   font-size: 2rem;
   font-weight: 700;
   line-height: var(--ajami-line-height);
@@ -1292,7 +1321,7 @@ a {
 }
 .script-preview.ajami {
   direction: rtl;
-  font-family: "Noto Naskh Arabic", serif;
+  font-family: var(--font-ajami);
   font-size: 1.4rem;
 }
 .script-preview-label {
@@ -2687,8 +2716,8 @@ a {
 }
 
 .caregiver-ajami {
-  font-size: 1.1rem;
-  line-height: 1.4;
+  font-size: 1.25rem;
+  line-height: 1.8;
   direction: rtl;
   text-align: right;
 }
