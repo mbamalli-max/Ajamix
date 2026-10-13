@@ -14,13 +14,91 @@ test("flow labels retain a visible icon and accessible text in Ajami without vis
   assert.doesNotMatch(renderer.renderFlowLabel("<img>", "<svg>"), /<img>|<svg>/);
 });
 
+test("labelled values retain their value and screen-reader label in Ajami", () => {
+  const { renderer } = loadRenderer();
+  const cases = [
+    ["Maki", "4", "★"],
+    ["Ka samu", "4", "★"],
+    ["daga cikin", "5", "Σ"],
+    ["Tsayawa", "2/3 · 67%", "⏸"],
+    ["Quiz", "3/5", "★"],
+    ["darasi", "12", "▣"],
+  ];
+  renderer.setScriptMode("ajami");
+  for (const [label, value, icon] of cases) {
+    const html = renderer.renderLabelValue(label, value, icon);
+    assert.match(html, new RegExp('aria-hidden="true">' + icon));
+    assert.ok(html.includes(value));
+    assert.ok(html.includes('class="sr-only">' + label + "</span>"));
+  }
+  renderer.setScriptMode("latin");
+  for (const [label, value, icon] of cases) {
+    assert.equal(renderer.renderLabelValue(label, value, icon), '<span aria-hidden="true">' + icon + '</span> <span>' + label + '</span> ' + value);
+  }
+});
+
+test("Ajami resume control keeps its timestamp and Boko label in both render paths", () => {
+  const { renderer, source } = loadRenderer();
+  renderer.setScriptMode("ajami");
+  const html = renderer.renderLabelValue("Ci gaba daga", "01:23", "▶");
+  assert.ok(html.includes("01:23"));
+  assert.ok(html.includes('class="sr-only">Ci gaba daga</span>'));
+  assert.equal((source.match(/renderLabelValue\("Ci gaba daga", escapeHtml\(formatSeconds\(/g) || []).length, 2);
+  renderer.setScriptMode("latin");
+  assert.match(renderer.renderLabelValue("Ci gaba daga", "01:23", "▶"), /<span>Ci gaba daga<\/span> 01:23/);
+});
+
+test("Ajami analytics metric cards retain numeric values and accessible titles and helpers", () => {
+  const { renderer } = loadRenderer();
+  renderer.setAnalyticsKpis({
+    day2Retention: true,
+    day7Retention: false,
+    secondModuleStarted: true,
+    avgModulesCompleted: 2,
+    completionRate: 0.5,
+    useTodayYesRate: 0.75,
+    shareInitiationRate: 0.25,
+  });
+  renderer.setScriptMode("ajami");
+  const ajami = renderer.renderLocalKpis();
+  for (const [title, helper, value] of [
+    ["Modules", "Jimillar modules da aka gama", "2"],
+    ["Kammalawa", "Modules da aka gama / aka fara", "50%"],
+    ["Abin yau", "Eh / (Eh + Wata rana)", "75%"],
+    ["Raba", "An taba fara raba AJAMIX", "25%"],
+  ]) {
+    assert.ok(ajami.includes("<strong>" + value + "</strong>"));
+    assert.ok(ajami.includes('class="sr-only">' + title + "</span>"));
+    assert.ok(ajami.includes('muted-copy sr-only">' + helper + "</span>"));
+  }
+  renderer.setScriptMode("latin");
+  const latin = renderer.renderLocalKpis();
+  assert.match(latin, /<span>Modules<\/span><strong>2<\/strong><span class="muted-copy">Jimillar modules da aka gama<\/span>/);
+});
+
+test("Ajami locked lessons retain the managed prerequisite title and Boko explanation", () => {
+  const { renderer } = loadRenderer();
+  const modules = [
+    { id: "V01", titleHa: "Darasi na farko", titleAjami: "دَرَسِ نَ فَرْقُ", track: "vocational", chainNext: "V02", quizQuestions: [] },
+    { id: "V02", titleHa: "Darasi na biyu", titleAjami: "دَرَسِ نَ بِیُ", track: "vocational", quizQuestions: [] },
+  ];
+  renderer.setLearningState(modules, [], { trackPreference: "vocational", scriptMode: "ajami" });
+  const ajami = renderer.renderHomeScreen();
+  assert.match(ajami, /دَرَسِ نَ فَرْقُ/);
+  assert.match(ajami, /class="sr-only">Kammala <\/span>/);
+  assert.match(ajami, /class="sr-only"> don buɗewa\.<\/span>/);
+  renderer.setScriptMode("latin");
+  const latin = renderer.renderHomeScreen();
+  assert.match(latin, /<span>Kammala <\/span>Darasi na farko don buɗewa\./);
+});
+
 test("Ajami quiz results separate score digits and expose next, home and retry actions", () => {
   const { renderer } = loadRenderer();
   const content = JSON.parse(fs.readFileSync(new URL("./content.json", import.meta.url), "utf8"));
   renderer.setLearningState(content.modules, [], { trackPreference: "vocational", gradeBand: "p3", scriptMode: "ajami" });
   const module = content.modules.find(m => m.id === "CT03");
   const passed = renderer.renderResults(module, { score: 5, total: 5, passed: true, progressPassed: true, nextModuleId: "CT04" });
-  assert.match(passed, /5 \/ 5/);
+  assert.match(passed, /5 \/ <span aria-hidden="true">Σ<\/span> <span class="sr-only">daga cikin<\/span> 5/);
   assert.match(passed, /data-route="#\/lesson\/CT04"/);
   assert.match(passed, /aria-hidden="true">→/);
   assert.match(passed, /class="sr-only">Bude na gaba/);
@@ -29,7 +107,7 @@ test("Ajami quiz results separate score digits and expose next, home and retry a
   assert.doesNotMatch(failed, /data-route="#\/lesson\/CT04"/);
   assert.match(failed, /class="sr-only">Sake quiz/);
   renderer.setScriptMode("latin");
-  assert.match(renderer.renderResults(module, { score: 5, total: 5, passed: true, progressPassed: true }), /Ka samu 5 daga cikin 5/);
+  assert.match(renderer.renderResults(module, { score: 5, total: 5, passed: true, progressPassed: true }), /<span>Ka samu<\/span> 5 <span aria-hidden="true">Σ<\/span> <span>daga cikin<\/span> 5/);
 });
 
 test("Ajami post-quiz reminder keeps its defer and note controls accessible", () => {
@@ -122,6 +200,9 @@ function loadRenderer() {
   globalThis.__ajamixRendererTest = {
     setScriptMode: function (mode) { state.settings.scriptMode = mode; },
     renderFlowLabel: renderFlowLabel,
+    renderLabelValue: renderLabelValue,
+    renderLocalKpis: renderLocalKpiSection,
+    setAnalyticsKpis: function (kpis) { state.analytics.localKpis = kpis; state.analytics.localKpisLoading = false; },
     renderReminder: function (moduleId) { state.retention.useTodaySheet = { moduleId: moduleId }; return renderUseTodaySheet(); },
     renderResults: function (module, results) { state.quizResults = results; return renderQuizResultsScreen(module, {score: results.score, questions: Array(results.total)}); },
     setOnboardingScriptMode: function (mode) { onboardingData.scriptMode = mode; },

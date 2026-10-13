@@ -2715,7 +2715,7 @@
       return m.gradeband === gradeBand;
     }).length;
     var hasBadge = moduleCount > 0
-      ? '<span class="band-badge band-badge--live">' + ha(String(moduleCount) + " darasi") + "</span>"
+      ? '<span class="band-badge band-badge--live">' + renderLabelValue("darasi", escapeHtml(String(moduleCount)), "▣") + "</span>"
       : '<span class="band-badge band-badge--soon">' + ha("Nan gaba") + "</span>";
     return [
       '<button class="band-option' + (moduleCount === 0 ? ' band-option--empty' : '') + '" type="button"',
@@ -2851,7 +2851,7 @@
       "</div>",
       '<div class="quiz-progress-row">',
       '<span class="pill quiz-progress-pill">' + escapeHtml(String(session.currentIndex + 1)) + "/" + escapeHtml(String(totalQuestions)) + "</span>",
-      '<span class="pill quiz-score-pill">' + ha("Maki ") + escapeHtml(String(session.score)) + "</span>",
+      '<span class="pill quiz-score-pill">' + renderLabelValue("Maki", escapeHtml(String(session.score)), "★") + "</span>",
       "</div>",
       '<article class="quiz-question-card">',
       '<p class="quiz-question-text' + (state.settings.scriptMode === "ajami" ? ' ajami' : "") + '">' +
@@ -2884,11 +2884,12 @@
       return accumulator + module.quizQuestions.length;
     }, 0);
     var progressPct = selectedModules.length ? Math.round((completedCount / selectedModules.length) * 100) : 0;
+    var resultModule = state.quizResults ? getModuleById(state.quizResults.moduleId) : null;
     var resultBanner = state.quizResults
       ? [
           '<section class="screen-panel">',
           '<p class="eyebrow">' + ha("Sabon sakamako") + "</p>",
-          "<h2>" + ha(state.quizResults.moduleTitle) + "</h2>",
+          "<h2>" + (resultModule ? getDisplayTitleMarkup(resultModule) : escapeHtml(state.quizResults.moduleTitle)) + "</h2>",
           "<p>" + ha("Ka samu ") +
             escapeHtml(String(state.quizResults.score)) +
             ha(" cikin ") +
@@ -2926,14 +2927,14 @@
           "</div>",
           '<div class="module-progress-metrics">',
           '<span class="pill">Audio ' + escapeHtml(String(moduleMetrics.audioPct)) + "%</span>",
-          '<span class="pill">' + ha("Tsayawa ") +
+          '<span class="pill">' + renderLabelValue("Tsayawa",
             escapeHtml(String(moduleMetrics.microPauseCorrect)) +
             "/" +
             escapeHtml(String(moduleMetrics.microPauseTotal)) +
             " · " +
             escapeHtml(String(moduleMetrics.microPauseAccuracy)) +
-            '%</span>',
-          '<span class="pill">Quiz ' + ha(moduleMetrics.quizScoreText) + "</span>",
+            "%", "⏸") + '</span>',
+          '<span class="pill">' + renderLabelValue("Quiz", escapeHtml(moduleMetrics.quizScoreText), "★") + "</span>",
           "</div>",
           '<div class="module-progress-bars">',
           '<div class="progress-stat-row"><span>Audio</span><div class="progress-stat-rail"><span class="progress-stat-fill is-audio" style="width: ' +
@@ -3317,13 +3318,13 @@
         : localKpis
           ? [
               '<div class="metrics-grid analytics-kpi-grid">',
-              renderAnalyticsMetricCard(ha("Rana 2"), localKpis.day2Retention ? ha("Ee") : ha("A'a"), ha("Riƙewa bayan rana 2")),
-              renderAnalyticsMetricCard(ha("Rana 7"), localKpis.day7Retention ? ha("Ee") : ha("A'a"), ha("Riƙewa bayan rana 7")),
-              renderAnalyticsMetricCard(ha("Module na 2"), localKpis.secondModuleStarted ? ha("Ee") : ha("A'a"), ha("An fara module na biyu")),
-              renderAnalyticsMetricCard(ha("Modules"), escapeHtml(String(localKpis.avgModulesCompleted || 0)), ha("Jimillar modules da aka gama")),
-              renderAnalyticsMetricCard(ha("Kammalawa"), escapeHtml(formatPercent(localKpis.completionRate)), ha("Modules da aka gama / aka fara")),
-              renderAnalyticsMetricCard(ha("Abin yau"), escapeHtml(formatPercent(localKpis.useTodayYesRate)), ha("Eh / (Eh + Wata rana)")),
-              renderAnalyticsMetricCard(ha("Raba"), escapeHtml(formatPercent(localKpis.shareInitiationRate)), ha("An taba fara raba AJAMIX")),
+              renderAnalyticsMetricCard("Rana 2", localKpis.day2Retention ? ha("Ee") : ha("A'a"), "Riƙewa bayan rana 2"),
+              renderAnalyticsMetricCard("Rana 7", localKpis.day7Retention ? ha("Ee") : ha("A'a"), "Riƙewa bayan rana 7"),
+              renderAnalyticsMetricCard("Module na 2", localKpis.secondModuleStarted ? ha("Ee") : ha("A'a"), "An fara module na biyu"),
+              renderAnalyticsMetricCard("Modules", escapeHtml(String(localKpis.avgModulesCompleted || 0)), "Jimillar modules da aka gama"),
+              renderAnalyticsMetricCard("Kammalawa", escapeHtml(formatPercent(localKpis.completionRate)), "Modules da aka gama / aka fara"),
+              renderAnalyticsMetricCard("Abin yau", escapeHtml(formatPercent(localKpis.useTodayYesRate)), "Eh / (Eh + Wata rana)"),
+              renderAnalyticsMetricCard("Raba", escapeHtml(formatPercent(localKpis.shareInitiationRate)), "An taba fara raba AJAMIX"),
               "</div>",
             ].join("")
           : '<p class="muted">' + ha("Babu isassun events tukuna domin a nuna KPI.") + "</p>",
@@ -3334,9 +3335,9 @@
   function renderAnalyticsMetricCard(title, valueMarkup, helperCopy) {
     return [
       '<article class="metric-panel analytics-kpi-card">',
-      '<span>' + title + "</span>",
+      '<span' + (state.settings.scriptMode === "ajami" ? ' class="sr-only"' : "") + '>' + escapeHtml(title) + "</span>",
       "<strong>" + valueMarkup + "</strong>",
-      '<span class="muted-copy">' + helperCopy + "</span>",
+      '<span class="muted-copy' + (state.settings.scriptMode === "ajami" ? ' sr-only' : "") + '">' + escapeHtml(helperCopy) + "</span>",
       "</article>",
     ].join("");
   }
@@ -5597,7 +5598,8 @@
           var isLocked = entry.state === "locked";
           var prereq = findPrerequisiteModule(module);
           var lockedHint = prereq
-            ? ha("Kammala ") + ha(prereq.titleHa || prereq.id) + ha(" don buɗewa.")
+            ? renderFlowLabel("Kammala ", "🔒") + getDisplayTitleMarkup(prereq) +
+              (state.settings.scriptMode === "ajami" ? '<span class="sr-only"> don buɗewa.</span>' : " don buɗewa.")
             : ha("Za a buɗe nan gaba.");
           var quizCount = Array.isArray(module.quizQuestions) ? module.quizQuestions.length : 0;
           var quizCopy =
@@ -5912,8 +5914,7 @@
         escapeAttribute(String(resumeAtSec)) +
         '"' +
         (resumeAtSec > 5 ? "" : " hidden") +
-        ' data-resume-button>' + ha("Ci gaba daga ") +
-        escapeHtml(formatSeconds(resumeAtSec)) +
+        ' data-resume-button>' + renderLabelValue("Ci gaba daga", escapeHtml(formatSeconds(resumeAtSec)), "▶") +
         "</button>",
       "</div>",
       '<p class="lesson-audio-note" data-audio-notice>' + ha("AJAMIX za ta fara da audio da aka sauke a na'ura idan akwai shi.") + "</p>",
@@ -6934,7 +6935,7 @@
       var resumeAt = Number(session.currentTimeSec || record.lastAudioPositionSec || 0);
       resumeButton.hidden = resumeAt <= 5;
       resumeButton.dataset.seekSeconds = String(resumeAt);
-      resumeButton.innerHTML = ha("Ci gaba daga ") + escapeHtml(formatSeconds(resumeAt));
+      resumeButton.innerHTML = renderLabelValue("Ci gaba daga", escapeHtml(formatSeconds(resumeAt)), "▶");
     }
 
     if (playIcon) {
@@ -8874,6 +8875,13 @@
       escapeHtml(label) + '</span>';
   }
 
+  // valueMarkup is already escaped by the caller; do not escape it again here.
+  function renderLabelValue(label, valueMarkup, icon) {
+    return '<span aria-hidden="true">' + escapeHtml(icon) + '</span> ' +
+      '<span' + (state.settings.scriptMode === "ajami" ? ' class="sr-only"' : '') + '>' +
+      escapeHtml(label) + '</span> ' + valueMarkup;
+  }
+
   function renderQuizResultsScreen(module, session) {
     var results = state.quizResults || {
       moduleId: module.id,
@@ -8905,10 +8913,9 @@
           : getDisplayTitleMarkup(module)) +
         "</h2>",
       vocationalTodayPrompt,
-      '<p class="screen-copy" dir="ltr">' + ha("Ka samu ") +
-        escapeHtml(String(results.score)) +
-        (state.settings.scriptMode === "ajami" ? " / " : ha(" daga cikin ")) +
-        escapeHtml(String(results.total)) +
+      '<p class="screen-copy" dir="ltr">' + renderLabelValue("Ka samu", escapeHtml(String(results.score)), "★") +
+        (state.settings.scriptMode === "ajami" ? " / " : " ") +
+        renderLabelValue("daga cikin", escapeHtml(String(results.total)), "Σ") +
         ".</p>",
       "</div>",
       '<div class="quiz-result-card">',
